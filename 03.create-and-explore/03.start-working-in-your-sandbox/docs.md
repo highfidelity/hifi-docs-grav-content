@@ -4,4 +4,4 @@ taxonomy:
     category: docs
 ---
 
-Explore sandbox. 
+Explore your Sandbox! Learn how to set up your sandbox and start building. 
