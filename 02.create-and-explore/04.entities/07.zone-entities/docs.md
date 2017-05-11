@@ -4,173 +4,143 @@ taxonomy:
     category: docs
 ---
 
-[Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) gives you the option of creating various different entity types and one of those options is the Zone entity.
+*Create and edit a zone entity.*
 
-A Zone entity is a 3-dimensional area that allows you to create custom lighting environments. You can define the zone boundaries using shapes and then customize the Zone’s light properties such as its intensity, direction and color to create different effects.
+## Overview
+
+A zone entity is a 3-dimensional area that allows you to create custom lighting environments. You can define the zone boundaries using shapes and then customize the zone’s light properties such as its intensity, direction and color to create different effects. Let's take a look at how it's done!
 
 ## Create a Zone Entity
 
-With [Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) enabled, you can create a Zone entity by selecting the **Zone** icon.
+Go to **Create** and click the zone icon. 
 
-[![Zoneicon.png](https://wiki.highfidelity.com/images/d/d2/Zoneicon.png)](https://wiki.highfidelity.com/wiki/File:Zoneicon.png)
+![](\create-button-open.png)
 
-The new Zone entity is created at your current location.
+The new zone entity is created at your current location.
 
-![img](https://wiki.highfidelity.com/images/thumb/5/57/1newzone.png/500px-1newzone.png)
+![](\zone-entity.png)
 
-You can create multiple Zone entities, nested Zone entities, adjacent Zone entities and overlapping Zone entities. Zone entities do not have to be axis aligned.
+You can create multiple zone entities, nested zone entities, adjacent zone entities and overlapping zone entities. Zone entities do not have to be axis aligned.
 
 ## Working With Zones
 
-Zones entities can be a bit tricky to work with. By default, Zone entities cannot be selected for editing nor will they be visible to select. In addition, Zone entities can be nested or overlap. This section covers:
+Zones entities can be a bit tricky to work with. By default, zone entities cannot be selected for editing nor will they be visible to select. In addition, zone entities can overlap or be nested. We cover:
 
 - Precedence
-- How to make Zone entities visible in Create Mode
-- How to select Zone entities for editing
+- How to make zone entities visible in Create Mode
+- How to select zone entities for editing
 
 ### Precedence
 
-You can create multiple Zone entities, nested Zone entities, adjacent Zone entities and overlapping Zone entities. Each of these Zone entities can have different properties. If Zone entities are overlapping then the smaller Zone entity's lighting values will take precedence over the other Zone entities. For example, as a user moves through a group of nested Zone entities, each with different lighting values set, the user would experience the lighting conditions of the smallest Zone entity that they are currently in.
+You can create multiple zone entities, nested zone entities, adjacent zone entities and overlapping zone entities. Each of these zone  entities can have different properties. If zone entities are overlapping, then the smaller zone entity's lighting values will take precedence over the other zone entities. For example, as a user moves through a group of nested zone entities, each with different lighting values set, the user would experience the lighting conditions of the smallest zone entity that they are currently in.
 
-[![Zones graphic.png](https://wiki.highfidelity.com/images/0/0b/Zones_graphic.png)](https://wiki.highfidelity.com/wiki/File:Zones_graphic.png)
+![](\zone-graphic.png)
 
 ### How to Make Zone Entities Visible in Create Mode
 
-By default, Zone entity boundaries are invisible. To make it easier to know exactly where a Zone entity is, you can make Zone entity boundaries visible in [Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode). To make Zone entities visible in edit mode:Select **Settings > Advanced Menus**.
+By default, zone entity boundaries are invisible. To make it easier to know exactly where a zone  entity is, you can make the entity's boundaries visible in [Create Mode](../create-mode). To make zone entities visible in edit mode 
 
-1. Select **Edit Menu > Show Zones in Edit Mode**.
+1. Select **Settings > Advanced Menus**.
+
+2. Select **Edit Menu > Show Zones in Edit Mode**.
 
 Zone entities will appear as a wireframe shapes.
 
-![img](https://wiki.highfidelity.com/images/thumb/b/b7/Wireframe.png/500px-Wireframe.png)
-
-By default, Zone entities are cube shaped, but other shapes are possible and can be set in the Zone entity properties.
+By default, zone entities are cube shaped, but other shapes are possible and can be set in the properties.
 
 ### How to Select Zone Entities for Editing
 
-Unlike other entity types, you cannot simply click on a Zone entity in edit mode to select it. To select a Zone entity for editing:
+Unlike other entity types, you cannot simply click on a zone entity in edit mode to select it. To select a zone entity for editing:
 
-- Select the Zone entity in the **Entity List** tab in the *Edit* window.
+- Select the zone entity in the **List** tab.
 
-![3selectedzone.png](https://wiki.highfidelity.com/images/thumb/a/af/3selectedzone.png/500px-3selectedzone.png)
-
-*Note: You can enable the selecting of Zone entities via script using setZonesArePickable().*
-
-With the Zone entity selected, you can edit the Zone entity's properties.
+With the zone entity selected, you can edit theproperties.
 
 ## Properties
 
-An entity's appearance (color, size, position etc.) and behavior (animation, collision, interaction, etc.) are defined by the entity's properties.
+Zone entities have the properties common to all entities along with a number of zone specific properties.
 
-Zone entities have the [properties common to all entities](http://jsref.docs.highfidelity.com/v1.0/docs/entity-properties#section-common-properties) along with a number of [Zone specific properties](http://jsref.docs.highfidelity.com/v1.0/docs/entity-properties#zoneentity).
-
-You can view and edit these properties in [Edit Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) by selecting the entity and then selecting the **Entity Properties** tab in the *Edit* panel.
+You can view and edit these properties in **Properties** .
 
 ## Example: Create Two Nested Zones with Different Lighting
 
-To help you get a better understanding of Zone entities, this example creates two different Zone entities, one inside the other, that you can navigate through. For this example, you will:
+To help you get a better understanding of zone entities, this example creates two different zone entities, one inside the other, that you can navigate through. For this example, you will:
 
-- Create two Zones entities
-- Edit the positions and size properties so that one Zone entity is inside the other
+- Create two zones entities
+- Edit the positions and size properties so that one zone entity is inside the other
 - Edit the light properties to create two different effects
-
-Details on these steps are in the sections below.
 
 ### Create Two Zone Entities
 
-For this example, you will need to create two Zone entities. Complete the following steps:
+For this example, you will need to create two zone entities. Complete the following steps:
 
-1. Create a Zone entity by selecting the **Zone** icon. When you first create a Zone, it will be selected. If it is not selected, you'll can select it using the **Entity List** tab in the *Edit* panel. To help keep track of Zone entities, you can use the **Name** property.
+1. Create a zone entity by selecting the **zone** icon. When you first create a zone, it will be selected. If it is not selected, you can select it using **List** tab. To help keep track of zone entities, you can use the **Name** property.
 
-2. In the **Entity Properties** tab in the *Edit* panel, enter a name into the **Name** property field. Name the first zone, **ZoneRED**.
+2. In the **Properties** tab, enter a name into the **Name** property field. Name the first zone, **ZoneRED**.
 
-3. Repeat steps 1 and 2 to create a second Zone entity. Name this second zone,
+   ![](\zone-name-1.png)
+
+3. Repeat the first two steps to create a second zone entity. Name this second zone, ZoneBLUE. 
 
 
-   ZoneBLUE
-
-   .
-
-   ![Twonewzone.png](https://wiki.highfidelity.com/images/thumb/c/cf/Twonewzone.png/500px-Twonewzone.png)
-
-   ​
-
-   You should now have two new Zone entities.
+ 
 
 ### Edit the Zone Positions and Sizes so that One is Inside the Other
 
-With two Zone entities created, you now need to resize one so that it is smaller than the other. You will also want to position the smaller Zone entity inside the larger Zone entity.
+With two zone entities created, you now need to resize one so that it is smaller than the other. You will also want to position the smaller zone entity inside the larger zone entity.
 
-*Note: To see the size and position of the Zone entities you are working with, select \**Settings > Advanced Menus** and then select **Edit Menu > Show Zones in Edit Mode**.*
+> > > > > To see the size and position of the zone entities you are working with, select **Settings > Advanced Menus** and then select **Edit Menu > Show Zones in Edit Mode**.
 
-By default, Zone entities are created at your current position, so to see the Zone entities you just created, you may need to reposition your avatar.
+By default, zone entities are created at your current position, so to see the zone entities you just created, you may need to reposition your avatar.
 
-1. Edit one Zone entity to be half the length and width as the other. In the **Entity Properties** tab in the *Edit* panel, for the Zone entity named ZoneRED, set the ** Dimension** properties to: **X: 5, Y: 10, Z: 5**
+1. Edit one zone  entity to be half the length and width as the other. In the **Properties** tab, for the zone entity named ZoneRED, set the Dimension properties to: **X: 5, Y: 10, Z: 5**
 
-2. If you created the two Zone entities without moving your avatar, the Zone entities should be positioned in the same place. If not, use the
+2. If you created the two zone entities without moving your avatar, the zone entities should be positioned in the same place. If not, use the Create Mode tools to position the smaller zone (ZoneRED) inside the larger zone (ZoneBLUE).
 
+    You should now have ZoneRED inside of ZoneBLUE.
 
-   Edit Mode
-
-​    
-
-   tools to position the smaller Zone (ZoneRED) inside the larger Zone (ZoneBLUE).
-
-   ![Betterzoneinzone.png](https://wiki.highfidelity.com/images/thumb/1/18/Betterzoneinzone.png/500px-Betterzoneinzone.png)
-
-   ​
-
-   You should now have ZoneRED inside of ZoneBLUE.
 
 ### Edit the Zone Entities' Light Properties to Create Two Different Effects
 
-Both Zone entities currently use the default lighting properties. If you pass through both Zone entities, you won't notice when you have moved into or out of each Zone entity. The next step is to set the Zone entities' lighting properties such that you have two different light environments. The lighting environment for a Zone entity can either be set by enabling and setting the stage sun model (a light that simulates sun light) or by setting the keylight (a single point of light) properties. For this example, the keylight properties for each Zone entity will be set to create one area lit with red light and one area lit with blue light.
+Both zone entities currently use the default lighting properties. If you pass through both zone entities, you won't notice when you have moved into or out of each zone entity. The next step is to set the zone entities' lighting properties so that you have two different light environments. 
 
-*Note: Each zone has a single keylight.*
+The lighting environment for a zone entity can either be set by enabling and setting the stage sun model (a light that simulates sun light) or by setting the keylight (a single point of light) properties. For this example, the keylight properties for each zone entity will be set to create one area lit with red light and one area lit with blue light.
 
-To edit the keylight properties, complete these steps:
+Each zone has a single keylight.
 
-1. Select the smaller Zone entity (ZoneRED).
-2. In the **Entity Properties** tab in the *Edit* panel, scroll down to the *Zone* properties, and set the **Keylight Color** property to Red (**Red: 255, Green: 0, Blue: 0**)
-3. Select the larger Zone entity (ZoneBLUE).
-4. In the **Entity Properties** tab in the *Edit* panel, scroll down to the *Zone* properties, and set the **Keylight Color** property to Blue (**Red :0, Green: 0, Blue: 255**)
+To edit the keylight properties:
 
-If you now navigate your avatar through both Zone entities you should see the light turn blue as you enter ZoneBLUE and then turn red when you enter ZoneRED.
+1. Select the smaller zone entity (ZoneRED).
+2. In the **Properties** tab, scroll down to the *zone* properties, and set the **Keylight Color** property to Red (**Red: 255, Green: 0, Blue: 0**)
+3. Select the larger zone entity (ZoneBLUE).
+4. In the **Properties** tab, scroll down to the *zone* properties, and set the **Keylight Color** property to Blue (**Red: 0, Green: 0, Blue: 255**)
 
-![ZoneBlue.png](https://wiki.highfidelity.com/images/thumb/c/c2/ZoneBlue.png/500px-ZoneBlue.png)
+If you now navigate your avatar through both zone entities you should see the light turn blue as you enter ZoneBLUE and then turn red when you enter ZoneRED.
 
-![img](https://wiki.highfidelity.com/images/thumb/c/cf/ZoneRed.png/500px-ZoneRed.png)
+
+
+![](\blue-zone.png)
+
+![](\red-zone.png)
 
 ## Example: Changing the Zone Shape
 
-In the previous example, the Zone entity's boundaries were a cube. You can view a wireframe of a Zone entity's shape, select **Settings > Advanced Menus** and then select **Edit Menu > Show Zones in Edit Mode**.
+In the previous example, the zone entity's boundaries were a cube. You can view a wireframe of a zone entity's shape, select **Settings > Advanced Menus** and then select **Edit Menu > Show zones in Edit Mode**.
 
-This cube shape is the default shape, however other shapes are possible. To change a Zone entity's shape"
+This is the default shape. However, other shapes are possible. To change a zone entity's shape:
 
-1. Select the Zone entity and in the **Entity Properties** tab in the *Edit* panel, scroll down to the *Model* properties.
+1. Select the zone entity and in the **Properties** tab, scroll down to the Model properties.
 2. Set the **Collision shape type** property to the shape you want to use:
 
-There are four shape types to chose from:
+   There are four shape types to chose from:
 
-- **None**: Will go to the default shape. (Box at the moment)
-
-- Box
-
-  : The Zone entity's shape is the same than its bounding box.
-
-  [![Box shape.jpg](https://wiki.highfidelity.com/images/8/86/Box_shape.jpg)](https://wiki.highfidelity.com/wiki/File:Box_shape.jpg)
-
-- Sphere
-
-  : The Zone entity's shape will be a stretched sphere.
-
-  [![Streched sphere shape.jpg](https://wiki.highfidelity.com/images/c/c6/Streched_sphere_shape.jpg)](https://wiki.highfidelity.com/wiki/File:Streched_sphere_shape.jpg)
-
-- **Compound**: The Zone entity's shape will be a convex mesh.
+   - None: Will go to the default shape. (Box at the moment)
+   - Box: The zone entity's shape is the same than its bounding box.
+   - Sphere: The zone entity's shape will be a stretched sphere.
+   - Compound: The zone entity's shape will be a convex mesh.
 
 
-
-All shapes will be stretched to fit the Zone entity's dimensions.
+All shapes will be stretched to fit the zone entity's dimensions.
 
 ### Generate a Convex Mesh
 

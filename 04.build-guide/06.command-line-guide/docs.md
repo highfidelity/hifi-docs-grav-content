@@ -1,5 +1,8 @@
 ---
 title: 'Command Line Guide'
+taxonomy: 
+category:
+	docs
 ---
 
 ## Windows

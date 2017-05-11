@@ -1,8 +1,12 @@
 ---
-title: Avatars
+title: Avatar Interactions
 taxonomy:
     category: docs
 ---
+
+*Learn how to create avatar-entity interactions.*
+
+## Overview
 
 Entities register mouse clicks, hovers, collision by other entities and interactions by Avatars.
 
@@ -22,7 +26,7 @@ But in the case of more complex mesh objects the bounds might be much larger tha
 
 ![img](https://wiki.highfidelity.com/images/thumb/8/81/TreeBounds.jpg/500px-TreeBounds.jpg)
 
-## Making Something Happen When an Avatar Touches an Entity
+## Creating an Interaction When an Avatar Touches an Entity
 
 The following script uses **Entities.enterEntity** function to trigger something when an avatar comes into contact with the bounds of an object.
 
@@ -38,11 +42,8 @@ The following script uses **Entities.enterEntity** function to trigger something
 
 - Reset the size by clicking **Reset to Natural Dimensions**.
 
-- Scroll down the entity properties panel until you find
+- Scroll down the entity properties panel until you find Script URL
 
-   
-
-  Script URL
 
   [![ScriptURL.jpg](https://wiki.highfidelity.com/images/d/d9/ScriptURL.jpg)](https://wiki.highfidelity.com/wiki/File:ScriptURL.jpg)
 

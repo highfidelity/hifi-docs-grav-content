@@ -4,6 +4,8 @@ taxonomy:
     category: docs
 ---
 
+**WORK IN PROGRESS**
+
 This document describes the standards and conventions for using an avatar in High Fidelity's Interface program. The workflow for using an avatar in Interface generally falls into these 4 categories:
 
 1. **Build **the avatar’s head, body and animation according to the avatar standards.
@@ -117,7 +119,7 @@ Here are the steps to take get a Fuse avatar into Interface.
    ​
 
 10. Interface will ask you where you want to save the packaged model. Navigate to the directory where you want to save the packaged model and click 'OK'. 
-    Your model is now ready to be rendered in Interface. In order for your model to be seen by other people, you will need to host it on a publicly accessible web-server. Something like S3 or Dropbox.
+   Your model is now ready to be rendered in Interface. In order for your model to be seen by other people, you will need to host it on a publicly accessible web-server. Something like S3 or Dropbox.
 
 11. If you have not already saved it to a web server, move the packaged model directory to that web-server.
 
