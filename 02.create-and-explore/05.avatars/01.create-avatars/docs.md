@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-This page will walk you through creating your own avatar using Adobe Fuse, Mixamo and Blender.
+*This page will walk you through creating your own avatar using Adobe Fuse, Mixamo and Blender.*
 
 ## Overview
 

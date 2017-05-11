@@ -1,5 +1,5 @@
 ---
-title: Activating Haptic Feedback
+title: Activate Haptic Feedback
 taxonomy:
     category: docs 
 ---

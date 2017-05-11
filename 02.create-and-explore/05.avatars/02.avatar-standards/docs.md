@@ -1,20 +1,22 @@
 ---
-title: Avatars
+title: Avatar Standards
 taxonomy:
     category: docs
 ---
 
-High Fidelity avatars are FBX files, with specific orientations and joints as described below. You can change your avatar by going to Settings->Avatar->Appearance, and specifying the URL to your avatar. Presently, you need to host your own avatar file somewhere, unless you are using one of the examples found in the marketplace. You can use a marketplace avatar (and also download and explore them as samples to create your own) by going to the marketplace, selecting the 'Avatars' category, and choosing one.
+*Learn about High Fidelity's Avatars*.
+
+## Overview
+
+High Fidelity avatars are FBX files, with specific orientations and joints as described below. You can change your avatar by going to **Settings > Avatar > Appearance**, and specifying the URL to your avatar. 
+
+Presently, you need to host your own avatar file somewhere, unless you are using one of the examples found in the marketplace. You can use a marketplace avatar (and also download and explore them as samples to create your own) by going to the marketplace, selecting the 'Avatars' category, and choosing one.
 
 ## Reference Pose
 
 [![Hifi skel 1.png](https://wiki.highfidelity.com/images/9/98/Hifi_skel_1.png)](https://wiki.highfidelity.com/wiki/File:Hifi_skel_1.png)
 
-For the Reference pose, we propose a TPose which complies with the specifications below. You may wish to refer to the properly configured 
-
-example avatar fbx with source files
-
-.
+For the Reference pose, we propose a TPose which complies with the specifications below. You may wish to refer to the properly configured example avatar fbx with source files.
 
 - The character must face along the positive direction of the Z-axis.
 - The arms must be spread along the X-axis. The left arm should therefore be pointing along the positive direction of the X-axis.
@@ -30,16 +32,16 @@ example avatar fbx with source files
 - The local rotation axis specifies the orientation of the joint's local axis. It lets you specify the primary local axis for the joint which is the axis that points down the bone and that extends from the joint. High Fidelity expects Y down the bone.
 - The joint's orientation is the joint's default values when in the reference pose. In Maya, the orientation value is a combination of the joint's "Rotation" value and the joint's "Orientation" value.
 - Key frame animations define changes in the joint rotation over time, relative to the "reference pose" (which expresses the zero rotation (by convention) at which the mesh vertices are captured).
-- Joints may have "constraints" on changes to their rotation. Regardless of constraint, limbs and extremities are loosely described as having a principle "hinge" axis about which most animations occur. The hinge are important for the IK systemJoint's
+- Joints may have "constraints" on changes to their rotation. Regardless of constraint, limbs and extremities are loosely described as having a principle "hinge" axis about which most animations occur. The hinge are important for the IK systemJoint's.
 - When you keyframe an object's rotations, Maya calculates the object's orientations between keys by interpolating the rotation values from one key to the next. In Maya, there are two methods of rotation interpolation: Euler and Quaternion. For each animated rotation in your scene, you can specify a rotation interpolation method. The rotation interpolation method you choose for an animated object determines how Maya calculates its rotations.
 
 ### Joint Rotation Axis
 
-- +y going down the bone
+- +y going down the bone.
 - +z going forward on spine and legs, down on arms/hands and up on feet.
-- Forearm joints hinge primarily around the z-axis. The other arm and hand joints hinge primarily around the x-axis. (Typically positive angles during animation everywhere except the avatar's right elbow.)
-- Leg joints hinge around x-axis. (Typically negative angles during animation.)
-- In Maya: joint rotations can be zero & joint orientations can be non-zero
+- Forearm joints hinge primarily around the z-axis. The other arm and hand joints hinge primarily around the x-axis. (Typically positive angles during animation everywhere except the avatar's right elbow).
+- Leg joints hinge around x-axis. (Typically negative angles during animation).
+- In Maya: joint rotations can be zero & joint orientations can be non-zero.
 - In Blender the joint rotation values can be non-zero.
 - For the hand and related controller animation, make sure the middle finger is the first joint in the list of finger joints.
 
@@ -138,23 +140,23 @@ Currently, we rig the skeleton as an FK rig. In parallel, we are implementing IK
 
 High Fidelity uses Blendshapes to animate your avatar's face. Blendshapes allow you to specify a new state for your avatar's mesh, and facial positions are animated by moving between the different states of your avatar's expressions. We currently have 2 techniques for driving blendshapes and a third using BinaryVR is in development:
 
-1. DDE and a 2D camera
-2. Audio signal
+1. DDE and a 2D camera.
+2. Audio signal.
 
 For the audio drive solution, we're targeting a phoneme based system that triggers 4 mouth and 2 eye shapes.
 
-- Eye: blink & brow up
-- Mouth: m, o, ah & e
+- Eye: blink & brow up.
+- Mouth: m, o, ah & e.
 
 Blendshape behaviors are defined in your avatar's FST file, and are added to the avatar mesh using a 3D modeling tool like Blender (Shape Keys) or Maya. Adobe's Fuse program and Mixamo pipeline allow you to export blendshapes as part of your FBX, but if you are modeling an avatar from scratch, you will likely need to specify your own facial expressions.
 
 High Fidelity avatars support a number of blendshapes for creating different facial expressions, but the primary ones are:
 
-- EyeBlink_L (left eye blink)
-- EyeBlink_R (right eye blink)
-- Jaw_Open (open jaw)
+- EyeBlink_L (left eye blink).
+- EyeBlink_R (right eye blink).
+- Jaw_Open (open jaw).
 
-Defining more specific blendshapes on your avatar allows your avatar to mimic a wider range of facial expressions. The full list of constants is defined [on GitHub in FaceshiftConstants.cpp](https://github.com/highfidelity/hifi/blob/master/libraries/shared/src/FaceshiftConstants.cpp)
+Defining more specific blendshapes on your avatar allows your avatar to mimic a wider range of facial expressions. The full list of constants is defined [on GitHub in FaceshiftConstants.cpp.](https://github.com/highfidelity/hifi/blob/master/libraries/shared/src/FaceshiftConstants.cpp)
 
 Once you have added blendshapes to your avatar, you can specify different movements in your avatar's FST file with the following format:
 

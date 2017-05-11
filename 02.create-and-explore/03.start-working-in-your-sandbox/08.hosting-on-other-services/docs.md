@@ -1,26 +1,20 @@
 ---
-title: Hosting Your Domain Using Other Services
+title: Set Up Your Domain on Amazon Services (EC2)
 taxonomy:
     category: docs
 ---
 
-Going to quickly run through the key points of getting your Domain set up on Amazon Services (EC2).
+*Learn how you can set up your domain on Amazon Services (EC2).*
 
-# Scale Estimate
+## Overview
 
-- **target concurrency**: 1-10 Avatars with audio 24/7 x 365 availability
-- **target cost**: $25 US/mo
-- **Assumption**: Most content in the domain is using S3 for storage, offloading your bandwidth for the main instance (add link to S3 info)
+**USER CONTRIBUTION: UNDER REVIEW**
 
-The process will be similar for other windows based VPS hosts, performance may vary.. No guarantees or warranty of any kind on this setup..
+We'll walk you through setting up your domain on Amazon Services (EC2).
 
-# Overview
-
-- Register for AWS services: [https://aws.amazon.com/](https://aws.amazon.com/)
-
-
-- Start up an new EC2 instance
-  - If you use one of the wizards, your preferred region may not come up as a choice. If you start one from EC2 console it will give all region options
+- Register for AWS services: [https://aws.amazon.com/](https://aws.amazon.com/).
+- Start up an new EC2 instance.
+  - If you use one of the wizards, your preferred region may not come up as a choice. If you start from the EC2 console, it will give all regions as options.
   - I chose the image: Microsoft Windows Server 2012 R2 Base - ami-7805b71c , I had tried the 2016 version first but it didn't seem stable at this time
   - take the t2.small, 2GB seems to help alot as well importantly , the nano sizes do not support remote desktop.
   - accept most of the default during the setup steps for the instance, note on the security page, make sure that RDP is available for the security group, and set it to 'your ip' for access.

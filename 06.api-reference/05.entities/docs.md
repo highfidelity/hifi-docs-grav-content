@@ -13,7 +13,7 @@ An entity's appearance (color, size, position etc.) and behavior (animation, col
 
 `EntityItemProperties` is a JSON object composed of multiple properties. While an entity can have any number of properties, it must include, at minimum, the [type](https://wiki.highfidelity.com/wiki/EntityItemProperties#Common_Properties) property. The `type` property determines which other properties the entity can have. As there are a fair number of properties that are common across all entity types (including the `type` property), the [common entity properties](https://wiki.highfidelity.com/wiki/EntityItemProperties#Common_Properties) are covered first. The properties specific to each entity type are covered in [entity properties by type](https://wiki.highfidelity.com/wiki/EntityItemProperties#Entity_Properties_by_Type).
 
-### Common Properties[[edit](https://wiki.highfidelity.com/index.php?title=EntityItemProperties&action=edit&section=1)]
+### Common Properties
 
 This section contains the properties common to all entity types.
 
@@ -349,4 +349,466 @@ In addition to the [common properties](https://wiki.highfidelity.com/wiki/Entity
 | `backgroundMode`   | string        | ""                                       | Other options are: "Skybox" and "Atmosphere". |
 
 
+
+
+
+## Callbacks
+
+# clickDownOnEntity()
+
+
+
+The `clickDownOnEntity()` event is sent when you begin clicking the mouse button while the cursor is pointing to an entity.
+
+
+## Event
+
+`clickDownOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID **: The ID of the entity clicked on
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity like a box or sphere, will change the color of the entity when you click on it.
+
+```
+(function(){ 
+    var clicked = false;
+    this.clickDownOnEntity = function(entityID, mouseEvent) { 
+        if (clicked){
+            Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 255} });
+            clicked = false;
+        }else{
+            Entities.editEntity(entityID, { color: { red: 255, green: 255, blue: 0} });
+            clicked = true;    
+        }
+    }; 
+})
+```
+
+
+
+# clickReleaseOnEntity()
+
+
+
+The `clickReleaseOnEntity()` event is sent when you release the mouse button after previously clicking it while the cursor is pointing to an entity.
+
+Note: The entity that you initially clicked on will get this event even if you are no longer pointing at that entity.
+
+
+
+## Event
+
+`clickReleaseOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID **: The ID of the entity pointed at the time of the initial click
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity to red when you click down on it (`clickDownOnEntity()`) and then change it to blue when you release the mouse button (`clickReleaseOnEntity()`).
+
+```
+(function(){ 
+    this.clickDownOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.clickReleaseOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
+
+
+
+# collisionWithEntity()
+
+
+
+
+The `collisionWithEntity()` event is sent when an entity collides with another entity. Note: This callback only occurs on the client that is the simulation owner.
+
+
+
+## Event
+
+`collisionWithEntity(EntityItemID,EntityItemID,Collision)`
+
+## Arguments
+
+**entityID: EntityItemID**: The entity item IDs of the entities colliding
+
+**Collision: Collision**: Collision data
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when it collides with another entity.
+
+Note: For this script to work, the entity's `collisionless` property must be set to `false`.
+
+```
+(function(){ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    this.collisionWithEntity = function(myID, otherID, collisionInfo) { 
+        Entities.editEntity(myID, { color: { red: getRandomInt(128,255), 
+                                            green: getRandomInt(128,255), 
+                                            blue: getRandomInt(128,255)} });
+    }; 
+})
+```
+
+
+
+# enterEntity()
+
+
+The `enterEntity()` event is sent when an avatar's center (i.e., hips) enters the bounds of an entity.
+
+
+## Event
+
+`enterEntity(EntityItemID)`
+
+## Arguments
+
+**entityID: EntityItemID**: The entity item ID of the entity
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box, will cause the entity to change color and spin when the avatar enters the entity's bounds. The entity will continue to spin while the avatar is within the entity's bounds. If the avatar exits the bounds, the entity will change color again and slow down to stop spinning.
+
+Note: To allow the avatar to enter the entity's bounds either make sure **Enable avatar collisions** is not selected or make sure the entity has its `ignoreForCollisions` [property](https://wiki.highfidelity.com/wiki/EntityItemProperties) set to `true`.
+
+```
+(function(){
+    function change(entityID) {
+        Entities.editEntity(entityID, { angularDamping: 0});
+        Entities.editEntity(entityID, { angularVelocity: { x: 0, y: 60, z: 0} });
+        Entities.editEntity(entityID, { color: { red: 255, green: 100, blue: 220} });
+    }
+    this.enterEntity = function(entityID) {
+        print("enterEntity("+entityID.id+")");
+        change(entityID);
+    };
+    this.leaveEntity = function(entityID) {
+        print("leaveEntity("+entityID.id+")");
+        Entities.editEntity(entityID, { angularDamping: 0.5});
+        Entities.editEntity(entityID, { color: { red: 255, green: 190, blue: 20} });
+    };
+})
+```
+
+
+
+# holdingClickOnEntity()
+
+
+
+The `holdingClickOnEntity()` event is sent when you continue to hold the mouse button down after previously clicking it while the cursor is pointing to an entity.
+
+Note: The entity that you initially clicked on will continue to get this event even if you are no longer pointing at that entity.
+
+
+
+## Event
+
+`holdingClickOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: [doc:entityitemid EntityItemID] **: The ID of the entity pointed at when the mouse button was first pressed down
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity to random colors as you keep the mouse cursor pressed down.
+
+```
+(function(){ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    this.holdingClickOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: getRandomInt(128,255),
+                                                green: getRandomInt(128,255),
+                                                blue: getRandomInt(128,255)} });
+        }
+})
+```
+
+
+
+# hoverEnterEntity()
+
+
+
+The `hoverEnterEntity()` event is sent when you move the mouse cursor so that it begins to point at an entity.
+
+
+
+
+## Event
+
+`hoverEnterEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse over the entity (`hoverEnterEntity`) and when you move the mouse cursor so that it no longer points at the entity (`hoverLeaveEntity`).
+
+```
+(function(){ 
+    this.hoverEnterEntity = function(entityID, mouseEvent) { 
+            Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.hoverLeaveEntity = function(entityID, mouseEvent) { 
+            Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
+
+
+
+# hoverLeaveEntity()
+
+
+
+The `hoverLeaveEntity()` event is sent when you move the mouse cursor so that it no longer points at an entity that you previously started pointing to.
+
+
+
+
+## Event
+
+`hoverLeaveEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse over the entity (`hoverEnterEntity()`) and when you move the mouse cursor so that it no longer points at the entity (`hoverLeaveEntity()`).
+
+```
+(function(){ 
+    this.hoverEnterEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.hoverLeaveEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
+
+
+
+# hoverOverEntity()
+
+
+
+The `hoverOverEntity()` event is sent when you move the mouse cursor so that it continues to be pointed at an entity that you previously started pointing to.
+
+
+
+## Event
+
+`hoverOverEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse cursor as it points at the entity.
+
+```
+(function(){ 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    this.hoverLeaveEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: getRandomInt(128,255),
+                                                green: getRandomInt(128,255),
+                                                blue: getRandomInt(128,255)} });
+        }
+})
+```
+
+
+
+# leaveEntity()
+
+
+
+The `leaveEntity()` event is sent when an avatar's center (i.e., hips) leaves the bounds of an entity.
+
+
+
+## Event
+
+`leaveEntity(EntityItemID)`
+
+## Arguments
+
+**entityID: EntityItemID**: The entity item ID of the entity
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box, will cause the entity to change color and spin when the avatar enters the entity's bounds. The entity will continue to spin while the avatar is within the entity's bounds. If the avatar exits the bounds, the entity will change color again and slow down to stop spinning.
+
+Note: To allow the avatar to enter the entity's bounds either make sure **Enable avatar collisions** is not selected or make sure the entity has its `collisionless` [property](https://wiki.highfidelity.com/wiki/EntityItemProperties) set to `true`.
+
+```
+(function(){
+    function change(entityID) {
+        Entities.editEntity(entityID, { angularDamping: 0});
+        Entities.editEntity(entityID, { angularVelocity: { x: 0, y: 60, z: 0} });
+        Entities.editEntity(entityID, { color: { red: 255, green: 100, blue: 220} });
+    }
+    this.enterEntity = function(entityID) {
+        print("enterEntity("+entityID.id+")");
+        change(entityID);
+    };
+    this.leaveEntity = function(entityID) {
+        print("leaveEntity("+entityID.id+")");
+        Entities.editEntity(entityID, { angularDamping: 0.5});
+        Entities.editEntity(entityID, { color: { red: 255, green: 190, blue: 20} });
+    };
+})
+```
+
+
+
+# mouseMoveOnEntity()
+
+
+
+The `mouseMoveOnEntity()` event is sent when you move the mouse and the cursor is pointing at an entity.
+
+
+
+## Event
+
+`mouseMoveOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
+
+```
+(function(){ 
+    this.mouseMoveOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 0} });
+        }
+    this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
+
+
+
+# mousePressOnEntity()
+
+
+
+The `mousePressOnEntity()` event is sent when you press the mouse button down and the cursor is pointing at an entity.
+
+
+
+## Event
+
+`mousePressOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
+
+```
+(function(){
+   this.mouseMoveOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 0} });
+        }
+    this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
+
+# mouseReleaseOnEntity()
+
+
+
+The `mouseReleaseOnEntity()` event is sent when you release the mouse button and the cursor is pointing at an entity.
+
+
+
+## Event
+
+`mouseReleaseOnEntity(entityItemID, mouseEvent)`
+
+## Arguments
+
+**entityItemID: EntityItemID**: The ID of the entity pointed at
+
+**mouseEvent: MouseEvent**: A JavaScript mouse event
+
+## Examples
+
+This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
+
+```
+(function(){ 
+    this.mouseMoveOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 255, green: 0, blue: 0} });
+        }
+    this.mousePressOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 0} });
+        }
+    this.mouseReleaseOnEntity = function(entityID, mouseEvent) { 
+        Entities.editEntity(entityID, { color: { red: 0, green: 0, blue: 255} });
+        }
+})
+```
 

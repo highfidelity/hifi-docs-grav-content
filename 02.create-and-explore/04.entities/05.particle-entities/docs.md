@@ -4,28 +4,38 @@ taxonomy:
     category: docs
 ---
 
-[Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) allows you to create various different entity types. One of the options is a **Particle entity**. Particle entities are used to create effects made up of many small parts, such as fire, smoke, or falling leaves.
+*Create and edit particle entities.*
 
-*Note: To create entities you must be in a virtual world where you have permission to add entities.*
+## Overview
+
+Particle entities are used to create effects made up of many small parts, such as fire, smoke, or falling leaves. We'll walk you through creating and editing a particle entity.
 
 ## Create a Particle Entity
 
-With [Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) enabled, you can create a Particle entity by selecting the **Particle** icon.
-
-[![Particleicon.png](https://wiki.highfidelity.com/images/e/e2/Particleicon.png)](https://wiki.highfidelity.com/wiki/File:Particleicon.png)
+Go to **Create** and select the Particle icon. 
 
 A particle entity first appears as a fountain of small white particles.
 
-![Particleentity.png](https://wiki.highfidelity.com/images/thumb/e/e6/Particleentity.png/800px-Particleentity.png)
+![](\particle.png)
 
 ## Properties
 
-An entity's appearance (size, position etc.) and behavior (animation, collision, interaction, etc.) are defined by the entity's properties.
+Particle entities have the properties common to all entities as well as additional particle specific properties.
 
-Particle entities have the [properties common to all entities](https://wiki.highfidelity.com/wiki/EntityItemProperties#Common_Properties) as well as additional [Particle specific properties](https://wiki.highfidelity.com/wiki/EntityItemProperties#ParticleEffect).
+To edit the particle entity, select the **Particle Explorer** tab. This is indicated by a small particle icon on the top-right hand corner of your tablet. 
 
-You can view and edit the common properties in [Create Mode](https://wiki.highfidelity.com/wiki/Edit_Mode) by selecting the entity and then selecting the **Entity Properties** tab in the *Edit* panel. To edit the particle specific properties, select the **Particle Explorer** tab in the *Edit* panel.
+![](\particle-explorer.png)
 
-[![Particleexplorer.png](https://wiki.highfidelity.com/images/e/ed/Particleexplorer.png)](https://wiki.highfidelity.com/wiki/File:Particleexplorer.png)
+Click on open controls to see the entity's properties. 
 
-*Note: The \**Color** property appears on both the **Entity Properties** tab and the **Particle Explorer** tab. This is the same property but note that when you change the value in one tab the value isn’t updated in the other. However, if you change the value in one tab, then go to the **Entity List** tab and select another entity then go back and select the Particle entity, you’ll see that the value is updated in both tabs.*
+![](\particle-properties.png)
+
+
+
+>>>>> The **Color** property appears in both, the **Properties** tab and the **Particle Explorer** tab. This is the same property. But, when you change the value in one tab, the value isn’t updated in the other. it is reflected in both places only once you select another entity and then re-select the particle entity.
+
+
+
+Below is an image of a particle entity with a different color. 
+
+![](\purple-particle.png)

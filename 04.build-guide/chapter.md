@@ -3,15 +3,31 @@ title: 'Build Guide'
 published: true
 ---
 
-\###Dependencies
+*Learn how to build High Fidelity.*
+
+## Overview
+
+This build guide contains a set of general instructions for building High Fidelity on your system. If you're looking for build guides specific to the OS, check out:
+
+* [Linux](/linux)
+* [OS X](/os-x)
+* [Windows 64-bit](/windows-64-bit)
+* [Android](/android)
+
+## Dependencies
+
+Download the following dependencies to be built, linked and included automatically by CMake where we require them. The CMakeLists files that handle grabbing each of the following external dependencies can be found in the [cmake/externals folder](https://github.com/nimisha20/hifi/blob/master/cmake/externals). The resulting downloads, source files and binaries will be placed in the `build/ext` folder in each of the subfolders for each external project.
+
+These are not placed in your normal build tree when doing an out of source build so that they do not need to be re-downloaded and re-compiled every time the CMake build folder is cleared. Should you want to force a re-download and re-compile of a specific external, you can simply remove that directory from the appropriate subfolder in `build/ext`. Should you want to force a re-download and re-compile of all externals, just remove the `build/ext` folder.
+
+If you would like to use a specific install of a dependency instead of the version that would be grabbed as a CMake ExternalProject, you can pass -DUSE_LOCAL_$NAME=0 (where $NAME is the name of the subfolder in [cmake/externals](https://github.com/nimisha20/hifi/blob/master/cmake/externals)) when you run CMake to tell it not to get that dependency as an external project.
 
 - [cmake](https://cmake.org/download/) ~> 3.3.2
 - [Qt](https://www.qt.io/download-open-source) ~> 5.6.1
-- OpenSSL
-  - IMPORTANT: Use the latest available version of OpenSSL to avoid security vulnerabilities.
+- [OpenSSL](https://www.openssl.org/): Use the latest available version of OpenSSL to avoid security vulnerabilities.
 - [VHACD](https://github.com/virneo/v-hacd)(clone this repository)(Optional)
 
-\####CMake External Project Dependencies
+### CMake External Project Dependencies
 
 - [boostconfig](https://github.com/boostorg/config) ~> 1.58
 - [Bullet Physics Engine](https://github.com/bulletphysics/bullet3/releases) ~> 2.83
@@ -29,26 +45,26 @@ published: true
 - [Sixense](http://sixense.com/) ~> 071615
 - [zlib](http://www.zlib.net/) ~> 1.28 (Win32 only)
 
-The above dependencies will be downloaded, built, linked and included automatically by CMake where we require them. The CMakeLists files that handle grabbing each of the following external dependencies can be found in the [cmake/externals folder](https://github.com/nimisha20/hifi/blob/master/cmake/externals). The resulting downloads, source files and binaries will be placed in the `build/ext` folder in each of the subfolders for each external project.
+### OS Specific Build Guides
 
-These are not placed in your normal build tree when doing an out of source build so that they do not need to be re-downloaded and re-compiled every time the CMake build folder is cleared. Should you want to force a re-download and re-compile of a specific external, you can simply remove that directory from the appropriate subfolder in `build/ext`. Should you want to force a re-download and re-compile of all externals, just remove the `build/ext` folder.
+- [OS X](/os-x) - additional instructions for OS X.
+- [Linux](/linux) - additional instructions for Linux.
+- [Windows 64-bit](/windows-64-bit) - additional instructions for Windows.
+- [Android](/android) - additional instructions for Android
 
-If you would like to use a specific install of a dependency instead of the version that would be grabbed as a CMake ExternalProject, you can pass -DUSE_LOCAL_$NAME=0 (where $NAME is the name of the subfolder in [cmake/externals](https://github.com/nimisha20/hifi/blob/master/cmake/externals)) when you run CMake to tell it not to get that dependency as an external project.
 
-\###OS Specific Build Guides
 
-- [BUILD_OSX.md](https://github.com/nimisha20/hifi/blob/master/BUILD_OSX.md) - additional instructions for OS X.
-- [BUILD_LINUX.md](https://github.com/nimisha20/hifi/blob/master/BUILD_LINUX.md) - additional instructions for Linux.
-- [BUILD_WIN.md](https://github.com/nimisha20/hifi/blob/master/BUILD_WIN.md) - additional instructions for Windows.
-- [BUILD_ANDROID.md](https://github.com/nimisha20/hifi/blob/master/BUILD_ANDROID.md) - additional instructions for Android
+#### CMake
 
-\###CMake Hifi uses CMake to generate build files and project files for your platform.
+Hifi uses CMake to generate build files and project files for your platform.
 
-\####Qt In order for CMake to find the Qt5 find modules, you will need to set a QT_CMAKE_PREFIX_PATH environment variable pointing to your Qt installation.
+##### Qt
+
+ In order for CMake to find the Qt5 find modules, you will need to set a QT_CMAKE_PREFIX_PATH environment variable pointing to your Qt installation.
 
 This can either be entered directly into your shell session before you build or in your shell profile (e.g.: ~/.bash_profile, ~/.bashrc, ~/.zshrc - this depends on your shell and environment).
 
-The path it needs to be set to will depend on where and how Qt5 was installed. e.g.
+The path it needs to be set to will depend on where and how Qt5 was installed. For example:
 
 ```
 export QT_CMAKE_PREFIX_PATH=/usr/local/qt/5.6.1/clang_64/lib/cmake/
@@ -57,7 +73,9 @@ export QT_CMAKE_PREFIX_PATH=/usr/local/opt/qt5/lib/cmake
 
 ```
 
-\####Generating build files Create a build directory in the root of your checkout and then run the CMake build from there. This will keep the rest of the directory clean.
+#### Generating Build Files 
+
+Create a build directory in the root of your checkout and then run the CMake build from there. This will keep the rest of the directory clean.
 
 ```
 mkdir build
@@ -68,7 +86,9 @@ cmake ..
 
 If cmake gives you the same error message repeatedly after the build fails (e.g. you had a typo in the QT_CMAKE_PREFIX_PATH that you fixed but the `.cmake` files still cannot be found), try removing `CMakeCache.txt`.
 
-\####Variables Any variables that need to be set for CMake to find dependencies can be set as ENV variables in your shell profile, or passed directly to CMake with a `-D` flag appended to the `cmake ..` command.
+#### Variables
+
+Any variables that need to be set for CMake to find dependencies can be set as ENV variables in your shell profile, or passed directly to CMake with a `-D` flag appended to the `cmake ..` command.
 
 For example, to pass the QT_CMAKE_PREFIX_PATH variable during build file generation:
 
@@ -77,7 +97,7 @@ cmake .. -DQT_CMAKE_PREFIX_PATH=/usr/local/qt/5.6.1/lib/cmake
 
 ```
 
-\####Finding Dependencies
+#### Finding Dependencies
 
 The following applies for dependencies we do not grab via CMake ExternalProject (OpenSSL is an example), or for dependencies you have opted not to grab as a CMake ExternalProject (via -DUSE_LOCAL_$NAME=0). The list of dependencies we grab by default as external projects can be found in [the CMake External Project Dependencies section](https://github.com/nimisha20/hifi/blob/master/BUILD.md#cmake-external-project-dependencies).
 
@@ -89,8 +109,8 @@ In the examples below the variable $NAME would be replaced by the name of the de
 - $NAME_ROOT_DIR - set this variable in your ENV
 - HIFI_LIB_DIR - set this variable in your ENV to your High Fidelity lib folder, should contain a folder '$name'
 
-\###Optional Components
+### Optional Components
 
-\####Devices
+#### Devices
 
 You can support external input/output devices such as Leap Motion, MIDI, and more by adding each individual SDK in the visible building path. Refer to the readme file available in each device folder in [interface/external/](https://github.com/nimisha20/hifi/blob/master/interface/external) for the detailed explanation of the requirements to use the device.

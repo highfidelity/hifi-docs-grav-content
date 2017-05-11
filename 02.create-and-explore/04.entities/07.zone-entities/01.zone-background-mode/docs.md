@@ -4,6 +4,8 @@ taxonomy:
     category: docs
 ---
 
+**TO BE EDITED**
+
 This tutorial assumes that you have an understanding of what [Zone entities](https://wiki.highfidelity.com/wiki/Zone_entities) are and how to edit their properties with either JavaScript or using the edit.js script.
 
 The Zone Background Mode can be set to:

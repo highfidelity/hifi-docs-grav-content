@@ -28,7 +28,7 @@ This menu item helps you control the audio output and input while you are in Hig
 
 ###VR/Desktop
 
-Selecting VR/Desktop will make switch between your HMD and desktop. If you wish to experience High Fidelity in desktop mode, you can click the VR button, and if you're in Desktop mode, you click the Desktop button to switch. 
+Selecting VR/Desktop will make you switch between your HMD and desktop. If you wish to experience High Fidelity in desktop mode, you can click the VR button, and if you're in Desktop mode, you click the Desktop button to switch. 
 
 
 
@@ -52,7 +52,7 @@ This particular menu item will help you take a snapshot in any domain. When you 
 
 ###Help
 
-You can click on this app to check the controls and learn a little more about each tablet app. If you are experiencing any technical issues or want to learn more about High Fidelity, you can check out our documentation through help. 
+You can click on this app to check the controls and learn a little more about some tablet apps. If you are experiencing any technical issues or want to learn more about High Fidelity, you can check out our documentation through help. 
 
 ![](\help.png)
 
@@ -70,13 +70,13 @@ GoTo helps you navigate to different domains and your home domain (or your sandb
 
 ###Market
 
-Market directs you to the marketplace where you can get anything from a new avatar and a chair, to building blocks and even a virtual pet. Currently, everything in the marketplace is free. You can learn how to build something for the marketplace here. 
+Market directs you to the marketplace, where you can get anything from a new avatar and a chair, to building blocks and even a virtual pet. Currently, everything in the marketplace is free. You can learn how to build and submit your creations to the marketplace [here](../../marketplace). 
 
 ![](\marketplace.png)
 
 ###Create
 
-[Entities](../../entities) are the building blocks of High Fidelity. The Create button lets you add, modify and delete entities in your domain. 
+[Entities](../../entities) are the building blocks of High Fidelity. The [Create button](../../entities/create-mode) lets you add, modify and delete entities in your domain. 
 
 
 
