@@ -1,8 +1,7 @@
 ---
-title: 'Write For Us!'
+title: Write For Us!
 taxonomy:
-category:
-		docs
+	category: docs
 ---
 
 We would love to have you contribute to our documentation! As High Fidelity has features that are constantly changing and growing as the product evolves, we need to ensure that our documentation reflects the latest information.
