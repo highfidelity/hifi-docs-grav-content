@@ -37,22 +37,18 @@ Each entity within your High Fidelity domain will contain a number of different 
 
 When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://wiki.highfidelity.com/wiki/Entity_Properties_API), which we’ll cover in depth in future modules.
 
-## Script Editor
+## Write and Execute Your Own Scripts
 
-While you may prefer to write the bulk of your scripts for High Fidelity in the editor of your choosing, there will be times where it’s handy to load in and test scripts using the built-in editor. By default, these menus aren’t shown, so you’ll need to enable more advanced menus in Interface.
+You can write your scripts in an external editor of your choice. 
 
-1. Under Settings, check the Advanced Menus and Developer Menus options.
-2. Under Edit, select Script Editor. You can also use the key combination Alt + S.
+With your script editor open, you can now view and modify scripts in your domain or attached to various entities. To start, we’ll do a basic ‘Hello, World’:
 
-With the Script Editor open, you can now view and modify scripts in your domain or attached to various entities. To start, we’ll do a basic ‘Hello, World’:
-
-1. Type print("Hello, World") into the Script Editor window.
-2. Click the last button to run your script. Before you can run the script, though, you’ll need to save it. Save your script on the desktop as testScript.js.
-3. Click run again to see your text print in the console window. Your script will continue running until you click the run button again to stop the process.
-
-[![Img script editor.png](https://wiki.highfidelity.com/images/thumb/d/d2/Img_script_editor.png/550px-Img_script_editor.png)](https://wiki.highfidelity.com/wiki/File:Img_script_editor.png)
-
-*From left to right, the menu buttons on the script editor are: new script, open script, save script, run script*
+1. Type print("Hello, World"); into your script editor's window.
+2. Save your script as testScript.js on your computer. 
+3. On your tablet, go to Menu > Settings and check both Advanced Menu and Developer Menu. 
+4. On your tablet, go to Menu > Edit > Open and Run Script. 
+5. Your tablet will now display your local system's directory. You can find your script file and click on **Open**.
+6. You will see your text printed in the console window. Your script will continue running until you stop it.
 
 We’ll now replicate our steps from earlier to create our cube through a script instead of adding it manually. Replace your `print(“Hello, World”)` code with the following example:
 
