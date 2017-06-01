@@ -1,7 +1,8 @@
 ---
-title: Run Scripts
+title: 'Run Scripts'
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 Scripts loaded via Interface are known as *Interface scripts*. Interface scripts; however, are not the only kind of scripts that can be used with High Fidelity. You can find more information about other types of scripts and how to use them in: [Scripts Overview](https://wiki.highfidelity.com/wiki/Scripts_Overview).
@@ -49,4 +50,4 @@ To get started writing your own scripts, first read [create content](https://wik
 
 For the scripts themselves, High Fidelity uses the JavaScript syntax and High Fidelity provides a robust [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
 
-To write scripts, you can use your favorite JavaScript editor. However, to make it easy to quickly edit and run scripts, Interface includes a simple script editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script, butterfly.js, to show you how to run and edit scripts using the script editor.
+To write scripts, you can use your favorite JavaScript editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script, butterfly.js, to show you how to run and edit scripts using the script editor.

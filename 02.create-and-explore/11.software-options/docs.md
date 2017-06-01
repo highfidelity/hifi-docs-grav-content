@@ -1,7 +1,8 @@
 ---
-title: Software Options
+title: 'Software Options'
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 You can create and explore in High Fidelity using external software for [scripting](https://wiki.highfidelity.com/wiki/Getting_Started_with_Scripting_in_High_Fidelity) and [3D Modeling](https://wiki.highfidelity.com/wiki/3D_models). We've compiled a list of software options you can use and you're free to use these or any other tools you prefer.

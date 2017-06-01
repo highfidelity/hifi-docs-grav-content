@@ -43,11 +43,9 @@ If you'd like to use an existing 3D model, you can find options for buildings in
 
 Follow the instructions in [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox) if you haven't already to set up your own domain that you can host content in. If you're planning on using your building in a single domain, you can host your building by:
 
-\1. Opening the Asset Browser and uploading your model to your domain
-
-\2. Placing your building by clicking 'Add to World'
-
-\3. Using the Edit tools to change the scale and location of your building, if necessary
+1. Opening the Asset Browser and uploading your model to your domain
+2. Placing your building by clicking 'Add to World'
+3. Using the Edit tools to change the scale and location of your building, if necessary
 
 ## Customizing your Space
 
