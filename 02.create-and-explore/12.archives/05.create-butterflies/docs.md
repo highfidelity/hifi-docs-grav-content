@@ -4,9 +4,9 @@ taxonomy:
     category: docs
 ---
 
-Included in Interface is a basic script editor. The script editor provides you with an interface for quickly editing and running scripts. Also, included with High Fidelity are example scripts. One example script, `butterflies.js` gives your avatar a kaleidoscope of butterflies to keep it company.
+Interface used to contain a script editor. This tutorial utilizes that script editor to create butterflies. You can write and run the same script mentioned here, in a script editor of your choice. All you need to do is go to Edit > Open and Run Script. Here, you can upload the script you wish to run. Also, included with High Fidelity are example scripts. One example script, `butterflies.js` gives your avatar a kaleidoscope of butterflies to keep it company.
 
-This tutorial uses the example script, `butterflies.js, to show how to run and edit scripts using the script editor. To get started, you'll first want to load and run the example script to make sure it works and to see what it does.
+> > > > > The information here is outdated when it comes to using Interface's script editor. The concept behind creating butterflies still applies. 
 
 ## Loading and Running butterflies.js
 
@@ -32,7 +32,6 @@ Included in Interface is a basic script editor. The script editor provides you w
 
 2. Select
 
-    
 
    Edit > Script Editor...
 
@@ -48,13 +47,12 @@ Included in Interface is a basic script editor. The script editor provides you w
 
 4. Select the
 
-    
 
    ```
    butterflies.js
    ```
 
-    
+​    
 
    script from the list.
 
