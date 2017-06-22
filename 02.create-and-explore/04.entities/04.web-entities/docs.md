@@ -14,11 +14,11 @@ This page will walk you through you can create a web entity.
 
 A web entity displays a web page on a plane. Go to **Create** and click the web icon.
 
-![](\create-button-open.png) 
+![](create-button-open.PNG) 
 
 A web entity is a flat plane and by default displays the High Fidelity home page.
 
-![](\web-entity.png)
+![](web-entity.PNG)
 
 ## Properties
 
@@ -37,9 +37,9 @@ To create a web entity that displays the High Fidelity YouTube channel, complete
 
    2. Select the web entity and then select the **Properties** tab.
 
-2. Scroll down until you see the Source URL option. Enter the High Fidelity YouTube channel URL:    https://www.youtube.com/user/HighFidelityio
+3. Scroll down until you see the Source URL option. Enter the High Fidelity YouTube channel URL:    https://www.youtube.com/user/HighFidelityio
 
-   ![](\source-url.png)
+   ![](source-url.PNG)
 
 
    You should see the the new web page load soon as you press enter.

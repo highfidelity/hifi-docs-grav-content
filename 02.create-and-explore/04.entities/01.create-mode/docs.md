@@ -11,7 +11,7 @@ taxonomy:
 
 To build anything in High Fidelity, you'll need to acquainted with the Create mode. We'll walk you through the different things you can do with the create button. 
 
-![](\create-mode.PNG)
+![](create-mode.PNG)
 
 
 
@@ -31,7 +31,7 @@ In the toolbar or tablet, you should see a button labeled **create**.
 
 To enable create mode, click the **create** button. You can use the mouse or your controller to add, edit and delete an entity. 
 
-![](\create-button-open.png)
+![](create-button-open.PNG)
 
 
 
@@ -50,7 +50,7 @@ You can exit the Create Mode by closing the window on the tablet.
 
 When you clock on the Create button, a window opens showing the different types of entities you can use. You can add an entity by clicking on the button for that entity. For instance, if you want to add a cube entity, click on cube. 
 
-![](\create-add-cube.png)
+![](create-add-cube.PNG)
 
 
 
@@ -75,7 +75,7 @@ You can edit an entity's position, rotation, and scale using your mouse or track
 
 To edit an entity using the mouse or trackpad, you can select the entity or find it in the List tab in Create mode. 
 
-![](\select-entity.png)
+![](select-entity.PNG)
 
 >>>>>By default, Light entities and Zone entities cannot be selected for editing. To be able to select Light entities, go to **Settings > Advanced Menus**, and then select **Edit Menu > Allow Selecting of Lights**. To select Zone entities, you must click on the Zone entity in the List tab.
 
@@ -145,7 +145,7 @@ The *create* panel has three tabs: *Create*, *List*, and *Properties* and *Grid*
 
 To list all of the entities on the domain, in the *create* panel, click the *List* tab and then click *Refresh* on the top-left corner of the panel. You can filter by entity type and by distance from the current location.
 
-![](\select-entity.png)
+![](select-entity.PNG)
 
 
 ### Edit Entity Properties
@@ -157,18 +157,18 @@ To edit an entity's properties:
 1. Select the entity. 
 2. Go to **Create > Properties** on your tablet. 
 
-![](\entity-properties.png)
+![](entity-properties.PNG)
 
 You'll see the properties listed for the selected entity. You can make changes to any of the listed properties if the entity is not locked. If you can't change a property, check the List tab to determine if the entity has been locked.
 
-![](\lock-entity.png)
+![](lock-entity.PNG)
 
 ### Expose a Grid to Assist in Layout
 
 The *Grid* panel is used to expose a grid to assist you with the layout. Using this panel, you can toggle grid visibility, toggle snapping to the grid, and set the grid position, size, and color.
 
 
-![](\grid-panel.png)
+![](grid-panel.PNG)
 
 
 

@@ -14,11 +14,11 @@ The Text entity is a flat panel which has the ability to display text like a whi
 
 Go to **Create** and click on the Text icon. 
 
-![](\create-button-open.png)
+![](create-button-open.PNG)
 
 This will create a Text entity displaying the default text, "Some Text".
 
-![](\some-text.png)
+![](some-text.PNG)
 
 > > > > > If you are unable to see the text, you may need to move to a position where you can see it, or use the edit tools to rotate the plane to a position where you can see it.
 
@@ -57,7 +57,7 @@ To change and resize the text displayed, you need to edit the entity properties.
 
 If you use the up and down carats to change the value, the value will change by 0.005 per click. If you enter a value, you will see the text change as soon as you press enter. The Line height default value is 0.06. For this example, the Line height was set to 0.1550.
 
-![](\welcome-text.png)
+![](welcome-text.PNG)
 
 If the text is too big to fit, you can increase the size of the entity.
 
@@ -74,7 +74,7 @@ To change the background and text colors, in the **Properties** tab:
       Background color - Green (Red: 0, Green:255, Blue: 0).
 
 
-  ![](\welcome-green.png)
+  ![](welcome-green.PNG)
 
 If you use the carats to change the value, as you click to increase or decrease the value you should see the text or background change with each click. If you enter in the values directly, you will see the text or background change as soon as you press enter or click on another active field.
 
