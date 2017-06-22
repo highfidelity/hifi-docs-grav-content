@@ -1,5 +1,5 @@
 ---
-title: Create Avatars with Fuse
+title: PBR Materials
 taxonomy:
     category: docs
 ---

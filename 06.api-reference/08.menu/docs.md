@@ -7,13 +7,13 @@ taxonomy:
 
 
 
-# addMenu()
+## addMenu()
 
-## Function
+### Function
 
 `addMenu(name)` // Adds a menu item to a menu, described by the properties of the object.
 
-## Arguments
+### Arguments
 
 **name : string**: An string for the name of the menu.
 
@@ -21,11 +21,11 @@ Nested menu's can be described using the greater than symbol.
 
 `"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
 
-## Returns
+### Returns
 
 This function does not return a value.
 
-## Examples
+### Examples
 
 ```
 Menu.addMenu("Test Menu");
@@ -34,13 +34,13 @@ Menu.addMenu("Test Menu > Test Sub Menu");
 
 
 
-# addMenuItem()
+## addMenuItem()
 
-## Function
+### Function
 
 `addMenuItem(object)` // Adds a menu item to a menu, described by the properties of the object.
 
-## Arguments
+### Arguments
 
 **Object**: An object describing the menuItem.
 
@@ -62,11 +62,11 @@ Menu.addMenu("Test Menu > Test Sub Menu");
 
 Not all Items are required.
 
-## Returns
+### Returns
 
 This function does not return a value.
 
-## Examples
+### Examples
 
 ```
 Menu.addMenuItem({
@@ -87,13 +87,13 @@ Menu.addMenuItem({
 
 
 
-# addSeparator()
+## addSeparator()
 
-## Function
+### Function
 
 `addSeperator(menuDescriptor,menuItemName)` // Adds a seperator the the given menu, above menuItem with menuItemName.
 
-## Arguments
+### Arguments
 
 **menuDescriptor : string**: An string describing the menu you want to add the seperator to.
 
@@ -103,11 +103,11 @@ Nested menu's can be described using the greater than symbol.
 
 `"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
 
-## Returns
+### Returns
 
 This function does not return a value.
 
-## Examples
+### Examples
 
 ```
 Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly used in selectAudioDevice.js to add a seperator to the Audio > Devices menu.
@@ -115,21 +115,21 @@ Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly
 
 
 
-# menuExists()
+## menuExists()
 
-## Function
+### Function
 
 `menuExists(name) // Return value `is used to check if a menu with called 'name' exists.
 
-## Arguments
+### Arguments
 
 **name: String**: The name of the menu you wish to check for.
 
-## Returns
+### Returns
 
 **bool**: Returns `true` if there is a menu by that name. (Otherwise `false`)
 
-## Examples
+### Examples
 
 `if (Menu.menuExists("Developer")){`
 
@@ -140,23 +140,22 @@ Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly
 
 `}`
 
-
-
-## Function
+## menuItemExists()
+### Function
 
 `menuItemExists(menuName,menuItemName) // Return value `is used to check if a menuItem with called 'nameItemName' exists in the given menu.
 
-## Arguments
+### Arguments
 
 **menuName: String**: The name of the menu in which you wish to check for the menuItem.
 
 **menuItemName: String**: The name of the menuItem you wish to check for.
 
-## Returns
+### Returns
 
 **bool**: Returns `true` if there is a menuItem by that name, in the specified menu. (Otherwise `false`)
 
-## Examples
+### Examples
 
 ```
 if (Menu.menuItemExists("Developer","Stats")){
@@ -166,13 +165,13 @@ if (Menu.menuItemExists("Developer","Stats")){
 
 
 
-# removeMenu()
+## removeMenu()
 
-## Function
+### Function
 
 `removeMenu(name)` // Removes a menu.
 
-## Arguments
+### Arguments
 
 **name : string**: An string for the name of the menu.
 
@@ -180,11 +179,11 @@ Nested menus can be described using the greater than symbol.
 
 `"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
 
-## Returns
+### Returns
 
 This function does not return a value.
 
-## Examples
+### Examples
 
 ```
 Menu.removeMenu("Test Menu > Test Sub Menu");
@@ -193,13 +192,13 @@ Menu.removeMenu("Test Menu");
 
 
 
-# removeSeparator()
+## removeSeparator()
 
-## Function
+### Function
 
 `removeSeperator(menuDescriptor,menuItemName)` // Removes a seperator from the given menu, above menuItem with menuItemName.
 
-## Arguments
+### Arguments
 
 **menuDescriptor : string**: An string describing the menu you want to add the seperator to.
 
@@ -209,13 +208,52 @@ Nested menu's can be described using the greater than symbol.
 
 `"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
 
-## Returns
+### Returns
 
 This function does not return a value.
 
-## Examples
+### Examples
 
 ```
 Menu.removeSeparator("Audio > Devices","Output Audio Device");  // This would remove the seperator currently set by selectAudioDevice.js in the Audio > Devices menu.
 ```
 
+## Menu.menuItemEvent
+
+### Description
+
+Event listener for menu items. Use the .connect(*handler*) method to wire up a handler.
+
+### Function or Event
+
+`Menu.menuItemEvent.connect(menuItemEventHandler);`
+
+### Arguments
+
+**menuItemEventHandler(menuItemText):function**: A function that receives the text of the menu item.
+
+### Returns
+
+null
+
+### Examples
+
+*Stand-alone (or close as possible) examples showcasing the function*
+
+```
+Menu.addMenu("Demo Menu");
+
+Menu.addMenuItem({
+    menuName: "Demo Menu",
+    menuItemName: "Demo Item"
+});
+
+function menuItemEventHandler(menuItemText)
+{
+    if(menuItemText == "Demo Item") {
+        print("Nice. You clicked the demo item.");
+    }
+}
+
+Menu.menuItemEvent.connect(menuItemEventHandler);
+```

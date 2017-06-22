@@ -1,5 +1,5 @@
 ---
-title: 'Create Your Own Non-Player Character (NPC)'
+title: 'Limitless: Create Your Own Non-Player Character (NPC)'
 taxonomy:
 	category : docs
 ---
@@ -253,5 +253,4 @@ The example below shows how the received transcription from Limitless can be use
         return responseString.substring(start, end);
     }
 })
-
 ```

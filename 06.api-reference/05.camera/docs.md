@@ -65,7 +65,7 @@ If the camera is in **Entity Mode**, you can set the camera's position and orien
 
 ## Camera Events
 
-# modeUpdated()
+### modeUpdated()
 
 In Interface the camera view can be set to a number of different modes by selecting **View** and then the mode you want to use: **First Person**, **Third Person**, **Mirror**, **Independent Mode** or **Enity Mode**. The camera mode can also be changed via script using [setModeString()](https://wiki.highfidelity.com/wiki/SetModeString()).
 
@@ -100,7 +100,7 @@ Camera mode has changed to: third person
 
 ## Camera Methods
 
-# Camera.lookAt()
+### Camera.lookAt()
 
 In Interface, the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement. In "independent" mode the camera's position and rotation don't change when using the default avatar controls but can be set via scripting to any position or rotation of your choosing.
 
@@ -141,7 +141,7 @@ Controller.mousePressEvent.connect(mousePressEvent);
 
 
 
-# computePickRay()
+### computePickRay()
 
 Ray casting is a technique used to find the location of objects in a 3D world. Ray casting finds objects by calculating a mathematical ray from a specified origin and in a specified direction and then determining which object or objects the ray has hit. Ray casting can be used to find visible entities in the domain. Both [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection()) and [findRayIntersectionBlocking()](https://wiki.highfidelity.com/wiki/FindRayIntersectionBlocking()) take as input a ray of type [PickRay](https://github.com/highfidelity/hifi/blob/d14820d3ef4328c73e0a9ca271b53e769c87aedb/libraries/shared/src/RegisteredMetaTypes.h).
 
@@ -189,7 +189,7 @@ You clicked on an entity of type: PolyVox
 
 
 
-# getCameraEntity()
+### getCameraEntity()
 
 If the camera is in **Entity Mode**, the camera uses the position and orientation values of the entity specified in the `Camera.cameraEntity` property.
 
@@ -236,7 +236,7 @@ CameraEntity: {c5272962-571e-4897-bfd6-a6e0fcfccf1b}
 
 
 
-# getModeString()
+### getModeString()
 
 In Interface the camera view can be set to a number of different modes by selecting **View** and then the mode you want to use: **First Person**, **Third Person**, **Mirror**, **Independent Mode** or **Enity Mode**. These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement. For example, in **First Person** mode the camera is positioned such that you have the same view as the avatar and the camera moves and rotates with the avatar, while in **Independent Mode** the camera's position and rotation don't change when using the default avatar controls but can be set via scripting to any position or rotation of your choosing.
 
@@ -272,7 +272,7 @@ Camera mode: first person
 
 
 
-# getOrientation()
+### getOrientation()
 
 `getOrientation` gets the current orientation of the camera.
 
@@ -306,7 +306,7 @@ You should see output similar to the following:
 
 
 
-# getPosition()
+### getPosition()
 
 `getPosition()` gets the current position of the camera.
 
@@ -340,7 +340,7 @@ You should see output similar to the following:
 
 
 
-# keepLookingAt()
+### keepLookingAt()
 
 In Interface, the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement. In "independent" mode the camera's position and rotation don't change when using the default avatar controls but can be set via scripting to any position or rotation of your choosing.
 
@@ -372,7 +372,7 @@ Camera.keepLookingAt(intersection.intersection);
 
 
 
-# setCameraEntity()
+### setCameraEntity()
 
 If the camera is in **Entity Mode**, you can set the camera's position and orientation to that of a specified entity by setting the `Camera.cameraEntity` property to an entity ID. For example, you could jump between particular viewpoints in a virtual world by placing an entity at each viewpoint, and then using a script to set the `cameraEntity` property to the ID of the entity at each viewpoint.
 
@@ -420,7 +420,7 @@ CameraEntity: {c5272962-571e-4897-bfd6-a6e0fcfccf1b}
 
 
 
-# setModeString()
+### setModeString()
 
 In Interface the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the the default controls for camera movement.
 
@@ -451,7 +451,7 @@ In third person mode you should have a view from directly behind your avatar, as
 
 
 
-# setOrientation()
+### setOrientation()
 
 In Interface, the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement. In *independent" mode the camera's position and rotation don't change when using the default avatar controls but can be set via scripting to any position or rotation of your choosing.*
 
@@ -483,7 +483,7 @@ Camera.setOrientation({x:0, y:0, z:0, w:1});
 
 
 
-# setPosition()
+### setPosition()
 
 In Interface, the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement. In "independent" mode the camera's position and rotation don't change when using the default avatar controls but can be set via scripting to any position or rotation of your choosing.
 
@@ -513,7 +513,7 @@ Camera.setPosition({x:0, y:0, z:0});
 
 
 
-# stopLooking()
+### stopLooking()
 
 If you used [keepLookingAt()](https://wiki.highfidelity.com/wiki/KeepLookingAt()) to rotate the camera so that it continues to point at a specified location even as the camera's position changes, to stop camera rotation, use **stopLooking()**.
 
