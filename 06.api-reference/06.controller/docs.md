@@ -139,7 +139,7 @@ The following table provides a complete reference for all of the actions an enti
 
 ## Events
 
-# hardwareChanged()
+## hardwareChanged()
 
 
 
@@ -149,15 +149,15 @@ A `hardwareChanged()` event is sent when a device (Joystick, GamePad) is registe
 
 
 
-## Event
+### Event
 
 `hardwareChanged()`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when a device (Joystick, GamePad) is registered or unregistered by a plugin.
 
@@ -174,23 +174,20 @@ Note: Be sure to have the device enabled as an input device in Interface (**Avat
 
 
 
-# eyPressEvent()
+## keyPressEvent()
 
 
 A `keyPressEvent()` is sent when a key is pressed.
 
-## Contents
-
-
-## Event
+### Event
 
 `keyPressEvent(event)`
 
-## Arguments
+### Arguments
 
 - **event:KeyEvent**: A JavaScript keyboard event
 
-## Examples
+### Examples
 
 This example prints the key pressed to the debug log.
 
@@ -204,22 +201,22 @@ Controller.keyPressEvent.connect(function(event){
 
 
 
-# keyReleaseEvent()
+## keyReleaseEvent()
 
 
 
 A `keyReleaseEvent()` is sent when a key has been released after it has been pressed.
 
 
-## Event
+### Event
 
 `keyReleaseEvent(event)`
 
-## Arguments
+### Arguments
 
 - **event: KeyEvent**: A JavaScript keyboard event
 
-## Examples
+### Examples
 
 This example prints the key released to the debug log.
 
@@ -231,22 +228,22 @@ Controller.keyPressEvent.connect(function(event){
 
 
 
-# mouseDoublePressEvent()
+## mouseDoublePressEvent()
 
 
 A `mouseDoublePressEvent()` is sent when the mouse button has been double-clicked.
 
 
 
-## Event
+### Event
 
 `mouseDoublePressEvent(event)`
 
-## Arguments
+### Arguments
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when the mouse has been double-clicked.
 
@@ -258,22 +255,22 @@ Controller.mouseDoublePressEvent.connect(function(event){
 
 
 
-# mouseMoveEvent()
+## mouseMoveEvent()
 
 
 
 The `mouseMoveEvent()` is sent when the mouse has been moved.
 
 
-## Event
+### Event
 
 `mouseMoveEvent(event)`
 
-## Arguments
+### Arguments
 
 - **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when the mouse has been moved.
 
@@ -285,22 +282,22 @@ Controller.mouseMoveEvent.connect(function(event){
 
 
 
-# mousePressEvent()
+## mousePressEvent()
 
 
 The `mousePressEvent()` is sent when the mouse button has been pressed.
 
 
 
-## Event
+### Event
 
 `mousePressEvent(event)`
 
-## Arguments
+### Arguments
 
 - **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when the mouse button has been pressed. To test this script, open the Script Editor and run the following code:
 
@@ -325,7 +322,7 @@ To run the sample as an entity script, wrap the content in an anonymous JavaScri
 
 
 
-# mouseReleaseEvent()
+## mouseReleaseEvent()
 
 
 
@@ -333,15 +330,15 @@ The `mouseReleaseEvent()` is sent when the mouse button has been released.
 
 
 
-## Event
+### Event
 
 `mouseReleaseEvent(event)`
 
-## Arguments
+### Arguments
 
 - **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when the mouse button has been released.
 
@@ -355,25 +352,21 @@ Controller.mouseReleaseEvent.connect(function(event){
 
 
 
-# touchBeginEvent()
+## touchBeginEvent()
 
 
 
 The `touchBeginEvent()` is sent when a touch event begins.
 
-## Contents
-
-
-
-## Event
+### Event
 
 `touchBeginEvent(event)`
 
-## Arguments
+### Arguments
 
 **event: TouchEvent**: A JavaScript touch event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when a touch event begins.
 
@@ -385,7 +378,7 @@ Controller.touchBeginEvent.connect(function (event) {
 
 
 
-# touchEndEvent()
+## touchEndEvent()
 
 
 
@@ -393,15 +386,15 @@ The `touchEndEvent()` is sent when a touch event has ended.
 
 
 
-## Event
+### Event
 
 `touchEndEvent(event)`
 
-## Arguments
+### Arguments
 
 - **event: TouchEvent**: A JavaScript touch event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when a touch event has ended.
 
@@ -413,7 +406,7 @@ Controller.touchEndEvent.connect(function(event){
 
 
 
-# touchUpdateEvent()
+## touchUpdateEvent()
 
 
 
@@ -421,15 +414,15 @@ The `touchUpdateEvent()` is sent when a touch event has been updated.
 
 
 
-## Event
+### Event
 
 `touchUpdateEvent(event)`
 
-## Arguments
+### Arguments
 
 - **event: TouchEvent**: A JavaScript touch event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when a touch event has been updated.
 
@@ -441,20 +434,20 @@ Controller.touchUpdateEvent.connect(function(event){
 
 
 
-# wheelEvent()
+## wheelEvent()
 
 
 The `wheelEvent()` is sent when a wheel event has occurred.
 
-## Event
+### Event
 
 `wheelEvent(event)`
 
-## Arguments
+### Arguments
 
 **event: WheelEvent**: A JavaScript wheel event
 
-## Examples
+### Examples
 
 This example prints a line to the debug log when a wheel event has occurred.
 
@@ -470,7 +463,7 @@ Controller.wheelEvent.connect(function(event){
 
 ## Methods
 
-# disableMapping()
+## disableMapping()
 
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The individual rules in a mapping are known as *routes* and they define which input goes to which output.
@@ -478,15 +471,15 @@ A *mapping* is the set of rules for taking changes in inputs from supported cont
 `disableMapping()` disables the specified mapping so that the routes it contains are no longer used by the application.
 
 
-## Function
+### Function
 
 `disableMapping(mappingName)`
 
-## Arguments
+### Arguments
 
 - **mappingName: string**: The name of the mapping. It can be any valid string.
 
-## Examples
+### Examples
 
 This example creates a new mapping that specifies a route from `Controller.Standard.RT` input to custom output. It then enables that mapping so that the new route is used by the application. When the script ends, the mapping is disabled and the application will again use the default mapping for `Controller.Standard.RT`.
 
@@ -513,7 +506,7 @@ var mapping = Controller.newMapping(MAPPING_NAME);
 
 
 
-# enableMapping()
+## enableMapping()
 
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The individual rules in a mapping are known as *routes* and they define which input goes to which output.
@@ -522,15 +515,15 @@ A *mapping* is the set of rules for taking changes in inputs from supported cont
 
 
 
-## Function
+### Function
 
 `enableMapping(mappingName)`
 
-## Arguments
+### Arguments
 
 - **mappingName: string**: The name of the mapping
 
-## Examples
+### Examples
 
 This example creates a new mapping that specifies a route from `Controller.Standard.RT` input to custom output. It then enables that mapping so that the new route is used by the application. When the script ends, the mapping is disabled and the application will again use the default mapping for `Controller.Standard.RT`.
 
@@ -557,26 +550,26 @@ var mapping = Controller.newMapping(MAPPING_NAME);
 
 
 
-# getPoseValue()
+## getPoseValue()
 
 
 
 `getPoseValue()` is used to get the value of a specified endpoint pose. This can be a [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint object or it can be an individual hardware input pose.
 
 
-## Function
+### Function
 
 `getPoseValue(input) // Returns a pose object`
 
-## Arguments
+### Arguments
 
 - **input: object**: A [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint pose, for example `LeftHand` or `RightHand` or an individual hardware input pose
 
-## Returns
+### Returns
 
 - **pose: object**: A JSON object consisting of a translation (vec3), rotation (Quat), velocity (vec3), and angular velocity(vec3)
 
-## Examples
+### Examples
 
 This example gets the pose value for the right hand (`Controller.Standard.RightHand`) and then prints the value (converted to a string) to the debug log.
 
@@ -594,25 +587,25 @@ With this example, you should see output similar to the following:
 
 
 
-# getReticlePosition()
+## getReticlePosition()
 
 
 `getReticlePosition()` is used to get the current position of the cursor on the screen.
 
 
-## Function
+### Function
 
 `getReticlePosition() // Returns a vec2`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 - **position:Vec2**: The x and y positions of the cursor on the screen
 
-## Examples
+### Examples
 
 This example gets the current position of the cursor and then prints it to the debug log.
 
@@ -623,26 +616,26 @@ print ("x: " + position.x + " y: " + position.y);
 
 
 
-# getValue()
+## getValue()
 
 
 
 `getValue()` gets the current value of the specified endpoint object. This can be a [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint object or it can be individual hardware endpoint object.
 
 
-## Function
+### Function
 
 `getValue(object) // Return float`
 
-## Arguments
+### Arguments
 
 - **object:object**: The [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint object whose value is to be retrieved
 
-## Returns
+### Returns
 
 - **value:float**: The current value of the specified endpoint object
 
-## Examples
+### Examples
 
 This example prints the current value of the left analog stick Y axis (`Controller.Standard.LY`) to the debug log.
 
@@ -652,7 +645,7 @@ This example prints the current value of the left analog stick Y axis (`Controll
 
 
 
-# Haptics
+## Haptics
 
 
 
@@ -660,7 +653,7 @@ If a controller supports haptic feedback, you can activate it using the followin
 
 If you trigger a pulse while another one is already in progress, the strength and duration of the one that would finish last are honored.
 
-## Custom Pulse
+### Custom Pulse
 
 ```
 Controller.triggerHapticPulse(strength, duration, hand)
@@ -669,7 +662,7 @@ Controller.triggerHapticPulse(strength, duration, hand)
 
 The three parameters here are: - strength: a float between 0 and 1 - duration: a number of milliseconds - hand: 0 for left, 1 for right, 2 for both
 
-## Short Pulse
+### Short Pulse
 
 This method automatically trigger pulses of 250 ms
 
@@ -680,7 +673,7 @@ Controller.triggerShortHapticPulse(strength, hand)
 
 The two parameters here are: - strength: a float between 0 and 1 - hand: 0 for left, 1 for right, 2 for both
 
-## Specific Devices
+### Specific Devices
 
 The methods above will trigger pulses on all devices that can make them. If you'd like to specify the precise devices that will receive pulses, use the following methods:
 
@@ -692,7 +685,7 @@ Controller.triggerShortHapticPulseOnDevice(deviceID, strength, hand )
 
 
 
-# MappingObject.enable()
+## MappingObject.enable()
 
 
 
@@ -702,15 +695,15 @@ The [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject)'s `enable(
 
 
 
-## Function
+### Function
 
 `mapping.enable() // enable the mapping` `mapping.enable(false) // disable the mapping`
 
-## Arguments
+### Arguments
 
 - **false: bool**: `false` is used to disable the mapping.
 
-## Examples
+### Examples
 
 This example creates a simple JSON formatted mapping. A new mapping object is then created by passing the JSON object as a string to `parseMapping`. The mapping object's `enable()` method is then be used to enable and disable the mapping.
 
@@ -735,7 +728,7 @@ mapping.enable(false);
 
 
 
-# MappingObject.from()
+## MappingObject.from()
 
 
 
@@ -747,19 +740,19 @@ Note: If you create a direct route from a specific hardware input (for example, 
 
 
 
-## Function
+### Function
 
 `MappingObject.from(input) // Returns a RouteObject`
 
-## Arguments
+### Arguments
 
 - - input: object**: A [Standard](https://wiki.highfidelity.com/wiki/Standard) controller endpoint object or an individual hardware input
 
-## Returns
+### Returns
 
 - **object:RouteObject**: A JSON object that defines the route
 
-## Examples
+### Examples
 
 This example creates a route from the standard controller's right trigger (`Controller.Standard.RT`) to a custom function that prints the input value to the debug log.
 
@@ -785,7 +778,7 @@ Right trigger value: 0.992342344
 
 
 
-# newMapping()
+## newMapping()
 
 
 
@@ -795,19 +788,19 @@ A *mapping* is the set of rules for taking changes in inputs from supported cont
 
 
 
-## Function
+### Function
 
 `newMapping(mappingName) // Returns a MappingObject`
 
-## Arguments
+### Arguments
 
 - **mappingName:string**: The mapping object name. It can be any valid string; however, it should be a unique name as it is used to access the mapping.
 
-## Returns
+### Returns
 
 - **object: MappingObject**: A JavaScript object of the new mapping
 
-## Examples
+### Examples
 
 This example creates a new [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject) with the name "New_Mapping."
 
@@ -822,7 +815,7 @@ var mapping = Controller.newMapping("New_Mapping");
 
 
 
-# parseMapping()
+## parseMapping()
 
 
 
@@ -830,19 +823,19 @@ A *mapping* is the set of rules for taking changes in inputs from supported cont
 
 `parseMapping()` takes a JSON mapping object converted to string format and creates a new [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject).
 
-## Function
+### Function
 
 `parseMapping(mappingString) // Return a MappingObject`
 
-## Arguments
+### Arguments
 
 - **mappingString:string**: A JSON mapping in string format
 
-## Returns
+### Returns
 
 - **object: MappingObject**: A new mapping object
 
-## Examples
+### Examples
 
 This example creates a simple JSON formatted mapping. A new mapping object is then created by passing the JSON object as a string to `parseMapping()`. The mapping object's`enable()` method is then be used to enable and disable the mapping.
 
@@ -868,29 +861,29 @@ mapping.enable(false);
 
 **Note**: You can also enable and disable the mapping by name using `Controller.enableMapping()` and `Controller.disableMapping()`.
 
-# RouteObject.clamp()
+## RouteObject.clamp()
 
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
 The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `clamp` method is used to specify that the input value must be within a specified range for output to be sent. If the input value falls outside of the specified range, output is not sent.
 
-## Function
+### Function
 
 `clamp(min, max) // Returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **min:float**: The minimum value for which output will be sent
 
 
 - **max:float**: The maximum value for which output will be sent
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 In this example, two routes are created. The first route uses the `clamp()` filter and goes from the standard controller's right trigger (`Controller.Standard.RT`) to a custom function that prints the right trigger value. The second route does not use the `clamp()`filter and goes from the standard controller's left trigger (`Controller.Standard.LT`) to a custom function that prints the left trigger value.
 
@@ -937,7 +930,7 @@ As you can see, without the `clamp()` filter, values range from 0 to 1.
 
 
 
-# RouteObject.constrainToInteger()
+## RouteObject.constrainToInteger()
 
 
 
@@ -947,19 +940,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `constrainTo
 
 
 
-## Function
+### Function
 
 `constrainToInteger() // Returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 Constraining a value to an integer allows you to use analog input as if it were a toggle (or in the case of a bidirectional axis, a three-state switch). Here is an example that creates a route using the `constrainToInteger()` filter. This route goes from the right analog stick x axis (`Controller.Standard.RX`) to a custom function that prints the value to the debug log.
 
@@ -1003,7 +996,7 @@ Right analog stick x axis value: -0.692342344
 
 As you can see, when `constrainToInteger()` is not used, the function gets called with each and every value change of the right analog stick x axis.
 
-# RouteObject.constrainToPositiveInteger()
+## RouteObject.constrainToPositiveInteger()
 
 
 
@@ -1012,19 +1005,19 @@ The individual rules in a mapping are known as *routes* and they define which in
 The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `constrainToPositiveInteger()` method rounds the input value to 0 or 1.
 
 
-## Function
+### Function
 
 `constrainToPositiveInteger() // Returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 Constraining a value to an integer allows you to use analog input as if it were a toggle. Here is an example that creates a route using the `constrainToPositiveInteger()` filter. This route goes from the right analog stick x axis (`Controller.Standard.RX`) to a custom function that prints the value to the debug log.
 
@@ -1069,7 +1062,7 @@ As you can see, when `constrainToPositiveInteger()` is not used, the function ge
 
 
 
-# RouteObject.deadZone()
+## RouteObject.deadZone()
 
 
 
@@ -1081,19 +1074,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `deadZone` m
 
 
 
-## Function
+### Function
 
 or Event `deadZone(min) // Returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **min:float**: The value output will begin to be sent
 
-## Returns
+### Returns
 
 **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 In this example, two routes are created. The first route uses the `deadZone` filter and goes from the standard controller's right trigger (`Controller.Standard.RT`) to a custom function that prints the right trigger value. The second route does not use the `deadZone`filter and goes from the standard controller's left trigger (`Controller.Standard.LT`) to a custom function that prints the left trigger value.
 
@@ -1140,7 +1133,7 @@ As you can see, without the `deadZone` filter, values range from 0 to 1.
 
 
 
-# RouteObject.debug()
+## RouteObject.debug()
 
 
 
@@ -1150,19 +1143,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `debug()` me
 
 
 
-## Function
+### Function
 
 `debug() // returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example creates a route with debug messages enabled.
 
@@ -1184,7 +1177,7 @@ With debug enabled, you should see output similar to the following in **Develope
 
 
 
-# RouteObject.hysteresis()
+## RouteObject.hysteresis()
 
 
 
@@ -1194,22 +1187,21 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `hysteresis(
 
 
 
-## Function or Event
-
+### Function or Event
 `hysteresis(min, max) // Return this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **min:float**: The value at which to stop sending output
 
 
 - **max:float**: The value at which to start sending output
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example creates two routes from the standard controller's right trigger (`Controller.Standard.RT`) to custom functions that print the right trigger value to the debug line. The first route uses the [peek()](https://wiki.highfidelity.com/wiki/RouteObject.peek()) filter to look at the value without registering that the value was looked at. The second route uses the `hysteresis()` filter. This route looks at the input value and prints the rounded input value to the debug log once when the value goes above 0.7 and once again when it falls below 0.5.
 
@@ -1244,7 +1236,7 @@ As you can see, the peeked at values range anywhere from 0 to 1 and are printed 
 
 
 
-# RouteObject.invert()
+## RouteObject.invert()
 
 
 
@@ -1254,19 +1246,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `invert()` m
 
 
 
-## Function
+### Function
 
 `invert() // Return this.RouteObject`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example creates a route from the standard controller's right analog stick y axis (`Controller.Standard.RY`) to a custom function that prints the input value.
 
@@ -1316,7 +1308,7 @@ As you can see, when you push the right analog stick y axis forward without the 
 
 
 
-# RouteObject.peek()
+## RouteObject.peek()
 
 
 
@@ -1326,19 +1318,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `peek()` met
 
 
 
-## Function
+### Function
 
 `peek() // Return this.RouteObject`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Returns
+### Returns
 
 - - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example creates two routes. The first uses `peek()` and `constrainToInteger()` to look at the value of the standard controller's left trigger (`Controller.Standard.LT`) to determine if it is being pressed or not without marking the left trigger as read. The second route reads the value of the left trigger and prints it to the debug line.
 
@@ -1359,7 +1351,7 @@ mapping.from(Controller.Standard.LT).to(function(value) {
 
 
 
-# RouteObject.pulse()
+## RouteObject.pulse()
 
 
 
@@ -1369,19 +1361,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `pulse()` me
 
 
 
-## Function or Event
+### Function or Event
 
 `pulse(interval) // Return this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **interval: float**: The length of the interval in seconds
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example creates a mapping route where the value of the standard controller's left trigger (`Controller.Standard.LT`) is printed to the debug line once every second.
 
@@ -1394,8 +1386,7 @@ mapping.from(Controller.Standard.LT).pulse(1.0).to(function(value){
 
 
 
-# RouteObject.scale()
-
+##RouteObject.scale()
 
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
@@ -1404,19 +1395,19 @@ The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `scale()` me
 
 
 
-## Function or Event
+### Function or Event
 
 `scale(multiplier) // Returns this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **multiplier: float**: The amount to multiply the input value by
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 This example adds a route from the standard controller's right trigger (`Controller.Standard.RT`) to a custom function that prints the scaled value of the right trigger.
 
@@ -1442,7 +1433,7 @@ Right trigger value: 9.3957293
 
 As you can see, the value has been scaled by 10, and trigger values range from 0 to 10.
 
-# RouteObject.to()
+## RouteObject.to()
 
 
 
@@ -1451,15 +1442,15 @@ The individual rules in a mapping are known as *routes* and they define which in
 The [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `to()` method is used to specify the endpoint of a route.
 
 
-## Function
+### Function
 
 `to(object)`
 
-## Arguments
+### Arguments
 
 - **object:object**: The endpoint of the route. The endpoint can be a standard output [Action](https://wiki.highfidelity.com/wiki/Actions) or a custom function.
 
-## Examples
+### Examples
 
 This example uses the [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject)'s `from()` method and the resulting [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `to()` method to specify a route from the standard controller's right trigger (`Controller.Standard.RT`) to a custom function that prints the input value to the debug log.
 
@@ -1472,7 +1463,7 @@ This example uses the [MappingObject](https://wiki.highfidelity.com/wiki/Mapping
 
 
 
-# RouteObject.when()
+## RouteObject.when()
 
 
 
@@ -1484,19 +1475,19 @@ The conditional specified by `when()` is evaluated before the specified input va
 
 
 
-## Function
+### Function
 
 `when(condition) // Return this.RouteObject`
 
-## Arguments
+### Arguments
 
 - **condition:bool**: If `true` the source input is read and route is used. If `false` the source input is not read and the route is not used.
 
-## Returns
+### Returns
 
 - **object:RouteObject**: Returns *this*.RouteObject
 
-## Examples
+### Examples
 
 If the user is using an HMD (such as the Oculus Rift) in addition to a GamePad, to provide greater user comfort you may want to provide different controls than when using a GamePad alone. This example creates two routes for the standard controller's right trigger (`Controller.Standard.RT`). Each route goes to a custom function that prints a line to the debug log when the right trigger is pressed. The first route is used when the application is in HMD mode ([Controller.Hardware.Application](https://wiki.highfidelity.com/wiki/Application)) while the second is used when the application is not in HMD mode.
 
@@ -1523,19 +1514,19 @@ In the conditional mapping example above, you'll see that the conditional case (
 
 
 
-# setReticlePosition()
+## setReticlePosition()
 
 
 
-## Function
+### Function
 
 `setReticlePosition(position)`
 
-## Arguments
+### Arguments
 
 - **position:Vec2**: The x and y position to move the cursor to
 
-## Examples
+### Examples
 
 This example moves the the cursor to the upper left-hand corner of the screen.
 
@@ -1548,7 +1539,7 @@ Controller.setReticlePosition(newPosition);
 
 ## Objects
 
-# Controller.Actions
+## Controller.Actions
 
 
 The [Controller API](https://wiki.highfidelity.com/wiki/Controller_API) has a list of predefined application *Actions* in `Controller.Actions`. The predefined actions are listed below.
@@ -1599,7 +1590,7 @@ The [Controller API](https://wiki.highfidelity.com/wiki/Controller_API) has a li
 
 
 
-# Controller.Hardware
+## Controller.Hardware
 
 
 
@@ -1611,7 +1602,7 @@ For more information, see the section *Creating Mappings for New Hardware* in th
 
 
 
-# Controller.Hardware.Application
+## Controller.Hardware.Application
 
 
 
@@ -1634,7 +1625,7 @@ print ("InHMD: " +   Controller.getValue(Controller.Hardware.Application.InHMD))
 
 
 
-# Controller.Hardware.Keyboard
+## Controller.Hardware.Keyboard
 
 
 
@@ -1670,12 +1661,12 @@ The [Controller API](https://wiki.highfidelity.com/wiki/Controller_API) has a li
 
 
 
-# Controller.Standard
+## Controller.Standard
 
 
 The controller API has a list of predefined standard controller end points as listed below. End point names are based on the Xbox controller input names. For convenience, aliases based on the Playstation controller names are also available. Inputs are listed below with those for buttons, D-Pad, triggers, and sticks in the first chart and those for finger abstractions and poses in the second.
 
-## Buttons, D-Pad , Triggers, Sticks
+### Buttons, D-Pad , Triggers, Sticks
 
 | Input     | Aliases    | Description               |
 | --------- | ---------- | ------------------------- |
@@ -1702,7 +1693,7 @@ The controller API has a list of predefined standard controller end points as li
 | `X`       | `Square`   | Button                    |
 | `Y`       | `Triangle` | Button                    |
 
-## Finger abstractions and poses
+### Finger abstractions and poses
 
 Rather than buttons, triggers, etc., some controllers are based on the user's hands (for example, the Hydra or Leap Motion). For these types of controllers, the finger abstraction and pose properties are available to make it easy to create a JSON mapping based on hands rather than specific controls. For controls that map directly to a standard Xbox style game pad, the [standard.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/standard.json) mapping creates the aliases to the finger and thumb abstractions. For individual controls that don't map directly to a standard Xbox style game pad, the hardware specific JSON mapping creates the aliases (for example, [hydra.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/hydra.json)).
 
@@ -1739,7 +1730,7 @@ The "touch" controls are intended to expose when a user has a finger touching, b
 
 
 
-# MappingObject
+## MappingObject
 
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The set of rules is stored in a MappingObject.
@@ -1758,7 +1749,7 @@ A MappingObject has the following properties:
 
 
 
-# RouteObject
+## RouteObject
 
 
 

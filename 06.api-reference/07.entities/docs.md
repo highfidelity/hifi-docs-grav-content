@@ -354,24 +354,24 @@ In addition to the [common properties](https://wiki.highfidelity.com/wiki/Entity
 
 ## Callbacks
 
-# clickDownOnEntity()
+## clickDownOnEntity()
 
 
 
 The `clickDownOnEntity()` event is sent when you begin clicking the mouse button while the cursor is pointing to an entity.
 
 
-## Event
+### Event
 
 `clickDownOnEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID **: The ID of the entity clicked on
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity like a box or sphere, will change the color of the entity when you click on it.
 
@@ -392,7 +392,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# clickReleaseOnEntity()
+## clickReleaseOnEntity()
 
 
 
@@ -402,17 +402,17 @@ Note: The entity that you initially clicked on will get this event even if you a
 
 
 
-## Event
+### Event
 
 `clickReleaseOnEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID **: The ID of the entity pointed at the time of the initial click
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity to red when you click down on it (`clickDownOnEntity()`) and then change it to blue when you release the mouse button (`clickReleaseOnEntity()`).
 
@@ -429,7 +429,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# collisionWithEntity()
+## collisionWithEntity()
 
 
 
@@ -438,17 +438,17 @@ The `collisionWithEntity()` event is sent when an entity collides with another e
 
 
 
-## Event
+### Event
 
 `collisionWithEntity(EntityItemID,EntityItemID,Collision)`
 
-## Arguments
+### Arguments
 
 **entityID: EntityItemID**: The entity item IDs of the entities colliding
 
 **Collision: Collision**: Collision data
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when it collides with another entity.
 
@@ -470,21 +470,21 @@ Note: For this script to work, the entity's `collisionless` property must be set
 
 
 
-# enterEntity()
+## enterEntity()
 
 
 The `enterEntity()` event is sent when an avatar's center (i.e., hips) enters the bounds of an entity.
 
 
-## Event
+### Event
 
 `enterEntity(EntityItemID)`
 
-## Arguments
+### Arguments
 
 **entityID: EntityItemID**: The entity item ID of the entity
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box, will cause the entity to change color and spin when the avatar enters the entity's bounds. The entity will continue to spin while the avatar is within the entity's bounds. If the avatar exits the bounds, the entity will change color again and slow down to stop spinning.
 
@@ -511,7 +511,7 @@ Note: To allow the avatar to enter the entity's bounds either make sure **Enable
 
 
 
-# holdingClickOnEntity()
+## holdingClickOnEntity()
 
 
 
@@ -521,17 +521,17 @@ Note: The entity that you initially clicked on will continue to get this event e
 
 
 
-## Event
+### Event
 
 `holdingClickOnEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: [doc:entityitemid EntityItemID] **: The ID of the entity pointed at when the mouse button was first pressed down
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity to random colors as you keep the mouse cursor pressed down.
 
@@ -550,7 +550,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# hoverEnterEntity()
+## hoverEnterEntity()
 
 
 
@@ -559,17 +559,17 @@ The `hoverEnterEntity()` event is sent when you move the mouse cursor so that it
 
 
 
-## Event
+### Event
 
 `hoverEnterEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID**: The ID of the entity pointed at
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse over the entity (`hoverEnterEntity`) and when you move the mouse cursor so that it no longer points at the entity (`hoverLeaveEntity`).
 
@@ -586,7 +586,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# hoverLeaveEntity()
+## hoverLeaveEntity()
 
 
 
@@ -595,17 +595,17 @@ The `hoverLeaveEntity()` event is sent when you move the mouse cursor so that it
 
 
 
-## Event
+### Event
 
 `hoverLeaveEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID**: The ID of the entity pointed at
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse over the entity (`hoverEnterEntity()`) and when you move the mouse cursor so that it no longer points at the entity (`hoverLeaveEntity()`).
 
@@ -622,7 +622,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# hoverOverEntity()
+## hoverOverEntity()
 
 
 
@@ -630,17 +630,17 @@ The `hoverOverEntity()` event is sent when you move the mouse cursor so that it 
 
 
 
-## Event
+### Event
 
 `hoverOverEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID**: The ID of the entity pointed at
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse cursor as it points at the entity.
 
@@ -659,7 +659,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# leaveEntity()
+## leaveEntity()
 
 
 
@@ -667,15 +667,15 @@ The `leaveEntity()` event is sent when an avatar's center (i.e., hips) leaves th
 
 
 
-## Event
+### Event
 
 `leaveEntity(EntityItemID)`
 
-## Arguments
+### Arguments
 
 **entityID: EntityItemID**: The entity item ID of the entity
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box, will cause the entity to change color and spin when the avatar enters the entity's bounds. The entity will continue to spin while the avatar is within the entity's bounds. If the avatar exits the bounds, the entity will change color again and slow down to stop spinning.
 
@@ -702,7 +702,7 @@ Note: To allow the avatar to enter the entity's bounds either make sure **Enable
 
 
 
-# mouseMoveOnEntity()
+## mouseMoveOnEntity()
 
 
 
@@ -710,17 +710,17 @@ The `mouseMoveOnEntity()` event is sent when you move the mouse and the cursor i
 
 
 
-## Event
+### Event
 
 `mouseMoveOnEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID**: The ID of the entity pointed at
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
 
@@ -740,7 +740,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-# mousePressOnEntity()
+## mousePressOnEntity()
 
 
 
@@ -748,17 +748,17 @@ The `mousePressOnEntity()` event is sent when you press the mouse button down an
 
 
 
-## Event
+### Event
 
 `mousePressOnEntity(entityItemID, mouseEvent)`
 
-## Arguments
+### Arguments
 
 **entityItemID: EntityItemID**: The ID of the entity pointed at
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
 
@@ -776,7 +776,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 })
 ```
 
-# mouseReleaseOnEntity()
+## mouseReleaseOnEntity()
 
 
 
@@ -784,7 +784,7 @@ The `mouseReleaseOnEntity()` event is sent when you release the mouse button and
 
 
 
-## Event
+### Event
 
 `mouseReleaseOnEntity(entityItemID, mouseEvent)`
 
@@ -794,7 +794,7 @@ The `mouseReleaseOnEntity()` event is sent when you release the mouse button and
 
 **mouseEvent: MouseEvent**: A JavaScript mouse event
 
-## Examples
+### Examples
 
 This is an example of an entity script which when [assigned](https://docs.highfidelity.com/docs/attaching-a-script-to-an-entity) to a non-model entity such as a box or sphere, will change the color of the entity when you move the mouse while over the entity (`mouseMoveOnEntity()`), when you click down on the entity (`mousePressOnEntity()`), and when you release the mouse button (`mouseReleaseOnEntity()`) after clicking down.
 
@@ -812,3 +812,121 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 })
 ```
 
+
+
+##Entities Events
+
+## addingEntity()
+
+The `addingEntity()` event is sent when an entity has been added to the domain.
+
+### Event
+
+`addingEntity(entityID)`
+
+### Arguments
+
+**entityID: EntityItemID**: The entity item ID of the entity added
+
+### Examples
+
+This example listens for `addingEntity()` events and prints a line to the debug log for each event received.
+
+```
+Entities.addingEntity.connect(function(entityID){
+  print ("Entity added.");
+});
+```
+
+
+
+## canAdjustLocksChanged()
+
+The `canAdjustLocksChanged()` event is sent if the permissions for adjusting locks has changed for the domain.
+
+### Event
+
+`canAdjustLocksChanged(bool)`
+
+### Arguments
+
+**bool:bool**:
+
+### Examples
+
+This example prints a notice to the debug log when lock permissions have been changed.
+
+```
+ Entities.canAdjustLocksChanged.connect(function(canAdjustLocks){
+  print ("Lock permission have changed.");
+});
+```
+
+## canRezChanged()
+
+The `canRezChanged()` event is sent if the permissions for creating entities has changed for the domain.
+
+### Event
+
+`canRezChanged(bool)`
+
+### Arguments
+
+**bool:bool**
+
+### Examples
+
+This example prints a notice to the debug log when a permissions for adding entities has been changed.
+
+```
+ Entities.canRezChanged.connect(function(canRez){
+  print ("Permissions for adding entities changed.");
+});
+```
+
+## clearingEntities()
+
+
+The `clearingEntities()` event is sent when you disconnect from a server and all known entities are cleared. This happens, for example, if the server shuts down or if you disconnect from one server to connect to a new server.
+
+
+### Event
+
+`clearingEntities()`
+
+### Arguments
+
+This event takes no parameters.
+
+### Examples
+
+This example prints "Entities cleared." to the debug log when you log out of one domain and log into another.
+
+```
+Entities.clearingEntities.connect(function(){
+  print("Entities cleared.");
+});
+```
+
+## deletingEntity()
+
+
+The `deletingEntity()` event is sent when an entity has been deleted from the domain.
+
+### Event
+
+`deletingEntity(entityID)`
+
+### Arguments
+
+**entityID: EntityItemID**: The entity item ID of the entity deleted
+
+### Examples
+
+This example listens for `deletingEntity()` events and prints a line to the debug log for each event received.
+
+```
+Entities.deletingEntity.connect(function(entityID){
+  print ("Entity deleted.");
+});
+```
