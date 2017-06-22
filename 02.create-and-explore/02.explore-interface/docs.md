@@ -9,7 +9,7 @@ The **Interface** is our client. This means that when you launch Interface, you 
 
 Once you complete the tutorial, you can teleport to the **Welcome** domain. 
 
-![explore-interface-welcome](/explore-interface-welcome.PNG)
+![explore-interface-welcome](create-and-explore/explore-interface/explore-interface-welcome.PNG)
 
 In Welcome, you can talk to other users and the greeters, and explore the myriad possibilities of High Fidelity.
 
