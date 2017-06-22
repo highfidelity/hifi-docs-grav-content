@@ -35,7 +35,7 @@ All you’ll need to bring - is the show!
 
 High Fidelity’s distributed platform enables almost limitless server configurations that you customize for your hosting needs. For smaller events (up to 10 avatars), a single instance of a server OS would be enough, as long as it’s a relatively recent computer. You can also set up a virtual machine hosted with cloud services providers such as Amazon, Azure, or Digital Ocean. For large-scale events, you can determine if you need more powerful hardware, or setup a distributed system with each assignment client running on a different server.
 
-![](\hifi-system-arch.png)
+![](architecture-overview.png)
 
 You can setup your server by either:
 
@@ -88,7 +88,7 @@ Find your avatar’s coordinates by:
 1. Opening up the console (CTRL + ALT + J).
 2. Typing `JSON.stringify(MyAvatar.position) `.
 
-[![Audiosettings.png](https://wiki.highfidelity.com/images/0/03/Audiosettings.png)](https://wiki.highfidelity.com/wiki/File:Audiosettings.png)
+![](audio-settings.png)
 
 Audio Zones are defined by a start and end coordinate value for each of the three axes in-world. An example of how you might choose to define your zones is illustrated in the diagram below. In the sample, the X and Z values are defined along their respective axes, and the Y start and end would be the value of the floor and ceiling. To add audio zones to the Microphone stands in Zaru, create a smaller region within the audience.
 

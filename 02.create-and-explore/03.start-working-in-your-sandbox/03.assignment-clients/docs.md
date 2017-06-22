@@ -16,8 +16,8 @@ The Asset Server is an assignment client in your domain that you can use to reli
 
 You can access the asset server in a domain where you have the permission to create assets. Go to **Create > Open This Domain's Asset Server** to view the asset browser. You can manage the files stored in your asset server using the asset browser.
 
-![](\create-asset-server.png)
-![](\asset-server.png)
+![](\create-asset-server.PNG)
+![](\asset-server.PNG)
 
 From the Asset Browser you can:
 
