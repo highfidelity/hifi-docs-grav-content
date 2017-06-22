@@ -47,8 +47,12 @@ High Fidelity respects your privacy. We've created the Bubble to ensure that no 
 ###Snap
 
 This particular menu item will help you take a snapshot in any domain. When you take a snapshot, you can save it on your system and share it in your feed. When you take a snapshot at a particular spot in a domain and share it, it is added to the GoTo thumbnail for that domain. Whenever someone wants to go to that domain, they arrive in the same spot as you by clicking the snapshot available in the GoTo menu. 
+![](snap-blast.PNG)
+![](snap-feed.PNG)
+You can also blast your snap to your connections and share them on Facebook and Twitter. 
+![](snap-facebook.PNG)
+![](snap-twitter.PNG)
 
-![](snap.PNG)
 
 ###Help
 
@@ -58,9 +62,15 @@ You can click on this app to check the controls and learn a little more about so
 
 ###People
 
-People shows you the users who are online and available in the domain you are presently in. You can check for people who are nearby or in view. It also has a tab called "Connections" which lists all the friends you made in High Fidelity using the handshake. 
+People shows you the users who are online and available in the domain you are presently in. You can check for people who are nearby or in view. 
 
 ![](people.PNG)
+
+You can set your availability to show you as online only for friends, friends and connections, everyone, or no one. 
+![](people.perm.PNG)
+
+It also has a tab called "Connections" which lists all the friends you made in High Fidelity using the handshake. 
+![](connections.PNG)
 
 ###GoTo
 

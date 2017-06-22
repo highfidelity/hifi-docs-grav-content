@@ -4,8 +4,6 @@ taxonomy:
     category: docs 
 ---
 
-# Haptics
-
 If a controller supports haptic feedback, you can activate it using the following methods.
 
 If you trigger a pulse while another one is already in progress, the strength and duration of the one that would finish last are honored.
