@@ -1,7 +1,8 @@
 ---
 title: Tablet
 taxonomy:
-    category: docs 
+    category:
+        - docs
 ---
 
 *Learn about the tablet, how you can use it, and the various apps available.*
@@ -20,4 +21,4 @@ You can use the tablet in High Fidelity to build (adding and editing entities an
 
 The HUD or the toolbar is the heads-up display available in Desktop mode (if you're not using an HMD). It has the same options as the tablet.
 
-![](hud.png)
+![](hud.PNG)

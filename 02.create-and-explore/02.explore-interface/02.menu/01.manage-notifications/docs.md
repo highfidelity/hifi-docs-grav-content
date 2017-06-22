@@ -7,8 +7,6 @@ taxonomy:
 
 *Learn how to manage your notification settings.*
 
-
-
 ##Overview
 
 This page talks about the default script in Interface that generates and manages notifications. 
@@ -28,7 +26,7 @@ By default, you'll receive notifications when:
 
 Notifications appear as text on a semi-transparent panel.
 
-![](!\notifications.png)
+![](notifications.PNG)
 
 These notification panels disappear after a few seconds, but they can also be immediately dismissed by clicking the X in the upper right hand corner of the notification.
 
@@ -36,6 +34,6 @@ These notification panels disappear after a few seconds, but they can also be im
 
 You can specify if you want notification sounds to be played. Go to **Tools > Notifications > Play Notification Sounds**. If notification sounds are enabled, **Play Notification Sounds** will be checked.
 
-![](\notifications-menu.png)
+![](notifications-menu.PNG)
 
 Using the **Tools > Notifications** menu, you can also select which types of notification will generate a sound when received. A check next to the notification type indicates that a sound will be played.
