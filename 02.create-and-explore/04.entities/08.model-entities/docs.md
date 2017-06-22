@@ -1,8 +1,7 @@
 ---
 title: Model Entities
-Taxonomy:
-category:
-	docs
+taxonomy:
+    category: docs
 ---
 
 *Learn how to add a model entity.*
@@ -15,7 +14,7 @@ Here, we'll cover how you can add a model entity.
 
 Go to **Create** and click the model icon to upload a [3D model](../../3d-models) to create a model entity. 
 
-![](\create-button-open.png)
+![](create-button-open.PNG)
 
 Model entities allow you to add complex shapes such as trees, houses, cars, aliens, and much more. Anything you can create as an FBX or OBJ model can be added to your domain as a model entity. 
 
@@ -34,7 +33,7 @@ To upload a model, complete the following steps:
 
 5. Click the Model button. Clicking the Model button opens an input dialog which allows you to specify the web location where the item is hosted.
 
-   ![](\model-entity.png)
+   ![](model-entity.PNG)
 
 6. Enter the full URL of the hosted model (for example,`http://mywebsite.com/myObject.fbx`) and then click **ADD**.
 

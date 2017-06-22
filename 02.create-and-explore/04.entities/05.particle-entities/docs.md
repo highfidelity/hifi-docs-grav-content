@@ -16,7 +16,7 @@ Go to **Create** and select the Particle icon.
 
 A particle entity first appears as a fountain of small white particles.
 
-![](\particle.png)
+![](particle.PNG)
 
 ## Properties
 
@@ -24,11 +24,11 @@ Particle entities have the properties common to all entities as well as addition
 
 To edit the particle entity, select the **Particle Explorer** tab. This is indicated by a small particle icon on the top-right hand corner of your tablet. 
 
-![](\particle-explorer.png)
+![](particle-explorer.PNG)
 
 Click on open controls to see the entity's properties. 
 
-![](\particle-properties.png)
+![](particle-properties.PNG)
 
 
 
@@ -38,4 +38,4 @@ Click on open controls to see the entity's properties.
 
 Below is an image of a particle entity with a different color. 
 
-![](\purple-particle.png)
+![](purple-particle.PNG)

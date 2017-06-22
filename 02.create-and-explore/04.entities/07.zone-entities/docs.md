@@ -14,11 +14,11 @@ A zone entity is a 3-dimensional area that allows you to create custom lighting 
 
 Go to **Create** and click the zone icon. 
 
-![](\create-button-open.png)
+![](create-button-open.PNG)
 
 The new zone entity is created at your current location.
 
-![](\zone-entity.png)
+![](zone-entity.PNG)
 
 You can create multiple zone entities, nested zone entities, adjacent zone entities and overlapping zone entities. Zone entities do not have to be axis aligned.
 
@@ -34,7 +34,7 @@ Zones entities can be a bit tricky to work with. By default, zone entities canno
 
 You can create multiple zone entities, nested zone entities, adjacent zone entities and overlapping zone entities. Each of these zone  entities can have different properties. If zone entities are overlapping, then the smaller zone entity's lighting values will take precedence over the other zone entities. For example, as a user moves through a group of nested zone entities, each with different lighting values set, the user would experience the lighting conditions of the smallest zone entity that they are currently in.
 
-![](\zone-graphic.png)
+![](zone-graphic.PNG)
 
 ### How to Make Zone Entities Visible in Create Mode
 
@@ -78,7 +78,7 @@ For this example, you will need to create two zone entities. Complete the follow
 
 2. In the **Properties** tab, enter a name into the **Name** property field. Name the first zone, **ZoneRED**.
 
-   ![](\zone-name-1.png)
+   ![](zone-name-1.PNG)
 
 3. Repeat the first two steps to create a second zone entity. Name this second zone, ZoneBLUE. 
 
@@ -119,9 +119,9 @@ If you now navigate your avatar through both zone entities you should see the li
 
 
 
-![](\blue-zone.png)
+![](blue-zone.PNG)
 
-![](\red-zone.png)
+![](red-zone.PNG)
 
 ## Example: Changing the Zone Shape
 
