@@ -64,7 +64,7 @@ You can click on this app to check the controls and learn a little more about so
 
 People shows you the users who are online and available in the domain you are presently in. You can check for people who are nearby or in view. 
 
-![](people.png)
+![](people.PNG)
 
 You can set your availability to show you as online only for friends, friends and connections, everyone, or no one. 
 ![](people.perm.PNG)
