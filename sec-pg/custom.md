@@ -24,7 +24,7 @@ taxonomy:
 <p style="clear: both;">
 </div>
 <div id="sec-pg-body-2">
-<img src="/sec-pg/connection-list.PNG" alt="connection-list" style="float: right; vertical-align:middle; margin-right: 2rem; margin-left: 10rem;" width=25% title="Connections"><span style="vertical-align:middle;"><h5 class="#sec-pg-body-2" style="margin-left: 10rem;">Meet and Connect!</h5><p style="margin-left: 10rem;">Want to virtually hang out with someone you met at one of our in-world events? After a handshake, your friend’s username will pop up and will be entered as your connection!</p>
+<img src="/sec-pg/connection-list.png" alt="connection-list" style="float: right; vertical-align:middle; margin-right: 2rem; margin-left: 10rem;" width=25% title="Connections"><span style="vertical-align:middle;"><h5 class="#sec-pg-body-2" style="margin-left: 10rem;">Meet and Connect!</h5><p style="margin-left: 10rem;">Want to virtually hang out with someone you met at one of our in-world events? After a handshake, your friend’s username will pop up and will be entered as your connection!</p>
 <p style="clear: both;"></p>
 </div>
 <div id="sec-pg-body-3">
