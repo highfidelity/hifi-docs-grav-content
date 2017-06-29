@@ -25,26 +25,26 @@ In High Fidelity there is a single camera that provides the main view for the us
 | Camera.position             | Vec3     | The position of the camera.              |
 
 
-| Methods                            |
-| ---------------------------------- |
+| Methods                                  |
+| ---------------------------------------- |
 | [Camera.computePickRay(float,float)](#m1) |
-| [Camera.getCameraEntity()](#m2)           |
-| [Camera.getModeString()](#m3)             |
-| [Camera.getOrientation()](#m4)            |
-| [Camera.getPosition()](#m5)               |
-| [Camera.keepLookingAt(glm::vec3)](#m6)    |
-| [Camera.lookAt(glm::vec3)](#m7)           |
-| [Camera.setCameraEntity(QUuid)](#m8)      |
-| [Camera.setModeString(QString)](#m9)      |
-| [Camera.setOrientation(glm::quat)](#m10)   |
-| [Camera.setPosition(glm::vec3)](#m11)      |
-| [Camera.stopLooking()](#m12)               |
+| [Camera.getCameraEntity()](#m2)          |
+| [Camera.getModeString()](#m3)            |
+| [Camera.getOrientation()](#m4)           |
+| [Camera.getPosition()](#m5)              |
+| [Camera.keepLookingAt(glm::vec3)](#m6)   |
+| [Camera.lookAt(glm::vec3)](#m7)          |
+| [Camera.setCameraEntity(QUuid)](#m8)     |
+| [Camera.setModeString(QString)](#m9)     |
+| [Camera.setOrientation(glm::quat)](#m10) |
+| [Camera.setPosition(glm::vec3)](#m11)    |
+| [Camera.stopLooking()](#m12)             |
 
 
-| Events                            |
-| --------------------------------- |
-| [Camera.modeUpdated(QString)](#e1)       |
-| Camera.objectNameChanged(QString) |
+| Events                             |
+| ---------------------------------- |
+| [Camera.modeUpdated(QString)](#e1) |
+| Camera.objectNameChanged(QString)  |
 
 
 
