@@ -4,7 +4,12 @@ taxonomy:
     category:
         - docs
 ---
-
+| Properties           | Type    | Description                               |   |   |   |
+|----------------------|---------|-------------------------------------------|---|---|---|
+| Audio.muted          | Boolean | Determines if the audio is muted or not.  |   |   |   |
+| Audio.noiseReduction | Boolean | Turn noise reduction on or off.           |   |   |   |
+| Audio.inputVolume    | Float   |                                           |   |   |   |
+| Audio.inputLevel     | Float   | Read only value, to get the input level.  |   |   |   |
 
 | Methods                                  |
 | ---------------------------------------- |
