@@ -5,6 +5,13 @@ taxonomy:
         - docs
 ---
 
+* [**Properties**](#properties)
+* [**Methods**](#methods)
+* [**Events**](#events)
+
+
+
+##Properties <a id="properties"></a>
 | Properties                   | Type   | Description |
 | ---------------------------- | ------ | ----------- |
 | Entities.costMultiplier      | number |             |
@@ -12,80 +19,84 @@ taxonomy:
 | Entities.keyboardFocusEntity | object |             |
 | Entities.objectName          | string |             |
 
+
+##Methods <a id="methods"></a>
 | Methods                                  |
 | ---------------------------------------- |
-| Entities.addAction(QString,QUuid,QVariantMap) |
-| Entities.addEntity(EntityItemProperties) |
+| [Entities.addAction(QString,QUuid,QVariantMap)](#m1) |
+| [Entities.addEntity(EntityItemProperties)](#m2) |
 | Entities.addEntity(EntityItemProperties,bool) |
 | Entities.addModelEntity(QString,QString,QString,bool,glm::vec3,glm::vec3) |
 | Entities.addingEntity(EntityItemID)      |
-| Entities.appendPoint(QUuid,glm::vec3)    |
-| Entities.callEntityMethod(QUuid,QString) |
+| [Entities.appendPoint(QUuid,glm::vec3)](#m3) |
+| [Entities.callEntityMethod(QUuid,QString)](#m4) |
 | Entities.callEntityMethod(QUuid,QString,QStringList) |
-| Entities.canAdjustLocks()                |
+| [Entities.canAdjustLocks()](#m5)         |
 | Entities.canAdjustLocksChanged(bool)     |
-| Entities.canRez()                        |
+| [Entities.canRez()](#m6)                 |
 | Entities.canRezChanged(bool)             |
-| Entities.canRezTmp()                     |
+| [Entities.canRezTmp()](#m7)              |
 | Entities.canRezTmpChanged(bool)          |
 | Entities.canWriteAssets()                |
 | Entities.canWriteAssetsChanged(bool)     |
 | Entities.debitEnergySource(float)        |
-| Entities.deleteAction(QUuid,QUuid)       |
-| Entities.deleteEntity(QUuid)             |
+| [Entities.deleteAction(QUuid,QUuid)](#m8) |
+| [Entities.deleteEntity(QUuid)](#m9)      |
 | Entities.dumpTree()                      |
-| Entities.editEntity(QUuid,EntityItemProperties) |
+| [Entities.editEntity(QUuid,EntityItemProperties)](#m10) |
 | Entities.emitScriptEvent(EntityItemID,QVariant) |
 | Entities.enterEntity(EntityItemID)       |
-| Entities.findClosestEntity(glm::vec3,float) |
-| Entities.findEntities(glm::vec3,float)   |
-| Entities.findEntitiesInBox(glm::vec3,glm::vec3) |
+| [Entities.findClosestEntity(glm::vec3,float)](#m11) |
+| [Entities.findEntities(glm::vec3,float)](#m12) |
+| [Entities.findEntitiesInBox(glm::vec3,glm::vec3)](#m13) |
 | Entities.findEntitiesInFrustum(QVariantMap) |
-| Entities.findRayIntersection(PickRay)    |
+| [Entities.findRayIntersection(PickRay)](#m14) |
 | Entities.findRayIntersection(PickRay,bool) |
 | Entities.findRayIntersection(PickRay,bool,QScriptValue) |
 | Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue) |
 | Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool) |
 | Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool,bool) |
-| Entities.findRayIntersectionBlocking(PickRay) |
+| [Entities.findRayIntersectionBlocking(PickRay)](#m15) |
 | Entities.findRayIntersectionBlocking(PickRay,bool) |
 | Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue) |
 | Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue,QScriptValue) |
 | Entities.getAbsoluteJointRotationInObjectFrame(QUuid,int) |
 | Entities.getAbsoluteJointTranslationInObjectFrame(QUuid,int) |
-| Entities.getActionArguments(QUuid,QUuid) |
-| Entities.getActionIDs(QUuid)             |
+| [Entities.getActionArguments(QUuid,QUuid)](#m16) |
+| [Entities.getActionIDs(QUuid)](#m17)     |
 | Entities.getChildrenIDs(QUuid)           |
 | Entities.getChildrenIDsOfJoint(QUuid,int) |
-| Entities.getDrawZoneBoundaries()         |
+| [Entities.getDrawZoneBoundaries()](#m18) |
 | Entities.getEntityLocalTransform(QUuid)  |
-| Entities.getEntityProperties(QUuid)      |
+| [Entities.getEntityProperties(QUuid)](#m19) |
 | Entities.getEntityProperties(QUuid,EntityPropertyFlags) |
 | Entities.getEntityTransform(QUuid)       |
 | Entities.getJointIndex(QUuid,QString)    |
 | Entities.getJointNames(QUuid)            |
 | Entities.getKeyboardFocusEntity()        |
-| Entities.getLifetimeBPS()                |
-| Entities.getLifetimeBPSQueued()          |
-| Entities.getLifetimeBytesQueued()        |
-| Entities.getLifetimeBytesSent()          |
-| Entities.getLifetimeInSeconds()          |
-| Entities.getLifetimeInUsecs()            |
-| Entities.getLifetimePPS()                |
-| Entities.getLifetimePPSQueued()          |
-| Entities.getLifetimePacketsQueued()      |
-| Entities.getLifetimePacketsSent()        |
-| Entities.getLightsArePickable()          |
+| [Entities.getLifetimeBPS()](#m20)        |
+| [Entities.getLifetimeBPSQueued()](#m21)  |
+| [Entities.getLifetimeBytesQueued()](#m22) |
+| [Entities.getLifetimeBytesSent()](#m23)  |
+| [Entities.getLifetimeInSeconds()](#m24)  |
+| [Entities.getLifetimeInUsecs()](#m25)    |
+| [Entities.getLifetimePPS()](#m26)        |
+| [Entities.getLifetimePPSQueued()](#m27)  |
+| [Entities.getLifetimePacketsQueued()](#m28) |
+| [Entities.getLifetimePacketsSent()](#m29) |
+| [Entities.getLightsArePickable()](#m30)  |
 | Entities.getLocalJointRotation(QUuid,int) |
 | Entities.getLocalJointTranslation(QUuid,int) |
 | Entities.getMeshes(QUuid,QScriptValue)   |
-| Entities.getPacketsPerSecond()           |
+| [Entities.getPacketsPerSecond()](#m31)   |
 | Entities.getServerScriptStatus(QUuid,QScriptValue) |
 | Entities.getWebViewRoot(QUuid)           |
-| Entities.getZonesArePickable()           |
-| Entities.hasPacketsToSend()              |
+| [Entities.getZonesArePickable()](#m32)   |
+| [Entities.hasPacketsToSend()](#m33)      |
 | Entities.isChildOfParent(QUuid,QUuid)    |
+| [Entites.LocalCoordstoVoxelCoords()](#m34) |
 | Entities.leaveEntity(EntityItemID)       |
+| [PacketsToSendCount()](#m35)             |
 | Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue) |
 | Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue,QScriptValue) |
 | Entities.reloadServerScripts(QUuid)      |
@@ -98,35 +109,63 @@ taxonomy:
 | Entities.sendMouseMoveOnEntity(QUuid,PointerEvent) |
 | Entities.sendMousePressOnEntity(QUuid,PointerEvent) |
 | Entities.sendMouseReleaseOnEntity(QUuid,PointerEvent) |
+| [ServersExist()](#m36)                   |
 | Entities.setAbsoluteJointRotationInObjectFrame(QUuid,int,glm::quat) |
 | Entities.setAbsoluteJointTranslationInObjectFrame(QUuid,int,glm::vec3) |
-| Entities.setAllPoints(QUuid,QVector<glm::vec3>) |
-| Entities.setAllVoxels(QUuid,int)         |
-| Entities.setDrawZoneBoundaries(bool)     |
+| [Entities.setAllPoints(QUuid,QVector<glm::vec3>)](#m37) |
+| [Entities.setAllVoxels(QUuid,int)](#m38) |
+| [Entities.setDrawZoneBoundaries(bool)](#m39) |
 | Entities.setKeyboardFocusEntity(QUuid)   |
-| Entities.setLightsArePickable(bool)      |
+| [Entities.setLightsArePickable(bool)](#m40) |
 | Entities.setLocalJointRotation(QUuid,int,glm::quat) |
 | Entities.setLocalJointRotations(QUuid,QVector<glm::quat>) |
 | Entities.setLocalJointTranslation(QUuid,int,glm::vec3) |
 | Entities.setLocalJointTranslations(QUuid,QVector<glm::vec3>) |
 | Entities.setLocalJointsData(QUuid,QVector<glm::quat>,QVector<glm::vec3>) |
-| Entities.setPacketsPerSecond(int)        |
-| Entities.setVoxel(QUuid,glm::vec3,int)   |
+| [Entities.setPacketsPerSecond(int)](#m41) |
+| [Entities.setVoxel(QUuid,glm::vec3,int)](#m42) |
 | Entities.setVoxelCapsule(QUuid,glm::vec3,glm::vec3,float,int) |
+| [SetVoxelsInCuboid()](#m43)              |
+| [SetVoxelSphere()](#m44)                 |
+| [SetZonesArePickable()](#m45)            |
+| [UpdateAction()](#m46)                   |
+| [VoxelCoordsToLocalCoords()](#m47)       |
+| [VoxelCoordsToWorldCoords()](#m48)       |
+| [WorldCoordsToVoxelCoords()](#m49)       |
 
+##Events <a id="events"></a>
 | Events                                   |
 | ---------------------------------------- |
 | Entities.AABoxIntersectsCapsule(glm::vec3,glm::vec3,glm::vec3,glm::vec3,float) |
-| Entities.clearingEntities()              |
-| Entities.deletingEntity(EntityItemID)    |
-| Entities.destroyed()                     |
-| Entities.destroyed(QObject*)             |
+| [Entities.AddingEntity()](#e1)           |
+| [Entities.CanAdjustLocksChanged()](#e2)  |
+| [Entities.CanRezChanged()](#e3)          |
+| [Entities.CanRezTmpChanged()](#e4)       |
+| [Entities.clearingEntities()](#e5)       |
+| [Entities.deletingEntity(EntityItemID)](#e6) |
 | Entities.localCoordsToVoxelCoords(QUuid,glm::vec3) |
 | Entities.packetsToSendCount()            |
 | Entities.objectNameChanged(QString)      |
 | Entities.wantsHandControllerPointerEvents(QUuid) |
 | Entities.webEventReceived(EntityItemID,QVariant) |
 | Entities.serversExist()                  |
+
+
+##Callbacks
+| Callbacks                      |
+| ------------------------------ |
+| [ClickDownOnEntity()](#c1)     |
+| [ClickReleaseOnEntity()](#c2)  |
+| [CollisionWithEntity()](#c3)   |
+| [EnterEntity()](#c4)           |
+| [HoldingClickOnEntity()](#c5)  |
+| [HoverEnterEntity()](#c6)      |
+| [HoverLeaveEntity()](#c7)      |
+| [HoverOverEntity()](#c8)       |
+| [LeaveEntity()](#c9)           |
+| [MouseMoveOnEntity()](#c10)    |
+| [MousePressOnEntity()](#c11)   |
+| [MouseReleaseOnEntity()](#c12) |
 
 ## EntityItemProperties
 
@@ -475,9 +514,7 @@ In addition to the [common properties](https://wiki.highfidelity.com/wiki/Entity
 
 ## Callbacks
 
-## clickDownOnEntity()
-
-
+## clickDownOnEntity()<a id="c1"></a>
 
 The `clickDownOnEntity()` event is sent when you begin clicking the mouse button while the cursor is pointing to an entity.
 
@@ -513,15 +550,11 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## clickReleaseOnEntity()
-
-
+## clickReleaseOnEntity()<a id="c2"></a>
 
 The `clickReleaseOnEntity()` event is sent when you release the mouse button after previously clicking it while the cursor is pointing to an entity.
 
 Note: The entity that you initially clicked on will get this event even if you are no longer pointing at that entity.
-
-
 
 ### Event
 
@@ -550,10 +583,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## collisionWithEntity()
-
-
-
+## collisionWithEntity()<a id="c3"></a>
 
 The `collisionWithEntity()` event is sent when an entity collides with another entity. Note: This callback only occurs on the client that is the simulation owner.
 
@@ -591,8 +621,7 @@ Note: For this script to work, the entity's `collisionless` property must be set
 
 
 
-## enterEntity()
-
+## enterEntity() <a id="c4"></a>
 
 The `enterEntity()` event is sent when an avatar's center (i.e., hips) enters the bounds of an entity.
 
@@ -632,9 +661,7 @@ Note: To allow the avatar to enter the entity's bounds either make sure **Enable
 
 
 
-## holdingClickOnEntity()
-
-
+## holdingClickOnEntity() <a id="c5"></a>
 
 The `holdingClickOnEntity()` event is sent when you continue to hold the mouse button down after previously clicking it while the cursor is pointing to an entity.
 
@@ -671,9 +698,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## hoverEnterEntity()
-
-
+## hoverEnterEntity() <a id="c6"></a>
 
 The `hoverEnterEntity()` event is sent when you move the mouse cursor so that it begins to point at an entity.
 
@@ -707,14 +732,9 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## hoverLeaveEntity()
-
-
+## hoverLeaveEntity() <a id="c7"></a>
 
 The `hoverLeaveEntity()` event is sent when you move the mouse cursor so that it no longer points at an entity that you previously started pointing to.
-
-
-
 
 ### Event
 
@@ -743,9 +763,7 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## hoverOverEntity()
-
-
+## hoverOverEntity() <a id="c8"></a>
 
 The `hoverOverEntity()` event is sent when you move the mouse cursor so that it continues to be pointed at an entity that you previously started pointing to.
 
@@ -780,13 +798,9 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## leaveEntity()
-
-
+## leaveEntity() <a id="c9"></a>
 
 The `leaveEntity()` event is sent when an avatar's center (i.e., hips) leaves the bounds of an entity.
-
-
 
 ### Event
 
@@ -823,13 +837,9 @@ Note: To allow the avatar to enter the entity's bounds either make sure **Enable
 
 
 
-## mouseMoveOnEntity()
-
-
+## mouseMoveOnEntity() <a id="c10"></a>
 
 The `mouseMoveOnEntity()` event is sent when you move the mouse and the cursor is pointing at an entity.
-
-
 
 ### Event
 
@@ -861,13 +871,9 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-## mousePressOnEntity()
-
-
+## mousePressOnEntity() <a id="c11"></a>
 
 The `mousePressOnEntity()` event is sent when you press the mouse button down and the cursor is pointing at an entity.
-
-
 
 ### Event
 
@@ -897,13 +903,11 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 })
 ```
 
-## mouseReleaseOnEntity()
 
 
+## mouseReleaseOnEntity() <a id="c12"></a>
 
 The `mouseReleaseOnEntity()` event is sent when you release the mouse button and the cursor is pointing at an entity.
-
-
 
 ### Event
 
@@ -935,9 +939,9 @@ This is an example of an entity script which when [assigned](https://docs.highfi
 
 
 
-##Entities Events
+## Events
 
-## addingEntity()
+## addingEntity() <a id="e1"></a>
 
 The `addingEntity()` event is sent when an entity has been added to the domain.
 
@@ -961,7 +965,7 @@ Entities.addingEntity.connect(function(entityID){
 
 
 
-## canAdjustLocksChanged()
+## canAdjustLocksChanged() <a id="e2"></a>
 
 The `canAdjustLocksChanged()` event is sent if the permissions for adjusting locks has changed for the domain.
 
@@ -983,7 +987,9 @@ This example prints a notice to the debug log when lock permissions have been ch
 });
 ```
 
-## canRezChanged()
+
+
+## canRezChanged() <a id="e3"></a>
 
 The `canRezChanged()` event is sent if the permissions for creating entities has changed for the domain.
 
@@ -1005,8 +1011,41 @@ This example prints a notice to the debug log when a permissions for adding enti
 });
 ```
 
-## clearingEntities()
 
+
+
+##canRezTmpChanged() <a id="e4"></a>
+
+In the [domain server permission settings](https://wiki.highfidelity.com/wiki/Server_Settings), you can specify which users can add new entities. Users can be granted permission to add permanent entities and entities with a finite lifetime (**Rez**) or they can be granted permission to create only entities with a finite lifetime (**Rez Temporary**).
+
+The `canRezTmpChanged()` event is sent if the **Rez Temporary** permissions have been changed for the domain.
+
+### Event
+
+`canRezTmpChanged(bool)`
+
+### Arguments
+
+**bool:bool**
+
+### Examples
+
+This example prints a notice to the debug log when **Rez Temporary** permissions have been changed.
+
+```
+ Entities.canRezTmpChanged.connect(function(canRezTmp){
+  print ("Rez Temporary permissions have been changed.");
+});
+```
+
+
+
+
+
+
+
+
+## clearingEntities() <a id="e5"></a>
 
 The `clearingEntities()` event is sent when you disconnect from a server and all known entities are cleared. This happens, for example, if the server shuts down or if you disconnect from one server to connect to a new server.
 
@@ -1029,8 +1068,10 @@ Entities.clearingEntities.connect(function(){
 });
 ```
 
-## deletingEntity()
 
+
+
+## deletingEntity() <a id="e6"></a>
 
 The `deletingEntity()` event is sent when an entity has been deleted from the domain.
 
