@@ -5,89 +5,124 @@ taxonomy:
         - docs
 ---
 
+##Table of Contents
+* [Properties](#properties)
+* [Methods](#methods)
+* [Events](#events)
 
 
-| Properties                               | Type   | Description |
-| ---------------------------------------- | ------ | ----------- |
-| Controller.Actions.ACTION1               | number |             |
-| Controller.Actions.ACTION2               | number |             |
-| Controller.Actions.Backward              | number |             |
-| Controller.Actions.BoomIn                | number |             |
-| Controller.Actions.BoomOut               | number |             |
-| Controller.Actions.ContextMenu           | number |             |
-| Controller.Actions.CycleCamera           | number |             |
-| Controller.Actions.Down                  | number |             |
-| Controller.Actions.Forward               | number |             |
-| Controller.Actions.LATERAL_LEFT          | number |             |
-| Controller.Actions.LATERAL_RIGHT         | number |             |
-| Controller.Actions.LONGITUDINAL_BACKWARD | number |             |
-| Controller.Actions.LONGITUDINAL_FORWARD  | number |             |
-| Controller.Actions.LeftFoot              | number |             |
-| Controller.Actions.LeftHand              | number |             |
-| Controller.Actions.LeftHandClick         | number |             |
-| Controller.Actions.Pitch                 | number |             |
-| Controller.Actions.PitchDown             | number |             |
-| Controller.Actions.PitchUp               | number |             |
-| Controller.Actions.PrimaryAction         | number |             |
-| Controller.Actions.ReticleClick          | number |             |
-| Controller.Actions.ReticleDown           | number |             |
-| Controller.Actions.ReticleLeft           | number |             |
-| Controller.Actions.ReticleRight          | number |             |
-| Controller.Actions.ReticleUp             | number |             |
-| Controller.Actions.ReticleX              | number |             |
-| Controller.Actions.ReticleY              | number |             |
-| Controller.Actions.RightFoot             | number |             |
-| Controller.Actions.RightHand             | number |             |
-| Controller.Actions.RightHandClick        | number |             |
-| Controller.Actions.Roll                  | number |             |
-| Controller.Actions.SHIFT                 | number |             |
-| Controller.Actions.SecondaryAction       | number |             |
-| Controller.Actions.Shift                 | number |             |
-| Controller.Actions.StepPitch             | number |             |
-| Controller.Actions.StepRoll              | number |             |
-| Controller.Actions.StepTranslateX        | number |             |
-| Controller.Actions.StepTranslateY        | number |             |
-| Controller.Actions.StepTranslateZ        | number |             |
-| Controller.Actions.StepYaw               | number |             |
-| Controller.Actions.StrafeLeft            | number |             |
-| Controller.Actions.StrafeRight           | number |             |
-| Controller.Actions.ToggleMute            | number |             |
-| Controller.Actions.ToggleOverlay         | number |             |
-| Controller.Actions.TranslateX            | number |             |
-| Controller.Actions.TranslateY            | number |             |
-| Controller.Actions.TranslateZ            | number |             |
-| Controller.Actions.UiNavBack             | number |             |
-| Controller.Actions.UiNavGroup            | number |             |
-| Controller.Actions.UiNavLateral          | number |             |
-| Controller.Actions.UiNavSelect           | number |             |
-| Controller.Actions.UiNavVertical         | number |             |
-| Controller.Actions.Up                    | number |             |
-| Controller.Actions.VERTICAL_DOWN         | number |             |
-| Controller.Actions.VERTICAL_UP           | number |             |
-| Controller.Actions.Yaw                   | number |             |
-| Controller.Actions.YawLeft               | number |             |
-| Controller.Actions.YawRight              | number |             |
-| Controller.Hardware.Application.AdvancedMovement | number |             |
-| Controller.Hardware.Application.CameraEntity | number |             |
-| Controller.Hardware.Application.CameraFSM | number |             |
-| Controller.Hardware.Application.CameraFirstPerson | number |             |
-| Controller.Hardware.Application.CameraIndependent | number |             |
-| Controller.Hardware.Application.CameraThirdPerson | number |             |
-| Controller.Hardware.Application.Grounded | number |             |
-| Controller.Hardware.Application.InHMD    | number |             |
-| Controller.Hardware.Application.NavigationFocused | number |             |
-| Controller.Hardware.Application.SnapTurn | number |             |
-| Controller.Hardware.Hydra.L0             | number |             |
-| Controller.Hardware.Keyboard.0           | number |             |
-| Controller.Hardware.OculusTouch.A        | number |             |
-| Controller.Standard.A                    | number |             |
-| Controller.objectName                    | string |             |
+
+##Properties <a id="properties"></a>
+| Properties                               | Type   | Description                              |
+| ---------------------------------------- | ------ | ---------------------------------------- |
+| Controller.Actions.Backward              | number | Alias for TranslateZ in the positive direction |
+| Controller.Actions.BoomIn                | number | Camera movement to third person view     |
+| Controller.Actions.BoomOut               | number | Camera movement back to first person view |
+| Controller.Actions.ContextMenu           | number |                                          |
+| Controller.Actions.CycleCamera           | number | Cycles the camera                        |
+| Controller.Actions.Down                  | number |                                          |
+| Controller.Actions.Forward               | number | Alias for TranslateZ in the negative direction |
+| Controller.Actions.LATERAL_LEFT          | number |                                          |
+| Controller.Actions.LATERAL_RIGHT         | number |                                          |
+| Controller.Actions.LONGITUDINAL_BACKWARD | number |                                          |
+| Controller.Actions.LONGITUDINAL_FORWARD  | number |                                          |
+| Controller.Actions.LeftFoot              | number |                                          |
+| Controller.Actions.LeftHand              | number | Set the left hand pose                   |
+| Controller.Actions.LeftHandClick         | number |                                          |
+| Controller.Actions.Pitch                 | number | Rotation around the X axis               |
+| Controller.Actions.PitchDown             | number | Bisected alias for Pitch                 |
+| Controller.Actions.PitchUp               | number | Bisected alias for Pitch                 |
+| Controller.Actions.PrimaryAction         | number |                                          |
+| Controller.Actions.ReticleClick          | number | Pointer/Reticle click event              |
+| Controller.Actions.ReticleDown           | number | Bisected alias for ReticleY              |
+| Controller.Actions.ReticleLeft           | number | Bisected alias for ReticleX              |
+| Controller.Actions.ReticleRight          | number | Bisected alias for ReticleX              |
+| Controller.Actions.ReticleUp             | number | Bisected alias for ReticleY              |
+| Controller.Actions.ReticleX              | number | Reticle movement along the X axis        |
+| Controller.Actions.ReticleY              | number | Reticle movement along the Y axis        |
+| Controller.Actions.RightFoot             | number |                                          |
+| Controller.Actions.RightHand             | number | Set the right hand pose                  |
+| Controller.Actions.RightHandClick        | number |                                          |
+| Controller.Actions.Roll                  | number | Rotation around the Z axis               |
+| Controller.Actions.SHIFT                 | number |                                          |
+| Controller.Actions.SecondaryAction       | number |                                          |
+| Controller.Actions.Shift                 | number |                                          |
+| Controller.Actions.StepPitch             | number | Incremental rotation around the X axis   |
+| Controller.Actions.StepRoll              | number | Incremental rotation around the Z axis   |
+| Controller.Actions.StepTranslateX        | number | Incremental movement along the X axis    |
+| Controller.Actions.StepTranslateY        | number | Incremental movement along the Y axis    |
+| Controller.Actions.StepTranslateZ        | number | Incremental movement along the Z axis    |
+| Controller.Actions.StepYaw               | number | Incremental rotation around the Y axis   |
+| Controller.Actions.StrafeLeft            | number | Bisected alias for TranslateX            |
+| Controller.Actions.StrafeRight           | number | Bisected alias for TranslateX            |
+| Controller.Actions.ToggleMute            | number | Toggle audio device mute                 |
+| Controller.Actions.ToggleOverlay         | number |                                          |
+| Controller.Actions.TranslateX            | number | Movement along the X axis                |
+| Controller.Actions.TranslateY            | number | Movement along the Y axis                |
+| Controller.Actions.TranslateZ            | number | Movement along the Z axis                |
+| Controller.Actions.UiNavBack             | number |                                          |
+| Controller.Actions.UiNavGroup            | number |                                          |
+| Controller.Actions.UiNavLateral          | number |                                          |
+| Controller.Actions.UiNavSelect           | number |                                          |
+| Controller.Actions.UiNavVertical         | number |                                          |
+| Controller.Actions.Up                    | number |                                          |
+| Controller.Actions.VERTICAL_DOWN         | number |                                          |
+| Controller.Actions.VERTICAL_UP           | number |                                          |
+| Controller.Actions.Yaw                   | number | Rotation around the Y axis               |
+| Controller.Actions.YawLeft               | number | Bisected alias for Yaw                   |
+| Controller.Actions.YawRight              | number | Bisected alias for Yaw                   |
+| Controller.Hardware.Application.AdvancedMovement | number |                                          |
+| Controller.Hardware.Application.CameraEntity | number |                                          |
+| Controller.Hardware.Application.CameraFSM | number |                                          |
+| Controller.Hardware.Application.CameraFirstPerson | number |                                          |
+| Controller.Hardware.Application.CameraIndependent | number |                                          |
+| Controller.Hardware.Application.CameraThirdPerson | number |                                          |
+| Controller.Hardware.Application.ComfortMode | float  | A non-zero value indicates the user has selected to use "Comfort Mode" when in HMD mode and 0 indicates the user has not selected to use "Comfort Mode." |
+| Controller.Hardware.Application.Grounded | float  | The Grounded property is used to determine whether an avatar is colliding with a floor entity or located within a specified distance above a floor entity. A floor entity is any entity that has collision enabled (the entity's ignoreForCollisions property is set to false). The specified distance depends on the avatar's size and is set to 1/3 the radius of the avatar's collision capsule. non-zero value indicates the avatar is either colliding with the floor entity or above the floor entity within the specified distance. A value of 0 indicates the avatar is not colliding with or near a floor entity. : The distance measured is from the avatar's capsule to the entity's collision hull. As an entity's collision hull may not match the entity's mesh (and won't for irregular shapes) and may be significantly larger than the mesh, the avatar may appear to be floating even though the Grounding value is 1. |
+| Controller.Hardware.Application.InHMD    | float  | A non-zero value indicates Interface is being run in HMD mode, and 0 indicates HMD mode is not in use. |
+| Controller.Hardware.Application.NavigationFocused | float  | If the user is using a GamePad or Hydra, and a menu or dialog appears, switching to the keyboard is not user friendly. By checking for NavigationFocused, conditional routes can be created that allow the user to navigate the menu without having to touch the mouse or keyboard. |
+| Controller.Hardware.Application.SnapTurn | number |                                          |
+| Controller.Hardware.Hydra                | number |                                          |
+| Controller.Hardware.Keyboard.(0-9)       | number | Number keys inclusive of 0 though 9      |
+| Controller.Hardware.Keyboard.(A-Z)       | number | Letter keys inclusive of A - Z of the English alphabet |
+| Controller.Hardware.Keyboard.(Left and Right) | number | Left and right arrow keys                |
+| Controller.Hardware.Keyboard.(Up and Down) | number | Up and Down arrow keys                   |
+| Controller.Hardware.Space                | number | Space bar                                |
+| Controller.Hardware.Shift                | number | Shift key                                |
+| Controller.Hardware.PageUp and  PageDown | number | PageUp and PageDown keys                 |
+| Controller.Hardware.LeftMouseButton      | number | Left mouse button                        |
+| Controller.Hardware.MiddleMouseButton    | number | Middle mouse button                      |
+| Controller.Hardware.RightMouseButton     | number | Right mouse button                       |
+| Controller.Hardware.LeftMouseClicked     | number | Left mouse button click                  |
+| Controller.Hardware.MiddleMouseClicked   | number | Middle mouse button click                |
+| Controller.Hardware.RightMouseClicked    | number | Right mouse button click                 |
+| Controller.Hardware.MouseMoveRight       | number | Mouse movement to the right              |
+| Controller.Hardware.MouseMoveLeft        | number | Mouse movement to the left               |
+| Controller.Hardware.MouseMoveUp          | number | Mouse movement up                        |
+| Controller.Hardware.MouseMoveDown        | number | Mouse movement down                      |
+| Controller.Hardware.MouseWheelRight      | number | Mouse wheel movement to the right        |
+| Controller.Hardware.MouseWheelLeft       | number | Mouse wheel movement left                |
+| Controller.Hardware.MouseWheelUp         | number | Mouse wheel movement up                  |
+| Controller.Hardware.MouseWheelDown       | number | Mouse wheel movement down                |
+| Controller.Hardware.TouchpadRight        | number | Touchpad movement to the right           |
+| Controller.Hardware.TouchpadLeft         | number | Touchpad movement to the left            |
+| Controller.Hardware.TouchpadUp           | number | Touchpad movement up                     |
+| Controller.Hardware.TouchpadDown         | number | Touchpad movement down                   |
+| Controller.Hardware.OculusTouch          | number |                                          |
+| Controller.Standard                      | number |                                          |
+| Controller.objectName                    | string |                                          |
+| MappingObject.name                       | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
+| MappingObject.channels                   | object | A JSON object of routes which define which input goes to which output. |
+
+
+
+##Methods <a id="methods"></a>
 
 | Methods                                  |
 | ---------------------------------------- |
 | Controller.createInputController(QString,QString) |
-| Controller.disableMapping(QString)       |
-| Controller.enableMapping(QString)        |
+| [Controller.disableMapping(QString)](#m1) |
+| [Controller.enableMapping(QString)](#m2) |
 | Controller.enableMapping(QString,bool)   |
 | Controller.findAction(QString)           |
 | Controller.findDevice(QString)           |
@@ -104,20 +139,38 @@ taxonomy:
 | Controller.getDeviceName(uint)           |
 | Controller.getDeviceNames()              |
 | Controller.getHardware()                 |
-| Controller.getPoseValue(StandardPoseChannel) |
-| Controller.getPoseValue(StandardPoseChannel,uint16_t) |
-| Controller.getPoseValue(int)             |
+| [Controller.getPoseValue(StandardPoseChannel)](#m3) |
+| [Controller.getPoseValue(StandardPoseChannel,uint16_t)](#m3) |
+| [Controller.getPoseValue(int)](#m3)      |
 | Controller.getRecommendedOverlayRect()   |
+| [Controller.getReticlePosition()](#m4)   |
 | Controller.getStandard()                 |
-| Controller.getValue(int)                 |
+| [Controller.getValue(int)](#m5)          |
 | Controller.getViewportDimensions()       |
+| [Haptics](#m6)                           |
 | Controller.loadMapping(QString)          |
 | Controller.newMapping()                  |
-| Controller.newMapping(QString)           |
-| Controller.parseMapping(QString)         |
+| [Controller.newMapping(QString)](#m9)    |
+| [Controller.parseMapping(QString)](#m10) |
+| [MappingObject.enable()](#m7)            |
+| [MappingObject.from()](#m8)              |
+| [RouteObject.clamp()](#m11)              |
+| [RouteObject.constrainToInteger()](#m12) |
+| [RouteObject.constrainToPositiveInteger()](#m13) |
+| [RouteObject.deadZone()](#m14)           |
+| [RouteObject.debug()](#m15)              |
+| [RouteObject.hysteresis()](#m16)         |
+| [RouteObject.peek()](#m17)               |
+| [RouteObject.invert()](#m18)             |
+| [RouteObject.pulse()](#m19)              |
+| [RouteObject.scale()](#m20)              |
+| [RouteObject.to()](#m21)                 |
+| [RouteObject.when()](#m22)               |
+| [SetReticlePosition()](#m23)             |
 
 
 
+##Events <a id="events"></a>
 | Events                                   |
 | ---------------------------------------- |
 | Controller.actionEndEvent(HFActionEvent) |
@@ -134,14 +187,14 @@ taxonomy:
 | Controller.captureWheelEvents()          |
 | Controller.destroyed()                   |
 | Controller.destroyed(QObject*)           |
-| Controller.hardwareChanged()             |
+| [Controller.hardwareChanged()](#e1)      |
 | Controller.inputEvent(int,float)         |
-| Controller.keyPressEvent(KeyEvent)       |
-| Controller.keyReleaseEvent(KeyEvent)     |
-| Controller.mouseDoublePressEvent(MouseEvent) |
-| Controller.mouseMoveEvent(MouseEvent)    |
-| Controller.mousePressEvent(MouseEvent)   |
-| Controller.mouseReleaseEvent(MouseEvent) |
+| [Controller.keyPressEvent(KeyEvent)](#e2) |
+| [Controller.keyReleaseEvent(KeyEvent)](#e3) |
+| [Controller.mouseDoublePressEvent(MouseEvent)](#e4) |
+| [Controller.mouseMoveEvent(MouseEvent)](#e5) |
+| [Controller.mousePressEvent(MouseEvent)](#e6) |
+| [Controller.mouseReleaseEvent(MouseEvent)](#e7) |
 | Controller.objectNameChanged(QString)    |
 | Controller.releaseActionEvents()         |
 | Controller.releaseEntityClickEvents()    |
@@ -151,9 +204,9 @@ taxonomy:
 | Controller.releaseMouseEvents()          |
 | Controller.releaseTouchEvents()          |
 | Controller.releaseWheelEvents()          |
-| Controller.touchBeginEvent(TouchEvent)   |
-| Controller.touchEndEvent(TouchEvent)     |
-| Controller.touchUpdateEvent(TouchEvent)  |
+| [Controller.touchBeginEvent(TouchEvent)](#e8) |
+| [Controller.touchEndEvent(TouchEvent)](#e9) |
+| [Controller.touchUpdateEvent(TouchEvent)](#e10) |
 | Controller.triggerHapticPulse(float,float) |
 | Controller.triggerHapticPulse(float,float,controller::Hand) |
 | Controller.triggerHapticPulseOnDevice(uint,float,float) |
@@ -162,7 +215,7 @@ taxonomy:
 | Controller.triggerShortHapticPulse(float,controller::Hand) |
 | Controller.triggerShortHapticPulseOnDevice(uint,float) |
 | Controller.triggerShortHapticPulseOnDevice(uint,float,controller::Hand) |
-| Controller.wheelEvent(WheelEvent)        |
+| [Controller.wheelEvent(WheelEvent)](#e11) |
 
 ## Overview
 
@@ -296,325 +349,71 @@ The following table provides a complete reference for all of the actions an enti
 
 
 
-## Events
-
-## hardwareChanged()
-
-
-
-A `hardwareChanged()` event is sent when a device (Joystick, GamePad) is registered or unregistered by a plugin.
-
-*Note: Not all plugins send hardware changed events. So, for example plugging or unplugging a mouse will not generate a hardware changed event while doing so with and Xbox controller will.*
-
-
-
-### Event
-
-`hardwareChanged()`
-
-### Arguments
-
-This function has no parameters.
-
-### Examples
-
-This example prints a line to the debug log when a device (Joystick, GamePad) is registered or unregistered by a plugin.
-
-```
-Controller.hardwareChanged.connect(function(){
-   print("Hardware changed");
-});
-
-```
-
-Note: Be sure to have the device enabled as an input device in Interface (**Avatar > Input Devices**). If it is not enabled, messages won't be sent.
-
-
-
-
-
-## keyPressEvent()
-
-
-A `keyPressEvent()` is sent when a key is pressed.
-
-### Event
-
-`keyPressEvent(event)`
-
-### Arguments
-
-- **event:KeyEvent**: A JavaScript keyboard event
-
-### Examples
-
-This example prints the key pressed to the debug log.
-
-```
-Controller.keyPressEvent.connect(function(event){
-   print ("You pressed: " + event.text);
-});
-```
-
-
-
-
-
-## keyReleaseEvent()
-
-
-
-A `keyReleaseEvent()` is sent when a key has been released after it has been pressed.
-
-
-### Event
-
-`keyReleaseEvent(event)`
-
-### Arguments
-
-- **event: KeyEvent**: A JavaScript keyboard event
-
-### Examples
-
-This example prints the key released to the debug log.
-
-```
-Controller.keyPressEvent.connect(function(event){
-   print ("The " + event.text + " key has been released");
-});
-```
-
-
-
-## mouseDoublePressEvent()
-
-
-A `mouseDoublePressEvent()` is sent when the mouse button has been double-clicked.
-
-
-
-### Event
-
-`mouseDoublePressEvent(event)`
-
-### Arguments
-
-**mouseEvent: MouseEvent**: A JavaScript mouse event
-
-### Examples
-
-This example prints a line to the debug log when the mouse has been double-clicked.
-
-```
-Controller.mouseDoublePressEvent.connect(function(event){
-   print ("The mouse has been double-clicked.");
-});
-```
-
-
-
-## mouseMoveEvent()
-
-
-
-The `mouseMoveEvent()` is sent when the mouse has been moved.
-
-
-### Event
-
-`mouseMoveEvent(event)`
-
-### Arguments
-
-- **mouseEvent: MouseEvent**: A JavaScript mouse event
-
-### Examples
-
-This example prints a line to the debug log when the mouse has been moved.
-
-```
-Controller.mouseMoveEvent.connect(function(event){
-   print ("The mouse has been moved.");
-});
-```
-
-
-
-## mousePressEvent()
-
-
-The `mousePressEvent()` is sent when the mouse button has been pressed.
-
-
-
-### Event
-
-`mousePressEvent(event)`
-
-### Arguments
-
-- **mouseEvent: MouseEvent**: A JavaScript mouse event
-
-### Examples
-
-This example prints a line to the debug log when the mouse button has been pressed. To test this script, open the Script Editor and run the following code:
-
-```
-Controller.mousePressEvent.connect(function(event){
-   print ("The mouse button has been pressed.");
-});
-
-```
-
-To run the sample as an entity script, wrap the content in an anonymous JavaScript function, save the file, and add the URL to the desired entity in the Script URL textbox:
-
-```
-(function(){
-    Controller.mousePressEvent.connect(function(event){
-       print ("The mouse button has been pressed.");
-    });
-})
-```
-
-
-
-
-
-## mouseReleaseEvent()
-
-
-
-The `mouseReleaseEvent()` is sent when the mouse button has been released.
-
-
-
-### Event
-
-`mouseReleaseEvent(event)`
-
-### Arguments
-
-- **mouseEvent: MouseEvent**: A JavaScript mouse event
-
-### Examples
-
-This example prints a line to the debug log when the mouse button has been released.
-
-```
-Controller.mouseReleaseEvent.connect(function(event){
-   print ("The mouse button has been released.");
-});
-```
-
-
-
-
-
-## touchBeginEvent()
-
-
-
-The `touchBeginEvent()` is sent when a touch event begins.
-
-### Event
-
-`touchBeginEvent(event)`
-
-### Arguments
-
-**event: TouchEvent**: A JavaScript touch event
-
-### Examples
-
-This example prints a line to the debug log when a touch event begins.
-
-```
-Controller.touchBeginEvent.connect(function (event) {
-   print ("A touch event began.");
-});
-```
-
-
-
-## touchEndEvent()
-
-
-
-The `touchEndEvent()` is sent when a touch event has ended.
-
-
-
-### Event
-
-`touchEndEvent(event)`
-
-### Arguments
-
-- **event: TouchEvent**: A JavaScript touch event
-
-### Examples
-
-This example prints a line to the debug log when a touch event has ended.
-
-```
-Controller.touchEndEvent.connect(function(event){
-   print ("The touch event has ended.");
-});
-```
-
-
-
-## touchUpdateEvent()
-
-
-
-The `touchUpdateEvent()` is sent when a touch event has been updated.
-
-
-
-### Event
-
-`touchUpdateEvent(event)`
-
-### Arguments
-
-- **event: TouchEvent**: A JavaScript touch event
-
-### Examples
-
-This example prints a line to the debug log when a touch event has been updated.
-
-```
-Controller.touchUpdateEvent.connect(function(event){
-   print ("The touch even has been updated.");
-});
-```
-
-
-
-## wheelEvent()
-
-
-The `wheelEvent()` is sent when a wheel event has occurred.
-
-### Event
-
-`wheelEvent(event)`
-
-### Arguments
-
-**event: WheelEvent**: A JavaScript wheel event
-
-### Examples
-
-This example prints a line to the debug log when a wheel event has occurred.
-
-```
-Controller.wheelEvent.connect(function(event){
-   print ("A wheel event has occurred.");
-});
-```
+## Controller.Standard <a id="c1"></a>
+
+The controller API has a list of predefined standard controller end points as listed below. End point names are based on the Xbox controller input names. For convenience, aliases based on the Playstation controller names are also available. Inputs are listed below with those for buttons, D-Pad, triggers, and sticks in the first chart and those for finger abstractions and poses in the second.
+
+### Buttons, D-Pad , Triggers, Sticks
+
+| Input     | Aliases    | Description               |
+| --------- | ---------- | ------------------------- |
+| `A`       | `Cross`    | Button                    |
+| `B`       | `Circle`   | Button                    |
+| `Back`    | `Select`   | Back button               |
+| `DD`      | `Down`     | D-Pad                     |
+| `DL`      | `Left`     | D-Pad                     |
+| `DR`      | `Right`    | D-Pad                     |
+| `DU`      | `Up`       | D-Pad                     |
+| `LB`      | `L1`       | Left bumper               |
+| `LS`      | `L3`       | Left stick press          |
+| `LSTouch` |            | Left stick touch          |
+| `LT`      | `L2`       | Left trigger              |
+| `LY`      |            | Left analog stick Y axis  |
+| `LX`      |            | Left analog stick x axis  |
+| `RB`      | `R1`       | Right bumper              |
+| `RS`      | `R3`       | Right stick press         |
+| `RSTouch` |            | Right stick touch         |
+| `RT`      | `R2`       | Right trigger             |
+| `RY`      | `RY`       | Right analog stick Y axis |
+| `RX`      | `RX`       | Right analog stick X axis |
+| `Start`   |            | Start button              |
+| `X`       | `Square`   | Button                    |
+| `Y`       | `Triangle` | Button                    |
+
+### Finger abstractions and poses
+
+Rather than buttons, triggers, etc., some controllers are based on the user's hands (for example, the Hydra or Leap Motion). For these types of controllers, the finger abstraction and pose properties are available to make it easy to create a JSON mapping based on hands rather than specific controls. For controls that map directly to a standard Xbox style game pad, the [standard.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/standard.json) mapping creates the aliases to the finger and thumb abstractions. For individual controls that don't map directly to a standard Xbox style game pad, the hardware specific JSON mapping creates the aliases (for example, [hydra.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/hydra.json)).
+
+The "touch" controls are intended to expose when a user has a finger touching, but not pressing a particular control (as will be needed for the Oculus Touch controller).
+
+| Input                      | Description        |
+| -------------------------- | ------------------ |
+| `LeftGrip`                 | Finger abstraction |
+| `LeftHand`                 | Pose               |
+| `LeftIndexPoint`           | Finger abstraction |
+| `LeftGripTouch`            | Finger abstraction |
+| `LeftPrimaryIndex`         | Finger abstraction |
+| `LeftPrimaryIndexTouch`    | Finger abstraction |
+| `LeftPrimaryThumb`         | Finger abstraction |
+| `LeftPrimaryThumbTouch`    | Finger abstraction |
+| `LeftSecondaryIndex`       | Finger abstraction |
+| `LeftSecondaryIndexTouch`  | Finger abstraction |
+| `LeftSecondaryThumb`       | Finger abstraction |
+| `LeftSecondaryThumbTouch`  | Finger abstraction |
+| `LeftThumbUp`              | Finger abstraction |
+| `RightGrip`                | Finger abstraction |
+| `RightHand`                | Pose               |
+| `RightIndexPoint`          | Finger abstraction |
+| `RightGripTouch`           | Finger abstraction |
+| `RightPrimaryIndex`        | Finger abstraction |
+| `RightPrimaryIndexTouch`   | Finger abstraction |
+| `RightPrimaryThumb`        | Finger abstraction |
+| `RightPrimaryThumbTouch`   | Finger abstraction |
+| `RightSecondaryIndex`      | Finger abstraction |
+| `RightSecondaryIndexTouch` | Finger abstraction |
+| `RightSecondaryThumb`      | Finger abstraction |
+| `RightSecondaryThumbTouch` | Finger abstraction |
+| `RightThumbUp`             | Finger abstraction |
 
 
 
@@ -622,7 +421,7 @@ Controller.wheelEvent.connect(function(event){
 
 ## Methods
 
-## disableMapping()
+## disableMapping()<a id="m1"></a>
 
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The individual rules in a mapping are known as *routes* and they define which input goes to which output.
@@ -665,7 +464,7 @@ var mapping = Controller.newMapping(MAPPING_NAME);
 
 
 
-## enableMapping()
+## enableMapping()<a id="m2"></a>
 
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The individual rules in a mapping are known as *routes* and they define which input goes to which output.
@@ -709,9 +508,7 @@ var mapping = Controller.newMapping(MAPPING_NAME);
 
 
 
-## getPoseValue()
-
-
+## getPoseValue()<a id="m3"></a>
 
 `getPoseValue()` is used to get the value of a specified endpoint pose. This can be a [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint object or it can be an individual hardware input pose.
 
@@ -746,8 +543,7 @@ With this example, you should see output similar to the following:
 
 
 
-## getReticlePosition()
-
+## getReticlePosition()<a id="m4"></a>
 
 `getReticlePosition()` is used to get the current position of the cursor on the screen.
 
@@ -775,9 +571,7 @@ print ("x: " + position.x + " y: " + position.y);
 
 
 
-## getValue()
-
-
+## getValue()<a id="m5"></a>
 
 `getValue()` gets the current value of the specified endpoint object. This can be a [Standard](https://wiki.highfidelity.com/wiki/Standard) endpoint object or it can be individual hardware endpoint object.
 
@@ -804,9 +598,7 @@ This example prints the current value of the left analog stick Y axis (`Controll
 
 
 
-## Haptics
-
-
+## Haptics<a id="m6"></a>
 
 If a controller supports haptic feedback, you can activate it using the following methods.
 
@@ -844,9 +636,7 @@ Controller.triggerShortHapticPulseOnDevice(deviceID, strength, hand )
 
 
 
-## MappingObject.enable()
-
-
+## MappingObject.enable()<a id="m7"></a>
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The individual rules in a mapping are known as *routes* and they define which input goes to which output. The routes in a mapping will not be used by the application until the mapping has been enabled.
 
@@ -887,17 +677,13 @@ mapping.enable(false);
 
 
 
-## MappingObject.from()
-
-
+## MappingObject.from()<a id="m8"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output.
 
 The [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject)'s `from()` method is used to specify the starting point of a route. This starting point can be a specific hardware input or it can be a [Standard](https://wiki.highfidelity.com/wiki/Standard) controller endpoint object.
 
 Note: If you create a direct route from a specific hardware input (for example, `Hydra.LX`), the default mapping (`Hydra.LX` to `Standard.LX`) will be suppressed, because the new route takes precedence.
-
-
 
 ### Function
 
@@ -937,15 +723,11 @@ Right trigger value: 0.992342344
 
 
 
-## newMapping()
-
-
+## newMapping()<a id="m9"></a>
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. A mapping is stored in a [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject).
 
 `newMapping()` creates a new [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject).
-
-
 
 ### Function
 
@@ -974,9 +756,7 @@ var mapping = Controller.newMapping("New_Mapping");
 
 
 
-## parseMapping()
-
-
+## parseMapping()<a id="m10"></a>
 
 A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. In addition to scripting, a mapping can be created as a JSON object.
 
@@ -1020,8 +800,9 @@ mapping.enable(false);
 
 **Note**: You can also enable and disable the mapping by name using `Controller.enableMapping()` and `Controller.disableMapping()`.
 
-## RouteObject.clamp()
 
+
+## RouteObject.clamp()<a id="m11"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1089,9 +870,7 @@ As you can see, without the `clamp()` filter, values range from 0 to 1.
 
 
 
-## RouteObject.constrainToInteger()
-
-
+## RouteObject.constrainToInteger()<a id="m12"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1155,9 +934,10 @@ Right analog stick x axis value: -0.692342344
 
 As you can see, when `constrainToInteger()` is not used, the function gets called with each and every value change of the right analog stick x axis.
 
-## RouteObject.constrainToPositiveInteger()
 
 
+
+## RouteObject.constrainToPositiveInteger()<a id="m13"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1221,11 +1001,9 @@ As you can see, when `constrainToPositiveInteger()` is not used, the function ge
 
 
 
-## RouteObject.deadZone()
+## RouteObject.deadZone()<a id="m14"></a>
 
-
-
-**Note**: This may not work at this time.
+>>>>> This may not work at this time.
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you customize the action.
 
@@ -1292,9 +1070,7 @@ As you can see, without the `deadZone` filter, values range from 0 to 1.
 
 
 
-## RouteObject.debug()
-
-
+## RouteObject.debug()<a id="m15"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output.
 
@@ -1336,9 +1112,7 @@ With debug enabled, you should see output similar to the following in **Develope
 
 
 
-## RouteObject.hysteresis()
-
-
+## RouteObject.hysteresis()<a id="m16"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you customize the action.
 
@@ -1395,9 +1169,7 @@ As you can see, the peeked at values range anywhere from 0 to 1 and are printed 
 
 
 
-## RouteObject.invert()
-
-
+## RouteObject.invert()<a id="m17"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1467,9 +1239,7 @@ As you can see, when you push the right analog stick y axis forward without the 
 
 
 
-## RouteObject.peek()
-
-
+## RouteObject.peek()<a id="m18"></a>
 
 Mappings use a "one read/one write" rule. After an input has been read, it is marked as read and can’t be read again.
 
@@ -1510,9 +1280,7 @@ mapping.from(Controller.Standard.LT).to(function(value) {
 
 
 
-## RouteObject.pulse()
-
-
+## RouteObject.pulse()<a id="m19"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1545,8 +1313,7 @@ mapping.from(Controller.Standard.LT).pulse(1.0).to(function(value){
 
 
 
-##RouteObject.scale()
-
+##RouteObject.scale()<a id="m20"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. The mapping you want to create may not be as simple as input A -> Action A. For this reason, the controller mapping API provides a number of filters allowing you to customize the action.
 
@@ -1592,9 +1359,10 @@ Right trigger value: 9.3957293
 
 As you can see, the value has been scaled by 10, and trigger values range from 0 to 10.
 
-## RouteObject.to()
 
 
+
+## RouteObject.to()<a id="m21"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output.
 
@@ -1622,9 +1390,7 @@ This example uses the [MappingObject](https://wiki.highfidelity.com/wiki/Mapping
 
 
 
-## RouteObject.when()
-
-
+## RouteObject.when()<a id="m22"></a>
 
 The individual rules in a mapping are known as *routes* and they define which input goes to which output. When setting up routes, you may want to use different mappings for different conditions.
 
@@ -1673,9 +1439,7 @@ In the conditional mapping example above, you'll see that the conditional case (
 
 
 
-## setReticlePosition()
-
-
+## setReticlePosition()<a id="m23"></a>
 
 ### Function
 
@@ -1696,235 +1460,299 @@ Controller.setReticlePosition(newPosition);
 
 
 
-## Objects
+## Events
 
-## Controller.Actions
+## hardwareChanged()<a id="e1"></a>
 
+A `hardwareChanged()` event is sent when a device (Joystick, GamePad) is registered or unregistered by a plugin.
 
-The [Controller API](https://wiki.highfidelity.com/wiki/Controller_API) has a list of predefined application *Actions* in `Controller.Actions`. The predefined actions are listed below.
+*Note: Not all plugins send hardware changed events. So, for example plugging or unplugging a mouse will not generate a hardware changed event while doing so with and Xbox controller will.*
 
-| Action            | Description                              |
-| ----------------- | ---------------------------------------- |
-| `Backward`        | Alias for `TranslateZ` in the positive direction |
-| `BoomIn`          | Camera movement to third person view     |
-| `BoomOut`         | Camera movement back to first person view |
-| `ContextMenu`     |                                          |
-| `CycleCamera`     | Cycles the camera                        |
-| `Down`            |                                          |
-| `Forward`         | Alias for `TranslateZ` in the negative direction |
-| `LeftHand`        | Set the left hand pose                   |
-| `LeftHandClick`   |                                          |
-| `Pitch`           | Rotation around the X axis               |
-| `PitchDown`       | Bisected alias for `Pitch`               |
-| `PitchUp`         | Bisected alias for `Pitch`               |
-| `PrimaryAction`   |                                          |
-| `ReticleClick`    | Pointer/Reticle click event              |
-| `ReticleDown`     | Bisected alias for `ReticleY`            |
-| `ReticleLeft`     | Bisected alias for `ReticleX`            |
-| `ReticleRight`    | Bisected alias for `ReticleX`            |
-| `ReticleUp`       | Bisected alias for `ReticleY`            |
-| `ReticleX`        | Reticle movement along the X axis        |
-| `ReticleY`        | Reticle movement along the Y axis        |
-| `RightHand`       | Set the right hand pose                  |
-| `RightHandClick`  |                                          |
-| `Roll`            | Rotation around the Z axis               |
-| `SecondaryAction` |                                          |
-| `Shift`           |                                          |
-| `StrafeLeft`      | Bisected alias for `TranslateX`          |
-| `StrafeRight`     | Bisected alias for <code>TranslateX      |
-| `StepPitch`       | Incremental rotation around the X axis   |
-| `StepRoll`        | Incremental rotation around the Z axis   |
-| `StepTranslateX`  | Incremental movement along the X axis    |
-| `StepTranslateY`  | Incremental movement along the Y axis    |
-| `StepTranslateZ`  | Incremental movement along the Z axis    |
-| `StepYaw`         | Incremental rotation around the Y axis   |
-| `ToggleMute`      | Toggle audio device mute                 |
-| `TranslateX`      | Movement along the X axis                |
-| `TranslateY`      | Movement along the Y axis                |
-| `TranslateZ`      | Movement along the Z axis                |
-| `Up`              |                                          |
-| `Yaw`             | Rotation around the Y axis               |
-| `YawLeft`         | Bisected alias for `Yaw`                 |
-| `YawRight`        | Bisected alias for `Yaw`                 |
+### Event
 
+`hardwareChanged()`
 
+### Arguments
 
-## Controller.Hardware
+This function has no parameters.
 
+### Examples
 
-
-Attached controllers are exposed as a tree of identifiers under the global variable `Controller`. That is, there's `Controller.Hardware.Foo` where Foo is the hardware name of the controller (Hydra, GamePad, Vive, etc.).
-
-Under each `Hardware.Foo` property, such as `Hardware.Hydra` or `Hardware.Gamepad`, there are properties for the specific inputs on the device.
-
-For more information, see the section *Creating Mappings for New Hardware* in the [Controller API Overview](https://wiki.highfidelity.com/wiki/Controller_API_Overview).
-
-
-
-## Controller.Hardware.Application
-
-
-
-When creating controller mappings, you may want to use different routes depending on your user's setup. For example, if your user is using an HMD (such as the Oculus Rift) in addition to a GamePad, to provide greater user comfort you may want to provide different controls than when using a GamePad alone. The `Controller.Hardware.Application` object provides an easy way to access information about the user's setup and preferences when creating conditional routes using the [when()](https://wiki.highfidelity.com/wiki/RouteObject.when()) filter.
-
-The `Controller.Hardware.Application` object has following properties:
-
-| Name                | Value | Description                              |
-| ------------------- | ----- | ---------------------------------------- |
-| `ComfortMode`       | float | A non-zero value indicates the user has selected to use "Comfort Mode" when in HMD mode and 0 indicates the user has not selected to use "Comfort Mode." |
-| `Grounded`          | float | The `Grounded` property is used to determine whether an avatar is colliding with a floor entity or located within a specified distance above a floor entity. A floor entity is any entity that has collision enabled (the entity's `ignoreForCollisions` property is set to `false`). The specified distance depends on the avatar's size and is set to 1/3 the radius of the avatar's collision capsule. non-zero value indicates the avatar is either colliding with the floor entity or above the floor entity within the specified distance. A value of 0 indicates the avatar is not colliding with or near a floor entity. : The distance measured is from the avatar's capsule to the entity's collision hull. As an entity's collision hull may not match the entity's mesh (and won't for irregular shapes) and may be significantly larger than the mesh, the avatar may appear to be floating even though the `Grounding` value is 1. |
-| `InHMD`             | float | A non-zero value indicates Interface is being run in HMD mode, and 0 indicates HMD mode is not in use. |
-| `NavigationFocused` | float | If the user is using a GamePad or Hydra, and a menu or dialog appears, switching to the keyboard is not user friendly. By checking for `NavigationFocused`, conditional routes can be created that allow the user to navigate the menu without having to touch the mouse or keyboard. |
-
-Note: Looking at any of these properties directly will give you the integer identifier of that input and not the value. To see the value you need to use [getValue()](https://wiki.highfidelity.com/wiki/GetValue()). For example, to print the current value of `inHMD` you would use something like this:
+This example prints a line to the debug log when a device (Joystick, GamePad) is registered or unregistered by a plugin.
 
 ```
-print ("InHMD: " +   Controller.getValue(Controller.Hardware.Application.InHMD));
+Controller.hardwareChanged.connect(function(){
+   print("Hardware changed");
+});
+```
+
+Note: Be sure to have the device enabled as an input device in Interface (**Avatar > Input Devices**). If it is not enabled, messages won't be sent.
+
+
+
+
+
+## keyPressEvent()<a id="e2"></a>
+
+A `keyPressEvent()` is sent when a key is pressed.
+
+### Event
+
+`keyPressEvent(event)`
+
+### Arguments
+
+- **event:KeyEvent**: A JavaScript keyboard event
+
+### Examples
+
+This example prints the key pressed to the debug log.
+
+```
+Controller.keyPressEvent.connect(function(event){
+   print ("You pressed: " + event.text);
+});
 ```
 
 
 
-## Controller.Hardware.Keyboard
+
+
+## keyReleaseEvent()<a id="e3"></a>
+
+A `keyReleaseEvent()` is sent when a key has been released after it has been pressed.
+
+### Event
+
+`keyReleaseEvent(event)`
+
+### Arguments
+
+- **event: KeyEvent**: A JavaScript keyboard event
+
+### Examples
+
+This example prints the key released to the debug log.
+
+```
+Controller.keyPressEvent.connect(function(event){
+   print ("The " + event.text + " key has been released");
+});
+```
 
 
 
-The [Controller API](https://wiki.highfidelity.com/wiki/Controller_API) has a list of predefined keyboard and mouse inputs in `Controller.Hardware.Keyboard`. For key inputs or mouse events not on this list, use the Controller API key and mouse event functions documented in the column to the left.
+## mouseDoublePressEvent()<a id="e4"></a>
 
-| KeyBoard / Mouse Input                   | Description                              |
-| ---------------------------------------- | ---------------------------------------- |
-| `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, and `9` | Number keys inclusive of 0 though 9      |
-| `A`, `B`, `C`, `D`, `E`, `F`,`G`, `H`, `I`, `J`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, and `Z` | Letter keys inclusive of A - Z of the English alphabet |
-| `Left` and `Right`                       | Left and right arrow keys                |
-| `Up` and `Down`                          | Up and down arrow keys                   |
-| `Space`                                  | Space bar                                |
-| `Shift`                                  | Shift key                                |
-| `PageUp` and `PageDown`                  | PageUp and PageDown keys                 |
-| `LeftMouseButton`                        | Left mouse button                        |
-| `MiddleMouseButton`                      | Middle mouse button                      |
-| `RightMouseButton`                       | Right mouse button                       |
-| `LeftMouseClicked`                       | Left mouse button click                  |
-| `MiddleMouseClicked`                     | Middle mouse button click                |
-| `RightMouseClicked`                      | Right mouse button click                 |
-| `MouseMoveRight`                         | Mouse movement to the right              |
-| `MouseMoveLeft`                          | Mouse movement to the left               |
-| `MouseMoveUp`                            | Mouse movement up                        |
-| `MouseMoveDown`                          | Mouse movement down                      |
-| `MouseWheelRight`                        | Mouse wheel movement to the right        |
-| `MouseWheelLeft`                         | Mouse wheel movement left                |
-| `MouseWheelUp`                           | Mouse wheel movement up                  |
-| `MouseWheelDown`                         | Mouse wheel movement down                |
-| `TouchpadRight`                          | Touchpad movement to the right           |
-| `TouchpadLeft`                           | Touchpad movement to the left            |
-| `TouchpadUp`                             | Touchpad movement up                     |
-| `TouchpadDown`                           | Touchpad movement down                   |
+A `mouseDoublePressEvent()` is sent when the mouse button has been double-clicked.
 
 
 
-## Controller.Standard
+### Event
 
+`mouseDoublePressEvent(event)`
 
-The controller API has a list of predefined standard controller end points as listed below. End point names are based on the Xbox controller input names. For convenience, aliases based on the Playstation controller names are also available. Inputs are listed below with those for buttons, D-Pad, triggers, and sticks in the first chart and those for finger abstractions and poses in the second.
+### Arguments
 
-### Buttons, D-Pad , Triggers, Sticks
+**mouseEvent: MouseEvent**: A JavaScript mouse event
 
-| Input     | Aliases    | Description               |
-| --------- | ---------- | ------------------------- |
-| `A`       | `Cross`    | Button                    |
-| `B`       | `Circle`   | Button                    |
-| `Back`    | `Select`   | Back button               |
-| `DD`      | `Down`     | D-Pad                     |
-| `DL`      | `Left`     | D-Pad                     |
-| `DR`      | `Right`    | D-Pad                     |
-| `DU`      | `Up`       | D-Pad                     |
-| `LB`      | `L1`       | Left bumper               |
-| `LS`      | `L3`       | Left stick press          |
-| `LSTouch` |            | Left stick touch          |
-| `LT`      | `L2`       | Left trigger              |
-| `LY`      |            | Left analog stick Y axis  |
-| `LX`      |            | Left analog stick x axis  |
-| `RB`      | `R1`       | Right bumper              |
-| `RS`      | `R3`       | Right stick press         |
-| `RSTouch` |            | Right stick touch         |
-| `RT`      | `R2`       | Right trigger             |
-| `RY`      | `RY`       | Right analog stick Y axis |
-| `RX`      | `RX`       | Right analog stick X axis |
-| `Start`   |            | Start button              |
-| `X`       | `Square`   | Button                    |
-| `Y`       | `Triangle` | Button                    |
+### Examples
 
-### Finger abstractions and poses
+This example prints a line to the debug log when the mouse has been double-clicked.
 
-Rather than buttons, triggers, etc., some controllers are based on the user's hands (for example, the Hydra or Leap Motion). For these types of controllers, the finger abstraction and pose properties are available to make it easy to create a JSON mapping based on hands rather than specific controls. For controls that map directly to a standard Xbox style game pad, the [standard.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/standard.json) mapping creates the aliases to the finger and thumb abstractions. For individual controls that don't map directly to a standard Xbox style game pad, the hardware specific JSON mapping creates the aliases (for example, [hydra.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/hydra.json)).
-
-The "touch" controls are intended to expose when a user has a finger touching, but not pressing a particular control (as will be needed for the Oculus Touch controller).
-
-| Input                      | Description        |
-| -------------------------- | ------------------ |
-| `LeftGrip`                 | Finger abstraction |
-| `LeftHand`                 | Pose               |
-| `LeftIndexPoint`           | Finger abstraction |
-| `LeftGripTouch`            | Finger abstraction |
-| `LeftPrimaryIndex`         | Finger abstraction |
-| `LeftPrimaryIndexTouch`    | Finger abstraction |
-| `LeftPrimaryThumb`         | Finger abstraction |
-| `LeftPrimaryThumbTouch`    | Finger abstraction |
-| `LeftSecondaryIndex`       | Finger abstraction |
-| `LeftSecondaryIndexTouch`  | Finger abstraction |
-| `LeftSecondaryThumb`       | Finger abstraction |
-| `LeftSecondaryThumbTouch`  | Finger abstraction |
-| `LeftThumbUp`              | Finger abstraction |
-| `RightGrip`                | Finger abstraction |
-| `RightHand`                | Pose               |
-| `RightIndexPoint`          | Finger abstraction |
-| `RightGripTouch`           | Finger abstraction |
-| `RightPrimaryIndex`        | Finger abstraction |
-| `RightPrimaryIndexTouch`   | Finger abstraction |
-| `RightPrimaryThumb`        | Finger abstraction |
-| `RightPrimaryThumbTouch`   | Finger abstraction |
-| `RightSecondaryIndex`      | Finger abstraction |
-| `RightSecondaryIndexTouch` | Finger abstraction |
-| `RightSecondaryThumb`      | Finger abstraction |
-| `RightSecondaryThumbTouch` | Finger abstraction |
-| `RightThumbUp`             | Finger abstraction |
+```
+Controller.mouseDoublePressEvent.connect(function(event){
+   print ("The mouse has been double-clicked.");
+});
+```
 
 
 
-## MappingObject
+## mouseMoveEvent()<a id="e5"></a>
+
+The `mouseMoveEvent()` is sent when the mouse has been moved.
+
+### Event
+
+`mouseMoveEvent(event)`
+
+### Arguments
+
+- **mouseEvent: MouseEvent**: A JavaScript mouse event
+
+### Examples
+
+This example prints a line to the debug log when the mouse has been moved.
+
+```
+Controller.mouseMoveEvent.connect(function(event){
+   print ("The mouse has been moved.");
+});
+```
 
 
-A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. The set of rules is stored in a MappingObject.
 
-A MappingObject has the following methods:
+## mousePressEvent()<a id="e6"></a>
 
-- [MappingObject.from()](https://wiki.highfidelity.com/wiki/MappingObject.from())
-- [MappingObject.enable()](https://wiki.highfidelity.com/wiki/MappingObject.enable())
+The `mousePressEvent()` is sent when the mouse button has been pressed.
 
-A MappingObject has the following properties:
+### Event
 
-| Property   | Type   | Description                              |
-| ---------- | ------ | ---------------------------------------- |
-| `name`     | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
-| `channels` | object | A JSON object of *routes* which define which input goes to which output. For more information, see the [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject). |
+`mousePressEvent(event)`
+
+### Arguments
+
+- **mouseEvent: MouseEvent**: A JavaScript mouse event
+
+### Examples
+
+This example prints a line to the debug log when the mouse button has been pressed. To test this script, open the Script Editor and run the following code:
+
+```
+Controller.mousePressEvent.connect(function(event){
+   print ("The mouse button has been pressed.");
+});
+```
+
+To run the sample as an entity script, wrap the content in an anonymous JavaScript function, save the file, and add the URL to the desired entity in the Script URL textbox:
+
+```
+(function(){
+    Controller.mousePressEvent.connect(function(event){
+       print ("The mouse button has been pressed.");
+    });
+})
+```
 
 
 
-## RouteObject
+
+
+## mouseReleaseEvent()<a id="e7"></a>
+
+The `mouseReleaseEvent()` is sent when the mouse button has been released.
 
 
 
-The individual rules in a mapping are known as *routes* and they define which input goes to which output. Routes are stored in a RouteObject.
+### Event
 
-A RouteObject has the following methods:
+`mouseReleaseEvent(event)`
 
-- [RouteObject.clamp()](https://wiki.highfidelity.com/wiki/RouteObject.clamp())
-- [RouteObject.constrainToInteger()](https://wiki.highfidelity.com/wiki/RouteObject.constrainToInteger())
-- [RouteObject.constrainToPositiveInteger()](https://wiki.highfidelity.com/wiki/RouteObject.constrainToPositiveInteger())
-- [RouteObject.deadZone()](https://wiki.highfidelity.com/wiki/RouteObject.deadZone())
-- [RouteObject.debug()](https://wiki.highfidelity.com/wiki/RouteObject.debug())
-- [RouteObject.hysteresis()](https://wiki.highfidelity.com/wiki/RouteObject.hysteresis())
-- [RouteObject.invert()](https://wiki.highfidelity.com/wiki/RouteObject.invert())
-- [RouteObject.peek()](https://wiki.highfidelity.com/wiki/RouteObject.peek())
-- [RouteObject.pulse()](https://wiki.highfidelity.com/wiki/RouteObject.pulse())
-- [RouteObject.to()](https://wiki.highfidelity.com/wiki/RouteObject.to())
-- [RouteObject.scale()](https://wiki.highfidelity.com/wiki/RouteObject.scale())
-- [RouteObject.when()](https://wiki.highfidelity.com/wiki/RouteObject.when())
+### Arguments
+
+- **mouseEvent: MouseEvent**: A JavaScript mouse event
+
+### Examples
+
+This example prints a line to the debug log when the mouse button has been released.
+
+```
+Controller.mouseReleaseEvent.connect(function(event){
+   print ("The mouse button has been released.");
+});
+```
+
+
+
+
+
+## touchBeginEvent()<a id="e8"></a>
+
+The `touchBeginEvent()` is sent when a touch event begins.
+
+### Event
+
+`touchBeginEvent(event)`
+
+### Arguments
+
+**event: TouchEvent**: A JavaScript touch event
+
+### Examples
+
+This example prints a line to the debug log when a touch event begins.
+
+```
+Controller.touchBeginEvent.connect(function (event) {
+   print ("A touch event began.");
+});
+```
+
+
+
+## touchEndEvent()<a id="e9"></a>
+
+The `touchEndEvent()` is sent when a touch event has ended.
+
+
+
+### Event
+
+`touchEndEvent(event)`
+
+### Arguments
+
+- **event: TouchEvent**: A JavaScript touch event
+
+### Examples
+
+This example prints a line to the debug log when a touch event has ended.
+
+```
+Controller.touchEndEvent.connect(function(event){
+   print ("The touch event has ended.");
+});
+```
+
+
+
+## touchUpdateEvent()<a id="e10"></a>
+
+The `touchUpdateEvent()` is sent when a touch event has been updated.
+
+
+
+### Event
+
+`touchUpdateEvent(event)`
+
+### Arguments
+
+- **event: TouchEvent**: A JavaScript touch event
+
+### Examples
+
+This example prints a line to the debug log when a touch event has been updated.
+
+```
+Controller.touchUpdateEvent.connect(function(event){
+   print ("The touch even has been updated.");
+});
+```
+
+
+
+## wheelEvent()<a id="e11"></a>
+
+The `wheelEvent()` is sent when a wheel event has occurred.
+
+### Event
+
+`wheelEvent(event)`
+
+### Arguments
+
+**event: WheelEvent**: A JavaScript wheel event
+
+### Examples
+
+This example prints a line to the debug log when a wheel event has occurred.
+
+```
+Controller.wheelEvent.connect(function(event){
+   print ("A wheel event has occurred.");
+});
+```
+
+
+
