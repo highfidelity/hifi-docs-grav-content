@@ -17,7 +17,7 @@ taxonomy:
 [plugin:youtube](https://www.youtube.com/watch?v=zOQK3QYvcUg)
 </div>
 <div id="sec-pg-body-1">
-<img src="/sec-pg/lets-dance/vive-gear.png" alt="vive-gear" style="float: left; vertical-align:middle; margin-left: 10rem; margin-right: 2rem;" width=25% title="Handshake Swirl"><span style="vertical-align:middle;"><h5 class="#sec-pg-body-1">The World is Your Stage!</h5><p style="margin-right: 2rem;">Don on your VR gear and express yourself! In the video above, we attached the HTC Vive trackers to our chest, hip, and feet for immersive motion capture!</p>
+<img src="/sec-pg/lets-dance/vive-gear.png" alt="vive-gear" style="float: left; vertical-align:middle; margin-left: 10rem; margin-right: 2rem;" width=25% title="Handshake Swirl"><span style="vertical-align:middle;"><h5 class="#sec-pg-body-1">The World is Your Stage!</h5><p style="margin-right: 2rem;">Don your VR gear and express yourself! In the video above, we attached the HTC Vive trackers to our chest, hip, and feet for immersive motion capture!</p>
 <p style="clear: both;">
 </div>
 <div id="sec-pg-body-2">
