@@ -1,5 +1,5 @@
 ---
-title: 'Coding Standards'
+title: 'Cent OS'
 taxonomy: 
 category:
 	docs
