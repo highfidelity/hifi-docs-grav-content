@@ -14,34 +14,32 @@ taxonomy:
 | ---------------------------------------- |
 | Menu.addActionGroup(QString,QStringList) |
 | Menu.addActionGroup(QString,QStringList,QString) |
-| Menu.addMenu(QString)                    |
+| [Menu.addMenu(QString)](#m1)             |
 | Menu.addMenu(QString,QString)            |
-| Menu.addMenuItem(MenuItemProperties)     |
+| [Menu.addMenuItem(MenuItemProperties)](#m2) |
 | Menu.addMenuItem(QString,QString)        |
 | Menu.addMenuItem(QString,QString,QString) |
-| Menu.addSeparator(QString,QString)       |
+| [Menu.addSeparator(QString,QString)](#m3) |
 | Menu.closeInfoView(QString)              |
 | Menu.isInfoViewVisible(QString)          |
 | Menu.isMenuEnabled(QString)              |
 | Menu.isOptionChecked(QString)            |
-| Menu.menuExists(QString)                 |
-| Menu.menuItemExists(QString,QString)     |
+| [Menu.menuExists(QString)](#m4)          |
+| [Menu.menuItemExists(QString,QString)](#m5) |
 | Menu.removeActionGroup(QString)          |
-| Menu.removeMenu(QString)                 |
+| [Menu.removeMenu(QString)](#m6)          |
 | Menu.removeMenuItem(QString,QString)     |
-| Menu.removeSeparator(QString,QString)    |
+| [Menu.removeSeparator(QString,QString)](#m7) |
 | Menu.setIsOptionChecked(QString,bool)    |
 | Menu.setMenuEnabled(QString,bool)        |
 | Menu.triggerOption(QString)              |
 
-| Events                          |
-| ------------------------------- |
-| Menu.destroyed()                |
-| Menu.destroyed(QObject*)        |
-| Menu.menuItemEvent(QString)     |
-| Menu.objectNameChanged(QString) |
+| Events                             |
+| ---------------------------------- |
+| [Menu.menuItemEvent(QString)](#m8) |
+| Menu.objectNameChanged(QString)    |
 
-## addMenu()
+## addMenu()<a id="m1"></a>
 
 ### Function
 
@@ -68,7 +66,7 @@ Menu.addMenu("Test Menu > Test Sub Menu");
 
 
 
-## addMenuItem()
+## addMenuItem()<a id="m2"></a>
 
 ### Function
 
@@ -121,7 +119,7 @@ Menu.addMenuItem({
 
 
 
-## addSeparator()
+## addSeparator()<a id="m3"></a>
 
 ### Function
 
@@ -149,7 +147,7 @@ Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly
 
 
 
-## menuExists()
+## menuExists()<a id="m4"></a>
 
 ### Function
 
@@ -174,7 +172,8 @@ Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly
 
 `}`
 
-## menuItemExists()
+## menuItemExists()<a id="m5"></a>
+
 ### Function
 
 `menuItemExists(menuName,menuItemName) // Return value `is used to check if a menuItem with called 'nameItemName' exists in the given menu.
@@ -199,7 +198,7 @@ if (Menu.menuItemExists("Developer","Stats")){
 
 
 
-## removeMenu()
+## removeMenu()<a id="m6"></a>
 
 ### Function
 
@@ -226,7 +225,7 @@ Menu.removeMenu("Test Menu");
 
 
 
-## removeSeparator()
+## removeSeparator()<a id="m7"></a>
 
 ### Function
 
@@ -252,7 +251,7 @@ This function does not return a value.
 Menu.removeSeparator("Audio > Devices","Output Audio Device");  // This would remove the seperator currently set by selectAudioDevice.js in the Audio > Devices menu.
 ```
 
-## Menu.menuItemEvent
+## Menu.menuItemEvent<a id="e1"></a>
 
 ### Description
 

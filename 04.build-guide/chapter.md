@@ -1,6 +1,7 @@
 ---
 title: 'Build Guide'
-published: true
+taxonomy:
+    category: docs
 ---
 
 #Build Guide

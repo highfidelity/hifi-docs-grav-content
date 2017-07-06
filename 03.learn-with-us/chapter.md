@@ -1,5 +1,7 @@
 ---
 title: Learn
+taxonomy:
+    category: docs
 ---
 
 #Learn

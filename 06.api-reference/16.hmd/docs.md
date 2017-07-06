@@ -53,10 +53,93 @@ taxonomy:
 | HMD.unsuppressKeyboard()                 |
 | HMD.worldPointFromOverlay(glm::vec2)     |
 
-| Events                         |
-| ------------------------------ |
-| HMD.IPDScaleChanged()          |
-| HMD.destroyed(QObject*)        |
-| HMD.destroyed()                |
-| HMD.mountedChanged()           |
-| HMD.objectNameChanged(QString) |
+
+
+## Properties
+
+**HMD.active**:
+
+True if the interface is in HMD mode. False if the interface is not in HMD mode
+
+## function isHMDAvailable ()
+
+Returns **True **- If HMD available; **False ** if no HMD is available
+
+## function isHandControllerAvailable ()
+
+Returns **True **- If hand controller is available; **False **, if hand controller is not available
+
+## function isHMDMode ()
+
+Returns **True** If the interface is in HMD mode;**False**, if the interface is not in HMD mode
+
+## function centerUI ()
+
+Rotate the overlay UI sphere so that it is centered about the current HMD position and orientation
+
+## function setHandLasers (hands, enabled, color, direction)
+
+Set the color and direction of a laser for a given hand
+
+**parameters**:
+
+```
+ hand - int - index of the hand you wish to change.
+
+```
+
+```
+ enabled - bool - enable or disable the laser for the given hand.
+
+```
+
+```
+ color - vec4 - color that will be set for the hand laser.
+
+```
+
+```
+ direction - vec3 - the direction the hand laser point to.
+
+```
+
+## function disableHandLasers(hands)
+
+Disable lasers for the given hands
+
+**parameters**
+
+```
+  hands - int - the index of the hand you want to disable the lasers
+
+```
+
+## function setExtraLaser (worldStart, enabled, color, direction)
+
+Set the color and direction of an extra laser at a specified location
+
+**parameters**:
+
+```
+ worldStart - vec3 - Set the location of the new laser in world.
+
+```
+
+```
+ enabled - bool - Enable or disable the laser.
+
+```
+
+```
+ color - vec4 - Color that will be set for the laser.
+
+```
+
+```
+ direction - vec3 - The direction the laser will point to.
+
+```
+
+## function disableExtraLaser ()
+
+If an extra laser was created disable it.
