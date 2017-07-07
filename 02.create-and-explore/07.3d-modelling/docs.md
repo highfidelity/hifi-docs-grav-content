@@ -4,8 +4,6 @@ taxonomy:
     category: docs
 ---
 
-# 3D models
-
 You can create basic shapes (spheres, cubes, and several other solid shapes) using the toolbar brought up by the 'Edit' HUD button - for more information see [Interface content editing tools](https://wiki.highfidelity.com/wiki/Edit_Mode). But you can also directly [import](https://wiki.highfidelity.com/wiki/Edit_Mode#Upload_3D_Models_to_Add_a_Model_Entity) **3D models** into High Fidelity as a means of building more visually complex objects as well as getting access to millions of pre-existing pieces of 3D content. Models imported into High Fidelity must currently be in OBJ or FBX format, and as with all importers, there are various limitations on the sub-formats supported in the file formats.
 
 To source 3D models for use in your domain, you can:

@@ -4,8 +4,6 @@ taxonomy:
     category: docs
 ---
 
-# Marketplace Submission Guidelines
-
 Thanks for considering submitting your content to the High Fidelity [Marketplace](https://wiki.highfidelity.com/wiki/Marketplace)! Our Marketplace is the best way to share your work, spread ideas, and enrich the metaverse with your [creations](https://wiki.highfidelity.com/wiki/Create_content).
 
 For the best experience possible, and to make the approval process go quickly, we kindly ask that you read and observe the following **Marketplace Submission Guidelines** before your [submission](https://wiki.highfidelity.com/wiki/Marketplace#Uploading_Items).
