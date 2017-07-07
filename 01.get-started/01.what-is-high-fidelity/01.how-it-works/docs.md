@@ -71,4 +71,4 @@ Scripts can help you customize High Fidelity with your own touch.
 * [Sandbox](../../../create-and-explore/start-working-in-your-sandbox)
 * [Entities](../../../create-and-explore/entities)
 * [Avatar](../../../create-and-explore/avatars)
-
+* [Scripting](../../../create-and-explore/all-about-scripting)
