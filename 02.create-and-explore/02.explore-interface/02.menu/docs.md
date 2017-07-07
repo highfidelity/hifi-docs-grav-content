@@ -66,8 +66,8 @@ People shows you the users who are online and available in the domain you are pr
 
 ![](people.PNG)
 
-You can set your availability to show you as online only for friends, friends and connections, everyone, or no one. 
-![](people.perm.PNG)
+You can set your availability to show you as online only for friends, friends and connections, everyone, or no one.
+![](people-perm.PNG)
 
 It also has a tab called "Connections" which lists all the friends you made in High Fidelity using the handshake. 
 ![](connections.PNG)
