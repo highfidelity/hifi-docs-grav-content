@@ -4,7 +4,7 @@ taxonomy:
     category: docs 
 ---
 
-*Learn about the the different menu options available on your tablet or HUD.*
+*Learn about the different menu options available on your tablet or HUD.*
 
 ## Overview
 

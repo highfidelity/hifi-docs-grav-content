@@ -123,7 +123,7 @@ Menu.addMenuItem({
 
 ### Function
 
-`addSeperator(menuDescriptor,menuItemName)` // Adds a seperator the the given menu, above menuItem with menuItemName.
+`addSeperator(menuDescriptor,menuItemName)` // Adds a seperator the given menu, above menuItem with menuItemName.
 
 ### Arguments
 

@@ -220,7 +220,7 @@ The concept of audio zones enables you to define specific parcels of space in 3D
 Another common example is to build a stage environment for performances. To do this, complete these steps:
 
 1. Create two new zones, call them "Stage" and "Audience".
-2. Set the the **Attenuation Coefficients** to zero with Stage as the source and Audience as the listener. That way, anyone in Audience will hear anyone on Stage at maximum volume. Everybody in Audience has the best seat in the house!
+2. Set the **Attenuation Coefficients** to zero with Stage as the source and Audience as the listener. That way, anyone in Audience will hear anyone on Stage at maximum volume. Everybody in Audience has the best seat in the house!
 3. If you want to minimize Audience people from hearing one another in the Audience zone, set up another **Attenuation Coefficients** pair with Audience as both source and listener, and set the distance attenuation very high--e.g., to 1.0. That way, you'll only hear people very close to you like your friend on your right, but won't hear the guy coughing 10 rows back.
 
 ### Reverb Settings
