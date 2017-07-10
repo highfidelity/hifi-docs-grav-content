@@ -1,5 +1,5 @@
 ---
-title: 'Account'
+title: 'User Activity Logger'
 taxonomy:
     category:
         - docs
