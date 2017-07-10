@@ -34,7 +34,6 @@ To use the trackers, you need to strap them on to different parts of your body. 
 
 
 
-
 ### Configure Your Mocap System
 
 Once you’ve purchased the number of trackers and the straps for your requirements:
@@ -51,10 +50,10 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Set your tracker configuration to one of the following options:
   - Head: Track your head with a head tracker instead of the HMD.
-    - Offset: Adjust the offset of the position of the tracker from your avatar’s head joint.
+        - Offset: Adjust the offset of the position of the tracker from your avatar’s head joint.
 
   - Hands: Track your hands with hand trackers instead of the hand controllers.
-    - Offset: Adjust the offset of the position of the trackers from your avatar's hand joints. 
+         - Offset: Adjust the offset of the position of the trackers from your avatar's hand joints. 
 
   - Feet: Track your feet with two trackers. 
 
@@ -79,9 +78,10 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Check to see that each tracker is tracking the corresponding joint on the avatar.
 
-You have completed configuring your trackers. Now, you have to calibrate them.
+> > >  Use Vive Devices in Desktop Mode: Check this box if you have a head tracker and want to use your trackers in desktop mode without having to wear your Vive headset.
 
-### Calibrate Your Mocap System
+
+### Another Way to Calibrate Your Mocap System
 
 Once you’ve applied your desired configuration, you can use a shortcut to calibrate your trackers without having to bring up your tablet again. To calibrate on the fly, stand in a T-Pose and hold the following four buttons together for 1 second: 
 
@@ -93,8 +93,6 @@ Once you’ve applied your desired configuration, you can use a shortcut to cali
 Check if you’ve calibrated your trackers by moving the corresponding joint and determine if your avatar moves the same joint. Check to see that each tracker now tracks its corresponding joint on the avatar.
 
 You can press the same buttons together for a second to remove your calibration from the trackers.
-
-> > >  Use Vive Devices in Desktop Mode: Check this box if you have a head tracker and want to use your trackers in desktop mode without having to wear your Vive headset.
 
 
 
