@@ -23,7 +23,7 @@ Before uploading 3D models, be sure to check the licensing terms to ensure that 
 
 To upload a model, complete the following steps:
 
-1. First, upload the model either to your own [asset server](../../start-working-in-your-sandbox/assignment-clients), or to a hosted content server (such as Amazon S3, Dropbox or a VPS server). To be accessible, all files should be in the public_html folder of the host content server (or the public folder of Dropbox). To make it easier, set up a specific folder and upload the models and all associated textures to the folder.
+1. First, upload the model either to your own [asset server](../../start-working-in-your-sandbox/assignment-clients), or to a hosted content server (such as Amazon S3 or a VPS server). To be accessible, all files should be in the public_html folder of the host content server. To make it easier, set up a specific folder and upload the models and all associated textures to the folder.
 
 2. Get the full URL of the hosted model (for example,`http://mywebsite.com/myObject.fbx`) and copy it to the clipboard or a notepad.
 
