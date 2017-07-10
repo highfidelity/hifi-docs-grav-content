@@ -1,5 +1,5 @@
 ---
-title: 'Account'
+title: 'Location'
 taxonomy:
     category:
         - docs
