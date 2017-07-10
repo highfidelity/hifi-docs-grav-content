@@ -40,7 +40,7 @@ This is the main menu which contains options for File, Edit, Audio, Avatar, Disp
 
 ###Bubble
 
-High Fidelity respects your privacy. We've created the Bubble to ensure that no avatar can see you if you they walk into your personal space while in VR. When you turn on the bubble, a bluish transparent sphere will be visible when an avatar nears your bubble. 
+High Fidelity respects your privacy. We've created the Bubble to ensure that no avatar can see you if they walk into your personal space while in VR. When you turn on the bubble, a bluish transparent sphere will be visible when an avatar nears your bubble.
 
 ![](bubble.PNG)
 
