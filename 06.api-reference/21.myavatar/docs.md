@@ -5,68 +5,70 @@ taxonomy:
         - docs
 ---
 
-| Properties                               | Type    | Description |
-| ---------------------------------------- | ------- | ----------- |
-| MyAvatar.angularVelocity.x               | number  |             |
-| MyAvatar.audioAverageLoudness            | number  |             |
-| MyAvatar.audioListenerMode               | number  |             |
-| MyAvatar.audioListenerModeCamera         | number  |             |
-| MyAvatar.audioListenerModeCustom         | number  |             |
-| MyAvatar.audioListenerModeHead           | number  |             |
-| MyAvatar.audioLoudness                   | number  |             |
-| MyAvatar.bodyPitch                       | number  |             |
-| MyAvatar.bodyRoll                        | number  |             |
-| MyAvatar.bodyYaw                         | number  |             |
-| MyAvatar.characterControllerEnabled      | boolean |             |
-| MyAvatar.collisionSoundURL               | string  |             |
-| MyAvatar.controllerLeftHandMatrix.r0c0   | number  |             |
-| MyAvatar.customListenOrientation.w       | number  |             |
-| MyAvatar.customListenPosition.x          | number  |             |
-| MyAvatar.energy                          | number  |             |
-| MyAvatar.handPosition.x                  | number  |             |
-| MyAvatar.headOrientation.z               | number  |             |
-| MyAvatar.headPitch                       | number  |             |
-| MyAvatar.headRoll                        | number  |             |
-| MyAvatar.headYaw                         | number  |             |
-| MyAvatar.hmdLeanRecenterEnabled          | boolean |             |
-| MyAvatar.jointNames.0                    | string  |             |
-| MyAvatar.leftHandPose.angularVelocity.x  | number  |             |
-| MyAvatar.leftHandPose.rotation.z         | number  |             |
-| MyAvatar.leftHandPose.translation.x      | number  |             |
-| MyAvatar.leftHandPose.valid              | boolean |             |
-| MyAvatar.leftHandPose.velocity.x         | number  |             |
-| MyAvatar.leftHandPosition.x              | number  |             |
-| MyAvatar.leftHandTipPose.angularVelocity.x | number  |             |
-| MyAvatar.leftHandTipPose.rotation.w      | number  |             |
-| MyAvatar.leftHandTipPose.translation.x   | number  |             |
-| MyAvatar.leftHandTipPose.valid           | boolean |             |
-| MyAvatar.leftHandTipPose.velocity.x      | number  |             |
-| MyAvatar.leftHandTipPosition.x           | number  |             |
-| MyAvatar.motorReferenceFrame             | string  |             |
-| MyAvatar.motorTimescale                  | number  |             |
-| MyAvatar.motorVelocity.x                 | number  |             |
-| MyAvatar.objectName                      | string  |             |
-| MyAvatar.orientation.w                   | number  |             |
-| MyAvatar.position.x                      | number  |             |
-| MyAvatar.rightHandPose.angularVelocity.x | number  |             |
-| MyAvatar.rightHandPose.rotation.w        | number  |             |
-| MyAvatar.rightHandPose.translation.x     | number  |             |
-| MyAvatar.rightHandPose.valid             | boolean |             |
-| MyAvatar.rightHandPose.velocity.x        | number  |             |
-| MyAvatar.rightHandPosition.x             | number  |             |
-| MyAvatar.rightHandTipPose.angularVelocity.x | number  |             |
-| MyAvatar.rightHandTipPose.rotation.w     | number  |             |
-| MyAvatar.rightHandTipPose.translation.x  | number  |             |
-| MyAvatar.rightHandTipPose.valid          | boolean |             |
-| MyAvatar.rightHandTipPose.velocity.x     | number  |             |
-| MyAvatar.rightHandTipPosition.x          | number  |             |
-| MyAvatar.scale                           | number  |             |
-| MyAvatar.sessionUUID                     | string  |             |
-| MyAvatar.sessionDisplayName              | string  |             |
-| MyAvatar.shouldRenderLocally             | boolean |             |
-| MyAvatar.skeletonModelURL                | string  |             |
-| MyAvatar.skeletonOffset.x                | number  |             |
-| MyAvatar.velocity.x                      | number  |             |
+| Properties                               | Type         | Description                              |
+| ---------------------------------------- | ------------ | ---------------------------------------- |
+| MyAvatar.angularVelocity                 | number       |                                          |
+| MyAvatar.audioAverageLoudness            | number       |                                          |
+| MyAvatar.audioListenerMode               | number       |                                          |
+| MyAvatar.audioListenerModeCamera         | number       |                                          |
+| MyAvatar.audioListenerModeCustom         | number       |                                          |
+| MyAvatar.audioListenerModeHead           | number       |                                          |
+| MyAvatar.audioLoudness                   | number       |                                          |
+| MyAvatar.bodyPitch                       | float        | bodyPitch is a float referring to the degree about an axis running from shoulder to shoulder of MyAvatar. Pitch is sometimes called 'elevation'. |
+| MyAvatar.bodyRoll                        | float        | bodyRoll is a float referring to the degree about an axis running from the chest to the back of the avatar. Roll is sometimes called 'bank'. |
+| MyAvatar.bodyYaw                         | float        | bodyYaw is a float referring to the degree left or right about an axis running from the head to the feet of MyAvatar. Yaw is sometimes called 'heading' |
+| MyAvatar.characterControllerEnabled      | boolean      |                                          |
+| MyAvatar.collisionSoundURL               | string       | The collisionSoundURL property specifies the sound to play when the avatar experiences a collision. You can provide a mono or stereo 16-bit WAV file running at either 24 Khz or 48 Khz. The latter is downsampled by the audio mixer, so all audio effectively plays back at a 24 Khz sample rate. 48 Khz RAW files are also supported. |
+| MyAvatar.controllerLeftHandMatrix        | number       |                                          |
+| MyAvatar.customListenOrientation         | w, x, y, z   |                                          |
+| MyAvatar.customListenPosition            | x, y, z      |                                          |
+| MyAvatar.displayName                     | string       |                                          |
+| MyAvatar.faceModelURL                    | string       | faceModelURL, a string, returns the URL of MyAvatar head's .fst file. An .fst file is just a text file containing information about the model, its textures, blendshape mappings, and skeleton mappings. |
+| MyAvatar.energy                          | number       |                                          |
+| MyAvatar.handPosition                    | x, y, z      |                                          |
+| MyAvatar.headOrientation                 | w, x, y, z   | headOrientation, a quaternion, represents the rotation of MyAvatar's head relative to a coordinate system. |
+| MyAvatar.headPitch                       | float        | headPitch is a float referring to the degree about an axis running from ear to ear of MyAvatar's head. Pitch is sometimes called 'elevation'. |
+| MyAvatar.headRoll                        | number       | headRoll is a float referring to the degree about an axis running from the nose to the back of MyAvatar's head. Roll is sometimes called 'bank'. |
+| MyAvatar.headYaw                         | number       | headYaw is the degree left or right about an axis running from the base to the crown of MyAvatar's head. Yaw is sometimes called 'heading'. |
+| MyAvatar.hmdLeanRecenterEnabled          | boolean      | An array of strings, jointNames displays the list of joints making up MyAvatar. To get the list of names, use getJointNames(). |
+| MyAvatar.jointNames                      | string array |                                          |
+| MyAvatar.leftHandPose.angularVelocity    | x, y, z      |                                          |
+| MyAvatar.leftHandPose.rotation           | w, x, y, z   |                                          |
+| MyAvatar.leftHandPose.translation        | x, y, z      |                                          |
+| MyAvatar.leftHandPose.valid              | boolean      |                                          |
+| MyAvatar.leftHandPose.velocity           | x, y, z      |                                          |
+| MyAvatar.leftHandPosition                | x, y, z      |                                          |
+| MyAvatar.leftHandTipPose.angularVelocity | x, y, z      |                                          |
+| MyAvatar.leftHandTipPose.rotation        | w, x, y, z   |                                          |
+| MyAvatar.leftHandTipPose.translation     | x, y, z      |                                          |
+| MyAvatar.leftHandTipPose.valid           | boolean      |                                          |
+| MyAvatar.leftHandTipPose.velocity        | x, y, z      |                                          |
+| MyAvatar.leftHandTipPosition             | x, y, z      |                                          |
+| MyAvatar.motorReferenceFrame             | string       |                                          |
+| MyAvatar.motorTimescale                  | number       |                                          |
+| MyAvatar.motorVelocity                   | x, y, z      |                                          |
+| MyAvatar.objectName                      | string       |                                          |
+| MyAvatar.orientation                     | w, x, y, z   |                                          |
+| MyAvatar.position                        | x, y, z      |                                          |
+| MyAvatar.rightHandPose.angularVelocity   | x, y, z      |                                          |
+| MyAvatar.rightHandPose.rotation          | w, x, y, z   |                                          |
+| MyAvatar.rightHandPose.translation       | x, y, z      |                                          |
+| MyAvatar.rightHandPose.valid             | boolean      |                                          |
+| MyAvatar.rightHandPose.velocity          | x, y, z      |                                          |
+| MyAvatar.rightHandPosition               | x, y, z      |                                          |
+| MyAvatar.rightHandTipPose.angularVelocity | x, y, z      |                                          |
+| MyAvatar.rightHandTipPose.rotation       | w, x, y, z   |                                          |
+| MyAvatar.rightHandTipPose.translation    | x, y, z      |                                          |
+| MyAvatar.rightHandTipPose.valid          | boolean      |                                          |
+| MyAvatar.rightHandTipPose.velocity       | x, y, z      |                                          |
+| MyAvatar.rightHandTipPosition            | x, y, z      |                                          |
+| MyAvatar.scale                           | number       |                                          |
+| MyAvatar.sessionUUID                     | string       |                                          |
+| MyAvatar.sessionDisplayName              | string       |                                          |
+| MyAvatar.shouldRenderLocally             | boolean      |                                          |
+| MyAvatar.skeletonModelURL                | string       |                                          |
+| MyAvatar.skeletonOffset                  | x, y, z      |                                          |
+| MyAvatar.velocity                        | x, y, z      |                                          |
 
 | Methods                                  |
 | ---------------------------------------- |
@@ -238,23 +240,23 @@ taxonomy:
 | MyAvatar.useFullAvatarURL(QUrl)          |
 | MyAvatar.useFullAvatarURL(QUrl,QString)  |
 
-| Events                                  |
-| --------------------------------------- |
-| MyAvatar.audioListenerModeChanged()     |
-| MyAvatar.collisionWithEntity(Collision) |
-| MyAvatar.destroyed()                    |
-| MyAvatar.destroyed(QObject*)            |
-| MyAvatar.energyChanged(float)           |
-| MyAvatar.objectNameChanged(QString)     |
-| MyAvatar.onLoadComplete()               |
-| MyAvatar.positionGoneTo()               |
-| MyAvatar.transformChanged()             |
-| MyAvatar.wentActive()                   |
-| MyAvatar.wentAway()                     |
+| Events                                   |
+| ---------------------------------------- |
+| MyAvatar.audioListenerModeChanged()      |
+| [MyAvatar.collisionWithEntity(Collision)](#e1) |
+| MyAvatar.destroyed()                     |
+| MyAvatar.destroyed(QObject*)             |
+| MyAvatar.energyChanged(float)            |
+| MyAvatar.objectNameChanged(QString)      |
+| MyAvatar.onLoadComplete()                |
+| MyAvatar.positionGoneTo()                |
+| MyAvatar.transformChanged()              |
+| MyAvatar.wentActive()                    |
+| MyAvatar.wentAway()                      |
 
 
 
-# MyAvatar.collisionWithEntity()
+# MyAvatar.collisionWithEntity()<a id="e1"></a>
 
 The `collisionWithEntity()` event is sent when the avatar collides with an entity.
 
