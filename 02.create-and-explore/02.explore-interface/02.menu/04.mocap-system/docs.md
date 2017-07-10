@@ -16,13 +16,10 @@ This page guides you through the process of configuring and calibrating Vive tra
 
 You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/) to set-up a mocap system for yourself in High Fidelity. Depending on what kind of motion capture you’re looking for, the number of trackers needed differ.
 
-![img](body-placement.png)
-
 - Only feet: 2 Vive trackers.
 - Feet and hips: 3 Vive trackers.
 - Feet, hips and chest: 4 Vive trackers.
 - Feet, hips and shoulders: 5 Vive trackers.
-
 
 To use the trackers, you need to strap them on to different parts of your body. You can purchase straps of different lengths for different purposes from here:
 
@@ -32,7 +29,7 @@ To use the trackers, you need to strap them on to different parts of your body. 
 * [Hand Straps](https://www.amazon.com/SublimeWare-Degree-Rotation-Session-SJ4000/dp/B01H18TY2S/ref=sr_1_2?ie=UTF8&qid=1492804865&sr=8-2&keywords=go+pro+arm+mount)
 * [Head Straps](https://www.amazon.com/EEEKit-Kidizoom-Action-EK7000-DBPOWER/dp/B019SXPF3G/ref=sr_1_1?ie=UTF8&qid=1492795518&sr=8-1&keywords=EEEKit+Head+Strap+Mount+for+VTech+Kidizoom+Kids+Cam%2C)
 
-
+![img](body-placement.png)
 
 ### Configure Your Mocap System
 
@@ -44,23 +41,18 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Start Interface in HMD mode and pull up you tablet.
 
-- Go to **Settings > Controller Settings** (this menu is only available to Vive users).
+- Go to **Settings > Controller Settings**.
 
   ![img](settings.png)
 
 - Set your tracker configuration to one of the following options:
   - Head: Track your head with a head tracker instead of the HMD.
         - Offset: Adjust the offset of the position of the tracker from your avatar’s head joint.
-
   - Hands: Track your hands with hand trackers instead of the hand controllers.
          - Offset: Adjust the offset of the position of the trackers from your avatar's hand joints. 
-
   - Feet: Track your feet with two trackers. 
-
   - Hips: You'll need to have two feet trackers and one hip tracker to track your hips (3 total). 
-
   - Chest: You can track your chest using one chest tracker, one hip tracker and two feet trackers (4 total).
-
   - Shoulders: Track your shoulders with two trackers on your shoulders, one tracker for your hip, and two for your feet (5 total).
 
     ![img](ViveSettings.PNG)
@@ -69,9 +61,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Stand in a T-Pose until the timer counts down to zero:
   - Feet together
-
   - Arms out
-
   - Head looking straight ahead. 
 
     ![img](calibrate.PNG)
@@ -119,5 +109,3 @@ You can press the same buttons together for a second to remove your calibration 
 * My avatar’s feet keep going underground!
 
   * This is a known issue we are working on. To avoid this from occurring frequently, don’t jump around too much. For a quick fix, just drive forward or teleport using the controller. 
-
-  ​
