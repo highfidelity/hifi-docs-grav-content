@@ -12,4 +12,4 @@ Once you complete the tutorial, you can teleport to the **Welcome** domain.
 
 In Welcome, you can talk to other users and the greeters, and explore the myriad possibilities of High Fidelity.
 
-To get started, you need to pull up your tablet. Check out all you need to know about the tablet and other tools in High Fidelity in the next page. 
+To get started, you need to pull up your tablet. Check out all you need to know about the tablet and other tools in High Fidelity on the next page. 
