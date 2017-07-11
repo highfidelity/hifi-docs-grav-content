@@ -13,7 +13,7 @@ This page talks about the default script in Interface that generates and manages
 
 ## Notifications Generated
 
-When you first start [Interface](../../../../get-started/how-it-works#interface), it runs a number of [default scripts](../../../all-about-scripting/default-scripts) designed to improve the experience. One of these scripts, `notifications.js`, generates notifications about system changes. It also adds a new menu item, **Tools > Notifications**, that allows you to play a sound when a specific type of notification is received.
+When you first start [Interface](../../../../get-started/what-is-high-fidelity/how-it-works#interface), it runs a number of [default scripts](../../../all-about-scripting/default-scripts) designed to improve the experience. One of these scripts, `notifications.js`, generates notifications about system changes. It also adds a new menu item, **Tools > Notifications**, that allows you to play a sound when a specific type of notification is received.
 
 By default, you'll receive notifications when:
 
