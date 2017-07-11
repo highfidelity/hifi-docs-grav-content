@@ -112,7 +112,7 @@ To configure your domain server to use the domain ID for your place name, comple
 3. If you aren't already connected, connect to your High Fidelity account. You will be required to generate an authorization token. Follow the instructions on screen to create and use the token.
 
 4. Once authenticated and connected to your High Fidelity account, on the server settings page, under MetaVerse/Networking select **Choose from my domains**.
-  ![](\metaverse-networking.png)]
+  ![](\metaverse-networking.png)
 
 5. In the dialog box that appears, select the domain ID that the place name points to and click **Choose domain**.
   ![](\choose-domain.png)
