@@ -399,7 +399,7 @@ CameraEntity: {c5272962-571e-4897-bfd6-a6e0fcfccf1b}
 
 ### setModeString()<a id="m9"></a>
 
-In Interface the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the the default controls for camera movement.
+In Interface the camera view can be set to a number of different modes ("first person", "third person", "mirror", "independent", or "entity"). These modes affect the relative position of the camera to your avatar as well as the default controls for camera movement.
 
 `setModeString()` is used to set the camera mode.
 

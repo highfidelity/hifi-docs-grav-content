@@ -42,7 +42,7 @@ To create a web entity that displays the High Fidelity YouTube channel, complete
    ![](source-url.PNG)
 
 
-   You should see the the new web page load soon as you press enter.
+   You should see the new web page load soon as you press enter.
 
    ![](\youtube-web-entity.png)
 

@@ -27,7 +27,3 @@ taxonomy:
 | UserActivityLogger.openedMarketplace()   |
 | UserActivityLogger.openedTablet(bool)    |
 | UserActivityLogger.palOpened(float)      |
-| UserActivityLogger.toggledAway(bool)     |
-
-
-

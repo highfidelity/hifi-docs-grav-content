@@ -1451,7 +1451,7 @@ In the conditional mapping example above, you'll see that the conditional case (
 
 ### Examples
 
-This example moves the the cursor to the upper left-hand corner of the screen.
+This example moves the cursor to the upper left-hand corner of the screen.
 
 ```
 var newPosition = {x:0 , y:0};

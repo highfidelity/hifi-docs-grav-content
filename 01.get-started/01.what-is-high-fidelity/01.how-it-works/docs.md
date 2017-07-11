@@ -47,7 +47,7 @@ You can use any of these entities to create what you want.
 
 ##Avatar
 
-To experience High Fidelity, you will need an [**avatar**](../../../create-and-explore/avatars). When you first launch Interface, your avatar will be a default avatar assigned by High Fidelity. You are free to create your own Avatar using other software and importing into High Fidelity. Learn more about avatar creation here. 
+To experience High Fidelity, you will need an [**avatar**](../../../create-and-explore/avatars). When you first launch Interface, your avatar will be a default avatar assigned by High Fidelity. You are free to create your own Avatar using other software and importing into High Fidelity. Learn more about avatar creation [**here**](../../../create-and-explore/avatars/create-avatars). 
 
 
 
@@ -71,4 +71,4 @@ Scripts can help you customize High Fidelity with your own touch.
 * [Sandbox](../../../create-and-explore/start-working-in-your-sandbox)
 * [Entities](../../../create-and-explore/entities)
 * [Avatar](../../../create-and-explore/avatars)
-
+* [Scripting](../../../create-and-explore/all-about-scripting)

@@ -33,7 +33,7 @@ You should now see the script at the top of the *Running Scripts* panel as well 
 
 ### Permission Required to Create/Edit Objects
 
-Each virtual world owner has the ability to restrict who can add or edit entities (High Fidelity objects) in their virtual world. If the script you want to run adds or edits entities and you don't have permission to do so, you won't see any objects created or changed. You will, however, still see the script listed in the *Running Scripts* panel. For example, if you installed [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox) and you are in your [Home](https://wiki.highfidelity.com/wiki/Home_domain) world, if you run the High Fidelity example script `createCow.js` found in the tutorials folder, an animated cow will appear in front of you. However; if you run `createCow.js` while in "Playa" (the world explored in [Visit Virtual Worlds](https://wiki.highfidelity.com/wiki/Explore)), the animated cow will NOT appear. Note that in both cases, you will see the `createCow.js` script listed at the the top of the *Running Scripts* list.
+Each virtual world owner has the ability to restrict who can add or edit entities (High Fidelity objects) in their virtual world. If the script you want to run adds or edits entities and you don't have permission to do so, you won't see any objects created or changed. You will, however, still see the script listed in the *Running Scripts* panel. For example, if you installed [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox) and you are in your [Home](https://wiki.highfidelity.com/wiki/Home_domain) world, if you run the High Fidelity example script `createCow.js` found in the tutorials folder, an animated cow will appear in front of you. However; if you run `createCow.js` while in "Playa" (the world explored in [Visit Virtual Worlds](https://wiki.highfidelity.com/wiki/Explore)), the animated cow will NOT appear. Note that in both cases, you will see the `createCow.js` script listed at the top of the *Running Scripts* list.
 
 ## Reload or Stop a Running Script
 
@@ -42,7 +42,7 @@ At any time you can close or restart one or all of the running scripts. To reloa
 - To reload all running scripts, click the **Reload All** button at the top of the *Running Scripts* panel.
 - To reload a specific script, click the circular arrow next to the script in the currently running scripts list.
 - To stop all running scripts, click the *Stop All** button at the top of the *Running Scripts* panel.
-- To stop a specific script, click the X next to the the script in the currently running scripts list.
+- To stop a specific script, click the X next to the script in the currently running scripts list.
 
 ## Get Started Writing Your Own Scripts
 
