@@ -1,5 +1,5 @@
 ---
-title: 'Account'
+title: 'User Activity Logger'
 taxonomy:
     category:
         - docs
@@ -22,11 +22,12 @@ taxonomy:
 | Events                                   |
 | ---------------------------------------- |
 | UserActivityLogger.closedTablet()        |
-| UserActivityLogger.destroyed()           |
-| UserActivityLogger.destroyed(QObject*)   |
 | UserActivityLogger.enabledEdit()         |
 | UserActivityLogger.objectNameChanged(QString) |
 | UserActivityLogger.openedMarketplace()   |
 | UserActivityLogger.openedTablet(bool)    |
 | UserActivityLogger.palOpened(float)      |
 | UserActivityLogger.toggledAway(bool)     |
+
+
+
