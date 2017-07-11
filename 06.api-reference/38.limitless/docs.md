@@ -19,8 +19,7 @@ taxonomy:
 
 | Events                                   |
 | ---------------------------------------- |
-| LimitlessSpeechRecognition.destroyed()   |
-| LimitlessSpeechRecognition.destroyed(QObject*) |
 | LimitlessSpeechRecognition.onReceivedTranscription(QString) |
 | LimitlessSpeechRecognition.objectNameChanged(QString) |
 | LimitlessSpeechRecognition.onFinishedSpeaking(QString) |
+

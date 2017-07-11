@@ -12,8 +12,8 @@ taxonomy:
 | Scene.shouldRenderEntities            | boolean |             |
 | Scene.stage.backgroundMode            | string  |             |
 | Scene.stage.keyLight.ambientIntensity | number  |             |
-| Scene.stage.keyLight.color.x          | number  |             |
-| Scene.stage.keyLight.direction.x      | number  |             |
+| Scene.stage.keyLight.color            | number  |             |
+| Scene.stage.keyLight.direction        | number  |             |
 | Scene.stage.keyLight.intensity        | number  |             |
 | Scene.stage.keyLight.objectName       | string  |             |
 | Scene.stage.location.altitude         | number  |             |
@@ -37,20 +37,10 @@ taxonomy:
 
 | Events                                   |
 | ---------------------------------------- |
-| Scene.destroyed()                        |
-| Scene.destroyed(QObject*)                |
 | Scene.objectNameChanged(QString)         |
 | Scene.shouldRenderAvatarsChanged(bool)   |
 | Scene.shouldRenderEntitiesChanged(bool)  |
-| Scene.stage.destroyed()                  |
-| Scene.stage.destroyed(QObject*)          |
-| Scene.stage.keyLight.destroyed()         |
-| Scene.stage.keyLight.destroyed(QObject*) |
 | Scene.stage.keyLight.objectNameChanged(QString) |
-| Scene.stage.location.destroyed()         |
-| Scene.stage.location.destroyed(QObject*) |
 | Scene.stage.location.objectNameChanged(QString) |
 | Scene.stage.objectNameChanged(QString)   |
-| Scene.stage.time.destroyed()             |
-| Scene.stage.time.destroyed(QObject*)     |
 | Scene.stage.time.objectNameChanged(QString) |

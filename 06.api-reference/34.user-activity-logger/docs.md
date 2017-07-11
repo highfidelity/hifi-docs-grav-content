@@ -22,11 +22,8 @@ taxonomy:
 | Events                                   |
 | ---------------------------------------- |
 | UserActivityLogger.closedTablet()        |
-| UserActivityLogger.destroyed()           |
-| UserActivityLogger.destroyed(QObject*)   |
 | UserActivityLogger.enabledEdit()         |
 | UserActivityLogger.objectNameChanged(QString) |
 | UserActivityLogger.openedMarketplace()   |
 | UserActivityLogger.openedTablet(bool)    |
 | UserActivityLogger.palOpened(float)      |
-| UserActivityLogger.toggledAway(bool)     |
