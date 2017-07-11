@@ -18,7 +18,7 @@ The [**Interface**](../../../create-and-explore/explore-interface) is our client
 
 ##Sandbox
 
-If you’re interested in creating your own world and sharing it with other users, you’ll need the [**Sandbox**]((../../../create-and-explore/start-working-in-your-sandbox). The Sandbox is your space, where you can create anything you’d like. When you run the Sandbox, your system is functioning as a server. This means you are hosting your own Sandbox. You, or any other user, can access your Sandbox from the Interface by typing in its place name or URL. You can control who visits your Sandbox by modifying your server settings.  
+If you’re interested in creating your own world and sharing it with other users, you’ll need the [**Sandbox**](../../../create-and-explore/start-working-in-your-sandbox). The Sandbox is your space, where you can create anything you’d like. When you run the Sandbox, your system is functioning as a server. This means you are hosting your own Sandbox. You, or any other user, can access your Sandbox from the Interface by typing in its place name or URL. You can control who visits your Sandbox by modifying your server settings.  
 
 
 
