@@ -29,17 +29,17 @@ To purchase a place name:
 1. Log in to the [High Fidelity](https://metaverse.highfidelity.com/) using your High Fidelity account username and password.  After you have logged in, the login menu item at the top-right of the [High Fidelity](https://metaverse.highfidelity.com/) website will be your username.
 
 2. Click on your username and from the pull-down menu, select Place Names.
-  ![](\place-name-menu.png)].
+  ![](place-name-menu.png).
 
 3. If you have never purchased a place name, you will see an empty table titled Places and a button prompting you to create a place name. (If you have  set up a domain and received a randomly generated place name, it won't be listed as only purchased place names are listed here.)
 
-![](\place-names.png)]
+![](place-names.png)
 
 3. Click  **Create a Place Name**.
 
 4. Enter the place name you want to purchase. Place names must be 4-64 characters in length. Letters, numbers and hyphens are allowed. If the place name you have entered is already taken, you will receive an error message. If the name you entered is available, you will see the Checkout Now button. 
 
-![](\enter-place-name.png) 
+![](enter-place-name.png) 
 
 5. Click  **Checkout Now** .
 
@@ -64,7 +64,7 @@ To add a domain ID to your account, complete the following steps:
 
 1. On the High Fidelity   website, click on your username in the top menu bar and from the pull-down menu, select Domain. If you don't see your username, you aren't logged in. Login to see your username on the top-right corner of the website. 
 2. If you don't have any domains associated with your account, you will see an empty table titled Domains and a button prompting you to create a new domain.
-  ![](\create-domain.png) 
+  ![](create-domain.png) 
 3. Click **Create New Domain** to add a new domain to your account.
 4. In the New Domain view: Enter a description in the Description field and in the Automatic networking drop down, select Full. ![](\domain-creation-ex.png)
 
@@ -72,7 +72,7 @@ To add a domain ID to your account, complete the following steps:
 
 5. Click  **Create Domain** . You'll see the *Domain* view with the new domain listed.
 
-![](\created-with-udid.png)
+![](created-with-udid.png)
 
 You can now point a place name at the domain ID you just added.
 
@@ -112,10 +112,10 @@ To configure your domain server to use the domain ID for your place name, comple
 3. If you aren't already connected, connect to your High Fidelity account. You will be required to generate an authorization token. Follow the instructions on screen to create and use the token.
 
 4. Once authenticated and connected to your High Fidelity account, on the server settings page, under MetaVerse/Networking select **Choose from my domains**.
-  ![](\metaverse-networking.png)
+  ![](metaverse-networking.png)
 
 5. In the dialog box that appears, select the domain ID that the place name points to and click **Choose domain**.
-  ![](\choose-domain.png)
+  ![](choose-domain.png)
 
 You and other users will now be able to access your domain using Interface by typing the place name into the *Address Bar*. You may also use the URI `hifi://` in this manner `hifi://MyPlaceName`.
 
@@ -136,7 +136,7 @@ Assuming the place name you point to points to a domain ID used by a domain, you
 ## Listing a Place Name in the High Fidelity Directory
 
 
-| [![Important.gif](https://wiki.highfidelity.com/images/thumb/6/66/Important.gif/40px-Important.gif)](https://wiki.highfidelity.com/wiki/File:Important.gif) | **High Fidelity Directory is temporarily disabled.** |
+| [![Important.gif](imp.gif) | **High Fidelity Directory is temporarily disabled.** |
 | ---------------------------------------- | ---------------------------------------- |
 | These instructions will be updated when the Directory becomes available again. |                                          |
 
@@ -148,7 +148,7 @@ Your domain is automatically listed in the [High Fidelity Directory](https://hig
 
 If all of the above conditions are true, you will see your preview image and description in the [High Fidelity Directory](https://highfidelity.com/directory) and users may visit your domain by clicking on it.
 
-![](\directory.png)
+![](directory.png)
 
 ## Sharing a Place Name as a URL
 
