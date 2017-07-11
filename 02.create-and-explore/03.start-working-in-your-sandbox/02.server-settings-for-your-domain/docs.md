@@ -49,7 +49,7 @@ You can navigate to specific settings using the navbar. By default, only the bas
 
 ## Enable Updated Settings
 
-If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settingd and restarts your domain server. 
+If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server. 
 
 ![](\save-and-restart.png)
 
