@@ -41,8 +41,7 @@ For security purposes, let's configure this server to use a special keypair inst
 * Go to **Applications > Utilities > Terminal**.to open terminal.
 * This command is an all-in-one - it checks if you have a key pair in the proper place and if there isn't, a key pair will be generated for you. Copy this command and paste it into your Terminal window then hit Enter.
 ```
-[ -f ~/.ssh/id_rsa ] && { pbcopy < ~/.ssh/id_rsa.pub; } || { ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ""; pbcopy < ~/.ssh/id_rsa.pub; }
-
+[-f ~/.ssh/id_rsa ] && { pbcopy < ~/.ssh/id_rsa.pub; } || { ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ""; pbcopy < ~/.ssh/id_rsa.pub; }
 ```
 
 ## Setting the Key in Digital Ocean
