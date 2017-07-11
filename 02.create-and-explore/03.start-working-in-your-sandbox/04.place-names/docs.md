@@ -136,7 +136,7 @@ Assuming the place name you point to points to a domain ID used by a domain, you
 ## Listing a Place Name in the High Fidelity Directory
 
 
-| [![Important.gif](imp.gif) | **High Fidelity Directory is temporarily disabled.** |
+| ![Important.gif](imp.gif) | **High Fidelity Directory is temporarily disabled.** |
 | ---------------------------------------- | ---------------------------------------- |
 | These instructions will be updated when the Directory becomes available again. |                                          |
 
