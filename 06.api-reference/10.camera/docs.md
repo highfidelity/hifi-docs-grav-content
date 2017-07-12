@@ -74,7 +74,7 @@ For the camera movement to be scripted, the camera must be set to **Independent 
 If the camera is in **Independent Mode**, you can set the camera's position and orientation to that of your choosing by:
 
 - Setting the position and orientation properties directly, for example: `Camera.position = { x: 0, y: 4, z: 0 }`using the [setOrientation()](#m10) and [setPosition()](#m11) functions to set the orientation and position.
-- Using [lookAt()](#m7) or [keepLookingAt()](#m6) to specify a point the camera should focus on. You can set the camera to look at a particular point using  [lookAt()](#m7) or to continuously look at a particular point using [keepLookingAt()](#m6)]. If you have used [keepLookingAt()](#m6) to stop the camera from pointing at the specified point, use [stopLooking()](#m12).
+- Using [lookAt()](#m7) or [keepLookingAt()](#m6) to specify a point the camera should focus on. You can set the camera to look at a particular point using  [lookAt()](#m7) or to continuously look at a particular point using [keepLookingAt()](#m6). If you have used [keepLookingAt()](#m6) to stop the camera from pointing at the specified point, use [stopLooking()](#m12).
 
 If the camera is in **Entity Mode**, you can set the camera's position and orientation to that of a specified entity by:
 
@@ -87,7 +87,7 @@ If the camera is in **Entity Mode**, you can set the camera's position and orien
 
 ### computePickRay()<a id="m1"></a>
 
-Ray casting is a technique used to find the location of objects in a 3D world. Ray casting finds objects by calculating a mathematical ray from a specified origin and in a specified direction and then determining which object or objects the ray has hit. Ray casting can be used to find visible entities in the domain. Both [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection()) and [findRayIntersectionBlocking()](https://wiki.highfidelity.com/wiki/FindRayIntersectionBlocking()) take as input a ray of type [PickRay](https://github.com/highfidelity/hifi/blob/d14820d3ef4328c73e0a9ca271b53e769c87aedb/libraries/shared/src/RegisteredMetaTypes.h).
+Ray casting is a technique used to find the location of objects in a 3D world. Ray casting finds objects by calculating a mathematical ray from a specified origin and in a specified direction and then determining which object or objects the ray has hit. Ray casting can be used to find visible entities in the domain. Both [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection\(\)) and [findRayIntersectionBlocking()](https://wiki.highfidelity.com/wiki/FindRayIntersectionBlocking\(\)) take as input a ray of type [PickRay](https://github.com/highfidelity/hifi/blob/d14820d3ef4328c73e0a9ca271b53e769c87aedb/libraries/shared/src/RegisteredMetaTypes.h).
 
 `computePickRay()` is used to get a ray of type `PickRay`.
 
@@ -109,7 +109,7 @@ Ray casting is a technique used to find the location of objects in a 3D world. R
 
 This example listens for a mouse press event, and when it occurs uses the event's x and y coordinates (the position of the cursor in the window) to compute a `PickRay` using `computePickRay`. (Note: If you are using an HMD (Oculus Rift, etc.), the x and y positions are the cursor position relative to the overlay, but they can have values greater than the overlay width and height or less than 0, indicating the mouse is somewhere outside the overlay. When in HMD mode the overlay has a virtual screen size of 3960x1188 and wraps around the viewer to take up 3/4 of a circle.)
 
-The script then uses [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection()) to see if the ray intersects with an entity. `findRayIntersection()` returns a [RayToEntityIntersectionResult](https://wiki.highfidelity.com/wiki/RayToEntityIntersectionResult) whose `intersects` property is `true` if the ray intersected with an entity. If the ray intersected with an entity, the script prints a message to the debug log.
+The script then uses [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection\(\)) to see if the ray intersects with an entity. `findRayIntersection()` returns a [RayToEntityIntersectionResult](https://wiki.highfidelity.com/wiki/RayToEntityIntersectionResult) whose `intersects` property is `true` if the ray intersected with an entity. If the ray intersected with an entity, the script prints a message to the debug log.
 
 ```java
 function mousePressEvent(event) {
