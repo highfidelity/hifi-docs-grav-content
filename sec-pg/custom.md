@@ -3,7 +3,7 @@ title: Custom
 published: true
 taxonomy:
     category:
-        - docs
+        - custom
 ---
 
 <!--While modifying the content of this page, ensure to only replace the text and image and video URL information. Contact Nimisha to make changes to the design. -->
