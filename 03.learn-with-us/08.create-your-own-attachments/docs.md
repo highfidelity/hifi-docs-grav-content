@@ -31,8 +31,11 @@ Let’s create a Viking helmet attachment for your avatar.
 
 ##Steps
 
-1. ### Get the default Mannequin avatar
-   Currently, we’re designing attachments that can only be fixed to the mannequin avatar. To get this avatar, pull up your tablet in Interface and go to **Market**. Search for mannequin and get the default wooden avatar. 
+>>>>> You can have attachments on any type of avatar. As different avatars can have varied bone structure, ensure to use the right bones when using the attachment manager or an attachment script. We're using the default mannequin avatar as an example here. 
+
+1. ### Get the default Mannequin avatar 
+   To get this avatar, pull up your tablet in Interface and go to **Market**. Search for mannequin and get the default wooden avatar. 
+
 
    ![](default-avatar-results.PNG)
 
