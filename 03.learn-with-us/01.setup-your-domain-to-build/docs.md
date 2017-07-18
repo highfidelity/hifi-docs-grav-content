@@ -1,5 +1,7 @@
 ---
 title: 'Setup Your Domain to Build in High Fidelity'
+taxonomy:
+        category: docs
 ---
 
 *This tutorial covers setting up your home domain to build in High Fidelity. *
