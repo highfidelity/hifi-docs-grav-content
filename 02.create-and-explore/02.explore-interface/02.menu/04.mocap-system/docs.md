@@ -29,7 +29,7 @@ To use the trackers, you need to strap them on to different parts of your body. 
 * [Hand Straps](https://www.amazon.com/SublimeWare-Degree-Rotation-Session-SJ4000/dp/B01H18TY2S/ref=sr_1_2?ie=UTF8&qid=1492804865&sr=8-2&keywords=go+pro+arm+mount)
 * [Head Straps](https://www.amazon.com/EEEKit-Kidizoom-Action-EK7000-DBPOWER/dp/B019SXPF3G/ref=sr_1_1?ie=UTF8&qid=1492795518&sr=8-1&keywords=EEEKit+Head+Strap+Mount+for+VTech+Kidizoom+Kids+Cam%2C)
 
-![img](body-placement.png)
+![img](tracker-placement.jpg)
 
 ### Configure Your Mocap System
 
