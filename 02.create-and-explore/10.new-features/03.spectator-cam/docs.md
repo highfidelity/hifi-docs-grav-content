@@ -11,7 +11,7 @@ taxonomy:
 Learn how you can download and use the new Spectator Camera from the marketplace. 
 
 ##Introduction
-The Spectator Camera is a camera you can use, along with recording software such as Open Broadcaster Software (OBS), to record or livestream what you and your friends do in High Fidelity. 
+The Spectator Camera is a camera you can use, along with recording software such as [Open Broadcaster Software (OBS)](https://obsproject.com/), to record or livestream what you and your friends do in High Fidelity. 
 
 >>>>> You can use the Spectator Camera only while using an HMD.
 
