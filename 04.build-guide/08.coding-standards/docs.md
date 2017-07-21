@@ -416,7 +416,6 @@ Forward* forward = static_cast<Forward*>(player);
 ```
 
 For more info about C++ type casting: [http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting](http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting)
-https://docs.highfidelity.com/build-guide/coding-standards#
 
 #### 3.1.3 Use of *const*
 
@@ -518,7 +517,7 @@ void checkCups(int& numCups);
 
 ```
 
-The pointer-ness or reference-ness of a variable is a property of the type rather than the name. Also see [rule 3.1.3.2](https://docs.highfidelity.com/build-guide/coding-standards#3-1-3-2-Place-the-const-keyword-before-the-type) regarding placement the const keyword before the type.
+The pointer-ness or reference-ness of a variable is a property of the type rather than the name. Also see [section 3.1.3.2](https://docs.highfidelity.com/build-guide/coding-standards#3-1-3-2-Place-the-const-keyword-before-the-type) regarding placement the const keyword before the type.
 
 #### 3.2.6 Implicit test for 0 should not be used other than for boolean variables or non-NULL pointers
 
