@@ -13,13 +13,13 @@ If you’d like to get paid for the work you do, you can use [Worklist](https://
 
 * Before you start using Worklist, ensure that you’ve downloaded and installed High Fidelity or built it through [Github](https://github.com/highfidelity/hifi). ![](worklist.PNG)
 
-* Open Worklist, and log in using your GitHub credentials. You will need to confirm your email address. ![](worklist login.PNG)
+* Open Worklist, and log in using your GitHub credentials. You will need to confirm your email address. ![](worklist-login.PNG)
 
 * To get paid, you need to verify your PayPal address and upload a completed W-9 form. You can do this by clicking on your username on the top-right corner. Click on settings to verify your PayPal address and upload your W-9 form. ![](paypal-w9.PNG)
 
 * Once you’ve confirmed your details, you can go to Worklist and view the page where we regularly post jobs. Jobs are categorized into: ![](jobs.PNG)
 
-  * **Bidding**: These are available jobs. If you’re interested in any of the projects listed here you can bid on it. Click on a project you’d like to bid on, and in the page that opens, click bid. You can bid for the amount you’d like, and we will let you know if we’ve accepted your bid for you to start working.  You can also add notes in the form that open up to justify the amount you have entered in your bid. ![](bid.PNG)![](add bid dialogue.PNG) ![](successful bid.PNG)![](attachments on WL jobs.PNG)
+  * **Bidding**: These are available jobs. If you’re interested in any of the projects listed here you can bid on it. Click on a project you’d like to bid on, and in the page that opens, click bid. You can bid for the amount you’d like, and we will let you know if we’ve accepted your bid for you to start working.  You can also add notes in the form that open up to justify the amount you have entered in your bid. ![](bid.PNG)![](add-bid-dialogue.PNG) ![](successful-bid.PNG)![](attachments-on-WL-jobs.PNG)
 
   * **In-Progress**: Once your bid has been accepted, you can change the status of your project to In-Progress. 
 
