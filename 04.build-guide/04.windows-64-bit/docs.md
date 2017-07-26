@@ -18,10 +18,11 @@ To successfully build High Fidelity, check out the [system requirements](http://
 ####Software Requirements
 To create your High Fidelity build you’ll need to download and install: 
 
-**1. Visual Studio 2013**
+**1. Visual Studio 2017**
 
-If you don’t have Community or Professional edition of Visual Studio 2013, download [Visual Studio Community 2013](https://www.visualstudio.com/vs/older-downloads/). Install Visual Studio with the recommended settings. You don’t have to select any optional features. 
->>>>> The newer versions of Visual Studio are not yet compatible. 
+If you don’t have Community or Professional edition of Visual Studio 2017, download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). Make sure that the following components are selected:
+
+TODO:ADD IMAGE
 
 **2. CMake**     
 
