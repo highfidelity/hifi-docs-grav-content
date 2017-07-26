@@ -19,6 +19,8 @@ To successfully build High Fidelity, check out the [system requirements](http://
 
 >>>>> We are now using Visual Studio 2017 and Qt 5.9.1. If you are upgrading from Visual Studio 2013 and Qt 5.6.2, do a clean uninstall of those versions before going through this guide. 
 
+---
+
 >>>>> The prerequisites will require about 10 GB of space on your drive.
 
 To create your High Fidelity build you’ll need to download and install: 
