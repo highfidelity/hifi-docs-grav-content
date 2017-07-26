@@ -9,10 +9,10 @@ category:
 
 This build guide contains a set of general instructions for building High Fidelity on your system. If you're looking for build guides specific to the OS, check out:
 
-- [Linux](/linux)
-- [OS X](/os-x)
-- [Windows 64-bit](/windows-64-bit)
-- [Android](/android)
+- [Linux](build-guide/linux)
+- [OS X](build-guide/os-x)
+- [Windows 64-bit](build-guide/windows-64-bit)
+- [Android](build-guide/android)
 
 ## Dependencies
 
