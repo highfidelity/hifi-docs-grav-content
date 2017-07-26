@@ -27,27 +27,27 @@ If you don’t have Community or Professional edition of Visual Studio 2017, dow
 
 When selecting components, check "Desktop development with C++." Also check "Windows 8.1 SDK and UCRT SDK" and "VC++ 2015.3 v140 toolset (x86,x64)" on the Summary toolbar on the right. In the end, your screen should look like this:
 
-TODO:ADDIMAGE
+![img](vs2017-comp.png)
 
 **2. CMake**     
 
-Download and install CMake 3.8.2. Download the file named  win64-x64 Installer from the [CMake Website](https://cmake.org/download/). Make sure to check "Add CMake to system PATH for all users" when prompted during installation.
+Download and install the latest version of CMake 3.9. Download the file named  win64-x64 Installer from the [CMake Website](https://cmake.org/download/). Make sure to check "Add CMake to system PATH for all users" when prompted during installation.
 
 **3. Qt**              
 
 Download and install the [Qt Online Installer](https://www.qt.io/download-open-source/?hsCtaTracking=f977210e-de67-475f-a32b-65cec207fd03%7Cd62710cd-e1db-46aa-8d4d-2f1c1ffdacea). While installing, deselect components so that your window looks like this:
 
-TODO:ADDIMAGE
+![img](qt-comp.png)
 
 Note: Installing the Sources is optional but recommended if you have room for them (~2GB). 
 
 The next thing you need to do is set the Qt environment variables. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your Qt variables.  
 * Set "Variable name": QT_CMAKE_PREFIX_PATH 
-* Set "Variable value":  `C:\Qt\5.9\msvc2017_64\lib\cmake` 
+* Set "Variable value":  `C:\Qt\5.9.1\msvc2017_64\lib\cmake` 
 
 **4. OpenSSL**
 
-Download and install the Win64 OpenSSL v1.0.2k Installer here.                     
+Download and install the Win64 OpenSSL v1.0.2 Installer[https://slproweb.com/products/Win32OpenSSL.html].                     
 
 
 ---------------------------
