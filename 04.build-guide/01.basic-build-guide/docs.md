@@ -47,10 +47,10 @@ If you would like to use a specific install of a dependency instead of the versi
 
 ### OS Specific Build Guides
 
-- [OS X](/os-x) - additional instructions for OS X.
-- [Linux](/linux) - additional instructions for Linux.
-- [Windows 64-bit](/windows-64-bit) - additional instructions for Windows.
-- [Android](/android) - additional instructions for Android
+- [Linux](../linux)
+- [OS X](../os-x)
+- [Windows 64-bit](../windows-64-bit)
+- [Android](../android)
 
 #### CMake
 
