@@ -29,7 +29,7 @@ If you don’t have Community or Professional edition of Visual Studio 2017, dow
 
 When selecting components, check "Desktop development with C++." Also check "Windows 8.1 SDK and UCRT SDK" and "VC++ 2015.3 v140 toolset (x86,x64)" on the Summary toolbar on the right. In the end, your screen should look like this:
 
-![img](vs2017-comp.png)
+![](vs2017-comp.png)
 
 **2. CMake**     
 
@@ -39,9 +39,9 @@ Download and install the latest version of CMake 3.9. Download the file named  w
 
 Download and install the [Qt Online Installer](https://www.qt.io/download-open-source/?hsCtaTracking=f977210e-de67-475f-a32b-65cec207fd03%7Cd62710cd-e1db-46aa-8d4d-2f1c1ffdacea). While installing, deselect components so that your window looks like this:
 
-![img](qt-comp.png)
+![](qt-comp.png)
 
-Note: Installing the Sources is optional but recommended if you have room for them (~2GB). 
+>>>>> Installing the Sources is optional but recommended if you have room for them (~2GB). 
 
 The next thing you need to do is set the Qt environment variables. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your Qt variables.  
 * Set "Variable name": QT_CMAKE_PREFIX_PATH 
