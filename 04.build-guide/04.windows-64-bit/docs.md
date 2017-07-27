@@ -51,7 +51,7 @@ The next thing you need to do is set the Qt environment variables. Go to "Contro
 
 **4. OpenSSL**
 
-Download and install the Win64 OpenSSL v1.0.2 Installer[https://slproweb.com/products/Win32OpenSSL.html].                     
+Download and install the Win64 OpenSSL v1.0.2 [installer](https://slproweb.com/products/Win32OpenSSL.html).                     
 
 
 ---------------------------
