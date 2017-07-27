@@ -16,34 +16,34 @@ This build guide contains a set of general instructions for building High Fideli
 
 ## Dependencies
 
-Download the following dependencies to be built, linked and included automatically by CMake where we require them. The CMakeLists files that handle grabbing each of the following external dependencies can be found in the [cmake/externals folder](https://github.com/nimisha20/hifi/blob/master/cmake/externals). The resulting downloads, source files and binaries will be placed in the `build/ext` folder in each of the subfolders for each external project.
+Download the following dependencies to be built, linked and included automatically by CMake where we require them. The CMakeLists files that handle grabbing each of the following external dependencies can be found in the [cmake/externals folder](https://github.com/highfidelity/hifi/tree/master/cmake/externals). The resulting downloads, source files and binaries will be placed in the `build/ext` folder in each of the subfolders for each external project.
 
 These are not placed in your normal build tree when doing an out of source build so that they do not need to be re-downloaded and re-compiled every time the CMake build folder is cleared. Should you want to force a re-download and re-compile of a specific external, you can simply remove that directory from the appropriate subfolder in `build/ext`. Should you want to force a re-download and re-compile of all externals, just remove the `build/ext` folder.
 
-If you would like to use a specific install of a dependency instead of the version that would be grabbed as a CMake ExternalProject, you can pass -DUSE_LOCAL_$NAME=0 (where $NAME is the name of the subfolder in [cmake/externals](https://github.com/nimisha20/hifi/blob/master/cmake/externals)) when you run CMake to tell it not to get that dependency as an external project.
+If you would like to use a specific install of a dependency instead of the version that would be grabbed as a CMake ExternalProject, you can pass -DUSE_LOCAL_$NAME=0 (where $NAME is the name of the subfolder in [cmake/externals](https://github.com/highfidelity/hifi/tree/master/cmake/externals)) when you run CMake to tell it not to get that dependency as an external project.
 
-- [cmake](https://cmake.org/download/) ~> 3.3.2
-- [Qt](https://www.qt.io/download-open-source) ~> 5.6.1
+- [cmake](https://cmake.org/download/) ~> 3.9
+- [Qt](https://www.qt.io/download-open-source) ~> 5.9.1
 - [OpenSSL](https://www.openssl.org/): Use the latest available version of OpenSSL to avoid security vulnerabilities.
 - [VHACD](https://github.com/virneo/v-hacd)(clone this repository)(Optional)
 
 ### CMake External Project Dependencies
 
-- [boostconfig](https://github.com/boostorg/config) ~> 1.58
+These dependencies need not be installed manually. They are automatically downloaded on the platforms where they are required.  
 - [Bullet Physics Engine](https://github.com/bulletphysics/bullet3/releases) ~> 2.83
-- [GLEW](http://glew.sourceforge.net/)
-- [glm](https://glm.g-truc.net/0.9.5/index.html) ~> 0.9.5.4
+- [GLEW](http://glew.sourceforge.net/) ~> 1.13
+- [glm](https://glm.g-truc.net/0.9.8/index.html) ~> 0.9.8
 - [gverb](https://github.com/highfidelity/gverb)
-- [Oculus SDK](https://developer.oculus.com/downloads/) ~> 0.6 (Win32) / 0.5 (Mac / Linux)
-- [oglplus](http://oglplus.org/) ~> 0.63
-- [OpenVR](https://github.com/ValveSoftware/openvr) ~> 0.91 (Win32 only)
+- [Oculus SDK](https://developer.oculus.com/downloads/) ~> 1.11 (Win32) / 0.5 (Mac)
+- [OpenVR](https://github.com/ValveSoftware/openvr) ~> 1.0.6 (Win32 only)
 - [Polyvox](http://www.volumesoffun.com/) ~> 0.2.1
-- [QuaZip](https://sourceforge.net/projects/quazip/files/quazip/) ~> 0.7.1
+- [QuaZip](https://sourceforge.net/projects/quazip/files/quazip/) ~> 0.7.3
 - [SDL2](https://www.libsdl.org/download-2.0.php) ~> 2.0.3
 - [soxr](https://sourceforge.net/p/soxr/wiki/Home/) ~> 0.1.1
 - [Intel Threading Building Blocks](https://www.threadingbuildingblocks.org/) ~> 4.3
 - [Sixense](http://sixense.com/) ~> 071615
 - [zlib](http://www.zlib.net/) ~> 1.28 (Win32 only)
+- nVidia Texture Tools ~> 2.1
 
 ### OS Specific Build Guides
 
@@ -94,9 +94,9 @@ cmake .. -DQT_CMAKE_PREFIX_PATH=/usr/local/qt/5.6.1/lib/cmake
 
 #### Finding Dependencies
 
-The following applies for dependencies we do not grab via CMake ExternalProject (OpenSSL is an example), or for dependencies you have opted not to grab as a CMake ExternalProject (via -DUSE_LOCAL_$NAME=0). The list of dependencies we grab by default as external projects can be found in [the CMake External Project Dependencies section](https://github.com/nimisha20/hifi/blob/master/BUILD.md#cmake-external-project-dependencies).
+The following applies for dependencies we do not grab via CMake ExternalProject (OpenSSL is an example), or for dependencies you have opted not to grab as a CMake ExternalProject (via -DUSE_LOCAL_$NAME=0). The list of dependencies we grab by default as external projects can be found in [the CMake External Project Dependencies section](https://github.com/highfidelity/hifi/blob/master/BUILD.md#cmake-external-project-dependencies).
 
-You can point our [Cmake find modules](https://github.com/nimisha20/hifi/blob/master/cmake/modules) to the correct version of dependencies by setting one of the three following variables to the location of the correct version of the dependency.
+You can point our [Cmake find modules](https://github.com/highfidelity/hifi/tree/master/cmake/modules) to the correct version of dependencies by setting one of the three following variables to the location of the correct version of the dependency.
 
 In the examples below the variable $NAME would be replaced by the name of the dependency in uppercase, and $name would be replaced by the name of the dependency in lowercase (ex: OPENSSL_ROOT_DIR, openssl).
 
@@ -108,4 +108,4 @@ In the examples below the variable $NAME would be replaced by the name of the de
 
 #### Devices
 
-You can support external input/output devices such as Leap Motion, MIDI, and more by adding each individual SDK in the visible building path. Refer to the readme file available in each device folder in [interface/external/](https://github.com/nimisha20/hifi/blob/master/interface/external) for the detailed explanation of the requirements to use the device.
+You can support external input/output devices such as Leap Motion, MIDI, and more by adding each individual SDK in the visible building path. Refer to the readme file available in each device folder in [interface/external/](https://github.com/highfidelity/hifi/tree/master/interface/external) for the detailed explanation of the requirements to use the device.
