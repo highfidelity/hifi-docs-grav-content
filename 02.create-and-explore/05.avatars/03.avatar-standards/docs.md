@@ -14,7 +14,7 @@ Presently, you need to host your own avatar file somewhere, unless you are using
 
 ## Reference Pose
 
-[![Hifi skel 1.png](https://wiki.highfidelity.com/images/9/98/Hifi_skel_1.png)](https://wiki.highfidelity.com/wiki/File:Hifi_skel_1.png)
+![](hifi-skel.png)
 
 For the Reference pose, we propose a TPose which complies with the specifications below. You may wish to refer to the properly configured example avatar fbx with source files.
 

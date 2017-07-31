@@ -17,14 +17,13 @@ We will be dealing with the interactions by Avatars. When an avatar comes in con
 The bounding box (or bounds) is the frame that is around the outside of the entity, in the case of a simple box the bounds are the exact size and shape of the entity.
 
 
-
-![img](https://wiki.highfidelity.com/images/thumb/9/99/BoxBounds.jpg/500px-BoxBounds.jpg)
+![](box-bounds.jpg)
 
 But in the case of more complex mesh objects the bounds might be much larger than the actual mesh model. So you must take this into account when working out where the bounding box of the entity extends to, until High Fidelity has full mesh collision layers.
 
 *Entities.enterEntity() occurs when the avatar contacts the bounding box, not the model.*
 
-![img](https://wiki.highfidelity.com/images/thumb/8/81/TreeBounds.jpg/500px-TreeBounds.jpg)
+![](tree-bounds.jpg)
 
 ## Creating an Interaction When an Avatar Touches an Entity
 
@@ -45,7 +44,7 @@ The following script uses **Entities.enterEntity** function to trigger something
 - Scroll down the entity properties panel until you find Script URL
 
 
-  [![ScriptURL.jpg](https://wiki.highfidelity.com/images/d/d9/ScriptURL.jpg)](https://wiki.highfidelity.com/wiki/File:ScriptURL.jpg)
+  ![](script-url-big.jpg)
 
 - Copy the following script and paste it into the Script URL and hit return.
 
