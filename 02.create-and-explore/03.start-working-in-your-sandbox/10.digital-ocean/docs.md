@@ -25,13 +25,12 @@ When you sign up using the link above you start out with $10.00 of free credit. 
 
 For security purposes, let's configure this server to use a special keypair instead of a password to login to our serve. Here's how you can do that: 
 
-* Click on *Click Key Manager* link in the main BitVise window.[![1bitvise-mainscreen.png](https://wiki.highfidelity.com/images/8/89/1bitvise-mainscreen.png)](https://wiki.highfidelity.com/wiki/File:1bitvise-mainscreen.png)
+* Click on *Click Key Manager* link in the main BitVise window.![](bitvise-mainscreen.png)
 * Next on the window that pops up, click the *Generate New* button.
 * Accept the defaults on the *Generate New Keypair* window by clicking the *Generate* button.
 * Your *BitVise Client Key Manager* window will now have your key in it.
-* Select the listed keypair and now click on the *Export Button* and make sure "**Export Public Key**" is checked and also underneath it you have "**OpenSSH Format**" selected then hit *Export*.[![2bitvise-exportpublickey.png](https://wiki.highfidelity.com/images/b/b9/2bitvise-exportpublickey.png)](https://wiki.highfidelity.com/wiki/File:2bitvise-exportpublickey.png)
-
->>>>> REMEMBER WHERE YOU SAVED THE FILE IT GENERATES.
+* Select the listed keypair and now click on the *Export Button* and make sure "**Export Public Key**" is checked and also underneath it you have "**OpenSSH Format**" selected then hit *Export*.![](bitvise-exportpublickey.png)
+>>>>> Note down the place where the file generated is saved. 
 
 * Double click on the file generated. Open this file using **Notepad**.
 * Next with Notepad open, go to your account on Digital Ocean to set this key in your account.
@@ -46,7 +45,7 @@ For security purposes, let's configure this server to use a special keypair inst
 
 ## Setting the Key in Digital Ocean
 
-* Open **Settings** from the top right, in Digital Ocean[![0do-personicon.png](https://wiki.highfidelity.com/images/c/c1/0do-personicon.png)](https://wiki.highfidelity.com/wiki/File:0do-personicon.png)
+* Open **Settings** from the top right, in Digital Ocean![](do-personicon.png)
 * Click the **Security** tab and click  **Add SSH Key**.
 
 ### Windows Users
@@ -61,32 +60,32 @@ Now your key is stored Digital Ocean for when you create the Virtual Machine!
 
 ## Setting Up Our First Virtual Machine
 
-* Click the green button on the Digital Ocean page labeled **Create Droplet** and you are taken to the Digital Ocean Control Panel.[![3begin-create-droplet.png](https://wiki.highfidelity.com/images/c/ca/3begin-create-droplet.png)](https://wiki.highfidelity.com/wiki/File:3begin-create-droplet.png)
+* Click the green button on the Digital Ocean page labeled **Create Droplet** and you are taken to the Digital Ocean Control Panel.![](begin-create-droplet.png)
 * In the **Name** box set a simple name, such as your Place Name in High Fidelity.
-* For **Select Size** click on the $10.00/m configuration which is for **1 GB** of RAM.[![Do1gbserver.png](https://wiki.highfidelity.com/images/4/4a/Do1gbserver.png)](https://wiki.highfidelity.com/wiki/File:Do1gbserver.png)
-* **Region:**  you can add your preferred region.[![5region-select-sanfran.png](https://wiki.highfidelity.com/images/5/51/5region-select-sanfran.png)](https://wiki.highfidelity.com/wiki/File:5region-select-sanfran.png)
-* Under **Select Image**, click the box labeled **Ubuntu** and make sure from the drop down it shows **15.04 x64**[![Doselectubuntu1504.jpg](https://wiki.highfidelity.com/images/7/7b/Doselectubuntu1504.jpg)](https://wiki.highfidelity.com/wiki/File:Doselectubuntu1504.jpg)
-* Select your SSH key under **Add SSH Key**.[![7select-ssh-key.png](https://wiki.highfidelity.com/images/0/0a/7select-ssh-key.png)](https://wiki.highfidelity.com/wiki/File:7select-ssh-key.png)
+* For **Select Size** click on the $10.00/m configuration which is for **1 GB** of RAM.![](gb-server.png)
+* **Region:**  you can add your preferred region.![](region-select-sanfran.png)
+* Under **Select Image**, click the box labeled **Ubuntu** and make sure from the drop down it shows **15.04 x64**![](do-select-ubuntu-1504.jpg)
+* Select your SSH key under **Add SSH Key**.![](select-ssh-key.png)
 * Click **Create Droplet** and wait for the setup.
 
 ## Connecting to your Droplet
 
 After your new Droplet is created (Droplet is another word for your Digital Ocean Virtual Machine) you will now see a screen like this:
 
-[![Do1gblist.png](https://wiki.highfidelity.com/images/2/22/Do1gblist.png)](https://wiki.highfidelity.com/wiki/File:Do1gblist.png)
+![](gb-list.png)
 
 At the very top you will see the name you set for your droplet, system information and most of all your IP. The IP in this case is **159.203.240.56**, so that is what you will use when we connect to the server.
 
 ### Windows Users
 
-* Using the BitVise software we setup before, you will now put the IP from Digital Ocean into the box labeled **Host**. Next move over to **Username** where you put in **Root**, underneath that set **Initial Method** to **publickey** and last set **Client Key** to **Global 1**. You will see each of these sections highlighted with a pointer in this image:[![9bitvise-fields-descriptions.png](https://wiki.highfidelity.com/images/6/68/9bitvise-fields-descriptions.png)](https://wiki.highfidelity.com/wiki/File:9bitvise-fields-descriptions.png)
+* Using the BitVise software we setup before, you will now put the IP from Digital Ocean into the box labeled **Host**. Next move over to **Username** where you put in **Root**, underneath that set **Initial Method** to **publickey** and last set **Client Key** to **Global 1**. You will see each of these sections highlighted with a pointer in this image:![](bitvise-fields-descriptions.png)
 * Now just to make it easy to load up your settings next time you want to connect, you are going to click **Safe Profile As** on the left hand side menu of BitVise. Store this file in a place you will remember it because you will use **Load Profile** later to connect next time.
 * Once all of that is complete just click the **Login** button on the bottom of BitVise.
 
 
 You will now be working from the terminal window--another word for the black window used to send commands to your Droplet. This is what it looks like:
 
-[![10bitvise-terminal-window.png](https://wiki.highfidelity.com/images/4/4c/10bitvise-terminal-window.png)](https://wiki.highfidelity.com/wiki/File:10bitvise-terminal-window.png)
+![](bitvise-terminal-window.png)
 
 ### Mac Users
 

@@ -29,7 +29,7 @@ A cubemap is a collection of six square textures that represent a scenes environ
 
 To change the background mode to skybox, select it from the Background Mode drop down.
 
-[![Screenshot-zone-background-mode.png](https://wiki.highfidelity.com/images/thumb/0/03/Screenshot-zone-background-mode.png/600px-Screenshot-zone-background-mode.png)](https://wiki.highfidelity.com/wiki/File:Screenshot-zone-background-mode.png)
+![](zone-background-mode.png)
 
 You may choose not to use a texture at all and just 'paint' the cubemap with a single color. To do this, change the RGB values or use the color picker. By default, the skybox color is set to black. You can use both a texture and a color effectively changing the texture's hue.
 
@@ -40,9 +40,9 @@ If you choose to use a cubemap texture, it must be prepared in a specific way. T
 
 Open one of the provided Photoshop templates and replace the template textures with your own. Turn off the axis/direction layers, and export the image as a jpeg. It is suggested you keep your skybox image to under 1MB so that it takes less time to render for those that are visiting your zone and have not yet cached the texture.
 
-[![Sample skybox image2.jpg](https://wiki.highfidelity.com/images/thumb/e/e5/Sample_skybox_image2.jpg/800px-Sample_skybox_image2.jpg)](https://wiki.highfidelity.com/wiki/File:Sample_skybox_image2.jpg)
+![](sample skybox image.jpg)
 
-[![Cubemap.gif](https://wiki.highfidelity.com/images/b/bd/Cubemap.gif)](https://wiki.highfidelity.com/wiki/File:Cubemap.gif)
+![](cubemap.gif)
 
 In order for others to see your skybox texture, it will need to be hosted either on your domian's Asset Server or on a publicly accessible webserver like S3 or Dropbox. Place the image on the webserver and copy the url address.
 

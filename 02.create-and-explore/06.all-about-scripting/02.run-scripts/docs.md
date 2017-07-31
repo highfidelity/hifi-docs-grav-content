@@ -11,7 +11,7 @@ Scripts loaded via Interface are known as *Interface scripts*. Interface scripts
 
 To see the list of scripts currently running, select **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel.
 
-![Running scripts panel.png](https://wiki.highfidelity.com/images/thumb/2/2e/Running_scripts_panel.png/500px-Running_scripts_panel.png)
+![](running-scripts-panel.png)
 
 At the top of this panel, there are two buttons: **Reload All** and **Stop All**. Just below those two buttons is the list of currently running scripts. When you first start Interface, it runs one or more default scripts designed to improve the experience, and if you have just started Interface, the scripts you see listed here are probably the default scripts.
 
