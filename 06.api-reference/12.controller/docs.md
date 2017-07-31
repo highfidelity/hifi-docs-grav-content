@@ -324,7 +324,7 @@ Creating a JSON mapping is typically used when adding support for new hardware.
 
 Attached controllers are exposed as a tree of identifiers under the global variable `Controller`. That is, there's `Controller.Hardware.Foo` where Foo is the hardware name of the controller (Hydra, GamePad, Vive, etc.). Inputs for specific controllers are not mapped directly to [Controller.Actions](https://wiki.highfidelity.com/wiki/Controller.Actions). Instead, the controller API has a predefined mapping referred to as the "standard controller" (defined in [standard.json](https://github.com/highfidelity/hifi/blob/master/interface/resources/controllers/standard.json)) which maps standard inputs to [Controller.Standard](https://wiki.highfidelity.com/wiki/Controller.Standard) to [Controller.Actions](https://wiki.highfidelity.com/wiki/Controller.Actions). Each specific controller is mapped to the standard controller.
 
-![img](https://wiki.highfidelity.com/images/b/bd/Controllersystem.png)
+![img](controller-system.png)
 
 Specific controllers are mapped to the standard controller which is mapped to application output actions.
 

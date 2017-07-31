@@ -173,7 +173,7 @@ taxonomy:
 | [MousePressOnEntity()](#c11)   |
 | [MouseReleaseOnEntity()](#c12) |
 
-## EntityItemProperties
+## EntityItem Properties
 
 An entity's appearance (color, size, position etc.) and behavior (animation, collision, interaction, etc.) are defined by the entity's properties specified in `EntityItemProperties`.
 
