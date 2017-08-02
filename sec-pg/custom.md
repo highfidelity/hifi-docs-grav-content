@@ -1,5 +1,5 @@
 ---
-title: Custom
+title: Make Connections!
 published: true
 taxonomy:
     category:

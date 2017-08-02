@@ -10,7 +10,7 @@ There are plenty of alternative approaches, but the two scripts detailed below a
 
 ## HiFi Local Chat by ctrlaltdavid
 
-![img](https://wiki.highfidelity.com/images/thumb/f/f9/HiFi_Local_Chat_by_ctrlaltdavid.png/300px-HiFi_Local_Chat_by_ctrlaltdavid.png)
+![](hifi-local-chat-by-ctrlaltdavid.png)
 
 The alpha user ctrlaltdavid has created and contributed a HiFi Local Chat script, which is clean, reliable, and well written.
 
@@ -18,7 +18,7 @@ To run the script from High Fidelity, use the following URL in **Edit > Open and
 
 David’s script will start running and you’ll see a text chat window pop-up, enabling you to chat with other folks in the same domain who are running the same script. If text chat’s important to you, you might want to add this to your default scripts so it’s always there.
 
-![img](https://wiki.highfidelity.com/images/thumb/4/45/Chat-screenshot.png/350px-Chat-screenshot.png)
+![](chat-screenshot.png)
 
 ## COM Script Version 1 by AlphaVersionD
 
@@ -36,5 +36,5 @@ To install COM Script on your domain, follow these steps:
 
 You can also launch a local web browser inside High Fidelity by pressing **Ctrl-B** and then run WhatsApp Web, Slack, and other popular browser-based chat applications. It works great, even in your HMD. While it might not be ideal for random chat encounters, it can be quite handy when larger groups (like colleagues and classmates) need a way to keep in touch without breaking immersion.
 
-![img](https://wiki.highfidelity.com/images/thumb/b/b4/Whatsapp.png/600px-Whatsapp.png)
+![](whatsapp.png)
 

@@ -12,7 +12,7 @@ For now, the marketplace allows users to upload content the creator wishes to be
 
 ## Guide to Buying for Shoppers
 
-![Market.png](https://wiki.highfidelity.com/images/thumb/9/9f/Market.png/500px-Market.png)
+![](market.png)
 
 1. Click on the edit icon.
 2. Click on the market icon
@@ -34,53 +34,50 @@ The process of uploading your content to High Fidelity’s Marketplace has sever
 
 1. Add a New Item
 
-    
 
    \- Click the "+ New Item Button." The page you are taken to will contain fields to let you name and describe your new item as well as add a picture, set relevant categories, license options, and to attribute any co-creators or authors. Once you have set a name for your item you can save it as a draft by clicking "Save Draft." At any point during the upload process prior to submission you will be able to return to this draft item and change any fields related to it by going to your account dropdown in the top navigation and clicking "My Items."
 
-   [![Marketplace-My-Stuff-Add-Item.png](https://wiki.highfidelity.com/images/thumb/8/85/Marketplace-My-Stuff-Add-Item.png/500px-Marketplace-My-Stuff-Add-Item.png)](https://wiki.highfidelity.com/wiki/File:Marketplace-My-Stuff-Add-Item.png)
+![](marketplace-my-stuff-add-item.png)
 
 2. Upload Your Assets
 
-    
 
    \- Once you have saved a draft, you will see the Assets section of the upload page that contains basic tools to upload files to Marketplace's servers, as well as to create and rename folders to organize your files on those servers. Once the upload of an asset is complete, selecting it in the file manager window will reveal its URL for you to copy and paste into your root file.
 
-    
+​    
 
    Note: Some browsers, including Safari, will not show the button to copy the URL of an uploaded asset, but ctrl-clicking on the path of the selected file will let you choose to 'Copy Link.' 
 
    Your item's root file is a either a
 
-    
+​    
 
    .js
 
    , a
 
-    
+​    
 
    .json
 
-    
+​    
 
    or an
 
-    
+​    
 
    .fst
 
    . High Fidelity's Docs has a more detailed overview of how each of these types function as well as how to create them. Whichever type of root file you use, you will need to update it with the URLs of the assets you uploaded in the section above. Once your root file is ready and uploaded to the Assets section and select it as your root file.
 
-   [![Marketplace-Item-Assets.png](https://wiki.highfidelity.com/images/thumb/c/c5/Marketplace-Item-Assets.png/500px-Marketplace-Item-Assets.png)](https://wiki.highfidelity.com/wiki/File:Marketplace-Item-Assets.png)
+![](marketplace-item-assets.png)
 
 3. Submit for Review
 
-    
 
    \- Once you have completed the upload process and you are ready to share your new item on the Marketplace, review the terms on the upload page and if you agree, click the 'Submit for Review' button. Your item will then be shared with our team to make sure it loads correctly and complies with the terms of use. If all is well, your item will go from 'In Review' status to 'Active' status. If there's an issue with your submission, we will reach out to work with you to fix it and resubmit.
 
-   [![Marketplace-Item-In-Review.png](https://wiki.highfidelity.com/images/d/d1/Marketplace-Item-In-Review.png)](https://wiki.highfidelity.com/wiki/File:Marketplace-Item-In-Review.png)
+![](marketplace-item-review.png)
 
 ### Editing Your Uploaded Items
 
