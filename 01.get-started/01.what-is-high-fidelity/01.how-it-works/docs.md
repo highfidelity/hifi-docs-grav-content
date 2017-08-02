@@ -18,7 +18,7 @@ The [**Interface**](../../../create-and-explore/explore-interface) is our client
 
 ##Sandbox
 
-If you’re interested in creating your own world and sharing it with other users, you’ll need the [**Sandbox**]((../../../create-and-explore/start-working-in-your-sandbox)). The Sandbox is your space, where you can create anything you’d like. When you run the Sandbox, your system is functioning as a server. This means you are hosting your own Sandbox. You, or any other user, can access your Sandbox from the Interface by typing in its place name or URL. You can control who visits your Sandbox by modifying your server settings.  
+If you’re interested in creating your own world and sharing it with other users, you’ll need the [**Sandbox**](../../../create-and-explore/start-working-in-your-sandbox). The Sandbox is your space, where you can create anything you’d like. When you run the Sandbox, your system is functioning as a server. This means you are hosting your own Sandbox. You, or any other user, can access your Sandbox from the Interface by typing in its place name or URL. You can control who visits your Sandbox by modifying your server settings.  
 
 
 
@@ -33,13 +33,13 @@ Your Sandbox is your home **domain**. A world created by any user is a domain. I
 To build anything in your Sandbox, whether it is a space to interact with users or a recreation of your childhood home, you need [**entities**](../../../create-and-explore/entities). Entities are the building blocks of High Fidelity. You need entities whether you're going to create a theater or a chair. They are the basic blocks with which you can create and explore in High Fidelity.
 
 There are different kinds of entities available to you:
-* [Box and Sphere entities](../.../../create-and-explore/entities/box-and-sphere-entities)
-* [Model entities](../.../../create-and-explore/entities/model-entities)
-* [Light entities](../.../../create-and-explore/entities/light-entities)
-* [Particle entities](../.../../create-and-explore/entities/particle-entities)
-* [Text entities](../.../../create-and-explore/entities/text-entities)
-* [Web entities](../.../../create-and-explore/entities/web-entities)
-* [Zone entities](../.../../create-and-explore/entities/zone-entities)
+* [Box and Sphere entities](../../../create-and-explore/entities/box-and-sphere-entities)
+* [Model entities](../../../create-and-explore/entities/model-entities)
+* [Light entities](../../../create-and-explore/entities/light-entities)
+* [Particle entities](../../../create-and-explore/entities/particle-entities)
+* [Text entities](../../../create-and-explore/entities/text-entities)
+* [Web entities](../../../create-and-explore/entities/web-entities)
+* [Zone entities](../../../create-and-explore/entities/zone-entities)
 
 You can use any of these entities to create what you want. 
 

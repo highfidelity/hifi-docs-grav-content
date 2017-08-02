@@ -6,7 +6,7 @@ taxonomy:
 *Configure your hand-controllers.*
 
 ##Overview
-High Fidelity supports the HTC Vive, Oculus Touch, Razer Hydra, Leap Motion and XBOX One Controllers. You can check out the system requirements [here](../../../get-started/requirements). 
+High Fidelity supports the HTC Vive, Oculus Touch, Razer Hydra, Leap Motion and XBOX One Controllers. You can check out the system requirements [here](../../../../get-started/requirements). 
 
 ## Basic Controller Configuration
 

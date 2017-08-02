@@ -254,7 +254,7 @@ taxonomy:
 | MyAvatar.transformChanged()              |
 | MyAvatar.wentActive()                    |
 | MyAvatar.wentAway()                      |
-
+| MyAvatar.skeletonChanged()               |
 
 
 ## MyAvatar.collisionWithEntity()<a id="e1"></a>
@@ -323,7 +323,7 @@ Note: Attached models are models only. They are not [entities](https://wiki.high
 
 **modelURL:string**: The URL to the model you want to attach. Models can be .FBX or .OBJ format.
 
-**jointName:string**: The joint name for the part of MyAvatar where the object will be attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name for the part of MyAvatar where the object will be attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 **translation: object**: A JavaScript object which takes x, y, and z name-value pairs specifying the translation of the attached object relative to the named joint position
 
@@ -361,7 +361,7 @@ var attachment = {
 
 ## clearJointData()<a id="m3"></a>
 
-Joints are the building blocks of skeletons and are their points of articulation. You can manipulate the avatar's joints to force the avatar into a specific pose by setting the joint data, for example, by using [setJointData()](https://wiki.highfidelity.com/wiki/SetJointData()). Setting joint data completely overrides/replaces all motion from the default animation system including inverse kinematics.
+Joints are the building blocks of skeletons and are their points of articulation. You can manipulate the avatar's joints to force the avatar into a specific pose by setting the joint data, for example, by using [setJointData()](https://wiki.highfidelity.com/wiki/SetJointData\(\)). Setting joint data completely overrides/replaces all motion from the default animation system including inverse kinematics.
 
 `clearJointData()` is used restore all motion from the default animation system including inverse kinematics for a specified joint.
 
@@ -371,13 +371,13 @@ Joints are the building blocks of skeletons and are their points of articulation
 
 ### Arguments
 
-**jointName:string**: The joint name whose data will be cleared. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose data will be cleared. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose data will be cleared. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose data will be cleared. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 ### Examples
 
-In this example, [setJointTranslation()](https://wiki.highfidelity.com/wiki/SetJointTranslation()) is used to set the position of the "Neck" joint to a new position of 0, 25, 0.
+In this example, [setJointTranslation()](https://wiki.highfidelity.com/wiki/SetJointTranslation\(\)) is used to set the position of the "Neck" joint to a new position of 0, 25, 0.
 
 ```
 var newTranslation = {x: 0, y: 25, z: 0}
@@ -395,7 +395,7 @@ MyAvatar.clearJointData("Neck");
 
 ## clearJointsData()<a id="m4"></a>
 
-Joints are the building blocks of skeletons and are their points of articulation. You can manipulating the avatar's joints to force the avatar into a specific pose by setting the joint data. For example, you can use [setJointData()](https://wiki.highfidelity.com/wiki/SetJointData()) to set the rotation and translation of a specified joint. Setting joint data completely overrides/replaces all motion from the default animation system including inverse kinematics for the specified joint.
+Joints are the building blocks of skeletons and are their points of articulation. You can manipulating the avatar's joints to force the avatar into a specific pose by setting the joint data. For example, you can use [setJointData()](https://wiki.highfidelity.com/wiki/SetJointData\(\)) to set the rotation and translation of a specified joint. Setting joint data completely overrides/replaces all motion from the default animation system including inverse kinematics for the specified joint.
 
 `clearJointsData()` is used restore all motion from the default animation system including inverse kinematics for all joints.
 
@@ -473,7 +473,7 @@ If you have more than one of the same model attached, `detachAll()` removes all 
 
 **modelURL:string**: The URL to the model you want to detach
 
-**jointName:string**: The joint name for the part of MyAvatar where the models are attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name for the part of MyAvatar where the models are attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Examples
 
@@ -514,7 +514,7 @@ If you have more than one of the same model attached, `detachOne()` is used to r
 
 **modelURL:string**: The URL to the model you want to detach
 
-**jointName:string**: The joint name for the part of MyAvatar where the model is attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name for the part of MyAvatar where the model is attached. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Examples
 
@@ -645,7 +645,7 @@ print (JSON.stringify(defaultEyePosition));
 
 ## getEnableMeshVisible()<a id="m11"></a>
 
-You can toggle the visibility of the avatar mesh using [setEnableMeshVisible()](https://wiki.highfidelity.com/wiki/SetEnableMeshVisible()).
+You can toggle the visibility of the avatar mesh using [setEnableMeshVisible()](https://wiki.highfidelity.com/wiki/SetEnableMeshVisible\(\)).
 
 `getEnableMeshVisible()` returns `true` is the avatar mesh is visible (rendered).
 
@@ -806,7 +806,7 @@ Joints are the building blocks of skeletons and are their points of articulation
 
 `getJointIndex()` is used to get the index value for a specified joint.
 
-The joint index value of a joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+The joint index value of a joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Function
 
@@ -814,11 +814,11 @@ The joint index value of a joint is its position in the array returned by [getJo
 
 ### Arguments
 
-**jointName:string**: The joint name whose data will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose data will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Returns
 
-**jointIndex:int**: The position of the specified joint in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames())
+**jointIndex:int**: The position of the specified joint in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\))
 
 ### Examples
 
@@ -883,9 +883,9 @@ Joints are the building blocks of skeletons and are their points of articulation
 
 ### Arguments
 
-**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 ### Returns
 
@@ -916,9 +916,9 @@ Joints are the building blocks of skeletons and are their points of articulation
 
 ### Arguments
 
-**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 ### Returns
 
@@ -953,7 +953,7 @@ This function has no parameters.
 
 ### Returns
 
-**jointRotations:quat[]**: An array of the rotation values for all joints in MyAvatar. Each rotation value is relative to the joint's parent joint. The values returned are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointRotations:quat[]**: An array of the rotation values for all joints in MyAvatar. Each rotation value is relative to the joint's parent joint. The values returned are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Examples
 
@@ -980,9 +980,9 @@ Joints are the building blocks of skeletons and are their points of articulation
 
 ### Arguments
 
-**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose rotation will be retrieved. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose rotation will be retrieved. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 ### Returns
 
@@ -1524,7 +1524,7 @@ To end the animation and restore the default animations, use [doc:restoreanimati
 
 ## overrideRoleAnimation()<a id="m36"></a>
 
-Each avatar has an avatar-animation.json file that defines a set of animation roles. Animation roles map to easily understandable actions that the avatar can perform, such as "idleStand", "idleTalk", or "walkFwd". To get the full list of roles, use [getAnimationRoles()](https://wiki.highfidelity.com/wiki/GetAnimationRoles()). For each role, the avatar-animation.json defines when the animation is used, the animation clip (.FBX) used, and how animations are blended together with procedural data (such as look at vectors, hand sensors etc.).
+Each avatar has an avatar-animation.json file that defines a set of animation roles. Animation roles map to easily understandable actions that the avatar can perform, such as "idleStand", "idleTalk", or "walkFwd". To get the full list of roles, use [getAnimationRoles()](https://wiki.highfidelity.com/wiki/GetAnimationRoles\(\)). For each role, the avatar-animation.json defines when the animation is used, the animation clip (.FBX) used, and how animations are blended together with procedural data (such as look at vectors, hand sensors etc.).
 
 `overrideRoleAnimation()` is used to change the animation clip (.FBX) associated with a specified animation role.
 
@@ -1564,7 +1564,7 @@ MyAvatar.overrideRoleAnimation("idleStand", ANIM_URL, 30, true, 0, 53);
 
 ```
 
-To restore the default animation, use [restoreRoleAnimation()](https://wiki.highfidelity.com/wiki/RestoreRoleAnimation()).
+To restore the default animation, use [restoreRoleAnimation()](https://wiki.highfidelity.com/wiki/RestoreRoleAnimation\(\)).
 
 
 
@@ -1596,7 +1596,7 @@ MyAvatar.prefetchAnimation(ANIM_URL);
 
 ## resetSize()<a id="m38"></a>
 
-The avatar's default scale is set to one. You can increase or decrease the avatar's size using [increaseSize()](https://wiki.highfidelity.com/wiki/IncreaseSize()) or [decreaseSize()](https://wiki.highfidelity.com/wiki/DecreaseSize()).
+The avatar's default scale is set to one. You can increase or decrease the avatar's size using [increaseSize()](https://wiki.highfidelity.com/wiki/IncreaseSize()) or [decreaseSize()](https://wiki.highfidelity.com/wiki/DecreaseSize\(\)).
 
 The `resetSize()` function is used to reset the avatar's scale back to the default scale of one.
 
@@ -1634,7 +1634,7 @@ This function has no parameters.
 
 ### Examples
 
-If for example, you played an animation on the avatar that completely overrides all default avatar animations using [overrideAnimation()](https://wiki.highfidelity.com/wiki/OverrideAnimation()), such as the following:
+If for example, you played an animation on the avatar that completely overrides all default avatar animations using [overrideAnimation()](https://wiki.highfidelity.com/wiki/OverrideAnimation\(\)), such as the following:
 
 ```
 // An animation of the avatar clapping its hands while standing
@@ -1654,7 +1654,7 @@ MyAvatar.restoreAnimation();
 
 ## restoreRoleAnimation()<a id="m40"></a>
 
-Each avatar has an avatar-animation.json file that defines a set of animation roles. Animation roles map to easily understandable actions that the avatar can perform, such as "idleStand", "idleTalk", or "walkFwd". To get the full list of roles, use [getAnimationRoles()](https://wiki.highfidelity.com/wiki/GetAnimationRoles()). For each role, the avatar-animation.json defines when the animation is used, the animation clip (.FBX) used, and how animations are blended together with procedural data (such as look at vectors, hand sensors etc.). You can change the animation clip (.FBX) associated with a specified animation role using [overrideRoleAnimation()](https://wiki.highfidelity.com/wiki/OverrideRoleAnimation()).
+Each avatar has an avatar-animation.json file that defines a set of animation roles. Animation roles map to easily understandable actions that the avatar can perform, such as "idleStand", "idleTalk", or "walkFwd". To get the full list of roles, use [getAnimationRoles()](https://wiki.highfidelity.com/wiki/GetAnimationRoles\(\)). For each role, the avatar-animation.json defines when the animation is used, the animation clip (.FBX) used, and how animations are blended together with procedural data (such as look at vectors, hand sensors etc.). You can change the animation clip (.FBX) associated with a specified animation role using [overrideRoleAnimation()](https://wiki.highfidelity.com/wiki/OverrideRoleAnimation\(\)).
 
 `restoreRoleAnimation()` is used to restore a specified animation role's default animation clip. If you have not specified an override animation for the specified role, this function will have no effect.
 
@@ -1688,7 +1688,7 @@ restoreRoleAnimation("idleStand");
 
 ## setAttachmentData()<a id="m41"></a>
 
-Your avatar is your in-world representation of you. One way to customize your avatar is to attach models to it. For example, you can give your avatar a hat to wear, a guitar to hold, or a surfboard to stand on. Information about all of the models attached to your avatar can be retrieved using [getAttachmentData()](https://wiki.highfidelity.com/wiki/GetAttachmentData()) which returns an array of attachment data.
+Your avatar is your in-world representation of you. One way to customize your avatar is to attach models to it. For example, you can give your avatar a hat to wear, a guitar to hold, or a surfboard to stand on. Information about all of the models attached to your avatar can be retrieved using [getAttachmentData()](https://wiki.highfidelity.com/wiki/GetAttachmentData\(\)) which returns an array of attachment data.
 
 If you retrieved an attachment data array and then made changes to that array, you can use `setAttachmentData()` to set the avatar's attachment data to the updated array. You can also remove all attachments by using `setAttachmentData()` to set the attachment data to `null`.
 
@@ -1766,9 +1766,9 @@ Note: For information about avatar joint standards, see the *General Rigging Con
 
 ### Arguments
 
-**jointName:string**: The joint name whose data will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose data will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose data will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose data will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 **rotation:quat**: The new rotation. The rotation specified is relative to the specified joint's parent joint.
 
@@ -1793,7 +1793,7 @@ After running the above example, your avatar should be in the default T-Pose and
 
 [![T-pose.png](https://wiki.highfidelity.com/images/1/17/T-pose.png)](https://wiki.highfidelity.com/wiki/File:T-pose.png)
 
-To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData()).
+To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
 
 
@@ -1813,9 +1813,9 @@ Note: For information about avatar joint standards, see the *General Rigging Con
 
 ### Arguments
 
-**jointName:string**: The joint name whose rotation will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose rotation will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose rotation will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose rotation will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 **rotation:quat**: The new rotation. The rotation specified is relative to the specified joint's parent joint.
 
@@ -1841,7 +1841,7 @@ MyAvatar.setJointRotation("LeftArm", newArmRotation);
 
 [![Armpose.png](https://wiki.highfidelity.com/images/a/aa/Armpose.png)](https://wiki.highfidelity.com/wiki/File:Armpose.png)
 
-To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData()).
+To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
 
 
@@ -1849,7 +1849,7 @@ To restore all motion from the default animation system including inverse kinema
 
 Joints are the building blocks of skeletons and are their points of articulation.
 
-`setJointRotations()` is used to set the rotation for all MyAvatar joints. This function takes an array containing the rotation values for all joints in MyAvatar. The rotation values are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()) and each joint's rotation value is relative to the joint's parent joint.
+`setJointRotations()` is used to set the rotation for all MyAvatar joints. This function takes an array containing the rotation values for all joints in MyAvatar. The rotation values are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)) and each joint's rotation value is relative to the joint's parent joint.
 
 Setting joint data completely overrides/replaces all motion from the default animation system including inverse kinematics, but just for the specified joint. So for example, if you were to procedurally manipulate the finger joints, the avatar's hand and head would still do inverse kinematics properly. However, as soon as you start to manipulate joints in the inverse kinematics chain, the inverse kinematics might not function as you expect. For example, if you set the rotation of the elbow, the hand inverse kinematics position won't end up in the right place.
 
@@ -1861,7 +1861,7 @@ Note: For information about avatar joint standards, see the *General Rigging Con
 
 ### Arguments
 
-**jointRotations:quat[]**: An array of the rotation values for all joints in MyAvatar. Each rotation value is relative to the joint's parent joint. The joint values are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointRotations:quat[]**: An array of the rotation values for all joints in MyAvatar. Each rotation value is relative to the joint's parent joint. The joint values are in the same order as the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
 ### Examples
 
@@ -1890,7 +1890,7 @@ MyAvatar.setJointRotations(jointRotations);
 
 [![Armpose.png](https://wiki.highfidelity.com/images/a/aa/Armpose.png)](https://wiki.highfidelity.com/wiki/File:Armpose.png)
 
-To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData()).
+To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
 
 
@@ -1910,9 +1910,9 @@ Note: For information about avatar joint standards, see the *General Rigging Con
 
 ### Arguments
 
-**jointName:string**: The joint name whose position will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()).
+**jointName:string**: The joint name whose position will be set. For the list of joint names, use [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)).
 
-**jointIndex:int**: The index of the joint whose position will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames()). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
+**jointIndex:int**: The index of the joint whose position will be set. The joint index of a specific joint is its position in the array returned by [getJointNames()](https://wiki.highfidelity.com/wiki/GetJointNames\(\)). When looping over joints in a for loop, using the jointIndex is slightly faster than looking the joint up by name.
 
 **translation: vec3**: The new position. The position coordinates specified are relative to the specified joint's parent joint and are in centimeters.
 

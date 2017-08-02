@@ -21,7 +21,7 @@ You can create something on [Blocks through Steam](http://store.steampowered.com
 ###Importing Your Model
 
 1. Once you finish creating  your model, you can [publish it](https://vr.google.com/u/0/objects/2qIpIn0ZDjZ). ![](blocks-1.png)
-2. Download your model from the Google Blocks website where it is published. ![](block-8.png)
+2. Download your model from the Google Blocks website where it is published. ![](blocks-8.png)
 3. Extract the zipped folder containing .obj and .mtl files. ![](blocks-2.png) 
 4. You can import the model into High Fidelity in two ways: Using a Hosting Service or Using Your Asset Server
   * **Using a Hosting Service**:

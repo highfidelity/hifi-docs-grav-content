@@ -49,7 +49,7 @@ You can navigate to specific settings using the navbar. By default, only the bas
 
 ## Enable Updated Settings
 
-If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settingd and restarts your domain server. 
+If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server. 
 
 ![](\save-and-restart.png)
 
@@ -170,7 +170,7 @@ For each user or group specified, you can set the following permissions:
 * **Lock/Unlock** - Sets whether a user can change the locked property of entities (either from on to off or off to on).
 * **Rez** - Sets whether a user can create new entities.
 * **Rez Temporary** - Sets whether a user can create new entities with a finite lifetime.
-* **Write Assets** - Sets Whether the user can make changes to the domain's asset-server assets
+* **Write Assets** - Sets Whether the user can make changes to the domain's asset-server assets.
 * **Ignore Max Capacity** - Sets whether a user can connect even if the domain has reached or exceeded its maximum allowed agents.
 
 Permissions assigned to a specific user supersede any parameter-level permissions that also apply to the user. Additionally, if more than one parameter is applicable to a single user, the permissions given to that user will be the sum of all applicable parameters. For example, if only *localhost* users can connect and only *logged in* users can lock and unlock entities, if a user is both logged in and on a local host, the user will be able to both connect and lock/unlock entities.

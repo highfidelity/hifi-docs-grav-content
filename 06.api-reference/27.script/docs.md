@@ -93,9 +93,9 @@ taxonomy:
 
 # clearInterval()
 
-[setInterval()](https://wiki.highfidelity.com/wiki/SetInterval()) is used to run a specified callback function at a specified interval.
+[setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\)) is used to run a specified callback function at a specified interval.
 
-`clearInterval()` is used to stop calls scheduled using [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval()).
+`clearInterval()` is used to stop calls scheduled using [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\)).
 
 ## Function
 
@@ -103,7 +103,7 @@ taxonomy:
 
 ## Arguments
 
-**valueReturnedBySetInterval: valueReturnedBySetInterval**: The value returned by [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval())
+**valueReturnedBySetInterval: valueReturnedBySetInterval**: The value returned by [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\))
 
 ## Examples
 
@@ -133,18 +133,18 @@ You should not see any output from this example as the call is stopped.
 | **Reference**                            |
 | [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
 
-[setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout()) is used to run a specified callback function once after a specified delay.
+[setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\)) is used to run a specified callback function once after a specified delay.
 
-`clearTimeout()` is used to stop a call scheduled by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout()).
+`clearTimeout()` is used to stop a call scheduled by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\)).
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/ClearTimeout()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/ClearTimeout()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ClearTimeout()#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/ClearTimeout()#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/ClearTimeout()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Arguments)
+- [3Examples](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Examples)
+- [4References](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#References)
 
 ## Function
 
@@ -152,7 +152,7 @@ You should not see any output from this example as the call is stopped.
 
 ## Arguments
 
-**valueReturnedBySetTimeout: valueReturnedBySetTimeout**: The value returned by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout())
+**valueReturnedBySetTimeout: valueReturnedBySetTimeout**: The value returned by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\))
 
 ## Examples
 
@@ -188,12 +188,12 @@ For more information about script types, see the [Scripts Overview](https://read
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/Include()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/Include\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/Include()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Include()#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Include()#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Include()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/Include\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/Include\(\)#Arguments)
+- [3Examples](https://wiki.highfidelity.com/wiki/Include\(\)#Examples)
+- [4References](https://wiki.highfidelity.com/wiki/Include\(\)#References)
 
 ## Function
 
@@ -250,12 +250,12 @@ For more information about script types, see the [Scripts Overview](https://wiki
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/Load()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/Load\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/Load()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Load()#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Load()#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Load()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/Load\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/Load\(\)#Arguments)
+- [3Examples](https://wiki.highfidelity.com/wiki/Load\(\)#Examples)
+- [4References](https://wiki.highfidelity.com/wiki/Load\(\)#References)
 
 ## Function
 
@@ -305,13 +305,13 @@ This is a sample script.
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/ResolvePath()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/ResolvePath()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ResolvePath()#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/ResolvePath()#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/ResolvePath()#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/ResolvePath()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Arguments)
+- [3Returns](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Returns)
+- [4Examples](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Examples)
+- [5References](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#References)
 
 ## Function
 
@@ -350,12 +350,12 @@ print (SCRIPT_EXAMPLE);
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/ScriptEnding()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/ScriptEnding()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ScriptEnding()#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/ScriptEnding()#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/ScriptEnding()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Arguments)
+- [3Examples](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Examples)
+- [4References](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#References)
 
 ## Function
 
@@ -404,13 +404,13 @@ SCRIPT ENDING!!!
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/SetInterval()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/SetInterval\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/SetInterval()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/SetInterval()#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/SetInterval()#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/SetInterval()#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/SetInterval()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Arguments)
+- [3Returns](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Returns)
+- [4Examples](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Examples)
+- [5References](https://wiki.highfidelity.com/wiki/SetInterval\(\)#References)
 
 ## Function
 
@@ -424,7 +424,7 @@ SCRIPT ENDING!!!
 
 ## Returns
 
-**valueReturnedBySetInterval: valueReturnedBySetInterval**: A value that can be used by [clearInterval()](https://wiki.highfidelity.com/wiki/ClearInterval())
+**valueReturnedBySetInterval: valueReturnedBySetInterval**: A value that can be used by [clearInterval()](https://wiki.highfidelity.com/wiki/ClearInterval\(\))
 
 ## Examples
 
@@ -461,13 +461,13 @@ Repeating timer fired!
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/SetTimeout()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/SetTimeout()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/SetTimeout()#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/SetTimeout()#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/SetTimeout()#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/SetTimeout()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Arguments)
+- [3Returns](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Returns)
+- [4Examples](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Examples)
+- [5References](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#References)
 
 ## Function
 
@@ -481,7 +481,7 @@ Repeating timer fired!
 
 ## Returns
 
-**valueReturnedBySetTimeout: valueReturnedBySetTimeout**: A value that can be used by [clearTimeout()](https://wiki.highfidelity.com/wiki/ClearTimeout())
+**valueReturnedBySetTimeout: valueReturnedBySetTimeout**: A value that can be used by [clearTimeout()](https://wiki.highfidelity.com/wiki/ClearTimeout\(\))
 
 ## Examples
 
@@ -516,12 +516,12 @@ One time timer fired!
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/Stop()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/Stop\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/Stop()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Stop()#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Stop()#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Stop()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/Stop\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/Stop\(\)#Arguments)
+- [3Examples](https://wiki.highfidelity.com/wiki/Stop\(\)#Examples)
+- [4References](https://wiki.highfidelity.com/wiki/Stop\(\)#References)
 
 ## Function
 
@@ -557,13 +557,13 @@ Script.stop();
 
 ## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/Update()#)] 
+ [[hide](https://wiki.highfidelity.com/wiki/Update\(\)#)] 
 
-- [1Function](https://wiki.highfidelity.com/wiki/Update()#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Update()#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/Update()#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/Update()#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/Update()#References)
+- [1Function](https://wiki.highfidelity.com/wiki/Update\(\)#Function)
+- [2Arguments](https://wiki.highfidelity.com/wiki/Update\(\)#Arguments)
+- [3Returns](https://wiki.highfidelity.com/wiki/Update\(\)#Returns)
+- [4Examples](https://wiki.highfidelity.com/wiki/Update\(\)#Examples)
+- [5References](https://wiki.highfidelity.com/wiki/Update\(\)#References)
 
 ## Function
 

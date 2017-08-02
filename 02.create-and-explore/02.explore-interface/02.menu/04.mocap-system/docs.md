@@ -41,7 +41,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Start Interface in HMD mode and pull up you tablet.
 
-- Go to **Settings > Controller Settings**.
+- Go to **Menu > Settings > Controller Settings**.
 
   ![img](settings.png)
 

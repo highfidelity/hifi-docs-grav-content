@@ -8,11 +8,11 @@ taxonomy:
 
 ## Overview
 
-This page will detail how you can create box and sphere entities and how you can modify their properties. 
+This page will detail how you can create box and sphere entities and how you can modify their properties.
 
 ## Create a Box or Sphere Entity
 
-Click the Create button on the tablet to enable [Create Mode](../create-mode). Add a box entity by clicking the cube icon, and a sphere entity by clicking the sphere icon. 
+Click the Create button on the tablet to enable [Create Mode](../create-mode). Add a box entity by clicking the cube icon, and a sphere entity by clicking the sphere icon.
 
 ![](create-button-open.PNG)
 
@@ -34,23 +34,18 @@ To change the color of a cube to yellow:
 
 1. Add a Box entity by going to **Create** and clicking on the cube button.  
 
-
 2. When you add the cube, the Properties tab opens.
 
-3. Select the cube. 
+3. Select the cube.
 
 4. Scroll down until you see the Entity color option.
 
    ![](cube-properties.PNG)
 
-
-
-
-​     The current values are Red: 255, Green: 0, and Blue: 255.
+   The current values are Red: 255, Green: 0, and Blue: 0.
 
 5. To change the cube's color to yellow, change the Green value to 255.
 
    ![](cube-yellow.PNG)
 
    If you use the carats to change the value, as you increase the value you should see the cube change from red, to orange, to yellow. If you enter in 255, you will see the cube change to yellow as soon as you press enter.
-

@@ -11,11 +11,11 @@ taxonomy:
 Learn how you can download and use the new Spectator Camera from the marketplace. 
 
 ##Introduction
-Gone are the days when you needed a friend in VR to record yourself in High Fidelity. Now you can use the new Spectator Camera to record you and your friends in VR!
+The Spectator Camera is a camera you can use, along with recording software such as [Open Broadcaster Software (OBS)](https://obsproject.com/), to record or livestream what you and your friends do in High Fidelity. 
 
 >>>>> You can use the Spectator Camera only while using an HMD.
 
-You can record or livestream what you see through your Spectator Camera using Open Broadcaster Software (OBS). Check out their [official overview guide](https://obsproject.com/forum/threads/official-overview-guide.402/) for more details.
+You can record or livestream what you see through your Spectator Camera using OBS. Check out their [official overview guide](https://obsproject.com/forum/threads/official-overview-guide.402/) for more details.
 
 ###Get the Spectator Camera
 * In Interface, pull up your tablet and go to Market. ![](market.PNG)

@@ -95,7 +95,7 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 
 >>>>>If you have a High Fidelity account and are logged in, depending on your High 		Fidelity account settings, you may appear online in your domain to other users making you easily and immediately reachable by anyone who can see that you are online.
 
---
+---
 >>>If the domain is not reachable, it is possible that your network or the connecting client’s network uses symmetric NAT. In this case, for the domain to be reachable, you will need to open up the appropriate ports on your firewall to be reachable by basically all users (other than those on extremely restrictive networks that do not allow outbound traffic on unknown ports).
 
 

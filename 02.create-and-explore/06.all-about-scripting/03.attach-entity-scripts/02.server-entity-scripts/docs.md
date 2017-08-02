@@ -37,9 +37,6 @@ Here is an example server entity script that modifies the intensity of a light e
 
 ```
 
-Here is what the example script looks like in action:
-
-[![Tealight.gif](https://wiki.highfidelity.com/images/e/e8/Tealight.gif)](https://wiki.highfidelity.com/wiki/File:Tealight.gif)
 
 This script uses `Script.setInterval` to adjust the intensity of the light entity to a random value (within the given bounds) every 100 milliseconds.
 
@@ -49,7 +46,7 @@ Because we only need one actor to update the intensity of the light, the flicker
 
 The Entity Script Server has a subset of the functionality of an Interface client and will not have access to all of the listed components of the Javascript API. APIs for avatars, controllers, recording, overlays, and mouse and keyboard events are not available in the Entity Script Server.
 
-To learn more about the what APIs are available to server entity scripts, see [Category:JavaScript_API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API).
+Learn more about the what APIs are available to server entity scripts [here](../../../../api-reference/entities).
 
 ## Attaching to an Entity
 
