@@ -39,13 +39,13 @@ To create the SSS effect on an avatar, do the following:
 
 Here's an example of the scattering effect. The left image has no scattering and the right image has scattering. You can see the red diffuse reflection along the shadow line and
 
-| [![No scattering.jpg](https://wiki.highfidelity.com/images/thumb/b/b4/No_scattering.jpg/400px-No_scattering.jpg)](https://wiki.highfidelity.com/wiki/File:No_scattering.jpg) | [![Scattering.jpg](https://wiki.highfidelity.com/images/thumb/8/82/Scattering.jpg/400px-Scattering.jpg)](https://wiki.highfidelity.com/wiki/File:Scattering.jpg) |
-| ---------------------------------------- | ---------------------------------------- |
-|                                          |                                          |
+| ![](no-scattering.jpg) | ![](scattering.jpg) |
+| ---------------------- | ------------------- |
+|                        |                     |
 
 Here's an example of the skin map effect. The left image has no skin map and the right has a map. You can see the red diffuse reflection is masked out of the hair line.
 
-| [![No skin map.jpg](https://wiki.highfidelity.com/images/thumb/e/e0/No_skin_map.jpg/400px-No_skin_map.jpg)](https://wiki.highfidelity.com/wiki/File:No_skin_map.jpg) | [![Skin map.jpg](https://wiki.highfidelity.com/images/thumb/3/39/Skin_map.jpg/400px-Skin_map.jpg)](https://wiki.highfidelity.com/wiki/File:Skin_map.jpg) |
+| ![]() | ![](skin-map.jpg)|
 | ---------------------------------------- | ---------------------------------------- |
 |                                          |                                          |
 
@@ -61,7 +61,6 @@ Here are examples of two FSTs that contain scattering definitions.
 
 - debugDeferredLighting.js
 
-   
 
   \- A developers debug script which allows you to toggle the material properties in realtime:
 
