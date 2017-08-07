@@ -1220,7 +1220,7 @@ print("Entity added.");
 
 ```
 
-![img](https://wiki.highfidelity.com/images/4/4e/Wand_entity.png)
+![](wand-entity.png)
 
  
 
@@ -2527,7 +2527,7 @@ var test = Entities.setAllVoxels(Ent, 255);
 
 The resulting entity looks like this:
 
-![img](https://wiki.highfidelity.com/images/f/f4/Voxelall.png)
+![](voxel-all.png)
 
 A PolyVox entity where all voxels have a value of 255 ("on").
 
@@ -2649,7 +2649,7 @@ var test = Entities.setVoxel(Ent, {x:5, y:5, z:5}, 255);
 
 The resulting entity looks like this:
 
-![img](https://wiki.highfidelity.com/images/3/3f/Voxeloneset.png)
+![](voxel-onset.png)
 
 A PolyVox entity where only the voxel at position 5, 5, 5 has a value of 255 ("on").
 
@@ -2703,7 +2703,7 @@ var test = Entities.setVoxelsInCuboid(Ent, {x:0, y:0, z:0}, {x:10, y:10, z:10}, 
 
 The resulting entity looks like this:
 
-![img](https://wiki.highfidelity.com/images/2/24/Voxelcubes.png)
+![](voxel-cubes.png)
 
 A PolyVox entity where all voxels with in a 10x10x10 cube with lower corner at position 0, 0, 0 have a value of 255 ("on").
 
@@ -2755,7 +2755,7 @@ var test = Entities.setVoxelSphere(Ent, pos, 0.05, 255);
 
 The resulting entity looks like this:
 
-![img](https://wiki.highfidelity.com/images/5/58/Voxelsphere.png)
+![](voxel-sphere)
 
 A PolyVox entity where all voxels in a sphere of radius 0.5 centered at the entity's position have a value of 255 ("on").
 
@@ -2763,7 +2763,7 @@ A PolyVox entity where all voxels in a sphere of radius 0.5 centered at the enti
 
 ## setZonesArePickable() <a id="m45"></a>
 
-If an entity can be "picked," it can be returned as a ray intersection result (see [findRayIntersection()](https://wiki.highfidelity.com/wiki/FindRayIntersection())). By default, zone entities cannot be picked. This setting is global and applies to all zone entities in the environment. `setZonesArePickable()` is used to toggle the ability to pick zone entities.
+If an entity can be "picked," it can be returned as a ray intersection result. By default, zone entities cannot be picked. This setting is global and applies to all zone entities in the environment. `setZonesArePickable()` is used to toggle the ability to pick zone entities.
 
 ### Function
 

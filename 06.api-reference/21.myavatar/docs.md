@@ -479,7 +479,7 @@ If you have more than one of the same model attached, `detachAll()` removes all 
 
 For example, if the avatar is wearing three of the same hat, two on its head and one on its hand, you can use `detachAll()` to remove all three hats or you can use `detachAll()` to remove only the hats from a specified joint.
 
-![ThreeHats.png](https://wiki.highfidelity.com/images/d/d7/ThreeHats.png)
+![](3-hats.png)
 
 To remove all three hats, use `detachAll()` without specifying a joint name, as in the example below:
 
@@ -520,7 +520,7 @@ If you have more than one of the same model attached, `detachOne()` is used to r
 
 For this example, the avatar is wearing three of the same hat, two on its head and one on its hand.
 
-![ThreeHats.png](https://wiki.highfidelity.com/images/d/d7/ThreeHats.png)
+![](3-hats.png)
 
  
 
@@ -1791,7 +1791,7 @@ for (i = 0; i < l; i++) {
 
 After running the above example, your avatar should be in the default T-Pose and all motion from the default animation system will no longer be in effect.
 
-[![T-pose.png](https://wiki.highfidelity.com/images/1/17/T-pose.png)](https://wiki.highfidelity.com/wiki/File:T-pose.png)
+![](t-pose.png)
 
 To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
@@ -1839,7 +1839,7 @@ MyAvatar.setJointRotation("LeftArm", newArmRotation);
 
 ```
 
-[![Armpose.png](https://wiki.highfidelity.com/images/a/aa/Armpose.png)](https://wiki.highfidelity.com/wiki/File:Armpose.png)
+![](armpose.png)
 
 To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
@@ -1888,7 +1888,7 @@ MyAvatar.setJointRotations(jointRotations);
 
 ```
 
-[![Armpose.png](https://wiki.highfidelity.com/images/a/aa/Armpose.png)](https://wiki.highfidelity.com/wiki/File:Armpose.png)
+![](armpose.png)
 
 To restore all motion from the default animation system including inverse kinematics for all joints, use [clearJointsData()](https://wiki.highfidelity.com/wiki/ClearJointsData\(\)).
 
@@ -1928,7 +1928,7 @@ MyAvatar.setJointTranslation("Neck", newTranslation);
 
 After running the example, the avatar's head should appear to be about 25 centimeters above where it was. Depending on the avatar you are using, you will either see a gap between the head and body or you will see the neck stretched as in the image below.
 
-[![Stretchedneck.png](https://wiki.highfidelity.com/images/9/94/Stretchedneck.png)](https://wiki.highfidelity.com/wiki/File:Stretchedneck.png)
+![](stretched-neck.png)
 
 To restore the default translation, use [doc:clearjointsdata clearJointsData()].
 

@@ -19,11 +19,11 @@ Here's how you can bookmark your avatar:
 - You can also go to **Menu > Settings > Avatar **. A window named Avatar Settings will open.
 - Below the tab for *Appearance*, you'll see a button named **Bookmark Avatar**.
 
-[![AvatarBookmarks1.png](https://wiki.highfidelity.com/images/thumb/3/3d/AvatarBookmarks1.png/300px-AvatarBookmarks1.png)](https://wiki.highfidelity.com/wiki/File:AvatarBookmarks1.png)
+![](av-bk-1.png)
 
 - Click **Bookmark Avatar** and you'll be prompted to name it.
 
-[![AvatarBookmarks2.png](https://wiki.highfidelity.com/images/thumb/a/a9/AvatarBookmarks2.png/300px-AvatarBookmarks2.png)](https://wiki.highfidelity.com/wiki/File:AvatarBookmarks2.png)
+![](av-bk-2.png)
 
 - Click OK and Save Changes.
 
@@ -32,7 +32,7 @@ Now that you've bookmarked your avatar, you can access it anytime from the Avata
 - Pull up your tablet.
 - Go to **Avatar**.
 
-[![AvatarBookmarks3.png](https://wiki.highfidelity.com/images/thumb/d/d3/AvatarBookmarks3.png/300px-AvatarBookmarks3.png)](https://wiki.highfidelity.com/wiki/File:AvatarBookmarks3.png)
+![](av-bk-3.png)
 
 - You can access your bookmarked avatar by clicking on 'Avatar Bookmarks'.
 - You can also delete your avatar bookmarks by clicking on 'Delete Avatar Bookmark'.

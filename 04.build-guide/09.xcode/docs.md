@@ -18,7 +18,7 @@ As per the guide linked above, that folder should be placed in `~/Library/Develo
 
 With that folder in the right place, the next time you restart Xcode you should have a new category when you go to create a new file.
 
-[![Create new file.png](https://wiki.highfidelity.com/images/1/14/Create_new_file.png)](https://wiki.highfidelity.com/wiki/File:Create_new_file.png)
+![](new.png)
 
 By selecting this type you will get a *.cpp and a *.h file with the name of your choosing that has boilerplates and include guards mostly pre-populated.
 

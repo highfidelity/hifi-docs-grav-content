@@ -36,7 +36,7 @@ Set up your assignment clients:
 - Under # instances, put 1 (or more).
 - Click Save and Restart on the left menu.
 
-[![Record Instructions.png](https://wiki.highfidelity.com/images/thumb/c/c5/Record_Instructions.png/350px-Record_Instructions.png)](https://wiki.highfidelity.com/wiki/File:Record_Instructions.png)
+![](record-instructions.png)
 
 ## App Menu
 
@@ -50,7 +50,8 @@ The following lists the menu items in the app and how you can use them.
 - Record: Starts recording.
 - Stop recording automatically when reopen tablet or window: Check this if you want to stop recording as soon as you reopen your tablet. This would be particularly useful if you’re using an HMD.
 
-[![Record EmptyTable.png](https://wiki.highfidelity.com/images/thumb/5/52/Record_EmptyTable.png/350px-Record_EmptyTable.png)](https://wiki.highfidelity.com/wiki/File:Record_EmptyTable.png) [![Record LoadedRecordings.png](https://wiki.highfidelity.com/images/thumb/b/b2/Record_LoadedRecordings.png/350px-Record_LoadedRecordings.png)](https://wiki.highfidelity.com/wiki/File:Record_LoadedRecordings.png)
+![](record-empty-table.png)
+![](record-loaded-recordings.png)
 
 ## How to Create a Recording
 
