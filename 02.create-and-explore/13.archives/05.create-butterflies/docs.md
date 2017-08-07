@@ -20,7 +20,7 @@ Before getting into editing the `butterflies.js` script, start by running the sc
 
 You should see the `butterflies.js` script added to the list of running scripts at the top of the *Running Scripts* panel. In world, you should see a group of butterflies appear directly in front of your avatar that then begin to float up and away.
 
-![img](https://wiki.highfidelity.com/images/thumb/8/87/Big_Flock_of_Butterflies.png/600px-Big_Flock_of_Butterflies.png)
+![](flock-butterflies.png)
 
 *Note: As the script is being run as an Interface script, the results (the butterflies flying around you) are seen by everyone in the domain. For information about running scripts in other contexts and what that means for what others can see, take a look at Scripts Overview.*
 
@@ -37,26 +37,22 @@ Included in Interface is a basic script editor. The script editor provides you w
 
    . This opens the script editor window. The script editor includes an editing panel, a debug log, and options to run the scripts on the fly as you edit.
 
-   [![Scripteditorwindow.png](https://wiki.highfidelity.com/images/1/15/Scripteditorwindow.png)](https://wiki.highfidelity.com/wiki/File:Scripteditorwindow.png)
+![](script-editor-window.png)
 
    The script editor has several icons across the top that allow you to create a new script, load a script, save a script, and toggle running the script.
 
-   [![Scripteditoriconsannotated.png](https://wiki.highfidelity.com/images/7/73/Scripteditoriconsannotated.png)](https://wiki.highfidelity.com/wiki/File:Scripteditoriconsannotated.png)
+![](script-editor-icons.png)
 
 3. Select the arrow next to the load script icon. You should see a dropdown list of all currently running scripts.
 
-4. Select the
+4. Select the    script from the list.
 
 
    ```
    butterflies.js
    ```
 
-​    
-
-   script from the list.
-
-   ![img](https://wiki.highfidelity.com/images/0/0d/Selectfromrunningscripts.png)
+​   ![](running-scripts.png) 
 
    Loading butterflies.
 
@@ -70,13 +66,13 @@ Now that you have a local copy of the script that you can experiment with, the f
 
 - To run the local copy of the script, in the script editor, click the **Run Script** icon - it looks like a piece of paper with a straight arrow to the right.
 
-![img](https://wiki.highfidelity.com/images/2/24/ScripteditoriconsannotatedRun.png)
+![](script-editor-icons-run.png)
 
 The Run Script icon.
 
 The **Run Script** icon should change to the **Stop Script** icon (a small stop sign). As the script is now running, you should see more butterflies appearing in front of the avatar.
 
-![img](https://wiki.highfidelity.com/images/c/c3/Stopscript.png)
+![](stop-script.png)
 
 The Stop Script icon.
 
@@ -110,7 +106,7 @@ The butterflies are pretty, but there are a lot of them. A simple edit to make i
 
 Re-run the script (click the **Run Script** icon).
 
-[![Lowbutterfly.png](https://wiki.highfidelity.com/images/b/b2/Lowbutterfly.png)](https://wiki.highfidelity.com/wiki/File:Lowbutterfly.png)
+![](low-butterfly.png)
 
 You should now see only two butterflies appear.
 

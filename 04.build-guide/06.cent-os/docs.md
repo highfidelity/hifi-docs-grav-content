@@ -25,7 +25,7 @@ This document will not cover specifics to installing and using CentOS 7 with GNO
 
 **A basic install with a GNOME Desktop was picked**
 
-![img](https://wiki.highfidelity.com/images/6/60/1CentOS7InstallType.jpg)
+![](1-centos.jpg)
 
 GNOME Desktop Software Selection.
 
@@ -35,13 +35,13 @@ GNOME Desktop Software Selection.
 
 **Accessing The Terminal**
 
-![img](https://wiki.highfidelity.com/images/0/0e/2CentOS7AccessTerminal.jpg)
+![](2-terminal.jpg)
 
 Click Applications > Utilities > Terminal.
 
 **We have a Terminal!**
 
-![img](https://wiki.highfidelity.com/images/e/eb/3CentOS7FirstTerminal.jpg)
+![](3-first-terminal.jpg)
 
 The Terminal
 
@@ -53,7 +53,7 @@ The Terminal
 
 **If you are successful then your Terminal will look like this**
 
-![img](https://wiki.highfidelity.com/images/e/ee/4CentOS7SU.jpg)
+![](4-os7su.jpg)
 
 It switched from "coal" to "root."
 
@@ -112,7 +112,7 @@ It switched from "coal" to "root."
 
 *Screenshot: \**"cmake"** output from BulletSim provided as an example of expected output, including warnings.*
 
-![img](https://wiki.highfidelity.com/images/9/95/5CentOS7BulletSim.jpg)
+![](5-bullet-sim.jpg)
 
 These warnings are expected and okay.
 
@@ -136,7 +136,7 @@ In this step we pull the newest source code from the High Fidelity GitHub accoun
 
 **This image is a reference to what a successful "cmake" will display**
 
-![img](https://wiki.highfidelity.com/images/8/8b/6CentOS7CmakeIgnore.jpg)
+![](6-make-ignore.jpg)
 
 "Not Found" messages are OK as long as you see "Build files have been written".
 
@@ -157,4 +157,4 @@ In this step we pull the newest source code from the High Fidelity GitHub accoun
 
 *After you type command #2, you may notice it takes a while for Interface to start up, but it will make its away around!*
 
-![img](https://wiki.highfidelity.com/images/thumb/c/c5/7CentOS7TheInterface.jpg/600px-7CentOS7TheInterface.jpg)
+![](7-interface.jpg)

@@ -203,7 +203,7 @@ title: 'A Lesson in Shortbow'
 
   When it loads, you should see a bow appear in front of your avatar. Grab it and start practicing! If you don’t see it running, press CTRL+J to open the script menu and click the reload button to the right of spawnBow.js in the running script list.
 
-  [![Bow image.jpg](https://wiki.highfidelity.com/images/9/92/Bow_image.jpg)](https://wiki.highfidelity.com/wiki/File:Bow_image.jpg)
+  ![](bow-image.jpg)
 
   ### Recap
 
@@ -533,7 +533,7 @@ title: 'A Lesson in Shortbow'
 
   In order to track how far along in our game we’ve progressed, we’ll be setting up a scoreboard that displays several stats about our game. To do this, we’ll be creating a server script called displayServerEntity.js, which will subscribe to messages from our game manager whenever the score or game wave is updated.
 
-  [![Img show score.png](https://wiki.highfidelity.com/images/0/03/Img_show_score.png)](https://wiki.highfidelity.com/wiki/File:Img_show_score.png)
+![](show-score.png)
 
     1. In your project’s root folder, create a new script called displayServerEntity.js
     2. Copy and paste the following code into your script and save:

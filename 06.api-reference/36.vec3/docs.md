@@ -58,7 +58,7 @@ The Vec3 API provides a set of methods to manipulate 3-dimensional vectors as we
 
 High Fidelity uses a right-handed Cartesian coordinate system similar to the one used by OpenGL:
 
-[![Opengl-coordinate-system.jpg](https://wiki.highfidelity.com/images/0/03/Opengl-coordinate-system.jpg)](https://wiki.highfidelity.com/wiki/File:Opengl-coordinate-system.jpg)
+![](opengl-coord-system.jpg)
 
 In this frame of reference, the Y axis represents the UP direction and the -Z axis represent the FRONT direction. Constants follow below:
 

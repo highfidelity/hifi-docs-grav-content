@@ -6,7 +6,7 @@ taxonomy:
 
 Welcome to the fireworks scripting tutorial! Here we will take you step by step through building a launch button which, when pressed, will launch a series of fireworks into the sky!
 
-[![Fireworks.png](https://wiki.highfidelity.com/images/6/62/Fireworks.png)](https://wiki.highfidelity.com/wiki/File:Fireworks.png)
+![](fireworks.png)
 
 
 

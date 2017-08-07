@@ -20,7 +20,7 @@ If you have permissions to edit on a given domain (either your sandbox domain, o
 
 *Entity* - an object with a set of properties within a domain in High Fidelity
 
-[![Img tablet edit.png](https://wiki.highfidelity.com/images/thumb/c/c2/Img_tablet_edit.png/750px-Img_tablet_edit.png)](https://wiki.highfidelity.com/wiki/File:Img_tablet_edit.png)
+![](tablet-edit.png)
 
 When the Edit window is open, you can set up and use an editing grid, search for entities in your scene, and select objects to view the properties that have been set for different entities. You can select objects within the scene using the mouse [(desktop mode)](https://wiki.highfidelity.com/wiki/Explore) and grab triggers [(VR mode with hand controllers)](https://wiki.highfidelity.com/wiki/Hand_controllers) and move, rotate, and scale them in your environment. A selected entity will have a red line around the model.
 
