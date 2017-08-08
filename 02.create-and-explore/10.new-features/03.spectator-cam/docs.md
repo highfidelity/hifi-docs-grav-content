@@ -20,7 +20,7 @@ You can record or livestream what you see through your Spectator Camera using OB
 ###Get the Spectator Camera
 * In Interface, pull up your tablet and go to Market. ![](market.PNG)
 * Search for the Spectator Camera and get it. 
-* You will be prompted about running the camera script. Click Yes and check your tablet to see if the Spectator app has been added. ![](script.PNG) ![](added-to-tablet.png)
+* You will be prompted about running the camera script. Click Yes and check your tablet to see if the Spectator app has been added. ![](script.PNG) ![](spec-Cam-Tablet.png)
 
 >>> While using the Spectator Camera, Interface's framerate might be affected. This is because Interface is rendering not only what you see, but what the Spectator Camera sees as well. 
 
