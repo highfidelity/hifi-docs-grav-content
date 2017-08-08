@@ -10,10 +10,10 @@ taxonomy:
 
 The steps involved in creating your avatar are:
 
-- Create an avatar in Adobe Fuse.
-- Rig your avatar with Mixamo
-- Make adjustments to model materials using Blender.
-- Package the model in High Fidelity for use as an avatar.
+1. Create an avatar in Adobe Fuse.
+2. Rig your avatar with Mixamo
+3. Make adjustments to model materials using Blender.
+4. Package the model in High Fidelity for use as an avatar.
 
 ## Software Requirements
 
@@ -26,9 +26,9 @@ For creating your avatar, you will need to:
 
 ###Video
 
-Check out this youtube playlist to learn how you can get an avatar from the marketplace and create your own with a custom look. 
+Check out this youtube playlist to learn how you can get an avatar from the marketplace and create your own with a custom look.
 
-[plugin:youtube](https://www.youtube.com/watch?v=6NfiH4rdVRM&t=3s)
+[plugin:youtube](https://www.youtube.com/watch?v=6NfiH4rdVRM)
 
 ### Creating Your Avatar with Fuse
 
@@ -69,27 +69,27 @@ Now you can modify any part of your avatar using Blender. We've included an exam
 
 **Updating Eyelash Material and Texture For Your Avatar**
 
-- Save [this texture](http://hifi-content.s3.amazonaws.com/DomainContent/Event%20/Images/mixamo_eyelashes.png) to a directory where you will remember.
-- Select Eyelashes from the Outliner.
-- Select the Materials tab.
-- Click the + button to the right of the material list to create a new material slot.
-- Click the '+ New' button next to the material combobox to add a new material.
-- Rename the new material to **lashes**.
-- With the Eyelashes layer selected in the outliner, and the Lashes material highlighted in the material editor, use the Tab key to go into Edit Mode.
-- Click the ‘Assign' button in the material editor.
-- Scroll down in the Material tab until you see the ‘Transparency' section. Check the Transparency box and change the ‘Alpha' value to 0.00.
-- Set the specular color for the Lashes material to black.
-- While still editing the Eyelashes, select the Texture tab.
-- Click the '+ New' button next to the texture combobox.
-- From the Image section select ‘Open' and find the lashes texture named ‘mixamo_eyelashes' you previously downloaded.
-- Check the 'Show Alpha' option in the Preview section.
-- Make sure the 'Use Alpha' option is checked in the Image/Source area.
-- Scroll down in the Texture tab to the Influence section and check the ‘Alpha’ box.
-- Click the ‘Pack texture’ option to include the texture in the model.
-- Select File/Export/FBX.
-- Change the Path Mode to ‘Copy'.
-- Select the 'Embed Textures' option next to the dropdown options that now say Copy.
-- Give the Avatar a unique name and click the Export FBX button.
+1. Save [this texture](http://hifi-content.s3.amazonaws.com/DomainContent/Event%20/Images/mixamo_eyelashes.png) to a directory where you will remember.
+2. Select Eyelashes from the Outliner.
+3. Select the Materials tab.
+4. Click the + button to the right of the material list to create a new material slot.
+5. Click the '+ New' button next to the material combobox to add a new material.
+6. Rename the new material to **lashes**.
+7. With the Eyelashes layer selected in the outliner, and the Lashes material highlighted in the material editor, use the Tab key to go into Edit Mode.
+8. Click the ‘Assign' button in the material editor.
+9. Scroll down in the Material tab until you see the ‘Transparency' section. Check the Transparency box and change the ‘Alpha' value to 0.00.
+10. Set the specular color for the Lashes material to black.
+11. While still editing the Eyelashes, select the Texture tab.
+12. Click the '+ New' button next to the texture combobox.
+13. From the Image section select ‘Open' and find the lashes texture named ‘mixamo_eyelashes' you previously downloaded.
+14. Check the 'Show Alpha' option in the Preview section.
+15. Make sure the 'Use Alpha' option is checked in the Image/Source area.
+16. Scroll down in the Texture tab to the Influence section and check the ‘Alpha’ box.
+17. Click the ‘Pack texture’ option to include the texture in the model.
+18. Select File/Export/FBX.
+19. Change the Path Mode to ‘Copy'.
+20. Select the 'Embed Textures' option next to the dropdown options that now say Copy.
+21. Give the Avatar a unique name and click the Export FBX button.
 
 ### Uploading to High Fidelity
 
