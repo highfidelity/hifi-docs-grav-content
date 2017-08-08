@@ -1,5 +1,5 @@
 ---
-title: Particle Entities 
+title: Particle Entities
 taxonomy:
     category: docs
 ---
@@ -12,7 +12,9 @@ Particle entities are used to create effects made up of many small parts, such a
 
 ## Create a Particle Entity
 
-Go to **Create** and select the Particle icon. 
+Go to **Create** and select the Particle icon.
+
+![](create-button-open.PNG)
 
 A particle entity first appears as a fountain of small white particles.
 
@@ -22,11 +24,11 @@ A particle entity first appears as a fountain of small white particles.
 
 Particle entities have the properties common to all entities as well as additional particle specific properties.
 
-To edit the particle entity, select the **Particle Explorer** tab. This is indicated by a small particle icon on the top-right hand corner of your tablet. 
+To edit the particle entity, select the **Particle Explorer** tab. This is indicated by a small particle icon on the top-right hand corner of your tablet.
 
 ![](particle-explorer.PNG)
 
-Click on open controls to see the entity's properties. 
+Click on open controls to see the entity's properties.
 
 ![](particle-properties.PNG)
 
@@ -36,6 +38,6 @@ Click on open controls to see the entity's properties.
 
 
 
-Below is an image of a particle entity with a different color. 
+Below is an image of a particle entity with a different color.
 
 ![](purple-particle.PNG)
