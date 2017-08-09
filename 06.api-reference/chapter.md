@@ -15,7 +15,7 @@ Check out our latest API Reference here. We're doing our best to keep this refer
 
 
 
-## API Reference Page Updates
+
 
 The following table displays how complete the API reference is. We will be updating this list as we add new API and update existing ones. 
 
