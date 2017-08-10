@@ -1,4 +1,4 @@
----
+﻿---
 title: Create a Tablet App
 taxonomy:
     category: docs
@@ -40,7 +40,7 @@ Create a new JavaScript file with your text editor. You can name it gemstoneApp.
 // Every great app starts with a great name (keep it short so that it can fit in the tablet button)
 var APP_NAME = "GEMSTONE";   
 // Get a reference to the tablet 
-var tablet = ablet.getTablet("com.highfidelity.interface.tablet.system");
+var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
 // "Install" your cool new app to the tablet
 // The following lines create a button on the tablet's menu screen
 var button = tablet.addButton({ 
