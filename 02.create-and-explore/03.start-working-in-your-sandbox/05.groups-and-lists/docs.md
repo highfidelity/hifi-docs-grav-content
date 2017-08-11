@@ -38,7 +38,7 @@ Once you've made your selection, you can start adding members. On the group (or 
 - **List Permissions**: view all ranks and their permissions.
 - **Edit Member**: add/remove users to the group/list, and edit their ranks. Users will only be able to assign ranks below their own.
 - **List Members**: view all members.
-- **Query Member**: ask if a specific user is a member of a group, and his/her rank (this will be necessary for the Domain Server to utilize groups, when that feature is released).
+- **Query Member**: ask if a specific user is a member of a group, and his/her rank.
 
 Certain permissions depend on others, and will be automatically added. If you give a user a Query Member rank, List Ranks will be added as well.
 
