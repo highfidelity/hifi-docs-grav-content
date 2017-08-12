@@ -12,7 +12,7 @@ High Fidelity scripts use the JavaScript syntax and can be anything from a singl
 
 ## Script Types
 
-The four types of scripts are listed below, along with details on their usage. 
+The four types of scripts are listed below, along with details on their usage.
 
 | Script Type           | Description                              | How / Where to run                       | What to use it for                       |
 | --------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -66,7 +66,7 @@ Click "Settings"
 
 This will open a web page [http://localhost:40100](http://localhost:40100/). From the domain server homepage click on **Scripts** to navigate to the "Persistent Scripts" section. Now simply paste the URL link to your script. Leave the **Pool** field blank for now. Press **+** to add your script, then click **Save and restart**.
 
-![](\enter-script-url.png)
+![](\enter-script-url.jpg)
 
 The Domain Server finds the first available Assignment Client and sends it the script to run.
 
