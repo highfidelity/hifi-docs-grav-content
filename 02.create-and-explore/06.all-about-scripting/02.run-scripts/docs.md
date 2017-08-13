@@ -41,7 +41,7 @@ At any time you can close or restart one or all of the running scripts. To reloa
 
 - To reload all running scripts, click the **Reload All** button at the top of the *Running Scripts* panel.
 - To reload a specific script, click the circular arrow next to the script in the currently running scripts list.
-- To stop all running scripts, click the *Stop All** button at the top of the *Running Scripts* panel.
+- To stop all running scripts, click the **Stop All** button at the top of the *Running Scripts* panel.
 - To stop a specific script, click the X next to the script in the currently running scripts list.
 
 ## Get Started Writing Your Own Scripts
