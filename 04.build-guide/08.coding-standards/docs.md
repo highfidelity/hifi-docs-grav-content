@@ -730,11 +730,12 @@ if (isScorer) {
 
 #### 4.1.6 A for statement should have the following form:
 
+Be thoughtful about choosing whether or not a value uses a pre-increment or post-increment operation based on the use case. We strongly recommend using the pre-increment operator, especially in the cases of loops. 
+
 ```
-for (int i = 0; i < GRETZKY_NUMBER; i++) {
+for (int i = 0; i < GRETZKY_NUMBER; ++i) {
     getActivePlayerWithNumber(i);
 }
-
 ```
 
 #### 4.1.7 A while statement should have the following form:

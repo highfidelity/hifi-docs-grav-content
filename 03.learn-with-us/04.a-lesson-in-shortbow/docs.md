@@ -1,8 +1,10 @@
 ---
 title: 'A Lesson in Shortbow'
+taxonomy:
+	category: docs
 ---
 
-- In this four-part tutorial, we’re going to go through the process of creating a Shortbow VR wave game that we can add to our domain in High Fidelity. Before diving into this section, we recommend that you familiarize yourself with the various types of scripts that run in High Fidelity and go through the following tutorials for setting up your domain and getting ready to build a game:
+In this four-part tutorial, we’re going to go through the process of creating a Shortbow VR wave game that we can add to our domain in High Fidelity. Before diving into this section, we recommend that you familiarize yourself with the various types of scripts that run in High Fidelity and go through the following tutorials for setting up your domain and getting ready to build a game:
 
   - [Setup Your Domain to Build in High Fidelity](http://localhost/learn-with-us/setup-your-domain-to-build)
   - [Get Started with Scripting in High Fidelity](http://localhost/learn-with-us/get-started-with-scripting)
@@ -32,69 +34,69 @@ title: 'A Lesson in Shortbow'
 
   ### Getting the Project Assets
 
-  In addition to the scripts that we’ll be writing, our Shortbow game requires several types of components to make it interactive and fun. You can download the full set of project assets [here](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/Shortbow%20Tutorial%20Assets.zip), or create your own 3D assets in a tool like Clara.io, Blender, 3DS Max, or Maya. If you do plan to build your own models, make sure that your collision, grab, equip, and properties are set properly. For this tutorial, we recommend downloading the existing assets to start. Including models, you should have the following assets:
+  In addition to the scripts that we’ll be writing, our Shortbow game requires several types of components to make it interactive and fun. You can download the full set of project assets [here](https://github.com/highfidelity/hifi/tree/master/unpublishedScripts/marketplace/shortbow), or create your own 3D assets in a tool like Clara.io, Blender, 3DS Max, or Maya. If you do plan to build your own models, make sure that your collision, grab, equip, and properties are set properly. For this tutorial, we recommend downloading the existing assets to start. Including models, you should have the following assets:
 
-  | **Name**            | **Path** | **File Type** |
-  | ------------------- | -------- | ------------- |
-  | escape              | /sounds/ | WAV           |
-  | explosion           | /sounds/ | WAV           |
-  | fight               | /sounds/ | WAV           |
-  | gameOn              | /sounds/ | WAV           |
-  | gameOver            | /sounds/ | WAV           |
-  | letTheGamesBegin    | /sounds/ | WAV           |
-  | spawn               | /sounds/ | WAV           |
-  | targetHit           | /sounds/ | WAV           |
-  | tenSecondsRemaining | /sounds/ | WAV           |
-  | waveComplete        | /sounds/ | WAV           |
-  | Amber               | /models/ | FBX           |
-  | shortbow-platform   | /models/ | FBX           |
-  | shortbow-button     | /models/ | FBX           |
-  | shortbow-scoreboard | /models/ | FBX           |
-  | Arrow_impact.1.L    | /bow/    | WAV           |
-  | Bow_draw1.L         | /bow/    | WAV           |
-  | String_release2.L   | /bow/    | WAV           |
-  | arrow-sparkle       | /bow/    | PNG           |
-  | arrow               | /bow/    | FBX           |
-  | bow-deadly          | /bow/    | FBX           |
-  | bow                 | /bow/    | SVO.JSON      |
-  | bow                 | /bow/    | JSON          |
-  | bow_collision_hull  | /bow/    | OBJ           |
-  | notch               | /bow/    | WAV           |
+| **Name**            | **Path** | **File Type** |
+| ------------------- | -------- | ------------- |
+| escape              | /sounds/ | WAV           |
+| explosion           | /sounds/ | WAV           |
+| fight               | /sounds/ | WAV           |
+| gameOn              | /sounds/ | WAV           |
+| gameOver            | /sounds/ | WAV           |
+| letTheGamesBegin    | /sounds/ | WAV           |
+| spawn               | /sounds/ | WAV           |
+| targetHit           | /sounds/ | WAV           |
+| tenSecondsRemaining | /sounds/ | WAV           |
+| waveComplete        | /sounds/ | WAV           |
+| Amber               | /models/ | FBX           |
+| shortbow-platform   | /models/ | FBX           |
+| shortbow-button     | /models/ | FBX           |
+| shortbow-scoreboard | /models/ | FBX           |
+| Arrow_impact.1.L    | /bow/    | WAV           |
+| Bow_draw1.L         | /bow/    | WAV           |
+| String_release2.L   | /bow/    | WAV           |
+| arrow-sparkle       | /bow/    | PNG           |
+| arrow               | /bow/    | FBX           |
+| bow-deadly          | /bow/    | FBX           |
+| bow                 | /bow/    | SVO.JSON      |
+| bow                 | /bow/    | JSON          |
+| bow_collision_hull  | /bow/    | OBJ           |
+| notch               | /bow/    | WAV           |
 
-  [Asset Download Link](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/Shortbow%20Tutorial%20Assets.zip)
+  [Asset Download Link](https://github.com/highfidelity/hifi/tree/master/unpublishedScripts/marketplace/shortbow)
 
   ### Script Files
 
-  As we mentioned in the introduction, we’ll be covering a number of different script types to put together our Shortbow game. At a high level, scripts that we build in Shortbow will fall into one of two categories:
+As we mentioned in the introduction, we’ll be covering a number of different script types to put together our Shortbow game. At a high level, scripts that we build in Shortbow will fall into one of two categories:
 
-  - Scripts that perform a specific behavior on a given object
+- Scripts that perform a specific behavior on a given object
     - Example: A script on the bow to shoot arrows
     - Example: A script on an enemy entity to manage movement and collisions
 
 
-  - Scripts that control overarching elements of the game play
+- Scripts that control overarching elements of the game play
     - Example: A script that loads in all of the necessary entities
     - Example: A script that handles when the game begins and ends
 
-  For many of our scripts, there will be both a client side entity script and a server side entity script. You can find a full description of the four types of scripts in the Script Types Overview documentation on the High Fidelity Wiki [here](https://wiki.highfidelity.com/wiki/Script_Types_Overview).
+For many of our scripts, there will be both a client side entity script and a server side entity script. You can find a full description of the four types of scripts in the Script Types Overview documentation on the High Fidelity Wiki [here](https://wiki.highfidelity.com/wiki/Script_Types_Overview).
 
-  We will have one script that loads in all of our other entities and handles the overall game play, which we’ll write in Chapter 4. This script will handle the setup of our models, load in all of the other required scripts for the experience, and start our game loop. This structure for our Shortbow game enables us to load and unload everything for our game with spawnShortbow.js, but before we get into those scripts, we’re going to create our bow!
+We will have one script that loads in all of our other entities and handles the overall game play, which we’ll write in Chapter 4. This script will handle the setup of our models, load in all of the other required scripts for the experience, and start our game loop. This structure for our Shortbow game enables us to load and unload everything for our game with spawnShortbow.js, but before we get into those scripts, we’re going to create our bow!
 
   ### Scripting a Bow & Arrow
 
-  *Before getting started with the scripts, make sure that you’ve got all of the non-scripting assets in their correct folders, as shown in the table above!*
+*Before getting started with the scripts, make sure that you’ve got all of the non-scripting assets in their correct folders, as shown in the table above!*
 
-  The first thing we'll write is a script for our bow behaviors, which will contain a number of different functions that will help us give our bow the ability to shoot arrows.
+The first thing we'll write is a script for our bow behaviors, which will contain a number of different functions that will help us give our bow the ability to shoot arrows.
 
     1. Create a new file named ‘bow.js’ in your bow directory.
-    2. [Click this link](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/bow.js) and copy the contents into your bow.js file.
+    2. [Click this link](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/bow/bow.js) and copy the contents into your bow.js file.
     3. Save bow.js
 
-  Let’s pause for a second and take a look at the internals of bow.js, since this is the bulk of what makes up our projectile launcher. To start, you’ll see that there are a number of different functions that help with entity management, translating objects in 3D space, and colors.
+Let’s pause for a second and take a look at the internals of bow.js, since this is the bulk of what makes up our projectile launcher. To start, you’ll see that there are a number of different functions that help with entity management, translating objects in 3D space, and colors.
 
-  Once we set up our helper functions, we establish the relative location of the hand controllers we have and translate the position into world coordinates, which we’ll use to understand the position of our hands and detect when we grab our bow. The function getControllerLocation() will use that logic to establish where our hands are in the world.
+Once we set up our helper functions, we establish the relative location of the hand controllers we have and translate the position into world coordinates, which we’ll use to understand the position of our hands and detect when we grab our bow. The function getControllerLocation() will use that logic to establish where our hands are in the world.
 
-  The main function in bow.js is in an unnamed function that starts at line 95. Lines 101 - 187 set up constants for our bow and arrow, and do the following, in order:
+The main function in bow.js is in an unnamed function that starts at line 95. Lines 101 - 187 set up constants for our bow and arrow, and do the following, in order:
 
   - Set up a null UUID, which will later be used to assign an Entity ID
   - Load in four .wav files for our sound effects, as well as the model URL for our arrow
@@ -105,7 +107,7 @@ title: 'A Lesson in Shortbow'
   - Set up names for the bowstring and arrow
   - Define states for when the bow is idle (0), or if an arrow has been grabbed (1)
 
-  After all of the constant values are defined, we set up a prototype for our bow object, which is a way of specifying a series of components for an entity that we will reuse during our game experience. The rest of bow.js consists of setting up the properties and functions that every bow will have.
+After all of the constant values are defined, we set up a prototype for our bow object, which is a way of specifying a series of components for an entity that we will reuse during our game experience. The rest of bow.js consists of setting up the properties and functions that every bow will have.
 
   *Bow Properties* include:
 
@@ -119,11 +121,11 @@ title: 'A Lesson in Shortbow'
   - Spawning and shooting arrows
   - Updating the visuals of pulling on the string
 
-  Additionally, the bow prototype also contains a prototype for our arrow objects, which are generated when the bowstring is pulled. Arrows are entities with properties that include a model and particle effect, are parented to the bow, and have specific physics settings that make them collide, fly, and make noise when they hit other objects.
+Additionally, the bow prototype also contains a prototype for our arrow objects, which are generated when the bowstring is pulled. Arrows are entities with properties that include a model and particle effect, are parented to the bow, and have specific physics settings that make them collide, fly, and make noise when they hit other objects.
 
-  The second script that we’ll write for our bow is the spawnBow.js script, which will create an instance of a bow as defined in bow.js, and add it to our domain so that users in the virtual world can interact with it. In your bow directory, create a new script named spawnBow.js, then open spawnBow.js in the High Fidelity script editor or the IDE of your choosing.
+The second script that we’ll write for our bow is the spawnBow.js script, which will create an instance of a bow as defined in bow.js, and add it to our domain so that users in the virtual world can interact with it. In your bow directory, create a new script named spawnBow.js, then open spawnBow.js in the High Fidelity script editor or the IDE of your choosing.
 
-  The spawnBow script has two main parts: the first part of the script calculates the hand position and rotation for the left and right hands, in order to figure out where the bow will be “worn” by the user, and creates a userData variable to assign the “wearable” property of the bow accordingly. Copy and paste the following code into your spawnBow.js file:
+The spawnBow script has two main parts: the first part of the script calculates the hand position and rotation for the left and right hands, in order to figure out where the bow will be “worn” by the user, and creates a userData variable to assign the “wearable” property of the bow accordingly. Copy and paste the following code into your spawnBow.js file:
 
   ```
   var leftHandPosition = {
@@ -433,7 +435,7 @@ title: 'A Lesson in Shortbow'
   In our Shortbow game, we’ll want to import our entities at run time through our main script, rather than loading them in manually. For the purposes of this tutorial, we’ve gone ahead and provided a file that contains several models for our playing field, including a castle wall, ramp, play space, and enemy cave. We’re also going to take a shortcut for our JSON file - by making it a JS file instead of JSON, we’ll be able to use it directly in our main game loop script without any conversions.
 
     1. In the root of your project directory, create a new file called shortbow.js
-    2. [Copy the contents of this file into your shortbow.js file](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/shortbow.js)
+    2. [Copy the contents of this file into your shortbow.js file](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/shortbow.js)
     3. Save shortbow.js
 
   Taking a look at the content of shortbow.js, you’ll notice that there are a few different types of entities, including five enemy spawners (SB.EnemySpawn), a few display text elements for wave, lives, and scores, seven bow spawners, and objects that make up a castle to stand on and defend. The colliders, models, and properties are all included in the file, so we’ll be able to get right to our next scripts!
@@ -595,7 +597,7 @@ title: 'A Lesson in Shortbow'
   Our game manager will be the largest of our scripts, since it will be handling the bulk of our Shortbow game’s interactivity. We’ll start by loading in our assets and creating a few helper functions to spawn and access entities that we make. Following that, we’ll add in functionality to define and manage our game states, assign properties to enemy bases, and update scores. Then, we’ll create a prototype for our game manager that contains our functions for setting up and playing the game, create a function to set up our Shortbow game in our domain, and handle messages between different entities to facilitate our game play!
 
     1. In your project’s root folder, create a new script called shortbowGameManager.js
-    2. [Copy and paste this code into your script](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/shortbowGameManager.js)
+    2. [Copy and paste this code into your script](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/shortbowGameManager.js)
 
   Our four game states are defined at line 23, where we create a few variable names to specify which state our game is in at any particular time. We then load in our audio assets from our asset folder so that we can play different sound effects when events occur in our game, and create a couple of helper functions for encoding URL parameters and updating scoring.
 
@@ -660,7 +662,7 @@ title: 'A Lesson in Shortbow'
   We want to create one final script that will be our single script to run in our domain to create our shortbow game. This file, named spawnShortbow.js, will let us load in all of the other assets and scripts in one go.
 
     1. In your project root directory, create a new file named spawnShortbow.js
-    2. [Copy and paste this code into your spawn script](https://hifi-content.s3.amazonaws.com/liv/production/Shortbow%20Tutorial%20/spawnShortbow.js)
+    2. [Copy and paste this code into your spawn script](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/spawnShortbow.js)
 
   The spawnShortbow.js script processes our prototypes and creates a local Shortbow game on the domain where we’re running the server script. The script spawns our platform, scoreboard, and goals, then runs the initial setup for setting the text on our scoreboard. Finally, it sets up the bow and spawning points for our enemies - with that, it’s time to play!
 
