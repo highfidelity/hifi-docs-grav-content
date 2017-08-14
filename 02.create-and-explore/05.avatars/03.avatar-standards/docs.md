@@ -176,6 +176,7 @@ To view the default blendshapes for the default Being of Light avatar, open the 
 * Your avtar should have clothes included in the mesh to avoid "naked" moments. 
 * Remove unused blendshapes or unseen triangles to keep size down.
 * Your maximum texture limit should be 1024x1024.
+* Average polycount limit: 25k
 
 
 ## Joint Hierarchy and Naming
