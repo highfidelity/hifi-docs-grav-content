@@ -170,6 +170,14 @@ An example for adding a blendshapes to your FST for an avatar to make them blink
 
 To view the default blendshapes for the default Being of Light avatar, open the defaultAvatar_full file located in your High Fidelity folder under **resources > meshes**.
 
+## Other Important Points
+
+* Your avatar should be able to make a fist when the user presses the grip button (also other finger compatibility with the Touch and the future knuckle controllers). 
+* Your avtar should have clothes included in the mesh to avoid "naked" moments. 
+* Remove unused blendshapes or unseen triangles to keep size down.
+* Your maximum texture limit should be 1024x1024.
+
+
 ## Joint Hierarchy and Naming
 
 - Hips
