@@ -36,6 +36,7 @@ The following table displays how complete the API reference is. We will be updat
 | HMD                      | Yes                              | Partial               |
 | LOD Manager              | Yes                              | No                    |
 | Menu                     | Yes                              | Partial               |
+| Messages                 | Yes                              | No                    |
 | Model                    | Yes                              | No                    |
 | Model Cache              | Yes                              | No                    |
 | MyAvatar                 | Yes                              | Yes                   |

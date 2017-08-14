@@ -91,21 +91,21 @@ taxonomy:
 | Script.scriptEnding()                    |
 | Script.scriptLoaded(QString)             |
 
-# clearInterval()
+## clearInterval()
 
 [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\)) is used to run a specified callback function at a specified interval.
 
 `clearInterval()` is used to stop calls scheduled using [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\)).
 
-## Function
+### Function
 
 `clearInterval(valueReturnedBySetInterval) // Return value`
 
-## Arguments
+### Arguments
 
 **valueReturnedBySetInterval: valueReturnedBySetInterval**: The value returned by [setInterval()](https://wiki.highfidelity.com/wiki/SetInterval\(\))
 
-## Examples
+### Examples
 
 In this example, `setInterval()` is used to print a line to the debug log once every 1000 milliseconds. The repeating call is stopped by using `clearInterval()`.
 
@@ -125,36 +125,21 @@ You should not see any output from this example as the call is stopped.
 
 
 
-# clearTimeout()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## clearTimeout()
 
 [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\)) is used to run a specified callback function once after a specified delay.
 
 `clearTimeout()` is used to stop a call scheduled by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\)).
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/ClearTimeout\(\)#References)
-
-## Function
+### Function
 
 `clearTimeout(valueReturnedBySetTimeout)`
 
-## Arguments
+### Arguments
 
 **valueReturnedBySetTimeout: valueReturnedBySetTimeout**: The value returned by [setTimeout()](https://wiki.highfidelity.com/wiki/SetTimeout\(\))
 
-## Examples
+### Examples
 
 In this example `setTimeout()` is used to print a line to the debug log once after a delay of 1000 milliseconds. `clearTimeout()` is used to stop the scheduled call.
 
@@ -174,38 +159,23 @@ You should not see any output from this example as the scheduled call was stoppe
 
 
 
-# include()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## include()
 
 `include()` is used to include javascript from another script (or scripts) in the current script regardless of whether the current script is an interface script, entity script, or assignment client script.
 
 For more information about script types, see the [Scripts Overview](https://readme.highfidelity.com/v1.0/docs/scripts-digging-deeper).
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/Include\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/Include\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Include\(\)#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Include\(\)#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Include\(\)#References)
-
-## Function
+### Function
 
 `include(StringOrArrayOfStrings, optionalCallback)`
 
-## Arguments
+### Arguments
 
 **scripts: String or Strings[]**: A script or an array of scripts to include. Scripts can be specified as a full path or URL or can be relative to the current script.
 
 **optionalCallback: function**: (Optional) A callback function to run after the script(s) have been loaded. If a callback function is specified, the specified script(s) will load asynchronously. If no callback function is specified, the specified script(s) will load synchronously (blocks).
 
-## Examples
+### Examples
 
 This example contains two scripts both located in the same directory. The first script (`ScriptA.js`) prints a line to the debug log.
 
@@ -236,36 +206,21 @@ Script A included.
 
 
 
-# load()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## load()
 
 `load()` is used to start a new interface script. As `load()` is used to start interface scripts, it is only meaningful in interface and entity scripts.
 
 For more information about script types, see the [Scripts Overview](https://wiki.highfidelity.com/wiki/Scripts_Overview).
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/Load\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/Load\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Load\(\)#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Load\(\)#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Load\(\)#References)
-
-## Function
+### Function
 
 `load(name)`
 
-## Arguments
+### Arguments
 
 **name: String**: The name, including the full path, of the script to be loaded. The path can be a full path or URL or it can be relative to the calling script.
 
-## Examples
+### Examples
 
 This example uses two scripts in the same directory path. The first script (`sample1.js`) simply prints a line to the debug log.
 
@@ -293,79 +248,42 @@ This is a sample script.
 
 
 
-# resolvePath()
+## resolvePath()
 
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+
 
 `resolvePath()` is used to resolve a path segment into an absolute path.
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/ResolvePath\(\)#References)
-
-## Function
+### Function
 
 `resolvePath(pathSegment) // Returns a string`
 
-## Arguments
+### Arguments
 
 **pathSegment:string**: The path segment to be resolved
 
-## Returns
+### Returns
 
 **absouletPath:string**: The absolute path
 
-## Examples
-
-If `scriptExample.js` were located in your current working directory, you could get the absolute path to the script by using `resolvePath()`.
-
-```
-var SCRIPT_EXAMPLE = Script.resolvePath("scriptExample.js")
-print (SCRIPT_EXAMPLE);
-```
 
 
 
+## scriptEnding()
 
 
-# scriptEnding()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
 
 `scriptEnding()` is used to run a callback function when the calling script is ending.
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/ScriptEnding\(\)#References)
-
-## Function
+### Function
 
 `scriptEnding(callback)`
 
-## Arguments
+### Arguments
 
 **callback:function**: The callback function to run when the script is ending
 
-## Examples
+### Examples
 
 This example waits for the script to end and prints a line to the debug log.
 
@@ -392,41 +310,25 @@ SCRIPT ENDING!!!
 
 
 
-# setInterval()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## setInterval()
 
 `setInterval()` is used to run a specified callback function at a specified interval.
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/SetInterval\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/SetInterval\(\)#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/SetInterval\(\)#References)
-
-## Function
+### Function
 
 `setInterval(callback, milliseconds) // Returns a valueReturnedBySetInterval`
 
-## Arguments
+### Arguments
 
 **callback: function**: The function to be run at each interval
 
 **milliseconds: number**: The number of milliseconds between each interval
 
-## Returns
+### Returns
 
 **valueReturnedBySetInterval: valueReturnedBySetInterval**: A value that can be used by [clearInterval()](https://wiki.highfidelity.com/wiki/ClearInterval\(\))
 
-## Examples
+### Examples
 
 This example uses `setInterval()` to print a message to the debug log once every 1000 milliseconds.
 
@@ -447,43 +349,25 @@ Repeating timer fired!
 
 
 
-
-
-# setTimeout()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## setTimeout()
 
 `setTimeout()` is used to run a specified callback function once after a specified delay.
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/SetTimeout\(\)#References)
-
-## Function
+### Function
 
 `setTimeout(callback, milliseconds) // Return valueReturnedBySetTimeout`
 
-## Arguments
+### Arguments
 
 **callback: function**: The function to run after the specified delay
 
 **milliseconds:number**: The number of milliseconds to wait before running the specified callback function
 
-## Returns
+### Returns
 
 **valueReturnedBySetTimeout: valueReturnedBySetTimeout**: A value that can be used by [clearTimeout()](https://wiki.highfidelity.com/wiki/ClearTimeout\(\))
 
-## Examples
+### Examples
 
 In this example, `setTimeout()` is used to specify a callback function that prints a single line to the debug log after a delay of 10000 milliseconds.
 
@@ -504,34 +388,22 @@ One time timer fired!
 
 
 
-# stop()
+## stop()
 
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+
 
 `stop()` is used to stop the current script.
 
-## Contents
 
- [[hide](https://wiki.highfidelity.com/wiki/Stop\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/Stop\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Stop\(\)#Arguments)
-- [3Examples](https://wiki.highfidelity.com/wiki/Stop\(\)#Examples)
-- [4References](https://wiki.highfidelity.com/wiki/Stop\(\)#References)
-
-## Function
+### Function
 
 `stop()`
 
-## Arguments
+### Arguments
 
 This function has no parameters.
 
-## Examples
+### Examples
 
 You can stop the current script simply by calling `stop()`.
 
@@ -543,41 +415,25 @@ Script.stop();
 
 
 
-# update()
-
-| **Script API**                           |
-| ---------------------------------------- |
-| ▼ [Script](https://wiki.highfidelity.com/wiki/Category:Script)► [Script methods](https://wiki.highfidelity.com/wiki/Category:Script_methods) |
-| **Reference**                            |
-| [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API) |
+## update()
 
 `update()` is used to run a specified callback function at a system-determined interval (currently 60Hz but may change going forward).
 
 *Note: update() gives you the number of milliseconds since the last call as an argument. If you need that and are using setInterval(), you would have to track the timing yourself.*
 
-## Contents
-
- [[hide](https://wiki.highfidelity.com/wiki/Update\(\)#)] 
-
-- [1Function](https://wiki.highfidelity.com/wiki/Update\(\)#Function)
-- [2Arguments](https://wiki.highfidelity.com/wiki/Update\(\)#Arguments)
-- [3Returns](https://wiki.highfidelity.com/wiki/Update\(\)#Returns)
-- [4Examples](https://wiki.highfidelity.com/wiki/Update\(\)#Examples)
-- [5References](https://wiki.highfidelity.com/wiki/Update\(\)#References)
-
-## Function
+### Function
 
 `update(float) // Return value`
 
-## Arguments
+### Arguments
 
 **name:class**: description
 
-## Returns
+### Returns
 
 **name:class**: description
 
-## Examples
+### Examples
 
 *Stand-alone (or close as possible) examples showcasing the function*
 
