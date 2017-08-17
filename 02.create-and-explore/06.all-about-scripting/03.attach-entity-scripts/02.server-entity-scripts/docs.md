@@ -13,15 +13,16 @@ To preserve modularity, entity scripts are defined as an anonymous JavaScript fu
 Here is an example server entity script that modifies the intensity of a light entity. This script is used to flicker tea lights in the tutorial content that all new users see when they use High Fidelity for the first time.
 
 ```
+
  1 (function() {
  2     var MINIMUM_LIGHT_INTENSITY = 100.0;
  3     var MAXIMUM_LIGHT_INTENSITY = 125.0;
- 4 
+ 4
  5     // Return a random number between `low` (inclusive) and `high` (exclusive)
  6     function randFloat(low, high) {
  7         return low + Math.random() * (high - low);
  8     }
- 9 
+ 9
 10     var self = this;
 11     this.preload = function(entityID) {
 12         self.intervalID = Script.setInterval(function() {
@@ -50,4 +51,4 @@ Learn more about the what APIs are available to server entity scripts [here](../
 
 ## Attaching to an Entity
 
-Now that we have a script, for it to do anything, you need to attach it to an entity. See [Attaching Entity Scripts](https://wiki.highfidelity.com/wiki/Attaching_Entity_Scripts).
+Now that we have a script, for it to do anything, you need to attach it to an entity. See [Attaching Entity Scripts](../).
