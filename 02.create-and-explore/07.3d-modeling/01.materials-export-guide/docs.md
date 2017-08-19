@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-he High Fidelity Material defines several channels of data used by the rendering engine. These channels can be configured in different ways from different fields as indicated by the following table:
+The High Fidelity Material defines several channels of data used by the rendering engine. These channels can be configured in different ways from different fields as indicated by the following table:
 
 | Channel   | Fields      | Type            | Configurations | Results           |
 | --------- | ----------- | --------------- | -------------- | ----------------- |
