@@ -23,8 +23,10 @@ The following table displays how complete the API reference is. We will be updat
 | ------------------------ | -------------------------------- | --------------------- |
 | Account                  | Yes                              | No                    |
 | Animation Cache          | Yes (no events)                  | No                    |
-| Audio Scope              | No                               | No                    |
+| Audio Scope              | Yes                              | No                    |
 | Audio Stats              | Yes                              | No                    |
+| Avatar Bookmark          | Yes                              | No                    |
+| Avatar Inputs            | Yes                              | No                    |
 | Avatar List              | Yes                              | No                    |
 | Avatar Manager           | Yes                              | No                    |
 | Camera                   | Yes                              | Yes                   |

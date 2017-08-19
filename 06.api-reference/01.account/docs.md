@@ -7,9 +7,10 @@ taxonomy:
 
 ## Account API
 
-| Properties       | Type | Description |
-| ---------------- | ---- | ----------- |
-| Account.username |      |             |
+| Properties         | Type   | Description |
+| ------------------ | ------ | ----------- |
+| Account.objectName | String |             |
+| Account.username   | String |             |
 
 
 
@@ -23,6 +24,7 @@ taxonomy:
 
 
 
-| Events                    |
-| ------------------------- |
-| Account.usernameChanged() |
+| Events                             |
+| ---------------------------------- |
+| Account.objectNameChanged(QString) |
+| Account.usernameChanged()          |
