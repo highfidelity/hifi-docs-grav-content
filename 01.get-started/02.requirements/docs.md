@@ -16,9 +16,9 @@ The system requirements are listed below.
 
 |             | Graphics Card                            | Processor                           | RAM  | OS                            |
 | ----------- | ---------------------------------------- | ----------------------------------- | ---- | ----------------------------- |
-| **Windows** | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i7-4700 equivalent or greater | 8GB+ | Windows 7 SP1 64 bit or newer |
-| **OS X**    | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i7-4700 equivalent or greater | 8GB+ | Mountain Lion (10.8) or newer |
-| **Linux**   |                                          | Intel i7-4700 equivalent or greater | 8GB+ |                               |
+| **Windows** | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i5-4590 equivalent or greater | 8GB+ | Windows 7 SP1 64 bit or newer |
+| **OS X**    | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i5-4590 equivalent or greater | 8GB+ | Mountain Lion (10.8) or newer |
+| **Linux**   |                                          | Intel i5-4590 equivalent or greater | 8GB+ |                               |
 
 
 

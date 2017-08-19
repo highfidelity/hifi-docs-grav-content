@@ -8,11 +8,11 @@ taxonomy:
 
 ## Overview
 
-The Text entity is a flat panel which has the ability to display text like a whiteboard or a blackboard. Here, we talk about how you can create and edit a text entity. 
+The Text entity is a flat panel which has the ability to display text like a whiteboard or a blackboard. Here, we talk about how you can create and edit a text entity.
 
 ## Create a Text Entity
 
-Go to **Create** and click on the Text icon. 
+Go to **Create** and click on the Text icon.
 
 ![](create-button-open.PNG)
 
@@ -43,7 +43,6 @@ For example, to create a text entity that displays the word "Welcome!" in big bl
 To create and position the entity:
 
 1. Create a text entity.
-
 2. If you are unable to see the text, use the [create tools](../create-mode) to rotate the plane to a position where you can see it.
 
 ### Change and Resize the Text Displayed
@@ -66,15 +65,11 @@ If the text is too big to fit, you can increase the size of the entity.
 To change the background and text colors, in the **Properties** tab:
 
 1. Scroll down to the **Text color** and **Background color** properties.
+2. Change the RGB values to the following:
+   - Text color- Black (Red: 0, Green:0, Blue: 0)
+   - Background color - Green (Red: 0, Green:255, Blue: 0).
 
-2. Change the RGB values to the following
-
-      Text color- Black (Red: 0, Green:0, Blue: 0) 
-
-      Background color - Green (Red: 0, Green:255, Blue: 0).
-
-
-  ![](welcome-green.PNG)
+![](welcome-green.PNG)
 
 If you use the carats to change the value, as you click to increase or decrease the value you should see the text or background change with each click. If you enter in the values directly, you will see the text or background change as soon as you press enter or click on another active field.
 

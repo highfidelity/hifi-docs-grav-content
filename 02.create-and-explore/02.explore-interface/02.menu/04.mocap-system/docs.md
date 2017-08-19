@@ -24,7 +24,7 @@ You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/)
 To use the trackers, you need to strap them on to different parts of your body. You can purchase straps of different lengths for different purposes from here:
 
 * [Foot and Shoulder Straps](https://rebuffreality.com/products/trackstrap)
-* Hip Strap: Drill a hole in the back of a belt and attach the puck using a 1/4" screw. 
+* Hip Strap: Drill a hole in the back of a thick leather belt and attach the puck using a 1/4" screw. 
 * [Chest Strap](https://www.amazon.com/gp/product/B00PQ6B5SY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)
 * [Hand Straps](https://www.amazon.com/SublimeWare-Degree-Rotation-Session-SJ4000/dp/B01H18TY2S/ref=sr_1_2?ie=UTF8&qid=1492804865&sr=8-2&keywords=go+pro+arm+mount)
 * [Head Straps](https://www.amazon.com/EEEKit-Kidizoom-Action-EK7000-DBPOWER/dp/B019SXPF3G/ref=sr_1_1?ie=UTF8&qid=1492795518&sr=8-1&keywords=EEEKit+Head+Strap+Mount+for+VTech+Kidizoom+Kids+Cam%2C)

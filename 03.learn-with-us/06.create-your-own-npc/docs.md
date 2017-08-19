@@ -2,6 +2,8 @@
 title: 'Create Your Own Non-Player Character (NPC)'
 ---
 
+Check out our new [recording app](../../create-and-explore/new-features/record-app)! Now you don't need to create an NPC to record your actions in-world!
+
 ## Overview
 
 You can use High Fidelity's extensive avatar system to record yourself in different avatars to create non-player characters (NPCs) that you can then include in your High Fidelity domains. In this tutorial, we’ll walk you through the process of:

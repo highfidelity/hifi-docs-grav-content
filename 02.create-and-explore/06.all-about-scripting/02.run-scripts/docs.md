@@ -41,7 +41,7 @@ At any time you can close or restart one or all of the running scripts. To reloa
 
 - To reload all running scripts, click the **Reload All** button at the top of the *Running Scripts* panel.
 - To reload a specific script, click the circular arrow next to the script in the currently running scripts list.
-- To stop all running scripts, click the *Stop All** button at the top of the *Running Scripts* panel.
+- To stop all running scripts, click the **Stop All** button at the top of the *Running Scripts* panel.
 - To stop a specific script, click the X next to the script in the currently running scripts list.
 
 ## Get Started Writing Your Own Scripts
@@ -50,4 +50,4 @@ To get started writing your own scripts, first read [create content](https://wik
 
 For the scripts themselves, High Fidelity uses the JavaScript syntax and High Fidelity provides a robust [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
 
-To write scripts, you can use your favorite JavaScript editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script, butterfly.js, to show you how to run and edit scripts using the script editor.
+To write scripts, you can use your favorite JavaScript editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script `butterfly.js` to show you how to run and edit scripts using the script editor.

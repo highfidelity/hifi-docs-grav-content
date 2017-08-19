@@ -69,7 +69,7 @@ cd ~/my-repo/build/domain-server/
 ```
 cd ~/my-repo/build/assignment-client/
 mkdir resources
-./assignment-client -n 5
+./assignment-client -n 6
 
 ```
 

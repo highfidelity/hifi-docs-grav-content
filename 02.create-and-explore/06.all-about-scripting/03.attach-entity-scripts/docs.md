@@ -8,8 +8,8 @@ One way to create interactive content is to **attach scripts to entities**. You 
 
 The following pages show how you might create the two types of entity scripts:
 
-- [Creating Client Entity Scripts](https://wiki.highfidelity.com/wiki/Creating_Client_Entity_Scripts)
-- [Creating Server Entity Scripts](https://wiki.highfidelity.com/wiki/Creating_Server_Entity_Scripts)
+- [Creating Client Entity Scripts](./client-entity-scripts)
+- [Creating Server Entity Scripts](./server-entity-scripts)
 
 Once you have a prepared entity script (server or client), you will want to attach it to an entity.
 
@@ -21,6 +21,7 @@ Use the `script` property to attach a client entity script. Use the `serverScrip
 
 Like other entity properties, these properties can be [set using the "Entity Properties" tab](https://wiki.highfidelity.com/wiki/Edit_Mode#Edit_Entity_Properties) in the entity editing system's *Tools* panel.
 
+![](\enter-entity-script-url.png)
 Both the `script` property and the `serverScripts` property accept a URL as input. You can put the code in a file, and specify the URL of the file as the `script` or `serverScripts` property of the entity.
 
 For the `script` property used for client entity scripts, the URL contents must be available to every Interface that visits the domain, so it must be a public http(s) URL, or an [Asset Server (ATP)](https://wiki.highfidelity.com/wiki/Asset_Server_(ATP)) URL for this domain, but not a file URL.
