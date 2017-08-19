@@ -7,16 +7,18 @@ taxonomy:
 
 
 
-| Properties                | Type | Description |
-| ------------------------- | ---- | ----------- |
-| AnimationCache.numCached  |      |             |
-| AnimationCache.numTotal   |      |             |
-| AnimationCache.sizeCached |      |             |
-| AnimationCache.sizeTotal  |      |             |
+| Properties                | Type   | Description |
+| ------------------------- | ------ | ----------- |
+| AnimationCache.objectName | String |             |
+| AnimationCache.numCached  | Number |             |
+| AnimationCache.numTotal   | Number |             |
+| AnimationCache.sizeCached | Number |             |
+| AnimationCache.sizeTotal  | Number |             |
 
 
 | Methods                                  |
 | ---------------------------------------- |
+| AnimationCache.dirty()                   |
 | AnimationCache.getAnimation(QString)     |
 | AnimationCache.getAnimation(QUrl)        |
 | AnimationCache.getResource(QUrl)         |
@@ -26,5 +28,12 @@ taxonomy:
 | AnimationCache.prefetch(QUrl)            |
 | AnimationCache.prefetch(QUrl,void*)      |
 | AnimationCache.updateTotalSize(qlonglong) |
+
+
+| Events                                   |
+| ---------------------------------------- |
+| AnimationCache.objectNameChanged(QString) |
+
+
 
 

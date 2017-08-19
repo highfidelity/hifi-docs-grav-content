@@ -5,53 +5,52 @@ taxonomy:
         - docs
 ---
 
-| Properties                               | Type     | Description |
-| ---------------------------------------- | -------- | ----------- |
-| AudioStats.clientStream.dropCount        | number   |             |
-| AudioStats.clientStream.framesAvailable  | number   |             |
-| AudioStats.clientStream.framesAvailableAvg | number   |             |
-| AudioStats.clientStream.framesDesired    | number   |             |
-| AudioStats.clientStream.lastStarveDurationCount | number   |             |
-| AudioStats.clientStream.lossCount        | number   |             |
-| AudioStats.clientStream.lossCountWindow  | number   |             |
-| AudioStats.clientStream.lossRate         | number   |             |
-| AudioStats.clientStream.lossRateWindow   | number   |             |
-| AudioStats.clientStream.objectName       | string   |             |
-| AudioStats.clientStream.overflowCount    | number   |             |
-| AudioStats.clientStream.starveCount      | number   |             |
-| AudioStats.clientStream.timegapMsAvg     | number   |             |
-| AudioStats.clientStream.timegapMsAvgWindow | number   |             |
-| AudioStats.clientStream.timegapMsMax     | number   |             |
-| AudioStats.clientStream.timegapMsMaxWindow | number   |             |
-| AudioStats.clientStream.unplayedMsMax    | number   |             |
-| AudioStats.clientStreamChanged()         | function |             |
-| AudioStats.inputReadMsMax                | number   |             |
-| AudioStats.inputUnplayedMsMax            | number   |             |
-| AudioStats.mixerStream.dropCount         | number   |             |
-| AudioStats.mixerStream.framesAvailable   | number   |             |
-| AudioStats.mixerStream.framesAvailableAvg | number   |             |
-| AudioStats.mixerStream.framesDesired     | number   |             |
-| AudioStats.mixerStream.lastStarveDurationCount | number   |             |
-| AudioStats.mixerStream.lossCount         | number   |             |
-| AudioStats.mixerStream.lossCountWindow   | number   |             |
-| AudioStats.mixerStream.lossCountWindowChanged(float) | function |             |
-| AudioStats.mixerStream.lossRate          | number   |             |
-| AudioStats.mixerStream.lossRateWindow    | number   |             |
-| AudioStats.mixerStream.objectName        | string   |             |
-| AudioStats.mixerStream.overflowCount     | number   |             |
-| AudioStats.mixerStream.starveCount       | number   |             |
-| AudioStats.mixerStream.timegapMsAvg      | number   |             |
-| AudioStats.mixerStream.timegapMsAvgWindow | number   |             |
-| AudioStats.mixerStream.timegapMsMax      | number   |             |
-| AudioStats.mixerStream.timegapMsMaxWindow | number   |             |
-| AudioStats.mixerStream.unplayedMsMax     | number   |             |
-| AudioStats.objectName                    | string   |             |
-| AudioStats.outputUnplayedMsMax           | number   |             |
-| AudioStats.pingMs                        | number   |             |
-| AudioStats.sentTimegapMsAvg              | number   |             |
-| AudioStats.sentTimegapMsAvgWindow        | number   |             |
-| AudioStats.sentTimegapMsMax              | number   |             |
-| AudioStats.sentTimegapMsMaxWindow        | number   |             |
+| Properties                                      | Type   | Description |
+|-------------------------------------------------|--------|-------------|
+| AudioStats.clientStream.objectName              | string |             |
+| AudioStats.injectorStreams.objectName           | string |             |
+| AudioStats.mixerStream.objectName               | string |             |
+| AudioStats.objectName                           | string |             |
+| AudioStats.clientStream.dropCount               | number |             |
+| AudioStats.clientStream.framesAvailable         | number |             |
+| AudioStats.clientStream.framesAvailableAvg      | number |             |
+| AudioStats.clientStream.framesDesired           | number |             |
+| AudioStats.clientStream.lastStarveDurationCount | number |             |
+| AudioStats.clientStream.lossCount               | number |             |
+| AudioStats.clientStream.lossCountWindow         | number |             |
+| AudioStats.clientStream.lossRate                | number |             |
+| AudioStats.clientStream.lossRateWindow          | number |             |
+| AudioStats.clientStream.overflowCount           | number |             |
+| AudioStats.clientStream.starveCount             | number |             |
+| AudioStats.clientStream.timegapMsAvg            | number |             |
+| AudioStats.clientStream.timegapMsAvgWindow      | number |             |
+| AudioStats.clientStream.timegapMsMax            | number |             |
+| AudioStats.clientStream.timegapMsMaxWindow      | number |             |
+| AudioStats.clientStream.unplayedMsMax           | number |             |
+| AudioStats.inputReadMsMax                       | number |             |
+| AudioStats.inputUnplayedMsMax                   | number |             |
+| AudioStats.mixerStream.dropCount                | number |             |
+| AudioStats.mixerStream.framesAvailable          | number |             |
+| AudioStats.mixerStream.framesAvailableAvg       | number |             |
+| AudioStats.mixerStream.framesDesired            | number |             |
+| AudioStats.mixerStream.lastStarveDurationCount  | number |             |
+| AudioStats.mixerStream.lossCount                | number |             |
+| AudioStats.mixerStream.lossCountWindow          | number |             |
+| AudioStats.mixerStream.lossRate                 | number |             |
+| AudioStats.mixerStream.lossRateWindow           | number |             |
+| AudioStats.mixerStream.overflowCount            | number |             |
+| AudioStats.mixerStream.starveCount              | number |             |
+| AudioStats.mixerStream.timegapMsAvg             | number |             |
+| AudioStats.mixerStream.timegapMsAvgWindow       | number |             |
+| AudioStats.mixerStream.timegapMsMax             | number |             |
+| AudioStats.mixerStream.timegapMsMaxWindow       | number |             |
+| AudioStats.mixerStream.unplayedMsMax            | number |             |
+| AudioStats.outputUnplayedMsMax                  | number |             |
+| AudioStats.pingMs                               | number |             |
+| AudioStats.sentTimegapMsAvg                     | number |             |
+| AudioStats.sentTimegapMsAvgWindow               | number |             |
+| AudioStats.sentTimegapMsMax                     | number |             |
+| AudioStats.sentTimegapMsMaxWindow               | number |             |
 
 
 
@@ -59,13 +58,12 @@ taxonomy:
 | ------------------------------------- |
 | AudioStats.clientStream.deleteLater() |
 | AudioStats.mixerStream.deleteLater()  |
+|AudioStats.injectorStreams.deleteLater()|
 
 
 
 | Events                                   |
 | ---------------------------------------- |
-| AudioStats.clientStream.destroyed()      |
-| AudioStats.clientStream.destroyed(QObject*) |
 | AudioStats.clientStream.dropCountChanged(int) |
 | AudioStats.clientStream.framesAvailableAvgChanged(int) |
 | AudioStats.clientStream.framesAvailableChanged(int) |
@@ -83,11 +81,10 @@ taxonomy:
 | AudioStats.clientStream.timegapMsMaxChanged(qulonglong) |
 | AudioStats.clientStream.timegapMsMaxWindowChanged(qulonglong) |
 | AudioStats.clientStream.unplayedMsMaxChanged(float) |
+|AudioStats.injectorStreams.objectNameChanged(QString)|
 | AudioStats.injectorStreamsChanged()      |
 | AudioStats.inputReadMsMaxChanged(float)  |
 | AudioStats.inputUnplayedMsMaxChanged(float) |
-| AudioStats.mixerStream.destroyed()       |
-| AudioStats.mixerStream.destroyed(QObject*) |
 | AudioStats.mixerStream.dropCountChanged(int) |
 | AudioStats.mixerStream.framesAvailableAvgChanged(int) |
 | AudioStats.mixerStream.framesAvailableChanged(int) |
