@@ -1,5 +1,5 @@
 ---
-title: 'Sound'
+title: 'Sound Cache'
 taxonomy:
     category:
         - docs
