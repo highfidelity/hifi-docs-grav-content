@@ -88,4 +88,4 @@ You can debug model material properties in High Fidelity in different ways:
 - Check with /without lighting enabling disabling the various light contributions.
 - Use the combo box and check out the various material properties rendered in-world.
 
-![](\debug-deferred-lighting.png)
+![](\debug-deferred-lighting.PNG)
