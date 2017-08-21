@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-**Learn the best practices for making 3D content in VR.*
+*Learn the best practices for making 3D content in VR.*
 
 ## Overview
 
