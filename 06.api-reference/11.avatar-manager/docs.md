@@ -24,14 +24,11 @@ taxonomy:
 | AvatarManager.getAvatarSortCoefficient(QString) |
 | AvatarManager.getAvatarUpdateRate(QUuid) |
 | AvatarManager.getAvatarUpdateRate(QUuid,QString) |
-| AvatarManager.getLocalLights()           |
 | AvatarManager.isAvatarInRange(glm::vec3,float) |
 | AvatarManager.processAvatarDataPacket(QSharedPointer<ReceivedMessage>,SharedNodePointer) |
 | AvatarManager.processAvatarIdentityPacket(QSharedPointer<ReceivedMessage>,SharedNodePointer) |
-| AvatarManager.processExitingSpaceBubble(QSharedPointer<ReceivedMessage>,SharedNodePointer) |
 | AvatarManager.processKillAvatar(QSharedPointer<ReceivedMessage>,SharedNodePointer) |
 | AvatarManager.setAvatarSortCoefficient(QString,QScriptValue) |
-| AvatarManager.setLocalLights(QVector<AvatarManager::LocalLight>) |
 | AvatarManager.setShouldShowReceiveStats(bool) |
 | AvatarManager.updateAvatarRenderStatus(bool) |
 
@@ -41,7 +38,5 @@ taxonomy:
 | AvatarManager.avatarAddedEvent(QUuid)    |
 | AvatarManager.avatarRemovedEvent(QUuid)  |
 | AvatarManager.avatarSessionChangedEvent(QUuid,QUuid) |
-| AvatarManager.destroyed()                |
-| AvatarManager.destroyed(QObject*)        |
 | AvatarManager.objectNameChanged(QString) |
 | AvatarManager.sessionUUIDChanged(QUuid,QUuid) |
