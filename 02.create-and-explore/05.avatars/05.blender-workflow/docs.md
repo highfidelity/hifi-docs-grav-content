@@ -1,5 +1,5 @@
 ---
-title: 3D Models
+title: Blender Workflow for Avatars
 taxonomy:
     category: docs
 ---
