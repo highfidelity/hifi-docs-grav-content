@@ -4,9 +4,9 @@ taxonomy:
     category: docs
 ---
 
-You may be wondering why text chat is missing from the basic interface. We didn't add it (yet) as a default, because we couldn't see a great design that would work for both HMD and desktop users. Most HMD users can't very easily type, and so creating something that made chat a requirement for everyone didn't make sense to us. But we do expect that desktop users will want chat, and we will likely build something in the future. However, High Fidelity's extensible open-source scripting and UI gives you the ability to create the features you want, including text **chat**. There are some great scripts for chat that have already been built by community members, and a few are described below:
+You may be wondering why text chat is missing from the basic interface. We didn't add it (yet) as a default, because we couldn't see a great design that would work for both HMD and desktop users. Most HMD users can't very easily type, and so creating something that made chat a requirement for everyone didn't make sense to us. But we do expect that desktop users will want chat, and we will likely build something in the future. However, High Fidelity's extensible open-source scripting and UI gives you the ability to create the features you want, including text **chat**. There are some great scripts for chat that have already been built by community members, and a few are described below.
 
-There are plenty of alternative approaches, but the two scripts detailed below are popular. You can also find other clever solutions to text chat in the [[High Fidelity community forum](https://forums.highfidelity.com/)], some are similar to the approaches detailed here and others taking advantage of the power of IRC.
+There are plenty of alternative approaches, but the three scripts detailed below are popular. You can also find other clever solutions to text chat in the [[High Fidelity community forum](https://forums.highfidelity.com/)], some are similar to the approaches detailed here and others taking advantage of the power of IRC.
 
 ## HiFi Local Chat by ctrlaltdavid
 
@@ -32,9 +32,19 @@ To install COM Script on your domain, follow these steps:
 4. Close the Edit panel.
 5. Throw a chat party!
 
+## Sign Post Chat
+
+![](sigh-chat-by-menithal.jpg)
+
+Cat got your tongue?
+
+Having a hard time getting others to use the same chat system? This simple tool allows you to communicate with HMD users with using a simple entity, that behaves as a sign with of text.
+
+It is available in the [marketplace](https://highfidelity.com/marketplace/items/dc8a64dd-658a-4031-97a9-d79df1322e4c).
+
+
 ## Running Other Chat Applications in a Local Web Browser
 
 You can also launch a local web browser inside High Fidelity by pressing **Ctrl-B** and then run WhatsApp Web, Slack, and other popular browser-based chat applications. It works great, even in your HMD. While it might not be ideal for random chat encounters, it can be quite handy when larger groups (like colleagues and classmates) need a way to keep in touch without breaking immersion.
 
 ![](whatsapp.png)
-
