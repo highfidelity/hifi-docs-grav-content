@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-**Learn the best practices for making 3D content in VR.*
+*Learn the best practices for making 3D content in VR.*
 
 ## Overview
 
@@ -83,9 +83,12 @@ If you are a Maya user and using the Stingray PBS shader, be sure to remove conn
 
 You can debug model material properties in High Fidelity in different ways:
 
-- Using the debugDeferredLighting.js script. You can find it by going to Edit > Running Scripts. In this window, look for scripts you can load. Follow this path - developer/utilities/render/debugDeferredLighting.js, to find the script.
+- Using the debugDeferredLighting.js script. You can find it by going to **Edit > Running Scripts**. In this window, look for scripts you can load. Follow this path - `developer/utilities/render/debugDeferredLighting.js`, to find the script.
 - Check the geometry mesh by rendering wireframe.
 - Check with /without lighting enabling disabling the various light contributions.
 - Use the combo box and check out the various material properties rendered in-world.
 
-![debug-deferred-lighting.png](\debug-deferred-lighting.PNG)
+
+![](debug-deferred-lighting.PNG)
+=======
+

@@ -32,7 +32,7 @@ There are many great tutorials and videos for the various 3D packages online inc
 
 If you are using Blender to create an avatar, check out the [Blender workflow](https://wiki.highfidelity.com/wiki/Blender_workflow) tutorial.
 
-Another great tool is the [Autodesk FBX converter](http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=22694909):
+Another great tool is the [Autodesk FBX converter](http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=22694909).
 
 For more detailed information on exporting materials from Maya or Blender to High Fidelity, see the [Material Export Guide](https://wiki.highfidelity.com/wiki/Material_Export_Guide).
 
