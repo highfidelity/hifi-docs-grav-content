@@ -32,6 +32,16 @@ There are many great tutorials and videos for the various 3D packages online inc
 
 If you are using Blender to create an avatar, check out the [Blender workflow](https://wiki.highfidelity.com/wiki/Blender_workflow) tutorial.
 
+**Quick checklist for Maya 16 - 17**
+
+- Models must have properly assigned materials
+- Textures are optional
+- Any textures must be UV mapped and assigned to 1 UV channel
+- Textures must be 1024 x 1024 or smaller
+- Select File > Export as FBX
+- If using textures, check Embed Textures
+- Export as FBX 2013 binary
+
 Another great tool is the [Autodesk FBX converter](http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=22694909).
 
 For more detailed information on exporting materials from Maya or Blender to High Fidelity, see the [Material Export Guide](https://wiki.highfidelity.com/wiki/Material_Export_Guide).
