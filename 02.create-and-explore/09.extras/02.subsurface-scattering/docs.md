@@ -33,11 +33,11 @@ To create the SSS effect on an avatar, do the following:
 2. Create a scattering map for the subsurface scattering in Photoshop or equivalent.
 3. Use [Interface](https://wiki.highfidelity.com/wiki/Interface) to package the avatar and generate the FST.
 4. Add a description of the SSS to the FST using the JSON syntax.
-5. Link to your avatar's FST in Interface
+5. Link to your avatar's FST in Interface.
 
 ## Scattering Effect Examples
 
-Here's an example of the scattering effect. The left image has no scattering and the right image has scattering. You can see the red diffuse reflection along the shadow line and
+Here's an example of the scattering effect. The left image has no scattering and the right image has scattering. You can see the red diffuse reflection along the shadow line.
 
 | ![](no-scattering.jpg) | ![](scattering.jpg) |
 | ---------------------- | ------------------- |
@@ -64,7 +64,7 @@ Here are examples of two FSTs that contain scattering definitions.
 
   \- A developers debug script which allows you to toggle the material properties in realtime:
 
-   
+
 
   http://rawgit.com/highfidelity/hifi/3d57a3a86a94bda5498bb315c700006584d725fc/scripts/developer/utilities/render/debugDeferredLighting.js
 
