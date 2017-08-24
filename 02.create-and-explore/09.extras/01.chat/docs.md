@@ -34,7 +34,7 @@ To install COM Script on your domain, follow these steps:
 
 ## Sign Post Chat
 
-![](sigh-chat-by-menithal.jpg)
+![](sign-chat-by-menithal.jpg)
 
 Cat got your tongue?
 
