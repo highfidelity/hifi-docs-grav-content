@@ -29,7 +29,7 @@ If you're using Leap Motion,
 
 1. Ensure you have the release version of the Leap Motion SDK installed. (We don't support the Orion SDK yet). 
 2. Go to **Settings > General**.![](leap.png)
-3. Check the box "Enabled" under **Leap Motion** to start using Leap Motion controllers. 
+3. Check the box "Enabled" under **Leap Motion** to start using your Leap Motion controllers. 
 4. Save your changes. 
 
 ### XBOX One Controller
