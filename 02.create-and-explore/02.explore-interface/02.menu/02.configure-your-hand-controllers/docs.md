@@ -25,15 +25,12 @@ Once enabled, you should be able to use the hand controller to navigate and grab
 
 ### Leap Motion Orion
 
-You can enable Leap Motion with an HMD by:
+If you're using Leap Motion, 
 
-1. Going to **Settings > Developer Menus**.
-2. Navigating to **Developer > Hands > Leap Motion > Leap Motion on HMD**.
-3. Going to **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel.
-4. Navigating to the *Running Scripts* panel, and then to the `leapHands.js` script (`controllers/leap`) and highlighting it.
-5. Clicking **Load** to run the script.
-
-If the Leap is detecting your hands, when you look down you will see the avatar's hands move in sync with your own.
+1. Ensure you have the release version of the Leap Motion SDK installed. (We don't support the Orion SDK yet). 
+2. Go to **Settings > General**.![](leap.png)
+3. Check the box "Enabled" under **Leap Motion** to start using Leap Motion controllers. 
+4. Save your changes. 
 
 ### XBOX One Controller
 
