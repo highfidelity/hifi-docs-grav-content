@@ -1,5 +1,6 @@
 ---
 title: Hosting Your Content
+taxonomy:
   category: docs
 ---
 
