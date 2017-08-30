@@ -4,7 +4,7 @@ taxonomy:
   category: docs
 ---
 
-#Hosting Your Content
+##Hosting Your Content
 
 Once your sandbox is setup, you'll want to upload your content (3D models, avatars or scripts). To do so, you'll need to host your content on a server. 
 We've listed a few options where you can host your content. You can use these or any other options of your choice:
