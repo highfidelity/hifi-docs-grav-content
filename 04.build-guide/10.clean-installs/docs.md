@@ -32,3 +32,13 @@ A clean install should aid in starting and running High Fidelity without any pro
 6. In ```AppData/Local```, delete any folders related to High Fidelity. Repeat for ```AppData/Roaming```.
 7. To restore your Sandbox content, reinstall High Fidelity and put back the “assignment-client” folders you backed up in their respective locations. ![](appdata-local.png)
 
+####Steps for a Clean Installation
+#####Mac
+
+1. Open your Applications folder. Delete the High Fidelity folder.
+2. Go to ```~/.config``` and delete the "highfidelity.io" folder. That is (username)/.config
+2. Open the ```~/Library``` folder. Even though the program has been deleted, there are lingering files left on the hard drive. For a clean uninstall, you must remove these. 
+>>>>>The Library folder is hidden by default. You can open the Library folder by holding the Option key and clicking the "Go" menu while in the Finder. The Library option should appear in the menu. Otherwise, you can show hidden files using [Terminal](http://www.macworld.co.uk/how-to/mac-software/how-show-hidden-files-library-folder-mac-3520878/).
+3. Go to ```~/Library/Application Support/High Fidelity``` and delete the High Fidelity folder.
+4. Empty the trash.
+5. Reinstall High Fidelity.
