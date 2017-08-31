@@ -2,7 +2,7 @@
 title: 'All About Entity Scripts'
 ---
 
-In this three-part tutorial, we’ll be building on the topics introduced in [Get Started with Scripting in High Fidelity](http://localhost/learn-with-us/get-started-with-scripting) to further explore the different types of script behavior that you can write for elements in your domains.
+In this three-part tutorial, we’ll be building on the topics introduced in [Get Started with Scripting in High Fidelity](../get-started-with-scripting) to further explore the different types of script behavior that you can write for elements in your domains.
 
 ## Chapter 1: Creating Cubes and a Cube Spawner
 
@@ -14,7 +14,7 @@ In this module, we will:
 
 ### Creating cube.JS
 
-If you went through [Get Started with Scripting in High Fidelity](http://localhost/learn-with-us/get-started-with-scripting), you’ll remember our short code snippet that generated a cube in front of us when we ran our script from the Script Editor. This code, although short, highlights a number of important things that we can do with our High Fidelity scripts.
+If you went through [Get Started with Scripting in High Fidelity](../get-started-with-scripting), you’ll remember our short code snippet that generated a cube in front of us when we ran our script from the Script Editor. This code, although short, highlights a number of important things that we can do with our High Fidelity scripts.
 
 ``````javascript
 
@@ -24,7 +24,8 @@ type: "Box",
 name: "ScriptBox",
 position: boxPosition,
 color: { red: 0, green: 0, blue: 155 }};
-Ent = Entities.addEntity(properties);
+Ent = Entities.add
+(properties);
 print("Entity added");
 
 ```
@@ -47,7 +48,7 @@ In our example above, this breaks down into:
 | position | boxPosition                   | variable   |
 | color    | {red: 0, green: 0, blue: 155} | vector     |
 
-While generally you can set whatever properties that you’d like in your entities, only the ones that are present in the [Entity Properties API](https://wiki.highfidelity.com/wiki/Entity_Properties_API) will be handled directly by Interface. This means that you can extend an object with your own fields, but you will need to handle them yourself.
+While generally you can set whatever properties that you’d like in your entities, only the ones that are present in the [Entity Properties API](../../api-reference/entities#properties) will be handled directly by Interface. This means that you can extend an object with your own fields, but you will need to handle them yourself.
 
 This cube script is helpful to create a single cube with a specific set of properties, but we may want to spawn new cubes with different properties from this one. We may also want to define a set of functions for our cubes, so we want to make our script more extensible and reusable across a number of different cubes that we can generate with the same spawning script.
 
@@ -177,8 +178,8 @@ In this tutorial, we covered some of the basic functionality that we can use to 
 
 ### Additional Resources for Chapter 1
 
-- [Geting Started with Scripting in High Fidelity](http://localhost/learn-with-us/get-started-with-scripting)
-- [Coding Standards](http://localhost/build-guide/coding-standards)
+- [Geting Started with Scripting in High Fidelity](../get-started-with-scripting)
+- [Coding Standards](../../build-guide/coding-standards)
 
 ## Chapter 2: Building an Entity Spawner
 
