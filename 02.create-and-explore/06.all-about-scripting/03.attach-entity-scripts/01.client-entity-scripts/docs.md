@@ -32,8 +32,7 @@ You'll notice that this example is written as a JavaScript class prototype funct
 
 To learn more:
 - For more information on events available, see the High Fidelity [JavaScript API](../../../../api-reference).
-- For a walk though of additional examples, see [entity script examples](https://wiki.highfidelity.com/wiki/Entity_script_examples).
-- For a list of event methods that may be defined, see [Category:Entities_callbacks](https://wiki.highfidelity.com/wiki/Category:Entities_callbacks), [preload()](https://wiki.highfidelity.com/index.php?title=Preload()&action=edit&redlink=1), and [unload()](https://wiki.highfidelity.com/index.php?title=Unload()&action=edit&redlink=1)
+- For a list of event methods that may be defined, see [Entities_callbacks](../../api-reference/entities#callbacks).
 - For more examples, see the [GitHub repository](https://github.com/highfidelity/hifi/tree/master/scripts/tutorials).
 
 Now that we have a script, for it to do anything, you need to attach it to an entity. See [Attaching Entity Scripts](../).
