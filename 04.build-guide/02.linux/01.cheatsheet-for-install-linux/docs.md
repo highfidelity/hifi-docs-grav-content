@@ -1,5 +1,9 @@
 ---
 title: Cheatsheet for Installing in Linux Server
+taxonomy:
+    category: docs
+---
+
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
