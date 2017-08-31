@@ -24,7 +24,7 @@ She breaks into a wide smile. "I was hoping you'd say that! I have a special doc
 
 ## Overview
 
-The fireworks experience is composed of two scripts- one is the spawner script that creates the button from which fireworks will be launched from, and the other is the entity script you will attach to the launch button itself. Whenever I'm creating any experience that requires an entity script, I always find it immensely helpful to write a corresponding interface script that spawns the entity with the script attached. This will speed up your iteration time considerably as you develop your content. For a deeper look at the difference between entity and interface (or client) scripts, check out this [in depth guide](https://docs.highfidelity.com/docs/scripts-digging-deeper).
+The fireworks experience is composed of two scripts- one is the spawner script that creates the button from which fireworks will be launched from, and the other is the entity script you will attach to the launch button itself. Whenever I'm creating any experience that requires an entity script, I always find it immensely helpful to write a corresponding interface script that spawns the entity with the script attached. This will speed up your iteration time considerably as you develop your content. For a deeper look at the difference between entity and interface (or client) scripts, see [all about scripting](../../all-about-scripting).
 
 I've organized this tutorial as a series of progressing chapters, and as you follow along with this you will be going through a similar process to the one I took as I wrote the actual fireworks experience. I've included the code for each chapter in the examples/tutorials/fireworks directory for your reference.
 
