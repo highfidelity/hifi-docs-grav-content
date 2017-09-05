@@ -1,5 +1,5 @@
 ---
-title: Menu
+title: Tablet Menu
 taxonomy:
     category: docs 
 ---
