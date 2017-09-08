@@ -49,10 +49,21 @@ The next thing you need to do is set the Qt environment variables. Go to "Contro
 * Set "Variable name": QT_CMAKE_PREFIX_PATH 
 * Set "Variable value":  `C:\Qt\5.9.1\msvc2017_64\lib\cmake` 
 
-**4. OpenSSL**
+**4. vcpkg**
 
-Download and install the Win64 OpenSSL v1.0.2 [installer](https://slproweb.com/products/Win32OpenSSL.html).                     
+Download and unzip the [VCPKG repository](https://github.com/Microsoft/vcpkg) into `C:/src/`.
 
+Follow the instructions in the [readme](https://github.com/Microsoft/vcpkg/blob/master/README.md) to bootstrap vcpkg using a Developer Command Prompt.
+
+Set an environment variable VCPKG_ROOT to the location of the cloned repository. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your vcpkg variables:  
+* Set "Variable name": VCPKG_ROOT 
+* Set "Variable value":  `C:\src\vcpkg` 
+
+Close and re-open any command prompts after setting the environment variable so that they will pick up the change.
+
+**5. OpenSSL**
+
+Using a Developer Command Prompt, run the following command in your %VCPKG% directory: `vcpkg install openssl:x64-windows`
 
 ---------------------------
 
