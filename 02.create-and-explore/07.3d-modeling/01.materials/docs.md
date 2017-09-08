@@ -1,5 +1,5 @@
 ---
-title: PBR Materials: Textures and Shading Guide
+title: PBR Materials: Textures and Shading Introduction
 taxonomy:
     category: docs
 ---
@@ -52,42 +52,4 @@ High Fidelity supports a certain number of material types. We have created a mod
 - Enter the URL you copied and click OK.
 - The script will run and add all the models showcasing different material types.
 
-The following table details the different types of materials High Fidelity supports and the properties of those materials. The properties are determined by the value or map of material channels.
-
-
-| Material Type                   | Model File Name                          | Model Image                    | Channel Value or Map           |
-| ------------------------------- | ---------------------------------------- | ------------------------------ | ------------------------------ |
-| Default                         | [hifi.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi.fbx?raw=true) | ![](1-default.PNG)             | Check channel details [here]() |
-| Occlusion Map                   | [hifi_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi-ao.fbx?raw=true) | ![](2-occl-m.PNG)              | Check channel details [here]() |
-| Albedo Value                    | [hifi_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_albedoV_ao.fbx?raw=true) | ![](3-alb-v.PNG)               | Check channel details [here]() |
-| Albedo Map                      | [hifi_albedoM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_albedoM_ao.fbx?raw=true) | ![](4-alb-m.PNG)               | Check channel details [here]() |
-| Albedo Value Blend Map          | [hifi_albedoVM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_albedoVM_ao.fbx?raw=true) | ![](5-alb-vm.PNG)              | Check channel details [here]() |
-| Metallic Albedo Value           | [hifi_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_metallicV_albedoV_ao.fbx?raw=true) | ![](6-metv-albv.PNG)           | Check channel details [here]() |
-| Metallic Albedo Map             | [hifi_metallicV_albedoM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_metallicV_albedoM_ao.fbx?raw=true) | ![](7-metv-albm.PNG)           | Check channel details [here]() |
-| Metallic Albedo Value Blend Map | [hifi_metallicV_albedoVM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_metallicV_albedoVM_ao.fbx?raw=true) | ![](8-metv-albvm.PNG)          | Check channel details [here]() |
-| Metallic Map Albedo Value       | [hifi_metallicM_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_metallicM_albedoV_ao.fbx?raw=true) | ![](9-metm-albv.PNG)           | Check channel details [here]() |
-| Metallic Map Albedo Map         | [hifi_metallicM_albedoM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_metallicM_albedoM_ao.fbx?raw=true) | ![](10-metm-albm.PNG)          | Check channel details [here]() |
-| Roughness Value Ramp            | [hifi_roughnessV00_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV00_albedoV_ao.fbx?raw=true) | ![](11-rogh-00-albv.PNG)       | Check channel details [here]() |
-| Roughness Value Ramp            | [hifi_roughnessV25_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV25_albedoV_ao.fbx?raw=true) | ![](12-rogh-25-albv.PNG)       | Check channel details [here]() |
-| Roughness Value Ramp            | [hifi_roughnessV50_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV50_albedoV_ao.fbx?raw=true) | ![](13-rogh-50-albv.PNG)       | Check channel details [here]() |
-| Roughness Value Ramp            | [hifi_roughnessV75_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV75_albedoV_ao.fbx?raw=true) | ![](14-rogh-75-albv.PNG)       | Check channel details [here]() |
-| Roughness Value Ramp            | [hifi_roughnessV100_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV100_albedoV_ao.fbx?raw=true) | ![](15-rogh-100-albv.PNG)      | Check channel details [here]() |
-| Metallic Roughness Value Ramp   | [hifi_roughnessV00_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV00_metallicV_albedoV_ao.fbx?raw=true) | ![](16-rogh-00-metv-albv.PNG)  | Check channel details [here]() |
-| Metallic Roughness Value Ramp   | [hifi_roughnessV25_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV25_metallicV_albedoV_ao.fbx?raw=true) | ![](17-rogh-25-metv-albv.PNG)  | Check channel details [here]() |
-| Metallic Roughness Value Ramp   | [hifi_roughnessV50_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV50_metallicV_albedoV_ao.fbx?raw=true) | ![](18-rogh-50-metv-albv.PNG)  | Check channel details [here]() |
-| Metallic Roughness Value Ramp   | [hifi_roughnessV75_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV75_metallicV_albedoV_ao.fbx?raw=true) | ![](19-rogh-75-metv-albv.PNG)  | Check channel details [here]() |
-| Metallic Roughness Value Ramp   | [hifi_roughnessV100_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessV100_metallicV_albedoV_ao.fbx?raw=true) | ![](20-rogh-100-metv-albv.PNG) | Check channel details [here]() |
-| Roughness Map                   | [hifi_roughnessM_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessM_albedoV_ao.fbx?raw=true) | ![](21-roghm-albv.PNG)         | Check channel details [here]() |
-| Metallic Roughness Map          | [hifi_roughnessM_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_roughnessM_metallicV_albedoV_ao.fbx?raw=true) | ![](22-roghm-metv-albv.PNG)    | Check channel details [here]() |
-| Normal Map                      | [hifi_normalM_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_normalM_albedoV_ao.fbx?raw=true) | ![](23-norm-albv.PNG)          | Check channel details [here]() |
-| Bump Map                        | [hifi_normalB_albedoV_ao.fbx]()          | ![]()                          | Check channel details [here]() |
-| Metallic Normal Map             | [hifi_normalM_metallicV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_normalM_metallicV_albedoV_ao.fbx?raw=true) | ![](25-norm-metv-albv.PNG)     | Check channel details [here]() |
-| Metallic Bump Map               | [hifi_normalB_metallicV_albedoV_ao.fbx]() | ![]()                          | Check channel details [here]() |
-| Emissive Value                  | [hifi_emissiveV_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_emissiveV_albedoV_ao.fbx?raw=true) | ![](27-emv-albv.PNG)           | Check channel details [here]() |
-| Emissive Map                    | [hifi_emissiveM_albedoV_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_emissiveM_albedoV_ao.fbx?raw=true) | ![](28-emm-albv.PNG)           | Check channel details [here]() |
-| Opacity Value                   | [hifi_opacityV_albedoV_ao.fbx]()         | ![]()                          | Check channel details [here]() |
-| Opacity Mask Map                | [hifi_opacityM_albedoV_ao.fbx]()         | ![]()                          | Check channel details [here]() |
-| Opacity Alpha Map               | [hifi_opacityA_albedoV_ao.fbx]()         | ![]()                          | Check channel details [here]() |
-| Opacity Value Albedo Map        | [hifi_opacityV_albedoM_ao.fbx](https://github.com/highfidelity/hifi_tests/blob/master/assets/models/material_matrix_models/fbx/blender/hifi_opacityV_albedoM_ao.fbx?raw=true) | ![](32-opcv-albm.PNG)          | Check channel details [here]() |
-| Opacity Mask Map Albedo Map     | [hifi_opacityM_albedoM_ao.fbx]()         | ![]()                          | Check channel details [here]() |
-| Opacity Alpha Map Albedo Map    | [hifi_opacityA_albedoM_ao.fbx]()         | ![]()                          | Check channel details [here]() |
+You can look through our guide to the different types of materials we support in the [next page](../materials/pbr-materials-guide).
