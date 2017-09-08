@@ -1,5 +1,5 @@
 ---
-title: Materials Export Guide
+title: Materials Guide (Blender & Maya)
 taxonomy:
     category: docs
 ---
