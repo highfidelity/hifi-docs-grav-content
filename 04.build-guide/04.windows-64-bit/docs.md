@@ -53,7 +53,7 @@ The next thing you need to do is set the Qt environment variables. Go to "Contro
 
 Download and unzip the [VCPKG repository](https://github.com/Microsoft/vcpkg) into `C:/src/`.
 
-Follow the instructions in the [readme](https://github.com/Microsoft/vcpkg/blob/master/README.md) to bootstrap vcpkg in a Developer Command Prompt.
+Follow the instructions in the [readme](https://github.com/Microsoft/vcpkg/blob/master/README.md) to bootstrap vcpkg using a Developer Command Prompt.
 
 Set an environment variable VCPKG_ROOT to the location of the cloned repository. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your vcpkg variables:  
 * Set "Variable name": VCPKG_ROOT 
