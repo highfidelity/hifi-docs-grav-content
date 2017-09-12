@@ -42,7 +42,7 @@ taxonomy:
 
 
 
-## Quat.angle()<a id="m1">
+## Quat.angle()<a id="m1"></a>
 
 Compute the angle of rotation.
 
@@ -66,7 +66,7 @@ var angle = Quat.angle(rotation);
 
 
 
-## Quat.angleAxis()<a id="m2">
+## Quat.angleAxis()<a id="m2"></a>
 
 Compute the quaternion that corresponds to a rotation of an `angle` (radians) about some normalized `axis`.
 
@@ -95,7 +95,7 @@ var rotation = Quat.angleAxis(angle, axis);
 
 
 
-## Quat.axis()<a id="m3">
+## Quat.axis()<a id="m3"></a>
 
 Compute the normalized axis of rotation.
 
@@ -119,7 +119,7 @@ var axis = Quat.axis(rotation);
 
 
 
-## Quat.conjugate()<a id="m4">
+## Quat.conjugate()<a id="m4"></a>
 
 Compute the conjugate (inverse) quaternion.
 
@@ -143,7 +143,7 @@ var inverseRotation = Quat.conjugate(rotation);
 
 
 
-## Quat.dot()<a id="m5">
+## Quat.dot()<a id="m5"></a>
 
 Compute the dot product between two quaternions. This is a measure of how "close" two rotations are to each other.
 
@@ -175,7 +175,7 @@ if (Math.abs(d) > 0.999999) {
 
 
 
-## Quat.equal()<a id="m6">
+## Quat.equal()<a id="m6"></a>
 
 Compare equality of two quaternions.
 
@@ -208,7 +208,7 @@ Should print:
 
 
 
-## Quat.fromPitchYawRollDegrees()<a id="m7">
+## Quat.fromPitchYawRollDegrees()<a id="m7"></a>
 
 Compute a rotation using three angles: pitch, yaw, roll.
 
@@ -238,7 +238,7 @@ var rotation = Quat.fromPitchYawRollDegrees(pitch, yaw, roll);
 
 
 
-## Quat.fromPitchYawRollRadians()<a id="m8">
+## Quat.fromPitchYawRollRadians()<a id="m8"></a>
 
 Compute a rotation using three angles: pitch, yaw, roll.
 
@@ -268,7 +268,7 @@ var rotation = Quat.fromPitchYawRollDegrees(pitch, yaw, roll);
 
 
 
-## Quat.fromVec3Degrees()<a id="m9">
+## Quat.fromVec3Degrees()<a id="m9"></a>
 
 Compute a rotation using three angles (pitch, yaw, roll) packed into a single **Vec3** argument.
 
@@ -295,7 +295,7 @@ var rotation = Quat.fromVec3Degrees(angles);
 
 
 
-## Quat.fromVec3Radians()<a id="m10">
+## Quat.fromVec3Radians()<a id="m10"></a>
 
 Compute a rotation using three angles (pitch, yaw, roll) packed into a single **Vec3** argument.
 
@@ -322,7 +322,7 @@ var rotation = Quat.fromVec3Radians(angles);
 
 
 
-## Quat.getFront()<a id="m11">
+## Quat.getFront()<a id="m11"></a>
 
 Compute the rotated forward direction (zAxis).
 
@@ -346,7 +346,7 @@ var forward = Quat.getFront(rotation);
 
 
 
-## Quat.getRight()<a id="m12">
+## Quat.getRight()<a id="m12"></a>
 
 Compute the rotated right direction (negative xAxis).
 
@@ -370,7 +370,7 @@ var right = Quat.getRight(rotation);
 
 
 
-## Quat.getUp()<a id="m13">
+## Quat.getUp()<a id="m13"></a>
 
 Compute the rotated up direction (yAxis).
 
@@ -394,7 +394,7 @@ var up = Quat.getUp(rotation);
 
 
 
-## Quat.inverse()<a id="m14">
+## Quat.inverse()<a id="m14"></a>
 
 Compute the inverse (conjugate) quaternion.
 
@@ -418,7 +418,7 @@ var inverseRotation = Quat.inverse(rotation);
 
 
 
-## Quat.lookAt()<a id="m15">
+## Quat.lookAt()<a id="m15"></a>
 
 Compute the rotation that will orient a camera at a known location to look straight at another point.
 
@@ -457,7 +457,7 @@ var orientation = Quat.lookAt(eye, center, up);
 
 
 
-## Quat.lookAtSimple()<a id="m16">
+## Quat.lookAtSimple()<a id="m16"></a>
 
 Compute the rotation that will orient a camera at a known location to look straight at another point, assuming that the world'd up direction is the yAxis.
 
@@ -493,7 +493,7 @@ var orientation = Quat.lookAtSimple(eye, center);
 
 
 
-## Quat.mix()<a id="m17">
+## Quat.mix()<a id="m17"></a>
 
 Compute the interpolation (slerp) between two rotations. Uses spherical linear interpolation (slerp) if the rotations are far enough apart, otherwise uses linear interpolation (lerp).
 
@@ -529,7 +529,7 @@ var newRotation = Quat.mix(startRotation, endRotation, mixFactor);
 
 
 
-## Quat.multiply()<a id="m18">
+## Quat.multiply()<a id="m18"></a>
 
 Multiply two rotations together to get their unnormalized product.
 
@@ -570,7 +570,7 @@ var firstAboutXThenY = Quat.multiply(turnAboutY, turnAboutX);
 
 
 
-## Quat.normalize()<a id="m19">
+## Quat.normalize()<a id="m19"></a>
 
 Compute the normalized quaternion.
 
@@ -614,7 +614,7 @@ Vec3.print(error, \"error = \");
 
 
 
-## Quat.print()<a id="m20">
+## Quat.print()<a id="m20"></a>
 
 Print the component values of a quaternion.
 
@@ -648,7 +648,7 @@ Should print:
 
 
 
-## Quat.rotationBetween()<a id="m21">
+## Quat.rotationBetween()<a id="m21"></a>
 
 Compute the shortest rotation that would swing one vector to align with another.
 
@@ -696,7 +696,7 @@ var finalRotation = Quat.multiply(deltaRotation, rotation);
 
 
 
-## Quat.safeEulerAngles()<a id="m22">
+## Quat.safeEulerAngles()<a id="m22"></a>
 
 Compute the pitch, yaw, and roll angles (in radians) that correspond to a rotation.
 
@@ -726,7 +726,7 @@ var roll = angles.z;
 
 
 
-## Quat.slerp()<a id="m23">
+## Quat.slerp()<a id="m23"></a>
 
 Compute the normalized spherical linear interpolation (slerp) between two rotations.
 
@@ -762,7 +762,7 @@ var newRotation = Quat.slerp(startRotation, endRotation, mixFactor);
 
 
 
-## Quat.squad()<a id="m24">
+## Quat.squad()<a id="m24"></a>
 
 Compute a B-spline smoothed normalized spherical linear interpolation (slerp) between two rotations. Useful for animating through a series of rotation waypoints.
 
