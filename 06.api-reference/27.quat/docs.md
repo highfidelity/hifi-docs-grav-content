@@ -23,7 +23,7 @@ taxonomy:
 | [Quat.fromPitchYawRollRadians(float,float,float)](#m8) |
 | [Quat.fromVec3Degrees(glm::vec3)](#m9)   |
 | [Quat.fromVec3Radians(glm::vec3)](#m10)  |
-| Quat.getForward(glm::quat)               |
+| [Quat.getForward(glm::quat)] (#m25)               |
 | [Quat.getFront(glm::quat)](#m11)         |
 | [Quat.getRight(glm::quat)](#m12)         |
 | [Quat.getUp(glm::quat)](#m13)            |
@@ -320,11 +320,32 @@ Note: the units of angle are **radians**.
 var rotation = Quat.fromVec3Radians(angles);
 ```
 
+## Quat.getForward()<a id="m25"></a>
+
+Compute the rotated forward direction (zAxis).
+
+### Function
+
+`Quat.getForward(q)`
+
+### Arguments
+
+**q: quat**: the rotation.
+
+### Returns
+
+**forward: vec3**: The local forward direction (zAxis) after being rotated.
+
+### Examples
+
+```
+var forward = Quat.getForward(rotation);
+```
 
 
 ## Quat.getFront()<a id="m11"></a>
 
-Compute the rotated forward direction (zAxis).
+Compute the rotated forward direction (zAxis). This method calls Quat.getForward(). 
 
 ### Function
 
