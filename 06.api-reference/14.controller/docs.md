@@ -267,7 +267,7 @@ var mapping = Controller.newMapping(MAPPING_NAME);
 
 For more complete examples, see:
 
-- [Controller JavaScript examples](https://github.com/highfidelity/hifi/tree/master/examples/controllers)
+- [Controller JavaScript examples](https://github.com/highfidelity/hifi/tree/d83600a22ee1579b15acf742e2fa83a84ce9951c/script-archive/controllers)
 
 For information on available Controller API functions, objects, and events, see the individual function, object, and event pages in the column to the left.
 
