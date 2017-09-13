@@ -111,7 +111,7 @@ taxonomy:
 | Controller.Hardware.OculusTouch          | number |                                          |
 | Controller.Standard                      | number |                                          |
 | Controller.objectName                    | string |                                          |
-| MappingObject.name                       | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
+| MappingObject.name<a id="mapobj"></a>                       | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
 | MappingObject.channels                   | object | A JSON object of routes which define which input goes to which output. |
 
 
@@ -221,7 +221,7 @@ taxonomy:
 
 ### Mapping Input to Output
 
-A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. A new mapping is created using `Controller.newMapping()`. This function takes a string which is used as the mapping name, and returns a [MappingObject](https://wiki.highfidelity.com/wiki/MappingObject), as seen in the example below.
+A *mapping* is the set of rules for taking changes in inputs from supported controllers and acting on them in some way. A new mapping is created using `Controller.newMapping()`. This function takes a string which is used as the mapping name, and returns a [MappingObject](#mapobj), as seen in the example below.
 
 ```
 // The name of the new mapping
