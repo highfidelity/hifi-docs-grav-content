@@ -29,7 +29,8 @@ taxonomy:
 ##Methods <a id="methods"></a>
 | Methods                                  |
 | ---------------------------------------- |
-| [Entities.addAction(QString,QUuid,QVariantMap)](#m1) |
+| [Entities.
+(QString,QUuid,QVariantMap)](#m1) |
 | [Entities.addEntity(EntityItemProperties)](#m2) |
 | Entities.addEntity(EntityItemProperties,bool) |
 | Entities.addModelEntity(QString,QString,QString,bool,glm::vec3,glm::vec3) |
@@ -1111,7 +1112,7 @@ Actions allow you to add behaviors to entities of the following types: "offset",
 
 Depending on the action's type, it will have various arguments that help define the action's behavior. The action arguments are specified as a JSON object of [ActionArguments](https://wiki.highfidelity.com/wiki/ActionArguments).
 
-`addAction()` is used to add a new action to an entity. `addAction()` returns the [EntityItemID](https://wiki.highfidelity.com/wiki/EntityItemID) of the new action.
+`addAction()` is used to add a new action to an entity. `addAction()` returns the [EntityItemID](https://docs.highfidelity.com/api-reference/entities#entityitem-properties) of the new action.
 
 ### Function
 
