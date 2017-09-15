@@ -213,6 +213,7 @@ This section contains the properties common to all entity types.
 | `collisionSoundURL` | string              | ""                                       | The `collisionSoundURL` property specifies the sound to play when this entity experiences a collision. You can provide a mono or stereo 16-bit WAV file running at either 24 Khz or 48 Khz. The latter is downsampled by the audio mixer, so all audio effectively plays back at a 24 Khz sample rate. 48 Khz RAW files are also supported. |
 | `lifetime`          | float               | -1 (Meaning entity will live forever)    | The `lifetime` property accepts a number which specifies how long, in seconds, the entity lives for in the domain. After this time has passed, the entity will be automatically deleted.: seconds |
 | `script`            | string              | ""                                       | The `script` property accepts a URL to an entity script file, and attaches the script to the entity. |
+| `serverScripts`     | string              | ""                                       | The `serverScripts` property accepts a URL to an entity script file to run on the entity script server, and attaches the script to the entity. |
 
 ### Examples
 
