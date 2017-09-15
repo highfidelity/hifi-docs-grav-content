@@ -16,8 +16,8 @@ Although navigation and limited interaction can be accomplished with a keyboard/
 
 You can enable a Razer Hydra or an HTC Vive hand controller by:
 
-1. Going to **Settings > Advanced Menus**.
-2. Navigating to **Avatar > Input Devices > Sixense** for the Hydra or **Avatar > Input Devices > Vive** for the Vive.
+1. Going to **Settings > General**.
+
 
 > > > > > Note: Vive users should have SteamVR running before starting Interface.
 
@@ -36,8 +36,8 @@ If you're using Leap Motion,
 
 You can enable an XBOX One controller by:
 
-1. Going to **Settings > Advanced Menus**.
-2. Navigating to **Avatar > Input Devices > SDL2**.
+1. Going to **Settings > General**.
+
 
 *Note: If you are using Mac OS, and are having issues with using an XBOX controller, see Xbox 360 Controller (OS X) for more information.*
 
