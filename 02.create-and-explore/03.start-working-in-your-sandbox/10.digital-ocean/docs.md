@@ -1,20 +1,20 @@
 ---
-title: Using DigitalOcean
+title: Using Digital Ocean
 taxonomy:
     category: docs
 ---
 
-*Learn how you can use DigitalOcean for High Fidelity.*
+*Learn how you can use Digital Ocean for High Fidelity.*
 
 ## Introduction
 
-To use the process outlined below, sign up for a [DigitalOcean](https://www.digitalocean.com/?refcode=41620a880f3e) account, if you already do not have one. 
+To use the process outlined below, sign up for a [Digital Ocean](https://www.digitalocean.com/?refcode=41620a880f3e) account, if you already do not have one. 
 
 When you sign up using the link above you start out with $10.00 of free credit. However, you will need to add valid billing information for verification.
 
 ### Installing BitVise - For Windows Users
 
-[BitVise](http://www.bitvise.com) is a handy little program the enables you to connect to your virtual private server from DigitalOcean, as there is nothing built into Windows to connect to an external system.
+[BitVise](http://www.bitvise.com) is a handy little program the enables you to connect to your virtual private server from Digital Ocean, as there is nothing built into Windows to connect to an external system.
 
 [Download and install BitVise](http://www.bitvise.com/ssh-client-download) on your Windows system. 
 
@@ -33,7 +33,7 @@ For security purposes, let's configure this server to use a special keypair inst
 >>>>> Note down the place where the file generated is saved. 
 
 * Double click on the file generated. Open this file using **Notepad**.
-* Next with Notepad open, go to your account on DigitalOcean to set this key in your account.
+* Next with Notepad open, go to your account on Digital Ocean to set this key in your account.
 
 #### Mac Users
 
@@ -54,14 +54,14 @@ Copy and paste your key from Notepad.
 
 #### Mac Users
 
-Back on the DigitalOcean page, add a *Name* for your SSH Key then in the box labeled *Public SSH Key*, paste the key from your clipboard.
+Back on the Digital Ocean page, add a *Name* for your SSH Key then in the box labeled *Public SSH Key*, paste the key from your clipboard.
 
-Now your key is stored DigitalOcean for when you create the Virtual Machine!
+Now your key is stored Digital Ocean for when you create the Virtual Machine!
 
 
 ### Setting Up Our First Virtual Machine
 
-* Click the green button on the DigitalOcean page labeled **Create Droplet** and you are taken to the DigitalOcean Control Panel.![](begin-create-droplet.png)
+* Click the green button on the Digital Ocean page labeled **Create Droplet** and you are taken to the Digital Ocean Control Panel.![](begin-create-droplet.png)
 * In the **Name** box set a simple name, such as your Place Name in High Fidelity.
 * For **Select Size** click on the $10.00/m configuration which is for **1 GB** of RAM.![](gb-server.png)
 * **Region:**  you can add your preferred region.![](region-select-sanfran.png)
@@ -72,7 +72,7 @@ Now your key is stored DigitalOcean for when you create the Virtual Machine!
 
 ### Connecting to your Droplet
 
-After your new Droplet is created (Droplet is another word for your DigitalOcean Virtual Machine) you will now see a screen like this:
+After your new Droplet is created (Droplet is another word for your Digital Ocean Virtual Machine) you will now see a screen like this:
 
 ![](gb-list.png)
 
@@ -80,7 +80,7 @@ At the very top you will see the name you set for your droplet, system informati
 
 #### Windows Users
 
-* Using the BitVise software we setup before, you will now put the IP from DigitalOcean into the box labeled **Host**. Next move over to **Username** where you put in **Root**, underneath that set **Initial Method** to **publickey** and last set **Client Key** to **Global 1**. You will see each of these sections highlighted with a pointer in this image:![](bitvise-fields-descriptions.png)
+* Using the BitVise software we setup before, you will now put the IP from Digital Ocean into the box labeled **Host**. Next move over to **Username** where you put in **Root**, underneath that set **Initial Method** to **publickey** and last set **Client Key** to **Global 1**. You will see each of these sections highlighted with a pointer in this image:![](bitvise-fields-descriptions.png)
 * Now just to make it easy to load up your settings next time you want to connect, you are going to click **Safe Profile As** on the left hand side menu of BitVise. Store this file in a place you will remember it because you will use **Load Profile** later to connect next time.
 * Once all of that is complete just click the **Login** button on the bottom of BitVise.
 
