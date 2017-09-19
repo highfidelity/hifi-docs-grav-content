@@ -12,9 +12,13 @@ If you're in Desktop mode, you'll start your High Fidelity journey in a domain t
 * Meet other users. 
 * Talk to our greeters to learn more about High Fidelity. 
 * Check out our community rules. 
-* Try out our avatar attachments!
+* Try out our avatar attachments
 
-![](explore-interface-welcome.PNG)
+![](welcome-wagon1.PNG)
+
+![](welcome-wagon2.PNG)
+
+![](welcome-wagon3.PNG)
 
 
 
