@@ -8,9 +8,9 @@ taxonomy:
 
 ## Overview
 
-The Tablet or HUD menu will help you create and explore in High Fidelity. This page will walk you through the different options available to you. 
+The Tablet or HUD menu will help you create and explore in High Fidelity. This page will walk you through the different options available to you. You can also log in to your High Fidelity account through your tablet. 
 
-![](tablet.PNG)
+![](tabletwithlogin.PNG)
 
 ## Introduction
 
