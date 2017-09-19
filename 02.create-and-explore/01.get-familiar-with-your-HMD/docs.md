@@ -1,11 +1,11 @@
 ---
-title: Get Familiar with Your HMD
+title: Entering High Fidelity
 taxonomy:
     category: docs 
 ---
 
-Before you start exploring High Fidelity, you need to get familiar with your HMD and its controls. 
+When you first use High Fidelity, your experience is determined by whether or not you're wearing a Head Mounted Display (HMD). 
 
-We provide this in a tutorial that is launched when you first run High Fidelity. This tutorial will guide you through moving your arms, grabbing and using objects and moving around (teleporting) in-world. 
+If you are wearing an HMD, you will see your Sandbox first. Your Sandbox is your own space where you can create content, host events and hang out with your friends.
 
-Once you complete this tutorial, you can teleport to **Welcome** and start exploring Interface!
+If you're in Desktop Mode, you will enter the domain in Interface where our Welcome Wagon currently is stationed. Our Welcome Wagon is a first-time user experience where you can check out our community rules, meet other users and chat with our greeters. 
