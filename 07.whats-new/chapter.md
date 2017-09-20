@@ -1,17 +1,17 @@
 ---
-title: "What/'s New in the Docs"
+title: "What's New in the Docs"
 taxonomy:
     category:
          docs
 ---
 
-#What's New in the Docs
+# What's New in the Docs
 
 Check out the latest changes to our docs!
 
 September 7, 2017 - September 20, 2017
 
-##New Docs
+## New Docs
 * [DigitalOcean Spaces](../create-and-explore/start-working-in-your-sandbox/digital-ocean/digital-ocean-spaces)
 * [Modules](../api-reference/module)
 * [PBR Materials: Textures and Shading Introduction](../create-and-explore/3d-modeling/materials)
@@ -19,7 +19,7 @@ September 7, 2017 - September 20, 2017
 
 
 
-##Last Updated
+## Last Updated
 * [Section: All About Scripting](../create-and-explore/all-about-scripting): Updated the entire section with recent information about running scripts and modified some links. 
 * [Tablet Menu](../create-and-explore/explore-interface/menu): Updated tablet images to showcase new login feature and report a problem button in help. 
 * [Explore Interface](../create-and-explore/explore-interface): Welcome Wagon images and information added.
