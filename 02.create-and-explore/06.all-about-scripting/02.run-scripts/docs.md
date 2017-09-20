@@ -48,6 +48,6 @@ At any time you can close or restart one or all of the running scripts. To reloa
 
 To get started writing your own scripts, first read [create content](https://wiki.highfidelity.com/wiki/Create_content) to learn how to set up your development environment. This document covers where script assets need to be located for scripts to use them.
 
-For the scripts themselves, High Fidelity uses the JavaScript syntax and High Fidelity provides a robust [JavaScript API](https://wiki.highfidelity.com/wiki/Category:JavaScript_API). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
+For the scripts themselves, High Fidelity uses the JavaScript syntax and High Fidelity provides a robust [JavaScript API](../../../api-reference). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
 
 To write scripts, you can use your favorite JavaScript editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script `butterfly.js` to show you how to run and edit scripts using the script editor.

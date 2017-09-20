@@ -12,7 +12,7 @@ High Fidelity scripts use the JavaScript syntax and can be anything from a singl
 
 ## Script Types
 
-The four types of scripts are listed below, along with details on their usage.
+High Fidelity uses four types of scripts. They are:
 
 | Script Type           | Description                              | How / Where to run                       | What to use it for                       |
 | --------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -21,7 +21,7 @@ The four types of scripts are listed below, along with details on their usage.
 | Server Entity Scripts | Each entity (model, cube, sphere) can have a server script attached to it. These scripts call 'preload' when the Entity Script Server starts the script, and 'unload' when it stops the script. The scripting engine in the Entity Script Server has a subset of the full Interface functionality. | Unlike the client entity scripts above, only one instance of a server entity script is run by the Entity Script Server. A different instance of each server entity script is run by the Entity Script Server for each entity that uses it. See [Creating Server Entity Scripts](../all-about-scripting//attach-entity-scripts/server-entity-scripts). | Single server-side script so modifications to entities and audio in the domain are done only once and are viewed at the same time by all domain clients. |
 | Assignment Scripts    | Each domain can run scripts. These scripts have access to a subset of the full Interface functionality. They are a great way to coordinate. | These run only on a Sandbox [Agent](../../get-started/what-is-high-fidelity/architecture#functions-of-the-assignment-clients) for as long as the domain is running, and restart when you run Sandbox again. See [Server_Settings#Scripts](../start-working-in-your-sandbox/server-settings-for-your-domain#scripts). | Coordinating actions between [entities](../entities) and avatars, keeping state about your world. Access control, autonomous agents.: does not have full physics system. |
 
-Each Interface and assignment script executes in its own thread, isolated from other scripts. With this isolation model, you don’t have to worry about what other scripts are doing. You can include whatever scripts you want in your own namespace. Entity scripts (client or server) use javascript function containment to separate the execution of the multiple entity scripts, which all execute in the same thread.
+Each Interface and assignment script executes in its own thread, isolated from other scripts. With this isolation model, you don’t have to worry about what other scripts are doing. You can include whatever scripts you want in your own namespace. Entity scripts (client or server) use JavaScript function containment to separate the execution of the multiple entity scripts, which all execute in the same thread.
 
 ## Interface Scripts
 
