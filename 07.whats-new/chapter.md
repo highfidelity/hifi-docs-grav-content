@@ -1,8 +1,8 @@
 ---
-title: 'What's New in the Docs'
+title: "What/'s New in the Docs"
 taxonomy:
     category:
-        - docs
+         docs
 ---
 
 #What's New in the Docs
