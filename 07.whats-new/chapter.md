@@ -21,7 +21,7 @@ September 7, 2017 - September 20, 2017
 
 ## Last Updated
 * [Section: All About Scripting](../create-and-explore/all-about-scripting): Updated the entire section with recent information about running scripts and modified some links. 
-* [Tablet Menu](../create-and-explore/explore-interface/menu): Updated tablet images to showcase new login feature and report a problem button in help. 
+* [Tablet Menu](../create-and-explore/explore-interface/menu)(**Beta Release 55**): Updated tablet images to showcase new login feature and report a problem button in help. 
 * [Explore Interface](../create-and-explore/explore-interface): Welcome Wagon images and information added.
 * [Installation](../get-started/installation): Note about custom and express install choice included. 
 * [Entering High Fidelity](/create-and-explore/entering-high-fidelity): Updated the new user experience (desktop users going to a domain with the Welcome Wagon and HMD users heading straight to their sandbox).
