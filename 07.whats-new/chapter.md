@@ -7,10 +7,7 @@ taxonomy:
 
 # What's New in the Docs
 
-Check out the latest changes to our docs!
-
-##
-September 7, 2017 - September 20, 2017
+Check out the latest changes to our docs between **September 7, 2017 - September 20, 2017**.
 
 ## New Docs
 * [DigitalOcean Spaces](../create-and-explore/start-working-in-your-sandbox/digital-ocean/digital-ocean-spaces)
