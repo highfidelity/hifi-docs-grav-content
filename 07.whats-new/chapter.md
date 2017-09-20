@@ -25,7 +25,7 @@ Check out the latest changes to our docs between **September 7, 2017 - September
 * [Installation](../get-started/installation): Note about custom and express install choice included. 
 * [Entering High Fidelity](/create-and-explore/entering-high-fidelity): Updated the new user experience (desktop users going to a domain with the Welcome Wagon and HMD users heading straight to their sandbox).
 
-#### Other Updated Docs  
+#### Other Updates 
 * [Section: All About Scripting](../create-and-explore/all-about-scripting): Updated the entire section with recent information about running scripts and modified some links. 
 * [Selection Script API](../api-reference/selection-script#examples): New, relevant example included. 
 * [Controller API](../api-reference/controller): Updated some methods and example folder links. 
