@@ -28,21 +28,9 @@ The following chart lists the scripts run by default and provides a brief descri
 
 **This table needs to be updated.**
 
-| Script                     | Description                              | Usage Notes                              |
-| -------------------------- | ---------------------------------------- | ---------------------------------------- |
-| `progress.js`              | Displays a progress download indicator when downloads are in progress. | To view the download indicator, you have to download something. It will appear as a progress bar at the bottom center of Interface. |
-| `grab.js`                  | Allows you to grab moveable entities.    | To grab entities in-world.               |
-| `users.js`                 | Allows you to see who is online. It also allows you control your visibility - visible to everyone, your friends, or no one. | Click on People in your tablet to view the people and your connections online. |
-| `handControllerGrab.js`    | Allows you to grab moveable entities with a hand controller (Razer Hydra, HTC Vive, etc.). It works for either near or far objects. | To grab entities in-world.               |
-| `notifications.js`         | Generates notifications.                 | See: [Manage notifications](../../explore-interface/menu/manage-notifications). |
-| `dialTone.js`              | Makes a sound when you connect or disconnect from the server. |                                          |
-| `defaultScripts.js`        | Starts all of the default scripts in this chart. | For information on starting and stopping scripts, see: [Running Scripts in Interface](../run-scripts). |
-| `squeezeHands.js`          | Drives the animation of the hands based on hand controllers. |                                          |
-| `edit.js`                  | Provides a user interface for adding and editing *entities* (objects in High Fidelity are called entities) using your mouse or trackpad. | See: [Create Mode](../../entities/create-mode). |
-| `handControllerPointer.js` | Allows you to control the "mouse" using a hand controller. |                                          |
-| `away.js`                  | Puts your avatar into a kneeling pose and mutes your microphone when you remove the HMD (Oculus Rift, Vive, etc.). |                                          |
-| `examples.js`              | Provides access to a library of examples (Avatars, Entities, Scripts, etc.) that you can download. |                                          |
-| `selectAudioDevice.js`     | Edits the **Audio** menu, allowing you to easily select your audio input and output devices. |                                          |
+| Script              | Description                              | Usage Notes                              |
+| ------------------- | ---------------------------------------- | ---------------------------------------- |
+| `defaultScripts.js` | Starts all of the default scripts in this chart. | For information on starting and stopping scripts, see: [Running Scripts in Interface](../run-scripts). |
 
 ## Available Scripts
 

@@ -37,7 +37,7 @@ Once you have a 2D floor plan, you can upload it to [Archilogic](http://archilog
 
 ## Options for Finding Buildings
 
-If you'd like to use an existing 3D model, you can find options for buildings in High Fidelity under the 'Architecture' section of Marketplace. You can also browse sites like [Clara.io](http://clara.io%2C/) from within High Fidelity or in your desktop browser. Look for existing FBX models to use as buildings, and if necessary, specify a version of the mesh stored as an OBJ to set up collisions properly in your domain.
+If you'd like to use an existing 3D model, you can find options for buildings in High Fidelity under the 'Architecture' section of Marketplace. You can also browse sites like [Clara.io](http://clara.io/) from within High Fidelity or in your desktop browser. Look for existing FBX models to use as buildings, and if necessary, specify a version of the mesh stored as an OBJ to set up collisions properly in your domain.
 
 ## Adding your Building to High Fidelity
 

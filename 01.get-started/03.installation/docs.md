@@ -13,3 +13,7 @@ Select your preferred platform and download High Fidelity's Interface and Sandbo
 * Run High Fidelity's Interface. 
 * Learn how you can create and explore in High Fidelity [here](../../../create-and-explore). 
 
+
+
+
+> > > > > The installer will remember your choice of Express or Custom installation for the next time you update High Fidelity. 
