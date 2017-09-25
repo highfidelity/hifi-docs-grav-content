@@ -145,7 +145,7 @@ taxonomy:
 | MyAvatar.getLeftHandTipPose()            |
 | MyAvatar.getLeftHandTipPosition()        |
 | [MyAvatar.getLeftPalmPosition()](#m24)   |
-| [MyAvatar.getLeftPalmRotation()](#m25    |
+| [MyAvatar.getLeftPalmRotation()](#m25)    |
 | [MyAvatar.getNeckPosition()](#m26)       |
 | MyAvatar.getOrientationForAudio()        |
 | MyAvatar.getOrientationVar()             |
