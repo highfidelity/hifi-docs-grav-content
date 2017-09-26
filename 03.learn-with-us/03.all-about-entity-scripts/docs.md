@@ -558,7 +558,7 @@ with the line:
 
 ``````javascript
 
-CubeSpawner.prototype.clicakDownOnEntity = CubeSpawner.prototype.spawnACube;
+CubeSpawner.prototype.clickDownOnEntity = CubeSpawner.prototype.spawnACube;
 ```
 
 The full content of spawnCube.js should now look like this:
@@ -612,7 +612,7 @@ var deleteAllCubes = function(){
 		}
 }
 
-CubeSpawner.prototype.clicakDownOnEntity = CubeSpawner.prototype.spawnACube;
+CubeSpawner.prototype.clickDownOnEntity = CubeSpawner.prototype.spawnACube;
 
 Entities.deletingEntity.connect(deleteAllCubes);
 
