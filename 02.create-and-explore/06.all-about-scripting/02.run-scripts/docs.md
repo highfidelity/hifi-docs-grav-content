@@ -1,5 +1,5 @@
 ---
-title: 'Run Scripts'
+title: 'How to Run a Script'
 taxonomy:
     category:
         - docs
