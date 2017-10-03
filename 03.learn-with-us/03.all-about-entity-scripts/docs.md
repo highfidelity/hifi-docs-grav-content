@@ -512,10 +512,11 @@ We’ll start by adding in an array that stores references to our right and left
 ``````javascript
 
 var TRIGGER_CONTROLS = [
-
+	Controller.Standard.LT,
+	Controller.Standard.RT, 
+]; 
+var hand;
 ```
-
-Controller.Standard.LT, Controller.Standard.RT, ]; var hand; </syntaxhighlight>
 
 Next, we’ll set up our prototype functions. These functions will be a pseudo-constructor for our cube spawner, and contain functions that will wrap around our createCube and deleteAllCubes functions when specific events occur. Under the last bit of code we just added, copy and paste the following:
 
