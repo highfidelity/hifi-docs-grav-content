@@ -20,7 +20,7 @@ You can use the menu items in High Fidelity to load an avatar you created, to ge
 
 ###Audio
 
-This menu item helps you control the audio output and input while you are in High Fidelity. You can select the device of your choice and also mute your audio. 
+This menu item helps you control the audio output and input while you are in High Fidelity. You can select the device of your choice and also mute your audio. You can also select the correct input or output device for Desktop and VR mode, allowing for a smooth transition when you change modes. 
 
 ![](audio.PNG)
 
