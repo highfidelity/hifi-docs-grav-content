@@ -32,7 +32,7 @@ To back up your entire sandbox:
 1. Quit Sandbox on your machine
 2. Transfer the following folders out of your AppData folders into a new location on your machine or externally:
 
-**windows**
+**Windows**
       - C:\Users\username\AppData\Roaming\High Fidelity\assignment-client
       - C:\Users\username\AppData\Roaming\High Fidelity\domain-server
       - C:\Users\username\AppData\Roaming\High Fidelity\Server Console
