@@ -40,16 +40,16 @@ To back up your entire sandbox:
         ![](appdata-folders.PNG)
 
 **OS X**
-      - /Users/[username]/Library/Application Support/High Fidelity/assignment-client
-      - /Users/[username]/Library/Application Support/High Fidelity/domain-server
-      -/Users/[username]/.config/highfidelity.io/domain-server.json
-      -/Users/[username]/Library/Application Support/High Fidelity/Server Console
+	- /Users/[username]/Library/Application Support/High Fidelity/assignment-client
+	- /Users/[username]/Library/Application Support/High Fidelity/domain-server
+	- /Users/[username]/.config/highfidelity.io/domain-server.json
+	- /Users/[username]/Library/Application Support/High Fidelity/Server Console
 	
 **Linux**
-      -/home/[username]/.local/share/High Fidelity/assignment-client
-      -/home/[username]/.local/share/High Fidelity/domain-server
-      -/home/[username]/.config/highfidelity.io/domain-server.json
-      -/home/[username]/.local/share/High Fidelity/Server Console
+	- /home/[username]/.local/share/High Fidelity/assignment-client
+	- /home/[username]/.local/share/High Fidelity/domain-server
+	- /home/[username]/.config/highfidelity.io/domain-server.json
+	- /home/[username]/.local/share/High Fidelity/Server Console
       
 >>>>> The username in the paths is your username in the computer you are using. 
 
