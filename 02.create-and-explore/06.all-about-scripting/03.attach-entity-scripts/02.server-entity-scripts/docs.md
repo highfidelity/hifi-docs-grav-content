@@ -5,7 +5,7 @@ taxonomy:
 ---
 
 ##Introduction
-Script that are attached to entities and run in the Entity Server are called Server Entity scripts. 
+Scripts that are attached to entities and run in the Entity Server are called Server Entity scripts. 
 
 ###Server Entity Scripts
 
