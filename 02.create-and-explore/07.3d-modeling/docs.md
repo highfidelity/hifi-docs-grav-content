@@ -6,7 +6,7 @@ taxonomy:
 
 ##Introduction
 
-You can [import 3D models into High Fidelity](../create-and-explore/entities/model-entities) using **Create** mode. Models imported into High Fidelity must currently be in OBJ or FBX format, and as with all importers, there are various limitations on the sub-formats supported in the file formats.
+You can [import 3D models into High Fidelity](../entities/model-entities) using **Create** mode. Models imported into High Fidelity must currently be in OBJ or FBX format, and as with all importers, there are various limitations on the sub-formats supported in the file formats.
 
 ### Creating Your Own 3D Content
 
