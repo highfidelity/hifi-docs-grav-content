@@ -12,7 +12,7 @@ To see the list of scripts currently running, select **Edit > Running Scripts** 
 
 ![](running-scripts-panel.png)
 
-At the top of this panel, there are two buttons: **Reload All** and **Stop All**. Just below those two buttons is the list of currently running scripts. When you first start Interface, it runs one or more default scripts designed to improve the experience, and if you have just started Interface, the scripts you see listed here are probably the default scripts.
+At the top of this panel, there are two buttons, **Reload All** and **Stop All**. Just below those two buttons is the list of currently running scripts. When you first start Interface, it runs one or more default scripts designed to improve the experience, and if you have just started Interface, the scripts you see listed here are probably the default scripts.
 
 Interface remembers which scripts are loaded, so that the next time you start Interface, the same Interface scripts will be running.
 
