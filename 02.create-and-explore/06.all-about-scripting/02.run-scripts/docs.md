@@ -5,7 +5,6 @@ taxonomy:
         - docs
 ---
 
-Scripts loaded via Interface are known as *Interface scripts*. Interface scripts; however, are not the only kind of scripts that can be used with High Fidelity. You can find more information about other types of scripts and how to use them in: [Scripts Overview](https://wiki.highfidelity.com/wiki/Scripts_Overview).
 
 ## Know Which Scripts Are Currently Running
 
