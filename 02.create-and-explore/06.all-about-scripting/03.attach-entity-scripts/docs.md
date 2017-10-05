@@ -7,7 +7,7 @@ taxonomy:
 ##Introduction
 You can make content in High Fidelity interactive by attaching scripts to entities. You have the option to attach a client script, a server script, or both a client and server script to each individual entity.
 
-The following pages show how you might create the two types of entity scripts:
+The following pages contain instructions to create:
 
 - [Creating Client Entity Scripts](./client-entity-scripts)
 - [Creating Server Entity Scripts](./server-entity-scripts)
