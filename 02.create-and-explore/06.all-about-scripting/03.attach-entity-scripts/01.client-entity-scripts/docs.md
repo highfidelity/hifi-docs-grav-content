@@ -12,9 +12,9 @@ There can be many entities in a domain, and each can have a different associated
 
 You can attach a client entity script to an entity by:
 - Going to **Create** and opening the **Properties** tab. 
-- Select the entity you want to attach the script to. 
-- Scroll down to find the `scripts` property. 
-- Add the script URL. 
+- Selecting the entity you want to attach the script to. 
+- Scrolling down to find the `scripts` property. 
+- Entering the script URL. 
 
 ####Example
 Here is a client entity script, `changeColorOnClickDown.js`, which when attached to a non-model entity (like a box or sphere), will change the color of the entity when you click on it:
