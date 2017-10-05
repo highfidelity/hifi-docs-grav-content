@@ -29,8 +29,7 @@ taxonomy:
 ##Methods <a id="methods"></a>
 | Methods                                  |
 | ---------------------------------------- |
-| [Entities.
-(QString,QUuid,QVariantMap)](#m1) |
+| [Entities.addAction(QString,QUuid,QVariantMap)](#m1) |
 | [Entities.addEntity(EntityItemProperties)](#m2) |
 | Entities.addEntity(EntityItemProperties,bool) |
 | Entities.addModelEntity(QString,QString,QString,bool,glm::vec3,glm::vec3) |
