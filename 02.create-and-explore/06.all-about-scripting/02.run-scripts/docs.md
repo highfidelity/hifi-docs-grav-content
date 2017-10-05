@@ -41,7 +41,7 @@ You can close or restart any or all of the running scripts. To reload or stop a 
 
 ## Get Started Writing Your Own Scripts
 
-To get started writing your own scripts, first read [how to set up your Sandbox](https://wiki.highfidelity.com/wiki/Create_content). 
+To get started writing your own scripts, read [this tutorial](../../../learn-with-us/get-started-with-scripting).
 
 High Fidelity uses the JavaScript syntax and provides a robust [JavaScript API](../../../api-reference). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
 
