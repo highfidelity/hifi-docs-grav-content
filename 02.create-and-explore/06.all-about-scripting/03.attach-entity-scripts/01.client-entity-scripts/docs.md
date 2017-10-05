@@ -41,7 +41,7 @@ You'll notice that this example is written as a JavaScript class prototype funct
 
 To learn more:
 - For more information on events available, see the High Fidelity [JavaScript API](../../../../api-reference).
-- For a list of event methods that may be defined, see [Entities_callbacks](../../api-reference/entities#callbacks).
+- For a list of event methods that may be defined, see [Entities_callbacks](../../../../api-reference/entities#callbacks).
 - For more examples, see the [GitHub repository](https://github.com/highfidelity/hifi/tree/master/scripts/tutorials).
 
 
