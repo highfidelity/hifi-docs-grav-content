@@ -5,7 +5,7 @@ taxonomy:
 ---
 
 ##Introduction
-There can be many entities in a domain, and each can have a different associated server entity script. These run in the same environment and namespace in the Entity Script Server.
+Script that are attached to entities and run in the Entity Server are called Server Entity scripts. 
 
 ###Server Entity Scripts
 
