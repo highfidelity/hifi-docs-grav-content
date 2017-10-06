@@ -1,8 +1,7 @@
 ---
 title: Basic Build Guide
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
 ## Overview
