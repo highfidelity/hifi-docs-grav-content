@@ -36,32 +36,32 @@ In this four-part tutorial, we’re going to go through the process of creating 
 
   In addition to the scripts that we’ll be writing, our Shortbow game requires several types of components to make it interactive and fun. You can download the full set of project assets [here](https://github.com/highfidelity/hifi/tree/master/unpublishedScripts/marketplace/shortbow), or create your own 3D assets in a tool like Clara.io, Blender, 3DS Max, or Maya. If you do plan to build your own models, make sure that your collision, grab, equip, and properties are set properly. For this tutorial, we recommend downloading the existing assets to start. Including models, you should have the following assets:
 
-| **Name**            | **Path** | **File Type** |
-| ------------------- | -------- | ------------- |
-| escape              | /sounds/ | WAV           |
-| explosion           | /sounds/ | WAV           |
-| fight               | /sounds/ | WAV           |
-| gameOn              | /sounds/ | WAV           |
-| gameOver            | /sounds/ | WAV           |
-| letTheGamesBegin    | /sounds/ | WAV           |
-| spawn               | /sounds/ | WAV           |
-| targetHit           | /sounds/ | WAV           |
-| tenSecondsRemaining | /sounds/ | WAV           |
-| waveComplete        | /sounds/ | WAV           |
-| Amber               | /models/ | FBX           |
-| shortbow-platform   | /models/ | FBX           |
-| shortbow-button     | /models/ | FBX           |
-| shortbow-scoreboard | /models/ | FBX           |
-| Arrow_impact.1.L    | /bow/    | WAV           |
-| Bow_draw1.L         | /bow/    | WAV           |
-| String_release2.L   | /bow/    | WAV           |
-| arrow-sparkle       | /bow/    | PNG           |
-| arrow               | /bow/    | FBX           |
-| bow-deadly          | /bow/    | FBX           |
-| bow                 | /bow/    | SVO.JSON      |
-| bow                 | /bow/    | JSON          |
-| bow_collision_hull  | /bow/    | OBJ           |
-| notch               | /bow/    | WAV           |
+| **Name**            | **Path** 		| **File Type** |
+| ------------------- | -------- 		| ------------- |
+| escape              | /sounds/ 		| WAV           |
+| explosion           | /sounds/ 		| WAV           |
+| fight               | /sounds/ 		| WAV           |
+| gameOn              | /sounds/ 		| WAV           |
+| gameOver            | /sounds/ 		| WAV           |
+| letTheGamesBegin    | /sounds/ 		| WAV           |
+| spawn               | /sounds/ 		| WAV           |
+| targetHit           | /sounds/ 		| WAV           |
+| tenSecondsRemaining | /sounds/ 		| WAV           |
+| waveComplete        | /sounds/ 		| WAV           |
+| Amber               | /models/ 		| FBX           |
+| shortbow-platform   | /models/ 		| FBX           |
+| shortbow-button     | /models/ 		| FBX           |
+| shortbow-scoreboard | /models/ 		| FBX           |
+| Arrow_impact.1.L    | /bow/    		| WAV           |
+| Bow_draw1.L         | /bow/    		| WAV           |
+| String_release2.L   | /bow/    		| WAV           |
+| arrow-sparkle       | /bow/    		| PNG           |
+| arrow               | /bow/models/    | FBX           |
+| bow-deadly          | /bow/models/    | FBX           |
+| bow                 | /bow/    		| SVO.JSON      |
+| bow                 | /bow/    		| JSON          |
+| bow_collision_hull  | /bow/models/    | OBJ           |
+| notch               | /bow/    		| WAV           |
 
   [Asset Download Link](https://github.com/highfidelity/hifi/tree/master/unpublishedScripts/marketplace/shortbow)
 
