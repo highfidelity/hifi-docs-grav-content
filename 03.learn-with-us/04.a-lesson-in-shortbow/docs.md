@@ -6,8 +6,8 @@ taxonomy:
 
 In this four-part tutorial, we’re going to go through the process of creating a Shortbow VR wave game that we can add to our domain in High Fidelity. Before diving into this section, we recommend that you familiarize yourself with the various types of scripts that run in High Fidelity and go through the following tutorials for setting up your domain and getting ready to build a game:
 
-  - [Setup Your Domain to Build in High Fidelity](http://localhost/learn-with-us/setup-your-domain-to-build)
-  - [Get Started with Scripting in High Fidelity](http://localhost/learn-with-us/get-started-with-scripting)
+  - [Setup Your Domain to Build in High Fidelity](https://docs.highfidelity.com/learn-with-us/setup-your-domain-to-build)
+  - [Get Started with Scripting in High Fidelity](https://docs.highfidelity.com/learn-with-us/get-started-with-scripting)
 
   If you want to check out what we'll be building, you can [get Shortbow on Marketplace](https://highfidelity.com/marketplace/items/76711111-ef6d-457b-aef0-63e9206d2964)! After you run spawnShortbow.js in your domain, you should see a castle appear. Using the trigger on your controllers, select the 'Start' button on the target to start the game!
 
@@ -599,13 +599,13 @@ The spawnBow script has two main parts: the first part of the script calculates 
     1. In your project’s root folder, create a new script called shortbowGameManager.js
     2. [Copy and paste this code into your script](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/shortbowGameManager.js)
 
-  Our four game states are defined at line 23, where we create a few variable names to specify which state our game is in at any particular time. We then load in our audio assets from our asset folder so that we can play different sound effects when events occur in our game, and create a couple of helper functions for encoding URL parameters and updating scoring.
+  Our four game states are defined at line 25, where we create a few variable names to specify which state our game is in at any particular time. We then load in our audio assets from our asset folder so that we can play different sound effects when events occur in our game, and create a couple of helper functions for encoding URL parameters and updating scoring.
 
-  At line 75, we begin defining our enemy properties, which sets our enemy entity scripts for the server and for the client. Our enemy properties also specify physics behaviors, models, and our communication channel, so we know that the entity is linked back to our game.
+  At line 104, we begin defining our enemy properties, which sets our enemy entity scripts for the server and for the client. Our enemy properties also specify physics behaviors, models, and our communication channel, so we know that the entity is linked back to our game.
 
-  The code in lines 132- 161 sets up our game manager’s initial state, including variables to specify the number of lives our player will start with and empty arrays to store references back to the bows and enemies.
+  The code in lines 184-241 sets up our game manager’s initial state, including variables to specify the number of lives our player will start with and empty arrays to store references back to the bows and enemies.
 
-  Starting at line 162, we set up our game manager prototype, which contains a number of different functions that are called at various points throughout the game loop.
+  Starting at line 242, we set up our game manager prototype, which contains a number of different functions that are called at various points throughout the game loop.
 
   Like our other entities, our game has a server entity component to it.
 
@@ -614,23 +614,16 @@ The spawnBow script has two main parts: the first part of the script calculates 
 
   ```
   (function() {
-      Script.include('utils.js?' + Date.now());
-      Script.include('spawnShortbow.js?' + Date.now());
-      Script.include('shortbowGameManager.js?' + Date.now());
+      Script.include('utils.js');
+      Script.include('shortbow.js');
+      Script.include('shortbowGameManager.js');
+	  
+	  TEMPLATES = SHORTBOW_ENTITIES.Entities;
 
       this.entityID = null;
       var gameManager = null;
       this.preload = function(entityID) {
           this.entityID = entityID;
-
-          var props = Entities.getEntityProperties(entityID, ['position', 'userData']);
-          var data = utils.parseJSON(props.userData);
-          if (data === undefined) {
-              print("Error parsing shortbow entity userData, returning");
-              return;
-          }
-
-          var rootPosition = props.position;
 
           var bowPositions = [];
           var spawnPositions = [];
