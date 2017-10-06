@@ -1,8 +1,7 @@
 ---
 title: 'Clean Installation of High Fidelity'
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 
 ---
 
