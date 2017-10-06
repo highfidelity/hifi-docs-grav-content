@@ -36,6 +36,7 @@ The following table displays how complete the API reference is. We will be updat
 | Face Tracker             | Yes                              | No                    |
 | Global Services          | No                               | No                    |
 | HMD                      | Yes                              | Partial               |
+| Limitless                | Yes                              | No                    |
 | LOD Manager              | Yes                              | No                    |
 | Menu                     | Yes                              | Partial               |
 | Messages                 | Yes                              | No                    |
@@ -49,12 +50,8 @@ The following table displays how complete the API reference is. We will be updat
 | Script                   | Yes                              | Partial               |
 | Script Discovery Service | No                               | No                    |
 | Sound                    | Yes                              | Partial               |
-| Speech Recongnizer       | No                               | No                    |
+| Speech Recognizer        | No                               | No                    |
 | User Activity Logger     | Yes                              | No                    |
 | Users                    | Yes                              | Yes                   |
 | Vec3                     | Yes                              | Yes                   |
 | Window                   | Yes                              | No                    |
-| Limitless                | Yes                              | No                    |
-
-
-
