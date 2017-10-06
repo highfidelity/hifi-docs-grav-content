@@ -1,5 +1,7 @@
 ---
 title: 'Create an Avatar Switching Tablet App'
+taxonomy:
+  category: docs
 ---
 
 ## Overview
