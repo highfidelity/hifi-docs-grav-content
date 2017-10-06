@@ -1,13 +1,9 @@
 ---
 title: 'Xcode'
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
-```
-
-```
 To have **Xcode** generate C++ files with boilerplates and include guards that are compliant with the [Coding Standard](http://docs.highfidelity.io/v1.0/docs/coding-standard) you can add an Xcode file template.
 
 There's an excellent guide for that process [here](http://www.bobmccune.com/2012/03/04/creating-custom-xcode-4-file-templates/).
