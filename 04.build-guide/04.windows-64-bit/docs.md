@@ -1,5 +1,7 @@
 ---
 title: 'Windows 64-bit'
+taxonomy:
+  category: docs
 ---
 
 Use this guide to create your first High Fidelity build for Windows 64-bit.
