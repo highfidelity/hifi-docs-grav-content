@@ -34,7 +34,7 @@ The following table displays how complete the API reference is. We will be updat
 | Controller               | Yes                              | Yes                   |
 | Entities                 | Yes                              | Yes                   |
 | Face Tracker             | Yes                              | No                    |
-| Global Services          | No                               | No                    |
+| Global Services          | Yes                              | No                    |
 | HMD                      | Yes                              | Partial               |
 | Limitless                | Yes                              | No                    |
 | LOD Manager              | Yes                              | No                    |
@@ -46,9 +46,10 @@ The following table displays how complete the API reference is. We will be updat
 | Overlays                 | Yes                              | No                    |
 | Quaternion               | Yes                              | Yes                   |
 | Recording                | Partial                          | No                    |
+| Reticle                  | Yes                              | No                    |
 | Scene                    | Yes                              | No                    |
 | Script                   | Yes                              | Partial               |
-| Script Discovery Service | No                               | No                    |
+| Script Discovery Service | Yes                              | No                    |
 | Sound                    | Yes                              | Partial               |
 | Speech Recognizer        | No                               | No                    |
 | User Activity Logger     | Yes                              | No                    |

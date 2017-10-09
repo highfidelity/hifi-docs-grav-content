@@ -20,8 +20,6 @@ taxonomy:
 | Events                                   |
 | ---------------------------------------- |
 | GlobalServices.connected()               |
-| GlobalServices.destroyed()               |
-| GlobalServices.destroyed(QObject*)       |
 | GlobalServices.disconnected(QString)     |
 | GlobalServices.downloadInfoChanged(DownloadInfoResult) |
 | GlobalServices.findableByChanged(QString) |
