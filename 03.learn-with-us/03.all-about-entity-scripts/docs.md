@@ -1,5 +1,7 @@
 ---
 title: 'All About Entity Scripts'
+taxonomy:
+  category: docs
 ---
 
 In this three-part tutorial, we’ll be building on the topics introduced in [Get Started with Scripting in High Fidelity](../get-started-with-scripting) to further explore the different types of script behavior that you can write for elements in your domains.

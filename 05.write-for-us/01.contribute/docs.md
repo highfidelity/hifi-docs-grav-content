@@ -1,5 +1,7 @@
 ---
 title: Contribute
+taxonomy:
+  category: docs
 ---
 
 You can contribute to our docs as well! 

@@ -1,8 +1,7 @@
 ---
 title: 'Coding Standards'
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
 Note that the current code base does not necessarily follow this with 100% consistency. It will be an ongoing process to try and sanitize the existing code to match these guidelines.

@@ -1,8 +1,7 @@
 ---
 title: 'Cent OS'
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
 The goal with this document is for you have your very own build of the High Fidelity Interface that lets you be a part of our ever growing and exciting world!

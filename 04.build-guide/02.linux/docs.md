@@ -1,8 +1,7 @@
 ---
 title: Linux
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
 *Build High Fidelity in Linux.*

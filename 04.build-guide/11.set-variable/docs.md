@@ -1,9 +1,7 @@
 ---
 title: 'Set Environment Variables'
-taxonomy: 
-category:
-	docs
-
+taxonomy:
+  category: docs
 ---
 
 *Learn how to set environment variables if you're a developer or a QA tester.*

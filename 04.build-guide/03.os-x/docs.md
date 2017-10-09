@@ -1,8 +1,7 @@
 ---
 title: 'OS X'
-taxonomy: 
-category:
-	docs
+taxonomy:
+  category: docs
 ---
 
 *Build High Fidelity in OS X.*

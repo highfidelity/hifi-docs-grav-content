@@ -1,5 +1,7 @@
 ---
 title: 'Get Started with Scripting'
+taxonomy:
+  category: docs
 ---
 
 ## Introduction to Scripting
