@@ -25,7 +25,7 @@ In High Fidelity, baking helps in improving the efficiency with which models are
 
 * Add a model to your asset browser by clicking "Choose File". The uploaded model immediately begins baking. Any .fbx model will take less than a minute, while skyboxes will take longer. You will need to reload Interface to use the baked version. ![](model-baking.PNG)
 * Once your model has finished baking, a check mark will appear under the "Use Baked?" column. ![](finished-baking.PNG)
->>>>> You can only bake objects that have the extension .fbx and skyboxes, in domains where you have create access. 
+>>>>> You can only bake objects that have the extension .fbx and skyboxes, in domains where you have create access. You cannot bake .fbx objects referencing external textures. Only .fbx objects with embedded textures can be baked. 
 
 
 * You can check if the assets in the domain have been baked by checking the "Use Baked?" column next to each asset in the asset browser. 
@@ -33,8 +33,14 @@ In High Fidelity, baking helps in improving the efficiency with which models are
   * When you uncheck the "Use baked (optimized) version" checkbox for assets that have already been baked, they will have a stop symbol in the under "Use Baked?" column. After you uncheck the checkbox, you have to reload Interface to use the unbaked version. ![](uncheck-bake.PNG)
   * When an asset cannot be baked, it will have two dashes next to it under the "Use Baked?" column. ![](no-bake.PNG)
 
-
-
-
 When you first launch your asset browser with the baking feature, all assets that can be baked will be baked. This is a one-time process. Any models or skyboxes you add to your domain afterwards, will be baked on upload. 
+
+#### Baking an Avatar
+
+If you need an avatar to stay in your domain, you have to upload it to your Asset Server. The avatar or .fst file contains a texdir - something with which you can specify where to load textures from. 
+
+If you try baking an .fst with a texdir, the textures for the baked avatar will fail to load. You can either:
+* Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
+* Upload an .fst file without a texdir. 
+
 
