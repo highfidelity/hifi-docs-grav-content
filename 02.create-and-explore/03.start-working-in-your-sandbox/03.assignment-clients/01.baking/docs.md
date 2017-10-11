@@ -37,12 +37,23 @@ When you first launch your asset browser with the baking feature, all assets tha
 
 #### Baking an Avatar
 
-Your avatar is usually not on your Asset Server. But, it is possible upload an avatar's .fbx and .fst to the asset server in a domain. If you do so, the avatar would only be accessible in that particular domain.
+Avatars are usually not uploaded to the asset server in a domain. This is because an avatar uploaded to the asset server would only be available in that particular domain and not anywhere else. 
 
-If you decide to upload an avatar to the asset server in your domain, there are some things you should keep in mind. 
-* The avatar's .fst file contains a texdir - something with which you can specify where to load textures from. 
-* If you try baking an .fst with a texdir, the textures for the baked avatar will fail to load. You can either
-    * Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
-    * Upload an .fst file without a texdir. 
+But, if you wish to have an avatar available only in a particular domain and you have permissions to upload files to the asset server in that domain, you could do so. To upload an avatar to the asset server, you have to upload the avatar's .fst and .fbx files. 
+
+Your avatar's folder usually contains an .fst file, an .fbx file and a texture directory (the folder named textures in the image below). 
+
+![](avatar-fst-fbx.png) 
+
+The texture directory (texdir) contains the textures for your avatar. You can also create avatars that have textures embedded within the .fbx file. Such avatars do not have a texdir. 
+
+Your avatar's .fst file is linked to the .fbx file and also contains the texdir if the textures are not embedded in the .fbx file. 
+
+If you decide to upload an avatar to the asset server, here are some points to keep in mind before baking the avatar:
+
+* When you bake the .fbx file of an avatar (.fst) that has a texdir, the textures for the baked avatar will fail to load. To load the avatar with its textures, you can either:
+  * Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
+  * Embed the textures in the avatar's .fbx file and then upload it to the asset server for baking. 
+
 
 
