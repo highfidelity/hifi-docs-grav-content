@@ -37,10 +37,12 @@ When you first launch your asset browser with the baking feature, all assets tha
 
 #### Baking an Avatar
 
-If you need an avatar to stay in your domain, you have to upload it to your Asset Server. The avatar or .fst file contains a texdir - something with which you can specify where to load textures from. 
+Your avatar is usually not on your Asset Server. But, it is possible upload an avatar's .fbx and .fst to the asset server in a domain. If you do so, the avatar would only be accessible in that particular domain.
 
-If you try baking an .fst with a texdir, the textures for the baked avatar will fail to load. You can either
-* Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
-* Upload an .fst file without a texdir. 
+If you decide to upload an avatar to the asset server in your domain, there are some things you should keep in mind. 
+* The avatar's .fst file contains a texdir - something with which you can specify where to load textures from. 
+* If you try baking an .fst with a texdir, the textures for the baked avatar will fail to load. You can either
+    * Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
+    * Upload an .fst file without a texdir. 
 
 
