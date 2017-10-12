@@ -47,13 +47,15 @@ Your avatar's folder usually contains an .fst file, an .fbx file and a texture d
 
 The texture directory (texdir) contains the textures for your avatar. You can also create avatars that have textures embedded within the .fbx file. Such avatars do not have a texdir. 
 
+>>>>> Sometimes, even avatars that have textures embedded in their .fbx files can end up having a texure directory. 
+
 Your avatar's .fst file is linked to the .fbx file and also contains the texdir if the textures are not embedded in the .fbx file. 
 
 If you decide to upload an avatar to the asset server, here are some points to keep in mind before baking the avatar:
 
 * When you bake the .fbx file of an avatar (.fst) that has a texdir, the textures for the baked avatar will fail to load. To load the avatar with its textures, you can either:
   * Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
-  * Embed the textures in the avatar's .fbx file and then upload it to the asset server for baking. 
+  * Embed the textures in the avatar's .fbx file, ensure that the .fst file doesn't contain the texdir, and then upload it to the asset server for baking. 
 
 
 
