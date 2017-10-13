@@ -16,7 +16,8 @@ taxonomy:
 	<div class="area-holder">
 	</div>
 	<div class="area-content">
-		[plugin:youtube](https://www.youtube.com/watch?v=R0zBnxiRSbM)
+		
+		<div class="youtube-player" data-id="R0zBnxiRSbM"></div>
 		<div class="sec-pg-bg">
 		</div>
 		<div class="sec-pg-title">
@@ -64,3 +65,4 @@ taxonomy:
 		
 	</div>
 </div>
+
