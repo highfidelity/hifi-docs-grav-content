@@ -12,7 +12,7 @@ You can [import 3D models into High Fidelity](../entities/model-entities) using 
 
 There are quite a few 3D modeling ssoftware packages available online. For instance, [Blender](https://www.blender.org/) is a powerful free modeling tool which can save models as .fbx objects. Blender can also be used to convert other formats like 3DS, VRML, or X3D into FBX files for High Fidelity.
 
-We also suport textures in the following formats - PNG and JPEG. 
+We also support textures in the following formats - PNG and JPEG. 
 
 **Quick checklist for Blender 2.73 - 2.74**
 
