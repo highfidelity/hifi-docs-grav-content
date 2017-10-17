@@ -48,7 +48,7 @@ You can exit the Create Mode by closing the window on the tablet.
 
 ### Adding Entities Using the create Toolbar
 
-When you clock on the Create button, a window opens showing the different types of entities you can use. You can add an entity by clicking on the button for that entity. For instance, if you want to add a cube entity, click on cube. 
+When you click on the Create button, a window opens showing the different types of entities you can use. You can add an entity by clicking on the button for that entity. For instance, if you want to add a cube entity, click on cube. 
 
 ![](create-add-cube.PNG)
 
