@@ -1903,7 +1903,7 @@ if (Entities.getDrawZoneBoundaries()){
 
 ## getEntityProperties()<a id="m19"></a>
 
-`getEntityProperties()` gets the current [properties](#properties) for the specified entity. `getEntityProperties()` takes an EntityItemID as an argument and returns [EntityItemProperties][properties](#properties) . To just get specific [properties](#properties), use the optional `desiredProperties` argument. This argument takes an array of property name strings.
+`getEntityProperties()` gets the current [properties](#properties) for the specified entity. `getEntityProperties()` takes an EntityItemID as an argument and returns [EntityItemProperties](#properties) . To just get specific [properties](#properties), use the optional `desiredProperties` argument. This argument takes an array of property name strings.
 
 Note: If the script engine context does not have access to entities, this function will not return results.
 
