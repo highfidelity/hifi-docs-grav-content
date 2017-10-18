@@ -12,7 +12,7 @@ This page shows you how to broadcast from your domain.
 
 ##Introduction
 
-If you're holding an event and cannot support too many people visiting your domain, you can broadcast the events in your domain to other domains. 
+If you're holding an event and cannot support many users visiting your domain, you can broadcast the events in your domain to other domains. 
 
 ### Prerequisites
 
