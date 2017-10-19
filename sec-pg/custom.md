@@ -23,9 +23,9 @@ taxonomy:
 		<div class="sec-pg-title">
 			<h1>Make Connections!</h1>
 			<h3>Make new friends, meet and connect!</h3>
-			<!-- <a class="btn-play">
+			<a class="btn-play">
 				<img src="/sec-pg/play-triangle-icon.png">
-			</a> -->
+			</a>
 		</div>
 	</div>
 	
