@@ -36,7 +36,7 @@ Each entity within your High Fidelity domain will contain a number of different 
 3. Spend some time getting familiar with the properties that are presented to you by changing the shape and color of the cube you just created.
 4. Take a look at the different physics properties you can set with this video: [Setting Grab Properties](https://wiki.highfidelity.com/wiki/Setting_Grab_Properties) and make your cube throwable.
 
-When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://wiki.highfidelity.com/wiki/Entity_Properties_API), which we’ll cover in depth in future modules.
+When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://docs.highfidelity.com/api-reference/entities), which we’ll cover in depth in future modules.
 
 ## Write and Execute Your Own Scripts
 
