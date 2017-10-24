@@ -33,4 +33,17 @@ To upload a model, complete the following steps:
 
 The model will appear in front of your avatar.
 
+You can also add a model through the Asset Browser. 
+
+1. Click on "Open This Domain's Asset Server".![](asset-server.PNG)
+2. You'll see your Asset Browser. ![](asset-browser.PNG)
+3. Click on "Choose File" to select a file from your system. Click "Open" to add the model to your Asset Browser.  ![](choose.PNG)
+4. A window will pop up asking you to specify the asset path. ![](asset-path-specify.PNG)
+5. Enter a folder name before the model path to save it on your Asset Browser. ![](asset-path.PNG) Click OK. 
+6. Your model will be available in its folder in the Asset Browser. Select your model and click "Add to World". ![](my-model.PNG)
+7. Choose if you want your model to be Dynamic and specify its collision properties. Then click "Add". ![](model-p.PNG)
+
+The model will appear in front of your avatar.
+
+
 Once placed in world, you can [create and edit the entity using your mouse or your controller](../create-mode).
