@@ -12,8 +12,6 @@ taxonomy:
 
 | Events                               |
 | ------------------------------------ |
-| Clipboard.destroyed()                |
-| Clipboard.destroyed(QObject*)        |
 | Clipboard.objectNameChanged(QString) |
 | Clipboard.readyToImport()            |
 

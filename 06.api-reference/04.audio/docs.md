@@ -49,7 +49,6 @@ taxonomy:
 | Audio.devices.input.data(QModelIndex,int) |
 | Audio.devices.input.dataChanged(QModelIndex,QModelIndex) |
 | Audio.devices.input.dataChanged(QModelIndex,QModelIndex,QVector<int>) |
-| Audio.devices.input.destroyed(QObject*)  |
 | Audio.devices.input.deviceChanged(QAudioDeviceInfo) |
 | Audio.devices.input.fetchMore(QModelIndex) |
 | Audio.devices.input.flags(QModelIndex)   |
@@ -105,8 +104,6 @@ taxonomy:
 | Audio.devices.output.dataChanged(QModelIndex,QModelIndex) |
 | Audio.devices.output.dataChanged(QModelIndex,QModelIndex,QVector<int>) |
 | Audio.devices.output.deleteLater()       |
-| Audio.devices.output.destroyed()         |
-| Audio.devices.output.destroyed(QObject*) |
 | Audio.devices.output.deviceChanged(QAudioDeviceInfo) |
 | Audio.devices.output.fetchMore(QModelIndex) |
 | Audio.devices.output.flags(QModelIndex)  |

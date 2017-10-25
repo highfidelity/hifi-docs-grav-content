@@ -20,7 +20,7 @@ In High Fidelity, baking helps in improving the efficiency with which models are
 
 ###Baking in Your Asset Browser
 
-* Go to **Menu > Edit > Asset Browser** to access your asset browser. ![](edit-asset-browser.PNG)![](asset-browser.PNG)
+* Go to **Menu > Edit > Asset Browser** to access your asset browser. ![](edit-asset-browser.PNG)![](asset-browser.PNG)![](baking-tooltip.PNG)
 >>>When you first launch your asset browser with the baking feature, all assets that can be baked will start baking. This might show up as heightened CPU usage. This is a one-time process.
 
 * Add a model to your asset browser by clicking "Choose File". The uploaded model immediately begins baking. Any .fbx model will take less than a minute, while skyboxes will take longer. You will need to reload Interface to use the baked version. ![](model-baking.PNG)
@@ -34,6 +34,8 @@ In High Fidelity, baking helps in improving the efficiency with which models are
   * When an asset cannot be baked, it will have two dashes next to it under the "Use Baked?" column. ![](no-bake.PNG)
 
 When you first launch your asset browser with the baking feature, all assets that can be baked will be baked. This is a one-time process. Any models or skyboxes you add to your domain afterwards, will be baked on upload. 
+
+>>> You can select multiple files in the Asset Browser by right clicking each file. After selecting multiple files, you can click 'Use Baked' to bake them at one go (if they aren't baked). ![](select-multiple.PNG) 
 
 #### Baking an Avatar
 
@@ -58,4 +60,15 @@ If you decide to upload an avatar to the asset server, here are some points to k
   * Embed the textures in the avatar's .fbx file, ensure that the .fst file doesn't contain the texdir, and then upload it to the asset server for baking. 
 
 
+
+
+#### Baking a JavaScript File
+
+Now, when you load your asset server, all unbaked JavaScript (JS) files in the asset server will be automatically baked. This happens only the first time. Later, anytime you upload a JS file, it will be baked. 
+
+Baking a JS file involves removing white spaces and comments in the script to shrink its size. A baked script is transmitted and interpreted faster because of its smaller size. 
+
+You will still have the option to use the unbaked version of the JS file in the Asset Browser. 
+
+> > > > > A baked JS file will not be very easy to read as all the white spaces and comments will be removed. If you wish to read and understand any JS files that have been baked, you will need to use its unbaked version.
 
