@@ -140,7 +140,7 @@ High Fidelity cannot spend, observe, share, lose, or recover your wallet, passph
 
 
 ###Blockchain Architecture Questions
-
+<br>
 <a id="q15"></a>
 **Why use HFC and not just use another cryptocurrency like Ethereum or ERC-20 Tokens?  **<br> 
 HFC transactions will have very low costs, where as other currency transactions typically cost more money than we anticipate users wishing to spend on an individual digital good. Controls over transaction costs are not supported by Ethereum and other networks.  
