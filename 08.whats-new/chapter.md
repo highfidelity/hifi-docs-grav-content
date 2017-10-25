@@ -7,7 +7,7 @@ taxonomy:
 
 # What's New in the Docs
 
-Check out the latest changes to our docs between **October 7, 2017 - October 23, 2017**.
+Check out the latest changes to our docs between **October 7, 2017 - October 25, 2017**.
 
 ## New Docs
 #### Beta Release 57
