@@ -11,10 +11,10 @@ Check out the latest changes to our docs between **October 7, 2017 - October 25,
 
 ## New Docs
 #### Beta Release 57
-* [Broadcasting from a Domain](../create-and-explore/start-working-in-your-sandbox/broadcasting)
 * [Shapes: Create in VR](../create-and-explore/marketplace-apps/shapes)
 
 #### Other Updates 
+* [Broadcasting from a Domain](../create-and-explore/start-working-in-your-sandbox/broadcasting)
 * [High Fidelity Commerce](../high-fidelity-commerce)
 * [Digital Asset Registry FAQs](../high-fidelity-commerce/faq-section)
 
