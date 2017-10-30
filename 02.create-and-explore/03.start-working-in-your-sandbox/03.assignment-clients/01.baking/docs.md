@@ -28,10 +28,10 @@ In High Fidelity, baking helps in improving the efficiency with which models are
 >>>>> You can only bake objects that have the extension .fbx, in domains where you have create access. You cannot bake .fbx objects referencing external textures. Only .fbx objects with embedded textures can be baked. 
 
 
-* You can check if the assets in the domain have been baked by checking the "Use Baked?" column next to each asset in the asset browser. 
-  * An asset that has already been baked will have a triangular sign under the "Use Baked?" column, signifying that it has already been baked and cannot be baked again. This symbol also shows up when there have been errors while baking an asset. ![](baked.PNG)
-  * When you uncheck the "Use baked (optimized) version" checkbox for assets that have already been baked, they will have a stop symbol in the under "Use Baked?" column. After you uncheck the checkbox, you have to reload Interface to use the unbaked version. ![](uncheck-bake.PNG)
-  * When an asset cannot be baked, it will have two dashes next to it under the "Use Baked?" column. ![](no-bake.PNG)
+* You can check if the assets in the domain have been baked by checking the "Use Baked" column next to each asset in the asset browser. 
+  * An asset that has already been baked will have a triangular sign under the "Use Baked" column, signifying that it has already been baked and cannot be baked again. This symbol also shows up when there have been errors while baking an asset. ![](baked.PNG)
+  * When you uncheck the "Use baked version" checkbox for assets that have already been baked, they will have a stop symbol in the under "Use Baked" column. After you uncheck the checkbox, you have to reload Interface to use the unbaked version. ![](uncheck-bake.PNG)
+  * When an asset cannot be baked, it will have two dashes next to it under the "Use Baked" column. ![](no-bake.PNG)
 
 When you first launch your asset browser with the baking feature, all assets that can be baked will be baked. This is a one-time process. Any models or skyboxes you add to your domain afterwards, will be baked on upload. 
 
@@ -56,7 +56,7 @@ Your avatar's .fst file is linked to the .fbx file and also contains the texdir 
 If you decide to upload an avatar to the asset server, here are some points to keep in mind before baking the avatar:
 
 * When you bake the .fbx file of an avatar (.fst) that has a texdir, the textures for the baked avatar will fail to load. To load the avatar with its textures, you can either:
-  * Not bake the avatar by unchecking the box "Use baked (optimized) version" in the Asset Browser. 
+  * Not bake the avatar by unchecking the box "Use baked version" in the Asset Browser. 
   * Embed the textures in the avatar's .fbx file, ensure that the .fst file doesn't contain the texdir, and then upload it to the asset server for baking. 
 
 
