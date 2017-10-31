@@ -6,7 +6,7 @@ taxonomy:
 
 *Learn how to upload items to the Marketplace*
 
-# Overview
+## Overview
 
 Learn how you can upload your items to the Marketplace and be made available to all users in High Fidelity. 
 
