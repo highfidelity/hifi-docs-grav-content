@@ -8,9 +8,13 @@ taxonomy:
 
 <!--While modifying the content of this page, ensure to only replace the text and image and video URL information. Contact Nimisha to make changes to the design. -->
 
+<!-- Summary Begin -->
+<div class="summary-block">
+	<p>Want to virtually hang out with someone you met at one of our in-world events? After a handshake, your friend’s username will pop up and will be entered as your connection!</p>
+</div>
+<!-- Summary End -->
 
-
-
+===
 
 <div class="video-container">
 	<div class="area-holder">
