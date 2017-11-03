@@ -111,7 +111,7 @@ taxonomy:
 | Controller.Hardware.OculusTouch          | number |                                          |
 | Controller.Standard                      | number |                                          |
 | Controller.objectName                    | string |                                          |
-| MappingObject.name<a id="mapobj"></a>                       | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
+| MappingObject.name<a id="mapobj"></a>    | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
 | MappingObject.channels                   | object | A JSON object of routes which define which input goes to which output. |
 
 
@@ -185,8 +185,6 @@ taxonomy:
 | Controller.captureMouseEvents()          |
 | Controller.captureTouchEvents()          |
 | Controller.captureWheelEvents()          |
-| Controller.destroyed()                   |
-| Controller.destroyed(QObject*)           |
 | [Controller.hardwareChanged()](#e1)      |
 | Controller.inputEvent(int,float)         |
 | [Controller.keyPressEvent(KeyEvent)](#e2) |
@@ -343,7 +341,7 @@ The following table provides a complete reference for all of the actions an enti
 | stopFarTrigger, startFarTrigger, continueFarTrigger | These methods will be called when a user is more than 0.3 meters away from a non-physical entity, and starts, stops, or continues squeezing the trigger. NOTE: This entity must have the following field in the userData for these methods to be triggered:grabbableKey: { wantsTrigger: true } | A light switch that can be toggled on and off from a distance. |
 | stopNearTrigger, startNearTrigger, continueNearTrigger | These methods will be called when a user is less than 0.3 meters away from a non-physical entity, and starts, stops, or continues squeezing the trigger. NOTE: This entity must have the following field in the userData for these methods to be triggered:grabbableKey: { wantsTrigger: true } | A doorbell that rings when a user puts her hand close to it and squeezes the trigger |
 | startNearGrab, continueNearGrab          | These methods will be called when a user is less than 0.3 meters from a physical entity and starts or continues to squeeze the trigger. | A magic ball that glows with healing light when it's being held close. |
-| startDistanceGrab, continueDistanceGrab   | These methods will be called when a user is more than 0.3 meters from a physical entity and starts or continues to squeeze the trigger. | A comet that emits beautiful icy particle trails when a user is dragging it through the sky. |
+| startDistanceGrab, continueDistanceGrab  | These methods will be called when a user is more than 0.3 meters from a physical entity and starts or continues to squeeze the trigger. | A comet that emits beautiful icy particle trails when a user is dragging it through the sky. |
 | releaseGrab                              | This method is called when a user releases the trigger when having been either near or distance grabbing a physical entity | Turn off the magical glowing ball when it's released |
 | startEquip, continueEquip, releaseEquip  | These methods are called when a user starts, continues, or stops equipping a physical entity. | A pistol that stays in the user's hand even when he's not holding the trigger down. |
 

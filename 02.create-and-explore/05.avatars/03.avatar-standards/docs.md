@@ -16,6 +16,8 @@ Presently, you need to host your own avatar file somewhere, unless you are using
 
 ![](hifi-skel.png)
 
+>>>>> You can download the standard High Fidelity skeleton [here](http://hifi-content.s3.amazonaws.com/Examples%20Content/skeleton/standard_hifi_skeleton.fbx).
+
 For the Reference pose, we propose a TPose which complies with the specifications below. You may wish to refer to the properly configured example avatar fbx with source files.
 
 - The character must face along the positive direction of the Z-axis.

@@ -12,13 +12,12 @@ In this tutorial, you’ll learn how to:
 
 - Switch in and out of desktop and VR modes
 - Turn on the editing and developer menus
-- Add a cube to our domain
-- Access and use the script editor in Interface
+- Add a cube to your domain
 - View running scripts and start new ones
 
 ## Domain Editing
 
-If you have permissions to edit on a given domain (either your sandbox domain, or in the ‘Welcome’ domain, which is open to any High Fidelity user) you will be able to modify the world around you in real time. On your tablet menu, you can click ‘Edit’ to open up a secondary menu that enables you to add entities to your domain and to change properties for the objects in the environment.
+If you have permissions to create and edit in a given domain (either your sandbox domain, or another domain) you will be able to modify the world around you in real time. On your tablet or HUD, you can click ‘Create’ to open up a secondary menu that enables you to add entities to your domain and to change properties for the objects in the environment.
 
 *Entity* - an object with a set of properties within a domain in High Fidelity
 
@@ -37,7 +36,7 @@ Each entity within your High Fidelity domain will contain a number of different 
 3. Spend some time getting familiar with the properties that are presented to you by changing the shape and color of the cube you just created.
 4. Take a look at the different physics properties you can set with this video: [Setting Grab Properties](https://wiki.highfidelity.com/wiki/Setting_Grab_Properties) and make your cube throwable.
 
-When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://wiki.highfidelity.com/wiki/Entity_Properties_API), which we’ll cover in depth in future modules.
+When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://docs.highfidelity.com/api-reference/entities), which we’ll cover in depth in future modules.
 
 ## Write and Execute Your Own Scripts
 

@@ -42,7 +42,7 @@ taxonomy:
 		</div>
 		<div class="sec-pg-text">
 			<h5>Add Connections</h5>
-			<p>Log into High Fidelity, and you’ll instantly be ready to add friends as your connections with a simple handshake.</p>
+			<p>Log into High Fidelity, and you’ll be ready to add friends as your connections with a simple handshake.</p>
 		</div>
 	</div>
 </div>
@@ -69,4 +69,3 @@ taxonomy:
 		
 	</div>
 </div>
-
