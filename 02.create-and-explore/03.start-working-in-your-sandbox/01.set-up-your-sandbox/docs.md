@@ -43,57 +43,51 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 ## Steps
 
 1. ###Visit Your Home Domain
-	![](\console-go-home.png)
+  ![](\console-go-home.png)
 
-	When launched, Sandbox downloads a default set of domain content (models, scripts,
-	etc.) and creates a Home domain on your local machine.	
-	
-	To visit your Home domain, click on the High Fidelity icon in your system tray (Windows)
-	or in the top menu bar (OS X) and in the menu that opens, select **Go Home**.
-	
-	This starts the domain server and launches Interface with your avatar at the home
-	domain's index position. By default, the index position is (0, 0, 0) which will put your
-	avatar right in the middle of the default content.
-	
-	With the domain server running, if your network is not overly restrictive, your Home
-	domain can be reached by other users; but, it won't be easy to find.
-	
-	![](\your-sandbox.png)
+  When launched, Sandbox downloads a default set of domain content (models, scripts,
+  etc.) and creates a Home domain on your local machine.	
 
-2. ###Configure Your Domain’s Security Settings
+  To visit your Home domain, click on the High Fidelity icon in your system tray (Windows)
+  or in the top menu bar (OS X) and in the menu that opens, select **Go Home**.
 
-	![](\menu-settings.png)
+  This starts the domain server and launches Interface with your avatar at the home
+  domain's index position. By default, the index position is (0, 0, 0) which will put your
+  avatar right in the middle of the default content.
 
-	Before making your domain widely available, you should review your domain’s security 	   settings to ensure that they meet your needs.
+  With the domain server running, if your network is not overly restrictive, your Home
+  domain can be reached by other users; but, it won't be easy to find.
 
-	By default, anyone can visit your domain, anyone can edit your domain content, and 		anyone can add new entities to the domain.
+  ![](\your-sandbox.png)
 
-	To change these settings, click on the High Fidelity icon in your system tray (Windows) or 	       in the top menu bar (OS X) and in the menu that opens, select **Settings**.
+2. ###Configure Your Domain
 
-	Your default web browser will open at [**http://localhost:40100**](http://localhost:40100/). In the Domain Settings page select **Security** from the 			options in the column on the left. This will take you to the domain security options.
-
-	![](\security-options.png)
-
-	Here you can make the necessary changes to set who can can visit your domain, edit 		your domain, and add entities.
-
-	Check out more about server settings [here](../server-settings-for-your-domain)!
+  - To start configuring your domain, access your domain server settings. You can do this by going to http://localhost:40100/settings/. Or, you can right click the High Fidelity icon in the system icon tray, and then click "Settings".![](menu-settings.png)
+  - You will be redirected to the Setup Wizard. You can also skip using the wizard if you'd like to modify the settings without using the wizard. ![](setup-wizard-1.PNG) Connect your High Fidelity account to get started on your domain server settings. You will be redirected to high Fidelity's sign in page, where you can sign up or create your High Fidelity account. You will then be prompted to click a button to generate your access token. Copy this token to paste it in the pop-up window in the wizard. ![](setup-wizard-2.PNG)
+  - You will now see your temporary place name. You can choose a custom place name or continue using your IP address or temporary place name to give access to visitors. Click Next. ![](setup-wizard-3.PNG)
+  - In this step, you must remember to **add your High Fidelity username** to grant yourself administrator privileges. This is beacause admin privileges are for anyone using the local machine your domain is on. If you would like to manage your domain from other machines, you will require admin privileges. You can add other authorized usernames as well. You can also set permissions for
+    - Who can visit your domain
+    - Who can rez (create) items in your domain
+      ![](setup-wizard-4.PNG)![](setup-wizard-5.PNG)![](setup-wizard-6.PNG)![](setup-wizard-7.PNG)
+  - You will be redirected to the main domain settings page where you can manage other aspects of your domain. ![](setup-wizard-8.PNG)
+  - You can change a number of settings on this page such Networking, Entity Server Settings, Security and more. You can also visit your domain in VR using the link on the top right. ![](security-options.png)
 
 
 3. ### Share Your Domain with Other Users
 
     With the domain server running, if your network is not overly restrictive, your domain 		can be reached by other users; but, it may not be easy to find. To reach your domain, 		other users will need to know your domain's [place name](../place-names) - the domain's 	unique name within High Fidelity. When Sandbox launched for the first 	time, your Home domain was assigned a randomly generated place name.
 
-	To share this place name with other users, select **Share** from the Sandbox menu.
+    To share this place name with other users, select **Share** from the Sandbox menu.
 
-	![](\menu-share.png)
+    ![](\menu-share.png)
 
-	The link displayed is the location of your Home domain.
+    The link displayed is the location of your Home domain.
 
-	![](\share-place.png)
+    ![](\share-place.png)
 
-	Copy this link to share it with others. They can visit your domain in Interface by selecting 	**Menu > Navigate > Show Address Bar**, by clicking **Go To** on the tablet, or by 	hitting the **Enter** key on the keyboard, and specifying the link.
+    Copy this link to share it with others. They can visit your domain in Interface by selecting 	**Menu > Navigate > Show Address Bar**, by clicking **Go To** on the tablet, or by 	hitting the **Enter** key on the keyboard, and specifying the link.
 
->>>>>If you have a High Fidelity account and are logged in, depending on your High 		Fidelity account settings, you may appear online in your domain to other users making you easily and immediately reachable by anyone who can see that you are online.
+    >>>>>If you have a High Fidelity account and are logged in, depending on your High 	Fidelity account settings, you may appear online in your domain to other users making you easily and immediately reachable by anyone who can see that you are online.
 
 ---
 >>>If the domain is not reachable, it is possible that your network or the connecting client’s network uses symmetric NAT. In this case, for the domain to be reachable, you will need to open up the appropriate ports on your firewall to be reachable by basically all users (other than those on extremely restrictive networks that do not allow outbound traffic on unknown ports).
