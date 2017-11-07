@@ -7,7 +7,7 @@ taxonomy:
 
 # What's New in the Docs
 
-Check out the latest changes to our docs between **October 7, 2017 - October 25, 2017**.
+Check out the latest changes to our docs between **October 26, 2017 - November 7, 2017**.
 
 ## New Docs
 * [Basic Scripting Examples](../learn-with-us/scripting-basics): Basic scripting examples and tutorial for a beginner
