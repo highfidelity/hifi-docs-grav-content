@@ -10,31 +10,27 @@ taxonomy:
 Check out the latest changes to our docs between **October 7, 2017 - October 25, 2017**.
 
 ## New Docs
-#### Beta Release 57
-* [Shapes: Create in VR](../create-and-explore/marketplace-apps/shapes)
+* [Basic Scripting Examples](../learn-with-us/scripting-basics): Basic scripting examples and tutorial for a beginner
+* [Scripting Console](../create-and-explore/all-about-scripting/scripting-console): Added a doc on accessing the scripting console
+* [Buy from the Marketplace](../create-and-explore/marketplace/buy): New doc due to marketplace section reorganization
 
-#### Other Updates 
-* [Broadcasting from a Domain](../create-and-explore/start-working-in-your-sandbox/broadcasting)
-* [High Fidelity Commerce](../high-fidelity-commerce)
-* [Digital Asset Registry FAQs](../high-fidelity-commerce/faq-section)
 
 
 
 ## Last Updated
 #### Beta Release 57
-* [Baking Your Assets](/create-and-explore/start-working-in-your-sandbox/assignment-clients/baking#baking-a-javascript-file): JS files are now auto-baked in the Asset Server, Asset browser UI tweaked.
-* [Model Entities](../create-and-explore/entities/model-entities): Asset Browser shows "Open" now. 
-* [MacOS](../build-guide/mac-os): Build guide updated. 
+* [Set Up your Sandbox](/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox#configure-your-domain’s-security-settings): Setup Wizard updates
+
+  ​
 
 #### Other Updates 
-* [All About Scripting](../create-and-explore/all-about-scripting)
-* [How It Works](../get-started/what-is-high-fidelity/how-it-works)
-* [Baking Your Assets](/create-and-explore/start-working-in-your-sandbox/assignment-clients/baking)
-* [Get Started with Scripting](../learn-with-us/get-started-with-scripting)
-* [Contribute](../write-for-us/contribute)
-* [Audio API](../api-reference/audio)
-* [Clipboard API](../api-reference/clipboard)
-* [Controller API](../api-reference/controller)
+- [Marketplace](../create-and-explore/marketplace): Minor updates with reorganization
+- [Get Your Item Assets](../create-and-explore/marketplace/add-new-item/get-assets): Minor updates with reorganization
+- [Add Your Item to the Marketplace](../create-and-explore/marketplace/add-new-item/add-item): Minor updates with reorganization
+- [Baking Your Assets](../create-and-explore/start-working-in-your-sandbox/assignment-clients/baking): Updated Asset Server screenshots
+- [Asset Server (ATP)](../create-and-explore/start-working-in-your-sandbox/assignment-clients): Updated Asset Server screenshots
+- [Get Started with Scripting](../learn-with-us/get-started-with-scripting): Improved doc
+- [Place Names](../create-and-explore/start-working-in-your-sandbox/place-names): Improved doc
 
 
 
