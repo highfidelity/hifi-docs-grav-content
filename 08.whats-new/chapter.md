@@ -19,7 +19,7 @@ Check out the latest changes to our docs between **October 26, 2017 - November 7
 
 ## Last Updated
 #### Beta Release 57
-* [Set Up your Sandbox](/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox#configure-your-domain’s-security-settings): Setup Wizard updates
+* [Set Up your Sandbox](/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox#configure-your-domain’s-security-settings): Setup Wizard updates 
 
 
 #### Other Updates 
