@@ -38,7 +38,7 @@ taxonomy:
 		</div>
 		<div class="sec-pg-text">
 			<h5>Add a New Cloud Domain</h5>
-			<p>With DigitalOcean droplets, you can now host your domain on the cloud in a few easy steps. Get started here.</p>
+			<p>With DigitalOcean droplets, you can now host your domain on the cloud in a few easy steps. Get started <a href="https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/digital-ocean">here</a>.</p>
 		</div>
 	</div>
 </div>
