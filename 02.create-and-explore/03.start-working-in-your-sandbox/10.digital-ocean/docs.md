@@ -19,7 +19,7 @@ You can now host your High Fidelity domain either on your local machine or serve
 #### Connecting Your DigitalOcean Account
 
 - Log in or sign up with your High Fidelity username and password on https://highfidelity.com.
-- Hover over your username to see the various menu options. Click **Cloud Domains**.![](cloud-do-1.PNG)
+- Hover over your username to see the various menu options. Click **Cloud Domains**. You can also go to https://highfidelity.com/user/cloud_domains ![](cloud-do-1.PNG)
 - You'll be redirected to the Cloud Domains. You can click **Create New** to create a new cloud domain. ![](cloud-do-2.PNG)
 - Before you set up a cloud domain, you need to connect your DigitalOcean account. If you don't have one, you can sign up now. ![](cloud-do-3.PNG)
 - You will be redirected to the DigitalOcean authorization page. Once you've signed in, you will see the following window, where you can choose the virtual machine you want to host your domain on. ![](cloud-do-4.PNG)The specifications and prices are listed as per user requirements. Once you select a type of virtual machine, you can select the geographical location you would like your server to be located at, from the dropdown menu. ![](cloud-do-5.PNG)
