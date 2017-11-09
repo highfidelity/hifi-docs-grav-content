@@ -32,7 +32,7 @@ You can now host your High Fidelity domain either on your local machine or serve
 - In the last step, you need to add a username and password to secure access to your domain server settings. ![](setup-wizard-9.PNG)
 - You have completed configuring your cloud hosted domain. You can visit your domain in High Fidelity (VR) or access the domain server settings. ![](setup-wizard-10.PNG)
 
-
+>>>>> Learn how to backup everything you have on your virtual machine/droplet [here](https://www.digitalocean.com/help/technical/backup/).
 
 
 
