@@ -1,5 +1,5 @@
 ---
-title: Make Connections!
+title: Host Your Space with DigitalOcean!
 published: true
 taxonomy:
     category:
