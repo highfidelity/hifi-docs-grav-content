@@ -19,7 +19,7 @@ Coach, PenaltyBox
 
 ```
 
-#### 1.1.2 Private class variables must be in mixed case prefixed with an underscore
+#### 1.1.2 Private and protected class variables must be in mixed case prefixed with an underscore
 
 ```
 _puck, _team
@@ -303,6 +303,8 @@ public:
     // this routine needs to be fast, we'll inline it below
     void doSomethingHighPerformance() const;
     ...
+protected:
+    double _mass;
 private:
     int _radius;
 }
