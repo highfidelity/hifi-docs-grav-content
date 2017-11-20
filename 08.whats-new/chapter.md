@@ -7,7 +7,7 @@ taxonomy:
 
 # What's New in the Docs
 
-Check out the latest changes to our docs between **October 26, 2017 - November 7, 2017**.
+Check out the latest changes to our docs between **November 7, 2017 - November 20, 2017**.
 
 ## New Docs
 * [Host Your Domain with DigitalOcean](../create-and-explore/start-working-in-your-sandbox/digital-ocean)
