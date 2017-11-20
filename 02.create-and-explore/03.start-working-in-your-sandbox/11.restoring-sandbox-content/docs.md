@@ -8,13 +8,17 @@ taxonomy:
 
 ## Overview
 
-This page details how you can back up and restore your sandbox content. 
+This page details how you can back up and restore your sandbox and sandbox content. 
 
 ##Introduction
 
-If you have content that you want to save in your sandbox to restore from at a later date, you can create backups and restore them from the file system.
+Depending on your requirements, you can either
+- [Backup only all the entities in your sandbox](#a1): This means all the objects you either created in your domain or the ones you imported. Once you create this backup, you can create a new domain and upload all your entities.  
+- [Backup your entire sandbox](#a2): This means you will be backing up all the information about your sandbox. When you do this, you can restore your entire sandbox including server information, as it was. It doesn't only include the entities in your sandbox. 
 
-###Backup Only Entities
+Check out how you can do both!
+
+####Backup Only Entities <a id=#a1"></a>
 
 To backup only the entities in your sandbox:
 
@@ -25,7 +29,7 @@ To backup only the entities in your sandbox:
 
 The backup files are configured in your domain settings, and will not immediately be replaced. Older copies of your backups will be overwritten based on your domain server backup settings. 
 
-###Backup Your Sandbox
+####Backup Your Sandbox <a id=#a2"></a>
 
 To back up your entire sandbox: 
 
