@@ -1,6 +1,6 @@
 ---
 title: Backing Up Your Entire Sandbox
-  taxonomy:
+taxonomy:
     category: docs
 ---
 
