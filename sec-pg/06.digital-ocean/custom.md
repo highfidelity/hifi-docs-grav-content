@@ -17,7 +17,7 @@ taxonomy:
 	</div>
 	<div class="area-content">
 		
-		<div class="youtube-player" data-id="gZXWNp49eFE"></div>
+		<div class="youtube-player" data-id="504A7TUycJA"></div>
 		<div class="sec-pg-bg">
 		</div>
 		<div class="sec-pg-title">
