@@ -39,7 +39,7 @@ taxonomy:
 <br>
 <a id="q1"></a>
 **What is the Digital Asset Registry and how does it relate to the rest of High Fidelity?**<br> 
-High Fidelity is an open source software that allows creators to host their own virtual worlds, and for virtual reality and desktop computer users to explore and interact with those worlds.
+High Fidelity is open source software that allows creators to host their own virtual worlds, and for virtual reality and desktop computer users to explore and interact with those worlds.
 HFC will provide a low fee cryptocurrency for use in the High Fidelity Marketplace and between users. It provides a cryptographically secure way to certify the integrity and provenance of virtual goods from that marketplace. 
 <p align="right"><a href="#top">Back to Top</a></p>
 <br>
