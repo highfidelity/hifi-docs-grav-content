@@ -44,7 +44,7 @@ You can write your scripts in an external editor of your choice.
 
 With your script editor open, you can now view and modify scripts in your domain or attached to various entities. To start, we’ll do a basic ‘Hello, World’:
 
-1. Type print("Hello, World"); into your script editor's window.
+1. Type `print("Hello, World");` into your script editor's window.
 2. Save your script as testScript.js on your computer. 
 3. On your tablet, go to Menu > Settings and check both Advanced Menu and Developer Menu. 
 4. On your tablet, go to Menu > Edit > Open and Run Script. 
@@ -54,12 +54,14 @@ With your script editor open, you can now view and modify scripts in your domain
 We’ll now replicate our steps from earlier to create our cube through a script instead of adding it manually. Replace your `print(“Hello, World”)` code with the following example:
 
 ```
+
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
-type: "Box",
-name: "ScriptBox",
-position: position,
-color: { red: 0, green: 0, blue: 155 }};
+    type: "Box",
+    name: "ScriptBox",
+    position: position,
+    color: { red: 0, green: 0, blue: 155 }
+};
 Ent = Entities.addEntity(properties);
 print("Entity added");
 
