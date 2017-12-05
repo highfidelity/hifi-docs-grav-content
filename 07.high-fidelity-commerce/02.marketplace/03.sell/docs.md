@@ -14,7 +14,9 @@ Learn how you can upload your items to the Marketplace and be made available for
 
 ## Introduction
 
-If you've created a 3D Model or written a script, you can make it available for other users to download. If you wish for your item to be sold at a price, you have to pay a fee (1000 HFC) to post your item in the Marketplace. Check out our fee structure [here](https://highfidelity.com/commerce/fee-structure). 
+If you've created a 3D Model or written a script, you can make it available for other users to download. 
+
+> > > In the future, we will be including a fee to post your item for sale on the Marketplace. Check out our fee structure [here](https://highfidelity.com/commerce/fee-structure). Currently, there is no fee to post your item to the Marketplace. 
 
 Let's go through the process of uploading an item to Marketplace!
 
