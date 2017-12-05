@@ -56,7 +56,7 @@ taxonomy:
 <div id="sec-pg-body-3" class="sec-pg-content content-reversed">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/digital-ocean/cloud-domains.png" alt="cloud domains" title="SCloud Domains">
+			<img src="/sec-pg/create-in-vr/img02.jpg" alt="img" title="img">
 		</div>
 		<div class="sec-pg-text">
 			<h5>Become a Creator Easily</h5>
