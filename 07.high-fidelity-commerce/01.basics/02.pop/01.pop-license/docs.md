@@ -1,5 +1,5 @@
 ---
-title: 'Commerce is Here: Switch to the PoP License'
+title: 'Switch to the PoP License'
 taxonomy:
 	category: docs
 ---
