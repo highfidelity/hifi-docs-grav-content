@@ -1,5 +1,5 @@
 ---
-title: Add Your Item to Marketplace
+title: Add Your Item
 taxonomy:
     category: docs
 ---
@@ -38,6 +38,7 @@ const MODEL_URL = Script.resolvePath("assets/model.fbx");
 - Add a preview image. This image should have a minimum resolution of 1478 x 828 pixels. 
 - Check the box to agree to the Terms of Marketplace and submit by clicking the 'Submit for Review' button. ![](scr24.PNG)
 - Congratulations! Your item has now been submitted for review. You can check under 'My Items' to see if your items were approved to be published on Marketplace. If the item is still being reviewed, you'll see 'In Review' on the top right corner of the item window. We will contact you if any changes need to be made to your submission. Once reviewed, you can go to your profile, and check 'My Items' if your item has been published. ![](scr26.PNG)
+- The Digital Asset Registry has to approve your item. Once your item is approved, you will receive a certificate with edition 0 of your item. If you wish to sell your item, all users purchasing your item will receive subsequent editions of your item. 
 
 
 ### Editing Your Uploaded Items

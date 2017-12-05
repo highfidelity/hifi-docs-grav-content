@@ -1,5 +1,5 @@
 ---
-title: Sell Your Items in the Marketplace
+title: Sell Your Items
 taxonomy:
 	category: docs
 ---
