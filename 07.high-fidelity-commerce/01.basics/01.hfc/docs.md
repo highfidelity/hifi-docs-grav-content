@@ -4,4 +4,23 @@ taxonomy:
 	category: docs
 ---
 
-**Coming Soon**
+*Learn more about High Fidelity Coins (HFC)*
+
+## Introduction
+
+High Fidelity Coins is a cryptocurrency that is empowered by blockchain technology.
+
+We are currently giving out the currency for anyone interested in participating in the closed beta for High Fidelity Commerce. If you want to [get your inital HFC grant](/get-hfc), you first need to [set up your Wallet](../../marketplace-wallet-setup).
+
+These coins are to be used as currency for any commerce transactions in the Marketplace. Since we are using blockchain technology, all transactions with HFCs will be publically recorded and stored. 
+
+Your Wallet will be secured using ECDSA public-private key pairs, security picture and passphrase. Learn more about your Wallet [here](../../marketplace-wallet-setup). 
+
+HFC is not for speculators to hold, and should be used in transactions in High Fidelity. HFC intended to be stable currency and used support a healthy and vibrant virtual economy for digital goods and assets.
+
+
+
+
+
+
+
