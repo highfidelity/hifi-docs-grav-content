@@ -16,6 +16,8 @@ Learn how you can upload your items to the Marketplace and be made available for
 
 If you've created a 3D Model or written a script, you can make it available for other users to download. 
 
+> > > In the future, we will be including a fee to post your item for sale on the Marketplace. Check out our fee structure [here](https://highfidelity.com/commerce/fee-structure). Currently, there is no fee to post your item to the Marketplace. 
+
 Let's go through the process of uploading an item to Marketplace!
 
 We're going to upload a model of a water fountain. This process covers three major steps:
