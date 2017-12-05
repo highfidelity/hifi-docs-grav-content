@@ -1,5 +1,5 @@
 ---
-title: Create Your Own VR Experience
+title: Install High Fidelity
 published: true
 taxonomy:
     category:
@@ -45,7 +45,7 @@ taxonomy:
 <div id="sec-pg-body-2" class="sec-pg-content">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/digital-ocean/cloud-domains.png" alt="cloud domains" title="Cloud Domains">
+			<img src="/sec-pg/install/img01.jpg" alt="img" title="Img">
 		</div>
 		<div class="sec-pg-text">
 			<h5>Explore!</h5>
@@ -56,11 +56,11 @@ taxonomy:
 <div id="sec-pg-body-3" class="sec-pg-content content-reversed">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/install/img01.jpg" alt="img" title="Image">
+			<img src="/sec-pg/install/shapes.jpg" alt="shapes" title="shapes">
 		</div>
 		<div class="sec-pg-text">
 			<h5>Create!</h5>
-			<p>Join our community of creators and VR enthusiasts, building and bringing to life their own VR experiences. High Fidelity enables people connected by interest, community, and friendship to come together from anywhere in the world.</p>
+			<p>Join our community of creators and VR enthusiasts, building and bringing to life their own VR experiences. Use Marketplace apps like Shapes to create in your very own virtual environment!</p>
 		</div>
 		
 	</div>
