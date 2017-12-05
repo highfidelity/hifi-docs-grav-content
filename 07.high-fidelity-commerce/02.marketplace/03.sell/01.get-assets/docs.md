@@ -25,7 +25,7 @@ We want to upload a model of water fountain to Marketplace. We have the .fbx fil
 - You'll see both files in the folder you specified. ![](scr17.PNG)
 
 ### Some important points:
-1. Use only content which you are legally entitled to. Since everything on the Marketplace is [Creative Commons](https://creativecommons.org/licenses/), be sure that all and any content you are using is compatible with the respective license.
+1. Use only content which you are legally entitled to. 
 2. Do not use a code obfuscator, our review team needs to be able to read your scripts.
 3. Audio should sound clean and be 32 bit, 48 khz wav files.
 4. If your item is an object that must be rezzed by a script, attach that script to a dummy object, export it as a .JSON and use that as your main file.

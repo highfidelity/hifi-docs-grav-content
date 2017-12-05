@@ -34,7 +34,7 @@ taxonomy:
 <div id="sec-pg-body-1" class="sec-pg-content content-reversed">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/digital-ocean/droplets.png" alt="droplets" title="DigitalOcean droplets" >
+			<img src="/sec-pg/digital-ocean/sky-terminal.jpg" alt="sky terminal" title="Sky Terminal">
 		</div>
 		<div class="sec-pg-text">
 			<h5>The Platform for Social VR</h5>
@@ -45,7 +45,7 @@ taxonomy:
 <div id="sec-pg-body-2" class="sec-pg-content">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/digital-ocean/cloud-domains.png" alt="cloud domains" title="Cloud Domains">
+			<img src="/sec-pg/create-in-vr/img01.jpg" alt="img01" title="img">
 		</div>
 		<div class="sec-pg-text">
 			<h5></h5>
@@ -56,7 +56,7 @@ taxonomy:
 <div id="sec-pg-body-3" class="sec-pg-content content-reversed">
 	<div class="container">
 		<div class="sec-pg-image">
-			<img src="/sec-pg/digital-ocean/sky-terminal.jpg" alt="sky terminal" title="Sky Terminal">
+			<img src="/sec-pg/digital-ocean/cloud-domains.png" alt="cloud domains" title="SCloud Domains">
 		</div>
 		<div class="sec-pg-text">
 			<h5>Become a Creator Easily</h5>
