@@ -14,7 +14,7 @@ Here is some basic information that will help you understand how commerce works 
 
 * **Cryptographically-secured Wallet**: Users will be able to participate in transactions using their Wallet, which will be an app on their tablet in High Fidelity. Your Wallet is secured using a security picture and a passphrase which includes ECDSA public-private keys pairs. These key pairs are used to sign each transaction. 
 
-* **Proof of Provenance (PoP) certificate**: This certificate is generated for every transaction between a user's Wallet and the Markeplace. This certificate's ID is stored on the blockchain. The certificate contains static properties that can help in identifying the item and the owner. These properties cannot be altered. Currently, we only support objects that contain a file type .JSON. Support for avatars and other file types will be coming soon. 
+* **Proof of Provenance (PoP) certificate**: This certificate is generated for every transaction between a user's Wallet and the Markeplace. This certificate's ID is stored on the blockchain. The certificate contains static properties that can help in identifying the item and the owner. These properties cannot be altered, except by transfer of the PoP Certificate. Currently, we only support objects that contain a file type .JSON. Support for avatars and other file types will be coming soon. 
 
 * **Buy and Sell**: Users can [buy items](../marketplace/buy) from the Marketplace or [Avatar Island](../avatar-wearables/buy) (currently). 
 
