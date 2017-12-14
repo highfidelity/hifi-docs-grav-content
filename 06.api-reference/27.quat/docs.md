@@ -707,9 +707,9 @@ var velocity = properties.velocity;
 var yAxis = {x: 0, y: 1, z: 0};
 var forward = Vec3.multiplyQbyV(rotation, yAxis);
 
-// we use angleBetween() to compute the delta rotation that brings
+// we use rotationBetween() to compute the delta rotation that brings
 // the forward direction parallel to the velocity
-var deltaRotation = Quat.angleBetween(forward, velocity);
+var deltaRotation = Quat.rotationBetween(forward, velocity);
 
 // we can now compute the final rotation of the object
 var finalRotation = Quat.multiply(deltaRotation, rotation);
