@@ -68,7 +68,7 @@ var angle = Quat.angle(rotation);
 
 ## Quat.angleAxis()<a id="m2"></a>
 
-Compute the quaternion that corresponds to a rotation of an `angle` (radians) about some normalized `axis`.
+Compute the quaternion that corresponds to a rotation of an `angle` (degrees) about some normalized `axis`.
 
 
 ### Function
@@ -719,7 +719,7 @@ var finalRotation = Quat.multiply(deltaRotation, rotation);
 
 ## Quat.safeEulerAngles()<a id="m22"></a>
 
-Compute the pitch, yaw, and roll angles (in radians) that correspond to a rotation.
+Compute the pitch, yaw, and roll angles (in degrees) that correspond to a rotation.
 
 The **safe** in the name signifies that the angle results will not be garbage even when the rotation is particularly difficult to decompose.
 
@@ -733,7 +733,7 @@ The **safe** in the name signifies that the angle results will not be garbage ev
 
 ### Returns
 
-**angles: vec3**: The pitch, yaw, and roll angles (in radians) stored in a **Vec3** that correspond to the rotation.
+**angles: vec3**: The pitch, yaw, and roll angles (in degrees) stored in a **Vec3** that correspond to the rotation.
 
 ### Examples
 
