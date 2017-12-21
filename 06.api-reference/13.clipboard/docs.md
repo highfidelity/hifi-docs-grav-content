@@ -35,6 +35,8 @@ Exports entities to the JSON filename specified.
 |true|boolean|The export was successful.|
 |false|boolean|The export was not successsful.|
 
+---
+
 ### exportEntities(filename, x, y, z, scale) <a id="m2"></a>
 
 Exports entities with centers within a cube to a JSOn file. 
