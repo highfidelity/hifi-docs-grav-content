@@ -20,6 +20,7 @@ The Clipboard Scripting Interface powers the import and export of entities (in J
 ###exportEntities(filename, entityIDs) <a id="m1"></a>
 Exports entities to the JSON filename specified. 
 **Parameters**
+
 | Name |Type | Description |
 | ---- |---- | ----------- |
 |filename|string|The path and name of the file where the entities are to be exported. Must have the extention .json.|
