@@ -10,7 +10,7 @@ The Clipboard Scripting Interface powers the import and export of entities (in J
 
 | Methods                                  |
 | ---------------------------------------- |
-| [`Clipboard.exportEntities(filename, entityIDs`)](#m1) |
+| [`Clipboard.exportEntities(filename, entityIDs)`](#m1) |
 | [`Clipboard.exportEntities(filename, x, y, z, scale)`](#m2) |
 | [`Clipboard.getClipboardContentsLargestDimension()`](#m3) |
 | [`Clipboard.getContentsDimensions()`](#m4)      |
