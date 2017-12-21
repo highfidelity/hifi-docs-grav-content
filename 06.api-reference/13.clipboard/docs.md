@@ -68,7 +68,9 @@ Computes the largest dimension of the extents of the contents held in the clipbo
 |number|The largest dimension computed|
 
 ### getContentsDimensions() <a id="m4"></a>
+
 Computes the extents of the contents held in the clipboard. 
+
 **Returns**
 
 |Type|Description|
