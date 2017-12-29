@@ -56,3 +56,6 @@ The following table displays how complete the API reference is. We will be updat
 | Users                    | Yes                              | Yes                   |
 | Vec3                     | Yes                              | Yes                   |
 | Window                   | Yes                              | No                    |
+| Limitless                   | Yes                              | No                    |
+| Paths                   | Yes                              | Yes                    |
+| Picks                   | Yes                              | Yes                    |
