@@ -8,14 +8,11 @@ After this tutorial, you'll be able to create your own tablet app in High Fideli
 
 ### What is a tablet app?
 
-Tablet apps are customizable programs running on the latest Tablet UI framework introduced to High Fidelity from [Beta Release 33](https://forums.highfidelity.com/t/beta-release-33/12307). While the tablet comes out-of-the-box for everyone with a couple of system apps such as Snapshot, People and Edit, the Tablet UI framework is designed to serve way beyond that. With the Tablet, you can create your own apps and UI elements. ![](tablet-app-tutorial.jpeg)
-
-We’ve moved the old HUD based UI into the tablet as apps.
+Tablet apps are customizable programs running on the latest Tablet UI framework introduced to High Fidelity. While the tablet comes out-of-the-box for everyone with a couple of system apps such as Snapshot, People and Create, the Tablet UI framework is designed to serve way beyond that. With the Tablet, you can create your own apps and UI elements. ![](tablet-app-tutorial.jpeg)
 
 Let's get started and create a fun little app called “Gemstone Magic Maker”. The app gives you quick access to a collection of colorful gemstones made out of High Fidelity’s shape primitives. With a quick tap on the tablet, you can spawn out these precious stones just like magic!
 
 ####Sharing gemstones with your friends in High Fidelity
-
 
 * Select your gem type: ![](tablet-app-2.jpeg)
 * Create your gemstone: ![](tablet-app-3.gif)
