@@ -3,34 +3,33 @@ title: 'Create a Tablet App'
 taxonomy:
     category: docs
 ---
+*Learn how you can make your own tablet app.*
 
-After this tutorial, you'll be able to create your own tablet app in High Fidelity! We’ll walk through the process of writing our sample tablet app “Gemstone Magic Maker”, which lets you spawn colorful little gemstones in VR that you can share with your friends.
+## Overview
+This tutorial takes you through the process of making your own tablet app."
 
-### What is a tablet app?
+## Introduction
 
-Tablet apps are customizable programs running on the latest Tablet UI framework introduced to High Fidelity. While the tablet comes out-of-the-box for everyone with a couple of system apps such as Snapshot, People and Create, the Tablet UI framework is designed to serve way beyond that. With the Tablet, you can create your own apps and UI elements. ![](tablet-app-tutorial.jpeg)
+You've created a script that makes your avatar dance. Instead of running the script everytime, you want to create a tablet app for it. This tutorial will take you through the process using a sample app called “Gemstone Magic Maker”. The goal of this app is to let you spawn colorful little gemstones in VR that you can share with your friends. You can follow the steps using your own script as well!
 
-Let's get started and create a fun little app called “Gemstone Magic Maker”. The app gives you quick access to a collection of colorful gemstones made out of High Fidelity’s shape primitives. With a quick tap on the tablet, you can spawn out these precious stones just like magic!
+### What is a Tablet App?
 
-####Sharing gemstones with your friends in High Fidelity
+Tablet apps are customizable programs running on the latest Tablet UI framework in High Fidelity. While the tablet comes out-of-the-box for everyone with a couple of system apps such as Snapshot, People and Create, the Tablet UI framework is designed to accomodate custom apps as well. With the Tablet, you can create your own apps and UI elements. ![](tablet-app-tutorial.jpeg)
 
-* Select your gem type: ![](tablet-app-2.jpeg)
-* Create your gemstone: ![](tablet-app-3.gif)
-* Showcase gemstones created: ![](tablet-app-4.gif)
-* Share with friends!: ![](tablet-app-5.jpeg)
+Let's get started and create a fun little app called “Gemstone Magic Maker”. The app gives you quick access to a collection of colorful gemstones made in High Fidelity. The goal of the app is to spawn gemstones with a quick tap on the tablet app.
 
-### What you’ll need
+### What You'll Need
 
-- High Fidelity installed (available for free on the [Steam store](http://store.steampowered.com/app/390540/)/[website](https://highfidelity.io/download/)).
+- High Fidelity installed.
 - Basic web development experience (html/css/javascript).
-- Familiarity with scripting in High Fidelity is nice to have, but not required.
-- About 30 minutes to an hour.
+- Familiarity with scripting in High Fidelity is nice to have, but not required. If you already have a script, you can go through the steps using it. 
+- About 30 minutes to an hour. 
 
-## Instructions
+### Instructions
 
-### Step 1: Create a JavaScript program for installing/uninstalling your app
+#### Step 1: Create a JavaScript program for installing/uninstalling your app
 
-Create a new JavaScript file with your text editor. You can name it gemstoneApp.js. The following example contains all the functions you need to create an app that installs and uninstalls from the tablet.
+Create a new JavaScript file with your text editor. You can name it gemstoneApp.js. The following example contains all the functions you need to create an app that installs and uninstalls from the tablet. 
 
 ```javascript
 (function() { 
@@ -59,9 +58,10 @@ Script.scriptEnding.connect(cleanup);
 ---
 >>>>> gemstoneApp.js will be a [client script](https://wiki.highfidelity.com/wiki/Script_Types_Overview) running on your High Fidelity Interface.
 
-### Step 2: Start designing your app’s UI in HTML/CSS
 
-You can design UI elements in the Tablet UI framework like how you do when designing a web application. You can write in HTML/CSS/js.
+#### Step 2: Start designing your app’s UI in HTML/CSS
+
+You can design UI elements in the Tablet UI framework like how you do when designing a web application. You can write this in HTML/CSS/js.
 
 You want to keep in mind that the tablet screen dimensions are **480 x 720**, and this factors in for buttons sizes for small screens, text readability etc.
 
@@ -69,11 +69,11 @@ To help you get started, we’ve put together a [quick start template](https://h
 
 * **Modify from the quick start template**: Here, we only changed the title and made a list of buttons for our gemstone collection. ![](tablet-app-6.png) ![](tablet-app-7.png)
 * It only takes a few modifications in HTML going from the template to our Gemstone Magic Maker app
-* **Host your HTML file on the web**: We’re using Amazon S3 here for the tutorial [https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html](https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html))
+* **Host your HTML file on the web**: We’re using Amazon S3 for the tutorial [https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html](https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html))
 
 Development Tips: You can test your UI using the Chrome Inspector tool which allows you to live preview your app while making changes. ![](tablet-app-8.png)
 
-### Step 3: Load your web app on the High Fidelity tablet
+#### Step 3: Load your web app on the High Fidelity tablet
 
 In gemstoneApp.js, copy and paste a link to your web app.
 
@@ -132,9 +132,9 @@ Let’s see our progress so far…
 
 **Running Scripts (Ctlr + J) -> From Disk -> Open gemstoneApp.js**. After that, you can click on the Gemstone button from the tablet and load the app.
 
-### Step 4: Add an icon for your app
+#### Step 4: Add an icon for your app
 
-As you may have noticed, we never specified an icon for our app and the tablet defaults it to the “pencil & wrench” icon that was also used for Edit. Let’s make something more appropriate for our Gemstone Magic Maker.
+As you may have noticed, we never specified an icon for our app and the tablet defaults it to the “pencil & wrench” icon that was also used for Create. Let’s make something more appropriate for our Gemstone Magic Maker.
 
 The recommended specs for tablet icon art are **50 by 50(or square), white on a transparent background in the SVG file format**. You can create your own icon using graphic design software or any other online resources. For this, we used [The Noun Project](https://thenounproject.com/), a site where designers create icons and share them for free use under [Creative Commons](https://creativecommons.org/). We picked the [gemstone icon by Cengiz SARI from the Noun Project](https://thenounproject.com/search/?q=gemstone&i=9978). The icon was then modified so that the vector paths are in white and in the correct dimension.
 
@@ -321,6 +321,13 @@ function onWebEventReceived(event) {
 
 Congratulations! You made it to the end!
 
+#### Share gemstones with your friends in High Fidelity
+
+* Select your gem type: ![](tablet-app-2.jpeg)
+* Create your gemstone: ![](tablet-app-3.gif)
+* Showcase gemstones created: ![](tablet-app-4.gif)
+* Share with friends!: ![](tablet-app-5.jpeg)
+
 #### We're Done!
 
 And there we go - we’ve covered all the basics of writing a tablet app for High Fidelity. For your reference, the full example project is available below:
@@ -331,8 +338,6 @@ And there we go - we’ve covered all the basics of writing a tablet app for Hig
 The Gemstone Magic Maker app will also be made available for download on the Marketplace soon as well.
 
 ## Next Steps
-
-If you have any questions about this tutorial, please don’t hesitate to ask. We’re always happy to help!
 
 *Here are some tablet app ideas that you can explore*
 
