@@ -71,7 +71,7 @@ Adds a new top-level menu.
 **Parameters**
 |Name|Type|Attributes|Description|
 |----|----|----------|-----------|
-|menuName|string||Name of the menu. Nested menus can be described using this symbol - ">".|
+|menuName|string| |Name of the menu. Nested menus can be described using this symbol - ">".|
 |grouping|string|<optional>|The name of the grouping where the menu is to be added.|
 
 **Returns**
@@ -127,8 +127,8 @@ Adds a new menu item to a menu. The new item is added at the end of the menu.
 
 |Name|Type|Attributes|Description|
 |----|----|----------|-----------|
-|menuName|string||Name of the menu where the new item is being added.|
-|menuItem|string||Name of the menu item. This is what will be displayed in the menu.|
+|menuName|string| |Name of the menu where the new item is being added.|
+|menuItem|string| |Name of the menu item. This is what will be displayed in the menu.|
 |shortcutKey|string|<optional>|The shortcut key to be used to trigger the menu item.|
 
 **Example**
