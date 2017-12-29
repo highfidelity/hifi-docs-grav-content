@@ -52,15 +52,15 @@ A menu "grouping" enables you to group a set of menu items together. For instanc
 | ---------- | ---- | ---------- | ------- | ----------- |
 | `menuName` | string | | | Name of the menu. Nested menus can be described using this symbol - ">".|
 | `menuItemName`| string| | | Name of the menu item|
-| `isCheckable`|boolean |<optional>|false |Whether or not the menu item can be checked/toggled|
-| `isChecked`|boolean |<optional>|false |Whether or not the menu item is enabled.|
-| `isSeparator`|boolean |<optional>|false |Whether or not the menu item is a separator.|
-| `shortcutKey`|string|<optional>||A shortcut key that triggers the menu item|
-| `shortcutKeyEvent`|KeyEvent|<optional>||A KeyEvent that specifies a key that triggers the menu item.|
-| `position`|number|<optional>||The position to place the new menu item. This is an integer, with 0 being the first menu item.|
-| `beforeItem`|string|<optional>||The item before which the menu item being created is to be placed.|
-| `afterItem`|string|<optional>||The item after which the menu item being created is to be placed.|
-| `grouping`|string|<optional>||The name of grouping to add the menu item to.|
+| `isCheckable`|boolean |optional|false |Whether or not the menu item can be checked/toggled|
+| `isChecked`|boolean |optional|false |Whether or not the menu item is enabled.|
+| `isSeparator`|boolean |optional|false |Whether or not the menu item is a separator.|
+| `shortcutKey`|string|optional| |A shortcut key that triggers the menu item|
+| `shortcutKeyEvent`|KeyEvent|optional| |A KeyEvent that specifies a key that triggers the menu item.|
+| `position`|number|optional| |The position to place the new menu item. This is an integer, with 0 being the first menu item.|
+| `beforeItem`|string|optional| |The item before which the menu item being created is to be placed.|
+| `afterItem`|string|optional| |The item after which the menu item being created is to be placed.|
+| `grouping`|string|optional| |The name of grouping to add the menu item to.|
 
 ## Methods <a id="methods"></a>
 
@@ -69,10 +69,11 @@ A menu "grouping" enables you to group a set of menu items together. For instanc
 Adds a new top-level menu. 
 
 **Parameters**
+
 |Name|Type|Attributes|Description|
 |----|----|----------|-----------|
 |menuName|string| |Name of the menu. Nested menus can be described using this symbol - ">".|
-|grouping|string|<optional>|The name of the grouping where the menu is to be added.|
+|grouping|string|optional|The name of the grouping where the menu is to be added.|
 
 **Returns**
 
@@ -129,7 +130,7 @@ Adds a new menu item to a menu. The new item is added at the end of the menu.
 |----|----|----------|-----------|
 |menuName|string| |Name of the menu where the new item is being added.|
 |menuItem|string| |Name of the menu item. This is what will be displayed in the menu.|
-|shortcutKey|string|<optional>|The shortcut key to be used to trigger the menu item.|
+|shortcutKey|string|optional|The shortcut key to be used to trigger the menu item.|
 
 **Example**
 
