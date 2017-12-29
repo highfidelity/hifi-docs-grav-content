@@ -15,33 +15,33 @@ A menu "grouping" enables you to group a set of menu items together. For instanc
 
 | Properties |
 | ---------- | 
-| `[MenuItemProperties](#prop)` |
+| [`MenuItemProperties`](#prop) |
 
 
 | Methods                                  |
 | ---------------------------------------- |
 | `Menu.addActionGroup(QString,QStringList,QString<optional>)` |
-| `[Menu.addMenu(QString, QString<optional>)](#m1)`             |
-| `[Menu.addMenuItem(MenuItemProperties)](#m2)` |
-| `Menu.addMenuItem(QString,QString,QString<optional>)(#m3)` |
-| `[Menu.addSeparator(QString,QString)](#m4)` |
+| [`Menu.addMenu(QString, QString<optional>)`](#m1)             |
+| [`Menu.addMenuItem(MenuItemProperties)`](#m2) |
+| [`Menu.addMenuItem(QString,QString,QString<optional>)`](#m3) |
+| [`Menu.addSeparator(QString,QString)`](#m4) |
 | `Menu.closeInfoView(QString)`              |
 | `Menu.isInfoViewVisible(QString)`          |
 | `Menu.isMenuEnabled(QString)`              |
 | `Menu.isOptionChecked(QString)`            |
-| `[Menu.menuExists(QString)](#m5)`          |
-| `[Menu.menuItemExists(QString,QString)](#m6)` |
+| [`Menu.menuExists(QString)`](#m5)          |
+| [`Menu.menuItemExists(QString,QString)`](#m6) |
 | `Menu.removeActionGroup(QString)`          |
-| `[Menu.removeMenu(QString)](#m7)`          |
-| `[Menu.removeMenuItem(QString,QString)](#m8)`     |
-| `[Menu.removeSeparator(QString,QString)](#m9)` |
-| `[Menu.setIsOptionChecked(QString,bool)](#m10)`    |
-| `[Menu.setMenuEnabled(QString,bool)](#m11)`        |
-| `[Menu.triggerOption(QString)](#m12)`              |
+| [`Menu.removeMenu(QString)`](#m7)          |
+| [`Menu.removeMenuItem(QString,QString)`](#m8)     |
+| [`Menu.removeSeparator(QString,QString)`](#m9) |
+| [`Menu.setIsOptionChecked(QString,bool)`](#m10)    |
+| [`Menu.setMenuEnabled(QString,bool)`](#m11)        |
+| [`Menu.triggerOption(QString)`](#m12)              |
 
 | Events                             |
 | ---------------------------------- |
-| `[Menu.menuItemEvent(QString)](#e1)` |
+| [`Menu.menuItemEvent(QString)`](#e1) |
 
 ## Properties <a id="prop"></a>
 
