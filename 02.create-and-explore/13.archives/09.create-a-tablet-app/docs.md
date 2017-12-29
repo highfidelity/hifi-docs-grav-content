@@ -1,5 +1,5 @@
-﻿---
-title: Create a Tablet App
+---
+title: 'Create a Tablet App'
 taxonomy:
     category: docs
 ---
