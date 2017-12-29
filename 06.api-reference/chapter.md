@@ -30,7 +30,7 @@ The following table displays how complete the API reference is. We will be updat
 | Avatar List              | Yes                              | No                    |
 | Avatar Manager           | Yes                              | No                    |
 | Camera                   | Yes                              | Yes                   |
-| Clipboard                | Yes                              | No                    |
+| Clipboard                | Yes                              | Yes                    |
 | Controller               | Yes                              | Yes                   |
 | Entities                 | Yes                              | Yes                   |
 | Face Tracker             | Yes                              | No                    |
@@ -38,7 +38,7 @@ The following table displays how complete the API reference is. We will be updat
 | HMD                      | Yes                              | Partial               |
 | Limitless                | Yes                              | No                    |
 | LOD Manager              | Yes                              | No                    |
-| Menu                     | Yes                              | Partial               |
+| Menu                     | Yes                              | Yes                   |
 | Messages                 | Yes                              | No                    |
 | Model                    | Yes                              | No                    |
 | Model Cache              | Yes                              | No                    |
