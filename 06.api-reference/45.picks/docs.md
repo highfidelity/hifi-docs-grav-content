@@ -55,7 +55,8 @@ It is a set of properties that can be passed to Picks.createPick to create a new
 | Properties | Type | Attributes | Default | Description |
 | ---------- | ---- | ---------- | ------- | ----------- |
 | `enabled` | boolean | optional| false| If this Pick should start enabled or not. Disabled Picks do not update their pick results.|
-| `filter`| number |optional |Picks.PICK_NOTHING |The filter for this Pick to use, constructed using filter flags combined using bitwise OR.|| `maxDistance`|float  |optional|0.0 |The max distance at which this Pick will intersect. `0.0` = no max. `< 0.0` is invalid.|
+| `filter`| number |optional |Picks.PICK\_NOTHING |The filter for this Pick to use, constructed using filter flags combined using bitwise OR.|
+| `maxDistance`|float  |optional|0.0 |The max distance at which this Pick will intersect. `0.0` = no max. `< 0.0` is invalid.|
 | `joint`|string  |optional| |Only for Joint or Mouse Ray Picks. If it is "Mouse", it will create a Ray Pick that follows the system mouse, in desktop or HMD. If it is "Avatar", it will create a Joint Ray Pick that follows your avatar's head. Otherwise, it will create a Joint Ray Pick that follows the given joint, if it exists on your current avatar.|
 | `posOffset`|Vec3 |optional|Vec3.ZERO  |Only for Joint Ray Picks. A local joint position offset (in meters). `x` = upward, `y` = forward, `z` = lateral|
 | `dirOffset`|Vec3|optional|Vec3.UP  |Only for Joint Ray Picks. A local joint direction offset. `x` = upward, `y` = forward, `z` = lateral|
@@ -80,11 +81,11 @@ An intersection result for a Ray Pick.
 | Properties | Type |  Description |
 | ---------- | ---- | ----------- |
 | `type` | number |  The intersection type.|
-| `intersects`| boolean |If there was a valid intersection (type != INTERSECTED_NONE)|
+| `intersects`| boolean |If there was a valid intersection (type != INTERSECTED\_NONE)|
 | `objectID` | Uuid |  The ID of the intersected object. Uuid.NULL for the HUD or invalid intersections.|
 | `distance` | float |  The distance to the intersection point from the origin of the ray.|
 | `intersection` | Vec3 |  The intersection point in world-space.|
-| `surfaceNormal` | Vec3 |  The surface normal at the intersected point. All NANs if type == INTERSECTED_HUD.|
+| `surfaceNormal` | Vec3 |  The surface normal at the intersected point. All NANs if type == INTERSECTED\_HUD.|
 | `searchRay` | PickRay |  The PickRay that was used. Valid even if there was no intersection.|
 
 
@@ -96,11 +97,11 @@ An intersection result for a Ray Pick.
 | Properties | Type |  Description |
 | ---------- | ---- | ----------- |
 | `type` | number |  The intersection type.|
-| `intersects`| boolean |If there was a valid intersection (type != INTERSECTED_NONE)|
+| `intersects`| boolean |If there was a valid intersection (type != INTERSECTED\_NONE)|
 | `objectID` | Uuid |  The ID of the intersected object. Uuid.NULL for the HUD or invalid intersections.|
 | `distance` | float |  The distance to the intersection point from the origin of the ray.|
 | `intersection` | Vec3 |  The intersection point in world-space.|
-| `surfaceNormal` | Vec3 |  The surface normal at the intersected point. All NANs if type == INTERSECTED_HUD.|
+| `surfaceNormal` | Vec3 |  The surface normal at the intersected point. All NANs if type == INTERSECTED\_HUD.|
 | `stylusTip` | StylusTip  |  The StylusTip that was used. Valid even if there was no intersection.|
 
 ## Methods <a id="methods"></a>
@@ -176,7 +177,7 @@ Check if a Pick is associated with the left hand.
 
 |Value|Type|Description|
 |----|----|-----------|
-|`true`|boolean|if the Pick is a Joint Ray Pick with joint == "_CONTROLLER_LEFTHAND" or "_CAMERA_RELATIVE_CONTROLLER_LEFTHAND", or a Stylus Pick with hand == 0._|
+|`true`|boolean|if the Pick is a Joint Ray Pick with joint == "\_CONTROLLER\_LEFTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_LEFTHAND", or a Stylus Pick with hand == 0.|
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
@@ -214,7 +215,7 @@ Checks if a Pick is associated with the right hand.
 
 |Value|Type|Description|
 |----|----|-----------|
-|`true`|boolean|if the Pick is a Joint Ray Pick with joint == "_CONTROLLER_RIGHTHAND" or "_CAMERA_RELATIVE_CONTROLLER_RIGHTHAND", or a Stylus Pick with hand == 1._|
+|`true`|boolean|if the Pick is a Joint Ray Pick with joint == "\_CONTROLLER\_RIGHTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_RIGHTHAND", or a Stylus Pick with hand == 1.|
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
