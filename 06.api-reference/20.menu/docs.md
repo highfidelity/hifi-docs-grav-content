@@ -5,13 +5,6 @@ taxonomy:
         - docs
 ---
 
----
-title: 'Menu'
-taxonomy:
-    category:
-        - docs
----
-
 The Menu API provides access to the menu displayed at the top of the window on a user's desktop and the tablet/HUD "MENU" app. 
 
 A menu "grouping" enables you to group a set of menu items together. For instance, you can specify that your menu item has to be grouped with either of the two available groupings "Advanced" and "Developer". The visibility of these groupings can be changed through the "Settings" menu. If you don't soecify your menu item's grouping, it will always be visible. 
