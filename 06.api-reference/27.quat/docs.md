@@ -48,6 +48,14 @@ The Quaternion API provides resources for generating and manipulating quaternion
 
 
 ## Properties <a id="prop"></a>
+**Example**
+*Print the IDENTITY value.*
+
+```
+print(JSON.stringify(Quat.IDENTITY)); // { x: 0, y: 0, z: 0, w: 1 }
+print(JSON.stringify(Quat.safeEulerAngles(Quat.IDENTITY))); // { x: 0, y: 0, z: 0 }
+```
+
 
 ## Methods <a id="methods"></a>
 
