@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-The Quaternion API provides facilities for generating and manipulating quaternions. Quaternions should be used in preference to Euler angles wherever possible because quaternions don't suffer from the problem of gimbal lock.
+The Quaternion API provides resources for generating and manipulating quaternions. Quaternions should be used in preference to Euler angles wherever possible because quaternions don't suffer from the problem of gimbal lock.
 
 - **[Properties](#prop)**
 - **[Methods](#methods)**
