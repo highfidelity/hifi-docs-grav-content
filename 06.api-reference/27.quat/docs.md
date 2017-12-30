@@ -77,6 +77,7 @@ Computes the angle of rotation of a quaternion.
 
 
 **Examples**
+
 *Get the rotation angle of a quaternion.*
 
 ```
@@ -114,6 +115,7 @@ var axis = { x: 1, y: 0, z: 0};
 var rotation = Quat.angleAxis(angle, axis);
 ```
 
+*Calculate a rotation of 90 degrees about the direction your camera is looking.*
 ```
 var rotation = Quat.angleAxis(90, Quat.getForward(Camera.orientation));
 ```
@@ -130,12 +132,15 @@ Computes a quaternion's normalized axis of rotation.
 |q|Quat|The quaternion|
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |`axis`|Vec3|The normalized rotation axis for q|
 
 **Examples**
+
 *Get the rotation axis of a quaternion.*
+
 ```
 var axis = Quat.axis(rotation);
 ```
@@ -160,11 +165,13 @@ Cancels out the roll component of a quaternion so that its horizontal axis is le
 |orientation|Quat|A quaternion representing an orientation.|
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |`orientation `|Quat|Orientation with its roll canceled out.|
 
 **Examples**
+
 *The following example depicts two ways of calculating a camera orientation that points in the direction of a given quaternion but keeps the camera's horizontal axis level.*
 ```
 var quaternion = Quat.fromPitchYawRollDegrees(10, 20, 30);
@@ -189,11 +196,13 @@ Cancels out the roll and pitch component of a quaternion so that its completely 
 |orientation|Quat|A quaternion representing an orientation.|
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |`orientation `|Quat|Orientation with its roll and pitch canceled out.|
 
 **Examples**
+
 *The following example depicts two ways of calculating a camera orientation in the x-z plane with a yaw pointing in the direction of a given quaternion.*
 ```
 var quaternion = Quat.fromPitchYawRollDegrees(10, 20, 30);
@@ -218,11 +227,13 @@ Computes the conjugate of a quaternion. For a unit quaternion, its conjugate is 
 |q| Quat| The quaterion to conjugate.|
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |conjugate q| Quat| The conjugate of q.|
 
 **Examples**
+
 *A unit quaternion multiplied by its conjugate is a zero rotation.*
 ```
 var quaternion = Quat.fromPitchYawRollDegrees(10, 20, 30);
@@ -253,6 +264,7 @@ Computes the dot product between two quaternions. This is a measure of how "clos
 |d| number| The dot product of q1 and q2.|
 
 **Examples**
+
 *Testing unit quaternions for equality.*
 ```
 var q1 = Quat.fromPitchYawRollDegrees(0, 0, 0);
@@ -289,6 +301,7 @@ Tests whether two quaternions are equal. The quaternions must be exactly equal i
 |`false`| boolean| The quaternions are not equal.|
 
 **Examples**
+
 *Testing unit quaternions for equality.*
 ```
 var q1 = Quat.fromPitchYawRollDegrees(0, 0, 0);
@@ -324,6 +337,7 @@ Computes a quaternion using pitch, yaw, and roll values in degrees.
 |q|Quat|A quaternion created using the pitch, yaw, and roll Euler angles.|
 
 **Examples**
+
 *Create a rotation of 180 degrees about the y axis.*
 ```
 var rotation = Quat.fromPitchYawRollDgrees(0, 180, 0 );
@@ -350,6 +364,7 @@ Computes a quaternion using pitch, yaw, and roll values in radians.
 |q|Quat|A quaternion created using the pitch, yaw, and roll Euler angles.|
 
 **Examples**
+
 *Create a rotation of 180 degrees about the y axis.*
 ```
 var rotation = Quat.fromPitchYawRollRadians(0, Math.PI, 0);
@@ -374,6 +389,7 @@ Computes a quaternion from a Vec3 of Euler angles in degrees.
 
 
 **Examples**
+
 *Zero out pitch and roll from an orientation.*
 
 ```
@@ -403,6 +419,7 @@ Computes a quaternion from a Vec3 of Euler angles in radians.
 
 
 **Examples**
+
 *Create a rotation of 180 degrees about the y axis.*
 
 ```
@@ -427,6 +444,7 @@ Gets the "forward" direction that the camera would face if its orientation was s
 |forward|Vec3|The negative z-axis rotated by the orientation.|
 
 **Examples**
+
 *Demonstrate that the "forward" vector is for the negative z-axis.*
 
 ```
@@ -524,6 +542,7 @@ Calculates the inverse of a quaternion. For a unit quaternion, its inverse is th
 |inverseq|Quat|The inverse of the quaternion q|
 
 **Examples**
+
 *A quaternion multiplied by its inverse is a zero rotation.*
 ```
 var quaternion = Quat.fromPitchYawRollDegrees(10, 20, 30);
@@ -550,13 +569,14 @@ Computes a camera orientation that will orient it at a known location to look st
 |up|Vec3|The vertical direction.|
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |q|Quat|A quaternion that orients the negative z-axis to point along the eye-to-target vector and the x-axis to be the cross product of the eye-to-target and up vectors. |
 
 **Examples**
 
-If we know where we are, the location of the thing we're looking at, and the world's up direction then `lookAt()` will compute our orientation for us.
+*If we know where we are, the location of the thing we're looking at, and the world's up direction then `lookAt()` will compute our orientation for us.*
 
 ```
 // suppose we have a laser turret that we want to point at a
@@ -595,7 +615,7 @@ Computes the rotation that will orient a camera at a known location (eye positio
 
 **Examples**
 
-If we know where we are and the location of the thing we're looking at then `lookAtSimple()` will compute our orientation for us.
+*If we know where we are and the location of the thing we're looking at then `lookAtSimple()` will compute our orientation for us.*
 
 ```
 // suppose we have a laser turret that we want to point at a
@@ -628,7 +648,7 @@ Computes a spherical linear interpolation between two rotations, safely handling
 
 **Returns**
 
-|Name|Type|Description|
+|Value|Type|Description|
 |----|----|-----------|
 |q3|Quat|the spherical linear interpolation between rotations q1 and q2.|
 
@@ -707,7 +727,7 @@ Computes the normalized quaternion.
 
 **Returns**
 
-|Name|Type|Description|
+|Value|Type|Description|
 |----|----|-----------|
 |normalizedq|Quat|The quaternion normalized such that its length is equal to 1. |
 
@@ -766,6 +786,7 @@ Prints to the program log a text label followed by a quaternion's pitch, yaw, an
 No return value.
 
 **Examples**
+
 *Two ways of printing a label plus a quaternion's Euler angles.*
 ```
 var quaternion = Quat.fromPitchYawRollDegrees(0, 45, 0);
@@ -887,6 +908,7 @@ Compute the normalized spherical linear interpolation (slerp) between two rotati
 
 
 **Returns**
+
 |Value|Type|Description|
 |----|----|-----------|
 |q3|Quat|A spherical linear interpolation between rotations q1 and q2.|
