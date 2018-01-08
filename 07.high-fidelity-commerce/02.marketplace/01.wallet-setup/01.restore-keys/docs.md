@@ -18,7 +18,7 @@ Your *Wallet's* passphrase is used to encrypt your private keys. Your private ke
 
 
 
-- Your private keys are stored on your hard drive in Interface's AppData directory. 
+- Your private keys are stored on your hard drive in Interface's AppData directory. You can also find the file using the Help section in your *Wallet*.
   - Windows: `C:/Users/<user>/AppData/Roaming/High Fidelity/Interface/<username>.hifikey`
   - Mac OS: `~/Library/Application Support/High Fidelity/Interface`
   - Linux: `/home/<username>/.local/share/High Fidelity/Interface`
