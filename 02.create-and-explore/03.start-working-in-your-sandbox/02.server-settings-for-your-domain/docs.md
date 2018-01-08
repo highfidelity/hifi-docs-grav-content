@@ -104,7 +104,7 @@ You can choose one of the following network settings for your domain:
 
 A *place name* is a domain's unique name within the High Fidelity Metaverse and it is one of the easiest ways for other users to reach your domain.
 
-Your randomly generated place name cannot be show in the [High Fidelity Directory](https://highfidelity.com/directory) or be authenticated (it can be impersonated). You also cannot choose the generated place name. 
+Your randomly generated place name cannot be shown in the [High Fidelity Directory](https://highfidelity.com/directory) or be authenticated (it can be impersonated). You also cannot choose the generated place name. 
 
 You can [purchase a place name](../place-names) of your choice for your domain.
 
