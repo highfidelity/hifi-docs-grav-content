@@ -1,5 +1,5 @@
 ---
-title: Custom
+title: Let's Dance
 published: true
 taxonomy:
     category:

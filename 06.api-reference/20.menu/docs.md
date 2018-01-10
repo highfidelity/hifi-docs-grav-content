@@ -5,274 +5,335 @@ taxonomy:
         - docs
 ---
 
-| Properties      | Type   | Description |
-| --------------- | ------ | ----------- |
-| Menu.objectName | string |             |
+The Menu API provides access to the menu displayed at the top of the window on a user's desktop and the tablet/HUD "MENU" app. 
+
+A menu "grouping" enables you to group a set of menu items together. For instance, you can specify that your menu item has to be grouped with either of the two available groupings "Advanced" and "Developer". The visibility of these groupings can be changed through the "Settings" menu. If you don't soecify your menu item's grouping, it will always be visible. 
+
+- **[Properties](#prop)**
+- **[Methods](#methods)**
+- **[Events](#events)**
+
+| Properties |
+| ---------- | 
+| [`MenuItemProperties`](#prop) |
 
 
 | Methods                                  |
 | ---------------------------------------- |
-| Menu.addActionGroup(QString,QStringList) |
-| Menu.addActionGroup(QString,QStringList,QString) |
-| [Menu.addMenu(QString)](#m1)             |
-| Menu.addMenu(QString,QString)            |
-| [Menu.addMenuItem(MenuItemProperties)](#m2) |
-| Menu.addMenuItem(QString,QString)        |
-| Menu.addMenuItem(QString,QString,QString) |
-| [Menu.addSeparator(QString,QString)](#m3) |
-| Menu.closeInfoView(QString)              |
-| Menu.isInfoViewVisible(QString)          |
-| Menu.isMenuEnabled(QString)              |
-| Menu.isOptionChecked(QString)            |
-| [Menu.menuExists(QString)](#m4)          |
-| [Menu.menuItemExists(QString,QString)](#m5) |
-| Menu.removeActionGroup(QString)          |
-| [Menu.removeMenu(QString)](#m6)          |
-| Menu.removeMenuItem(QString,QString)     |
-| [Menu.removeSeparator(QString,QString)](#m7) |
-| Menu.setIsOptionChecked(QString,bool)    |
-| Menu.setMenuEnabled(QString,bool)        |
-| Menu.triggerOption(QString)              |
+| `Menu.addActionGroup(QString,QStringList,QString<optional>)` |
+| [`Menu.addMenu(QString, QString<optional>)`](#m1)             |
+| [`Menu.addMenuItem(MenuItemProperties)`](#m2) |
+| [`Menu.addMenuItem(QString,QString,QString<optional>)`](#m3) |
+| [`Menu.addSeparator(QString,QString)`](#m4) |
+| `Menu.closeInfoView(QString)`              |
+| `Menu.isInfoViewVisible(QString)`          |
+| `Menu.isMenuEnabled(QString)`              |
+| `Menu.isOptionChecked(QString)`            |
+| [`Menu.menuExists(QString)`](#m5)          |
+| [`Menu.menuItemExists(QString,QString)`](#m6) |
+| `Menu.removeActionGroup(QString)`          |
+| [`Menu.removeMenu(QString)`](#m7)          |
+| [`Menu.removeMenuItem(QString,QString)`](#m8)     |
+| [`Menu.removeSeparator(QString,QString)`](#m9) |
+| [`Menu.setIsOptionChecked(QString,bool)`](#m10)    |
+| [`Menu.setMenuEnabled(QString,bool)`](#m11)        |
+| [`Menu.triggerOption(QString)`](#m12)              |
 
 | Events                             |
 | ---------------------------------- |
-| [Menu.menuItemEvent(QString)](#m8) |
-| Menu.objectNameChanged(QString)    |
+| [`Menu.menuItemEvent(QString)`](#e1) |
 
-## addMenu()<a id="m1"></a>
+## Properties <a id="prop"></a>
 
-### Function
+`MenuItemProperties`: Object (type)
+`MenuItemProperties` is a set of properties you can use to define your menu item. If you don't specify any properties, your menu item will be placed at the end of the menu by default. 
 
-`addMenu(name)` // Adds a menu item to a menu, described by the properties of the object.
+| Properties | Type | Attributes | Default | Description |
+| ---------- | ---- | ---------- | ------- | ----------- |
+| `menuName` | string | | | Name of the menu. Nested menus can be described using this symbol - ">".|
+| `menuItemName`| string| | | Name of the menu item|
+| `isCheckable`|boolean |optional|false |Whether or not the menu item can be checked/toggled|
+| `isChecked`|boolean |optional|false |Whether or not the menu item is enabled.|
+| `isSeparator`|boolean |optional|false |Whether or not the menu item is a separator.|
+| `shortcutKey`|string|optional| |A shortcut key that triggers the menu item|
+| `shortcutKeyEvent`|KeyEvent|optional| |A KeyEvent that specifies a key that triggers the menu item.|
+| `position`|number|optional| |The position to place the new menu item. This is an integer, with 0 being the first menu item.|
+| `beforeItem`|string|optional| |The item before which the menu item being created is to be placed.|
+| `afterItem`|string|optional| |The item after which the menu item being created is to be placed.|
+| `grouping`|string|optional| |The name of grouping to add the menu item to.|
 
-### Arguments
+## Methods <a id="methods"></a>
 
-**name : string**: An string for the name of the menu.
+### `addMenu(menuName, grouping)`<a id="m1"></a>
 
-Nested menu's can be described using the greater than symbol.
+Adds a new top-level menu. 
 
-`"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
+**Parameters**
 
-### Returns
+|Name|Type|Attributes|Description|
+|----|----|----------|-----------|
+|menuName|string| |Name of the menu. Nested menus can be described using this symbol - ">".|
+|grouping|string|optional|The name of the grouping where the menu is to be added.|
+
+**Returns**
 
 This function does not return a value.
 
-### Examples
-
+**Example**
+*Add a menu called "Test Menu" and a nested submenu called "Test Sub Menu".*
 ```
 Menu.addMenu("Test Menu");
 Menu.addMenu("Test Menu > Test Sub Menu");
 ```
 
-
-
-## addMenuItem()<a id="m2"></a>
-
-### Function
-
-`addMenuItem(object)` // Adds a menu item to a menu, described by the properties of the object.
-
-### Arguments
-
-**Object**: An object describing the menuItem.
-
+*Add a menu that is nested under "Settings" to the "Advanced" grouping.*
 ```
-{
-    menuName:      string,          // Name of the menu you wish to add the item too
-    menuItemName:  string,          // Name of the menuItem you wish to add
-    afterItem:     string,          // Name of a menuItem, you want yours to follow
-    shortcutKey:   string,          // String describing the shortcut key combination
-    shortcutKeyEvent: {             // ------ unsure ------
-        text: string                // ------ unsure ------
-    },
-    isCheckable:   bool,            // Bool declaring wether this menu item can be checked or not
-    isChecked:     bool,            // Bool declaring wehter it is checked or not
-    grouping:      string           // ------ unsure ------ (all examples use "Advanced")
-}
-
+Menu.addMenu("Settings > Test Grouping Menu", "Advanced");
 ```
 
-Not all Items are required.
 
-### Returns
+### `addMenuItem(properties)`<a id="m2"></a>
+
+Adds a menu item to a menu.
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|properties|[MenuItemProperties](#prop)|The menu item's set of properties.|
+
+
+**Returns**
 
 This function does not return a value.
 
-### Examples
-
+**Example**
+*Add a menu item named "Test" to the menu "Developer", under the "Advanced" grouping. It should be displayed after the menu item "Log". The shortcut keys that trigger the menu should be "Ctrl+Shift+T".*
 ```
 Menu.addMenuItem({
-    menuName:      "Developer",
-    menuItemName:  "Test",
-    afterItem:     "Log",
-    shortcutKey:   "Ctrl+Shift+T",
-    shortcutKeyEvent: {
-        text: "test"
-    },
-    isCheckable:   false,
-    isChecked:     false,
-    grouping:      "Advanced"
+    menuName:     "Developer",
+    menuItemName: "Test",
+    afterItem:    "Log",
+    shortcutKey:  "Ctrl+Shift+T",
+    grouping:     "Advanced"
 });
 ```
 
 
+### `addMenuItem(menuName, menuItem, shortcutKey<opt>)`<a id="m3"></a>
 
+Adds a new menu item to a menu. The new item is added at the end of the menu. 
 
+**Parameters**
 
-## addSeparator()<a id="m3"></a>
+|Name|Type|Attributes|Description|
+|----|----|----------|-----------|
+|menuName|string| |Name of the menu where the new item is being added.|
+|menuItem|string| |Name of the menu item. This is what will be displayed in the menu.|
+|shortcutKey|string|optional|The shortcut key to be used to trigger the menu item.|
 
-### Function
+**Example**
 
-`addSeperator(menuDescriptor,menuItemName)` // Adds a seperator the given menu, above menuItem with menuItemName.
-
-### Arguments
-
-**menuDescriptor : string**: An string describing the menu you want to add the seperator to.
-
-**menuItemName : string**: An string for the name of the menuItem the seperator should be above.
-
-Nested menu's can be described using the greater than symbol.
-
-`"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
-
-### Returns
-
-This function does not return a value.
-
-### Examples
-
+*Add a menu item to the end of the "Developer" menu.*
 ```
-Menu.addSeparator("Audio > Devices","Output Audio Device");  // This is currenly used in selectAudioDevice.js to add a seperator to the Audio > Devices menu.
+Menu.addMenuItem("Developer", "Test", "Ctrl+Shift+T");
 ```
 
+### `addSeparator(menuName, separatorName)`<a id="m4"></a>
 
+Add a separator with an unclickable label below it. The separator will be placed at the bottom of the menu. If you want to add a separator at a specific point in the menu, use Menu.addMenuItem with Menu.MenuItemProperties instead.
 
-## menuExists()<a id="m4"></a>
+**Parameters**
 
-### Function
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|Name of the menu to add a separator to.|
+|separatorName|string|Name of the separator that will be displayed as the label below the separator line.|
 
-`menuExists(name) // Return value `is used to check if a menu with called 'name' exists.
+**Example**
 
-### Arguments
-
-**name: String**: The name of the menu you wish to check for.
-
-### Returns
-
-**bool**: Returns `true` if there is a menu by that name. (Otherwise `false`)
-
-### Examples
-
-`if (Menu.menuExists("Developer")){`
-
+*Add a separator.*
 ```
-   //Perform a task dependant on whether there is a Developer menu, (Such as adding a menuItem to the Developer menu)
-
-```
-
-`}`
-
-## menuItemExists()<a id="m5"></a>
-
-### Function
-
-`menuItemExists(menuName,menuItemName) // Return value `is used to check if a menuItem with called 'nameItemName' exists in the given menu.
-
-### Arguments
-
-**menuName: String**: The name of the menu in which you wish to check for the menuItem.
-
-**menuItemName: String**: The name of the menuItem you wish to check for.
-
-### Returns
-
-**bool**: Returns `true` if there is a menuItem by that name, in the specified menu. (Otherwise `false`)
-
-### Examples
-
-```
-if (Menu.menuItemExists("Developer","Stats")){
-    //Perform a task dependant on whether there is a Stats item in the Developer menu, (Such as not adding it again)
-}menuItemExists()
+Menu.addSeparator("Developer","Test Separator");
 ```
 
 
+### `menuExists(menuName)`<a id="m5"></a>
 
-## removeMenu()<a id="m6"></a>
+Checks if a top-level menu exists. 
 
-### Function
+**Parameters**
 
-`removeMenu(name)` // Removes a menu.
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|The name of the menu you are checking.|
 
-### Arguments
+**Returns**
 
-**name : string**: An string for the name of the menu.
+|Value|Type|Description|
+|----|----|-----------|
+|`true`|boolean|The menu exists.|
+|`false`|boolean|The menu doesn't exist.|
 
-Nested menus can be described using the greater than symbol.
+**Examples**
 
-`"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
+*Check if the "Developer" menu exists.*
 
-### Returns
+```
+if (Menu.menuExists("Developer")) {
+    print("Developer menu exists.");
+}
+```
 
-This function does not return a value.
 
-### Examples
+### `menuItemExists(menuName, menuItem)`<a id="m6"></a>
 
+Checks if a menu item exists. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|The menu in which you are checking for the menu item's existence.|
+|menuItem|string|The menu item you are looking for.|
+
+**Returns**
+
+|Value|Type|Description|
+|----|----|-----------|
+|`true`|boolean|The menu item exists.|
+|`false`|boolean|The menu item doesn't exist.|
+
+**Examples**
+
+*Determine if the Developer > Stats menu exists.*
+
+```
+if (Menu.menuItemExists("Developer", "Stats")) {
+    print("Developer > Stats menu item exists.");
+}
+```
+
+
+### `removeMenu(menuName)`<a id="m7"></a>
+
+Removes a top-level menu. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|Name of the menu to remove.|
+
+**Example**
+*Remove a menu and nested submenu.*
 ```
 Menu.removeMenu("Test Menu > Test Sub Menu");
 Menu.removeMenu("Test Menu");
 ```
 
+### `removeMenuItem(menuName, menuItem)`<a id="m8"></a>
 
+Removes a menu item from a menu. 
 
-## removeSeparator()<a id="m7"></a>
+**Parameters**
 
-### Function
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|Name of the menu from which you want to remove the menu item.|
+|menuItem|string|Name of the menu item you want to remove.|
 
-`removeSeperator(menuDescriptor,menuItemName)` // Removes a seperator from the given menu, above menuItem with menuItemName.
-
-### Arguments
-
-**menuDescriptor : string**: An string describing the menu you want to add the seperator to.
-
-**menuItemName : string**: An string for the name of the menuItem the seperator should be above.
-
-Nested menu's can be described using the greater than symbol.
-
-`"Developer > Test Menu"` Describes a submenu called "Test Menu" in the "Developer" menu.
-
-### Returns
-
-This function does not return a value.
-
-### Examples
-
+**Example**
+*Remove the menu item "Test" from the menu "Developer".*
 ```
-Menu.removeSeparator("Audio > Devices","Output Audio Device");  // This would remove the seperator currently set by selectAudioDevice.js in the Audio > Devices menu.
+Menu.removeMenuItem("Developer", "Test");
 ```
 
-## Menu.menuItemEvent<a id="e1"></a>
 
-### Description
+### `removeSeparator(menuName, separatorName)`<a id="m9"></a>
+
+Removes a top-level menu. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|Name of the menu from which you want to remove the separator.|
+|separatorName|string|Name of the separator to remove.|
+
+**Example**
+*Remove a separator.*
+```
+Menu.removeSeparator("Developer","Test Separator");
+```
+
+### `setIsOptionChecked(menuOption, isChecked)`<a id="m10"></a>
+
+Sets a menu item (that can be toggled) as checked or unchecked. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuOption|string|The name of the menu item to modify.|
+|isChecked|boolean|If `true`, the menu item will be checked, otherwise it won't be checked.|
+
+**Example**
+*Turn on Settings > Advanced Menus.*
+```
+Menu.setIsOptionChecked("Advanced Menus", true);
+print(Menu.isOptionChecked("Advanced Menus")); // true
+```
+
+### `setMenuEnabled(menuName, isEnabled)`<a id="m11"></a>
+
+Sets a menu or menu item to be enabled or disabled. If disabled, the item is grayed out and cannot be used. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuName|string|The name of the menu or menu item to modify.|
+|isEnabled|boolean|If `true`, the menu will be enabled, otherwise it will be disabled.|
+
+**Example**
+*Disable the Settings > Advanced Menus menu item.*
+```
+Menu.setMenuEnabled("Settings > Advanced Menus", false);
+print(Menu.isMenuEnabled("Settings > Advanced Menus")); // false
+```
+
+### `triggerOption(menuOption)`<a id="m12"></a>
+
+Triggers the menu item. 
+
+**Parameters**
+
+|Name|Type|Description|
+|----|----|-----------|
+|menuOption|string|The name of the menu item to trigger.|
+
+**Example**
+*Open the help window.*
+```
+Menu.triggerOption('Help...');
+```
+
+
+## Events <a id="events"></a>
+
+### `menuItemEvent.connect(menuItemEventHandler)`<a id="e1"></a>
 
 Event listener for menu items. Use the .connect(*handler*) method to wire up a handler.
 
-### Function or Event
+**Parameters**
 
-`Menu.menuItemEvent.connect(menuItemEventHandler);`
+|Name|Type|Description|
+|----|----|-----------|
+|menuItemEventHandler(menuItemText)|function|A function that receives the text of the menu item.|
 
-### Arguments
-
-**menuItemEventHandler(menuItemText):function**: A function that receives the text of the menu item.
-
-### Returns
-
-null
-
-### Examples
-
+**Example**
 *Stand-alone (or close as possible) examples showcasing the function*
-
 ```
 Menu.addMenu("Demo Menu");
 
@@ -288,5 +349,6 @@ function menuItemEventHandler(menuItemText)
     }
 }
 
-Menu.menuItemEvent.connect(menuItemEventHandler);
+Menu.menuItemEvent.connect(menuItemEventHandler);;
 ```
+

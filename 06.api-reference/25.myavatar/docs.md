@@ -255,6 +255,7 @@ taxonomy:
 | MyAvatar.wentActive()                    |
 | MyAvatar.wentAway()                      |
 | MyAvatar.skeletonChanged()               |
+| MyAvatar.scaleChanged()                  |
 
 
 ## MyAvatar.collisionWithEntity()<a id="e1"></a>

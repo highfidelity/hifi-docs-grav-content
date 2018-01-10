@@ -179,7 +179,10 @@ taxonomy:
 
 ## Audio.playSound() <a id="method-1"></a>
 
-`Audio.playSound()` triggers playback of an audio file by sending it to the audio mixer. To use this API to play (aka "inject") a sound, the sound file must have been previously loaded using [SoundCache.getSound()](https://wiki.highfidelity.com/wiki/SoundCache.getSound\(\)).
+`Audio.playSound()` triggers playback of an audio file by sending it to the audio mixer. To use this API to play (aka "inject") a sound, the sound file must have been previously loaded using SoundCache.getSound().
+
+Currently, we support the following audio formats:
+- 16-bit uncompressed WAV at any sample rate, with 1, 2, or 4 (ambisonic) channels.
 
 If the client is not connected to an audio mixer, no sound will be played unless the localOnly option is invoked (see below.)
 
@@ -189,7 +192,7 @@ If the client is not connected to an audio mixer, no sound will be played unless
 
 ### Arguments
 
-**Sound\*** The sound object returned from [SoundCache.getSound()](https://wiki.highfidelity.com/wiki/SoundCache.getSound\(\)).
+**Sound** The sound object returned from SoundCache.getSound().
 
 Below are options you can pass to `Audio.playSound()`:
 

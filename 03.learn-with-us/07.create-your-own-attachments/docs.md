@@ -75,7 +75,7 @@ Let’s create a Viking helmet attachment for your avatar.
 
    * This type of attacher script must be designated as the root asset when you submit to the Marketplace. When a user gets your attachment, they will have to run the script as well. This means that they won’t only be importing a model, but also be running a script to wear it as an attachment. 
 
-   * You can view the [Marketplace submission guidelines](../../create-and-explore/marketplace/submission-guidelines) to upload your own attachment and attacher script. 
+   * You can view the [Marketplace submission guidelines](../../high-fidelity-commerce/marketplace) to upload your own attachment and attacher script. 
 
      ​
 

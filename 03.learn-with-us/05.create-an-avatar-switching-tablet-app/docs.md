@@ -12,7 +12,7 @@ Many users in High Fidelity like to have multiple avatars to switch between, and
 - Creating an HTML page for our Tablet App UI
 - Sending messages from our HTML to our Tablet App script
 
-Related [Tutorial: Create a Tablet App](https://wiki.highfidelity.com/wiki/Tutorial:_Create_a_Tablet_App)
+
 
 ## Introducing the Tablet UI
 

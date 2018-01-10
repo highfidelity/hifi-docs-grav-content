@@ -7,34 +7,26 @@ taxonomy:
 
 # What's New in the Docs
 
-Check out the latest changes to our docs between **October 7, 2017 - October 25, 2017**.
+**December 5, 2017**: Check out the latest changes to our docs! 
 
 ## New Docs
-#### Beta Release 57
-* [Shapes: Create in VR](../create-and-explore/marketplace-apps/shapes)
-
-#### Other Updates 
-* [Broadcasting from a Domain](../create-and-explore/start-working-in-your-sandbox/broadcasting)
 * [High Fidelity Commerce](../high-fidelity-commerce)
-* [Digital Asset Registry FAQs](../high-fidelity-commerce/faq-section)
-
-
-
-## Last Updated
-#### Beta Release 57
-* [Baking Your Assets](/create-and-explore/start-working-in-your-sandbox/assignment-clients/baking#baking-a-javascript-file): JS files are now auto-baked in the Asset Server, Asset browser UI tweaked.
-* [Model Entities](../create-and-explore/entities/model-entities): Asset Browser shows "Open" now. 
-* [MacOS](../build-guide/mac-os): Build guide updated. 
-
-#### Other Updates 
-* [All About Scripting](../create-and-explore/all-about-scripting)
-* [How It Works](../get-started/what-is-high-fidelity/how-it-works)
-* [Baking Your Assets](/create-and-explore/start-working-in-your-sandbox/assignment-clients/baking)
-* [Get Started with Scripting](../learn-with-us/get-started-with-scripting)
-* [Contribute](../write-for-us/contribute)
-* [Audio API](../api-reference/audio)
-* [Clipboard API](../api-reference/clipboard)
-* [Controller API](../api-reference/controller)
+  * [Basics](../high-fidelity-commerce/basics)
+    	* [High Fidelity Coins](../high-fidelity-commerce/basics/hfc)
+      		* [Get Your Own HFC](../high-fidelity-commerce/basics/hfc/get-hfc)
+    	* [PoP License and Certificate](../high-fidelity-commerce/basics/pop)
+      		* [Commerce is Here: Switch to the PoP license](../high-fidelity-commerce/basics/pop/pop-license)
+  * [Marketplace](../high-fidelity-commerce/marketplace)
+    	* [Set Up Your Wallet](../high-fidelity-commerce/marketplace/wallet-setup)
+    	* [Buy from the Marketplace](../high-fidelity-commerce/marketplace/buy)
+    	* [Sell Your Items](../high-fidelity-commerce/marketplace/sell)
+      		* [Get Your Item Assets](../high-fidelity-commerce/marketplace/sell/get-assets)
+      		* [Add your Item](../high-fidelity-commerce/marketplace/sell/add-item)
+      		* [Create Your Own Wearable](../high-fidelity-commerce/marketplace/sell/create)
+  * [Avatar Wearables](../high-fidelity-commerce/avatar-wearables)
+    	* [Buy Wearables: Shop at Avatar Island](../high-fidelity-commerce/avatar-wearables/buy)
+    	* [Create Your Own Wearable](../high-fidelity-commerce/avatar-wearables/create)
+  * [Digital Asset Registry FAQs](../high-fidelity-commerce/faq-section)
 
 
 

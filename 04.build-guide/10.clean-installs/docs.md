@@ -18,9 +18,11 @@ You can also try doing a clean install.
 
 A clean install should aid in starting and running High Fidelity without any problems. If you wish to, you can use this document to do a clean install.
 
+>>> A clean installation removes multiple files and settings that you may need once you install High Fidelity again. Please back-up the following files before a clean installation: Wallet's private keys, Avatar bookmarks and attachments, [Entire Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/restoring-sandbox-content/backup-sandbox), [Entities in your Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/restoring-sandbox-content/backup-entities)
 
 ####Steps for a Clean Installation
 #####Windows
+
 
 1. Go to Control Panel > Programs > Uninstall a Program. Or type “Add or Remove Programs” in your Windows search bar. ![](control-panel.png)
 2. Uninstall any versions of High Fidelity that are visible (Including any Steam installs).
