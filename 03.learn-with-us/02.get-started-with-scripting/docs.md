@@ -12,11 +12,11 @@ High Fidelity provides a number of tools to help you customize a domain. Using t
 - Customize and control the behavior of entities, domains, and your avatar. 
 - Create apps that have specific functions, such as the Record app. 
 
-The Create app is an easy UI based tool in the Tablet that lets you add, modify, and delete different types of entities. But you can also do that and more by scripting in High Fidelity! 
+The [Create app](../../create-and-explore/entities/create-mode) is an easy UI based tool in the Tablet that lets you add, modify, and delete different types of entities. But you can also do that and more by scripting in High Fidelity! 
 
 ### Scripting in High Fidelity
 
-High Fidelity's scripts are written in JavaScript. There are four types of scripts used:
+High Fidelity's scripts are written in JavaScript. There are [four types of scripts](../../create-and-explore/all-about-scripting) used:
 
 - Interface Scripts: These are scripts that run as long as you have Interface running. Some applications are modifying the user experience with new menus, overlays, tweaks, plugins, and extensions, or one-time creation tasks.
 - Client Entity Scripts: This script is always attached to an entity. If you trigger this type of script, you will be running an instance of it on your local machine. With these scripts, you can customize what happens when a user encounters an entity. An example is a cube scripted to make your avatar dance when you touch it. 
