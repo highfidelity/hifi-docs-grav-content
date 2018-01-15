@@ -39,7 +39,7 @@ With your text editor open, you can now view and modify scripts in your domain o
 Instead of using the **Create** app to add a cube entity, let;s use a script. Replace your `print(“Hello, World”)` in testScript.js with with the following example:
 
 ```
-\\ Getting your position in the domain, so that the cube is spawned in front of you. 
+// Getting your position in the domain, so that the cube is spawned in front of you. 
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
     type: "Box",
