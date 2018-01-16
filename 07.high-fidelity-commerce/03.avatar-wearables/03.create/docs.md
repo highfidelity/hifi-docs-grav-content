@@ -6,13 +6,13 @@ taxonomy:
 
 *learn how to create your own avatar wearables.*
 
-##Overview
+## Overview
 This guide details recommendations to create your own avatar wearables to be sold in High Fidelity hosted shopping areas. 
 
-##Introduction
+## Introduction
 Learn how you can create avatar wearables that you can sell in our shopping areas like Avatar Island. 
 
-###Automated Tools
+### Automated Tools
 There are two automatic tools that you can use to create and set up your wearable for sale on the Marketplace. 
 
 * Set up your store with models where you would like them.
@@ -22,7 +22,7 @@ There are two automatic tools that you can use to create and set up your wearabl
 * Make your store copy demo-able: https://hifi-content.s3.amazonaws.com/DomainContent/AvatarStore/Utilities/Wearable%20Creator/create-wearable.js
 * This app lets you click on an entity in the space, paste in the marketplaceID, select the joint, and save it. It will then attach the appropriate demo scripts and user data to the store copy and lock it. 
 
-###Manual Process
+### Manual Process
 
 Avatar wearables have the concept of a 'display copy'. This 'display copy' contains the user data for spawning new wearables via an entity server script. The script does not require a user to have rez or rez temporary permissions to use. 
 
@@ -57,7 +57,7 @@ The above user data is required to specify what joints an attachment can be adde
 * Add the following script to the server script field: https://hifi-content.s3.amazonaws.com/liv/avatar_shopping_demo/wearableServer.js
 * Lock your display copy. It will ensure that there are always at least 1 clone to grab and will spawn a new wearable with a lifetime of five minutes when an item is removed from the shelf in a shopping area. 
 
-####Exporting for Marketplace
+#### Exporting for Marketplace
 To export your item for uploading to Marketplace, first follow the standard steps for exporting entities and make the following changes in the JSON:
 
 ```
