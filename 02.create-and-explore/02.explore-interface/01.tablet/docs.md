@@ -16,7 +16,7 @@ We're going to walk you through how you can pull-up your tablet and its various 
 You can use the tablet in High Fidelity to build (adding and editing entities and scripts) and explore (visiting other domains and your sandbox). Pull up the tablet by clicking the menu button on your controller or right-click if you're using your mouse in Desktop mode. 
 
 ![](pull-up-tablet.png)
->>>>> The tablet no longer uses a stylus. It is still available in the settings if you wish to use it.
+>>>>> The tablet no longer uses a stylus. It is still available in the settings if you wish to use it. You can go to **Menu > Settings > Gemeral** and enable *Prefer Stylus over Laser*.
 
 ##HUD 
 
