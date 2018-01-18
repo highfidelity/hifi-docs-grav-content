@@ -68,4 +68,3 @@ Determines if the current account is logged in or not.
 Logs out of the current account. 
 
 This method has no return value. 
-
