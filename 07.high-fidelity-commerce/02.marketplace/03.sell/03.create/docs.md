@@ -2,6 +2,7 @@
 title: 'Create Your Own Wearable'
 taxonomy:
 	category: docs
+	redirect: '/high-fidelity-commerce/avatar-wearables/create'
 ---
 
 *learn how to create your own avatar wearables.*
