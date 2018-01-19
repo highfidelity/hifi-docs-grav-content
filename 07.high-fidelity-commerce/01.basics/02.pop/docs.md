@@ -16,5 +16,3 @@ Once an item is approved by the registry, you (the user) will receive a PoP Cert
 
 If you place this item on sale on the Marketplace, any other users purchasing your item will receive subsequent editions of your item. Every time a user purchases your item, it is certified and cryptographically signed by the Marketplace. The PoP Certificate proves that you possess an item through legal means. 
 
-Check out our [fee structure](https://highfidelity.com/commerce/fee-structure) to see how you benefit from participating in High Fidelity commerce. 
-
