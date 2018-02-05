@@ -6,7 +6,17 @@ taxonomy:
 
 *This tutorial covers setting up your home domain to build in High Fidelity.*
 
-##Overview
+## Contents
+
+* [Overview](#overview)
+* [Introduction](#introduction)
+* [Steps](#steps)
+* [Results](#results)
+* [Conclusion](#conclusion)
+* [Additional Information](#additional-information)
+* [References](#references)
+
+## Overview
 
 High Fidelity is an open-source software with which you can create and share virtual reality (VR) experiences. If you’re ready to start building in High Fidelity, you’ve come to the right place! In this tutorial, we’ll walk you through:
 
@@ -15,8 +25,7 @@ High Fidelity is an open-source software with which you can create and share vir
 * Connecting to your Sandbox server with the browser.
 * Configuring user permissions for your domain.
 
-
-##Introduction
+## Introduction
 
 To start building in High Fidelity, we need to talk about domains first. [Domains](../../get-started/what-is-high-fidelity/how-it-works) in High Fidelity are hosted on your system or the system running Sandbox.
 
@@ -26,7 +35,7 @@ Users can access and share your VR experiences by looking for your domain throug
 
 Let’s set-up your domain!
 
-###Steps
+### Steps
 
 1. [**Install High Fidelity**](../../get-started/installation)
    If you don’t have High Fidelity on your system, download and install the software using these instructions.
@@ -45,24 +54,24 @@ Let’s set-up your domain!
 5. **Your server is set-up!**
    You can visit your Sandbox to start building. If your server isn’t running, right-click High Fidelity’s icon in the System tray (Windows) or Menu bar (OS X), and select ‘Start Server’. Once the server starts, click ‘Go Home’ to enter your home domain!![](setup_domain_to_build_serversettings.PNG)
 
-###Results
+### Results
 
 You’ve successfully setup your domain to start building. Before you do, get familiar with your home domain and try to pop into some of the other domains (like Welcome) using Interface to get comfortable with High Fidelity.
 
 
-##Conclusion
+## Conclusion
 
 Now, you’re ready to start building your own world. We recommend Get Started with Scripting in High Fidelity as your next step!
 
 
-##Additional Information
+## Additional Information
 
 Curious about how everything runs under the hood? You can check out the compiler documentation and build the source code for High Fidelity yourself!
 
 Download and Install High Fidelity Interface and Sandbox  and sign up for a High Fidelity account at [http://highfidelity.com/](http://highfidelity.com/).
 
 
-##References
+## References
 
 * Server Settings
 * Sandbox documentation

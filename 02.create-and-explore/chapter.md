@@ -4,8 +4,6 @@ taxonomy:
     category: docs
 ---
 
-### 
-
 # Create & Explore
 
-Start your High Fidelity adventure. 
+Start your High Fidelity adventure.
