@@ -12,6 +12,8 @@ This guide details recommendations to create your own avatar wearables to be sol
 ## Introduction
 Learn how you can create avatar wearables that you can sell in our shopping areas like Avatar Island. 
 
+>>>>> If you're making a wearable entity for the Marketplace, make sure it is fit to the default wooden mannequin avatar (unless you are specifically making it to go with a very specific base avatar model).
+
 ### Automated Tools
 There are two automatic tools that you can use to create and set up your wearable for sale on the Marketplace. 
 
