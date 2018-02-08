@@ -12,14 +12,11 @@ taxonomy:
 
 | Methods                      |
 | ---------------------------- |
-| FaceTracker.toggleMute()     |
-| FaceTracker.setEnabled(bool) |
+| `FaceTracker.toggleMute()`     |
+| `FaceTracker.setEnabled(bool)` |
 
 | Events                                 |
 | -------------------------------------- |
-| FaceTracker.calibrate()                |
-| FaceTracker.destroyed()                |
-| FaceTracker.destroyed(QObject*)        |
-| FaceTracker.getMuted()                 |
-| FaceTracker.muteToggled()              |
-| FaceTracker.objectNameChanged(QString) |
+| `FaceTracker.calibrate()`                |
+| `FaceTracker.getMuted()`                 |
+| `FaceTracker.muteToggled()`              |

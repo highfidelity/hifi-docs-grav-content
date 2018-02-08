@@ -5,20 +5,11 @@ taxonomy:
         - docs
 ---
 
-| Properties                 | Type   | Description |
-| -------------------------- | ------ | ----------- |
-| AvatarBookmarks.objectName | string |             |
-
-
 
 | Methods                          |
 | -------------------------------- |
-| AvatarBookmarks.addBookmark()    |
-| AvatarBookmarks.deleteBookmark() |
+| `AvatarBookmarks.addBookmark()`    |
+| `AvatarBookmarks.deleteBookmark()` |
 
 
-
-| Events                                   |
-| ---------------------------------------- |
-| AvatarBookmarks.objectNameChanged(QString) |
 
