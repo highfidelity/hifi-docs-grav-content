@@ -42,9 +42,17 @@ title: Your Page Name/Title
 ```
 The only thing that changes in this code from page to page is the page name. 
 
+* **Include your media files in the same folder**. Any images or gifs you want to include in your page should be saved in the same folder as your page's markdown file. 
 
-While writing for our docs, check out our style guide and markdown guide to understand how you can write clearly and represent High Fidelity. 
+* **Use the YouTube plugin code to add an embedded version of the video**. Use the following code to embed a YouTube video on your page. 
+```
+[plugin:youtube](https://www.youtube.com/your-url)
+```
 
+
+Check out our Style Guide while writing to see how you can edit your page before review. 
+
+Our [Markdown Guide](../..//write-for-us/markdown-guide) will help you understand how to write different headings, add images, notes, warning, information, hyperlinks, using anchors and more. 
 
 
 
