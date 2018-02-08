@@ -13,15 +13,12 @@ taxonomy:
 
 | Properties <a id="properties"></a> | Type    | Description                              |
 | ---------------------------------- | ------- | ---------------------------------------- |
-| Audio.muted                        | Boolean | Determines if the audio is muted or not. |
-| Audio.noiseReduction               | Boolean | Turn noise reduction on or off.          |
-| Audio.inputVolume                  | Float   |                                          |
-| Audio.inputLevel                   | Float   | Read only value, to get the input level. |
-| Audio.objectName                   | String  |                                          |
-| Audio.context                      | String  |                                          |
-| Audio.devices.input.objectName     | String  |                                          |
-| Audio.devices.objectName           | String  |                                          |
-| Audio.devices.output.objectName    | String  |                                          |
+| `Audio.muted`                        | Boolean | Determines if the audio is muted or not. |
+| `Audio.noiseReduction`               | Boolean | Turn noise reduction on or off.          |
+| `Audio.inputVolume`                  | Float   |                                          |
+| `Audio.inputLevel`                   | Float   | Read only value, to get the input level. |
+| `Audio.context`                      | String  |                                          |
+
 
 
 
@@ -30,127 +27,127 @@ taxonomy:
 
 | Methods <a id="methods"></a>             |
 | ---------------------------------------- |
-| [Audio.playSound(SharedSoundPointer)](#method-1) |
-| Audio.playSound(SharedSoundPointer,AudioInjectorOptions) |
-| Audio.setStereoInput(bool)               |
-| [Audio.stopInjector(soundPlaying)](#method-3) |
-| [Audio.isInjectorPlaying(soundPlaying)](#method-2) |
-| Audio.devices.deleteLater()              |
-| Audio.devices.input.canFetchMore(QModelIndex) |
-| Audio.devices.input.columnCount()        |
-| Audio.devices.input.columnCount(QModelIndex) |
-| Audio.devices.input.columnsAboutToBeInserted(QModelIndex,int,int) |
-| Audio.devices.input.columnsAboutToBeMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.input.columnsAboutToBeRemoved(QModelIndex,int,int) |
-| Audio.devices.input.columnsInserted(QModelIndex,int,int) |
-| Audio.devices.input.columnsMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.input.columnsRemoved(QModelIndex,int,int) |
-| Audio.devices.input.data(QModelIndex)    |
-| Audio.devices.input.data(QModelIndex,int) |
-| Audio.devices.input.dataChanged(QModelIndex,QModelIndex) |
-| Audio.devices.input.dataChanged(QModelIndex,QModelIndex,QVector<int>) |
-| Audio.devices.input.deviceChanged(QAudioDeviceInfo) |
-| Audio.devices.input.fetchMore(QModelIndex) |
-| Audio.devices.input.flags(QModelIndex)   |
-| Audio.devices.input.hasChildren()        |
-| Audio.devices.input.hasChildren(QModelIndex) |
-| Audio.devices.input.hasIndex(int,int)    |
-| Audio.devices.input.hasIndex(int,int,QModelIndex) |
-| Audio.devices.input.headerData(int,Qt::Orientation) |
-| Audio.devices.input.headerData(int,Qt::Orientation,int) |
-| Audio.devices.input.headerDataChanged(Qt::Orientation,int,int) |
-| Audio.devices.input.index(int,int)       |
-| Audio.devices.input.index(int,int,QModelIndex) |
-| Audio.devices.input.layoutAboutToBeChanged() |
-| Audio.devices.input.layoutAboutToBeChanged(QList<QPersistentModelIndex>) |
-| Audio.devices.input.layoutAboutToBeChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHint) |
-| Audio.devices.input.layoutChanged()      |
-| Audio.devices.input.layoutChanged(QList<QPersistentModelIndex>) |
-| Audio.devices.input.layoutChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHint) |
-| Audio.devices.input.match(QModelIndex,int,QVariant) |
-| Audio.devices.input.match(QModelIndex,int,QVariant,int) |
-| Audio.devices.input.match(QModelIndex,int,QVariant,int,Qt::MatchFlags) |
-| Audio.devices.input.modelAboutToBeReset() |
-| Audio.devices.input.modelReset()         |
-| Audio.devices.input.objectNameChanged(QString) |
-| Audio.devices.input.parent(QModelIndex)  |
-| Audio.devices.input.resetInternalData()  |
-| Audio.devices.input.revert()             |
-| Audio.devices.input.rowCount()           |
-| Audio.devices.input.rowCount(QModelIndex) |
-| Audio.devices.input.rowsAboutToBeInserted(QModelIndex,int,int) |
-| Audio.devices.input.rowsAboutToBeMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.input.rowsAboutToBeRemoved(QModelIndex,int,int) |
-| Audio.devices.input.rowsInserted(QModelIndex,int,int) |
-| Audio.devices.input.rowsMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.input.rowsRemoved(QModelIndex,int,int) |
-| Audio.devices.input.setData(QModelIndex,QVariant) |
-| Audio.devices.input.setData(QModelIndex,QVariant,int) |
-| Audio.devices.input.sibling(int,int,QModelIndex) |
-| Audio.devices.input.submit()             |
-| Audio.devices.nop()                      |
-| Audio.devices.objectNameChanged(QString) |
-| Audio.devices.output.canFetchMore(QModelIndex) |
-| Audio.devices.output.columnCount()       |
-| Audio.devices.output.columnCount(QModelIndex) |
-| Audio.devices.output.columnsAboutToBeInserted(QModelIndex,int,int) |
-| Audio.devices.output.columnsAboutToBeMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.output.columnsAboutToBeRemoved(QModelIndex,int,int) |
-| Audio.devices.output.columnsInserted(QModelIndex,int,int) |
-| Audio.devices.output.columnsMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.output.columnsRemoved(QModelIndex,int,int) |
-| Audio.devices.output.data(QModelIndex)   |
-| Audio.devices.output.data(QModelIndex,int) |
-| Audio.devices.output.dataChanged(QModelIndex,QModelIndex) |
-| Audio.devices.output.dataChanged(QModelIndex,QModelIndex,QVector<int>) |
-| Audio.devices.output.deleteLater()       |
-| Audio.devices.output.deviceChanged(QAudioDeviceInfo) |
-| Audio.devices.output.fetchMore(QModelIndex) |
-| Audio.devices.output.flags(QModelIndex)  |
-| Audio.devices.output.hasChildren()       |
-| Audio.devices.output.hasChildren(QModelIndex) |
-| Audio.devices.output.hasIndex(int,int)   |
-| Audio.devices.output.hasIndex(int,int,QModelIndex) |
-| Audio.devices.output.headerData(int,Qt::Orientation) |
-| Audio.devices.output.headerData(int,Qt::Orientation,int) |
-| Audio.devices.output.headerDataChanged(Qt::Orientation,int,int) |
-| Audio.devices.output.index(int,int)      |
-| Audio.devices.output.index(int,int,QModelIndex) |
-| Audio.devices.output.layoutAboutToBeChanged() |
-| Audio.devices.output.layoutAboutToBeChanged(QList<QPersistentModelIndex>) |
-| Audio.devices.output.layoutAboutToBeChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHint) |
-| Audio.devices.output.layoutChanged()     |
-| Audio.devices.output.layoutChanged(QList<QPersistentModelIndex>) |
-| Audio.devices.output.layoutChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHint) |
-| Audio.devices.output.match(QModelIndex,int,QVariant) |
-| Audio.devices.output.match(QModelIndex,int,QVariant,int) |
-| Audio.devices.output.match(QModelIndex,int,QVariant,int,Qt::MatchFlags) |
-| Audio.devices.output.modelAboutToBeReset() |
-| Audio.devices.output.modelReset()        |
-| Audio.devices.output.objectNameChanged(QString) |
-| Audio.devices.output.parent(QModelIndex) |
-| Audio.devices.output.resetInternalData() |
-| Audio.devices.output.revert()            |
-| Audio.devices.output.rowCount()          |
-| Audio.devices.output.rowCount(QModelIndex) |
-| Audio.devices.output.rowsAboutToBeInserted(QModelIndex,int,int) |
-| Audio.devices.output.rowsAboutToBeMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.output.rowsAboutToBeRemoved(QModelIndex,int,int) |
-| Audio.devices.output.rowsInserted(QModelIndex,int,int) |
-| Audio.devices.output.rowsMoved(QModelIndex,int,int,QModelIndex,int) |
-| Audio.devices.output.rowsRemoved(QModelIndex,int,int) |
-| Audio.devices.output.setData(QModelIndex,QVariant) |
-| Audio.devices.output.setData(QModelIndex,QVariant,int) |
-| Audio.devices.output.sibling(int,int,QModelIndex) |
-| Audio.devices.output.submit()            |
-| Audio.noiseReductionChanged(bool)        |
-| Audio.nop()                              |
-| Audio.playSystemSound(SharedSoundPointer,QVector3D) |
-| Audio.setInputDevice(QAudioDeviceInfo)   |
-| Audio.setOutputDevice(QAudioDeviceInfo)  |
-| Audio.setReverb(bool)                    |
-| AudioEffectOptions                       |
-| Audio.setReverbOptions(const AudioEffectOptions*) |
+| [`Audio.playSound(SharedSoundPonumberer)`](#method-1) |
+| `Audio.playSound(SharedSoundPonumberer,AudioInjectorOptions)` |
+| `Audio.setStereoInput(bool)`               |
+| [`Audio.stopInjector(soundPlaying)`](#method-3) |
+| [`Audio.isInjectorPlaying(soundPlaying)`](#method-2) |
+| `Audio.devices.deleteLater()`              |
+| `Audio.devices.input.canFetchMore(QModelIndex)` |
+| `Audio.devices.input.columnCount()`        |
+| `Audio.devices.input.columnCount(QModelIndex)` |
+| `Audio.devices.input.columnsAboutToBeInserted(QModelIndex,number,number)` |
+|`Audio.devices.input.columnsAboutToBeInserted(QModelIndex,number,number)`|
+|`Audio.devices.input.columnsAboutToBeMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.input.columnsAboutToBeRemoved(QModelIndex,number,number)`|
+|`Audio.devices.input.columnsInserted(QModelIndex,number,number)`|
+|`Audio.devices.input.columnsMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.input.columnsRemoved(QModelIndex,number,number)`|
+|`Audio.devices.input.data(QModelIndex)`|
+|`Audio.devices.input.data(QModelIndex,number)`|
+|`Audio.devices.input.dataChanged(QModelIndex,QModelIndex)`|
+|`Audio.devices.input.dataChanged(QModelIndex,QModelIndex,QVector<number>)`|
+|`Audio.devices.input.deviceChanged(QAudioDeviceInfo)`|
+|`Audio.devices.input.fetchMore(QModelIndex)`|
+|`Audio.devices.input.flags(QModelIndex)`|
+|`Audio.devices.input.hasChildren()`|
+|`Audio.devices.input.hasChildren(QModelIndex)`|
+|`Audio.devices.input.hasIndex(number,number)`|
+|`Audio.devices.input.hasIndex(number,number,QModelIndex)`|
+|`Audio.devices.input.headerData(number,Qt::Orientation)`|
+|`Audio.devices.input.headerData(number,Qt::Orientation,number)`|
+|`Audio.devices.input.headerDataChanged(Qt::Orientation,number,number)`|
+|`Audio.devices.input.index(number,number)`|
+|`Audio.devices.input.index(number,number,QModelIndex)`|
+|`Audio.devices.input.layoutAboutToBeChanged()`|
+|`Audio.devices.input.layoutAboutToBeChanged(QList<QPersistentModelIndex>)`|
+|`Audio.devices.input.layoutAboutToBeChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHnumber)`|
+|`Audio.devices.input.layoutChanged()`|
+|`Audio.devices.input.layoutChanged(QList<QPersistentModelIndex>)`|
+|`Audio.devices.input.layoutChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHnumber)`|
+|`Audio.devices.input.match(QModelIndex,number,QVariant)`|
+|`Audio.devices.input.match(QModelIndex,number,QVariant,number)`|
+|`Audio.devices.input.match(QModelIndex,number,QVariant,number,Qt::MatchFlags)`|
+|`Audio.devices.input.modelAboutToBeReset()`|
+|`Audio.devices.input.modelReset()`|
+|`Audio.devices.input.objectNameChanged(QString)`|
+|`Audio.devices.input.parent(QModelIndex)`|
+|`Audio.devices.input.resetnumberernalData()`|
+|`Audio.devices.input.revert()`|
+|`Audio.devices.input.rowCount()`|
+|`Audio.devices.input.rowCount(QModelIndex)`|
+|`Audio.devices.input.rowsAboutToBeInserted(QModelIndex,number,number)`|
+|`Audio.devices.input.rowsAboutToBeMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.input.rowsAboutToBeRemoved(QModelIndex,number,number)`|
+|`Audio.devices.input.rowsInserted(QModelIndex,number,number)`|
+|`Audio.devices.input.rowsMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.input.rowsRemoved(QModelIndex,number,number)`|
+|`Audio.devices.input.setData(QModelIndex,QVariant)`|
+|`Audio.devices.input.setData(QModelIndex,QVariant,number)`|
+|`Audio.devices.input.sibling(number,number,QModelIndex)`|
+|`Audio.devices.input.submit()`|
+|`Audio.devices.nop()`|
+|`Audio.devices.objectNameChanged(QString)`|
+|`Audio.devices.output.canFetchMore(QModelIndex)`|
+|`Audio.devices.output.columnCount()`|
+|`Audio.devices.output.columnCount(QModelIndex)`|
+|`Audio.devices.output.columnsAboutToBeInserted(QModelIndex,number,number)`|
+|`Audio.devices.output.columnsAboutToBeMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.output.columnsAboutToBeRemoved(QModelIndex,number,number)`|
+|`Audio.devices.output.columnsInserted(QModelIndex,number,number)`|
+|`Audio.devices.output.columnsMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.output.columnsRemoved(QModelIndex,number,number)`|
+|`Audio.devices.output.data(QModelIndex)`|
+|`Audio.devices.output.data(QModelIndex,number)`|
+|`Audio.devices.output.dataChanged(QModelIndex,QModelIndex)`|
+|`Audio.devices.output.dataChanged(QModelIndex,QModelIndex,QVector<number>)`|
+|`Audio.devices.output.deleteLater()`|
+|`Audio.devices.output.deviceChanged(QAudioDeviceInfo)`|
+|`Audio.devices.output.fetchMore(QModelIndex)`|
+|`Audio.devices.output.flags(QModelIndex)`|
+|`Audio.devices.output.hasChildren()`|
+|`Audio.devices.output.hasChildren(QModelIndex)`|
+|`Audio.devices.output.hasIndex(number,number)`|
+|`Audio.devices.output.hasIndex(number,number,QModelIndex)`|
+|`Audio.devices.output.headerData(number,Qt::Orientation)`|
+|`Audio.devices.output.headerData(number,Qt::Orientation,number)`|
+|`Audio.devices.output.headerDataChanged(Qt::Orientation,number,number)`|
+|`Audio.devices.output.index(number,number)`|
+|`Audio.devices.output.index(number,number,QModelIndex)`|
+|`Audio.devices.output.layoutAboutToBeChanged()`|
+|`Audio.devices.output.layoutAboutToBeChanged(QList<QPersistentModelIndex>)`|
+|`Audio.devices.output.layoutAboutToBeChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHnumber)`|
+|`Audio.devices.output.layoutChanged()`|
+|`Audio.devices.output.layoutChanged(QList<QPersistentModelIndex>)`|
+|`Audio.devices.output.layoutChanged(QList<QPersistentModelIndex>,QAbstractItemModel::LayoutChangeHnumber)`|
+|`Audio.devices.output.match(QModelIndex,number,QVariant)`|
+|`Audio.devices.output.match(QModelIndex,number,QVariant,number)`|
+|`Audio.devices.output.match(QModelIndex,number,QVariant,number,Qt::MatchFlags)`|
+|`Audio.devices.output.modelAboutToBeReset()`|
+|`Audio.devices.output.modelReset()`|
+|`Audio.devices.output.parent(QModelIndex)`|
+|`Audio.devices.output.resetnumberernalData()`|
+|`Audio.devices.output.revert()`|
+|`Audio.devices.output.rowCount()`|
+|`Audio.devices.output.rowCount(QModelIndex)`|
+|`Audio.devices.output.rowsAboutToBeInserted(QModelIndex,number,number)`|
+|`Audio.devices.output.rowsAboutToBeMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.output.rowsAboutToBeRemoved(QModelIndex,number,number)`|
+|`Audio.devices.output.rowsInserted(QModelIndex,number,number)`|
+|`Audio.devices.output.rowsMoved(QModelIndex,number,number,QModelIndex,number)`|
+|`Audio.devices.output.rowsRemoved(QModelIndex,number,number)`|
+|`Audio.devices.output.setData(QModelIndex,QVariant)`|
+|`Audio.devices.output.setData(QModelIndex,QVariant,number)`|
+|`Audio.devices.output.sibling(number,number,QModelIndex)`|
+|`Audio.devices.output.submit()`|
+|`Audio.noiseReductionChanged(bool)`|
+|`Audio.nop()`|
+|`Audio.playSystemSound(SharedSoundPonumberer,QVector3D)`|
+|`Audio.setInputDevice(QAudioDeviceInfo)`|
+|`Audio.setOutputDevice(QAudioDeviceInfo)`|
+|`Audio.setReverb(bool)`|
+|`AudioEffectOptions`|
+|`Audio.setReverbOptions(const AudioEffectOptions*)`|
 
 
 
@@ -160,19 +157,18 @@ taxonomy:
 
 | Events      <a id="events"></a>  |
 | -------------------------------- |
-| Audio.disconnected()             |
-| Audio.environmentMuted()         |
-| Audio.inputReceived(QByteArray)  |
-| Audio.mutedByMixer()             |
-| Audio.noiseGateClosed()          |
-| Audio.noiseGateOpened()          |
-| Audio.receivedFirstPacket()      |
-| Audio.contextChanged(QString)    |
-| Audio.onContextChanged()         |
-| Audio.objectNameChanged(QString) |
-| Audio.inputLevelChanged(float)   |
-| Audio.inputVolumeChanged(float)  |
-| Audio.mutedChanged(bool)         |
+|`Audio.disconnected()`|
+|`Audio.environmentMuted()`|
+|`Audio.inputReceived(QByteArray)`|
+|`Audio.mutedByMixer()`|
+|`Audio.noiseGateClosed()`|
+|`Audio.noiseGateOpened()`|
+|`Audio.receivedFirstPacket()`|
+|`Audio.contextChanged(QString)`|
+|`Audio.onContextChanged()`|
+|`Audio.inputLevelChanged(float)`|
+|`Audio.inputVolumeChanged(float)`|
+|`Audio.mutedChanged(bool)`|
 
 
 
@@ -204,7 +200,7 @@ Below are options you can pass to `Audio.playSound()`:
 | Loop           | Repeats sound automatically              | Boolean                                  | False                      |
 | Stereo         | File is in stereo format                 | Boolean                                  | False                      |
 | localOnly      | injects audio locally rather than via the audio mixer | Boolean                                  | False                      |
-| secondOffset   | starting playback point within the soundclip, in seconds | Any number >= 0                          | 0                          |
+| secondOffset   | starting playback ponumber within the soundclip, in seconds | Any number >= 0                          | 0                          |
 | ignorePenumbra | don't subject this sound to the positional lowpass penumbra filter | Boolean                                  | False                      |
 
 'Stereo' can be overridden by a WAV header or by including ".stereo" in a RAW filename (e.g., Thunderclap.stereo.raw)
@@ -217,7 +213,7 @@ Note that 'Position', 'Orientation' and 'IgnorePenumbra' have no effect when 'lo
 
 ### Examples
 
-To play a sound loaded into the SoundCache as "GunshotSound":
+To play a sound loaded numbero the SoundCache as "GunshotSound":
 
 ```
 var injector = Audio.playSound(GunshotSound);
@@ -260,7 +256,7 @@ Take a look at this snippet of `playSoundLoop.js`:
 ```java
 //starting the sound
 soundPlaying = Audio.playSound(sound, options);
-print("Started sound looping.");
+prnumber("Started sound looping.");
 Script.update.disconnect(maybePlaySound);
 	}
 }
@@ -271,7 +267,7 @@ function scriptEnding() {
 if (Audio.isInjectorPlaying(soundPlaying)) {
 Audio.stopInjector(soundPlaying);
 Entities.deleteEntity(ball);
-print("Stopped sound.");
+prnumber("Stopped sound.");
 }
 
 ```
@@ -290,7 +286,7 @@ Take a look at this snippet of `playSoundLoop.js`:
  ...
  //starting the sound
  soundPlaying = Audio.playSound(sound, options);
- print("Started sound looping.");
+ prnumber("Started sound looping.");
  Script.update.disconnect(maybePlaySound);
  }
  }
@@ -301,7 +297,7 @@ Take a look at this snippet of `playSoundLoop.js`:
  //stopping the sound
  Audio.stopInjector(soundPlaying);
  Entities.deleteEntity(ball);
- print("Stopped sound.");
+ prnumber("Stopped sound.");
  }
  
  ...

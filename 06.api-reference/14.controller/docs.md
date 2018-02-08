@@ -15,104 +15,103 @@ taxonomy:
 ##Properties <a id="properties"></a>
 | Properties                               | Type   | Description                              |
 | ---------------------------------------- | ------ | ---------------------------------------- |
-| Controller.Actions.Backward              | number | Alias for TranslateZ in the positive direction |
-| Controller.Actions.BoomIn                | number | Camera movement to third person view     |
-| Controller.Actions.BoomOut               | number | Camera movement back to first person view |
-| Controller.Actions.ContextMenu           | number |                                          |
-| Controller.Actions.CycleCamera           | number | Cycles the camera                        |
-| Controller.Actions.Down                  | number |                                          |
-| Controller.Actions.Forward               | number | Alias for TranslateZ in the negative direction |
-| Controller.Actions.LATERAL_LEFT          | number |                                          |
-| Controller.Actions.LATERAL_RIGHT         | number |                                          |
-| Controller.Actions.LONGITUDINAL_BACKWARD | number |                                          |
-| Controller.Actions.LONGITUDINAL_FORWARD  | number |                                          |
-| Controller.Actions.LeftFoot              | number |                                          |
-| Controller.Actions.LeftHand              | number | Set the left hand pose                   |
-| Controller.Actions.LeftHandClick         | number |                                          |
-| Controller.Actions.Pitch                 | number | Rotation around the X axis               |
-| Controller.Actions.PitchDown             | number | Bisected alias for Pitch                 |
-| Controller.Actions.PitchUp               | number | Bisected alias for Pitch                 |
-| Controller.Actions.PrimaryAction         | number |                                          |
-| Controller.Actions.ReticleClick          | number | Pointer/Reticle click event              |
-| Controller.Actions.ReticleDown           | number | Bisected alias for ReticleY              |
-| Controller.Actions.ReticleLeft           | number | Bisected alias for ReticleX              |
-| Controller.Actions.ReticleRight          | number | Bisected alias for ReticleX              |
-| Controller.Actions.ReticleUp             | number | Bisected alias for ReticleY              |
-| Controller.Actions.ReticleX              | number | Reticle movement along the X axis        |
-| Controller.Actions.ReticleY              | number | Reticle movement along the Y axis        |
-| Controller.Actions.RightFoot             | number |                                          |
-| Controller.Actions.RightHand             | number | Set the right hand pose                  |
-| Controller.Actions.RightHandClick        | number |                                          |
-| Controller.Actions.Roll                  | number | Rotation around the Z axis               |
-| Controller.Actions.SHIFT                 | number |                                          |
-| Controller.Actions.SecondaryAction       | number |                                          |
-| Controller.Actions.Shift                 | number |                                          |
-| Controller.Actions.StepPitch             | number | Incremental rotation around the X axis   |
-| Controller.Actions.StepRoll              | number | Incremental rotation around the Z axis   |
-| Controller.Actions.StepTranslateX        | number | Incremental movement along the X axis    |
-| Controller.Actions.StepTranslateY        | number | Incremental movement along the Y axis    |
-| Controller.Actions.StepTranslateZ        | number | Incremental movement along the Z axis    |
-| Controller.Actions.StepYaw               | number | Incremental rotation around the Y axis   |
-| Controller.Actions.StrafeLeft            | number | Bisected alias for TranslateX            |
-| Controller.Actions.StrafeRight           | number | Bisected alias for TranslateX            |
-| Controller.Actions.ToggleMute            | number | Toggle audio device mute                 |
-| Controller.Actions.ToggleOverlay         | number |                                          |
-| Controller.Actions.TranslateX            | number | Movement along the X axis                |
-| Controller.Actions.TranslateY            | number | Movement along the Y axis                |
-| Controller.Actions.TranslateZ            | number | Movement along the Z axis                |
-| Controller.Actions.UiNavBack             | number |                                          |
-| Controller.Actions.UiNavGroup            | number |                                          |
-| Controller.Actions.UiNavLateral          | number |                                          |
-| Controller.Actions.UiNavSelect           | number |                                          |
-| Controller.Actions.UiNavVertical         | number |                                          |
-| Controller.Actions.Up                    | number |                                          |
-| Controller.Actions.VERTICAL_DOWN         | number |                                          |
-| Controller.Actions.VERTICAL_UP           | number |                                          |
-| Controller.Actions.Yaw                   | number | Rotation around the Y axis               |
-| Controller.Actions.YawLeft               | number | Bisected alias for Yaw                   |
-| Controller.Actions.YawRight              | number | Bisected alias for Yaw                   |
-| Controller.Hardware.Application.AdvancedMovement | number |                                          |
-| Controller.Hardware.Application.CameraEntity | number |                                          |
-| Controller.Hardware.Application.CameraFSM | number |                                          |
-| Controller.Hardware.Application.CameraFirstPerson | number |                                          |
-| Controller.Hardware.Application.CameraIndependent | number |                                          |
-| Controller.Hardware.Application.CameraThirdPerson | number |                                          |
-| Controller.Hardware.Application.ComfortMode | float  | A non-zero value indicates the user has selected to use "Comfort Mode" when in HMD mode and 0 indicates the user has not selected to use "Comfort Mode." |
-| Controller.Hardware.Application.Grounded | float  | The Grounded property is used to determine whether an avatar is colliding with a floor entity or located within a specified distance above a floor entity. A floor entity is any entity that has collision enabled (the entity's ignoreForCollisions property is set to false). The specified distance depends on the avatar's size and is set to 1/3 the radius of the avatar's collision capsule. non-zero value indicates the avatar is either colliding with the floor entity or above the floor entity within the specified distance. A value of 0 indicates the avatar is not colliding with or near a floor entity. : The distance measured is from the avatar's capsule to the entity's collision hull. As an entity's collision hull may not match the entity's mesh (and won't for irregular shapes) and may be significantly larger than the mesh, the avatar may appear to be floating even though the Grounding value is 1. |
-| Controller.Hardware.Application.InHMD    | float  | A non-zero value indicates Interface is being run in HMD mode, and 0 indicates HMD mode is not in use. |
-| Controller.Hardware.Application.NavigationFocused | float  | If the user is using a GamePad or Hydra, and a menu or dialog appears, switching to the keyboard is not user friendly. By checking for NavigationFocused, conditional routes can be created that allow the user to navigate the menu without having to touch the mouse or keyboard. |
-| Controller.Hardware.Application.SnapTurn | number |                                          |
-| Controller.Hardware.Hydra                | number |                                          |
-| Controller.Hardware.Keyboard.(0-9)       | number | Number keys inclusive of 0 though 9      |
-| Controller.Hardware.Keyboard.(A-Z)       | number | Letter keys inclusive of A - Z of the English alphabet |
-| Controller.Hardware.Keyboard.(Left and Right) | number | Left and right arrow keys                |
-| Controller.Hardware.Keyboard.(Up and Down) | number | Up and Down arrow keys                   |
-| Controller.Hardware.Space                | number | Space bar                                |
-| Controller.Hardware.Shift                | number | Shift key                                |
-| Controller.Hardware.PageUp and  PageDown | number | PageUp and PageDown keys                 |
-| Controller.Hardware.LeftMouseButton      | number | Left mouse button                        |
-| Controller.Hardware.MiddleMouseButton    | number | Middle mouse button                      |
-| Controller.Hardware.RightMouseButton     | number | Right mouse button                       |
-| Controller.Hardware.LeftMouseClicked     | number | Left mouse button click                  |
-| Controller.Hardware.MiddleMouseClicked   | number | Middle mouse button click                |
-| Controller.Hardware.RightMouseClicked    | number | Right mouse button click                 |
-| Controller.Hardware.MouseMoveRight       | number | Mouse movement to the right              |
-| Controller.Hardware.MouseMoveLeft        | number | Mouse movement to the left               |
-| Controller.Hardware.MouseMoveUp          | number | Mouse movement up                        |
-| Controller.Hardware.MouseMoveDown        | number | Mouse movement down                      |
-| Controller.Hardware.MouseWheelRight      | number | Mouse wheel movement to the right        |
-| Controller.Hardware.MouseWheelLeft       | number | Mouse wheel movement left                |
-| Controller.Hardware.MouseWheelUp         | number | Mouse wheel movement up                  |
-| Controller.Hardware.MouseWheelDown       | number | Mouse wheel movement down                |
-| Controller.Hardware.TouchpadRight        | number | Touchpad movement to the right           |
-| Controller.Hardware.TouchpadLeft         | number | Touchpad movement to the left            |
-| Controller.Hardware.TouchpadUp           | number | Touchpad movement up                     |
-| Controller.Hardware.TouchpadDown         | number | Touchpad movement down                   |
-| Controller.Hardware.OculusTouch          | number |                                          |
-| Controller.Standard                      | number |                                          |
-| Controller.objectName                    | string |                                          |
-| MappingObject.name<a id="mapobj"></a>    | string | The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required. |
-| MappingObject.channels                   | object | A JSON object of routes which define which input goes to which output. |
+|`Controller.Actions.Backward`|number|Alias for TranslateZ in the positive direction|
+|`Controller.Actions.BoomIn`|number|Camera movement to third person view|
+|`Controller.Actions.BoomOut`|number|Camera movement back to first person view|
+|`Controller.Actions.ContextMenu`|number||
+|`Controller.Actions.CycleCamera`|number|Cycles the camera|
+|`Controller.Actions.Down`|number||
+|`Controller.Actions.Forward`|number|Alias for TranslateZ in the negative direction|
+|`Controller.Actions.LATERAL_LEFT`|number||
+|`Controller.Actions.LATERAL_RIGHT`|number||
+|`Controller.Actions.LONGITUDINAL_BACKWARD`|number||
+|`Controller.Actions.LONGITUDINAL_FORWARD`|number||
+|`Controller.Actions.LeftFoot`|number||
+|`Controller.Actions.LeftHand`|number|Set the left hand pose|
+|`Controller.Actions.LeftHandClick`|number||
+|`Controller.Actions.Pitch`|number|Rotation around the X axis|
+|`Controller.Actions.PitchDown`|number|Bisected alias for Pitch|
+|`Controller.Actions.PitchUp`|number|Bisected alias for Pitch|
+|`Controller.Actions.PrimaryAction`|number||
+|`Controller.Actions.ReticleClick`|number|Pointer/Reticle click event|
+|`Controller.Actions.ReticleDown`|number|Bisected alias for ReticleY|
+|`Controller.Actions.ReticleLeft`|number|Bisected alias for ReticleX|
+|`Controller.Actions.ReticleRight`|number|Bisected alias for ReticleX|
+|`Controller.Actions.ReticleUp`|number|Bisected alias for ReticleY|
+|`Controller.Actions.ReticleX`|number|Reticle movement along the X axis|
+|`Controller.Actions.ReticleY`|number|Reticle movement along the Y axis|
+|`Controller.Actions.RightFoot`|number||
+|`Controller.Actions.RightHand`|number|Set the right hand pose|
+|`Controller.Actions.RightHandClick`|number||
+|`Controller.Actions.Roll`|number|Rotation around the Z axis|
+|`Controller.Actions.SHIFT`|number||
+|`Controller.Actions.SecondaryAction`|number||
+|`Controller.Actions.Shift`|number||
+|`Controller.Actions.StepPitch`|number|Incremental rotation around the X axis|
+|`Controller.Actions.StepRoll`|number|Incremental rotation around the Z axis|
+|`Controller.Actions.StepTranslateX`|number|Incremental movement along the X axis|
+|`Controller.Actions.StepTranslateY`|number|Incremental movement along the Y axis|
+|`Controller.Actions.StepTranslateZ`|number|Incremental movement along the Z axis|
+|`Controller.Actions.StepYaw`|number|Incremental rotation around the Y axis|
+|`Controller.Actions.StrafeLeft`|number|Bisected alias for TranslateX|
+|`Controller.Actions.StrafeRight`|number|Bisected alias for TranslateX|
+|`Controller.Actions.ToggleMute`|number|Toggle audio device mute|
+|`Controller.Actions.ToggleOverlay`|number||
+|`Controller.Actions.TranslateX`|number|Movement along the X axis|
+|`Controller.Actions.TranslateY`|number|Movement along the Y axis|
+|`Controller.Actions.TranslateZ`|number|Movement along the Z axis|
+|`Controller.Actions.UiNavBack`|number||
+|`Controller.Actions.UiNavGroup`|number||
+|`Controller.Actions.UiNavLateral`|number||
+|`Controller.Actions.UiNavSelect`|number||
+|`Controller.Actions.UiNavVertical`|number||
+|`Controller.Actions.Up`|number||
+|`Controller.Actions.VERTICAL_DOWN`|number||
+|`Controller.Actions.VERTICAL_UP`|number||
+|`Controller.Actions.Yaw`|number|Rotation around the Y axis|
+|`Controller.Actions.YawLeft`|number|Bisected alias for Yaw|
+|`Controller.Actions.YawRight`|number|Bisected alias for Yaw|
+|`Controller.Hardware.Application.AdvancedMovement`|number||
+|`Controller.Hardware.Application.CameraEntity`|number||
+|`Controller.Hardware.Application.CameraFSM`|number||
+|`Controller.Hardware.Application.CameraFirstPerson`|number||
+|`Controller.Hardware.Application.CameraIndependent`|number||
+|`Controller.Hardware.Application.CameraThirdPerson`|number||
+|`Controller.Hardware.Application.ComfortMode`|float|A non-zero value indicates the user has selected to use "Comfort Mode" when in HMD mode and 0 indicates the user has not selected to use "Comfort Mode."|
+|`Controller.Hardware.Application.Grounded`|float|The Grounded property is used to determine whether an avatar is colliding with a floor entity or located within a specified distance above a floor entity. A floor entity is any entity that has collision enabled (the entity's ignoreForCollisions property is set to false). The specified distance depends on the avatar's size and is set to 1/3 the radius of the avatar's collision capsule. non-zero value indicates the avatar is either colliding with the floor entity or above the floor entity within the specified distance. A value of 0 indicates the avatar is not colliding with or near a floor entity. : The distance measured is from the avatar's capsule to the entity's collision hull. As an entity's collision hull may not match the entity's mesh (and won't for irregular shapes) and may be significantly larger than the mesh, the avatar may appear to be floating even though the Grounding value is 1.|
+|`Controller.Hardware.Application.InHMD`|float|A non-zero value indicates Interface is being run in HMD mode, and 0 indicates HMD mode is not in use.|
+|`Controller.Hardware.Application.NavigationFocused`|float|If the user is using a GamePad or Hydra, and a menu or dialog appears, switching to the keyboard is not user friendly. By checking for NavigationFocused, conditional routes can be created that allow the user to navigate the menu without having to touch the mouse or keyboard.|
+|`Controller.Hardware.Application.SnapTurn`|number||
+|`Controller.Hardware.Hydra`|number||
+|`Controller.Hardware.Keyboard.(0-9)`|number|Number keys inclusive of 0 though 9|
+|`Controller.Hardware.Keyboard.(A-Z)`|number|Letter keys inclusive of A - Z of the English alphabet|
+|`Controller.Hardware.Keyboard.(Left and Right)`|number|Left and right arrow keys|
+|`Controller.Hardware.Keyboard.(Up and Down)`|number|Up and Down arrow keys|
+|`Controller.Hardware.Space`|number|Space bar|
+|`Controller.Hardware.Shift`|number|Shift key|
+|`Controller.Hardware.PageUp and  PageDown`|number|PageUp and PageDown keys|
+|`Controller.Hardware.LeftMouseButton`|number|Left mouse button|
+|`Controller.Hardware.MiddleMouseButton`|number|Middle mouse button|
+|`Controller.Hardware.RightMouseButton`|number|Right mouse button|
+|`Controller.Hardware.LeftMouseClicked`|number|Left mouse button click|
+|`Controller.Hardware.MiddleMouseClicked`|number|Middle mouse button click|
+|`Controller.Hardware.RightMouseClicked`|number|Right mouse button click|
+|`Controller.Hardware.MouseMoveRight`|number|Mouse movement to the right|
+|`Controller.Hardware.MouseMoveLeft`|number|Mouse movement to the left|
+|`Controller.Hardware.MouseMoveUp`|number|Mouse movement up|
+|`Controller.Hardware.MouseMoveDown`|number|Mouse movement down|
+|`Controller.Hardware.MouseWheelRight`|number|Mouse wheel movement to the right|
+|`Controller.Hardware.MouseWheelLeft`|number|Mouse wheel movement left|
+|`Controller.Hardware.MouseWheelUp`|number|Mouse wheel movement up|
+|`Controller.Hardware.MouseWheelDown`|number|Mouse wheel movement down|
+|`Controller.Hardware.TouchpadRight`|number|Touchpad movement to the right|
+|`Controller.Hardware.TouchpadLeft`|number|Touchpad movement to the left|
+|`Controller.Hardware.TouchpadUp`|number|Touchpad movement up|
+|`Controller.Hardware.TouchpadDown`|number|Touchpad movement down|
+|`Controller.Hardware.OculusTouch`|number||
+|`Controller.Standard`|number||
+|`MappingObject.name<a id="mapobj"></a>`|string|The mapping object name is the name of the mapping. It can be any valid string, but should be unique as it is used to access the mapping.avoid name conflicts, HighFidelity uses Java-style packaging notion for mapping names. This notation is not required.|
+|`MappingObject.channels`|object|A JSON object of routes which define which input goes to which output.|
 
 
 
@@ -120,101 +119,100 @@ taxonomy:
 
 | Methods                                  |
 | ---------------------------------------- |
-| Controller.createInputController(QString,QString) |
-| [Controller.disableMapping(QString)](#m1) |
-| [Controller.enableMapping(QString)](#m2) |
-| Controller.enableMapping(QString,bool)   |
-| Controller.findAction(QString)           |
-| Controller.findDevice(QString)           |
-| Controller.getActionNames()              |
-| Controller.getActionValue(int)           |
-| Controller.getActions()                  |
-| Controller.getAllActions()               |
-| Controller.getAvailableInputs(uint)      |
-| Controller.getAxisValue(StandardAxisChannel) |
-| Controller.getAxisValue(StandardAxisChannel,uint16_t) |
-| Controller.getAxisValue(int)             |
-| Controller.getButtonValue(StandardButtonChannel) |
-| Controller.getButtonValue(StandardButtonChannel,uint16_t) |
-| Controller.getDeviceName(uint)           |
-| Controller.getDeviceNames()              |
-| Controller.getHardware()                 |
-| [Controller.getPoseValue(StandardPoseChannel)](#m3) |
-| [Controller.getPoseValue(StandardPoseChannel,uint16_t)](#m3) |
-| [Controller.getPoseValue(int)](#m3)      |
-| Controller.getRecommendedOverlayRect()   |
-| [Controller.getReticlePosition()](#m4)   |
-| Controller.getStandard()                 |
-| [Controller.getValue(int)](#m5)          |
-| Controller.getViewportDimensions()       |
-| [Haptics](#m6)                           |
-| Controller.loadMapping(QString)          |
-| Controller.newMapping()                  |
-| [Controller.newMapping(QString)](#m9)    |
-| [Controller.parseMapping(QString)](#m10) |
-| [MappingObject.enable()](#m7)            |
-| [MappingObject.from()](#m8)              |
-| [RouteObject.clamp()](#m11)              |
-| [RouteObject.constrainToInteger()](#m12) |
-| [RouteObject.constrainToPositiveInteger()](#m13) |
-| [RouteObject.deadZone()](#m14)           |
-| [RouteObject.debug()](#m15)              |
-| [RouteObject.hysteresis()](#m16)         |
-| [RouteObject.peek()](#m17)               |
-| [RouteObject.invert()](#m18)             |
-| [RouteObject.pulse()](#m19)              |
-| [RouteObject.scale()](#m20)              |
-| [RouteObject.to()](#m21)                 |
-| [RouteObject.when()](#m22)               |
-| [SetReticlePosition()](#m23)             |
+|`Controller.createInputController(String,String)`|
+|[`Controller.disableMapping(String)`](#m1)|
+|[`Controller.enableMapping(String)`](#m2)|
+|`Controller.enableMapping(String,bool)`|
+|`Controller.findAction(String)`|
+|`Controller.findDevice(String)`|
+|`Controller.getActionNames()`|
+|`Controller.getActionValue(int)`|
+|`Controller.getActions()`|
+|`Controller.getAllActions()`|
+|`Controller.getAvailableInputs(uint)`|
+|`Controller.getAxisValue(StandardAxisChannel)`|
+|`Controller.getAxisValue(StandardAxisChannel,uint16_t)`|
+|`Controller.getAxisValue(int)`|
+|`Controller.getButtonValue(StandardButtonChannel)`|
+|`Controller.getButtonValue(StandardButtonChannel,uint16_t)`|
+|`Controller.getDeviceName(uint)`|
+|`Controller.getDeviceNames()`|
+|`Controller.getHardware()`|
+|[`Controller.getPoseValue(StandardPoseChannel)`](#m3)|
+|[`Controller.getPoseValue(StandardPoseChannel,uint16_t)`](#m3)|
+|[`Controller.getPoseValue(int)`](#m3)|
+|`Controller.getRecommendedOverlayRect()`|
+|[`Controller.getReticlePosition()`](#m4)|
+|`Controller.getStandard()`|
+|[`Controller.getValue(int)`](#m5)|
+|`Controller.getViewportDimensions()`|
+|[`Haptics`](#m6)|
+|`Controller.loadMapping(String)`|
+|`Controller.newMapping()`|
+|[`Controller.newMapping(String)`](#m9)|
+|[`Controller.parseMapping(String)`](#m10)|
+|[`MappingObject.enable()`](#m7)|
+|[`MappingObject.from()`](#m8)|
+|[`RouteObject.clamp()`](#m11)|
+|[`RouteObject.constrainToInteger()`](#m12)|
+|[`RouteObject.constrainToPositiveInteger()`](#m13)|
+|[`RouteObject.deadZone()`](#m14)|
+|[`RouteObject.debug()`](#m15)|
+|[`RouteObject.hysteresis()`](#m16)|
+|[`RouteObject.peek()`](#m17)|
+|[`RouteObject.invert()`](#m18)|
+|[`RouteObject.pulse()`](#m19)|
+|[`RouteObject.scale()`](#m20)|
+|[`RouteObject.to()`](#m21)|
+|[`RouteObject.when()`](#m22)|
+|[`SetReticlePosition()`](#m23)|
 
 
 
 ##Events <a id="events"></a>
 | Events                                   |
 | ---------------------------------------- |
-| Controller.actionEndEvent(HFActionEvent) |
-| Controller.actionEvent(int,float)        |
-| Controller.actionStartEvent(HFActionEvent) |
-| Controller.backEndEvent()                |
-| Controller.backStartEvent()              |
-| Controller.captureActionEvents()         |
-| Controller.captureEntityClickEvents()    |
-| Controller.captureJoystick(int)          |
-| Controller.captureKeyEvents(KeyEvent)    |
-| Controller.captureMouseEvents()          |
-| Controller.captureTouchEvents()          |
-| Controller.captureWheelEvents()          |
-| [Controller.hardwareChanged()](#e1)      |
-| Controller.inputEvent(int,float)         |
-| [Controller.keyPressEvent(KeyEvent)](#e2) |
-| [Controller.keyReleaseEvent(KeyEvent)](#e3) |
-| [Controller.mouseDoublePressEvent(MouseEvent)](#e4) |
-| [Controller.mouseMoveEvent(MouseEvent)](#e5) |
-| [Controller.mousePressEvent(MouseEvent)](#e6) |
-| [Controller.mouseReleaseEvent(MouseEvent)](#e7) |
-| Controller.objectNameChanged(QString)    |
-| Controller.releaseActionEvents()         |
-| Controller.releaseEntityClickEvents()    |
-| Controller.releaseInputController(controller::InputController*) |
-| Controller.releaseJoystick(int)          |
-| Controller.releaseKeyEvents(KeyEvent)    |
-| Controller.releaseMouseEvents()          |
-| Controller.releaseTouchEvents()          |
-| Controller.releaseWheelEvents()          |
-| [Controller.touchBeginEvent(TouchEvent)](#e8) |
-| [Controller.touchEndEvent(TouchEvent)](#e9) |
-| [Controller.touchUpdateEvent(TouchEvent)](#e10) |
-| Controller.triggerHapticPulse(float,float) |
-| Controller.triggerHapticPulse(float,float,controller::Hand) |
-| Controller.triggerHapticPulseOnDevice(uint,float,float) |
-| Controller.triggerHapticPulseOnDevice(uint,float,float,controller::Hand) |
-| Controller.triggerShortHapticPulse(float) |
-| Controller.triggerShortHapticPulse(float,controller::Hand) |
-| Controller.triggerShortHapticPulseOnDevice(uint,float) |
-| Controller.triggerShortHapticPulseOnDevice(uint,float,controller::Hand) |
-| [Controller.wheelEvent(WheelEvent)](#e11) |
-
+|`Controller.actionEndEvent(HFActionEvent)`|
+|`Controller.actionEvent(int,float)`|
+|`Controller.actionStartEvent(HFActionEvent)`|
+|`Controller.backEndEvent()`|
+|`Controller.backStartEvent()`|
+|`Controller.captureActionEvents()`|
+|`Controller.captureEntityClickEvents()`|
+|`Controller.captureJoystick(int)`|
+|`Controller.captureKeyEvents(KeyEvent)`|
+|`Controller.captureMouseEvents()`|
+|`Controller.captureTouchEvents()`|
+|`Controller.captureWheelEvents()`|
+|[`Controller.hardwareChanged()`](#e1)|
+|`Controller.inputEvent(int,float)`|
+|[`Controller.keyPressEvent(KeyEvent)`](#e2)|
+|[`Controller.keyReleaseEvent(KeyEvent)`](#e3)|
+|[`Controller.mouseDoublePressEvent(MouseEvent)`](#e4)|
+|[`Controller.mouseMoveEvent(MouseEvent)`](#e5)|
+|[`Controller.mousePressEvent(MouseEvent)`](#e6)|
+|[`Controller.mouseReleaseEvent(MouseEvent)`](#e7)|
+|`Controller.objectNameChanged(String)`|
+|`Controller.releaseActionEvents()`|
+|`Controller.releaseEntityClickEvents()`|
+|`Controller.releaseInputController(controller::InputController*)`|
+|`Controller.releaseJoystick(int)`|
+|`Controller.releaseKeyEvents(KeyEvent)`|
+|`Controller.releaseMouseEvents()`|
+|`Controller.releaseTouchEvents()`|
+|`Controller.releaseWheelEvents()`|
+|[`Controller.touchBeginEvent(TouchEvent)`](#e8)|
+|[`Controller.touchEndEvent(TouchEvent)`](#e9)|
+|[`Controller.touchUpdateEvent(TouchEvent)`](#e10)|
+|`Controller.triggerHapticPulse(float,float)`|
+|`Controller.triggerHapticPulse(float,float,controller::Hand)`|
+|`Controller.triggerHapticPulseOnDevice(uint,float,float)`|
+|`Controller.triggerHapticPulseOnDevice(uint,float,float,controller::Hand)`|
+|`Controller.triggerShortHapticPulse(float)`|
+|`Controller.triggerShortHapticPulse(float,controller::Hand)`|
+|`Controller.triggerShortHapticPulseOnDevice(uint,float)`|
+|`Controller.triggerShortHapticPulseOnDevice(uint,float,controller::Hand)`|
+|[`Controller.wheelEvent(WheelEvent)`](#e11)|
 ## Overview
 
 ### Mapping Input to Output

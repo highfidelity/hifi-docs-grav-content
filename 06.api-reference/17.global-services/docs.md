@@ -7,22 +7,20 @@ taxonomy:
 
 | Properties                | Type   | Description |
 | ------------------------- | ------ | ----------- |
-| GlobalServices.findableBy | string |             |
-| GlobalServices.objectName | string |             |
-| GlobalServices.username   | string |             |
+| `GlobalServices.findableBy` | string |             |
+| `GlobalServices.username`   | string |             |
 
 | Methods                             |
 | ----------------------------------- |
-| GlobalServices.getDownloadInfo()    |
-| GlobalServices.updateDownloadInfo() |
+| `GlobalServices.getDownloadInfo()`    |
+| `GlobalServices.updateDownloadInfo()` |
 
 
 | Events                                   |
 | ---------------------------------------- |
-| GlobalServices.connected()               |
-| GlobalServices.disconnected(QString)     |
-| GlobalServices.downloadInfoChanged(DownloadInfoResult) |
-| GlobalServices.findableByChanged(QString) |
-| GlobalServices.myUsernameChanged(QString) |
-| GlobalServices.objectNameChanged(QString) |
+| `GlobalServices.connected()`               |
+| `GlobalServices.disconnected(String)`     |
+| `GlobalServices.downloadInfoChanged(DownloadInfoResult)` |
+| `GlobalServices.findableByChanged(String)` |
+| `GlobalServices.myUsernameChanged(String)` |
 

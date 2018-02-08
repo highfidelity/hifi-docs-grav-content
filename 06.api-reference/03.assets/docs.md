@@ -9,15 +9,14 @@ taxonomy:
 
 | Properties        | Type   | Description |
 | ----------------- | ------ | ----------- |
-| Assets.objectName | String |             |
+
 
 
 | Methods                                  |
 | ---------------------------------------- |
-| Assets.downloadData(QString,QScriptValue) |
-| Assets.objectNameChanged(QString)        |
-| Assets.setMapping(QString,QString,QScriptValue) |
-| Assets.uploadData(QString,QScriptValue)  |
+| `Assets.downloadData(String,QScriptValue)` |
+| `Assets.setMapping(String,String,QScriptValue)` |
+| `Assets.uploadData(String,QScriptValue)`  |
 
 
 
