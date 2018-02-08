@@ -5,25 +5,21 @@ taxonomy:
         - docs
 ---
 
-| Properties                    | Type   | Description |
-| ----------------------------- | ------ | ----------- |
-| UserActivityLogger.objectName | string |             |
 
 | Methods                                  |
 | ---------------------------------------- |
-| UserActivityLogger.makeUserConnection(QString,bool) |
-| UserActivityLogger.makeUserConnection(QString,bool,QString) |
-| UserActivityLogger.palAction(QString,QString) |
-| UserActivityLogger.tutorialProgress(QString,int,float,float) |
-| UserActivityLogger.tutorialProgress(QString,int,float,float,QString) |
-| UserActivityLogger.tutorialProgress(QString,int,float,float,QString,int) |
-| UserActivityLogger.tutorialProgress(QString,int,float,float,QString,int,QString) |
+| `UserActivityLogger.makeUserConnection(String,bool)` |
+| `UserActivityLogger.makeUserConnection(String,bool,String)` |
+| `UserActivityLogger.palAction(String,String)` |
+| `UserActivityLogger.tutorialProgress(String,int,float,float)` |
+| `UserActivityLogger.tutorialProgress(String,int,float,float,String)` |
+| `UserActivityLogger.tutorialProgress(String,int,float,float,String,int)` |
+| `UserActivityLogger.tutorialProgress(String,int,float,float,String,int,String)` |
 
 | Events                                   |
 | ---------------------------------------- |
-| UserActivityLogger.closedTablet()        |
-| UserActivityLogger.enabledEdit()         |
-| UserActivityLogger.objectNameChanged(QString) |
-| UserActivityLogger.openedMarketplace()   |
-| UserActivityLogger.openedTablet(bool)    |
-| UserActivityLogger.palOpened(float)      |
+| `UserActivityLogger.closedTablet()`        |
+| `UserActivityLogger.enabledEdit()`         |
+| `UserActivityLogger.openedMarketplace()`   |
+| `UserActivityLogger.openedTablet(bool)`    |
+| `UserActivityLogger.palOpened(float)`      |

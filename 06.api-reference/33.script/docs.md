@@ -7,89 +7,88 @@ taxonomy:
 
 | Properties        | Type   | Description |
 | ----------------- | ------ | ----------- |
-| Script.context    | string |             |
-| Script.objectName | string |             |
+|`Script.context`|string||
 
 | Methods                                  |
 | ---------------------------------------- |
-| Script.addEventHandler(EntityItemID,QString,QScriptValue) |
-| Script.callAnimationStateHandler(QScriptValue,AnimVariantMap,QStringList,bool,AnimVariantResultHandler) |
-| Script.callEntityScriptMethod(EntityItemID,QString) |
-| Script.callEntityScriptMethod(EntityItemID,QString,EntityItemID,Collision) |
-| Script.callEntityScriptMethod(EntityItemID,QString,PointerEvent) |
-| Script.callEntityScriptMethod(EntityItemID,QString,QStringList) |
-| Script.cleanupMenuItem(QString)          |
-| Script.clearInterval(QObject*)           |
-| Script.clearTimeout(QObject*)            |
-| Script.doneRunning()                     |
-| Script.errorMessage(QString,QString)     |
-| Script.evaluate(QString,QString)         |
-| Script.evaluate(QString,QString,int)     |
-| Script.evaluateInClosure(QScriptValue,QScriptProgram) |
-| Script.executeOnScriptThread(std::function<void()>) |
-| Script.executeOnScriptThread(std::function<void()>,Qt::ConnectionType) |
-| Script.finished(QString,ScriptEngine*)   |
-| Script.formatException(QScriptValue,bool) |
-| Script.generateUUID()                    |
-| Script.getContext()                      |
-| Script.include(QString)                  |
-| Script.include(QString,QScriptValue)     |
-| Script.include(QStringList)              |
-| Script.include(QStringList,QScriptValue) |
-| Script.infoMessage(QString,QString)      |
-| Script.isAgentScript()                   |
-| Script.isClientScript()                  |
-| Script.isEntityClientScript()            |
-| Script.isEntityScriptRunning(EntityItemID) |
-| Script.isEntityServerScript()            |
-| Script.lintScript(QString,QString)       |
-| Script.lintScript(QString,QString,int)   |
-| Script.load(QString)                     |
-| Script.loadEntityScript(EntityItemID,QString,bool) |
-| Script.loadScript(QString,bool)          |
-| Script.makeError()                       |
-| Script.makeError(QScriptValue)           |
-| Script.makeError(QScriptValue,QString)   |
-| Script.print(QString)                    |
-| Script.registerFunction(QString,QScriptEngine::FunctionSignature) |
-| Script.registerFunction(QString,QScriptEngine::FunctionSignature,int) |
-| Script.registerFunction(QString,QString,QScriptEngine::FunctionSignature) |
-| Script.registerFunction(QString,QString,QScriptEngine::FunctionSignature,int) |
-| Script.registerGetterSetter(QString,QScriptEngine::FunctionSignature,QScriptEngine::FunctionSignature) |
-| Script.registerGetterSetter(QString,QScriptEngine::FunctionSignature,QScriptEngine::FunctionSignature,QString) |
-| Script.registerGlobalObject(QString,QObject*) |
-| Script.registerValue(QString,QScriptValue) |
-| Script.reloadScript(QString,bool)        |
-| Script.removeEventHandler(EntityItemID,QString,QScriptValue) |
-| Script.requestGarbageCollection()        |
-| Script.require(QString)                  |
-| Script.resetModuleCache()                |
-| Script.resetModuleCache(bool)            |
-| Script.resolvePath(QString)              |
-| Script.resourcesPath()                   |
-| Script.setInterval(QScriptValue,int)     |
-| Script.setTimeout(QScriptValue,int)      |
-| Script.signalHandlerException(QScriptValue) |
-| Script.stop()                            |
-| Script.stop(bool)                        |
-| Script.unhandledException(QScriptValue)  |
-| Script.unloadAllEntityScripts()          |
-| Script.unloadEntityScript(EntityItemID)  |
-| Script.unloadEntityScript(EntityItemID,bool) |
-| Script.update(float)                     |
-| Script.updateMemoryCost(qlonglong)       |
-| Script.warningMessage(QString,QString)   |
+|`Script.addEventHandler(EntityItemID,String,QScriptValue)`|
+|`Script.callAnimationStateHandler(QScriptValue,AnimVariantMap,StringList,bool,AnimVariantResultHandler)`|
+|`Script.callEntityScriptMethod(EntityItemID,String)`|
+|`Script.callEntityScriptMethod(EntityItemID,String,EntityItemID,Collision)`|
+|`Script.callEntityScriptMethod(EntityItemID,String,PointerEvent)`|
+|`Script.callEntityScriptMethod(EntityItemID,String,StringList)`|
+|`Script.cleanupMenuItem(String)`|
+|`Script.clearInterval(QObject*)`|
+|`Script.clearTimeout(QObject*)`|
+|`Script.doneRunning()`|
+|`Script.errorMessage(String,String)`|
+|`Script.evaluate(String,String)`|
+|`Script.evaluate(String,String,int)`|
+|`Script.evaluateInClosure(QScriptValue,QScriptProgram)`|
+|`Script.executeOnScriptThread(std::function<void()>)`|
+|`Script.executeOnScriptThread(std::function<void()>,Qt::ConnectionType)`|
+|`Script.finished(String,ScriptEngine*)`|
+|`Script.formatException(QScriptValue,bool)`|
+|`Script.generateUUID()`|
+|`Script.getContext()`|
+|`Script.include(String)`|
+|`Script.include(String,QScriptValue)`|
+|`Script.include(StringList)`|
+|`Script.include(StringList,QScriptValue)`|
+|`Script.infoMessage(String,String)`|
+|`Script.isAgentScript()`|
+|`Script.isClientScript()`|
+|`Script.isEntityClientScript()`|
+|`Script.isEntityScriptRunning(EntityItemID)`|
+|`Script.isEntityServerScript()`|
+|`Script.lintScript(String,String)`|
+|`Script.lintScript(String,String,int)`|
+|`Script.load(String)`|
+|`Script.loadEntityScript(EntityItemID,String,bool)`|
+|`Script.loadScript(String,bool)`|
+|`Script.makeError()`|
+|`Script.makeError(QScriptValue)`|
+|`Script.makeError(QScriptValue,String)`|
+|`Script.print(String)`|
+|`Script.registerFunction(String,QScriptEngine::FunctionSignature)`|
+|`Script.registerFunction(String,QScriptEngine::FunctionSignature,int)`|
+|`Script.registerFunction(String,String,QScriptEngine::FunctionSignature)`|
+|`Script.registerFunction(String,String,QScriptEngine::FunctionSignature,int)`|
+|`Script.registerGetterSetter(String,QScriptEngine::FunctionSignature,QScriptEngine::FunctionSignature)`|
+|`Script.registerGetterSetter(String,QScriptEngine::FunctionSignature,QScriptEngine::FunctionSignature,String)`|
+|`Script.registerGlobalObject(String,QObject*)`|
+|`Script.registerValue(String,QScriptValue)`|
+|`Script.reloadScript(String,bool)`|
+|`Script.removeEventHandler(EntityItemID,String,QScriptValue)`|
+|`Script.requestGarbageCollection()`|
+|`Script.require(String)`|
+|`Script.resetModuleCache()`|
+|`Script.resetModuleCache(bool)`|
+|`Script.resolvePath(String)`|
+|`Script.resourcesPath()`|
+|`Script.setInterval(QScriptValue,int)`|
+|`Script.setTimeout(QScriptValue,int)`|
+|`Script.signalHandlerException(QScriptValue)`|
+|`Script.stop()`|
+|`Script.stop(bool)`|
+|`Script.unhandledException(QScriptValue)`|
+|`Script.unloadAllEntityScripts()`|
+|`Script.unloadEntityScript(EntityItemID)`|
+|`Script.unloadEntityScript(EntityItemID,bool)`|
+|`Script.update(float)`|
+|`Script.updateMemoryCost(qlonglong)`|
+|`Script.warningMessage(String,String)`|
 
 | Events                                   |
 | ---------------------------------------- |
-| Script.entityScriptDetailsUpdated()      |
-| Script.entityScriptContentAvailable(EntityItemID,QString,QString,bool,bool,QString) |
-| Script.errorLoadingScript(QString)       |
-| Script.objectNameChanged(QString)        |
-| Script.printedMessage(QString,QString)   |
-| Script.runningStateChanged()             |
-| Script.scriptEnding()                    |
-| Script.scriptLoaded(QString)             |
+|`Script.entityScriptDetailsUpdated()`|
+|`Script.entityScriptContentAvailable(EntityItemID,String,String,bool,bool,String)`|
+|`Script.errorLoadingScript(String)`|
+|`Script.objectNameChanged(String)`|
+|`Script.printedMessage(String,String)`|
+|`Script.runningStateChanged()`|
+|`Script.scriptEnding()`|
+|`Script.scriptLoaded(String)`|
 
 ## clearInterval()
 

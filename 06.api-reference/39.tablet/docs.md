@@ -7,5 +7,5 @@ taxonomy:
 
 | Methods                     |
 | --------------------------- |
-| Tablet.getTablet(QString)   |
-| Tablet.tabletNotification() |
+| `Tablet.getTablet(String)`   |
+| `Tablet.tabletNotification()` |

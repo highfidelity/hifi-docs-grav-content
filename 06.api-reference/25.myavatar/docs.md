@@ -7,255 +7,255 @@ taxonomy:
 
 | Properties                               | Type         | Description                              |
 | ---------------------------------------- | ------------ | ---------------------------------------- |
-| MyAvatar.angularVelocity                 | number       |                                          |
-| MyAvatar.audioAverageLoudness            | number       |                                          |
-| MyAvatar.audioListenerMode               | number       |                                          |
-| MyAvatar.audioListenerModeCamera         | number       |                                          |
-| MyAvatar.audioListenerModeCustom         | number       |                                          |
-| MyAvatar.audioListenerModeHead           | number       |                                          |
-| MyAvatar.audioLoudness                   | number       |                                          |
-| MyAvatar.bodyPitch                       | float        | bodyPitch is a float referring to the degree about an axis running from shoulder to shoulder of MyAvatar. Pitch is sometimes called 'elevation'. |
-| MyAvatar.bodyRoll                        | float        | bodyRoll is a float referring to the degree about an axis running from the chest to the back of the avatar. Roll is sometimes called 'bank'. |
-| MyAvatar.bodyYaw                         | float        | bodyYaw is a float referring to the degree left or right about an axis running from the head to the feet of MyAvatar. Yaw is sometimes called 'heading' |
-| MyAvatar.characterControllerEnabled      | boolean      |                                          |
-| MyAvatar.collisionSoundURL               | string       | The collisionSoundURL property specifies the sound to play when the avatar experiences a collision. You can provide a mono or stereo 16-bit WAV file running at either 24 Khz or 48 Khz. The latter is downsampled by the audio mixer, so all audio effectively plays back at a 24 Khz sample rate. 48 Khz RAW files are also supported. |
-| MyAvatar.controllerLeftHandMatrix        | number       |                                          |
-| MyAvatar.customListenOrientation         | w, x, y, z   |                                          |
-| MyAvatar.customListenPosition            | x, y, z      |                                          |
-| MyAvatar.displayName                     | string       |                                          |
-| MyAvatar.faceModelURL                    | string       | faceModelURL, a string, returns the URL of MyAvatar head's .fst file. An .fst file is just a text file containing information about the model, its textures, blendshape mappings, and skeleton mappings. |
-| MyAvatar.energy                          | number       |                                          |
-| MyAvatar.handPosition                    | x, y, z      |                                          |
-| MyAvatar.headOrientation                 | w, x, y, z   | headOrientation, a quaternion, represents the rotation of MyAvatar's head relative to a coordinate system. |
-| MyAvatar.headPitch                       | float        | headPitch is a float referring to the degree about an axis running from ear to ear of MyAvatar's head. Pitch is sometimes called 'elevation'. |
-| MyAvatar.headRoll                        | number       | headRoll is a float referring to the degree about an axis running from the nose to the back of MyAvatar's head. Roll is sometimes called 'bank'. |
-| MyAvatar.headYaw                         | number       | headYaw is the degree left or right about an axis running from the base to the crown of MyAvatar's head. Yaw is sometimes called 'heading'. |
-| MyAvatar.hmdLeanRecenterEnabled          | boolean      | An array of strings, jointNames displays the list of joints making up MyAvatar. To get the list of names, use getJointNames(). |
-| MyAvatar.jointNames                      | string array |                                          |
-| MyAvatar.leftHandPose.angularVelocity    | x, y, z      |                                          |
-| MyAvatar.leftHandPose.rotation           | w, x, y, z   |                                          |
-| MyAvatar.leftHandPose.translation        | x, y, z      |                                          |
-| MyAvatar.leftHandPose.valid              | boolean      |                                          |
-| MyAvatar.leftHandPose.velocity           | x, y, z      |                                          |
-| MyAvatar.leftHandPosition                | x, y, z      |                                          |
-| MyAvatar.leftHandTipPose.angularVelocity | x, y, z      |                                          |
-| MyAvatar.leftHandTipPose.rotation        | w, x, y, z   |                                          |
-| MyAvatar.leftHandTipPose.translation     | x, y, z      |                                          |
-| MyAvatar.leftHandTipPose.valid           | boolean      |                                          |
-| MyAvatar.leftHandTipPose.velocity        | x, y, z      |                                          |
-| MyAvatar.leftHandTipPosition             | x, y, z      |                                          |
-| MyAvatar.motorReferenceFrame             | string       |                                          |
-| MyAvatar.motorTimescale                  | number       |                                          |
-| MyAvatar.motorVelocity                   | x, y, z      |                                          |
-| MyAvatar.objectName                      | string       |                                          |
-| MyAvatar.orientation                     | w, x, y, z   |                                          |
-| MyAvatar.position                        | x, y, z      |                                          |
-| MyAvatar.rightHandPose.angularVelocity   | x, y, z      |                                          |
-| MyAvatar.rightHandPose.rotation          | w, x, y, z   |                                          |
-| MyAvatar.rightHandPose.translation       | x, y, z      |                                          |
-| MyAvatar.rightHandPose.valid             | boolean      |                                          |
-| MyAvatar.rightHandPose.velocity          | x, y, z      |                                          |
-| MyAvatar.rightHandPosition               | x, y, z      |                                          |
-| MyAvatar.rightHandTipPose.angularVelocity | x, y, z      |                                          |
-| MyAvatar.rightHandTipPose.rotation       | w, x, y, z   |                                          |
-| MyAvatar.rightHandTipPose.translation    | x, y, z      |                                          |
-| MyAvatar.rightHandTipPose.valid          | boolean      |                                          |
-| MyAvatar.rightHandTipPose.velocity       | x, y, z      |                                          |
-| MyAvatar.rightHandTipPosition            | x, y, z      |                                          |
-| MyAvatar.scale                           | number       |                                          |
-| MyAvatar.sessionUUID                     | string       |                                          |
-| MyAvatar.sessionDisplayName              | string       |                                          |
-| MyAvatar.shouldRenderLocally             | boolean      |                                          |
-| MyAvatar.skeletonModelURL                | string       |                                          |
-| MyAvatar.skeletonOffset                  | x, y, z      |                                          |
-| MyAvatar.velocity                        | x, y, z      |                                          |
+|`MyAvatar.angularVelocity`|number| |
+|`MyAvatar.audioAverageLoudness`|number| |
+|`MyAvatar.audioListenerMode`|number| |
+|`MyAvatar.audioListenerModeCamera`|number| |
+|`MyAvatar.audioListenerModeCustom`|number| |
+|`MyAvatar.audioListenerModeHead`|number| |
+|`MyAvatar.audioLoudness`|number| |
+|`MyAvatar.bodyPitch`|float|bodyPitch is a float referring to the degree about an axis running from shoulder to shoulder of MyAvatar. Pitch is sometimes called 'elevation'.|
+|`MyAvatar.bodyRoll`|float|bodyRoll is a float referring to the degree about an axis running from the chest to the back of the avatar. Roll is sometimes called 'bank'.|
+|`MyAvatar.bodyYaw`|float|bodyYaw is a float referring to the degree left or right about an axis running from the head to the feet of MyAvatar. Yaw is sometimes called 'heading'|
+|`MyAvatar.characterControllerEnabled`|boolean| |
+|`MyAvatar.collisionSoundURL`|string|The collisionSoundURL property specifies the sound to play when the avatar experiences a collision. You can provide a mono or stereo 16-bit WAV file running at either 24 Khz or 48 Khz. The latter is downsampled by the audio mixer, so all audio effectively plays back at a 24 Khz sample rate. 48 Khz RAW files are also supported.|
+|`MyAvatar.controllerLeftHandMatrix`|number| |
+|`MyAvatar.customListenOrientation`|w, x, y, z| |
+|`MyAvatar.customListenPosition`|x, y, z| |
+|`MyAvatar.displayName`|string| |
+|`MyAvatar.faceModelURL`|string|faceModelURL, a string, returns the URL of MyAvatar head's .fst file. An .fst file is just a text file containing information about the model, its textures, blendshape mappings, and skeleton mappings.|
+|`MyAvatar.energy`|number| |
+|`MyAvatar.handPosition`|x, y, z| |
+|`MyAvatar.headOrientation`|w, x, y, z|headOrientation, a quaternion, represents the rotation of MyAvatar's head relative to a coordinate system.|
+|`MyAvatar.headPitch`|float|headPitch is a float referring to the degree about an axis running from ear to ear of MyAvatar's head. Pitch is sometimes called 'elevation'.|
+|`MyAvatar.headRoll`|number|headRoll is a float referring to the degree about an axis running from the nose to the back of MyAvatar's head. Roll is sometimes called 'bank'.|
+|`MyAvatar.headYaw`|number|headYaw is the degree left or right about an axis running from the base to the crown of MyAvatar's head. Yaw is sometimes called 'heading'.|
+|`MyAvatar.hmdLeanRecenterEnabled`|boolean|An array of strings, jointNames displays the list of joints making up MyAvatar. To get the list of names, use getJointNames().|
+|`MyAvatar.jointNames`|string array| |
+|`MyAvatar.leftHandPose.angularVelocity`|x, y, z| |
+|`MyAvatar.leftHandPose.rotation`|w, x, y, z| |
+|`MyAvatar.leftHandPose.translation`|x, y, z| |
+|`MyAvatar.leftHandPose.valid`|boolean| |
+|`MyAvatar.leftHandPose.velocity`|x, y, z| |
+|`MyAvatar.leftHandPosition`|x, y, z| |
+|`MyAvatar.leftHandTipPose.angularVelocity`|x, y, z| |
+|`MyAvatar.leftHandTipPose.rotation`|w, x, y, z| |
+|`MyAvatar.leftHandTipPose.translation`|x, y, z| |
+|`MyAvatar.leftHandTipPose.valid`|boolean| |
+|`MyAvatar.leftHandTipPose.velocity`|x, y, z| |
+|`MyAvatar.leftHandTipPosition`|x, y, z| |
+|`MyAvatar.motorReferenceFrame`|string| |
+|`MyAvatar.motorTimescale`|number| |
+|`MyAvatar.motorVelocity`|x, y, z| |
+|`MyAvatar.objectName`|string| |
+|`MyAvatar.orientation`|w, x, y, z| |
+|`MyAvatar.position`|x, y, z| |
+|`MyAvatar.rightHandPose.angularVelocity`|x, y, z| |
+|`MyAvatar.rightHandPose.rotation`|w, x, y, z| |
+|`MyAvatar.rightHandPose.translation`|x, y, z| |
+|`MyAvatar.rightHandPose.valid`|boolean| |
+|`MyAvatar.rightHandPose.velocity`|x, y, z| |
+|`MyAvatar.rightHandPosition`|x, y, z| |
+|`MyAvatar.rightHandTipPose.angularVelocity`|x, y, z| |
+|`MyAvatar.rightHandTipPose.rotation`|w, x, y, z| |
+|`MyAvatar.rightHandTipPose.translation`|x, y, z| |
+|`MyAvatar.rightHandTipPose.valid`|boolean| |
+|`MyAvatar.rightHandTipPose.velocity`|x, y, z| |
+|`MyAvatar.rightHandTipPosition`|x, y, z| |
+|`MyAvatar.scale`|number| |
+|`MyAvatar.sessionUUID`|string| |
+|`MyAvatar.sessionDisplayName`|string| |
+|`MyAvatar.shouldRenderLocally`|boolean| |
+|`MyAvatar.skeletonModelURL`|string| |
+|`MyAvatar.skeletonOffset`|x, y, z| |
+|`MyAvatar.velocity`|x, y, z| |
 
 | Methods                                  |
 | ---------------------------------------- |
-| [MyAvatar.addAnimationStateHandler(QScriptValue,QScriptValue)](#m1) |
-| MyAvatar.addThrust(glm::vec3)            |
-| [MyAvatar.attach(QString)](#m2)          |
-| [MyAvatar.attach(QString,QString)](#m2)  |
-| [MyAvatar.attach(QString,QString,glm::vec3)](#m2) |
-| [MyAvatar.attach(QString,QString,glm::vec3,glm::quat](#m2) ) |
-| [MyAvatar.attach(QString,QString,glm::vec3,glm::quat,float)](#m2) |
-| [MyAvatar.attach(QString,QString,glm::vec3,glm::quat,float,bool)](#m2) |
-| [MyAvatar.attach(QString,QString,glm::vec3,glm::quat,float,bool,bool)](#m2) |
-| [MyAvatar.attach(QString,QString,glm::vec3,glm::quat,float,bool,bool,bool)](#m2) |
-| MyAvatar.centerBody()                    |
-| MyAvatar.clearAvatarEntity(QUuid)        |
-| MyAvatar.clearIKJointLimitHistory()      |
-| [MyAvatar.clearJointData(QString)](#m3)  |
-| [MyAvatar.clearJointData(int)](#m3)      |
-| [MyAvatar.clearJointsData()](#m4)        |
-| MyAvatar.clearPinOnJoint(int)            |
-| MyAvatar.clearScaleRestriction()         |
-| [MyAvatar.decreaseSize()](#m5)           |
-| [MyAvatar.detachAll(QString)](#m6)       |
-| [MyAvatar.detachAll(QString,QString)](#m6) |
-| [MyAvatar.detachOne(QString)](#m7)       |
-| [MyAvatar.detachOne(QString,QString)](#m7) |
-| MyAvatar.disableDriveKey(DriveKeys)      |
-| MyAvatar.displayName                     |
-| MyAvatar.displayNameChanged()            |
-| MyAvatar.enableDriveKey(DriveKeys)       |
-| MyAvatar.getAbsoluteDefaultJointRotationInObjectFrame(int) |
-| MyAvatar.getAbsoluteDefaultJointTranslationInObjectFrame(int) |
-| MyAvatar.getAbsoluteJointRotationInObjectFrame(int) |
-| MyAvatar.getAbsoluteJointTranslationInObjectFrame(int) |
-| MyAvatar.getAcceleration()               |
-| MyAvatar.getAnimGraphOverrideUrl()       |
-| MyAvatar.getAnimGraphUrl()               |
-| [MyAvatar.getAnimationRoles()](#m8)      |
-| [MyAvatar.getAttachmentData()](#m9)      |
-| MyAvatar.getAttachmentsVariant()         |
-| MyAvatar.getAvatarEntityData()           |
-| MyAvatar.getCharacterControllerEnabled() |
-| MyAvatar.getClearOverlayWhenMoving()     |
-| MyAvatar.getControllerLeftHandMatrix()   |
-| MyAvatar.getControllerRightHandMatrix()  |
-| MyAvatar.getDataRate()                   |
-| MyAvatar.getDataRate(QString)            |
-| [MyAvatar.getDefaultEyePosition()](#m10) |
-| MyAvatar.getDefaultJointRotation(int)    |
-| MyAvatar.getDefaultJointTranslation(int) |
-| [MyAvatar.getEnableMeshVisible()](#m11)  |
-| [MyAvatar.getEyePosition()](#m12)        |
-| [MyAvatar.getFullAvatarModelName()](#m13) |
-| [MyAvatar.getFullAvatarURLFromPreferences()](#m14) |
-| MyAvatar.getHMDLeanRecenterEnabled()     |
-| MyAvatar.getHandState()                  |
-| MyAvatar.getHeadDeltaPitch()             |
-| MyAvatar.getHeadFinalPitch()             |
-| MyAvatar.getHeadFinalRoll()              |
-| MyAvatar.getHeadFinalYaw()               |
-| [MyAvatar.getHeadPosition()](#m15)       |
-| MyAvatar.getIKErrorOnLastSolve()         |
-| [MyAvatar.getJointIndex(QString)](#m16)  |
-| [MyAvatar.getJointNames()](#m17)         |
-| [MyAvatar.getJointPosition(QString)](#m18) |
-| [MyAvatar.getJointPosition(int)](#m18)   |
-| [MyAvatar.getJointRotation(QString)](#m19) |
-| [MyAvatar.getJointRotation(int)](#m19)   |
-| [MyAvatar.getJointRotations()](#m20)     |
-| [MyAvatar.getJointTranslation(QString)](#m21) |
-| [MyAvatar.getJointTranslation(int)](#m21) |
-| [MyAvatar.getLeftHandPose](#m22)         |
-| [MyAvatar.getLeftHandPosition()](#m23)   |
-| MyAvatar.getLeftHandTipPose()            |
-| MyAvatar.getLeftHandTipPosition()        |
-| [MyAvatar.getLeftPalmPosition()](#m24)   |
-| [MyAvatar.getLeftPalmRotation()](#m25)    |
-| [MyAvatar.getNeckPosition()](#m26)       |
-| MyAvatar.getOrientationForAudio()        |
-| MyAvatar.getOrientationVar()             |
-| MyAvatar.getParentID()                   |
-| MyAvatar.getParentJointIndex()           |
-| MyAvatar.getPositionForAudio()           |
-| MyAvatar.getRawDriveKey(DriveKeys)       |
-| [MyAvatar.getRightHandPose()](#m27)      |
-| [MyAvatar.getRightHandPosition()](#m28)  |
-| MyAvatar.getRightHandTipPose()           |
-| MyAvatar.getRightHandTipPosition()       |
-| [MyAvatar.getRightPalmPosition()](#m29)  |
-| [MyAvatar.getRightPalmRotation()](#m30)  |
-| MyAvatar.getSensorToWorldMatrix()        |
-| MyAvatar.getSimulationRate()             |
-| MyAvatar.getSimulationRate(QString)      |
-| MyAvatar.getSkeleton()                   |
-| [MyAvatar.getSkeletonOffset()](#m31)     |
-| MyAvatar.getSnapTurn()                   |
-| [MyAvatar.getTargetAvatarPosition()](#m32) |
-| MyAvatar.getTargetScale()                |
-| MyAvatar.getThrust()                     |
-| MyAvatar.getTrackedHeadPosition()        |
-| MyAvatar.getUpdateRate()                 |
-| MyAvatar.getUpdateRate(QString)          |
-| [MyAvatar.goToLocation(QVariant)](#m33)  |
-| [MyAvatar.goToLocation(glm::vec3)](#m33) |
-| [MyAvatar.goToLocation(glm::vec3,bool)](#m33) |
-| [MyAvatar.goToLocation(glm::vec3,bool,glm::quat)](#m33) |
-| [MyAvatar.goToLocation(glm::vec3,bool,glm::quat,bool)](#m33) |
-| [MyAvatar.increaseSize()](#m34)          |
-| MyAvatar.isAway                          |
-| MyAvatar.isDriveKeyDisabled(DriveKeys)   |
-| MyAvatar.isJointDataValid(QString)       |
-| MyAvatar.isJointDataValid(int)           |
-| MyAvatar.newCollisionSoundURL(QUrl)      |
-| [MyAvatar.overrideAnimation(QString,float,bool,float,float)](#m35) |
-| [MyAvatar.overrideRoleAnimation(QString,QString,float,bool,float,float)](#m36) |
-| MyAvatar.pinJoint(int,glm::vec3,glm::quat) |
-| [MyAvatar.PrefetchAnimation()](#m37)     |
-| MyAvatar.removeAnimationStateHandler(QScriptValue) |
-| MyAvatar.resetLastSent()                 |
-| MyAvatar.resetSensorsAndBody()           |
-| [MyAvatar.resetSize()](#m38)             |
-| [MyAvatar.restoreAnimation()](#m39)      |
-| [MyAvatar.restoreRoleAnimation(QString)](#m40) |
-| MyAvatar.restrictScaleFromDomainSettings(QJsonObject) |
-| MyAvatar.sendAvatarDataPacket()          |
-| MyAvatar.sendIdentityPacket()            |
-| MyAvatar.sensorToWorldMatrix.r0c0        |
-| MyAvatar.setAbsoluteJointRotationInObjectFrame(int,glm::quat) |
-| MyAvatar.setAbsoluteJointTranslationInObjectFrame(int,glm::vec3) |
-| MyAvatar.setAnimGraphOverrideUrl(QUrl)   |
-| MyAvatar.setAnimGraphUrl(QUrl)           |
-| [MyAvatar.setAttachmentData(QVector<AttachmentData>)](#m41) |
-| MyAvatar.setAttachmentsVariant(QVariantList) |
-| MyAvatar.setAvatarEntityData(AvatarEntityMap) |
-| MyAvatar.setBlendshape(QString,float)    |
-| MyAvatar.setCharacterControllerEnabled(bool) |
-| MyAvatar.setClearOverlayWhenMoving(bool) |
-| MyAvatar.setEnableDebugDrawAnimPose(bool) |
-| MyAvatar.setEnableDebugDrawDefaultPose(bool) |
-| MyAvatar.setEnableDebugDrawHandControllers(bool) |
-| MyAvatar.setEnableDebugDrawIKTargets(bool) |
-| MyAvatar.setEnableDebugDrawPosition(bool) |
-| MyAvatar.setEnableDebugDrawSensorToWorldMatrix(bool) |
-| MyAvatar.setEnableInverseKinematics(bool) |
-| [MyAvatar.setEnableMeshVisible(bool)](#m42) |
-| MyAvatar.setHMDLeanRecenterEnabled(bool) |
-| MyAvatar.setHandState(char)              |
-| [MyAvatar.setJointData(QString,glm::quat,glm::vec3)](#m43) |
-| [MyAvatar.setJointData(int,glm::quat,glm::vec3)](#m43) |
-| MyAvatar.setJointMappingsFromNetworkReply() |
-| [MyAvatar.setJointRotation(QString,glm::quat)](#m44) |
-| [MyAvatar.setJointRotation(int,glm::quat)](#m44) |
-| [MyAvatar.setJointRotations(QVector<glm::quat>)](#m45) |
-| [MyAvatar.setJointTranslation(QString,glm::vec3)](#m46) |
-| [MyAvatar.setJointTranslation(int,glm::vec3)](#m46) |
-| MyAvatar.setJointTranslations(QVector<glm::vec3>) |
-| MyAvatar.setModelURLFinished(bool)       |
-| MyAvatar.setOrientationVar(QVariant)     |
-| MyAvatar.setParentID(QUuid)              |
-| MyAvatar.setParentJointIndex(ushort)     |
-| MyAvatar.setRawJointData(QVector<JointData>) |
-| MyAvatar.setSessionUUID(QUuid)           |
-| [MyAvatar.setSkeletonOffset(glm::vec3)](#m47) |
-| MyAvatar.setSnapTurn(bool)               |
-| MyAvatar.setThrust(glm::vec3)            |
-| MyAvatar.setUseAnimPreAndPostRotations(bool) |
-| MyAvatar.updateAvatarEntity(QUuid,QByteArray) |
-| MyAvatar.updateMotionBehaviorFromMenu()  |
-| MyAvatar.useAdvancedMovementControls     |
-| MyAvatar.useFullAvatarURL(QUrl)          |
-| MyAvatar.useFullAvatarURL(QUrl,QString)  |
+|[`MyAvatar.addAnimationStateHandler(QScriptValue,QScriptValue)`](#m1)|
+|`MyAvatar.addThrust(glm::vec3)`|
+|[`MyAvatar.attach(String)`](#m2)|
+|[`MyAvatar.attach(String,String)`](#m2)|
+|[`MyAvatar.attach(String,String,glm::vec3)`](#m2)|
+|[`MyAvatar.attach(String,String,glm::vec3,glm::quat`](#m2) )|
+|[`MyAvatar.attach(String,String,glm::vec3,glm::quat,float)`](#m2)|
+|[`MyAvatar.attach(String,String,glm::vec3,glm::quat,float,bool)`](#m2)|
+|[`MyAvatar.attach(String,String,glm::vec3,glm::quat,float,bool,bool)`](#m2)|
+|[`MyAvatar.attach(String,String,glm::vec3,glm::quat,float,bool,bool,bool)`](#m2)|
+|`MyAvatar.centerBody()`|
+|`MyAvatar.clearAvatarEntity(QUuid)`|
+|`MyAvatar.clearIKJointLimitHistory()`|
+|[`MyAvatar.clearJointData(String)`](#m3)|
+|[`MyAvatar.clearJointData(int)`](#m3)|
+|[`MyAvatar.clearJointsData()`](#m4)|
+|`MyAvatar.clearPinOnJoint(int)`|
+|`MyAvatar.clearScaleRestriction()`|
+|[`MyAvatar.decreaseSize()`](#m5)|
+|[`MyAvatar.detachAll(String)`](#m6)|
+|[`MyAvatar.detachAll(String,String)`](#m6)|
+|[`MyAvatar.detachOne(String)`](#m7)|
+|[`MyAvatar.detachOne(String,String)`](#m7)|
+|`MyAvatar.disableDriveKey(DriveKeys)`|
+|`MyAvatar.displayName`|
+|`MyAvatar.displayNameChanged()`|
+|`MyAvatar.enableDriveKey(DriveKeys)`|
+|`MyAvatar.getAbsoluteDefaultJointRotationInObjectFrame(int)`|
+|`MyAvatar.getAbsoluteDefaultJointTranslationInObjectFrame(int)`|
+|`MyAvatar.getAbsoluteJointRotationInObjectFrame(int)`|
+|`MyAvatar.getAbsoluteJointTranslationInObjectFrame(int)`|
+|`MyAvatar.getAcceleration()`|
+|`MyAvatar.getAnimGraphOverrideUrl()`|
+|`MyAvatar.getAnimGraphUrl()`|
+|[`MyAvatar.getAnimationRoles()`](#m8)|
+|[`MyAvatar.getAttachmentData()`](#m9)|
+|`MyAvatar.getAttachmentsVariant()`|
+|`MyAvatar.getAvatarEntityData()`|
+|`MyAvatar.getCharacterControllerEnabled()`|
+|`MyAvatar.getClearOverlayWhenMoving()`|
+|`MyAvatar.getControllerLeftHandMatrix()`|
+|`MyAvatar.getControllerRightHandMatrix()`|
+|`MyAvatar.getDataRate()`|
+|`MyAvatar.getDataRate(String)`|
+|[`MyAvatar.getDefaultEyePosition()`](#m10)|
+|`MyAvatar.getDefaultJointRotation(int)`|
+|`MyAvatar.getDefaultJointTranslation(int)`|
+|[`MyAvatar.getEnableMeshVisible()`](#m11)|
+|[`MyAvatar.getEyePosition()`](#m12)|
+|[`MyAvatar.getFullAvatarModelName()`](#m13)|
+|[`MyAvatar.getFullAvatarURLFromPreferences()`](#m14)|
+|`MyAvatar.getHMDLeanRecenterEnabled()`|
+|`MyAvatar.getHandState()`|
+|`MyAvatar.getHeadDeltaPitch()`|
+|`MyAvatar.getHeadFinalPitch()`|
+|`MyAvatar.getHeadFinalRoll()`|
+|`MyAvatar.getHeadFinalYaw()`|
+|[`MyAvatar.getHeadPosition()`](#m15)|
+|`MyAvatar.getIKErrorOnLastSolve()`|
+|[`MyAvatar.getJointIndex(String)`](#m16)|
+|[`MyAvatar.getJointNames()`](#m17)|
+|[`MyAvatar.getJointPosition(String)`](#m18)|
+|[`MyAvatar.getJointPosition(int)`](#m18)|
+|[`MyAvatar.getJointRotation(String)`](#m19)|
+|[`MyAvatar.getJointRotation(int)`](#m19)|
+|[`MyAvatar.getJointRotations()`](#m20)|
+|[`MyAvatar.getJointTranslation(String)`](#m21)|
+|[`MyAvatar.getJointTranslation(int)`](#m21)|
+|[`MyAvatar.getLeftHandPose`](#m22)|
+|[`MyAvatar.getLeftHandPosition()`](#m23)|
+|`MyAvatar.getLeftHandTipPose()`|
+|`MyAvatar.getLeftHandTipPosition()`|
+|[`MyAvatar.getLeftPalmPosition()`](#m24)|
+|[`MyAvatar.getLeftPalmRotation()`](#m25)|
+|[`MyAvatar.getNeckPosition()`](#m26)|
+|`MyAvatar.getOrientationForAudio()`|
+|`MyAvatar.getOrientationVar()`|
+|`MyAvatar.getParentID()`|
+|`MyAvatar.getParentJointIndex()`|
+|`MyAvatar.getPositionForAudio()`|
+|`MyAvatar.getRawDriveKey(DriveKeys)`|
+|[`MyAvatar.getRightHandPose()`](#m27)|
+|[`MyAvatar.getRightHandPosition()`](#m28)|
+|`MyAvatar.getRightHandTipPose()`|
+|`MyAvatar.getRightHandTipPosition()`|
+|[`MyAvatar.getRightPalmPosition()`](#m29)|
+|[`MyAvatar.getRightPalmRotation()`](#m30)|
+|`MyAvatar.getSensorToWorldMatrix()`|
+|`MyAvatar.getSimulationRate()`|
+|`MyAvatar.getSimulationRate(String)`|
+|`MyAvatar.getSkeleton()`|
+|[`MyAvatar.getSkeletonOffset()`](#m31)|
+|`MyAvatar.getSnapTurn()`|
+|[`MyAvatar.getTargetAvatarPosition()`](#m32)|
+|`MyAvatar.getTargetScale()`|
+|`MyAvatar.getThrust()`|
+|`MyAvatar.getTrackedHeadPosition()`|
+|`MyAvatar.getUpdateRate()`|
+|`MyAvatar.getUpdateRate(String)`|
+|[`MyAvatar.goToLocation(QVariant)`](#m33)|
+|[`MyAvatar.goToLocation(glm::vec3)`](#m33)|
+|[`MyAvatar.goToLocation(glm::vec3,bool)`](#m33)|
+|[`MyAvatar.goToLocation(glm::vec3,bool,glm::quat)`](#m33)|
+|[`MyAvatar.goToLocation(glm::vec3,bool,glm::quat,bool)`](#m33)|
+|[`MyAvatar.increaseSize()`](#m34)|
+|`MyAvatar.isAway`|
+|`MyAvatar.isDriveKeyDisabled(DriveKeys)`|
+|`MyAvatar.isJointDataValid(String)`|
+|`MyAvatar.isJointDataValid(int)`|
+|`MyAvatar.newCollisionSoundURL(QUrl)`|
+|[`MyAvatar.overrideAnimation(String,float,bool,float,float)`](#m35)|
+|[`MyAvatar.overrideRoleAnimation(String,String,float,bool,float,float)`](#m36)|
+|`MyAvatar.pinJoint(int,glm::vec3,glm::quat)`|
+|[`MyAvatar.PrefetchAnimation()`](#m37)|
+|`MyAvatar.removeAnimationStateHandler(QScriptValue)`|
+|`MyAvatar.resetLastSent()`|
+|`MyAvatar.resetSensorsAndBody()`|
+|[`MyAvatar.resetSize()`](#m38)|
+|[`MyAvatar.restoreAnimation()`](#m39)|
+|[`MyAvatar.restoreRoleAnimation(String)`](#m40)|
+|`MyAvatar.restrictScaleFromDomainSettings(QJsonObject)`|
+|`MyAvatar.sendAvatarDataPacket()`|
+|`MyAvatar.sendIdentityPacket()`|
+|`MyAvatar.sensorToWorldMatrix.r0c0`|
+|`MyAvatar.setAbsoluteJointRotationInObjectFrame(int,glm::quat)`|
+|`MyAvatar.setAbsoluteJointTranslationInObjectFrame(int,glm::vec3)`|
+|`MyAvatar.setAnimGraphOverrideUrl(QUrl)`|
+|`MyAvatar.setAnimGraphUrl(QUrl)`|
+|[`MyAvatar.setAttachmentData(QVector<AttachmentData>)`](#m41)|
+|`MyAvatar.setAttachmentsVariant(QVariantList)`|
+|`MyAvatar.setAvatarEntityData(AvatarEntityMap)`|
+|`MyAvatar.setBlendshape(String,float)`|
+|`MyAvatar.setCharacterControllerEnabled(bool)`|
+|`MyAvatar.setClearOverlayWhenMoving(bool)`|
+|`MyAvatar.setEnableDebugDrawAnimPose(bool)`|
+|`MyAvatar.setEnableDebugDrawDefaultPose(bool)`|
+|`MyAvatar.setEnableDebugDrawHandControllers(bool)`|
+|`MyAvatar.setEnableDebugDrawIKTargets(bool)`|
+|`MyAvatar.setEnableDebugDrawPosition(bool)`|
+|`MyAvatar.setEnableDebugDrawSensorToWorldMatrix(bool)`|
+|`MyAvatar.setEnableInverseKinematics(bool)`|
+|[`MyAvatar.setEnableMeshVisible(bool)`](#m42)|
+|`MyAvatar.setHMDLeanRecenterEnabled(bool)`|
+|`MyAvatar.setHandState(char)`|
+|[`MyAvatar.setJointData(String,glm::quat,glm::vec3)`](#m43)|
+|[`MyAvatar.setJointData(int,glm::quat,glm::vec3)`](#m43)|
+|`MyAvatar.setJointMappingsFromNetworkReply()`|
+|[`MyAvatar.setJointRotation(String,glm::quat)`](#m44)|
+|[`MyAvatar.setJointRotation(int,glm::quat)`](#m44)|
+|[`MyAvatar.setJointRotations(QVector<glm::quat>)`](#m45)|
+|[`MyAvatar.setJointTranslation(String,glm::vec3)`](#m46)|
+|[`MyAvatar.setJointTranslation(int,glm::vec3)`](#m46)|
+|`MyAvatar.setJointTranslations(QVector<glm::vec3>)`|
+|`MyAvatar.setModelURLFinished(bool)`|
+|`MyAvatar.setOrientationVar(QVariant)`|
+|`MyAvatar.setParentID(QUuid)`|
+|`MyAvatar.setParentJointIndex(ushort)`|
+|`MyAvatar.setRawJointData(QVector<JointData>)`|
+|`MyAvatar.setSessionUUID(QUuid)`|
+|[`MyAvatar.setSkeletonOffset(glm::vec3)`](#m47)|
+|`MyAvatar.setSnapTurn(bool)`|
+|`MyAvatar.setThrust(glm::vec3)`|
+|`MyAvatar.setUseAnimPreAndPostRotations(bool)`|
+|`MyAvatar.updateAvatarEntity(QUuid,QByteArray)`|
+|`MyAvatar.updateMotionBehaviorFromMenu()`|
+|`MyAvatar.useAdvancedMovementControls`|
+|`MyAvatar.useFullAvatarURL(QUrl)`|
+|`MyAvatar.useFullAvatarURL(QUrl,String)`|
 
 | Events                                   |
 | ---------------------------------------- |
-| MyAvatar.audioListenerModeChanged()      |
-| [MyAvatar.collisionWithEntity(Collision)](#e1) |
-| MyAvatar.destroyed()                     |
-| MyAvatar.destroyed(QObject*)             |
-| MyAvatar.energyChanged(float)            |
-| MyAvatar.objectNameChanged(QString)      |
-| MyAvatar.onLoadComplete()                |
-| MyAvatar.positionGoneTo()                |
-| MyAvatar.transformChanged()              |
-| MyAvatar.wentActive()                    |
-| MyAvatar.wentAway()                      |
-| MyAvatar.skeletonChanged()               |
-| MyAvatar.scaleChanged()                  |
+|`MyAvatar.audioListenerModeChanged()`|
+|[`MyAvatar.collisionWithEntity(Collision)`](#e1)|
+|`MyAvatar.destroyed()`|
+|`MyAvatar.destroyed(QObject*)`|
+|`MyAvatar.energyChanged(float)`|
+|`MyAvatar.objectNameChanged(String)`|
+|`MyAvatar.onLoadComplete()`|
+|`MyAvatar.positionGoneTo()`|
+|`MyAvatar.transformChanged()`|
+|`MyAvatar.wentActive()`|
+|`MyAvatar.wentAway()`|
+|`MyAvatar.skeletonChanged()`|
+|`MyAvatar.scaleChanged()`|
 
 
 ## MyAvatar.collisionWithEntity()<a id="e1"></a>
