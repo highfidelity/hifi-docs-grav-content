@@ -7,51 +7,50 @@ taxonomy:
 
 | Properties      | Type   | Description |
 | --------------- | ------ | ----------- |
-| Vec3.FLOAT_MAX  | number |             |
-| Vec3.FLOAT_MIN  | number |             |
-| Vec3.FRONT      | number |             |
-| Vec3.HALF       | number |             |
-| Vec3.ONE        | number |             |
-| Vec3.RIGHT      | number |             |
-| Vec3.TWO        | number |             |
-| Vec3.UNIT_NEG_X | number |             |
-| Vec3.UNIT_NEG_Y | number |             |
-| Vec3.UNIT_NEG_Z | number |             |
-| Vec3.UNIT_X     | number |             |
-| Vec3.UNIT_XY    | number |             |
-| Vec3.UNIT_XYZ   | number |             |
-| Vec3.UNIT_XZ    | number |             |
-| Vec3.UNIT_Y     | number |             |
-| Vec3.UNIT_YZ    | number |             |
-| Vec3.UNIT_Z     | number |             |
-| Vec3.UP         | number |             |
-| Vec3.ZERO       | number |             |
-| Vec3.objectName | string |             |
+|`Vec3.FLOAT_MAX`|number||
+|`Vec3.FLOAT_MIN`|number||
+|`Vec3.FRONT`|number||
+|`Vec3.HALF`|number||
+|`Vec3.ONE`|number||
+|`Vec3.RIGHT`|number||
+|`Vec3.TWO`|number||
+|`Vec3.UNIT_NEG_X`|number||
+|`Vec3.UNIT_NEG_Y`|number||
+|`Vec3.UNIT_NEG_Z`|number||
+|`Vec3.UNIT_X`|number||
+|`Vec3.UNIT_XY`|number||
+|`Vec3.UNIT_XYZ`|number||
+|`Vec3.UNIT_XZ`|number||
+|`Vec3.UNIT_Y`|number||
+|`Vec3.UNIT_YZ`|number||
+|`Vec3.UNIT_Z`|number||
+|`Vec3.UP`|number||
+|`Vec3.ZERO`|number||
+
 
 | Methods                                  |
 | ---------------------------------------- |
-| [Vec3.cross(glm::vec3,glm::vec3)](#m1)   |
-| [Vec3.distance(glm::vec3,glm::vec3)](#m2) |
-| [Vec3.dot(glm::vec3,glm::vec3)](#m3)     |
-| [Vec3.equal(glm::vec3,glm::vec3)](#m4)   |
-| [Vec3.fromPolar(float,float)](#m5)       |
-| [Vec3.fromPolar(glm::vec3)](#m5)         |
-| Vec3.getAngle(glm::vec3,glm::vec3)       |
-| [Vec3.length(glm::vec3)](#m6)            |
-| [Vec3.mix(glm::vec3,glm::vec3,float)](#m7) |
-| [Vec3.multiply(float,glm::vec3)](#m8)    |
-| [Vec3.multiply(glm::vec3,float)](#m8)    |
-| [Vec3.multiplyQbyV(glm::quat,glm::vec3)](#m9) |
-| [Vec3.multiplyVbyV(glm::vec3,glm::vec3)](#m10) |
-| [Vec3.normalize(glm::vec3)](#m11)        |
-| [Vec3.orientedAngle(glm::vec3,glm::vec3,glm::vec3)](#m12) |
-| [Vec3.print(QString,glm::vec3)](#m13)    |
-| [Vec3.reflect(glm::vec3,glm::vec3)](#m14) |
-| [Vec3.subtract(glm::vec3,glm::vec3)](#m15) |
-| [Vec3.sum(glm::vec3,glm::vec3)](#m16)    |
-| [Vec3.toPolar(glm::vec3)](#m17)          |
-| [Vec3.withinEpsilon(glm::vec3,glm::vec3,float)](#m18) |
-
+|[`Vec3.cross(glm::vec3,glm::vec3)`](#m1)|
+|[`Vec3.distance(glm::vec3,glm::vec3)`](#m2)|
+|[`Vec3.dot(glm::vec3,glm::vec3)`](#m3)|
+|[`Vec3.equal(glm::vec3,glm::vec3)`](#m4)|
+|[`Vec3.fromPolar(float,float)`](#m5)|
+|[`Vec3.fromPolar(glm::vec3)`](#m5)|
+|`Vec3.getAngle(glm::vec3,glm::vec3)`|
+|[`Vec3.length(glm::vec3)`](#m6)|
+|[`Vec3.mix(glm::vec3,glm::vec3,float)`](#m7)|
+|[`Vec3.multiply(float,glm::vec3)`](#m8)|
+|[`Vec3.multiply(glm::vec3,float)`](#m8)|
+|[`Vec3.multiplyQbyV(glm::quat,glm::vec3)`](#m9)|
+|[`Vec3.multiplyVbyV(glm::vec3,glm::vec3)`](#m10)|
+|[`Vec3.normalize(glm::vec3)`](#m11)|
+|[`Vec3.orientedAngle(glm::vec3,glm::vec3,glm::vec3)`](#m12)|
+|[`Vec3.print(String,glm::vec3)`](#m13)|
+|[`Vec3.reflect(glm::vec3,glm::vec3)`](#m14)|
+|[`Vec3.subtract(glm::vec3,glm::vec3)`](#m15)|
+|[`Vec3.sum(glm::vec3,glm::vec3)`](#m16)|
+|[`Vec3.toPolar(glm::vec3)`](#m17)|
+|[`Vec3.withinEpsilon(glm::vec3,glm::vec3,float)`](#m18)|
 
 
 The Vec3 API provides a set of methods to manipulate 3-dimensional vectors as well as some useful constants.

@@ -7,24 +7,22 @@ taxonomy:
 
 | Properties            | Type   | Description |
 | --------------------- | ------ | ----------- |
-| SoundCache.numCached  | number |             |
-| SoundCache.numTotal   | number |             |
-| SoundCache.objectName | string |             |
-| SoundCache.sizeCached | number |             |
-| SoundCache.sizeTotal  | number |             |
+| `SoundCache.numCached`  | number |             |
+| `SoundCache.numTotal`   | number |             |
+| `SoundCache.sizeCached` | number |             |
+| `SoundCache.sizeTotal`  | number |             |
 
 
 | Methods                                 |
 | --------------------------------------- |
-| SoundCache.getResource(QUrl)            |
-| SoundCache.getResource(QUrl,QUrl)       |
-| SoundCache.getResource(QUrl,QUrl,void*) |
-| SoundCache.getResourceList()            |
-| SoundCache.getSound(QUrl)               |
-| SoundCache.prefetch(QUrl,void*)         |
-| SoundCache.objectNameChanged(QString)   |
-| SoundCache.prefetch(QUrl)               |
-| SoundCache.updateTotalSize(qlonglong)   |
+| `SoundCache.getResource(QUrl)`            |
+| `SoundCache.getResource(QUrl,QUrl)`       |
+| `SoundCache.getResource(QUrl,QUrl,void*)` |
+| `SoundCache.getResourceList()`            |
+| `SoundCache.getSound(QUrl)`               |
+| `SoundCache.prefetch(QUrl,void*)`         |
+| `SoundCache.prefetch(QUrl)`               |
+| `SoundCache.updateTotalSize(number)`   |
 
 ## SoundCache.getSound()
 
@@ -34,7 +32,7 @@ taxonomy:
 
 ### Arguments
 
-**url: QUrl **: The URL of the sound file being retrieved
+**url: QUrl**: The URL of the sound file being retrieved
 
 ### Returns
 

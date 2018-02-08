@@ -7,39 +7,38 @@ taxonomy:
 
 | Properties                   | Type    | Description                              |
 | ---------------------------- | ------- | ---------------------------------------- |
-| Users.canKick                | boolean | Read-only property. "True" if the DomainServer will allow this Node/Avatar to kick (ban) other avatars. |
-| Users.objectName             | string  |                                          |
-| Users.requestsDomainListData | boolean | Read/write property. Set to "true" if the avatar requests extra data from the mixers (such as positional data of an avatar you've ignored). |
+|`Users.canKick`|boolean|Read-only property. "True" if the DomainServer will allow this Node/Avatar to kick (ban) other avatars.|
+|`Users.requestsDomainListData`|boolean|Read/write property. Set to "true" if the avatar requests extra data from the mixers (such as positional data of an avatar you've ignored).|
 
 
 | Methods                                  |
 | ---------------------------------------- |
-| Users.canKickChanged(bool)               |
-| [Users.disableIgnoreRadius()](#m1)       |
-| [Users.enableIgnoreRadius()](#m2)        |
-| Users.getAvatarGain(QUuid)               |
-| [Users.getCanKick()](#m3)                |
-| [Users.getIgnoreRadiusEnabled()](#m4)    |
-| [Users.getIgnoreStatus(QUuid)](#m5)      |
-| [Users.getPersonalMuteStatus(QUuid)](#m6) |
-| [Users.ignore(QUuid)](#m7)               |
-| [Users.ignore(QUuid,bool)](#m7)          |
-| Users.ignoreRadiusEnabledChanged(bool)   |
-| [Users.kick(QUuid)](#m8)                 |
-| [Users.mute(QUuid)](#m9)                 |
-| [Users.personalMute(QUuid)](#m10)        |
-| [Users.personalMute(QUuid,bool)](#m10)   |
-| [Users.requestUsernameFromID(QUuid)](#m11) |
-| Users.requestsDomainListData             |
-| Users.setAvatarGain(QUuid,float)         |
-| [Users.toggleIgnoreRadius()](#m12)       |
-| Users.usernameFromIDReply(QString,QString,QString,bool) |
+|`Users.canKickChanged(bool)`|
+|[`Users.disableIgnoreRadius()`](#m1)|
+|[`Users.enableIgnoreRadius()`](#m2)|
+|`Users.getAvatarGain(QUuid)`|
+|[`Users.getCanKick()`](#m3)|
+|[`Users.getIgnoreRadiusEnabled()`](#m4)|
+|[`Users.getIgnoreStatus(QUuid)`](#m5)|
+|[`Users.getPersonalMuteStatus(QUuid)`](#m6)|
+|[`Users.ignore(QUuid)`](#m7)|
+|[`Users.ignore(QUuid,bool)`](#m7)|
+|`Users.ignoreRadiusEnabledChanged(bool)`|
+|[`Users.kick(QUuid)`](#m8)|
+|[`Users.mute(QUuid)`](#m9)|
+|[`Users.personalMute(QUuid)`](#m10)|
+|[`Users.personalMute(QUuid,bool)`](#m10)|
+|[`Users.requestUsernameFromID(QUuid)`](#m11)|
+|`Users.requestsDomainListData`|
+|`Users.setAvatarGain(QUuid,float)`|
+|[`Users.toggleIgnoreRadius()`](#m12)|
+|`Users.usernameFromIDReply(String,String,String,bool)`|
 
 | Events                           |
 | -------------------------------- |
-| Users.avatarDisconnected(QUuid)  |
-| Users.enteredIgnoreRadius()      |
-| Users.objectNameChanged(QString) |
+|`Users.avatarDisconnected(QUuid)`|
+|`Users.enteredIgnoreRadius()`|
+
 
 
 

@@ -9,15 +9,15 @@ taxonomy:
 
 | Methods                                  |
 | ---------------------------------------- |
-| Selection.addToSelectedItemsList(string listName, string itemType, QUuid id) |
-| Selection.removeFromSelectedItemsList(string listName, string itemType, QUuid id) |
-| Selection.removeListFromMap(string listName) |
-| Selection.printList(string listName)     |
+| [`Selection.addToSelectedItemsList(string listName, string itemType, QUuid id)`](#m1) |
+| [`Selection.removeFromSelectedItemsList(string listName, string itemType, QUuid id)`](#m2) |
+| [`Selection.removeListFromMap(string listName)`](#m3) |
+| [`Selection.printList(string listName)`](#m4)     |
 
 
 | Signals                                  |
 | ---------------------------------------- |
-| Selection.selectedItemsListChanged(string listName) <a id="s1"></a> |
+| [`Selection.selectedItemsListChanged(string listName)`](#s1)|
 
 ---
 
