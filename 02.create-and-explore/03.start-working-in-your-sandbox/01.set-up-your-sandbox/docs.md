@@ -6,7 +6,7 @@ taxonomy:
 *Learn how to set up your sandbox.*
 
 ##Overview
-Your Sandbox or home domain can be deployed to be accessible to anyone. The easiest way to do this is described in the sections below. 
+Your Sandbox or home domain can be deployed to be accessible to anyone. The easiest way to do this is described in the sections below.
 
 >>> If you're comfortable with GitHub, you can also set up your sandbox by compiling the domain-server and assignment-client from [source](https://github.com/highfidelity/hifi).
 
@@ -31,11 +31,11 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 
 ![High Fidelity icon in system tray (Windows](\system-tray.png)
 
-​												*High Fidelity icon in the system tray (Windows)*
+*High Fidelity icon in the system tray (Windows)*
 
 ![High Fidelity icon in the top menu bar (OS X)](\top-menu-bar.png)
 
-​												*High Fidelity icon in the top menu bar (OS X)*
+*High Fidelity icon in the top menu bar (OS X)*
 
 >>>>>>If you did not launch Sandbox after installation, you can find the application in your **Start Menu** (Windows) or in your **Applications** folder (OS X). It's usually in a **High Fidelity** subfolder from where you can launch it.
 
@@ -46,7 +46,7 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
   ![](\console-go-home.png)
 
   When launched, Sandbox downloads a default set of domain content (models, scripts,
-  etc.) and creates a Home domain on your local machine.	
+  etc.) and creates a Home domain on your local machine.
 
   To visit your Home domain, click on the High Fidelity icon in your system tray (Windows)
   or in the top menu bar (OS X) and in the menu that opens, select **Go Home**.
@@ -65,10 +65,8 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
   - To start configuring your domain, access your domain server settings. You can do this by going to http://localhost:40100/settings/. Or, you can right click the High Fidelity icon in the system icon tray, and then click "Settings".![](menu-settings.png)
   - You will be redirected to the Setup Wizard. You can also skip using the wizard if you'd like to modify the settings without using the wizard. ![](setup-wizard-1.PNG) Connect your High Fidelity account to get started on your domain server settings. You will be redirected to high Fidelity's sign in page, where you can sign up or create your High Fidelity account. You will then be prompted to click a button to generate your access token. Copy this token to paste it in the pop-up window in the wizard. ![](setup-wizard-2.PNG)
   - You will now see your temporary place name. You can choose a custom place name or continue using your IP address or temporary place name to give access to visitors. Click Next. ![](setup-wizard-3.PNG)
-  - In this step, you must remember to **add your High Fidelity username** to grant yourself administrator privileges. This is beacause admin privileges are for anyone using the local machine your domain is on. If you would like to manage your domain from other machines, you will require admin privileges. You can add other authorized usernames as well. You can also set permissions for
-    - Who can visit your domain
-    - Who can rez (create) items in your domain
-      ![](setup-wizard-4.PNG)![](setup-wizard-5.PNG)![](setup-wizard-6.PNG)![](setup-wizard-7.PNG)
+  - In this step, you must remember to **add your High Fidelity username** to grant yourself administrator privileges. This is because admin privileges are for anyone using the local machine your domain is on. If you would like to manage your domain from other machines, you will require admin privileges. You can add other authorized usernames as well. You can also set permissions for who can visit your domain and who can rez (create) items in your domain.
+    ![](setup-wizard-4.PNG)![](setup-wizard-5.PNG)![](setup-wizard-6.PNG)![](setup-wizard-7.PNG)
   - You will be redirected to the main domain settings page where you can manage other aspects of your domain. ![](setup-wizard-8.PNG)
   - You can change a number of settings on this page such Networking, Entity Server Settings, Security and more. You can also visit your domain in VR using the link on the top right. ![](security-options.png)
 
@@ -85,7 +83,7 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 
     ![](\share-place.png)
 
-    Copy this link to share it with others. They can visit your domain in Interface by selecting 	**Menu > Navigate > Show Address Bar**, by clicking **Go To** on the tablet, or by 	hitting the **Enter** key on the keyboard, and specifying the link.
+    Copy this link to share it with others. They can visit your domain in Interface by selecting **Menu > Navigate > Show Address Bar**, by clicking **Go To** on the tablet, or by hitting the **Enter** key on the keyboard, and specifying the link.
 
     >>>>>If you have a High Fidelity account and are logged in, depending on your High 	Fidelity account settings, you may appear online in your domain to other users making you easily and immediately reachable by anyone who can see that you are online.
 
@@ -97,9 +95,8 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 
 You do not have the option to choose your place name and nor does it appear in the list of Places in High Fidelity. It also can't be authenticated (it can be impersonated).
 
-But, you can assign a unique place name to your domain by purchasing one. 
+But, you can assign a unique place name to your domain by purchasing one.
 
-You can obtain a place name of your choosing (one that better represents you or your business) by [purchasing and registering a place name from High Fidelity](../place-names). Purchased place names can be authenticated. 
+You can obtain a place name of your choosing (one that better represents you or your business) by [purchasing and registering a place name from High Fidelity](../place-names). Purchased place names can be authenticated.
 
 >>> To purchase a place name, you will need to create a High Fidelity account.
-
