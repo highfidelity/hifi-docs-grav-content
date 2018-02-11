@@ -27,7 +27,7 @@ We also support textures in the following formats - PNG and JPEG.
 
 If you are using Blender to create an avatar, check out the [Blender workflow](https://wiki.highfidelity.com/wiki/Blender_workflow) tutorial.
 
-**Quick checklist for Maya 16 - 17*
+**Quick checklist for Maya 16 - 17**
 
 - Models must have properly assigned materials
 - Textures are optional
