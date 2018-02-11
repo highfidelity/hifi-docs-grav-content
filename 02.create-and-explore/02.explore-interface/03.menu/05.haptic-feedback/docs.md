@@ -1,7 +1,7 @@
 ---
 title: Activate Haptic Feedback
 taxonomy:
-    category: docs 
+    category: docs
 ---
 
 If a controller supports haptic feedback, you can activate it using the following methods.
@@ -15,7 +15,13 @@ Controller.triggerHapticPulse(strength, duration, hand)
 
 ```
 
-The three parameters here are: - strength: a float between 0 and 1 - duration: a number of milliseconds - hand: 0 for left, 1 for right, 2 for both
+The three parameters here are:
+- strength: a float between 0 and 1
+- duration: a number of milliseconds
+- hand:
+  - 0 for left
+  - 1 for right
+  - 2 for both
 
 ## Short Pulse
 
@@ -26,7 +32,9 @@ Controller.triggerShortHapticPulse(strength, hand)
 
 ```
 
-The two parameters here are: - strength: a float between 0 and 1 - hand: 0 for left, 1 for right, 2 for both
+The two parameters here are:
+- strength: a float between 0 and 1
+- hand: 0 for left, 1 for right, 2 for both
 
 ## Specific Devices
 
