@@ -55,7 +55,7 @@ To experience High Fidelity, you will need an [**avatar**](../../../create-and-e
 
 What happens if you want to add a pet to your domain and make sure it follows you wherever you go? Or if you want the lamps in your medieval village to turn on at night? High Fidelity provides you with the option to modify the functioning of your environment using [**scripting**](../../../create-and-explore/all-about-scripting). You can use JavaScript to change the behavior of any in-world object, add UI elements or change your hand-controller functions. 
 
-These scripts can be written using JavaScript. With scripts you can - build structures, move your avatar, shoot guns, play audio at a specific location, create custom UI elements to display information that only you can see, play music only you can hear and much more. There are four different kinds of scripts in High Fidelity:
+These scripts can be written using JavaScript. With scripts you can build structures, move your avatar, shoot guns, play audio at a specific location, create custom UI elements to display information that only you can see, play music only you can hear and much more. There are four different kinds of scripts in High Fidelity:
 * Interface Scripts
 * Client Entity Scripts
 * Server Entity Scripts
