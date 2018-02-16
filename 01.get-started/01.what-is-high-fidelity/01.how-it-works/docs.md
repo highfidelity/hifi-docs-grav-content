@@ -30,7 +30,7 @@ Your Sandbox is your home **domain**. A world created by any user is a domain. I
 
 ##Entities
 
-To build any content in your Sandbox, whether it is a space to interact with users or a replica of your apartment, you need [**entities**](../../../create-and-explore/entities). Entities are the building blocks of High Fidelity. You need entities whether you're going to create a theater or a chair. They are the basic blocks with which you can create and explore in High Fidelity.
+To build any content in your Sandbox, whether it is a space to interact with users or a replica of your apartment, you need [**entities**](../../../create-and-explore/entities). Entities are any object that are inside of a High Fidelity domain.  They are similar to the concept of Game Objects in Unity. You need entities whether you are going to create a theater or a chair. They are the basic blocks with which you can create and explore in High Fidelity.
 
 There are different kinds of entities available for use:
 * [Box and Sphere entities](../../../create-and-explore/entities/box-and-sphere-entities)
