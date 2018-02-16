@@ -24,7 +24,7 @@ If you’re interested in creating your own world and sharing it with other user
 
 ##Domain
 
-Your Sandbox is your home **domain**. A world created by any user is a domain. If you want to attend a live event organized by some users, you have to go to the specified domain to participate. A domain is the name given to a bounded region or place and each domain is controlled by a domain server and given a domain ID. When you use your Sandbox, your system is your home domain server. Just like your Sandbox, you can access a domain either using the place or domain name or the URL of that domain. 
+Your Sandbox is your home **domain**. A world created by any user is a domain. If you want to attend a live event organized by some users, you have to go to the specified domain to participate. A domain is the name given to a bounded region or place and each domain is controlled by a domain server and given a domain ID. When you use your Sandbox, your system is your home domain server. Just like your Sandbox, you can access a domain either using the place name, domain name, or the URL/IP of that domain. 
 
 
 
