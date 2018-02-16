@@ -23,7 +23,7 @@ So what is this server stack? Your home domain's server stack contains component
 
 Assignment clients control and manage various aspects of a domain. They also communicate directly with the Interface clients connected to a domain. There are six types of assignment clients:
 
-* The *Avatar Mixer* is in charge of your virtual presence in any domain. It keeps track of where you are, which avatar you are wearing, and how you move around the domain (like how you would move your head while wearing a Head Mounted Display (HMD)).
+* The *Avatar Mixer* is in charge of your virtual presence in any domain. It keeps track of where you are, which avatar you are wearing, and how you move around the domain.  For example, it tracks how you move your head while wearing a Head Mounted Display (HMD).
 
 * The *Audio Mixer* mixes all sounds, whether it's voice or environmental. And it does this not just for avatars, but also for all the entities in a domain. The Audio mixer can customize a stereo mix for you based on your position relative to the audio source.
 
