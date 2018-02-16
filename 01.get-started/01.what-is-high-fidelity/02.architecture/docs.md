@@ -47,7 +47,7 @@ Sandbox manages all these components—the domain server, five dedicated assignm
 
 In the picture above, the Asset Server and Messages Mixer are not shown, but they fit in like the Audio, Avatar and Entity mixers. The Assignment Server under Global Services is for future use, in which people can contribute assignment client computing power to a pool.
 
-High Fidelity's open source architecture is a work in progress and is subject to change. if you're interested in understanding our architecture better, check out our [Github](https://github.com/highfidelity/) project.
+High Fidelity's open source architecture is a work in progress and is subject to change. If you're interested in understanding our architecture better, check out our [Github](https://github.com/highfidelity/) project.
 
 
 
