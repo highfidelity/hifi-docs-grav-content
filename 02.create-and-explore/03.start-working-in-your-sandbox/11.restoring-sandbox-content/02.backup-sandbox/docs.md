@@ -28,7 +28,7 @@ OS X
     - /Users/[username]/.config/highfidelity.io/domain-server.json
     - /Users/[username]/Library/Application Support/High Fidelity/Server Console
 
-Linux
+Linux  (this has changed to /root/local/share....)
 
     - /home/[username]/.local/share/High Fidelity/assignment-client
     - /home/[username]/.local/share/High Fidelity/domain-server
