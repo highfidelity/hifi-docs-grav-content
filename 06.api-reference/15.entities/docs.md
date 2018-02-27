@@ -20,158 +20,157 @@ taxonomy:
 ##Properties <a id="properties"></a>
 | Properties                   | Type   | Description |
 | ---------------------------- | ------ | ----------- |
-| Entities.costMultiplier      | number |             |
-| Entities.currentAvatarEnergy | number |             |
-| Entities.keyboardFocusEntity | object |             |
-| Entities.objectName          | string |             |
+|`Entities.costMultiplier`|number||
+|`Entities.currentAvatarEnergy`|number||
+|`Entities.keyboardFocusEntity`|object||
 
 
 ##Methods <a id="methods"></a>
 | Methods                                  |
 | ---------------------------------------- |
-| [Entities.addAction(QString,QUuid,QVariantMap)](#m1) |
-| [Entities.addEntity(EntityItemProperties)](#m2) |
-| Entities.addEntity(EntityItemProperties,bool) |
-| Entities.addModelEntity(QString,QString,QString,bool,glm::vec3,glm::vec3) |
-| Entities.addingEntity(EntityItemID)      |
-| [Entities.appendPoint(QUuid,glm::vec3)](#m3) |
-| [Entities.callEntityMethod(QUuid,QString)](#m4) |
-| Entities.callEntityMethod(QUuid,QString,QStringList) |
-| [Entities.canAdjustLocks()](#m5)         |
-| Entities.canAdjustLocksChanged(bool)     |
-| [Entities.canRez()](#m6)                 |
-| Entities.canRezChanged(bool)             |
-| [Entities.canRezTmp()](#m7)              |
-| Entities.canRezTmpChanged(bool)          |
-| Entities.canWriteAssets()                |
-| Entities.canWriteAssetsChanged(bool)     |
-| Entities.debitEnergySource(float)        |
-| [Entities.deleteAction(QUuid,QUuid)](#m8) |
-| [Entities.deleteEntity(QUuid)](#m9)      |
-| Entities.dumpTree()                      |
-| [Entities.editEntity(QUuid,EntityItemProperties)](#m10) |
-| Entities.emitScriptEvent(EntityItemID,QVariant) |
-| Entities.enterEntity(EntityItemID)       |
-| [Entities.findClosestEntity(glm::vec3,float)](#m11) |
-| [Entities.findEntities(glm::vec3,float)](#m12) |
-| [Entities.findEntitiesInBox(glm::vec3,glm::vec3)](#m13) |
-| Entities.findEntitiesInFrustum(QVariantMap) |
-| [Entities.findRayIntersection(PickRay)](#m14) |
-| [Entities.findRayIntersection(PickRay,bool)](#m14) |
-| [Entities.findRayIntersection(PickRay,bool,QScriptValue)](#m14) |
-| [Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue)](#m14) |
-| Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool) |
-| Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool,bool) |
-| [Entities.findRayIntersectionBlocking(PickRay)](#m15) |
-| Entities.findRayIntersectionBlocking(PickRay,bool) |
-| Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue) |
-| Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue,QScriptValue) |
-| Entities.getAbsoluteJointRotationInObjectFrame(QUuid,int) |
-| Entities.getAbsoluteJointTranslationInObjectFrame(QUuid,int) |
-| [Entities.getActionArguments(QUuid,QUuid)](#m16) |
-| [Entities.getActionIDs(QUuid)](#m17)     |
-| Entities.getChildrenIDs(QUuid)           |
-| Entities.getChildrenIDsOfJoint(QUuid,int) |
-| [Entities.getDrawZoneBoundaries()](#m18) |
-| Entities.getEntityLocalTransform(QUuid)  |
-| [Entities.getEntityProperties(QUuid)](#m19) |
-| Entities.getEntityProperties(QUuid,EntityPropertyFlags) |
-| Entities.getEntityTransform(QUuid)       |
-| Entities.getJointIndex(QUuid,QString)    |
-| Entities.getJointNames(QUuid)            |
-| Entities.getKeyboardFocusEntity()        |
-| [Entities.getLifetimeBPS()](#m20)        |
-| [Entities.getLifetimeBPSQueued()](#m21)  |
-| [Entities.getLifetimeBytesQueued()](#m22) |
-| [Entities.getLifetimeBytesSent()](#m23)  |
-| [Entities.getLifetimeInSeconds()](#m24)  |
-| [Entities.getLifetimeInUsecs()](#m25)    |
-| [Entities.getLifetimePPS()](#m26)        |
-| [Entities.getLifetimePPSQueued()](#m27)  |
-| [Entities.getLifetimePacketsQueued()](#m28) |
-| [Entities.getLifetimePacketsSent()](#m29) |
-| [Entities.getLightsArePickable()](#m30)  |
-| Entities.getLocalJointRotation(QUuid,int) |
-| Entities.getLocalJointTranslation(QUuid,int) |
-| Entities.getMeshes(QUuid,QScriptValue)   |
-| [Entities.getPacketsPerSecond()](#m31)   |
-| Entities.getServerScriptStatus(QUuid,QScriptValue) |
-| Entities.getWebViewRoot(QUuid)           |
-| [Entities.getZonesArePickable()](#m32)   |
-| [Entities.hasPacketsToSend()](#m33)      |
-| Entities.isChildOfParent(QUuid,QUuid)    |
-| [Entites.LocalCoordstoVoxelCoords()](#m34) |
-| Entities.leaveEntity(EntityItemID)       |
-| [PacketsToSendCount()](#m35)             |
-| Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue) |
-| Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue,QScriptValue) |
-| Entities.reloadServerScripts(QUuid)      |
-| Entities.sendClickDownOnEntity(QUuid,PointerEvent) |
-| Entities.sendClickReleaseOnEntity(QUuid,PointerEvent) |
-| Entities.sendHoldingClickOnEntity(QUuid,PointerEvent) |
-| Entities.sendHoverEnterEntity(QUuid,PointerEvent) |
-| Entities.sendHoverLeaveEntity(QUuid,PointerEvent) |
-| Entities.sendHoverOverEntity(QUuid,PointerEvent) |
-| Entities.sendMouseMoveOnEntity(QUuid,PointerEvent) |
-| Entities.sendMousePressOnEntity(QUuid,PointerEvent) |
-| Entities.sendMouseReleaseOnEntity(QUuid,PointerEvent) |
-| [Entities.ServersExist()](#m36)          |
-| Entities.setAbsoluteJointRotationInObjectFrame(QUuid,int,glm::quat) |
-| Entities.setAbsoluteJointTranslationInObjectFrame(QUuid,int,glm::vec3) |
-| [Entities.setAllPoints(QUuid,QVector<glm::vec3>)](#m37) |
-| [Entities.setAllVoxels(QUuid,int)](#m38) |
-| [Entities.setDrawZoneBoundaries(bool)](#m39) |
-| Entities.setKeyboardFocusEntity(QUuid)   |
-| [Entities.setLightsArePickable(bool)](#m40) |
-| Entities.setLocalJointRotation(QUuid,int,glm::quat) |
-| Entities.setLocalJointRotations(QUuid,QVector<glm::quat>) |
-| Entities.setLocalJointTranslation(QUuid,int,glm::vec3) |
-| Entities.setLocalJointTranslations(QUuid,QVector<glm::vec3>) |
-| Entities.setLocalJointsData(QUuid,QVector<glm::quat>,QVector<glm::vec3>) |
-| [Entities.setPacketsPerSecond(int)](#m41) |
-| [Entities.setVoxel(QUuid,glm::vec3,int)](#m42) |
-| Entities.setVoxelCapsule(QUuid,glm::vec3,glm::vec3,float,int) |
-| [Entities.SetVoxelsInCuboid()](#m43)     |
-| [Entities.SetVoxelSphere()](#m44)        |
-| [Entities.SetZonesArePickable()](#m45)   |
-| [Entities.UpdateAction()](#m46)          |
-| [Entities.VoxelCoordsToLocalCoords()](#m47) |
-| [Entities.VoxelCoordsToWorldCoords()](#m48) |
-| [Entities.WorldCoordsToVoxelCoords()](#m49) |
+|[`Entities.addAction(String,QUuid,QVariantMap)`](#m1)|
+|[`Entities.addEntity(EntityItemProperties)`](#m2)|
+|`Entities.addEntity(EntityItemProperties,bool)`|
+|`Entities.addModelEntity(String,String,String,bool,glm::vec3,glm::vec3)`|
+|`Entities.addingEntity(EntityItemID)`|
+|[`Entities.appendPoint(QUuid,glm::vec3)`](#m3)|
+|[`Entities.callEntityMethod(QUuid,String)`](#m4)|
+|`Entities.callEntityMethod(QUuid,String,StringList)`|
+|[`Entities.canAdjustLocks()`](#m5)|
+|`Entities.canAdjustLocksChanged(bool)`|
+|[`Entities.canRez()`](#m6)|
+|`Entities.canRezChanged(bool)`|
+|[`Entities.canRezTmp()`](#m7)|
+|`Entities.canRezTmpChanged(bool)`|
+|`Entities.canWriteAssets()`|
+|`Entities.canWriteAssetsChanged(bool)`|
+|`Entities.debitEnergySource(float)`|
+|[`Entities.deleteAction(QUuid,QUuid)`](#m8)|
+|[`Entities.deleteEntity(QUuid)`](#m9)|
+|`Entities.dumpTree()`|
+|[`Entities.editEntity(QUuid,EntityItemProperties)`](#m10)|
+|`Entities.emitScriptEvent(EntityItemID,QVariant)`|
+|`Entities.enterEntity(EntityItemID)`|
+|[`Entities.findClosestEntity(glm::vec3,float)`](#m11)|
+|[`Entities.findEntities(glm::vec3,float)`](#m12)|
+|[`Entities.findEntitiesInBox(glm::vec3,glm::vec3)`](#m13)|
+|`Entities.findEntitiesInFrustum(QVariantMap)`|
+|[`Entities.findRayIntersection(PickRay)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool,bool)`](#m14)|
+|[`Entities.findRayIntersectionBlocking(PickRay)`](#m15)|
+|`Entities.findRayIntersectionBlocking(PickRay,bool)`|
+|`Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue)`|
+|`Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue,QScriptValue)`|
+|`Entities.getAbsoluteJointRotationInObjectFrame(QUuid,number)`|
+|`Entities.getAbsoluteJointTranslationInObjectFrame(QUuid,number)`|
+|[`Entities.getActionArguments(QUuid,QUuid)`](#m16)|
+|[`Entities.getActionIDs(QUuid)`](#m17)|
+|`Entities.getChildrenIDs(QUuid)`|
+|`Entities.getChildrenIDsOfJoint(QUuid,number)`|
+|[`Entities.getDrawZoneBoundaries()`](#m18)|
+|`Entities.getEntityLocalTransform(QUuid)`|
+|[`Entities.getEntityProperties(QUuid)`](#m19)|
+|`Entities.getEntityProperties(QUuid,EntityPropertyFlags)`|
+|`Entities.getEntityTransform(QUuid)`|
+|`Entities.getJointIndex(QUuid,String)`|
+|`Entities.getJointNames(QUuid)`|
+|`Entities.getKeyboardFocusEntity()`|
+|[`Entities.getLifetimeBPS()`](#m20)|
+|[`Entities.getLifetimeBPSQueued()`](#m21)|
+|[`Entities.getLifetimeBytesQueued()`](#m22)|
+|[`Entities.getLifetimeBytesSent()`](#m23)|
+|[`Entities.getLifetimeInSeconds()`](#m24)|
+|[`Entities.getLifetimeInUsecs()`](#m25)|
+|[`Entities.getLifetimePPS()`](#m26)|
+|[`Entities.getLifetimePPSQueued()`](#m27)|
+|[`Entities.getLifetimePacketsQueued()`](#m28)|
+|[`Entities.getLifetimePacketsSent()`](#m29)|
+|[`Entities.getLightsArePickable()`](#m30)|
+|`Entities.getLocalJointRotation(QUuid,number)`|
+|`Entities.getLocalJointTranslation(QUuid,number)`|
+|`Entities.getMeshes(QUuid,QScriptValue)`|
+|[`Entities.getPacketsPerSecond()`](#m31)|
+|`Entities.getServerScriptStatus(QUuid,QScriptValue)`|
+|`Entities.getWebViewRoot(QUuid)`|
+|[`Entities.getZonesArePickable()`](#m32)|
+|[`Entities.hasPacketsToSend()`](#m33)|
+|`Entities.isChildOfParent(QUuid,QUuid)`|
+|[`Entites.LocalCoordstoVoxelCoords()`](#m34)|
+|`Entities.leaveEntity(EntityItemID)`|
+|[`PacketsToSendCount()`](#m35)|
+|`Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue)`|
+|`Entities.queryPropertyMetadata(QUuid,QScriptValue,QScriptValue,QScriptValue)`|
+|`Entities.reloadServerScripts(QUuid)`|
+|`Entities.sendClickDownOnEntity(QUuid,PointerEvent)`|
+|`Entities.sendClickReleaseOnEntity(QUuid,PointerEvent)`|
+|`Entities.sendHoldingClickOnEntity(QUuid,PointerEvent)`|
+|`Entities.sendHoverEnterEntity(QUuid,PointerEvent)`|
+|`Entities.sendHoverLeaveEntity(QUuid,PointerEvent)`|
+|`Entities.sendHoverOverEntity(QUuid,PointerEvent)`|
+|`Entities.sendMouseMoveOnEntity(QUuid,PointerEvent)`|
+|`Entities.sendMousePressOnEntity(QUuid,PointerEvent)`|
+|`Entities.sendMouseReleaseOnEntity(QUuid,PointerEvent)`|
+|[`Entities.ServersExist()`](#m36)|
+|`Entities.setAbsoluteJointRotationInObjectFrame(QUuid,number,glm::quat)`|
+|`Entities.setAbsoluteJointTranslationInObjectFrame(QUuid,number,glm::vec3)`|
+|[`Entities.setAllPoints(QUuid,QVector<glm::vec3>)`](#m37)|
+|[`Entities.setAllVoxels(QUuid,number)`](#m38)|
+|[`Entities.setDrawZoneBoundaries(bool)`](#m39)|
+|`Entities.setKeyboardFocusEntity(QUuid)`|
+|[`Entities.setLightsArePickable(bool)`](#m40)|
+|`Entities.setLocalJointRotation(QUuid,number,glm::quat)`|
+|`Entities.setLocalJointRotations(QUuid,QVector<glm::quat>)`|
+|`Entities.setLocalJointTranslation(QUuid,number,glm::vec3)`|
+|`Entities.setLocalJointTranslations(QUuid,QVector<glm::vec3>)`|
+|`Entities.setLocalJointsData(QUuid,QVector<glm::quat>,QVector<glm::vec3>)`|
+|[`Entities.setPacketsPerSecond(number)`](#m41)|
+|[`Entities.setVoxel(QUuid,glm::vec3,number)`](#m42)|
+|`Entities.setVoxelCapsule(QUuid,glm::vec3,glm::vec3,float,number)`|
+|[`Entities.SetVoxelsInCuboid()`](#m43)|
+|[`Entities.SetVoxelSphere()`](#m44)|
+|[`Entities.SetZonesArePickable()`](#m45)|
+|[`Entities.UpdateAction()`](#m46)|
+|[`Entities.VoxelCoordsToLocalCoords()`](#m47)|
+|[`Entities.VoxelCoordsToWorldCoords()`](#m48)|
+|[`Entities.WorldCoordsToVoxelCoords()`](#m49)|
 
 ##Events <a id="events"></a>
 | Events                                   |
 | ---------------------------------------- |
-| Entities.AABoxIntersectsCapsule(glm::vec3,glm::vec3,glm::vec3,glm::vec3,float) |
-| [Entities.AddingEntity()](#e1)           |
-| [Entities.CanAdjustLocksChanged()](#e2)  |
-| [Entities.CanRezChanged()](#e3)          |
-| [Entities.CanRezTmpChanged()](#e4)       |
-| [Entities.clearingEntities()](#e5)       |
-| [Entities.deletingEntity(EntityItemID)](#e6) |
-| Entities.localCoordsToVoxelCoords(QUuid,glm::vec3) |
-| Entities.packetsToSendCount()            |
-| Entities.objectNameChanged(QString)      |
-| Entities.wantsHandControllerPointerEvents(QUuid) |
-| Entities.webEventReceived(EntityItemID,QVariant) |
-| Entities.serversExist()                  |
+|`Entities.AABoxIntersectsCapsule(glm::vec3,glm::vec3,glm::vec3,glm::vec3,float)`|
+|[`Entities.AddingEntity()`](#e1)|
+|[`Entities.CanAdjustLocksChanged()`](#e2)|
+|[`Entities.CanRezChanged()`](#e3)|
+|[`Entities.CanRezTmpChanged()`](#e4)|
+|[`Entities.clearingEntities()`](#e5)|
+|[`Entities.deletingEntity(EntityItemID)`](#e6)|
+|`Entities.localCoordsToVoxelCoords(QUuid,glm::vec3)`|
+|`Entities.packetsToSendCount()`|
+|`Entities.objectNameChanged(String)`|
+|`Entities.wantsHandControllerPointerEvents(QUuid)`|
+|`Entities.webEventReceived(EntityItemID,QVariant)`|
+|`Entities.serversExist()`|
 
 
 ##Callbacks <a id="callbacks"></a>
 | Callbacks                      |
 | ------------------------------ |
-| [ClickDownOnEntity()](#c1)     |
-| [ClickReleaseOnEntity()](#c2)  |
-| [CollisionWithEntity()](#c3)   |
-| [EnterEntity()](#c4)           |
-| [HoldingClickOnEntity()](#c5)  |
-| [HoverEnterEntity()](#c6)      |
-| [HoverLeaveEntity()](#c7)      |
-| [HoverOverEntity()](#c8)       |
-| [LeaveEntity()](#c9)           |
-| [MouseMoveOnEntity()](#c10)    |
-| [MousePressOnEntity()](#c11)   |
-| [MouseReleaseOnEntity()](#c12) |
+|[`ClickDownOnEntity()`](#c1)|
+|[`ClickReleaseOnEntity()`](#c2)|
+|[`CollisionWithEntity()`](#c3)|
+|[`EnterEntity()`](#c4)|
+|[`HoldingClickOnEntity()`](#c5)|
+|[`HoverEnterEntity()`](#c6)|
+|[`HoverLeaveEntity()`](#c7)|
+|[`HoverOverEntity()`](#c8)|
+|[`LeaveEntity()`](#c9)|
+|[`MouseMoveOnEntity()`](#c10)|
+|[`MousePressOnEntity()`](#c11)|
+|[`MouseReleaseOnEntity()`](#c12)|
 
 ## EntityItem Properties<a id="EntityItemProperties"></a>
 

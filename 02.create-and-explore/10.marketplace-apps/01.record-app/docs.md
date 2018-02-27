@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-Check out our latest tablet app! The Record app lets you record yourself and watch a bot replay the recording in a loop. You can use this app to record short videos of your avatar.
+The Record app lets you record yourself and watch a bot replay the recording in a loop. You can use this app to record short videos of your avatar.
 
 We’ll walk you through getting the app, setting it up and using it.
 

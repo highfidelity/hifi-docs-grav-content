@@ -24,13 +24,13 @@ If you’re interested in creating your own world and sharing it with other user
 
 ##Domain
 
-Your Sandbox is your home **domain**. A world created by any user is a domain. If you want to attend a live event organized by some users, you have to go to the specified domain to participate. A domain is the name given to a bounded region or place and each domain is controlled by a domain server and given a domain ID. When you use your Sandbox, your system is your home domain server. Just like your Sandbox, you can access a domain either using the place or domain name or the URL of that domain. 
+Your Sandbox is your home **domain**. A world created by any user is a domain. If you want to attend a live event organized by some users, you have to go to the specified domain to participate. A domain is the name given to a bounded region or place and each domain is controlled by a domain server and given a domain ID. When you use your Sandbox, your system is your home domain server. Just like your Sandbox, you can access a domain either using the place name, domain name, or the URL/IP of that domain. 
 
 
 
 ##Entities
 
-To build any content in your Sandbox, whether it is a space to interact with users or a replica of your apartment, you need [**entities**](../../../create-and-explore/entities). Entities are the building blocks of High Fidelity. You need entities whether you're going to create a theater or a chair. They are the basic blocks with which you can create and explore in High Fidelity.
+To build any content in your Sandbox, whether it is a space to interact with users or a replica of your apartment, you need [**entities**](../../../create-and-explore/entities). Entities are any object that are inside of a High Fidelity domain.  They are similar to the concept of Game Objects in Unity. You need entities whether you are going to create a theater or a chair. They are the basic blocks with which you can create and explore in High Fidelity.
 
 There are different kinds of entities available for use:
 * [Box and Sphere entities](../../../create-and-explore/entities/box-and-sphere-entities)
@@ -55,7 +55,7 @@ To experience High Fidelity, you will need an [**avatar**](../../../create-and-e
 
 What happens if you want to add a pet to your domain and make sure it follows you wherever you go? Or if you want the lamps in your medieval village to turn on at night? High Fidelity provides you with the option to modify the functioning of your environment using [**scripting**](../../../create-and-explore/all-about-scripting). You can use JavaScript to change the behavior of any in-world object, add UI elements or change your hand-controller functions. 
 
-These scripts can be written using JavaScript. With scripts you can - build structures, move your avatar, shoot guns, play audio at a specific location, create custom UI elements to display information that only you can see, play music only you can hear and much more. There are four different kinds of scripts in High Fidelity:
+These scripts can be written using JavaScript. With scripts you can build structures, move your avatar, shoot guns, play audio at a specific location, create custom UI elements to display information that only you can see, play music only you can hear and much more. There are four different kinds of scripts in High Fidelity:
 * Interface Scripts
 * Client Entity Scripts
 * Server Entity Scripts

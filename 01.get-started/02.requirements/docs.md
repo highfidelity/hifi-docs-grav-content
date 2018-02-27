@@ -26,7 +26,7 @@ The system requirements are listed below.
 
 ##Additional Hardware Requirements
 
-While a lot of High Fidelity’s features are available with a desktop, we recommend using VR hardware such as head mounted displays (HMD), hand controllers and audio headsets, for the best experience. HMDs are display devices that allow the user to view virtual reality. Hand controllers will help you navigate and create in-world. Finally, High Fidelity delivers all audio over UDP in an uncompressed 16-bit, 24Khz format, and spatializes audio in real-time based on the location of the listener and the sound sources. A good headset will enhance your experience. 
+While a lot of High Fidelity’s features are available with a desktop, for the best experience, we recommend using VR hardware such as head mounted displays (HMD), hand controllers and audio headsets.  HMDs are display devices that allow the user to view virtual reality. Hand controllers will help you navigate and create in-world. Finally, High Fidelity delivers all audio over UDP in an uncompressed 16-bit, 24Khz format, and spatializes audio in real-time based on the location of the listener and the sound sources. A good headset will enhance your experience. 
 
 We’ve listed the hardware requirements below. 
 

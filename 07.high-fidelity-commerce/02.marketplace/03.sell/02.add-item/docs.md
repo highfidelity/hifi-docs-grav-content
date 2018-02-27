@@ -11,7 +11,7 @@ Once you've completed exporting the entity, you can add it to Marketplace.
 - If you wish to add a wearable to the Marketplace, check out this [page](../create). 
 - On Marketplace's webpage where you have started filling in the details of your new item, scroll down until you see the assets tab. ![](scr19.PNG)
 - Click 'Choose File' and the entity's file. Here, we added the .fbx file. Once you upload the file, you can select it see the file's URL. ![](scr21.PNG)
->>>>> You will refer to the file using this URL (or a relative URL) in any of the other assets you upload. You cannot have any external references (or external URLs or URLs related to your local machine) in any of the assets you upload. 
+>>>>> You will refer to the file using this URL (or a relative URL) in any of the other assets you upload. You cannot have any external references (or external URLs or URLs related to your local machine) in any of the assets you upload. Please make sure your root entity file (the JSON) does not contain references to ATP hosted files. You can examine it in a text editor to double check. If you see anything like `atp://` in the file, it's referring to a local file hosted on a domain, rather than on the Marketplace. The JSON should only refer to files hosted on the Marketplace filesystem.
 
 - To avoid having any external references, we will change the model URL in the .JSON file to the .fbx URL above. Where possible, use relative paths when referencing external assets, like other scripts, models, sounds, etc. This will keep your content portable and save you work in the future when you update your marketplace items.
 

@@ -21,7 +21,7 @@ The following table displays how complete the API reference is. We will be updat
 
 | API                      | List of Properties and Functions | Extended Descriptions |
 | ------------------------ | -------------------------------- | --------------------- |
-| Account                  | Yes                              | No                    |
+| Account                  | Yes                              | Yes                    |
 | Animation Cache          | Yes (no events)                  | No                    |
 | Audio Scope              | Yes                              | No                    |
 | Audio Stats              | Yes                              | No                    |
@@ -59,3 +59,4 @@ The following table displays how complete the API reference is. We will be updat
 | Limitless                   | Yes                              | No                    |
 | Paths                   | Yes                              | Yes                    |
 | Picks                   | Yes                              | Yes                    |
+| Google Poly API| Yes| Yes| 

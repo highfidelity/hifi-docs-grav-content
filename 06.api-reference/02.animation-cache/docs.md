@@ -5,35 +5,46 @@ taxonomy:
         - docs
 ---
 
+AnimationCache extends ResourceCache. 
 
-
-| Properties                | Type   | Description |
-| ------------------------- | ------ | ----------- |
-| AnimationCache.objectName | String |             |
-| AnimationCache.numCached  | Number |             |
-| AnimationCache.numTotal   | Number |             |
-| AnimationCache.sizeCached | Number |             |
-| AnimationCache.sizeTotal  | Number |             |
+| Properties                  | Type   | Description                              |
+| --------------------------- | ------ | ---------------------------------------- |
+| `AnimationCache.numCached`  | number | The total number of cached resources     |
+| `AnimationCache.numTotal`   | number | The total number of resources            |
+| `AnimationCache.sizeCached` | number | The size in bytes of cached resources    |
+| `AnimationCache.sizeTotal`  | number | The size in bytes of all cached resources |
 
 
 | Methods                                  |
 | ---------------------------------------- |
-| AnimationCache.dirty()                   |
-| AnimationCache.getAnimation(QString)     |
-| AnimationCache.getAnimation(QUrl)        |
-| AnimationCache.getResource(QUrl)         |
-| AnimationCache.getResource(QUrl,QUrl)    |
-| AnimationCache.getResource(QUrl,QUrl,void*) |
-| AnimationCache.getResourceList()         |
-| AnimationCache.prefetch(QUrl)            |
-| AnimationCache.prefetch(QUrl,void*)      |
-| AnimationCache.updateTotalSize(qlonglong) |
-
-
-| Events                                   |
-| ---------------------------------------- |
-| AnimationCache.objectNameChanged(QString) |
+| `AnimationCache.getAnimation(String)`    |
+| `AnimationCache.getResource(String,String,void*)` |
+| `AnimationCache.getResourceList()`       |
+| `AnimationCache.prefetch(String,void*)`  |
+| `AnimationCache.updateTotalSize(number)` |
 
 
 
+#### `getAnimation(url)`
 
+Returns animation resource for particular animation
+
+##### Parameters:
+
+| Name  | Type   | Description |
+| ----- | ------ | ----------- |
+| `url` | string | url to load |
+
+
+
+##### Returns:
+
+##### 
+
+| Name        | Type     |
+| ----------- | -------- |
+| `animation` | Resource |
+
+
+
+##### 
