@@ -50,7 +50,7 @@ The only thing that changes in this code from page to page is the page name.
 ```
 
 
-Check out our Style Guide while writing to see how you can edit your page before review. 
+Check out our [Style Guide](../..//write-for-us/style-guide) while writing to see how you can edit your page before review. 
 
 Our [Markdown Guide](../..//write-for-us/markdown-guide) will help you understand how to write different headings, add images, notes, warning, information, hyperlinks, using anchors and more. 
 
