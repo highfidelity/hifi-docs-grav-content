@@ -16,7 +16,7 @@ These coins are to be used as currency for any commerce transactions in the Mark
 
 Your Wallet will be secured using ECDSA public-private key pairs, security picture and passphrase. Learn more about your Wallet [here](../../marketplace/wallet-setup). 
 
-HFC is not intended for speculators to hold, and should be used in transactions in High Fidelity. HFC intended to be stable currency and used support a healthy and vibrant virtual economy for digital goods and assets.
+HFC is not intended for speculators to hold and should be used in transactions in High Fidelity. HFC is intended to be a stable currency and used to support a healthy and vibrant virtual economy for digital goods and assets.
 
 
 
