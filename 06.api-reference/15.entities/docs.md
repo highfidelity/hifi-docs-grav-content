@@ -56,11 +56,11 @@ taxonomy:
 |[`Entities.findEntitiesInBox(glm::vec3,glm::vec3)`](#m13)|
 |`Entities.findEntitiesInFrustum(QVariantMap)`|
 |[`Entities.findRayIntersection(PickRay)`](#m14)|
-|`Entities.findRayIntersection(PickRay,bool)`|
-|`Entities.findRayIntersection(PickRay,bool,QScriptValue)`|
-|`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue)`|
-|`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool)`|
-|`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool,bool)`|
+|[`Entities.findRayIntersection(PickRay,bool)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool)`](#m14)|
+|[`Entities.findRayIntersection(PickRay,bool,QScriptValue,QScriptValue,bool,bool)`](#m14)|
 |[`Entities.findRayIntersectionBlocking(PickRay)`](#m15)|
 |`Entities.findRayIntersectionBlocking(PickRay,bool)`|
 |`Entities.findRayIntersectionBlocking(PickRay,bool,QScriptValue)`|
@@ -172,7 +172,7 @@ taxonomy:
 |[`MousePressOnEntity()`](#c11)|
 |[`MouseReleaseOnEntity()`](#c12)|
 
-## EntityItem Properties
+## EntityItem Properties<a id="EntityItemProperties"></a>
 
 An entity's appearance (color, size, position etc.) and behavior (animation, collision, interaction, etc.) are defined by the entity's properties specified in `EntityItemProperties`.
 
@@ -1712,13 +1712,31 @@ Note: Light entities and zone entities, even if visible, are ignored and won't b
 
 ### Function
 
+`findRayIntersection(ray) // Returns RayToEntityIntersectionResult`
+
 `findRayIntersection(ray, precisionPicking) // Returns RayToEntityIntersectionResult`
+
+`findRayIntersection(ray, precisionPicking, entityIdsToInclude) // Returns RayToEntityIntersectionResult`
+
+`findRayIntersection(ray, precisionPicking, entityIdsToInclude, entityIdsToDiscard) // Returns RayToEntityIntersectionResult`
+
+`findRayIntersection(ray, precisionPicking, entityIdsToInclude, entityIdsToDiscard, visibleOnly) // Returns RayToEntityIntersectionResult`
+
+`findRayIntersection(ray, precisionPicking, entityIdsToInclude, entityIdsToDiscard, visibleOnly, collidableOnly) // Returns RayToEntityIntersectionResult`
 
 ### Arguments
 
 **ray: PickRay**: An instance of the [PickRay](https://github.com/highfidelity/hifi/blob/d14820d3ef4328c73e0a9ca271b53e769c87aedb/libraries/shared/src/RegisteredMetaTypes.h) registered meta type: `{vec3 origin, vec3 direction}`. It is used to create a ray from a specified origin point `origin` in a specified direction `direction`.
 
 **precisionPicking: bool**: If `true`, returns the exact position of where the ray hit. If `false`, returns the position of the object the ray hit.
+
+**entityIdsToInclude: EntityItemID[ ]**: If the array is not empty, any [EntityItemID](https://wiki.highfidelity.com/wiki/EntityItemID)s within the array will be checked.
+
+**entityIdsToDiscard: EntityItemID[ ]**: If the array is not empty, any [EntityItemID](https://wiki.highfidelity.com/wiki/EntityItemID)s within the array will not be checked.
+
+**visibleOnly: bool**: If `true`, objects that are not visible via [EntityItem Properties](#EntityItemProperties) will be ignored. If `false`, no objects will be ignored
+
+**collidableOnly: bool**: If `true`, objects that are collisionless via [EntityItem Properties](#EntityItemProperties) will be ignored. If `false`, no objects will be ignored
 
 ### Returns
 
