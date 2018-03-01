@@ -18,6 +18,7 @@ taxonomy:
 
 
 
+
 ### Methods
 
 #### `(static) downloadData(url, callback)`<a id ="m1"></a>
