@@ -125,6 +125,10 @@ This signal is fired when an internal list in the `QMap<QString, GameplayObjects
 
 ### Examples
 
+Add the following script to an entity to cause it to outline highlight the object when grabbing with a controller in VR.
+
+For instance: create a box, and then copy the following text into the Script URL field on the entity.
+
 ```
 (function () {
     print("Starting highlight script...............");
