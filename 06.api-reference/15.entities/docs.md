@@ -1954,6 +1954,7 @@ var Ent = Entities.addEntity(properties);
 
 // create a second entity that is a copy of the first by passing in the first entity's properties 
 var copyEnt = Entities.addEntity(Entities.getEntityProperties(Ent));
+print(JSON.stringify(Entities.getEntityProperties(Ent).type));
 
 ```
 
