@@ -6,31 +6,21 @@ taxonomy:
 *Learn how to modify the server settings for your domain.*
 
 ##Overview
-Once you've finished setting up your home domain, you can now start exploring server settings that would best meet your needs. 
+Once you've finished setting up your home domain, you can now start exploring server settings that would best meet your needs.
 
-This page covers how you can 
+This page covers how you can
 
 * Access your server settings.
-
 * Enable your updated settings.
-
 * View your Metaverse/Networking settings.
-
 * Add a description for your account, select users who can share your domain, and set hours of operation. 
-
-* Manage the security of your domain. 
-
-* Define the scripts that run in your home domain. 
-
+* Manage the security of your domain.
+* Define the scripts that run in your home domain.
 * Manage the audio settings in your sandbox.
-
-* Manage the Entity Server's settings. 
-
+* Manage the Entity Server's settings.
   ​
 
-> > > > > This document assumes that you already have Sandbox running on your local machine. If you don't, check out how you can install and set up your sandbox [here](../set-up-your-sandbox). 
-
-
+> > > > > This document assumes that you already have Sandbox running on your local machine. If you don't, check out how you can install and set up your sandbox [here](../set-up-your-sandbox).
 
 ## Access Your Server Settings
 
@@ -46,13 +36,11 @@ This opens the server settings page ([**http://localhost:40100**]) in your defau
 
 You can navigate to specific settings using the navbar. By default, only the basic settings can be viewed. To see advanced settings, click **Show Advanced**.
 
-
 ## Enable Updated Settings
 
 If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server. 
 
 ![](\save-and-restart.png)
-
 
 ## Metaverse/Networking
 

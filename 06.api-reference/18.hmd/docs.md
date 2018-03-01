@@ -7,51 +7,50 @@ taxonomy:
 
 | Properties         | Type    | Description |
 | ------------------ | ------- | ----------- |
-| HMD.active         | boolean |             |
-| HMD.eyeHeight      | number  |             |
-| HMD.homeButtonID   | string  |             |
-| HMD.ipd            | number  |             |
-| HMD.ipdScale       | number  |             |
-| HMD.mounted        | boolean |             |
-| HMD.objectName     | string  |             |
-| HMD.orientation.w  | number  |             |
-| HMD.playerHeight   | number  |             |
-| HMD.position.x     | number  |             |
-| HMD.showTablet     | boolean |             |
-| HMD.tabletID       | string  |             |
-| HMD.tabletScreenID | string  |             |
+| `HMD.active`         | boolean |             |
+| `HMD.eyeHeight`      | number  |             |
+| `HMD.homeButtonID`   | string  |             |
+| `HMD.ipd`            | number  |             |
+| `HMD.ipdScale`       | number  |             |
+| `HMD.mounted`        | boolean |             |
+| `HMD.orientation. (w,x,y,z)`  | number  |             |
+| `HMD.playerHeight`   | number  |             |
+| `HMD.position. (x,y,z)`     | number  |             |
+| `HMD.showTablet`     | boolean |             |
+| `HMD.tabletID`       | string  |             |
+| `HMD.tabletScreenID` | string  |             |
 
 | Methods                                  |
 | ---------------------------------------- |
-| HMD.calculateRayUICollisionPoint(glm::vec3,glm::vec3) |
-| HMD.closeTablet()                        |
-| HMD.centerUI()                           |
-| HMD.disableExtraLaser()                  |
-| HMD.disableHandLasers(int)               |
-| HMD.displayModeChanged(bool)             |
-| HMD.getHUDLookAtPosition3D               |
-| HMD.getHUDLookAtPosition2D               |
-| HMD.isSubdeviceContainingNameAvailable(QString) |
-| HMD.isHMDAvailable()                     |
-| HMD.isHMDAvailable(QString)              |
-| HMD.isHandControllerAvailable()          |
-| HMD.isHandControllerAvailable(QString)   |
-| HMD.isKeyboardVisible()                  |
-| HMD.openTablet()                         |
-| HMD.overlayFromWorldPoint(glm::vec3)     |
-| HMD.overlayToSpherical(glm::vec2)        |
-| HMD.preferredAudioInput()                |
-| HMD.preferredAudioOutput()               |
-| HMD.requestHideHandControllers()         |
-| HMD.requestShowHandControllers()         |
-| HMD.setExtraLaser(glm::vec3,bool,glm::vec4,glm::vec3) |
-| HMD.setHandLasers(int,bool,glm::vec4,glm::vec3) |
-| HMD.shouldShowHandControllers()          |
-| HMD.shouldShowHandControllersChanged()   |
-| HMD.sphericalToOverlay(glm::vec2)        |
-| HMD.suppressKeyboard()                   |
-| HMD.unsuppressKeyboard()                 |
-| HMD.worldPointFromOverlay(glm::vec2)     |
+| `HMD.calculateRayUICollisionPoint(glm::vec3,glm::vec3)` |
+| `HMD.closeTablet()`                        |
+| `HMD.centerUI()`                           |
+| `HMD.disableExtraLaser()`                  |
+| `HMD.disableHandLasers(number)`               |
+| `HMD.displayModeChanged(bool)`             |
+| `HMD.getHUDLookAtPosition3D`               |
+| `HMD.getHUDLookAtPosition2D`               |
+| `HMD.isSubdeviceContainingNameAvailable(String)` |
+| `HMD.isHMDAvailable()`                     |
+| `HMD.isHMDAvailable(String)`              |
+| `HMD.isHandControllerAvailable()`          |
+| `HMD.isHandControllerAvailable(String)`   |
+| `HMD.isKeyboardVisible()`                  |
+| `HMD.openTablet()`                         |
+| `HMD.overlayFromWorldPonumber(glm::vec3)`     |
+| `HMD.overlayToSpherical(glm::vec2)`        |
+| `HMD.preferredAudioInput()`                |
+| `HMD.preferredAudioOutput()`               |
+| `HMD.requestHideHandControllers()`         |
+| `HMD.requestShowHandControllers()`         |
+| `HMD.setExtraLaser(glm::vec3,bool,glm::vec4,glm::vec3)` |
+| `HMD.setHandLasers(int,bool,glm::vec4,glm::vec3)` |
+| `HMD.shouldShowHandControllers()`          |
+| `HMD.shouldShowHandControllersChanged()`   |
+| `HMD.sphericalToOverlay(glm::vec2)`        |
+| `HMD.suppressKeyboard()`                   |
+| `HMD.unsuppressKeyboard()`                 |
+| `HMD.worldPointFromOverlay(glm::vec2)`     |
 
 
 
@@ -63,11 +62,11 @@ True if the interface is in HMD mode. False if the interface is not in HMD mode
 
 ## function isHMDAvailable ()
 
-Returns **True **- If HMD available; **False ** if no HMD is available
+Returns **True**- If HMD available; **False** if no HMD is available
 
 ## function isHandControllerAvailable ()
 
-Returns **True **- If hand controller is available; **False **, if hand controller is not available
+Returns **True **- If hand controller is available; **False**, if hand controller is not available
 
 ## function isHMDMode ()
 

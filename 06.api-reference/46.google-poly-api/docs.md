@@ -9,15 +9,15 @@ taxonomy:
 
 | Methods                                  | Type   |
 | ---------------------------------------- | ------  |
-| [GooglePoly.setAPIKey(QString key)](#m1) | void |
-| [GooglePoly.getAssetList(QString keyword, QString category, QString format)](#m2) | string |
-| [GooglePoly.getFBX(QString keyword, QString category)](#m3) | string |
-| [GooglePoly.getOBJ(QString keyword, QString category)](#m4) | string |
-| [GooglePoly.getBlocks(QString keyword, QString category)](#m5) | string |
-| [GooglePoly.getGLTF(QString keyword, QString category)](#m6) | string |
-| [GooglePoly.getGLTF2(QString keyword, QString category)](#m7) | string |
-| [GooglePoly.getTilt(QString keyword, QString category)](#m8) | string |
-| [GooglePoly.getModelInfo(QString name)](#m9) | string |
+| [`GooglePoly.setAPIKey(String key)`](#m1) | void |
+| [`GooglePoly.getAssetList(String keyword, String category, String format)`](#m2) | string |
+| [`GooglePoly.getFBX(String keyword, String category)`](#m3) | string |
+| [`GooglePoly.getOBJ(String keyword, String category)`](#m4) | string |
+| [`GooglePoly.getBlocks(String keyword, String category)`](#m5) | string |
+| [`GooglePoly.getGLTF(String keyword, String category)`](#m6) | string |
+| [`GooglePoly.getGLTF2(String keyword, String category)`](#m7) | string |
+| [`GooglePoly.getTilt(String keyword, String category)`](#m8) | string |
+| [`GooglePoly.getModelInfo(String name)`](#m9) | string |
 
 
 ## Methods
@@ -29,11 +29,11 @@ Follow this link to activate your API key: https://developers.google.com/poly/de
 
 #### Function
 
-`setAPIKey(QString key)`
+`setAPIKey(String key)`
 
 #### Arguments
 
-**key: QString**: Your Google-provided key to the Poly API.
+**key: String**: Your Google-provided key to the Poly API.
 
 #### Example
 
@@ -49,13 +49,13 @@ Returns a string that is a JSON-formatted array with up to 20 assets.
 
 #### Function
 
-`getAssetList(QString keyword, QString category, QString format)`
+`getAssetList(String keyword, String category, String format)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
-<br />**format: QString**: Valid formats are: "BLOCKS, FBX, GLTF, GLTF2, OBJ, TILT".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+<br />**format: String**: Valid formats are: "BLOCKS, FBX, GLTF, GLTF2, OBJ, TILT".
 
 #### Returns
 
@@ -123,12 +123,12 @@ Returns a string that is an FBX model's URL. A model is randomly selected from t
 
 #### Function
 
-`getFBX(QString keyword, QString category)`
+`getFBX(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -149,12 +149,12 @@ Returns a string that is an OBJ model's URL. A model is randomly selected from t
 
 #### Function
 
-`getOBJ(QString keyword, QString category)`
+`getOBJ(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -175,12 +175,12 @@ Returns a string that is a Blocks model's URL. A model is randomly selected from
 
 #### Function
 
-`getBlocks(QString keyword, QString category)`
+`getBlocks(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -201,12 +201,12 @@ Returns a string that is a GLTF model's URL. A model is randomly selected from t
 
 #### Function
 
-`getGLTF(QString keyword, QString category)`
+`getGLTF(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -227,12 +227,12 @@ Returns a string that is a GLTF2 model's URL. A model is randomly selected from 
 
 #### Function
 
-`getGLTF2(QString keyword, QString category)`
+`getGLTF2(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -254,12 +254,12 @@ Entities.addEntity({type: "Model", modelURL: model, position: Vec3.sum(MyAvatar.
 
 #### Function
 
-`getTilt(QString keyword, QString category)`
+`getTilt(String keyword, String category)`
 
 #### Arguments
 
-**keyword: QString**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
-<br />**category: QString**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
+**keyword: String**: Keywords can be specified to filter assets. Multiple keywords should be separated with spaces.
+<br />**category: String**: Valid categories are: "animals, architecture, art, food, nature, objects, people, scenes, technology, transport".
 
 #### Returns
 
@@ -280,11 +280,11 @@ Returns a string that is a JSON-formatted object containing information about th
 
 #### Function
 
-`getModelInfo(QString name)`
+`getModelInfo(String name)`
 
 #### Arguments
 
-**name: QString**: The name of a Google Poly Asset can be found in its Poly link (e.g. https://poly.google.com/view/enFfxVXoWmp, where the name is **enFfxVXoWmp**). You can input the name by itself, the URL from Poly's model preview page, or the model URL retrieved from one of the `get[ModelFormat]()` methods above into `getModelInfo`.
+**name: String**: The name of a Google Poly Asset can be found in its Poly link (e.g. https://poly.google.com/view/enFfxVXoWmp, where the name is **enFfxVXoWmp**). You can input the name by itself, the URL from Poly's model preview page, or the model URL retrieved from one of the `get[ModelFormat]()` methods above into `getModelInfo`.
 
 #### Returns
 

@@ -11,40 +11,40 @@ In High Fidelity there is a single camera that provides the main view for the us
 
 | Properties                  | Type     | Description                              |
 | --------------------------- | -------- | ---------------------------------------- |
-| Camera.cameraEntity         | EntityID | The position and rotation properties of the entity specified by this ID are then used as the camera's position and orientation. Only works when mode is "entity". |
-| Camera.frustrum             | number   | The frustrum of the camera               |
-| Camera.frustum.aspectRatio  | number   |                                          |
-| Camera.frustum.centerRadius | number   |                                          |
-| Camera.frustum.fieldOfView  | number   |                                          |
-| Camera.frustum.orientation  | number   |                                          |
-| Camera.frustum.position     | number   |                                          |
-| Camera.frustum.projection   | number   |                                          |
-| Camera.mode                 | string   | The current camera mode.                 |
-| Camera.objectName           | string   |                                          |
-| Camera.orientation          | Quat     | The orientation of the camera.           |
-| Camera.position             | Vec3     | The position of the camera.              |
+| `Camera.cameraEntity`         | EntityID | The position and rotation properties of the entity specified by this ID are then used as the camera's position and orientation. Only works when mode is "entity". |
+| `Camera.frustrum`             | number   | The frustrum of the camera               |
+| `Camera.frustum.aspectRatio`  | number   |                                          |
+| `Camera.frustum.centerRadius` | number   |                                          |
+| `Camera.frustum.fieldOfView`  | number   |                                          |
+| `Camera.frustum.orientation`  | number   |                                          |
+| `Camera.frustum.position`     | number   |                                          |
+| `Camera.frustum.projection`   | number   |                                          |
+| `Camera.mode`                 | string   | The current camera mode.                 |
+| `Camera.objectName`           | string   |                                          |
+| `Camera.orientation`          | Quat     | The orientation of the camera.           |
+| `Camera.position`             | Vec3     | The position of the camera.              |
 
 
 | Methods                                  |
 | ---------------------------------------- |
-| [Camera.computePickRay(float,float)](#m1) |
-| [Camera.getCameraEntity()](#m2)          |
-| [Camera.getModeString()](#m3)            |
-| [Camera.getOrientation()](#m4)           |
-| [Camera.getPosition()](#m5)              |
-| [Camera.keepLookingAt(glm::vec3)](#m6)   |
-| [Camera.lookAt(glm::vec3)](#m7)          |
-| [Camera.setCameraEntity(QUuid)](#m8)     |
-| [Camera.setModeString(QString)](#m9)     |
-| [Camera.setOrientation(glm::quat)](#m10) |
-| [Camera.setPosition(glm::vec3)](#m11)    |
-| [Camera.stopLooking()](#m12)             |
+| [`Camera.computePickRay(float,float)`](#m1) |
+| [`Camera.getCameraEntity()`](#m2)          |
+| [`Camera.getModeString()`](#m3)            |
+| [`Camera.getOrientation()`](#m4)           |
+| [`Camera.getPosition()`](#m5)              |
+| [`Camera.keepLookingAt(glm::vec3)`](#m6)   |
+| [`Camera.lookAt(glm::vec3)`](#m7)          |
+| [`Camera.setCameraEntity(QUuid)`](#m8)     |
+| [`Camera.setModeString(String)`](#m9)     |
+| [`Camera.setOrientation(glm::quat)`](#m10) |
+| [`Camera.setPosition(glm::vec3)`](#m11)    |
+| [`Camera.stopLooking()`](#m12)             |
 
 
 | Events                             |
 | ---------------------------------- |
-| [Camera.modeUpdated(QString)](#e1) |
-| Camera.objectNameChanged(QString)  |
+| [`Camera.modeUpdated(String)`](#e1) |
+
 
 
 

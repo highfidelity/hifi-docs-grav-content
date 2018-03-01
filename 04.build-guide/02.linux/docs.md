@@ -22,7 +22,7 @@ With the new build method in place it becomes somewhat easier to build domain-se
 
 ### Ubuntu
 
-Here's what's needed starting from a clean Ubuntu 14.10 (server variant used) install.
+Here's what's needed starting from a clean Ubuntu 14.10 (server variant used) install.  These instructions do not work for Ubuntu 16.04.
 
 #### Install Requirements
 

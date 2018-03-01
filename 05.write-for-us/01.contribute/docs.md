@@ -4,42 +4,55 @@ taxonomy:
   category: docs
 ---
 
-You can contribute to our docs as well! 
+Write for us!
 
 If you feel we've missed out on something, or you wish to expand more on a particular topic, you can add your contributions to the docs. 
 
-##How to Contribute
+## How to Contribute
 
-To make changes:
+#### Editing an exisiting file 
 
-* Go to the page you'd like to change. 
+* Go to the page you'd like to edit. 
 * Click on "edit this page" on the top right hand corner. 
-* You'll be directed to our Github repository where you can make the required changes. 
+* You'll be directed to our Github repository where you can edit the markdown file.
+* You'll need a GitHub account to make edits. Once you're done making changes, submit your changes (pull request). 
+* We will review your changes and approve them, or send them back for changes. 
 
-##File Format & Type
+#### Creating a new page
 
-Our docs run on a flat-file CMS called Grav. All the pages you see have been written in Markdown. You can check out our [Markdown Guide](../..//write-for-us/markdown-guide) in this section to learn more. 
+Our docs run on a flat-file CMS called Grav. All the pages you see have been written in Markdown. You can check out our [Markdown Guide](../..//write-for-us/markdown-guide) to learn more. 
 
 Since we're using Grav and it's documentation theme, we need to ensure that every page follows the page type requirements specified by Grav. 
 
-This means, when you create a new markdown file, you'll need to ensure the following:
-* **Create a new folder for your page:** It should start with a number to indicate where it falls in the navigation. The folder name should be in small letters with no spaces and only hyphens between words. For example, if you want to write about creating an avatar attachment, you'll need to find the appropriate chapter folder first. After you open the chapter folder, see what topics are present and where your page will fall. If the chapter Avatar folder has two topics, 01.create-avatar and 02.avatar-bookmarks, you can add your page after avatar bookmarks and name it 03.create-an-avatar-attachment. 
+So, if you are adding a new page to the docs, you need keep the following instructions in mind: 
 
-* **Each folder should contain only one markdown file**. When you create and save your markdown file, make sure you name it "docs". 
+* **Create a new folder for your page:** It should start with a number to indicate its heirarchy in the parent folder. For example, let's say that your parent folder is `01.sandbox` and has two pages in the folders `01.install` and `02.use`. You want to add a new page between both called `setup`. To do this, you need to rename the folder `02.use` to `03.use` and create a new folder named `02.setup`.  The folder name should be in small letters with no spaces and only hyphens between words. 
 
-* **Your markdown file should have a YAML statement before your content**. Your YAML code should look like this:
+* **Each folder should contain only one markdown file**. Each of the folders represent a page. This means that there should only be one markdown file in each folder. When you create and save your markdown file, make sure you name it `docs.md`.  
+
+* **Your markdown file should have a YAML statement before your content**. Before you start writing in your markdown file, you need to add some YAML (YAML Ain't Markup Language) statements. These statements help the CMS ensure that your page has the right formatting and is discoverable in the docs. Your YAML statements should look like this:
 
 ```
-title: Your Page Title 
+---
+title: Your Page Name/Title 
 	taxonomy: 
 	category: docs
+---
+
 ```
-This piece of code ensures readers can navigate to your page, and the pages before and after yours. 
+The only thing that changes in this code from page to page is the page name. 
 
-##How to Write
+* **Include your media files in the same folder**. Any images or gifs you want to include in your page should be saved in the same folder as your page's markdown file. 
 
-While writing for our docs, check out our style guide and markdown guide to understand how you can write clearly and represent High Fidelity. 
+* **Use the YouTube plugin code to add an embedded version of the video**. Use the following code to embed a YouTube video on your page. 
+```
+[plugin:youtube](https://www.youtube.com/your-url)
+```
 
+
+Check out our Style Guide while writing to see how you can edit your page before review. 
+
+Our [Markdown Guide](../..//write-for-us/markdown-guide) will help you understand how to write different headings, add images, notes, warning, information, hyperlinks, using anchors and more. 
 
 
 

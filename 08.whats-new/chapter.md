@@ -7,26 +7,21 @@ taxonomy:
 
 # What's New in the Docs
 
-**December 5, 2017**: Check out the latest changes to our docs! 
+**January 30, 2018**: Check out the latest changes to our docs! 
 
-## New Docs
-* [High Fidelity Commerce](../high-fidelity-commerce)
-  * [Basics](../high-fidelity-commerce/basics)
-    	* [High Fidelity Coins](../high-fidelity-commerce/basics/hfc)
-      		* [Get Your Own HFC](../high-fidelity-commerce/basics/hfc/get-hfc)
-    	* [PoP License and Certificate](../high-fidelity-commerce/basics/pop)
-      		* [Commerce is Here: Switch to the PoP license](../high-fidelity-commerce/basics/pop/pop-license)
-  * [Marketplace](../high-fidelity-commerce/marketplace)
-    	* [Set Up Your Wallet](../high-fidelity-commerce/marketplace/wallet-setup)
-    	* [Buy from the Marketplace](../high-fidelity-commerce/marketplace/buy)
-    	* [Sell Your Items](../high-fidelity-commerce/marketplace/sell)
-      		* [Get Your Item Assets](../high-fidelity-commerce/marketplace/sell/get-assets)
-      		* [Add your Item](../high-fidelity-commerce/marketplace/sell/add-item)
-      		* [Create Your Own Wearable](../high-fidelity-commerce/marketplace/sell/create)
-  * [Avatar Wearables](../high-fidelity-commerce/avatar-wearables)
-    	* [Buy Wearables: Shop at Avatar Island](../high-fidelity-commerce/avatar-wearables/buy)
-    	* [Create Your Own Wearable](../high-fidelity-commerce/avatar-wearables/create)
-  * [Digital Asset Registry FAQs](../high-fidelity-commerce/faq-section)
+## New Docs:
+* [Send HFC to connections or someone nearby](../high-fidelity-commerce/basics/hfc/wallet-setup/send-money) (Beta Release 63)
+* [Emote App](../create-and-explore/explore-interface/menu/emote) (Beta Release 63)
+* [Logs](../build-guide/log-filters) (Beta Release 63)
+* [Zone Lighting Properties](../create-and-explore/entities/zone-entities/zone-properties) (Beta Release 63)
+* [Avatar Entities vs Attachments](../high-fidelity-commerce/avatar-wearables/entities-differences)
+* [Watch Synced Videos in High Fidelity](../create-and-explore/extras/syncing-services/video-syncing)
+* [Watch Synced Presentations in High Fidelity](../create-and-explore/extras/syncing-services/slide-syncing)
+
+## Updated Docs: 
+* [Setting Up a Theater Domain](../create-and-explore/start-working-in-your-sandbox/setting-up-a-theater-domain)
+* [PoP License and Certificate](../high-fidelity-commerce/basics/pop)
+
 
 
 
