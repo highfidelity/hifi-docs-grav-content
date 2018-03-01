@@ -8,7 +8,7 @@ taxonomy:
 ##Overview
 Once you've finished setting up your home domain, you can now start exploring server settings that would best meet your needs.
 
-This page covers how you can
+This page covers how you can:
 
 * Access your server settings.
 * Enable your updated settings.
@@ -24,13 +24,13 @@ This page covers how you can
 
 ## Access Your Server Settings
 
-Launch your sandbox by clicking the icon in the system tray (Windows) or in the top menu bar (OS X) and clicking Go Home. 
+Launch your sandbox by clicking the icon in the system tray (Windows) or in the top menu bar (OS X) and clicking Go Home.
 
 To view the settings page click on the **Settings** option.
 
 ![](\menu-settings.png)
 
-This opens the server settings page ([**http://localhost:40100**]) in your default web browser. 
+This opens the server settings page ([**http://localhost:40100**](http://localhost:40100)) in your default web browser.
 
 ![](\server-settings.png)
 
@@ -38,7 +38,7 @@ You can navigate to specific settings using the navbar. By default, only the bas
 
 ## Enable Updated Settings
 
-If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server. 
+If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server.
 
 ![](\save-and-restart.png)
 
@@ -54,10 +54,11 @@ Before you edit these settings, you have to be logged in to your High Fidelity a
 Once you log in to High Fidelity, you can generate an access token. You can do this by:
 
 * In the Metaverse/Networking settings, click ** Connect High Fidelity Account**.
-  ![](\not-logged-in.png) If you aren't already logged into your High Fidelity account, the login page will open in a new tab in your browser. Login using your High Fidelity username and password.
-	![](\login-page.png)
+  ![](\not-logged-in.png)
+  If you aren't already logged into your High Fidelity account, the login page will open in a new tab in your browser. Login using your High Fidelity username and password.
+  ![](\login-page.png)
 * Once you've logged in, you will be prompted to generate an access token. Click **Create token**.
-	![](\new-token.png)
+  ![](\new-token.png)
 
 >>>>>You can enter a **Name** here for the token to help you remember what this token is for.
 
@@ -66,17 +67,17 @@ Once you log in to High Fidelity, you can generate an access token. You can do t
 
 >>>>>Clicking **I've copied the token** does NOT copy the token. You must copy the token by highlighting it and using **command-C** (Mac) or **Ctrl-C** (Windows).
 
-* Go back to the settings page. You should see a Connect Account pop-up window. Paste the token there and then click OK. 
-	![](\paste-token.png) 
+* Go back to the settings page. You should see a Connect Account pop-up window. Paste the token there and then click OK.
+  ![](\paste-token.png)
 * The domain server will restart and you should now see the Metaverse/Networking settings to edit the domain ID and the network settings.
-![](\logged-in.png)
+  ![](\logged-in.png)
 
 
 ### Domain ID
 
-When you run sandbox, it generates a domain ID and a temporary place name for you. 
+When you run sandbox, it generates a domain ID and a temporary place name for you.
 
-To change the domain ID, you can select **Create new domain ID** or **Choosing from my domains**. Learn more about domain ids and place names [here](../place-names). 
+To change the domain ID, you can select **Create new domain ID** or **Choosing from my domains**. Learn more about domain ids and place names [here](../place-names).
 
 
 ### Automatic Networking
@@ -107,9 +108,9 @@ You can use the Description settings to describe your account and set the operat
 
 To create a description for your account, fill in the following fields:
 
-* **Description** - A description of your domain in less than 256 characters.
-* **Maturity** - A maturity rating for your domain. You can choose **Everyone**, **Teen(13+)**, **Mature(17+)**, and **Adult(18+)**.
-*  **Tags** - Common categories under which your domain falls.
+* **Description**: A description of your domain in less than 256 characters.
+* **Maturity**: A maturity rating for your domain. You can choose **Everyone**, **Teen(13+)**, **Mature(17+)**, and **Adult(18+)**.
+* **Tags**: Common categories under which your domain falls.
 
 ![](\description.png)
 
@@ -125,7 +126,6 @@ You can specify operating hours for your domain using the Operating Hours fields
 
 ![](\set-hours.png)
 
-
 ## Security
 
 You can use the Security settings to define who can can visit your domain, edit your domain, and add entities to your domain. In the navbar, go to **Security**.
@@ -136,30 +136,30 @@ To have a basic level of security for your domain settings, simply put in your u
 
 ![](\security.png)
 
-Everytime, you or any user tries to access your server settings, you'll be prompted to enter your username and password. 
+Everytime, you or any user tries to access your server settings, you'll be prompted to enter your username and password.
 
 ### Maximum User Capacity
 
-You can limit the number of users connected at a time. to your domain using the Maximum User Capacity field.
+You can limit the number of users connected at a time to your domain using the Maximum User Capacity field.
 
 ![](\max-users.png)
 
-If you set this to 0, it means there is no limit to the maximum number of users who can connect to your domain at one time. If you set this to 1, it means only one user will be able to visit your domain at one time. Avatars connected to the same local machine are not restricted by this limit. 
+If you set this to 0, it means there is no limit to the maximum number of users who can connect to your domain at one time. If you set this to 1, it means only one user will be able to visit your domain at one time. Avatars connected to the same local machine are not restricted by this limit.
 
 ### Domain-Wide User Permissions
 
-You can define who visits your domain and their rights using the security settings. These settings also enable you to assign rights to parameter-level groups (anonymous users, users on the local host, users that are logged in, users specified by username).
+You can define who visits your domain and their rights using the security settings. These settings also enable you to assign rights to parameter-level groups (anonymous users, users on the local host, users that are logged in and users specified by username).
 
 ![](\domain-permissions.png)
 
 For each user or group specified, you can set the following permissions:
 
-* **Connect** - Sets whether a user can connect to the domain.
-* **Lock/Unlock** - Sets whether a user can change the locked property of entities (either from on to off or off to on).
-* **Rez** - Sets whether a user can create new entities.
-* **Rez Temporary** - Sets whether a user can create new entities with a finite lifetime.
-* **Write Assets** - Sets Whether the user can make changes to the domain's asset-server assets.
-* **Ignore Max Capacity** - Sets whether a user can connect even if the domain has reached or exceeded its maximum allowed agents.
+* **Connect**: Sets whether a user can connect to the domain.
+* **Lock/Unlock**: Sets whether a user can change the locked property of entities (either from on to off or off to on).
+* **Rez**: Sets whether a user can create new entities.
+* **Rez Temporary**: Sets whether a user can create new entities with a finite lifetime.
+* **Write Assets**: Sets whether the user can make changes to the domain's asset-server assets.
+* **Ignore Max Capacity**: Sets whether a user can connect even if the domain has reached or exceeded its maximum allowed agents.
 
 Permissions assigned to a specific user supersede any parameter-level permissions that also apply to the user. Additionally, if more than one parameter is applicable to a single user, the permissions given to that user will be the sum of all applicable parameters. For example, if only *localhost* users can connect and only *logged in* users can lock and unlock entities, if a user is both logged in and on a local host, the user will be able to both connect and lock/unlock entities.
 
@@ -168,11 +168,11 @@ Permissions assigned to a specific user supersede any parameter-level permission
 
 ## Scripts
 
-You can define the [scripts](../../all-about-scripting) you want to run when you launch and host your home domain. 
+You can define the [scripts](../../all-about-scripting) you want to run when you launch and host your home domain:
 
-* Enter a URL accessible to your Sandbox (and not a *file:* URL). 
-* Press the + button. 
-* Click Save and Restart. 
+* Enter a URL accessible to your Sandbox (and not a *file:* URL).
+* Press the + button.
+* Click Save and Restart.
 
 >>>>>Scripts are cached. If the content on the URL host changes, you may want to use some cache-defeating trick, such as specifying a URL with query parameter such as http://whatever.com/path/file.js?version=17*
 
@@ -189,7 +189,7 @@ A domain's default attenuation can be changed in audio settings, so that no matt
 
 ### Noise Muting Threshold
 
-The **Noise Muting Threshold** sets up a "Noise Gate", so that when the sound of an audio source is below the set level, no audio is transmitted. If someone is in an environment with a lot of background noise, this feature will suppress the background noise except when the person speaks at a volume loud enough (i.e., above the set threshold) to "open the gate." The higher this threshold is set, the louder someone has to speak to be heard. Setting the value to zero effectively disables the features, allowing audio (noise and otherwise) through to the audio mixer.
+The **Noise Muting Threshold** sets up a "Noise Gate", so that when the sound of an audio source is below the set level, no audio is transmitted. If someone is in an environment with a lot of background noise, this feature will suppress the background noise except when the person speaks at a volume loud enough (i.e., above the set threshold) to "open the gate". The higher this threshold is set, the louder someone has to speak to be heard. Setting the value to zero effectively disables the features, allowing audio (noise and otherwise) through to the audio mixer.
 
 ### Low-pass Filter
 
@@ -219,7 +219,7 @@ The **Reverb Settings** are used to create the natural ambient reflections we wo
 
 The reverb settings are:
 
-- **Zone**: The user-defined zone where the reverb effect will occur,
+- **Zone**: The user-defined zone where the reverb effect will occur.
 - **Reverb Decay Time**: This is how long the reverb "tail" lasts. Zero decay time means no reverb at all (like outside in a field). 1-2 seconds is a good range for normal rooms. Longer times like 5 seconds give a deep hall/cave sound, and longer than that sounds like you're inside an oil tanker.
 - **Wet/ Dry Mix**: This is the volume of the reverb tail relative to the original "dry" signal.
 
@@ -242,8 +242,8 @@ Each rule has four variables:
 
 For example, the "Half Hour Rolling" preset rule will save every half hour until there are 5 backups, then the 6th backup will overwrite the first one and so on. You will always have 5 backups for the last 2 1/2 hours.
 
-If you want to add a new rule (e.g., every two hours) you can add it in where it shows "Example." Fill out the four variables and click the **+** button.
+If you want to add a new rule (e.g., every two hours) you can add it in where it shows "Example". Fill out the four variables and click the **+** button.
 
 ## Advanced Settings
 
-Additional settings for the Asset Server (ATP), Audio Buffers, and Avatar Mixer are available by selecting **Show Advanced** from the sidebar menu. Advanced setting parameters are subject to change. Documentation to come once stabilized.
+Additional settings for the Asset Server (ATP), Audio Buffers and Avatar Mixer are available by selecting **Show Advanced** from the sidebar menu. Advanced setting parameters are subject to change. Documentation to come once stabilized.
