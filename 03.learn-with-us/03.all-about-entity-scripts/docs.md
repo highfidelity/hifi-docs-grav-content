@@ -26,7 +26,7 @@ var properties = {
     name: "ScriptBox",
     position: boxPosition,
     color: { red: 0, green: 0, blue: 155 }};
-Ent = Entities.add(properties);
+var Ent = Entities.add(properties);
 print("Entity added");
 
 ```
