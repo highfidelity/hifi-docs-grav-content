@@ -221,9 +221,9 @@ The reverb settings are:
 
 - **Zone**: The user-defined zone where the reverb effect will occur.
 - **Reverb Decay Time**: This is how long the reverb "tail" lasts. Zero decay time means no reverb at all (like outside in a field). 1-2 seconds is a good range for normal rooms. Longer times like 5 seconds give a deep hall/cave sound, and longer than that sounds like you're inside an oil tanker.
-- **Wet/ Dry Mix**: This is the volume of the reverb tail relative to the original "dry" signal.
+- **Wet/ Dry Mix**: This is the percentage mix of the reverb tail relative to the original "dry" signal.
 
-Keep the Wet/ Dry Mix value at or below zero, or prepare to have your ears assaulted. Levels of between -20 (minus 20) and -8 (minus eight) give useful results, with -8 (minus 8) being the more reverberant of the two. For a very thick reverb, you might try a value as high as -3 (minus 3), where the reverb is nearly as loud as the original signal.
+Keep the Wet/ Dry Mix value around zero or prepare to have your ears assaulted. Levels of between 5-25% will generally give you useful results. For a very thick reverb, you might try a value as high as 50% where the reverb is nearly as loud as the original signal.
 
 ## Entity Server Settings
 
