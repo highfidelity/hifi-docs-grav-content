@@ -18,16 +18,15 @@ In this module, we will:
 
 If you went through [Get Started with Scripting in High Fidelity](../get-started-with-scripting), you’ll remember our short code snippet that generated a cube in front of us when we ran our script from the Script Editor. This code, although short, highlights a number of important things that we can do with our High Fidelity scripts.
 
-``````javascript
+```javascript
 
 var boxPosition = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
-type: "Box",
-name: "ScriptBox",
-position: boxPosition,
-color: { red: 0, green: 0, blue: 155 }};
-Ent = Entities.add
-(properties);
+    type: "Box",
+    name: "ScriptBox",
+    position: boxPosition,
+    color: { red: 0, green: 0, blue: 155 }};
+var Ent = Entities.add(properties);
 print("Entity added");
 
 ```
@@ -68,7 +67,7 @@ We’re going to update our cube.js file so that we can use it as the script tha
 		position: position,
 		color: { red: 0, green: 0, blue: 155 }};
 	Ent = Entities.addEntity(properties);
-	print("Entity added");	
+	print("Entity added");
 })
 
 ```
@@ -112,7 +111,7 @@ Under the closing brackets of your clickDownOnEntity function, add the following
 var changeColor = function(entityID){		
 		var newRed = Math.random()*255;
 		var newGreen = Math.random()*255;
-		var newBlue = Math.random()*255;	
+		var newBlue = Math.random()*255;
 
 		var newProperty = { color: {red: newRed, green: newGreen, blue: newBlue}};
 		Entities.editEntity(entityID, newProperty);
@@ -208,7 +207,7 @@ cube.js
 	var changeColor = function(entityID){		
 		var newRed = Math.random()*255;
 		var newGreen = Math.random()*255;
-		var newBlue = Math.random()*255;	
+		var newBlue = Math.random()*255;
 
 		var newProperty = { color: {red: newRed, green: newGreen, blue: newBlue}};
 		Entities.editEntity(entityID, newProperty);
@@ -672,7 +671,7 @@ var frontPosition = function(){
 
 	var front = Quat.getFront(rotation);
 	var offset = Vec3.multiply(front, 0.25);
-	
+
 	return Vec3.sum(position, offset);
 }
 
@@ -752,7 +751,7 @@ var frontPosition = function(){
 
 	var front = Quat.getFront(rotation);
 	var offset = Vec3.multiply(front, 0.25);
-	
+
 	return Vec3.sum(position, offset);
 }
 
@@ -773,4 +772,3 @@ return new CubeSpawner();
 ### Recap
 
 In this tutorial, we added the ability to grab and carry our spawner with us, changed our cube creating behavior from a mouse click to use hand controller triggers, and updated the initial location of our cubes to add them in front of the spawner instead of in front of our avatar. We covered some of the basics of prototype functions, and began to use our entity properties to calculate new positions for objects.
-
