@@ -31,7 +31,6 @@ A set of properties used to define the visual aspect of a Ray Pointer in the cas
 | ---------- | ---- | ---------- | ------- | ----------- |
 | `name` | string | | | The name of this render state, used by Pointers.setRenderState() and Pointers.editRenderState(). |
 | `start` | OverlayProperties | | | All of the properties you would nomrally pass to Overlays.addOverlay(), plus the `type` field. |
-| `start` | OverlayProperties | | | All of the properties you would nomrally pass to Overlays.addOverlay(), plus the `type` field. |
 | `path` | OverlayProperties | | | All of the properties you would nomrally pass to Overlays.addOverlay(), plus the `type` field. |
 | `end` | OverlayProperties | | | All of the properties you would nomrally pass to Overlays.addOverlay(), plus the `type` field. |
 
@@ -63,7 +62,7 @@ Adds a new Pointer.
 |Name|Type|Description|
 |----|----|-----------|
 |type|[PickType](../..//picks/PickType) |A PickType that specifies the method of picking to use.|
-|`properties`|[PointerProperties](#PointerProperties)|A [PointerProperties](#PointerProperties) object, containing all the properties for initializing this Pointer and the [Picks.PickProperties](../..//picks/PickProperties) fo teh Pick that this Pointer will use to do its picking. |
+|`properties`|[PointerProperties](#PointerProperties)|A [PointerProperties](#PointerProperties) object, containing all the properties for initializing this Pointer and the [Picks.PickProperties](../..//picks/PickProperties) fo the Pick that this Pointer will use to do its picking. |
 
 **Returns**
 
@@ -73,7 +72,6 @@ Adds a new Pointer.
 
 
 
-    /**jsdoc
 ### `enablePointer(id)` <a id="enablePointer"></a>
 Enables a Pointer.
 
@@ -136,7 +134,7 @@ Get the most recent pick result from this Pointer.  This will be updated as long
 
 |Type|Description| 
 |----|-----------| 
-| PickResult | The most recent intersection result.  This will be slightly different for different PickTypes.  See [Picks.RayPickResult](../..//picks/RayPickResult) and [Picks.StylusPickResult](../..//picks/StylusPickResult) |
+| PickResult | The most recent intersection result.  This will be slightly different for different PickTypes.  See [Picks.RayPickResult](../..//picks/RayPickResult) and [Picks.StylusPickResult](../..//picks/StylusPickResult). |
 
 ### `setPrecisionPicking(id, precisionPicking)` <a id="setPrecisionPicking"></a>
 Sets whether or not to use precision picking.
@@ -166,7 +164,7 @@ Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to ignore during inter
 |Name|Type|Description|
 |----|----|-----------|
 | `id` | number | The ID of the Pointer, as returned by [createPointer()](#createPointer). |
-| ignoreItems | Uuid[] | | A list of IDs to ignore. |
+| ignoreItems | Uuid[] | A list of IDs to ignore. |
 
 ### `setIncludeItems(id, includeItems)` <a id="setIncludeItems"></a>
 Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to include during intersection, instead of intersecting with everything.
@@ -177,7 +175,7 @@ Stylus Pointers <b>only</b> intersect with objects in their include list.
 |Name|Type|Description|
 |----|----|-----------|
 | `id` | number | The ID of the Pointer, as returned by [createPointer()](#createPointer). |
-| includeItems | Uuid[] | | A list of IDs to include. |
+| includeItems | Uuid[] | A list of IDs to include. |
 
 ### `setLockEndUUID(id, objectID, isOverlay, offsetMat)` <a id="setLockEndUUID"></a>
 Lock a Pointer onto a specific object (overlay, entity, or avatar).  Optionally, provide an offset in object-space, otherwise the Pointer will lock on to the center of the object.
@@ -190,7 +188,7 @@ Not used by Stylus Pointers.
 | `id` | number | The ID of the Pointer, as returned by [createPointer()](#createPointer). |
 | objectID | Uuid | The ID of the object to which to lock on. |
 | isOverlay | boolean | False for entities or avatars, true for overlays. |
-| offsetrMat | Mat4 | The offset matrix to use if you do not want to lock on to the center of the object. |
+| offsetMat | Mat4 | The offset matrix to use if you do not want to lock on to the center of the object. |
 
 ### `isLeftHand(id)` <a id="isLeftHand"></a>
 Check if a Pointer is associated with the left hand.
@@ -205,7 +203,7 @@ Check if a Pointer is associated with the left hand.
 
 |Type|Description|
 |----|-----------|
-| boolean | True if Pointer is a Joint Ray Pointer with joint == "\_CONTROLLER\_LEFTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_LEFTHAND", or a Stylus Pointer with hand == 0 |
+| boolean | True if Pointer is a Joint Ray Pointer with joint == "\_CONTROLLER\_LEFTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_LEFTHAND", or a Stylus Pointer with hand == 0. |
 
 ### `isRightHand(id)` <a id="isRightHand"></a>
 Check if a Pointer is associated with the right hand.
