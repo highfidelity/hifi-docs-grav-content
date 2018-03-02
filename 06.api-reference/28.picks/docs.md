@@ -106,7 +106,7 @@ An intersection result for a Ray Pick.
 
 ### `createPick(type, properties)`<a id="createPick"></a>
 
-Adds a new top-level menu. 
+Adds a Pick.
 
 **Parameters**
 
