@@ -122,7 +122,7 @@ Adds a new top-level menu.
 |The ID of the pick created|number|Used for managing the Pick. `0` if invalid. |
 
 
-### `disablePick(uid)`<a id="disablePick"></a>
+### `disablePick(id)`<a id="disablePick"></a>
 
 Disables a Pick. 
 
@@ -130,10 +130,10 @@ Disables a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `enablePick(uid)`<a id="enablePick"></a>
+### `enablePick(id)`<a id="enablePick"></a>
 
 Enables a Pick. 
 
@@ -141,10 +141,10 @@ Enables a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `getPrevPickResult(uid)`<a id="getPrevPickResult"></a>
+### `getPrevPickResult(id)`<a id="getPrevPickResult"></a>
 
 Gets the most recent pick result from this Pick. This will be updated as long as the Pick is enabled. 
 
@@ -152,7 +152,7 @@ Gets the most recent pick result from this Pick. This will be updated as long as
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 **Returns**
 
@@ -160,7 +160,7 @@ Gets the most recent pick result from this Pick. This will be updated as long as
 |----|----|-----------|
 |The most recent intersection result|PickResult|This will be slightly different for different [PickType](#PickType)s. See Picks.[RayPickResult](#RayPickResult) and Picks.[StylusPickResult](#SylusPickResult). |
 
-### `isLeftHand(uid)`<a id="isLeftHand"></a>
+### `isLeftHand(id)`<a id="isLeftHand"></a>
 
 Check if a Pick is associated with the left hand. 
 
@@ -168,7 +168,7 @@ Check if a Pick is associated with the left hand.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
@@ -179,7 +179,7 @@ Check if a Pick is associated with the left hand.
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
-### `isMouse(uid)`<a id="isMouse"></a>
+### `isMouse(id)`<a id="isMouse"></a>
 
 Checks if a Pick is associated with the system mouse. 
 
@@ -187,7 +187,7 @@ Checks if a Pick is associated with the system mouse.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
@@ -198,7 +198,7 @@ Checks if a Pick is associated with the system mouse.
 |`false`|boolean|If the Pick is not a Mouse ray Pick|
 
 
-### `isRightHand(uid)`<a id="isRightHand"></a>
+### `isRightHand(id)`<a id="isRightHand"></a>
 
 Checks if a Pick is associated with the right hand. 
 
@@ -206,7 +206,7 @@ Checks if a Pick is associated with the right hand.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
@@ -217,7 +217,7 @@ Checks if a Pick is associated with the right hand.
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
-### `removePick(uid)`<a id="removePick"></a>
+### `removePick(id)`<a id="removePick"></a>
 
 Removes a Pick. 
 
@@ -225,10 +225,10 @@ Removes a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `setIgnoreItems(uid, ignoreItems)`<a id="setIgnoreItems"></a>
+### `setIgnoreItems(id, ignoreItems)`<a id="setIgnoreItems"></a>
 
 Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to ignore during intersection. Not used by Stylus Picks. 
 
@@ -236,10 +236,10 @@ Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to ignore during inter
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |ignoreItems|Array.Uuid|A list of IDs to ignore.|
 
-### `setIncludeItems(uid, includeItems)`<a id="setIncludeItems"></a>
+### `setIncludeItems(id, includeItems)`<a id="setIncludeItems"></a>
 
 Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to include during intersection, instead of intersecting with everything. Stylus Picks only intersect with objects in their include list. 
 
@@ -247,11 +247,11 @@ Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to include during inte
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |includeItems|Array.Uuid|A list of IDs to include.|
 
 
-### `setPrecisionPicking(uid, precisionPicking)`<a id="setPrecisionPicking"></a>
+### `setPrecisionPicking(id, precisionPicking)`<a id="setPrecisionPicking"></a>
 
 Sets whether or not to use precision picking. 
 
@@ -259,5 +259,5 @@ Sets whether or not to use precision picking.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |precisionPicking|boolean|Whether or not to use precision picking.|
