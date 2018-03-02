@@ -13,10 +13,10 @@ The Picks API lets you create and manage objects to repeatedly calculate interse
 
 | Properties | Type | Description |
 | ---------- | ---- | ----------- |
-|[`PickProperties`](#p1)|object| |
-|[`PickType`](#p2)|enum| |
-|[`RayPickResult`](#p3)|object| |
-|[`StylusPickResult`](#p4)|object| |
+|[`PickProperties`](#PickProperties)|object| |
+|[`PickType`](#PickType)|enum| |
+|[`RayPickResult`](#RayPickResult)|object| |
+|[`StylusPickResult`](#SylusPickResult)|object| |
 | `PICK_NOTHING` | number  | A filter flag. Don't intersect with anything.|
 | `PICK_ENTITIES`| number | A filter flag. Include entities when intersecting.|
 | `PICK_OVERLAYS`|number  |A filter flag. Include overlays when intersecting.|
@@ -34,23 +34,23 @@ The Picks API lets you create and manage objects to repeatedly calculate interse
 
 | Methods                                  |
 | ---------------------------------------- |
-| [`Picks.createPick(enum,object)`](#m1) |
-| [`Picks.disablePick(number)`](#m2) |
-| [`Picks.enablePick(number)`](#m3) |
-| [`Picks.getPrevPickResult(number)`](#m4) |
-| [`Picks.isLeftHand(number)`](#m5) |
-| [`Picks.isMouse(number)`](#m6) |
-| [`Picks.isRightHand(number)`](#m7) |
-| [`Picks.removePick(number)`](#m8) |
-| [`Picks.setIgnoreItems(number, Array<unumber>)`](#m9) |
-| [`Picks.setIncludeItems(number, Array<unumber>)`](#m10) |
-| [`Picks.setPrecisionPicking(number, boolean)`](#m11) |
+| [`Picks.createPick(enum,object)`](#createPick) |
+| [`Picks.disablePick(number)`](#disablePick) |
+| [`Picks.enablePick(number)`](#enablePick) |
+| [`Picks.getPrevPickResult(number)`](#getPrevPickResult) |
+| [`Picks.isLeftHand(number)`](#isLeftHand) |
+| [`Picks.isMouse(number)`](#isMouse) |
+| [`Picks.isRightHand(number)`](#isRightHand) |
+| [`Picks.removePick(number)`](#removePick) |
+| [`Picks.setIgnoreItems(number, Array<unumber>)`](#setIgnoreItems) |
+| [`Picks.setIncludeItems(number, Array<unumber>)`](#setIncludeItems) |
+| [`Picks.setPrecisionPicking(number, boolean)`](#setPrecisionPicking) |
 
 
 ## Properties <a id="prop"></a>
 
-### `PickProperties`: Object (type) <a id="p1"></a>
-It is a set of properties that can be passed to Picks.createPick to create a new Pick. Different Picks.PickTypes use different properties, and within one PickType, the properties you choose can lead to a wide range of behaviors. For example, with PickType.Ray, depending on which optional parameters you pass, you could create a Static Ray Pick, a Mouse Ray Pick, or a Joint Ray Pick. 
+### `PickProperties`: Object (type) <a id="PickProperties"></a>
+It is a set of properties that can be passed to Picks.createPick to create a new Pick. Different [PickType](#PickType)s use different properties, and within one [PickType](#PickType), the properties you choose can lead to a wide range of behaviors. For example, with PickType.Ray, depending on which optional parameters you pass, you could create a Static Ray Pick, a Mouse Ray Pick, or a Joint Ray Pick. 
 
 | Properties | Type | Attributes | Default | Description |
 | ---------- | ---- | ---------- | ------- | ----------- |
@@ -65,16 +65,14 @@ It is a set of properties that can be passed to Picks.createPick to create a new
 | `hand`|number |optional|-1 |Only for Stylus Picks. It is an integer. `0` == left, `1` == right. Otherwise invalid.|
 
 
-### `PickType`: enum (type) <a id="p2"></a>
-
+### `PickType`: enum (type) <a id="PickType"></a>
 
 | Properties | Type |  Description |
 | ---------- | ---- | ----------- |
 | `Ray` | number |  Ray Picks intersects a ray with the nearest object in front of them, along a given direction.|
 | `Stylus`| number |Stylus Picks provides "tapping" functionality on flat surfaces.|
 
-### `RayPickResult`: object (type) <a id="p3"></a>
-
+### `RayPickResult`: object (type) <a id="RayPickResult"></a>
 An intersection result for a Ray Pick. 
 
 
@@ -89,7 +87,7 @@ An intersection result for a Ray Pick.
 | `searchRay` | PickRay |  The PickRay that was used. Valid even if there was no intersection.|
 
 
-### `StylusPickResult`: object (type) <a id="p4"></a>
+### `StylusPickResult`: object (type) <a id="SylusPickResult"></a>
 
 An intersection result for a Ray Pick. 
 
@@ -106,16 +104,16 @@ An intersection result for a Ray Pick.
 
 ## Methods <a id="methods"></a>
 
-### `createPick(type, properties)`<a id="m1"></a>
+### `createPick(type, properties)`<a id="createPick"></a>
 
-Adds a new top-level menu. 
+Adds a Pick.
 
 **Parameters**
 
 |Name|Type|Description|
 |----|----|-----------|
-|type|PickType |A PickType that specifies the method of picking to use.|
-|properties|[PickProperties](#p1)|A [PickProperties](#p1) object, containing all the properties for initializing this Pick|
+|type|[PickType](#PickType) |A PickType that specifies the method of picking to use.|
+|properties|[PickProperties](#PickProperties)|A [PickProperties](#PickProperties) object, containing all the properties for initializing this Pick.|
 
 **Returns**
 
@@ -124,7 +122,7 @@ Adds a new top-level menu.
 |The ID of the pick created|number|Used for managing the Pick. `0` if invalid. |
 
 
-### `disablePick(uid)`<a id="m2"></a>
+### `disablePick(id)`<a id="disablePick"></a>
 
 Disables a Pick. 
 
@@ -132,10 +130,10 @@ Disables a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `enablePick(uid)`<a id="m3"></a>
+### `enablePick(id)`<a id="enablePick"></a>
 
 Enables a Pick. 
 
@@ -143,10 +141,10 @@ Enables a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `getPrevPickResult(uid)`<a id="m4"></a>
+### `getPrevPickResult(id)`<a id="getPrevPickResult"></a>
 
 Gets the most recent pick result from this Pick. This will be updated as long as the Pick is enabled. 
 
@@ -154,15 +152,15 @@ Gets the most recent pick result from this Pick. This will be updated as long as
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 **Returns**
 
 |Value|Type|Description|
 |----|----|-----------|
-|The most recent intersection result|PickResult|This will be slightly different for different PickTypes. See Picks.[RayPickResult](#p3) and Picks.[StylusPickResult](#p4). |
+|The most recent intersection result|PickResult|This will be slightly different for different [PickType](#PickType)s. See Picks.[RayPickResult](#RayPickResult) and Picks.[StylusPickResult](#SylusPickResult). |
 
-### `isLeftHand(uid)`<a id="m5"></a>
+### `isLeftHand(id)`<a id="isLeftHand"></a>
 
 Check if a Pick is associated with the left hand. 
 
@@ -170,7 +168,7 @@ Check if a Pick is associated with the left hand.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
@@ -181,7 +179,7 @@ Check if a Pick is associated with the left hand.
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
-### `isMouse(uid)`<a id="m6"></a>
+### `isMouse(id)`<a id="isMouse"></a>
 
 Checks if a Pick is associated with the system mouse. 
 
@@ -189,18 +187,18 @@ Checks if a Pick is associated with the system mouse.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
 
 |Value|Type|Description|
 |----|----|-----------|
-|`true`|boolean|If the Pick is a Mouse Ray Pick|
-|`false`|boolean|If the Pick is not a Mouse ray Pick|
+|`true`|boolean|If the Pick is a Mouse Ray Pick.|
+|`false`|boolean|If the Pick is not a Mouse ray Pick.|
 
 
-### `isRightHand(uid)`<a id="m7"></a>
+### `isRightHand(id)`<a id="isRightHand"></a>
 
 Checks if a Pick is associated with the right hand. 
 
@@ -208,7 +206,7 @@ Checks if a Pick is associated with the right hand.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
 **Returns**
@@ -219,7 +217,7 @@ Checks if a Pick is associated with the right hand.
 |`false`|boolean|If the conditions for a `true` return are not met.|
 
 
-### `removePick(uid)`<a id="m8"></a>
+### `removePick(id)`<a id="removePick"></a>
 
 Removes a Pick. 
 
@@ -227,10 +225,10 @@ Removes a Pick.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 
 
-### `setIgnoreItems(uid, ignoreItems)`<a id="m9"></a>
+### `setIgnoreItems(id, ignoreItems)`<a id="setIgnoreItems"></a>
 
 Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to ignore during intersection. Not used by Stylus Picks. 
 
@@ -238,10 +236,10 @@ Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to ignore during inter
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |ignoreItems|Array.Uuid|A list of IDs to ignore.|
 
-### `setIncludeItems(uid, includeItems)`<a id="m10"></a>
+### `setIncludeItems(id, includeItems)`<a id="setIncludeItems"></a>
 
 Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to include during intersection, instead of intersecting with everything. Stylus Picks only intersect with objects in their include list. 
 
@@ -249,11 +247,11 @@ Sets a list of Entity IDs, Overlay IDs, and/or Avatar IDs to include during inte
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |includeItems|Array.Uuid|A list of IDs to include.|
 
 
-### `setPrecisionPicking(uid, precisionPicking)`<a id="m11"></a>
+### `setPrecisionPicking(id, precisionPicking)`<a id="setPrecisionPicking"></a>
 
 Sets whether or not to use precision picking. 
 
@@ -261,5 +259,5 @@ Sets whether or not to use precision picking.
 
 |Name|Type|Description|
 |----|----|-----------|
-|uid|number|The ID of the Pick, as returned by Picks.createPick.|
+|id|number|The ID of the Pick, as returned by Picks.createPick.|
 |precisionPicking|boolean|Whether or not to use precision picking.|
