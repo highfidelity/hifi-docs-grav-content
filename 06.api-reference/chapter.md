@@ -36,7 +36,6 @@ The following table displays how complete the API reference is. We will be updat
 | [Face Tracker](https://docs.highfidelity.com/api-reference/face-tracker)             | Yes                              | No                    |
 | [Global Services](https://docs.highfidelity.com/api-reference/global-services)          | Yes                              | No                    |
 | [HMD](https://docs.highfidelity.com/api-reference/hmd)                      | Yes                              | Partial                            |
-| Limitless             | Yes                              | No                    |
 | [LOD Manager](https://docs.highfidelity.com/api-reference/lod)              | Yes                              | No                    |
 | [Menu](https://docs.highfidelity.com/api-reference/menu)                     | Yes                              | Yes                   |
 | [Messages](https://docs.highfidelity.com/api-reference/messages)                 | Yes                              | No                    |
