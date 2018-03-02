@@ -113,7 +113,7 @@ Adds a new top-level menu.
 |Name|Type|Description|
 |----|----|-----------|
 |type|[PickType](#PickType) |A PickType that specifies the method of picking to use.|
-|properties|[PickProperties](#PickProperties)|A [PickProperties](#PickProperties) object, containing all the properties for initializing this Pick|
+|properties|[PickProperties](#PickProperties)|A [PickProperties](#PickProperties) object, containing all the properties for initializing this Pick.|
 
 **Returns**
 
@@ -194,8 +194,8 @@ Checks if a Pick is associated with the system mouse.
 
 |Value|Type|Description|
 |----|----|-----------|
-|`true`|boolean|If the Pick is a Mouse Ray Pick|
-|`false`|boolean|If the Pick is not a Mouse ray Pick|
+|`true`|boolean|If the Pick is a Mouse Ray Pick.|
+|`false`|boolean|If the Pick is not a Mouse ray Pick.|
 
 
 ### `isRightHand(id)`<a id="isRightHand"></a>

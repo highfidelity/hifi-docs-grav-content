@@ -144,7 +144,7 @@ Sets whether or not to use precision picking.
 |Name|Type|Description|
 |----|----|-----------|
 | `id` | number | The ID of the Pointer, as returned by [createPointer()](#createPointer). |
-| precisionPicking | boolean | Whether or not to use precision picking |
+| precisionPicking | boolean | Whether or not to use precision picking. |
 
 ### `setLength(id, length)` <a id="setLength"></a>
 Sets the length of this Pointer.  No effect on Stylus Pointers.
@@ -218,7 +218,7 @@ Check if a Pointer is associated with the right hand.
 
 |Type|Description|
 |----|-----------|
-| boolean | True if Pointer is a Joint Ray Pointer with joint == "\_CONTROLLER\_RIGHTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_RIGHTHAND", or a Stylus Pointer with hand == 1 |
+| boolean | True if Pointer is a Joint Ray Pointer with joint == "\_CONTROLLER\_RIGHTHAND" or "\_CAMERA\_RELATIVE\_CONTROLLER\_RIGHTHAND", or a Stylus Pointer with hand == 1. |
 
 ### `isMouse(id)` <a id="isMouse"></a>
 Check if a Pointer is associated with the system mouse.
