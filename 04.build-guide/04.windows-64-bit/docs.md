@@ -86,17 +86,17 @@ Run Command Prompt from Start and run the following commands:
 #####2. Make a Build
 Follow these steps to make your build:
 * Open  `%HIFI_DIR%\build\hifi.sln`  using Visual Studio.
-* For best performance, change the Solution Configuration (next to the green play button) from Debug to Release for best performance.
-* Lastly, go to Run Build > Build Solution.
+* Change the Solution Configuration (next to the green play button) to Release.
+* Lastly, go to the menu item Build > Build Solution.
 
 
 #####3. Test the Interface
-Create another environment variable (Just like how you created the Qt-variable).
+Create another environment variable (just like how you created the Qt-variable).
 
 * Set Variable name: _NO_DEBUG_HEAP
 * Set Variable value: 1
 
-In Visual Studio, go to the Apps folder in the Solution Explorer. Right-click interface and select Set as Startup Project. Then, you can navigate to Run Debug > Start Debugging.
+In Visual Studio, go to the Apps folder in the Solution Explorer. Right-click interface and select Set as Startup Project. Make sure that your Solution Configuration is set to RelWithDebInfo (not Debug). Then navigate to the menu item Debug > Start Debugging.
 
 Now, you should have a full build of High Fidelity and be able to run the Interface using Visual Studio. Please check our documentation for more information regarding the programming workflow.
 
@@ -111,6 +111,7 @@ If you face any problems once you start trying to generate build files using CMa
 * Restart your computer.
 * Download the repository again.
 * Try to generate build files using Cmake. If this is successful, continue with the rest of the steps.
+* Uninstalling previous versions of Qt may not be enough: you may have to delete old versions from C:/Qt/
 
 #####Common Errors and their Solutions
 * If CMake gives you the same error message repeatedly after the build fails, try to remove CMakeCache.txt found in the %HIFI_DIR%\build' directory.
