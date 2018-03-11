@@ -8,7 +8,7 @@ taxonomy:
 
 ###Backup Your Sandbox 
 
-To back up your entire sandbox: 
+To backup your entire sandbox: 
 
 1. Quit Sandbox on your machine
 2. Transfer the following folders out of your AppData folders into a new location on your machine or externally:

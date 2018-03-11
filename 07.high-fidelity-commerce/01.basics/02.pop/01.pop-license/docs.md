@@ -14,7 +14,7 @@ If you don't wish to sell your items and keep them available for free, you do no
 
 ### Migrate to the PoP License
 
-* In High Fidelity, [set up your Wallet](../../../marketplace/wallet-setup).
+* In High Fidelity, [set up your Wallet](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/wallet-setup).
 * If you are not yet part of the closed beta, your HFC balance will be 0. You can get your initial grant by emailing us at info@highfidelity.com with your username and email address to request participation in the current HFC distribution program. 
 * Once you have set up your Wallet and the initial HFC grant, go to the [Marketplace](https://highfidelity.com/marketplace). Log in with your High Fidelity username and password. 
 >>>>> Currently, we only support .JSON entities. 

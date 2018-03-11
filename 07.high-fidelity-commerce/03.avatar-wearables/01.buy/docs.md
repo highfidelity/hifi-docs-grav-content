@@ -14,7 +14,7 @@ This page details the process of purchasing avatar wearables.
 
 Are you interested in adding accessories to your avatar? Well, you're in the right place. Whether it's a hat, skirt or a pair of cool cat headphones, the Avatar Island has over 300 items for your needs. 
 
-Avatar Island is a High Fidelity domain where you can purchase wearables created by digital artists all around the world. Learn more about wearables and our [Proof of Provenance](../../basics/pop) services.
+Avatar Island is a High Fidelity domain where you can purchase wearables created by digital artists all around the world. Learn more about wearables and our [Proof of Provenance](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop) services.
 
 ### Buy a Wearable
 
@@ -34,4 +34,4 @@ Avatar Island is a High Fidelity domain where you can purchase wearables created
 
 - Purchase the item. 
 ![](checkout.PNG)![](checkout-1.PNG)![](checkout-2.PNG)![](checkout-3.PNG)![](checkout-4.PNG)![](checkout-5.PNG)
-Congratulations, you've bought your first few wearables! Check out the other stores in Avatar Island or learn more about how you can [create a wearable for sale](../create). 
+Congratulations, you've bought your first few wearables! Check out the other stores in Avatar Island or learn more about how you can [create a wearable for sale](https://docs.highfidelity.com/high-fidelity-commerce/avatar-wearables/create). 
