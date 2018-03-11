@@ -8,7 +8,7 @@ taxonomy:
 
 ## Overview
 
-Learn how you can buy items being sold for purchase or for free from the Marketplace. Before you proceed to buy, you must have your [wallet set up](../wallet-setup). If you don't, you will be prompted to do so. 
+Learn how you can buy items being sold for purchase or for free from the Marketplace. Before you proceed to buy, you must have your [wallet set up](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/wallet-setup). If you don't, you will be prompted to do so. 
 
 
 

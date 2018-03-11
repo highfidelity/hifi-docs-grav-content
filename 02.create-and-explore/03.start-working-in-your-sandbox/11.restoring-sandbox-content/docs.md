@@ -8,7 +8,7 @@ taxonomy:
 
 ## Overview
 
-This page details how you can back up and restore your sandbox and sandbox content. 
+This page details how you can backup and restore your sandbox and sandbox content. 
 
 ##Introduction
 

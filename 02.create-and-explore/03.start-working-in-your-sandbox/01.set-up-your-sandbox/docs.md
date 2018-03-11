@@ -15,7 +15,7 @@ To get your own corner of the Metaverse up and running, follow the steps below.
 
 ##Requirements
 
-Check the system requirements to run High Fidelity [here](../../../get-started/requirements).
+Check the system requirements to run High Fidelity [here](https://docs.highfidelity.com/get-started/requirements).
 
 ### Download and Install the Latest High Fidelity Build
 
