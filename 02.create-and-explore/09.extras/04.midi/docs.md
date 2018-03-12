@@ -6,16 +6,21 @@ taxonomy:
 
 # MIDI and High Fidelity
 
-*How to use Midi for creative control in High fidelity*
+*How to use Midi for creative control in High Fidelity*
 
 What if there was a way to control your High Fidelity environment with real world knobs, keys, buttons, and sliders?
 
-Our MIDI class allows for these kind of interesting interactions, both for the musically inclined and for explorers who want to try engaging with a hybrid mix of virtual and real life controls.
+Our MIDI class allows for these kind of interesting interactions, both for the musically inclined, and for explorers who want to try engaging with a hybrid mix of virtual and real life controls.
 
 A big thank you to one of our talented HiFi community members and Worklist developers, Brainstormer, for helping extend the previous work we started with MIDI.
 
-If you have been to one of the Phlash shows on Fridays, then you have seen his awesome, funky light being controlled live with a Novation Launch Control XL.  Sometimes accompanied by a second light designer remote and realtime using Midi!
-<img source="./novation.png" width="100" />
+
+If you have been to one of the Phlash shows on Fridays, then you have seen his awesome, funky lights being controlled live with a Novation Launch Control XL.
+
+![](novation.png)
+
+Sometimes this is accompanied by a second remote light designer using Midi in realtime!
+
 
 
 ## *So what is MIDI, and can you use it within High Fidelity?*
@@ -45,25 +50,30 @@ Status | types
 15 | system message
 
 
-Every time you move a lever, rotate a knob, press/release a key, or push down a pad, you are creating a MIDI message that says what channel, what note, what velocity, and what the status/command is to be run.
+Every time you move a lever, rotate a knob, press/release a key, or push down a pad, you are creating a MIDI message that says what channel, what note, what velocity, and what is the status/command to run.
 
-This is a lot of information contained in small fast binary messages that millions of devices can use to communicate together. Let’s talk about how you can apply that to High Fidelity!
+This is a lot of information contained in fast binary messages that millions of devices can use to communicate together. Let’s talk about how you can apply that to High Fidelity!
+
+## Your Controller
 
 You can either connect a real controller device, or if you don’t have an actual controller, you can create a virtual one that will help you connect to other virtual devices. For example, if you want to connect Ableton Live directly to High Fidelity’s Interface client.
 
 We recommend the following virtual tools:
 
-loopMIDI https://www.tobias-erichsen.de/software/loopmidi.html (MIDI loopback)
+    loopMIDI https://www.tobias-erichsen.de/software/loopmidi.html (MIDI loopback)
+
 This will create a virtual in/out port to send information into and out of Hifi
 
-MIDI Keyboard/Controller or VMPK http://vmpk.sourceforge.net/(url)
+    MIDI Keyboard/Controller or VMPK http://vmpk.sourceforge.net/(url)
+
 You can use this to simulate keys being pressed or sliders/knobs being manipulated if you do not have a controller.
 
-If you have an iPad, take a look at TouchOSC to use your iPad as a touch screen controller with buttons, knobs, and sliders.  There are some notes about using your iPhone or iPad at the end.
+If you have an iPad, take a look at TouchOSC to use your iPad/iPhone as a touch screen controller with buttons, knobs, and sliders.  There are some notes about using your iPhone or iPad at the end.
 
 ## Config
 
-Now that you have a MIDI Device, the next thing you want to do is setup a configuration:
+Now that you have a MIDI Device, the next thing you want to do is setup a configuration.
+
 Here is a general recommended MIDI config function you can run in a script:
 ```
 // Some helpful constants
@@ -140,7 +150,7 @@ function onMidiEventReceived(eventData){
 
 One thing you can do to see which controller is outputting what, is to print out the eventData in your onMidiEventReceived function.
 
-This will tell you everything you need to know about how to route the the right key, slider, knob, or button to to your intended Javascript functions.
+This will tell you everything you need to know about how to route the right key, slider, knob, or button to to your intended Javascript functions.
 
 If you want to use Midi to control something outside of High Fidelity, or to directly call a midi event to control something in Hifi, you can use the function:
 ```
@@ -157,18 +167,20 @@ Right now we are only supporting Windows, but we are looking forward to extendin
 https://worklist.net/
 
 
-Some examples Brainstormer has cooked up that you can use:
+Some examples and additional API info Brainstormer has cooked up that you can use:
 - https://cdn.highfidelity.com/milad/production/Midi/MidiAPI.txt
 - https://cdn.highfidelity.com/milad/production/Midi/midiTest.js
 - https://cdn.highfidelity.com/milad/production/Midi/MIDI-Example.js
 
 
---------------------------------------------------------------------------------------------------------------------------------
 ## Using your iPhone and iPad to control High Fidelity through MIDI!
 
 If you don’t have a midi controller, there are some really great ways to use your iPad or iPhone to control High Fidelity:
 
 We recommend an app called TouchOSC: https://hexler.net/software/touchosc
+![](touchosc.png)
+
+
 After you download the App, make sure to download the Windows bridge.
 
 You can set it up either through USB or through your local wifi network in the settings menu.
@@ -176,3 +188,5 @@ You can set it up either through USB or through your local wifi network in the s
 If you setup your onMidiEventReceived to log the messages coming in, you can see which knobs send what information that you can use to call custom functions with.
 
 There are some interesting components like the accelerometer which you can use as well!
+
+Happy Midi'ing in Hifi!
