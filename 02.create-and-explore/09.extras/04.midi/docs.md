@@ -167,9 +167,9 @@ Right now we are only supporting Windows, but we are looking forward to extendin
 
 
 Some examples and additional API info Brainstormer has cooked up that you can use:
-- [MIDI-API](https://cdn.highfidelity.com/milad/production/API.txt)
-- [MIDI-Test](https://cdn.highfidelity.com/milad/production/midiTest.js)
-- [MIDI-Examples](https://cdn.highfidelity.com/milad/production/MIDI-Example.js)
+- [MIDI-API](https://cdn.highfidelity.com/milad/production/Midi/MidiAPI.txt)
+- [MIDI-Test](https://cdn.highfidelity.com/milad/production/Midi/midiTest.js)
+- [MIDI-Examples](https://cdn.highfidelity.com/milad/production/Midi/MIDI-Example.js)
 
 
 ## Using your iPhone and iPad to control High Fidelity through MIDI!
