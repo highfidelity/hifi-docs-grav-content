@@ -1,10 +1,8 @@
 ---
-title: Using Midi in High Fidelity
+title: Using Midi to control High Fidelity
 taxonomy:
     category: docs
 ---
-
-# MIDI and High Fidelity
 
 *How to use Midi for creative control in High Fidelity*
 
