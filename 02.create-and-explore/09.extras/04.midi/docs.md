@@ -58,11 +58,11 @@ You can either connect a real controller device, or if you don’t have an actua
 
 We recommend the following virtual tools:
 
-    [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
+[loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
 
 This will create a virtual in/out port to send information into and out of Hifi
 
-    [VMPK](http://vmpk.sourceforge.net/)
+[VMPK](http://vmpk.sourceforge.net/)
 
 You can use this to simulate keys being pressed or sliders/knobs being manipulated if you do not have a controller.
 
