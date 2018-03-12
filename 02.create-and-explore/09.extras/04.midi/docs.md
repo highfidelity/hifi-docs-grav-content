@@ -94,7 +94,7 @@ function midiConfig(){
     Midi.typeSystemMessageEnable(DISABLE);
 
    // get a list of the available Midi in and Midi out device IDs
-     midiInDeviceList = Midi.listMidiDevices(INPUT);
+    midiInDeviceList = Midi.listMidiDevices(INPUT);
     midiOutDeviceList = Midi.listMidiDevices(OUTPUT);
     print(JSON.stringify(midiInDeviceList));
     print(JSON.stringify(midiOutDeviceList));
@@ -107,13 +107,13 @@ You can then see a list of MIDI devices that are currently connected.
 After you run a config, next you will want to connect to midiMessages.
 ```
 Midi.midiMessage.connect(onMidiEventReceived);
-Your message handler will look like the following:
+//Your message handler will look like the following:
     /// @param {int} device: device number
     /// @param {int} channel: channel number
     /// @param {int} type: 0x8 is noteoff, 0x9 is noteon (if velocity=0, noteoff), etc
     /// @param {int} note: midi note number
     /// @param {int} velocity: note velocity (0 means noteoff)
-Function onMidiEventReceived(eventData){
+function onMidiEventReceived(eventData){
 	// functions you run in response to different midi events
 }
 ```
