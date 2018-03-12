@@ -1,10 +1,10 @@
 ---
-title: Using Midi to control High Fidelity
+title: Using MIDI to control High Fidelity
 taxonomy:
     category: docs
 ---
 
-*How to use Midi for creative control in High Fidelity*
+*How to use MIDI for creative control in High Fidelity*
 
 What if there was a way to control your High Fidelity environment with real world knobs, keys, buttons, and sliders?
 
@@ -17,7 +17,7 @@ If you have been to one of the Phlash shows on Fridays, then you have seen his a
 
 ![](novation.png)
 
-Sometimes this is accompanied by a second remote light designer using Midi in realtime!
+Sometimes this is accompanied by a second remote light designer using  in realtime!
 
 
 
@@ -58,11 +58,11 @@ You can either connect a real controller device, or if you don’t have an actua
 
 We recommend the following virtual tools:
 
-    loopMIDI https://www.tobias-erichsen.de/software/loopmidi.html (MIDI loopback)
+    [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
 
 This will create a virtual in/out port to send information into and out of Hifi
 
-    MIDI Keyboard/Controller or VMPK http://vmpk.sourceforge.net/(url)
+    [VMPK](http://vmpk.sourceforge.net/)
 
 You can use this to simulate keys being pressed or sliders/knobs being manipulated if you do not have a controller.
 
@@ -80,20 +80,20 @@ const OUTPUT = true;
 const ENABLE = true;
 const DISABLE = false;
 function midiConfig(){
-    Midi.thruModeEnable(DISABLE );
-    Midi.broadcastEnable(DISABLE );
-    Midi.typeNoteOffEnable(ENABLE );
-    Midi.typeNoteOnEnable(ENABLE );
-    Midi.typePolyKeyPressureEnable(DISABLE);
-    Midi.typeControlChangeEnable(ENABLE);
-    Midi.typeProgramChangeEnable(ENABLE);
-    Midi.typeChanPressureEnable(DISABLE);
-    Midi.typePitchBendEnable(ENABLE );
-    Midi.typeSystemMessageEnable(DISABLE);
+    .thruModeEnable(DISABLE );
+    .broadcastEnable(DISABLE );
+    .typeNoteOffEnable(ENABLE );
+    .typeNoteOnEnable(ENABLE );
+    .typePolyKeyPressureEnable(DISABLE);
+    .typeControlChangeEnable(ENABLE);
+    .typeProgramChangeEnable(ENABLE);
+    .typeChanPressureEnable(DISABLE);
+    .typePitchBendEnable(ENABLE );
+    .typeSystemMessageEnable(DISABLE);
 
-   // get a list of the available Midi in and Midi out device IDs
-    midiInDeviceList = Midi.listMidiDevices(INPUT);
-    midiOutDeviceList = Midi.listMidiDevices(OUTPUT);
+   // get a list of the available  in and  out device IDs
+    midiInDeviceList = .listDevices(INPUT);
+    midiOutDeviceList = .listDevices(OUTPUT);
     print(JSON.stringify(midiInDeviceList));
     print(JSON.stringify(midiOutDeviceList));
 }
@@ -104,15 +104,15 @@ You can then see a list of MIDI devices that are currently connected.
 
 After you run a config, next you will want to connect to midiMessages.
 ```
-Midi.midiMessage.connect(onMidiEventReceived);
+.midiMessage.connect(onEventReceived);
 //Your message handler will look like the following:
     /// @param {int} device: device number
     /// @param {int} channel: channel number
     /// @param {int} type: 0x8 is noteoff, 0x9 is noteon (if velocity=0, noteoff), etc
-    /// @param {int} note: midi note number
+    /// @param {int} note: MIDI note number
     /// @param {int} velocity: note velocity (0 means noteoff)
-function onMidiEventReceived(eventData){
-	// functions you run in response to different midi events
+function onEventReceived(eventData){
+	// functions you run in response to different MIDI events
 }
 ```
 
@@ -120,7 +120,7 @@ function onMidiEventReceived(eventData){
 
 If we had a cube we would like to change the color of, we can do the following:
 
-First, here is a really handy method to figure out the midi range of 0-127 to be any other output range you want using linear interpolation:
+First, here is a really handy method to figure out the MIDI range of 0-127 to be any other output range you want using linear interpolation:
 ```
 function lerp(InputLow, InputHigh, OutputLow, OutputHigh, Input) {
     return ((Input - InputLow) / (InputHigh - InputLow)) * (OutputHigh - OutputLow) + OutputLow;
@@ -137,23 +137,23 @@ function  changeCubeColor(redValue){
 }
 ```
 
-Then in our onMidiEventReceived, our basic function would look like:
+Then in our onEventReceived, our basic function would look like:
 ```
 // eventData.device, eventData.channel, eventData.type, eventData.note, eventData.velocity
 
-function onMidiEventReceived(eventData){
+function onEventReceived(eventData){
 	changeCubeColor( lerp(0,127,0,255,eventData.velocity) );
 }
 ```
 
-One thing you can do to see which controller is outputting what, is to print out the eventData in your onMidiEventReceived function.
+One thing you can do to see which controller is outputting what, is to print out the eventData in your onEventReceived function.
 
 This will tell you everything you need to know about how to route the right key, slider, knob, or button to to your intended Javascript functions.
 
-If you want to use Midi to control something outside of High Fidelity, or to directly call a midi event to control something in Hifi, you can use the function:
+If you want to use  to control something outside of High Fidelity, or to directly call a MIDI event to control something in Hifi, you can use the function:
 ```
 // event similar to the above
-Midi.playMidiNote(Status, Note, Velocity);
+.playNote(Status, Note, Velocity);
 ```
 ## Some Ideas to get you started:
 - Use ableton to sequence out entire animations of your domain.
@@ -162,20 +162,22 @@ Midi.playMidiNote(Status, Note, Velocity);
 
 Let us know if you do something cool with it!
 Right now we are only supporting Windows, but we are looking forward to extending out to Mac and Linux builds as well.  If you would like to help us do that, sign up on Worklist today!
-https://worklist.net/
+
+[Worklist](https://worklist.net/)
 
 
 Some examples and additional API info Brainstormer has cooked up that you can use:
-- https://cdn.highfidelity.com/milad/production/Midi/MidiAPI.txt
-- https://cdn.highfidelity.com/milad/production/Midi/midiTest.js
-- https://cdn.highfidelity.com/milad/production/Midi/MIDI-Example.js
+- [MIDI-API](https://cdn.highfidelity.com/milad/production/API.txt)
+- [MIDI-Test](https://cdn.highfidelity.com/milad/production/midiTest.js)
+- [MIDI-Examples](https://cdn.highfidelity.com/milad/production/MIDI-Example.js)
 
 
 ## Using your iPhone and iPad to control High Fidelity through MIDI!
 
-If you don’t have a midi controller, there are some really great ways to use your iPad or iPhone to control High Fidelity:
+If you don’t have a MIDI controller, there are some really great ways to use your iPad or iPhone to control High Fidelity:
 
-We recommend an app called TouchOSC: https://hexler.net/software/touchosc
+We recommend an app called TouchOSC:
+[touchosc](https://hexler.net/software/touchosc)
 ![](touchosc.png)
 
 
@@ -183,8 +185,8 @@ After you download the App, make sure to download the Windows bridge.
 
 You can set it up either through USB or through your local wifi network in the settings menu.
 
-If you setup your onMidiEventReceived to log the messages coming in, you can see which knobs send what information that you can use to call custom functions with.
+If you setup your onEventReceived to log the messages coming in, you can see which knobs send what information that you can use to call custom functions with.
 
 There are some interesting components like the accelerometer which you can use as well!
 
-Happy Midi'ing in Hifi!
+Happy 'ing in Hifi!
