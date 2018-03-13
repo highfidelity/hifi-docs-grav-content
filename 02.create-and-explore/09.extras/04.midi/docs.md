@@ -60,7 +60,7 @@ We recommend the following virtual tools:
 
 [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
 
-This will create a virtual in/out port to send information into and out of Hifi
+This will create a virtual in/out port to send information into and out of HiFi
 
 [VMPK](http://vmpk.sourceforge.net/)
 
@@ -80,20 +80,20 @@ const OUTPUT = true;
 const ENABLE = true;
 const DISABLE = false;
 function midiConfig(){
-    .thruModeEnable(DISABLE );
-    .broadcastEnable(DISABLE );
-    .typeNoteOffEnable(ENABLE );
-    .typeNoteOnEnable(ENABLE );
-    .typePolyKeyPressureEnable(DISABLE);
-    .typeControlChangeEnable(ENABLE);
-    .typeProgramChangeEnable(ENABLE);
-    .typeChanPressureEnable(DISABLE);
-    .typePitchBendEnable(ENABLE );
-    .typeSystemMessageEnable(DISABLE);
+    Midi.thruModeEnable(DISABLE );
+    Midi.broadcastEnable(DISABLE );
+    Midi.typeNoteOffEnable(ENABLE );
+    Midi.typeNoteOnEnable(ENABLE );
+    Midi.typePolyKeyPressureEnable(DISABLE);
+    Midi.typeControlChangeEnable(ENABLE);
+    Midi.typeProgramChangeEnable(ENABLE);
+    Midi.typeChanPressureEnable(DISABLE);
+    Midi.typePitchBendEnable(ENABLE );
+    Midi.typeSystemMessageEnable(DISABLE);
 
    // get a list of the available  in and  out device IDs
-    midiInDeviceList = .listDevices(INPUT);
-    midiOutDeviceList = .listDevices(OUTPUT);
+    midiInDeviceList = Midi.listDevices(INPUT);
+    midiOutDeviceList = Midi.listDevices(OUTPUT);
     print(JSON.stringify(midiInDeviceList));
     print(JSON.stringify(midiOutDeviceList));
 }
@@ -104,7 +104,7 @@ You can then see a list of MIDI devices that are currently connected.
 
 After you run a config, next you will want to connect to midiMessages.
 ```
-.midiMessage.connect(onEventReceived);
+Midi.midiMessage.connect(onEventReceived);
 //Your message handler will look like the following:
     /// @param {int} device: device number
     /// @param {int} channel: channel number
@@ -153,7 +153,7 @@ This will tell you everything you need to know about how to route the right key,
 If you want to use  to control something outside of High Fidelity, or to directly call a MIDI event to control something in Hifi, you can use the function:
 ```
 // event similar to the above
-.playNote(Status, Note, Velocity);
+Midi.playNote(Status, Note, Velocity);
 ```
 ## Some Ideas to get you started:
 - Use ableton to sequence out entire animations of your domain.
@@ -189,4 +189,4 @@ If you setup your onEventReceived to log the messages coming in, you can see whi
 
 There are some interesting components like the accelerometer which you can use as well!
 
-Happy 'ing in Hifi!
+Happy MIDI'ing in Hifi!
