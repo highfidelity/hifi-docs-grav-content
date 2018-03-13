@@ -31,7 +31,7 @@ The way our MIDI class is implemented, the Window’s driver passes a DWORD (32b
 
 00000000 | 0vvvvvvv | 0nnnnnnn | 1sss | cccc
 --- | --- | --- | --- | ---
-|v = velocity | n = notes | s = status | c = channel
+| |v = velocity | n = notes | s = status | c = channel
 
 The number in the higher order bit denotes whether it is a command (1) or data (0), so that the velocity and note can represent 128 unique values (1+2+4+8+16+32+64), status with 8, and channel with 16 values. The different status types we support are:
 
