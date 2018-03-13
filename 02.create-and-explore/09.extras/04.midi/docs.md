@@ -176,9 +176,8 @@ Some examples and additional API info Brainstormer has cooked up that you can us
 
 If you don’t have a MIDI controller, there are some really great ways to use your iPad or iPhone to control High Fidelity:
 
-We recommend an app called TouchOSC:
+We recommend an app called [touchosc](https://hexler.net/software/touchosc)
 
-[touchosc](https://hexler.net/software/touchosc)
 ![](touchosc.png)
 
 
