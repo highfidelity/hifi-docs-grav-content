@@ -161,9 +161,9 @@ Midi.playNote(Status, Note, Velocity);
 - Setup your iPad to be a whole group of buttons that you can press at any time to trigger events in your domain at will.
 
 Let us know if you do something cool with it!
-Right now we are only supporting Windows, but we are looking forward to extending out to Mac and Linux builds as well.  If you would like to help us do that, sign up on Worklist today!
+Right now we are only supporting Windows, but we are looking forward to extending out to Mac and Linux builds as well.  If you would like to help us do that, sign up on [Worklist](https://worklist.net/) today!
 
-[Worklist](https://worklist.net/)
+
 
 
 Some examples and additional API info Brainstormer has cooked up that you can use:
