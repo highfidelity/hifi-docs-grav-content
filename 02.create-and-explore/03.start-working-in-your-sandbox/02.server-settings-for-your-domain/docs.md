@@ -1,4 +1,4 @@
----
+a---
 title: Server Settings for Your Own Domain
 taxonomy:
    category: docs
@@ -17,7 +17,7 @@ This page covers how you can:
 * Manage the security of your domain.
 * Define the scripts that run in your home domain.
 * Manage the audio settings in your sandbox.
-* Manage the Entity Server's settings.
+* Manage the Automatic Content Archive's settings.
   ​
 
 > > > > > This document assumes that you already have Sandbox running on your local machine. If you don't, check out how you can install and set up your sandbox [here](../set-up-your-sandbox).
@@ -34,17 +34,17 @@ This opens the server settings page ([**http://localhost:40100**](http://localho
 
 ![](\server-settings.png)
 
-You can navigate to specific settings using the navbar. By default, only the basic settings can be viewed. To see advanced settings, click **Show Advanced**.
+You can navigate to specific settings using the **Content** and **Settings** dropdown menus. By default, only the basic settings can be viewed. To see advanced settings, click the **Advanced Settings** dropdown beneath each option.
 
 ## Enable Updated Settings
 
-If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save and restart** once you're done with your modifications. This saves your settings and restarts your domain server.
+If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking **Save** and then restarting your server by clicking **Restart** once you're done with your modifications. This saves your settings and restarts your domain server.
 
 ![](\save-and-restart.png)
 
 ## Metaverse/Networking
 
-You can configure your domain ID and networking settings using the Metaverse/Networking settings. Go to **Metaverse/Networking** on the navbar.
+You can configure your domain ID and networking settings using the Metaverse/Networking settings. Go to **Metaverse/Networking** in the **Settings** dropdown menu.
 
 Before you edit these settings, you have to be logged in to your High Fidelity account. If you don't already have one, you can [sign up for a High Fidelity account](https://highfidelity.com/users/signup) now.
 
@@ -77,7 +77,7 @@ Once you log in to High Fidelity, you can generate an access token. You can do t
 
 When you run sandbox, it generates a domain ID and a temporary place name for you.
 
-To change the domain ID, you can select **Create new domain ID** or **Choosing from my domains**. Learn more about domain ids and place names [here](../place-names).
+To change the domain ID, you can click on the **Advanced Settings* dropdown under **Metaverse/Networking**. Learn more about domain ids and place names [here](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/place-names).
 
 
 ### Automatic Networking
@@ -95,12 +95,12 @@ A *place name* is a domain's unique name within the High Fidelity Metaverse and 
 
 Your randomly generated place name cannot be shown in the [High Fidelity Directory](https://highfidelity.com/directory) or be authenticated (it can be impersonated). You also cannot choose the generated place name. 
 
-You can [purchase a place name](../place-names) of your choice for your domain.
+You can [purchase a place name](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/place-names) of your choice for your domain.
 
 
 ## Description
 
-You can use the Description settings to describe your account and set the operating hours. In the navbar, click **Description**.
+You can use the Description settings to describe your account and set the operating hours. Navigate to **Description** from the **Settings** dropdown menu, then click on the **Advanced Settings** dropdown menu to make changes.
 
 >>>>> These setting are a framework and are still in development.
 
@@ -128,7 +128,7 @@ You can specify operating hours for your domain using the Operating Hours fields
 
 ## Security
 
-You can use the Security settings to define who can can visit your domain, edit your domain, and add entities to your domain. In the navbar, go to **Security**.
+You can use the Security settings to define who can can visit your domain, edit your domain, and add entities to your domain. In the **Settings** dropdown menu, go to **Security**.
 
 ### Basic Security
 
@@ -150,7 +150,7 @@ If you set this to 0, it means there is no limit to the maximum number of users 
 
 You can define who visits your domain and their rights using the security settings. These settings also enable you to assign rights to parameter-level groups (anonymous users, users on the local host, users that are logged in and users specified by username).
 
-![](\domain-permissions.png)
+![](\domain-permissions-1.png)![](\domain-permissions-2.png)![](\domain-permissions-3.png)
 
 For each user or group specified, you can set the following permissions:
 
@@ -168,7 +168,7 @@ Permissions assigned to a specific user supersede any parameter-level permission
 
 ## Scripts
 
-You can define the [scripts](../../all-about-scripting) you want to run when you launch and host your home domain:
+You can define the [scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting) you want to run when you launch and host your home domain from the **Scripts** entry in the **Content** dropdown menu:
 
 * Enter a URL accessible to your Sandbox (and not a *file:* URL).
 * Press the + button.
@@ -185,7 +185,7 @@ The audio settings affect how sound is transmitted and received throughout the d
 
 The first parameter, **Default Domain Attenuation**, allows you to set the degree to which things get quieter as you get further away from them. High Fidelity domains default to a distance attenuation curve roughly like the real world. If you see two avatars talking in the distance, you can hear them, but not very well. If you approach them, they become more audible in a manner that approximates what you're likely to be used to.
 
-A domain's default attenuation can be changed in audio settings, so that no matter how far away a sound source is, it still plays at full volume (attenuation = 0). Likewise, the default attenuation for a domain can be set very high (to a max value of 1), making only things very near to you audible.
+A domain's default attenuation can be changed in the **Audio Environment** section of the **Content** dropdown menu, so that no matter how far away a sound source is, it still plays at full volume (attenuation = 0). Likewise, the default attenuation for a domain can be set very high (to a max value of 1), making only things very near to you audible.
 
 ### Noise Muting Threshold
 
@@ -199,7 +199,7 @@ The **Low-pass Filter** reduces high-frequency bands (i.e., "treble" for old ste
 
 The concept of audio zones enables you to define specific parcels of space in 3D space. These zones can then be set with rules for how audio is mixed and rendered. Each zone has a **Name** and is defined using start and end X, Y, and Z coordinates.
 
-![](\zones.png)
+![](zones.png)
 
 **Attenuation Coefficients** can be used to designate how a zone transmits sound to another zone. Each profile needs two zones for one-way communication, a **Source** and a **Listener**.
 
@@ -213,9 +213,9 @@ Another common example is to build a stage environment for performances. To do t
 
 ### Reverb Settings
 
-The **Reverb Settings** are used to create the natural ambient reflections we would hear when a sound fires in a real space. It can give the effect of sounding like you are in a large empty room, deep inside a large cave, or inside a tiny room like a tiled shower.
+The **Reverb Settings** in the **Audio Environment** section of the **Content** dropdown menu are used to create the natural ambient reflections we would hear when a sound fires in a real space. It can give the effect of sounding like you are in a large empty room, deep inside a large cave, or inside a tiny room like a tiled shower.
 
-![](\reverb-settings.png)
+![](reverb-settings.png)
 
 The reverb settings are:
 
@@ -225,25 +225,44 @@ The reverb settings are:
 
 Keep the Wet/ Dry Mix value around zero or prepare to have your ears assaulted. Levels of between 5-25% will generally give you useful results. For a very thick reverb, you might try a value as high as 50% where the reverb is nearly as loud as the original signal.
 
-## Entity Server Settings
+## Automatic Content Archives
 
 These are the rules for automatic backups. The four preset rules set as default are shown in the image below.
 
-![](\entity-server.png)
+![](automatic-content-archives.png)
 
 The four preset rules.
 
-Each rule has four variables:
+Each rule has three variables:
 
 - **Name:** A name for the rule so you recognize it.
-- **Rule Format:** The file name extension the rule is saved as.
 - **Backup Interval in Seconds:** How often the backs up occurs, in seconds.
 - **Max Rolled Backup Versions:** How many backups are kept before it re-saves as the first one.
 
 For example, the "Half Hour Rolling" preset rule will save every half hour until there are 5 backups, then the 6th backup will overwrite the first one and so on. You will always have 5 backups for the last 2 1/2 hours.
 
-If you want to add a new rule (e.g., every two hours) you can add it in where it shows "Example". Fill out the four variables and click the **+** button.
+If you want to add a new rule (e.g., every two hours) you can add it below. Click the **+** button and fill out the three variables.
+## Settings Backup / Restore
+
+You can also download your domain settings on their own. To do so, click **Download Domain Settings**. This will download a .json file onto your computer. ![](domain-settings-backups-1.PNG)
+
+You can upload a settings configuration file to quickly configure a domain. Click on **Choose File**, choose the configuration file from your computer, then click **Upload Domain Settings**. An "Are you sure?" pop-up window will appear. Click on **Restore settings**. Your domain will then restart.
+![](domain-settings-backups-2.PNG) ![](are-you-sure-domain.PNG)
 
 ## Advanced Settings
 
-Additional settings for the Asset Server (ATP), Audio Buffers and Avatar Mixer are available by selecting **Show Advanced** from the sidebar menu. Advanced setting parameters are subject to change. Documentation to come once stabilized.
+Additional settings for the Asset Server (ATP), Audio Buffers and Avatar Mixer are available by selecting the **Advanced Settings** dropdown from each section. Advanced setting parameters are subject to change. Documentation to come once stabilized.
+
+## Content Archives
+
+
+Your domain server makes regular archives of the content in your domain. Content archives include Models.json, content settings, and assets in [ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients). You can upload and download content archives onto your computer. From **Content Archives** in the **Content** dropdown menu, you can see and download all of your backups of domain content and content settings. These backups can be used to restore your domain to a previous version or to share your archive and settings info with another user. ![](content-archive-list.png)
+
+To manage automatic content archive intervals, go to **Automatic Content Archives** in the **Settings** dropdown menu or follow the link provided. For more information, see [Automatic Content Archives](https:://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/server-settings-for-your-domain#access-your-server-settings). 
+
+You can create a content archive manually by clicking **Generate New Archive**. You should see a "Generate a content archive" pop-up window. Type in a name for your new archive, then click **Generate Archive**. ![](generate-content-archive.png)
+
+To share your domain content and content settings, simply download a copy of the archive you wish to share and send it to the other user. You can download any archive by clicking the three buttons on the right. ![](download-archive.png)
+
+Finally, you can import a content archive you have stored on your computer by clicking on **Choose File** under Upload Content, selecting the archive .zip file, then clicking **Upload Content**. ![](upload-content.png)
+An "Are you sure?" pop-up window should appear confirming that your domain content will be replaced. Click **Restore Content**. Your domain server will restart. ![](are-you-sure.png)
