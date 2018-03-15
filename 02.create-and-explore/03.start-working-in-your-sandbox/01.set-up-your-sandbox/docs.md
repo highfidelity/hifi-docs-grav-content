@@ -63,12 +63,13 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
 2. ###Configure Your Domain
 
   - To start configuring your domain, access your domain server settings. You can do this by going to http://localhost:40100/settings/. Or, you can right click the High Fidelity icon in the system icon tray, and then click "Settings".![](menu-settings.png)
-  - You will be redirected to the Setup Wizard. You can also skip using the wizard if you'd like to modify the settings without using the wizard. ![](setup-wizard-1.PNG) Connect your High Fidelity account to get started on your domain server settings. You will be redirected to high Fidelity's sign in page, where you can sign up or create your High Fidelity account. You will then be prompted to click a button to generate your access token. Copy this token to paste it in the pop-up window in the wizard. ![](setup-wizard-2.PNG)
+  - You will be redirected to the Setup Wizard. You can also skip using the wizard if you'd like to modify the settings without using the wizard. ![](setup-wizard-1.PNG) Connect your High Fidelity account to get started on your domain server settings. You will be redirected to High Fidelity's sign in page, where you can sign in or create your High Fidelity account. Make sure you verify your email address before proceeding. You will then be prompted to click a button to generate your access token. Copy this token to paste it in the pop-up window in the wizard. ![](setup-wizard-2.PNG)
   - You will now see your temporary place name. You can choose a custom place name or continue using your IP address or temporary place name to give access to visitors. Click Next. ![](setup-wizard-3.PNG)
   - In this step, you must remember to **add your High Fidelity username** to grant yourself administrator privileges. This is because admin privileges are for anyone using the local machine your domain is on. If you would like to manage your domain from other machines, you will require admin privileges. You can add other authorized usernames as well. You can also set permissions for who can visit your domain and who can rez (create) items in your domain.
-    ![](setup-wizard-4.PNG)![](setup-wizard-5.PNG)![](setup-wizard-6.PNG)![](setup-wizard-7.PNG)
-  - You will be redirected to the main domain settings page where you can manage other aspects of your domain. ![](setup-wizard-8.PNG)
-  - You can change a number of settings on this page such Networking, Entity Server Settings, Security and more. You can also visit your domain in VR using the link on the top right. ![](security-options.png)
+    ![](setup-wizard-4.PNG)
+  - You will be redirected to the main domain settings page where you can manage other aspects of your domain. ![](setup-wizard-5.PNG)
+  - You can change a number of settings from the Settings tab such Networking, Entity Server Settings, Security and more. You can modify content on your Sandbox from the Content tab. You can also visit your domain in VR using the link on the top right. ![](setup-wizard-7.png) ![](setup-wizard-6.PNG)
+ 
 
 
 3. ### Share Your Domain with Other Users
