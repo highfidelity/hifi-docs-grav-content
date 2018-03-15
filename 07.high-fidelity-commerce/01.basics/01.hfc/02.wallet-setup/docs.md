@@ -12,7 +12,7 @@ This page will detail how you can set up your Wallet to start participating in H
 
 ## Introduction
 
-Before you start [buying](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy) and [selling](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/sell) items in the Marketplace or [shopping on Avatar Island](https://docs.highfidelity.com/high-fidelity-commerce/avatar-wearables/buy), you need [High Fidelity Coins](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc) (HFC). After setting up your wallet follow the additional instructions to receive [10,000 HFC](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/get-hfc) when you first set up your Wallet. You can start using them for any transactions in-world. 
+Before you start [buying](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy) and [selling](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/sell) items in the Marketplace or [shopping on Avatar Island](https://docs.highfidelity.com/high-fidelity-commerce/avatar-wearables/buy), you need [High Fidelity Coins](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc) (HFC). After setting up your wallet, follow the additional instructions to receive [10,000 HFC](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/get-hfc). You can start using them for any transactions in-world. 
 
 > > > You do not need a credit card to set up your wallet. 
 
