@@ -1,4 +1,4 @@
-a---
+---
 title: Server Settings for Your Own Domain
 taxonomy:
    category: docs
