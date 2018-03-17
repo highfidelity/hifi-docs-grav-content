@@ -26,7 +26,7 @@ Before you start [buying](https://docs.highfidelity.com/high-fidelity-commerce/m
 
 > > > > Do not lose your passphrase. Please save it or write it down, we cannot recover this for you. If you lose your passphrase, you will also lose the HFC and purchases associated with your account. 
 
-- You will be prompted to backup your private keys. This is an important step. If you lose your passphrase, we cannot recover your passphrase or your keys for you.  ![](backup-private.PNG)![](backup-inst.PNG)![](all-set.PNG) For more information, see our [FAQs](https://docs.highfidelity.com/faq-section/commerce-faq)
+- You will be prompted to backup your private keys. This is an important step. If you lose your passphrase, we cannot recover your passphrase or your keys for you.  ![](backup-private.PNG)![](backup-inst.PNG)![](all-set.PNG) For more information, see our [FAQs](https://docs.highfidelity.com/high-fidelity-commerce/faq-section/commerce-faq)
 - You will be directed to your *Wallet Home*. Here, you can view all your recent activity and the amount of HFC you have. Want more HFC? Get it by going to [Bank Of High Fidelity](https://hifi.place/BankOfHighFidelity) and meeting with the banker! ![](closed-beta.PNG)
 - Once you receive your 10,000 HFC, you can start shopping and monitoring your recent activity. ![](wallet.PNG)
 - The wallet also contains *Security* and *Help* pages. You can change your security picture, passphrase and backup your private keys on the *Security* page. The *Help* page contains some general questions that could be helpful. ![](wallet-security.PNG) ![](wallet-help-first.PNG) ![](wallet-help-second.PNG)
