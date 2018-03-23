@@ -12,7 +12,7 @@ This page will detail how you can set up your Wallet to start participating in H
 
 ## Introduction
 
-Before you start [buying](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy) and [selling](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/sell) items in the Marketplace or [shopping on Avatar Island](https://docs.highfidelity.com/high-fidelity-commerce/avatar-wearables/buy), you need [High Fidelity Coins](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc) (HFC). After setting up your wallet, follow the additional instructions to receive [10,000 HFC](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/get-hfc). You can start using them for any transactions in-world. 
+Before you can [buy](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy), [sell](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/sell) or [send](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/wallet-setup/send-money) [High Fidelity Coins](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc) (HFC), you must setup your Wallet. Once your Wallet is set up, you can get HFC from the banker.
 
 > > > You do not need a credit card to set up your wallet. 
 
@@ -28,7 +28,7 @@ Before you start [buying](https://docs.highfidelity.com/high-fidelity-commerce/m
 
 - You will be prompted to backup your private keys. This is an important step. If you lose your passphrase, we cannot recover your passphrase or your keys for you.  ![](backup-private.PNG)![](backup-inst.PNG)![](all-set.PNG) For more information, see our [FAQs](https://docs.highfidelity.com/high-fidelity-commerce/faq-section/commerce-faq)
 - You will be directed to your *Wallet Home*. Here, you can view all your recent activity and the amount of HFC you have. Want more HFC? Get it by going to [Bank Of High Fidelity](https://hifi.place/BankOfHighFidelity) and meeting with the banker! ![](closed-beta.PNG)
-- Once you receive your 10,000 HFC, you can start shopping and monitoring your recent activity. ![](wallet.PNG)
+- Once you receive your HFC, you can start shopping and monitoring your recent activity. ![](wallet.PNG)
 - The wallet also contains *Security* and *Help* pages. You can change your security picture, passphrase and backup your private keys on the *Security* page. The *Help* page contains some general questions that could be helpful. ![](wallet-security.PNG) ![](wallet-help-first.PNG) ![](wallet-help-second.PNG)
 
 Congratulations, you're all set up! Start shopping!
