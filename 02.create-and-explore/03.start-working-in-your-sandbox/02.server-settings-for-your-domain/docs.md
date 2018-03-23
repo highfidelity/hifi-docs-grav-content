@@ -211,6 +211,8 @@ Another common example is to build a stage environment for performances. To do t
 2. Set the **Attenuation Coefficients** to zero with Stage as the source and Audience as the listener. That way, anyone in Audience will hear anyone on Stage at maximum volume. Everybody in Audience has the best seat in the house!
 3. If you want to minimize Audience people from hearing one another in the Audience zone, set up another **Attenuation Coefficients** pair with Audience as both source and listener, and set the distance attenuation very high--e.g., to 1.0. That way, you'll only hear people very close to you like your friend on your right, but won't hear the guy coughing 10 rows back.
 
+Go [here](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/setting-up-a-theater-domain#attenuation-settings) for more information about setting up audio zones.
+
 ### Reverb Settings
 
 The **Reverb Settings** in the **Audio Environment** section of the **Content** dropdown menu are used to create the natural ambient reflections we would hear when a sound fires in a real space. It can give the effect of sounding like you are in a large empty room, deep inside a large cave, or inside a tiny room like a tiled shower.
