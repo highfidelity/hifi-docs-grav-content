@@ -92,8 +92,8 @@ or by hitting the "/" button and reaing the "position" in the middle column.
 
 Audio Zones are defined by a start and end coordinate value for each of the three axes in-world. An example of how you might choose to define your zones is illustrated in the diagram below. In the sample, the X and Z values are defined along their respective axes, and the Y start and end would be the value of the floor and ceiling. To add audio zones to the Microphone stands in Zaru, create a smaller region within the audience.
 
-Our Content Team tech lead Liv has made a handy tool for audio zone bounding boxes you can find here:
-https://hifi-content.s3.amazonaws.com/liv/getCoords/getCoords.js
+Our Content Team tech lead Liv has made a handy tool for audio zone bounding boxes you can find [here](https://hifi-content.s3.amazonaws.com/liv/getCoords/getCoords.js).
+
 The way to use it is to create a cube in world and size and align it to where you want the boundaries of the audio zone to be. Run the script, click on the cube. The x,y,z coordinates will appear in the scripts window. Use those to define the zones in the domain settings page.
 
 Once you have the coordinates of your audio zones:
