@@ -55,7 +55,6 @@ The following table displays how complete the API reference is. We will be updat
 | [Users](https://docs.highfidelity.com/api-reference/users)                    | Yes                              | Yes                   |
 | [Vec3](https://docs.highfidelity.com/api-reference/vec3)                     | Yes                              | Yes                   |
 | [Window](https://docs.highfidelity.com/api-reference/window)                   | Yes                              | No                    |
-| [Limitless](https://docs.highfidelity.com/api-reference/limitless)                   | Yes                              | No                    |
 | [Path](https://docs.highfidelity.com/api-reference/path)                  | Yes                              | Yes                    |
 | [Picks](https://docs.highfidelity.com/api-reference/picks)                   | Yes                              | Yes                    |
 | [Google Poly API](https://docs.highfidelity.com/api-reference/google-poly-api)| Yes| Yes| 
