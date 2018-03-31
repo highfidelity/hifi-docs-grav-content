@@ -150,7 +150,7 @@ If you set this to 0, it means there is no limit to the maximum number of users 
 
 You can define who visits your domain and their rights using the security settings. These settings also enable you to assign rights to parameter-level groups (anonymous users, users on the local host, users that are logged in and users specified by username).
 
-![](\domain-permissions-1.png)![](\domain-permissions-2.png)![](\domain-permissions-3.png)
+![](\domain-permissions-1.PNG)![](\domain-permissions-2.PNG)![](\domain-permissions-3.PNG)
 
 For each user or group specified, you can set the following permissions:
 
@@ -227,24 +227,6 @@ The reverb settings are:
 
 Keep the Wet/ Dry Mix value around zero or prepare to have your ears assaulted. Levels of between 5-25% will generally give you useful results. For a very thick reverb, you might try a value as high as 50% where the reverb is nearly as loud as the original signal.
 
-## Automatic Content Archives
-
-These are the rules for automatic backups. The four preset rules set as default are shown in the image below.
-
-![](automatic-content-archives.png)
-
-The four preset rules.
-
-Each rule has three variables:
-
-- **Name:** A name for the rule so you recognize it.
-- **Backup Interval in Seconds:** How often the backs up occurs, in seconds.
-- **Max Rolled Backup Versions:** How many backups are kept before it re-saves as the first one.
-
-For example, the "Half Hour Rolling" preset rule will save every half hour until there are 5 backups, then the 6th backup will overwrite the first one and so on. You will always have 5 backups for the last 2 1/2 hours.
-
-If you want to add a new rule (e.g., every two hours) you can add it below. Click the **+** button and fill out the three variables.
-
 ## Settings Backup / Restore
 
 You can also download your domain settings on their own. To do so, click **Download Domain Settings**. This will download a .json file onto your computer. ![](domain-settings-backups-1.PNG)
@@ -268,3 +250,19 @@ To share your domain content and content settings, simply download a copy of the
 
 Finally, you can import a content archive you have stored on your computer by clicking on **Choose File** under Upload Content, selecting the archive .zip file, then clicking **Upload Content**. ![](upload-content.PNG)
 An "Are you sure?" pop-up window should appear confirming that your domain content will be replaced. Click **Restore Content**. Your domain server will restart. ![](are-you-sure.PNG)
+
+## Automatic Content Archives
+
+These are the rules for automatic backups. The four preset rules set as default are shown in the image below.
+
+![](automatic-content-archives.PNG)
+
+Each rule has three variables:
+
+- **Name:** A name for the rule so you recognize it.
+- **Backup Interval in Seconds:** How often the backs up occurs, in seconds.
+- **Max Rolled Backup Versions:** How many backups are kept before it re-saves as the first one.
+
+For example, the "Half Hour Rolling" preset rule will save every half hour until there are 5 backups, then the 6th backup will overwrite the first one and so on. You will always have 5 backups for the last 2 1/2 hours.
+
+If you want to add a new rule (e.g., every two hours) you can add it below. Click the **+** button and fill out the three variables.
