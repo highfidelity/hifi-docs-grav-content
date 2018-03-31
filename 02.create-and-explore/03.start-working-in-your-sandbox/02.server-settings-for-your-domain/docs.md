@@ -244,6 +244,7 @@ Each rule has three variables:
 For example, the "Half Hour Rolling" preset rule will save every half hour until there are 5 backups, then the 6th backup will overwrite the first one and so on. You will always have 5 backups for the last 2 1/2 hours.
 
 If you want to add a new rule (e.g., every two hours) you can add it below. Click the **+** button and fill out the three variables.
+
 ## Settings Backup / Restore
 
 You can also download your domain settings on their own. To do so, click **Download Domain Settings**. This will download a .json file onto your computer. ![](domain-settings-backups-1.PNG)
@@ -257,14 +258,13 @@ Additional settings for the Asset Server (ATP), Audio Buffers and Avatar Mixer a
 
 ## Content Archives
 
-
-Your domain server makes regular archives of the content in your domain. Content archives include Models.json, content settings, and assets in [ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients). You can upload and download content archives onto your computer. From **Content Archives** in the **Content** dropdown menu, you can see and download all of your backups of domain content and content settings. These backups can be used to restore your domain to a previous version or to share your archive and settings info with another user. ![](content-archive-list.png)
+Your domain server makes regular archives of the content in your domain. Content archives include Models.json, content settings, and assets in [ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients). You can upload and download content archives onto your computer. From **Content Archives** in the **Content** dropdown menu, you can see and download all of your backups of domain content and content settings. These backups can be used to restore your domain to a previous version or to share your archive and settings info with another user. ![](content-archive-list.PNG)
 
 To manage automatic content archive intervals, go to **Automatic Content Archives** in the **Settings** dropdown menu or follow the link provided. For more information, see [Automatic Content Archives](https:://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/server-settings-for-your-domain#access-your-server-settings). 
 
-You can create a content archive manually by clicking **Generate New Archive**. You should see a "Generate a content archive" pop-up window. Type in a name for your new archive, then click **Generate Archive**. ![](generate-content-archive.png)
+You can create a content archive manually by clicking **Generate New Archive**. You should see a "Generate a content archive" pop-up window. Type in a name for your new archive, then click **Generate Archive**. ![](generate-content-archive.PNG)
 
-To share your domain content and content settings, simply download a copy of the archive you wish to share and send it to the other user. You can download any archive by clicking the three buttons on the right. ![](download-archive.png)
+To share your domain content and content settings, simply download a copy of the archive you wish to share and send it to the other user. You can download any archive by clicking the three buttons on the right. ![](download-archive.PNG)
 
-Finally, you can import a content archive you have stored on your computer by clicking on **Choose File** under Upload Content, selecting the archive .zip file, then clicking **Upload Content**. ![](upload-content.png)
-An "Are you sure?" pop-up window should appear confirming that your domain content will be replaced. Click **Restore Content**. Your domain server will restart. ![](are-you-sure.png)
+Finally, you can import a content archive you have stored on your computer by clicking on **Choose File** under Upload Content, selecting the archive .zip file, then clicking **Upload Content**. ![](upload-content.PNG)
+An "Are you sure?" pop-up window should appear confirming that your domain content will be replaced. Click **Restore Content**. Your domain server will restart. ![](are-you-sure.PNG)
