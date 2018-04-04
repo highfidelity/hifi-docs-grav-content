@@ -58,7 +58,7 @@ For the Reference pose, we propose a TPose which complies with the specification
 - HeadTop_End = 0,0,0
 - RightEye = 0,0,0
 - LeftEye = 0,0,0
-- LeftShoulder = 90,90,90
+- LeftShoulder = 90,90,0
 - LeftArm = 0,0,0
 - LeftForeArm = 0,0,0
 - LeftHand = 0,0,0
@@ -82,7 +82,7 @@ For the Reference pose, we propose a TPose which complies with the specification
 - LeftHandPinky2 = 0,0,0
 - LeftHandPinky3 = 0,0,0
 - LeftHandPinky4 = 0,0,0
-- RightShoulder = 90,90,90
+- RightShoulder = 90,-90,0
 - RightArm = 0,0,0
 - RightForeArm = 0,0,0
 - RightHand = 0,0,0
@@ -108,13 +108,13 @@ For the Reference pose, we propose a TPose which complies with the specification
 - RightHandThumb4 = 0,0,0
 - LeftUpLeg = 0,0,0
 - LeftLeg = 0,0,0
-- LeftFoot = 51.39617927,51.39617927,51.39617927
-- LeftToeBase = 38.19675833,38.19675833,38.19675833
+- LeftFoot = 51.39617927,0,0
+- LeftToeBase = 38.19675833,0,0
 - LeftToe_End = 0,0,0
 - RightUpLeg = 0,0,0
 - RightLeg = 0,0,0
-- RightFoot = 51.4549916,51.4549916,51.4549916
-- RightToeBase = 38.19938444,38.19938444,38.19938444
+- RightFoot = 51.4549916,0,0
+- RightToeBase = 38.19938444,0,0
 - RightToe_End = 0,0,0
 
 ## Look-at Vectors
