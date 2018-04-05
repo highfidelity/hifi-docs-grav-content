@@ -1,5 +1,5 @@
 ---
-title: Bookmark Your Avatar
+title: Avatar Creation Tipsheet 
 taxonomy:
     category: docs
 ---
