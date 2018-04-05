@@ -10,6 +10,8 @@ taxonomy:
 
 High Fidelity avatars are FBX files, with specific orientations and joints as described below. You can change your avatar by going to **Settings > Avatar > Appearance**, and specifying the URL to your avatar. 
 
+>>>>> Go [here](https://docs.highfidelity.com/create-and-explore/avatars/create-avatars) for more information about how to create your own avatar.
+
 Presently, you need to host your own avatar file somewhere, unless you are using one of the examples found in the marketplace. You can use a marketplace avatar (and also download and explore them as samples to create your own) by going to the marketplace, selecting the 'Avatars' category, and choosing one.
 
 ## Reference Pose
