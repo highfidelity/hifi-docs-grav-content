@@ -103,4 +103,4 @@ Now you can package your avatar to use it in High Fidelity.
 6. Create a new folder AvatarName_Exported.
 7. Select your folder and click ‘Select Folder’.
 8. Your output folder should contain a .fst file and a folder with textures in it.
-9. Upload your avatar.
+9. Upload your avatar to somewhere publically accessible like a [S3 Bucket](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
