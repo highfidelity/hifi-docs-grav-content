@@ -92,15 +92,15 @@ This section covers making a simple edit to the script as an example of how to u
 The butterflies are pretty, but there are a lot of them. A simple edit to make is to change the number of butterflies to a manageable number, like two. Set the `numButterflies` to `2`.
 
 ```
-1 // Distributed under the Apache License, Version 2.0.
-2 // See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
-3 //
-4 
-5 var numButterflies = 2; //a more manageable number
-6 
-7 function getRandomFloat(min, max) {
-8     return Math.random() * (max - min) + min;
-9 }
+// Distributed under the Apache License, Version 2.0.
+// See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+//
+
+var numButterflies = 2; //a more manageable number
+
+function getRandomFloat(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
 ```
 
@@ -117,13 +117,13 @@ Logs are an indispensable part of any scripting. You might have noticed that the
 You can use the `print()` function to see data in the debug log. For example you can add a command to print towards the end of the function `addButterfly()` (around line 97) to indicate when a butterfly has been added.
 
 ```
-1 function addButterfly() {
-2 
-3 // ...
-4 
-5   butterflies.push(Entities.addEntity(properties));
-6     print("Butterfly added!");
-7 }
+function addButterfly() {
+
+// ...
+
+  butterflies.push(Entities.addEntity(properties));
+    print("Butterfly added!");
+}
 
 ```
 
@@ -146,7 +146,7 @@ Looking at the definition of `properties` in the code section just above this li
 To print out the butterfly position, try adding `properties.position` to the print statement:
 
 ```
-1 print("Butterfly added at: " + properties.position);
+print("Butterfly added at: " + properties.position);
 
 ```
 
@@ -161,7 +161,7 @@ Take a look at the output:
 This isn't very human-readable. To improve readability, you can use JSON.stringify():
 
 ```
-1 print("Butterfly added at: " + JSON.stringify(properties.position));
+print("Butterfly added at: " + JSON.stringify(properties.position));
 
 ```
 
