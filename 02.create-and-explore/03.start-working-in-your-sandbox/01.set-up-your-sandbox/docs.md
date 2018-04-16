@@ -19,7 +19,7 @@ Check the system requirements to run High Fidelity [here](https://docs.highfidel
 
 ### Download and Install the Latest High Fidelity Build
 
-Download the latest build of the High Fidelity software [here](https://highfidelity.com/download).
+Download the latest build of the High Fidelity Client and Sandbox [here](https://highfidelity.com/download).
 
 >>>>> We are still in the process of nailing down the minimum system requirements, but any machine made in the last 5 years with at least a dual core should be able to host a modest experience for a small number of viewers. However, for larger numbers of viewers and hosting additional content, hosting services such as Amazon S3 or Digital Ocean could be used.
 

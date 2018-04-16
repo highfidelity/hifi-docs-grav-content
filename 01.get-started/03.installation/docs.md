@@ -5,15 +5,6 @@ taxonomy:
         - docs
 ---
 
-Select your preferred platform and download High Fidelity's Interface and Sandbox [here](https://highfidelity.com/download). 
+To download High Fidelity's Interface, follow the instructions [here](https://docs.highfidelity.com/get-started/installation/client-install).
 
-
-* Run the High Fidelity installer.
-* Follow the prompts and complete the installation (don't forget to download Interface and Sandbox).
-* Run High Fidelity's Interface. 
-* Learn how you can create and explore in High Fidelity [here](../../../create-and-explore). 
-
-
-
-
-> > > > > The installer will remember your choice of Express or Custom installation for the next time you update High Fidelity. 
+Want to host your own content? Follow the instructions [here](https://docs.highfidelity.com/get-started/installation/client-and-sandbox-install) to download High Fidelity's Client and Sandbox. 
