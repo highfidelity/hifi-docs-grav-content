@@ -134,10 +134,7 @@ The spawnBow script has two main parts: the first part of the script calculates 
       "z": 0.0159
   };
   var leftHandRotation = Quat.fromPitchYawRollDegrees(90, -90, 0);
- 
- 
- 
- rightHandPosition = Vec3.multiplyVbyV(leftHandPosition, { x: -1, y: 0, z: 0 });
+  var rightHandPosition = Vec3.multiplyVbyV(leftHandPosition, { x: -1, y: 0, z: 0 });
   var rightHandRotation = Quat.fromPitchYawRollDegrees(90, 90, 0);
 
   var userData = {

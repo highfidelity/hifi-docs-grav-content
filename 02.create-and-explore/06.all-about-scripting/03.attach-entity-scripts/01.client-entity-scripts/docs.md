@@ -23,10 +23,7 @@ Here is a client entity script, `changeColorOnClickDown.js`, which when attached
 
 //  changeColorOnClickDown.js
 (function () {
-   
-   
-   
-   clicked = false;
+    var clicked = false;
     this.clickDownOnEntity = function (entityID, mouseEvent) {
         if (clicked){
             Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 255} });

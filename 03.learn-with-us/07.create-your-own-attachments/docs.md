@@ -84,11 +84,7 @@ Let’s create a Viking helmet attachment for your avatar.
    ```javascript
    (function () {
    'use strict';
-  
-  
-  
-  
-  main = function () {
+	var main = function () {
    	var attachment = {
    	modelURL: "http://mpassets.highfidelity.com/f2793a6a-8345-410a-b3bd-ebd67437ad53-v1/vikinghat.fbx",
    	jointName: "HeadTop_End",

@@ -710,11 +710,7 @@ var firstAboutXThenY = Quat.multiply(turnAboutY, turnAboutX);
 var handController = Controller.Standard.RightHand;
 var handPose = Controller.getPoseValue(handController);
 if (handPose.valid) {
-   
-   
-   
-   
-   handOrientation = Quat.multiply(MyAvatar.orientation, handPose.rotation);
+	var handOrientation = Quat.multiply(MyAvatar.orientation, handPose.rotation);
 }
 ```
 

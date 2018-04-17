@@ -180,11 +180,7 @@ Now, let’s make the gemstone buttons interact with High Fidelity. The Tablet U
             function main() {
                 // Send an event to gemstoneApp.js when the page loads and is ready to get things rolling
                 console.log("document ready");
-               
-			   
-			   
-			   
-			   readyEvent = {
+				var readyEvent = {
                     "type": "ready",
                 };
                 // The event bridge handles events represented as a string the best. So we first create a Javascript object, then convert to stirng
