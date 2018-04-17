@@ -23,27 +23,27 @@ Here is an example server entity script that modifies the intensity of a light e
 
 ```
 
- 1 (function() {
- 2     var MINIMUM_LIGHT_INTENSITY = 100.0;
- 3     var MAXIMUM_LIGHT_INTENSITY = 125.0;
- 4
- 5     // Return a random number between `low` (inclusive) and `high` (exclusive)
- 6     function randFloat(low, high) {
- 7         return low + Math.random() * (high - low);
- 8     }
- 9
-10     var self = this;
-11     this.preload = function(entityID) {
-12         self.intervalID = Script.setInterval(function() {
-13             Entities.editEntity(entityID, {
-14                 intensity: randFloat(MINIMUM_LIGHT_INTENSITY, MAXIMUM_LIGHT_INTENSITY)
-15             });
-16         }, 100);
-17     };
-18     this.unload = function() {
-19         Script.clearInterval(self.intervalID);
-20     }
-21 });
+ (function() {
+     var MINIMUM_LIGHT_INTENSITY = 100.0;
+     var MAXIMUM_LIGHT_INTENSITY = 125.0;
+
+     // Return a random number between `low` (inclusive) and `high` (exclusive)
+     function randFloat(low, high) {
+         return low + Math.random() * (high - low);
+     }
+
+     var self = this;
+     this.preload = function(entityID) {
+         self.intervalID = Script.setInterval(function() {
+             Entities.editEntity(entityID, {
+                 intensity: randFloat(MINIMUM_LIGHT_INTENSITY, MAXIMUM_LIGHT_INTENSITY)
+             });
+         }, 100);
+     };
+     this.unload = function() {
+         Script.clearInterval(self.intervalID);
+     }
+ });
 
 ```
 

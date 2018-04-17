@@ -298,8 +298,8 @@ Filters are methods of the [RouteObject](https://wiki.highfidelity.com/wiki/Rout
 You may want to use different mappings depending on your user's setup. For example, if your user is using an HMD (such as the Oculus Rift) in addition to a hand-held controller (GamePad, Hydra, etc.), to provide greater user comfort, you may want to provide different controls than when using a GamePad alone. To create conditional mappings, use the [RouteObject](https://wiki.highfidelity.com/wiki/RouteObject)'s `when` method. Here we have an example of route created only when the application is in HMD mode followed by the route to be used if the application is not in HMD mode.
 
 ```
-1 mapping.from(Controller.Test.LY).when(Controller.Application.InHMD).to(Controller.Standard.RY);
-2 mapping.from(Controller.Test.LY).to(Controller.Standard.LY);
+mapping.from(Controller.Test.LY).when(Controller.Application.InHMD).to(Controller.Standard.RY);
+mapping.from(Controller.Test.LY).to(Controller.Standard.LY);
 ```
 
 ### Mapping Order
