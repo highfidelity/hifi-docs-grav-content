@@ -14,52 +14,7 @@ Learn how you can create avatar wearables that you can sell in our shopping area
 
 >>>>> If you're making a wearable entity for the Marketplace, make sure it is fit to the default wooden mannequin avatar (unless you are specifically making it to go with a very specific base avatar model).
 
-### Automated Tools
-There are two automatic tools that you can use to create and set up your wearable for sale on the Marketplace. 
-
-* Set up your store with models where you would like them.
-* Package for marketplace: https://hifi-content.s3.amazonaws.com/DomainContent/AvatarStore/Utilities/WearableJSONExporter/marketplace-packager.js
-* This app lets you click on an entity in the space, select the desired joint for it, and export a JSON file that can be uploaded to the Marketplace. 
-* Use the JSON file and updated model URL to upload to the Marketplace. 
-* Make your store copy demo-able: https://hifi-content.s3.amazonaws.com/DomainContent/AvatarStore/Utilities/Wearable%20Creator/create-wearable.js
-* This app lets you click on an entity in the space, paste in the marketplaceID, select the joint, and save it. It will then attach the appropriate demo scripts and user data to the store copy and lock it. 
-
-### Manual Process
-
-Avatar wearables have the concept of a 'display copy'. This 'display copy' contains the user data for spawning new wearables via an entity server script. The script does not require a user to have rez or rez temporary permissions to use. 
-
-* Import your model into the store and set it up on display. 
-* Set grabbable to `true` and make sure dynamic and cloneable are `false`. 
-* Uncheck all boxes under 'Collides With' other than 'Dynamic Entities'.
-* Add the following user data into your wearable's user data field:
-```
-{
- "Attachment": {
- "action": "attach",
- "joint": "Hips",
- "attached" : false,
- "options": {
- "translation": {
- "x": 0,
- "y": 0,
- "z": 0
- },
- "scale": 1
- }
- },
- "grabbableKey": {
- "cloneable": false,
- "grabbable": true
- },
-"marketplaceID" : UUID_for_Marketplace_Page_To_Link_To
-}
-```
-The above user data is required to specify what joints an attachment can be added to. The marketplaceID should match the id of whatever item you want someone to purchase. For joints that can be attached to either the left or the right, use "[LR]" as a prefix, e.g. [LR]ForeArm. Currently, we are limited to a single joint.
-
-* Add the following script to the server script field: https://hifi-content.s3.amazonaws.com/liv/avatar_shopping_demo/wearableServer.js
-* Lock your display copy. It will ensure that there are always at least 1 clone to grab and will spawn a new wearable with a lifetime of five minutes when an item is removed from the shelf in a shopping area. 
-
-#### Exporting for Marketplace
+### Exporting for Marketplace
 To export your item for uploading to Marketplace, first follow the standard steps for exporting entities and make the following changes in the JSON:
 
 ```
@@ -117,6 +72,37 @@ Sample Marketplace JSON for "Teeny Beanie":
 }
 ```
 
+### Create a Display Model In-World
 
+Avatar wearables have the concept of a 'display copy'. This 'display copy' contains the user data for spawning new wearables via an entity server script. The script does not require a user to have rez or rez temporary permissions to use. 
 
+* Import your model into the store and set it up on display. 
+* Set grabbable to `true` and make sure dynamic and cloneable are `false`. 
+* Uncheck all boxes under 'Collides With' other than 'Dynamic Entities'.
+* Add the following user data into your wearable's user data field:
+```
+{
+ "Attachment": {
+ "action": "attach",
+ "joint": "Hips",
+ "attached" : false,
+ "options": {
+ "translation": {
+ "x": 0,
+ "y": 0,
+ "z": 0
+ },
+ "scale": 1
+ }
+ },
+ "grabbableKey": {
+ "cloneable": false,
+ "grabbable": true
+ },
+"marketplaceID" : UUID_for_Marketplace_Page_To_Link_To
+}
+```
+The above user data is required to specify what joints an attachment can be added to. The marketplaceID should match the id of whatever item you want someone to purchase. For joints that can be attached to either the left or the right, use "[LR]" as a prefix, e.g. [LR]ForeArm. Currently, we are limited to a single joint.
 
+* Add the following script to the server script field: https://hifi-content.s3.amazonaws.com/liv/avatar_shopping_demo/wearableServer.js
+* Lock your display copy. It will ensure that there are always at least 1 clone to grab and will spawn a new wearable with a lifetime of five minutes when an item is removed from the shelf in a shopping area. 
