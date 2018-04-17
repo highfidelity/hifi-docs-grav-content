@@ -6,66 +6,99 @@ taxonomy:
 
 *Build High Fidelity in Linux.*
 
-## Overview
+# Linux build guide
 
-Please read the [general build guide](../build-guide) for information on dependencies required for all platforms. Only Linux specific instructions are found in this file.
+Please read the [general build guide](BUILD.md) for information on dependencies required for all platforms. Only Linux specific instructions are found in this file.
 
-### Qt5
+## Qt5 Dependencies
 
-Dependencies Should you choose not to install Qt5 via a package manager that handles dependencies for you, you may be missing some Qt5 dependencies. On Ubuntu, for example, the following additional packages are required:
+Should you choose not to install Qt5 via a package manager that handles dependencies for you, you may be missing some Qt5 dependencies. On Ubuntu, for example, the following additional packages are required:
 
-```
-libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev
-```
+    libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev
 
-With the new build method in place it becomes somewhat easier to build domain-server, assignment-client and interface with Ubuntu 14.10.
+## Ubuntu 16.04 specific build guide
 
-### Ubuntu
-
-Here's what's needed starting from a clean Ubuntu 14.10 (server variant used) install.
-
-#### Install Requirements
-
-Install the needed requirements:
-
-```
-sudo apt-get install git build-essential cmake qt5-default qtscript5-dev libssl-dev qttools5-dev qtmultimedia5-dev libqt5svg5-dev libqt5webkit5-dev libsdl2-dev libqt5xmlpatterns5-dev qttools5-dev-tools libqt5websockets5-dev
+### Prepare environment
+hifiqt5.10.1
+Install qt:
+```bash
+wget http://debian.highfidelity.com/pool/h/hi/hifiqt5.10.1_5.10.1_amd64.deb
+sudo dpkg -i hifiqt5.10.1_5.10.1_amd64.deb
 ```
 
-#### Download Source Code
-
-Make directories in and download the source code:
-
+Install build dependencies:
+```bash
+sudo apt-get install libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev
 ```
-mkdir $HOME/source
-cd $HOME/source
+
+To compile interface in a server you must install:
+```bash
+sudo apt -y install libpulse0 libnss3 libnspr4 libfontconfig1 libxcursor1 libxcomposite1 libxtst6 libxslt1.1
+```
+
+Install build tools:
+```bash
+sudo apt install cmake
+```
+
+### Get code and checkout the tag you need
+
+Clone this repository:
+```bash
 git clone https://github.com/highfidelity/hifi.git
 ```
 
-#### Compile High Fidelity Components
-
-Now you're ready to setup for compiling HF components:
-
-```
-mkdir compile
-cd compile
-cmake ../hifi/
+To compile a RELEASE version checkout the tag you need getting a list of all tags:
+```bash
+git fetch -a
+git tags
 ```
 
-#### Domain Server
-
-If you want server side parts:
-
-```
-make assignment-client
-make domain-server
+Then checkout last tag with:
+```bash
+git checkout tags/RELEASE-6819
 ```
 
-#### Install Interface
-
-If you want Interface:
-
+Or go to the highfidelity download page (https://highfidelity.com/download) to get the release version. For example, if there is a BETA 6731 type:
+```bash
+git checkout tags/RELEASE-6731
 ```
-sudo apt-get install qml-module-qtgraphicaleffects qml-module-qtwebkit qml-module-qtquick-controls libqtwebkit-qmlwebkitplugin
-make interface
+
+### Compiling
+
+Create the build directory:
+```bash
+mkdir -p hifi/build
+cd hifi/build
 ```
+
+Prepare makefiles:
+```bash
+cmake -DQT_CMAKE_PREFIX_PATH=/usr/local/Qt5.10.1/5.10/gcc_64/lib/cmake ..
+```
+
+Start compilation and get a cup of coffee:
+```bash
+make domain-server assignment-client interface
+```
+
+In a server does not make sense to compile interface
+
+### Running the software
+
+Running domain server:
+```bash
+./domain-server/domain-server
+```
+
+Running assignment client:
+```bash
+./assignment-client/assignment-client -n 6
+```
+
+Running interface:
+```bash
+./interface/interface
+```
+
+Go to localhost in running interface.
