@@ -132,7 +132,8 @@ For instance: create a box, and then copy the following text into the Script URL
 ```
 (function () {
     print("Starting highlight script...............");
-    var _this = this;
+   
+   _this = this;
     var prevID = 0;
     var listName = "contextOverlayHighlightList";
     var listType = "entity";

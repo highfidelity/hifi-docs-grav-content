@@ -324,7 +324,11 @@ var overlay = Overlays.addOverlay("cube", {
 });
 
 Controller.mousePressEvent.connect(function (event) {
-    var pickRay = Camera.computePickRay(event.x, event.y);
+   
+   
+   
+   
+   pickRay = Camera.computePickRay(event.x, event.y);
     var intersection = Overlays.findRayIntersection(pickRay);
     print("Intersection: " + JSON.stringify(intersection));
 });

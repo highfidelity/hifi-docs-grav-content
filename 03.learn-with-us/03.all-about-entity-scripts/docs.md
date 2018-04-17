@@ -20,7 +20,10 @@ If you went through [Get Started with Scripting in High Fidelity](../get-started
 
 ```javascript
 
-var boxPosition = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
+
+
+
+boxPosition = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
     type: "Box",
     name: "ScriptBox",

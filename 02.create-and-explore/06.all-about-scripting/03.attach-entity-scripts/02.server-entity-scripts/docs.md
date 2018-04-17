@@ -25,7 +25,10 @@ Here is an example server entity script that modifies the intensity of a light e
 
  (function() {
      var MINIMUM_LIGHT_INTENSITY = 100.0;
-     var MAXIMUM_LIGHT_INTENSITY = 125.0;
+    
+	
+	
+	MAXIMUM_LIGHT_INTENSITY = 125.0;
 
      // Return a random number between `low` (inclusive) and `high` (exclusive)
      function randFloat(low, high) {

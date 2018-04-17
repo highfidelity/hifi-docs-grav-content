@@ -131,7 +131,10 @@ Since colors go from 0-255 we could do the following:
 ```
 var red = 0;
 function  changeCubeColor(redValue){
-    var entityColorProps = Entities.getEntityProps(cubeID, [“color”]).color;
+   
+   
+   
+   entityColorProps = Entities.getEntityProps(cubeID, [“color”]).color;
     entityColorProps.red = redValue;
     Entities.editEntity(cubeID, entityColorProps);
 }

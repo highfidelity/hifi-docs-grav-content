@@ -21,19 +21,22 @@ Here is a client entity script, `changeColorOnClickDown.js`, which when attached
 
 ```
 
- 1 //  changeColorOnClickDown.js
- 2 (function () {
- 3     var clicked = false;
- 4     this.clickDownOnEntity = function (entityID, mouseEvent) {
- 5         if (clicked){
- 6             Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 255} });
- 7             clicked = false;
- 8         } else {
- 9             Entities.editEntity(entityID, { color: { red: 255, green: 255, blue: 0} });
-10             clicked = true;
-11         }
-12     };
-13 })
+//  changeColorOnClickDown.js
+(function () {
+   
+   
+   
+   clicked = false;
+    this.clickDownOnEntity = function (entityID, mouseEvent) {
+        if (clicked){
+            Entities.editEntity(entityID, { color: { red: 0, green: 255, blue: 255} });
+            clicked = false;
+        } else {
+            Entities.editEntity(entityID, { color: { red: 255, green: 255, blue: 0} });
+            clicked = true;
+        }
+    };
+})
 
 ```
 

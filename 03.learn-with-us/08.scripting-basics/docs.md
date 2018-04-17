@@ -102,7 +102,10 @@ var positionOfObjectInFrontOfMe = Vec3.sum(myPosition, distanceVectorOfObjectInF
  
 // we can even wrap this all up in a function to help simplify this any time we want the position of an object to appear in front of us
 function getPositionInFrontOfMe(distanceInFrontOfMe){
-  var myPosition = MyAvatar.position;
+ 
+ 
+ 
+ myPosition = MyAvatar.position;
   var myOrientation = MyAvatar.orientation;
   var myDirection = Quat.getForward(myOrientation);
   var distanceVectorOfObjectInFrontOfMe= Vec3.multiply(myDirection, distanceInFrontOfMe);
