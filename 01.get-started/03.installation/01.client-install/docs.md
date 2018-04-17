@@ -16,13 +16,10 @@ You can download High Fidelity's Interface through Steam or through the client i
 > > > > > The installer will remember your choice of Express or Custom installation for the next time you update High Fidelity. 
 
 The client only installer uses the same packaging code as the server/client installer. This means it looks and behaves mostly the same, but does not include the Sandbox.
-+ The client only installer does not show the components page during install that allows the selection of "High Fidelity Interface" and "High Fidelity Sandbox"
-+ The client only installer is named "High Fidelity Interface". The default install location is at "High Fidelity Interface{ - PRXXXX}" instead of "High Fidelity"
++ The client only installer does not show the components page during installation that allows the selection of "High Fidelity Interface" and "High Fidelity Sandbox"
++ The client only installer is named "High Fidelity Interface". The default install location is at "High Fidelity Interface" instead of "High Fidelity"
 + The client only installer only shows client related install options
   - It offers to create a desktop shortcut for Interface
   - It offers to launch Interface after the install
   - It offers to perform a clean install (removing older settings and content)
-    * A clean install from a client only install only removes two files from the Roaming folder of AppData
-	  + "$APPDATA\Roaming\High Fidelity{- PRXXXX}\Interface\AccountInfo.bin"
-      + "$APPDATA\Roaming\High Fidelity{- PRXXXX}\Interface\Interface.json"
   - For PR builds it offers to copy settings and content from production install
