@@ -131,7 +131,7 @@ For instance: create a box, and then copy the following text into the Script URL
 
 ```
 (function () {
-	print("Starting highlight script...............");
+    print("Starting highlight script...............");
     var _this = this;
     var prevID = 0;
     var listName = "contextOverlayHighlightList";
@@ -152,7 +152,7 @@ For instance: create a box, and then copy the following text into the Script URL
     };
 
 
-   cleanup = function(){
+    var cleanup = function(){
         Entities.findEntities(MyAvatar.position, 1000).forEach(function(entity) {
             try {
                 Selection.removeListFromMap(listName);

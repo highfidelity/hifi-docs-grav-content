@@ -113,7 +113,7 @@ The script then uses [findRayIntersection()](https://wiki.highfidelity.com/wiki/
 
 ```java
 function mousePressEvent(event) {
-	var pickRay = Camera.computePickRay(event.x, event.y);
+    var pickRay = Camera.computePickRay(event.x, event.y);
     var intersection = Entities.findRayIntersection(pickRay);
         if (intersection.intersects) {
           print ("You clicked on an entity of type: " + intersection.properties.type);     

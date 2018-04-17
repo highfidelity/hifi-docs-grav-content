@@ -26,9 +26,7 @@ The first thing that we'll do is create an [Interface script](https://wiki.highf
 (function() {
 
 	var APP_NAME = "Avatars";
-   
-   
-   APP_URL = "YOUR_APP_HTML_FILE_URL";
+    var APP_URL = "YOUR_APP_HTML_FILE_URL";
     var APP_ICON = "YOUR_APP_ICON_IMAGE_HERE"
 	
     // Link to our avatar options
