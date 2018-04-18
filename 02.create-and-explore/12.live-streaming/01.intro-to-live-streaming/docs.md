@@ -12,7 +12,7 @@ If you want to reach your audience through YouTube or Twitch, or your friends th
 
 Before you get started, you will need to download and install the following:
 
-* [High Fidelity's Interface and Sandbox](https://highfidelity.com/download) (if you haven't already downloaded the latest release).
+* [High Fidelity's Interface and Sandbox](https://highfidelity.com/download/clientserver) (if you haven't already downloaded the latest release).
 * [Open Broadcaster Software (OBS)](https://obsproject.com/) (recommended).
 
 You can use the recording and streaming software of your choice. We recommend OBS and have included instructions for using OBS in this series as well. 
