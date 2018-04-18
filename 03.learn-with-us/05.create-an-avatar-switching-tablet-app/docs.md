@@ -23,53 +23,53 @@ The High Fidelity Tablet is an in-world object that serves as the main interface
 The first thing that we'll do is create an [Interface script](https://wiki.highfidelity.com/wiki/Script_Types_Overview) that will load in our tablet app to swap avatars. In addition to "installing" our app into our tablet, launchAvatarApp.js will also handle the logic of storing links to our avatar FST files, setting up our app properties, and listening for events from button clicks on our app's HTML.
 
 ```
- 1 (function() {
- 2 
- 3 	var APP_NAME = "Avatars";
- 4     var APP_URL = "YOUR_APP_HTML_FILE_URL";
- 5     var APP_ICON = "YOUR_APP_ICON_IMAGE_HERE"
- 6 	
- 7     // Link to our avatar options
- 8     var AVATARURL1 = "AVATAR_FST_FILE_LINK_1";
- 9     var AVATARURL2 = "AVATAR_FST_FILE_LINK_2";
-10     
-11     // Get a reference to the tablet 
-12 	var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
-13 	var button = tablet.addButton({
-14         	text: APP_NAME,
-15             icon: APP_ICON
-16     	});
-17 
-18     function clicked(){
-19         tablet.gotoWebScreen(APP_URL);
-20     }
-21     button.clicked.connect(clicked);
-22 
-23     function onWebEventReceived(event){
-24         print("Received Web Event: " + event);
-25 
-26         if(typeof event === "string"){
-27             event = JSON.parse(event);
-28         }
-29 
-30         if(event.type === "click")
-31         {
-32             if(event.data === "Avatar 1"){
-33                 print("Avatar 1 data");
-34                 MyAvatar.skeletonModelURL = AVATARURL1;
-35             }
-36             else if(event.data === "Avatar 2"){
-37                 print("Avatar 2 data");
-38                 MyAvatar.skeletonModelURL = AVATARURL2;
-39             }
-40         }
-41     }
-42     tablet.webEventReceived.connect(onWebEventReceived);
-43 	function cleanup() {
-44         tablet.removeButton(button);
-45 	}
-46     Script.scriptEnding.connect(cleanup);
-47 }());
+(function() {
+
+	var APP_NAME = "Avatars";
+    var APP_URL = "YOUR_APP_HTML_FILE_URL";
+    var APP_ICON = "YOUR_APP_ICON_IMAGE_HERE"
+	
+    // Link to our avatar options
+    var AVATARURL1 = "AVATAR_FST_FILE_LINK_1";
+    var AVATARURL2 = "AVATAR_FST_FILE_LINK_2";
+    
+    // Get a reference to the tablet 
+	var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
+	var button = tablet.addButton({
+        	text: APP_NAME,
+            icon: APP_ICON
+    	});
+
+    function clicked(){
+        tablet.gotoWebScreen(APP_URL);
+    }
+    button.clicked.connect(clicked);
+
+    function onWebEventReceived(event){
+        print("Received Web Event: " + event);
+
+        if(typeof event === "string"){
+            event = JSON.parse(event);
+        }
+
+        if(event.type === "click")
+        {
+            if(event.data === "Avatar 1"){
+                print("Avatar 1 data");
+                MyAvatar.skeletonModelURL = AVATARURL1;
+            }
+            else if(event.data === "Avatar 2"){
+                print("Avatar 2 data");
+                MyAvatar.skeletonModelURL = AVATARURL2;
+            }
+        }
+    }
+    tablet.webEventReceived.connect(onWebEventReceived);
+	function cleanup() {
+        tablet.removeButton(button);
+	}
+    Script.scriptEnding.connect(cleanup);
+}());
 
 ```
 
@@ -82,67 +82,67 @@ The rest of the script handles switching between different avatars depending on 
 The next step of setting up our app is to create the HTML page that will be our app's UI. We'll be doing a simple layout that includes the two buttons for choosing our avatars with basic CSS styling.
 
 ```
- 1 <html>
- 2     <head>
- 3         <title>Avatar Selector</title>
- 4         <meta charset="utf-8">
- 5         <meta name="viewport" content="width=device-width, initial-scale=1">
- 6         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
- 7         <style>
- 8             body {margin: 0;width: 100%; font-family: 'Raleway', sans-serif; color: white;
- 9                   background: linear-gradient(#2b2b2b, #0f212e); }
-10 
-11             .top-bar { height: 90px; background: linear-gradient(#2b2b2b, #1e1e1e); font-weight: bold;
-12                        padding-left: 30px; padding-right: 30px; display: flex; align-items: center;
-13                        position: fixed; width: 480px; top: 0; z-index: 1;}
-14             
-15             .content { margin-top: 90px; padding: 30px;}
-16 
-17             input[type=button] {font-family: 'Raleway'; font-weight: bold; font-size: 13px;
-18                 text-transform: uppercase; vertical-align: top; height: 28px; min-width: 120px;
-19                 padding: 0px 18px; margin-right: 6px; border-radius: 5px; border: none;
-20                 color: #fff; background-color: #000; background: linear-gradient(#343434 20%, #000 100%);
-21                 cursor: pointer;}
-22 
-23             input[type=button].white { color: #121212; background-color: #afafaf; background: linear-gradient(#fff 20%, #afafaf 100%); }
-24 
-25             input[type=button]:enabled:hover { background: linear-gradient(#000, #000); border: none;  }
-26            
-27             input[type=button].white:enabled:hover { background: linear-gradient(#fff, #fff); border: none; }
-28 
-29             input[type=button]:active { background: linear-gradient(#343434, #343434); }
-30            
-31             input[type=button].white:active { background: linear-gradient(#afafaf, #afafaf); }
-32 
-33             input[type=button]:disabled { color: #252525; background: linear-gradient(#575757 20%, #252525 100%);}
-34         </style>
-35     </head>
-36     <body>
-37         <div class="top-bar">
-38             <h4>Choose an Avatar</h4>
-39         </div>
-40         <div class="content">
-41             <p><input type="button" class="white avatar-button" value="Avatar 1"></p>
-42             <p><input type="button" class="white avatar-button" value="Avatar 2"></p>
-43         </div>
-44 
-45         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-46         <script>
-47             function main() {
-48                 EventBridge.emitWebEvent("Document Ready");
-49                 
-50                 $(".avatar-button").click(function(){
-51                     var clickEvent = {
-52                         "type" : "click",
-53                         "data" : this.value
-54                     };
-55                     EventBridge.emitWebEvent(JSON.stringify(clickEvent));
-56                 })
-57             }
-58             $(document).ready(main);
-59         </script>
-60     </body>
-61 </html>
+<html>
+    <head>
+        <title>Avatar Selector</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
+        <style>
+            body {margin: 0;width: 100%; font-family: 'Raleway', sans-serif; color: white;
+                  background: linear-gradient(#2b2b2b, #0f212e); }
+
+            .top-bar { height: 90px; background: linear-gradient(#2b2b2b, #1e1e1e); font-weight: bold;
+                       padding-left: 30px; padding-right: 30px; display: flex; align-items: center;
+                       position: fixed; width: 480px; top: 0; z-index: 1;}
+            
+            .content { margin-top: 90px; padding: 30px;}
+
+            input[type=button] {font-family: 'Raleway'; font-weight: bold; font-size: 13px;
+                text-transform: uppercase; vertical-align: top; height: 28px; min-width: 120px;
+                padding: 0px 18px; margin-right: 6px; border-radius: 5px; border: none;
+                color: #fff; background-color: #000; background: linear-gradient(#343434 20%, #000 100%);
+                cursor: pointer;}
+
+            input[type=button].white { color: #121212; background-color: #afafaf; background: linear-gradient(#fff 20%, #afafaf 100%); }
+
+            input[type=button]:enabled:hover { background: linear-gradient(#000, #000); border: none;  }
+           
+            input[type=button].white:enabled:hover { background: linear-gradient(#fff, #fff); border: none; }
+
+            input[type=button]:active { background: linear-gradient(#343434, #343434); }
+           
+            input[type=button].white:active { background: linear-gradient(#afafaf, #afafaf); }
+
+            input[type=button]:disabled { color: #252525; background: linear-gradient(#575757 20%, #252525 100%);}
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <h4>Choose an Avatar</h4>
+        </div>
+        <div class="content">
+            <p><input type="button" class="white avatar-button" value="Avatar 1"></p>
+            <p><input type="button" class="white avatar-button" value="Avatar 2"></p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            function main() {
+                EventBridge.emitWebEvent("Document Ready");
+                
+                $(".avatar-button").click(function(){
+                    var clickEvent = {
+                        "type" : "click",
+                        "data" : this.value
+                    };
+                    EventBridge.emitWebEvent(JSON.stringify(clickEvent));
+                })
+            }
+            $(document).ready(main);
+        </script>
+    </body>
+</html>
 
 ```
 
