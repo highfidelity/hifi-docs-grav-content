@@ -8,40 +8,19 @@ taxonomy:
 
 ###Backup Your Sandbox 
 
-To backup your entire sandbox: 
+To back up your entire sandbox, first launch your sandbox by clicking the icon in the system tray (Windows) or in the top menu bar (OS X) and clicking Go Home.
 
-1. Quit Sandbox on your machine
-2. Transfer the following folders out of your AppData folders into a new location on your machine or externally:
+To view the settings page click on the **Settings** option.
 
-Windows
+![](\menu-settings.png)
 
-      - C:\Users\username\AppData\Roaming\High Fidelity\assignment-client
-      - C:\Users\username\AppData\Roaming\High Fidelity\domain-server
-      - C:\Users\username\AppData\Roaming\High Fidelity\Server Console
-      - C:\Users\username\AppData\Roaming\High Fidelity\domain-server.json     
-        ![](appdata-folders.PNG)
+This opens the server settings page ([**http://localhost:40100**](http://localhost:40100)) in your default web browser.
 
-OS X
+![](\server-settings.png)
 
-    - /Users/[username]/Library/Application Support/High Fidelity/assignment-client
-    - /Users/[username]/Library/Application Support/High Fidelity/domain-server
-    - /Users/[username]/.config/highfidelity.io/domain-server.json
-    - /Users/[username]/Library/Application Support/High Fidelity/Server Console
+Navigate to **Settings Backup / Restore** in the **Settings** dropdown menu. ![](settings-settings-backup-restore.PNG)
 
-Linux  (this has changed to /root/local/share....)
+You can save your domain's settings by clicking **Download Domain Settings**. This will download a .json file onto your computer. ![](domain-settings-backups-1.PNG)
 
-    - /home/[username]/.local/share/High Fidelity/assignment-client
-    - /home/[username]/.local/share/High Fidelity/domain-server
-    - /home/[username]/.config/highfidelity.io/domain-server.json
-    - /home/[username]/.local/share/High Fidelity/Server Console
-
-The username in the paths is your username in the computer you are using. 
-
-Restore your Sandbox
-
-To restore your sandbox from your backed up content:
-
-1. Quit Sandbox
-2. Navigate to the folders above and replace the contents with your stored content
-   - If you are restoring only entities, make sure that your .json.gz file is named models.json.gz
-   - If you are restoring your entire Sandbox, copy everything into their corresponding AppData folders
+You can upload a settings configuration file to quickly configure a domain. Click on **Choose File**, choose the configuration file from your computer, then click **Upload Domain Settings**. An "Are you sure?" pop-up window will appear. Click on **Restore settings**. Your domain will then restart.
+![](domain-settings-backups-2.PNG) ![](are-you-sure-domain.PNG)
