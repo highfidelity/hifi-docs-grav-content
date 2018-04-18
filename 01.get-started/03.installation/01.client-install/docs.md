@@ -4,7 +4,7 @@ taxonomy:
     category:
         - docs
 ---
-You can download High Fidelity's Interface through Steam or through the client installer [here](https://highfidelity.com/download).
+You can download High Fidelity's Interface through Steam or through the client installer [here](https://highfidelity.com/download/client).
 
 * Select your platform and download the installer.
 * Run the High Fidelity installer.

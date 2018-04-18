@@ -4,7 +4,7 @@ taxonomy:
     category:
         - docs
 ---
-You can download High Fidelity's Interface and Sandbox [here](https://highfidelity.com/download/sandbox).
+You can download High Fidelity's Interface and Sandbox [here](https://highfidelity.com/download/clientserver).
 
 * Select your platform and download the installer.
 * Run the High Fidelity installer.
