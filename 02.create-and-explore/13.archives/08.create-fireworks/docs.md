@@ -34,12 +34,7 @@ It's generally a good idea to write your spawner script first, so you can quickl
 
 ```
 // Chapter 1 : fireworksLaunchButtonSpawner.js
-
- 
- 
- 
- 
- orientation = Camera.getOrientation();
+  var orientation = Camera.getOrientation();
   orientation = Quat.safeEulerAngles(orientation);
   orientation.x = 0;
   orientation = Quat.fromVec3Degrees(orientation);
