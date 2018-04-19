@@ -12,7 +12,7 @@ Learn how you can create and upload avatars to High Fidelity.
 
 ## Prerequisites
 
-* You’ll need to [download and install](https://highfidelity.com/download/clientserver) High Fidelity’s Interface and Sandbox. 
+* You’ll need to [download and install](https://highfidelity.com/download/sandbox) High Fidelity’s Interface and Sandbox. 
 * Download and install a 3D Modelling software such as Blender or Maya. 
 
   ​
