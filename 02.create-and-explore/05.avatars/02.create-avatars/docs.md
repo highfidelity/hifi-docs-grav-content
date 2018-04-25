@@ -104,3 +104,28 @@ Now you can package your avatar to use it in High Fidelity.
 7. Select your folder and click ‘Select Folder’.
 8. Your output folder should contain a .fst file and a folder with textures in it.
 9. Upload your avatar to somewhere publically accessible like a [S3 Bucket](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
+
+Or, you can use the following steps to test your avatar by uploading it to the marketplace. If you're happy with the result, you can submit it for review to recieve a [PoP Certificate](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop) and verify that you are the creator of the item. From there, you can either sell it on the Marketplace or use it for yourself. 
+
+1. Go to the marketplace and [add a new item](https://highfidelity.com/marketplace/items/new).
+>>> Make sure you have first [created a new high fidelity account](https://highfidelity.com/users/signup).
+2. Fill out the name of your avatar for the title.
+3. Save the draft.
+4. To upload a file and create directories, scroll to the bottom of the page
+    a. To create a new directory, choose the "New Folder" button and type in a name.  ![Create a new folder](Market-Place-Add_Create-Folder.PNG).  To create a sub-directory, choose a folder first, and then choose create a new folder.  You will see this reflected in the next prompt which asks you to name the folder.
+    b. To upload a file, choose the "Choose Files" button and navigate to your newly created folder of packaged Avatar assets.  Make sure to pay attention to the status below the "Choose Files" button that tells you which folder you are uploading to.  To change the "Upload to" folder, click on one of the folders you have created using the method in the above step. 
+    ![Upload a file](Market-Place-Add_Create-File.PNG).
+5. It's important upload your fst, fbx, and texture directory using the same folder structure as your packaged fst.  Please also make sure to match the same upper or lower case of the folder file names:
+![Level1](Packaged-Avatar_pt-1.png)
+![Level2](Packaged-Avatar_pt-2.png)
+![Full-MarketPlace-Folder-Structure](Full-MarketPlace-Folder-Structure.PNG)
+6. When you are finished with the above steps, to test your avatar, click on the .fst file and get the URL:
+![Final-FST-Link.PNG](Final-FST-Link.PNG)
+7. Now go back to Interface, and in the Settings > Avatar menu, paste into the Appearance field, the url you just copied above:
+
+![Settings-Avatar.PNG](Settings-Avatar.PNG)
+8. If you like the way it looks, you can submit your draft to the Marketplace!
+
+
+
+
