@@ -363,7 +363,27 @@ Include guards should be in the following format: hifi_$BASENAME_h.
 
 ```
 
-#### 2.2.2 Include statements should be sorted and grouped
+#### 2.2.2 Source files must include their associated header first
+
+The associated header is always included first to guarantee it is self-sufficient.
+
+```
+// Game.cpp
+
+#include "Game.h"
+
+#include <fstream>
+#include <cstring>
+
+#include <qt/qbutton.h>
+#include <qt/qtextfield.h>
+
+#include "Puck.h"
+#include "PenaltyBox.h"
+
+```
+
+#### 2.2.3 Include statements should be sorted and grouped
 
 Statements should be sorted by their hierarchical position in the system with low level files included first. Leave an empty line between groups of include statements.
 
@@ -379,7 +399,7 @@ Statements should be sorted by their hierarchical position in the system with lo
 
 ```
 
-#### 2.2.3 Include statements must be located at the top of a file only
+#### 2.2.4 Include statements must be located at the top of a file only
 
 ## 3 Statements
 
