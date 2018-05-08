@@ -65,7 +65,7 @@ Close and re-open any command prompts after setting the environment variable so 
 
 **5. OpenSSL**
 
-Using a Developer Command Prompt, run the following command in your %VCPKG% directory: `vcpkg install openssl:x64-windows`
+Using a Developer Command Prompt, run the following command in your %VCPKG_ROOT% directory: `vcpkg install openssl:x64-windows`
 
 ---------------------------
 
