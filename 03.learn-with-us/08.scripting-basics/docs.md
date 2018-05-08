@@ -142,7 +142,7 @@ print("Entity added.");
 
 
 
-What other kind of Entitiees can we put in the type properties?
+What other kind of Entities can we put in the type properties?
 
 ```javascript
 "Model", "Box", "Sphere", "Light", "Text", "ParticleEffect", "Zone", "Web", "Line", "PolyVox", "PolyLine"
@@ -152,7 +152,7 @@ What other kind of Entitiees can we put in the type properties?
 
 Each of those entities share common properties as well as their own special properties unique to their type.
 
-**Getting an Entitie's Properties**
+**Getting an Entity's Properties**
 
 To get the properties of an Entity, we can use Entities.getEntityProperties and pass in the ID of the entity we want to manipulate.  We can get the ID by saving the returned value of addEntity to a variable, or by using an entity method such as findEntity, which we will discuss in a later section.
 
