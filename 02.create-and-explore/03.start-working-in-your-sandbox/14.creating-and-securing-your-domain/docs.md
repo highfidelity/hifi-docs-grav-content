@@ -50,8 +50,8 @@ This is a step-by-step guide to securing your newly-made domain, following this 
 	- add a description of your domain
 	- update your security settings
 	- access or update your content archives
-5. Update your username and password here  
-	*This can be a unique name, and not necessarily your High Fidelity username*  
+5. Update your **Domain Server Settings** username and password here  
+	*This username and password is not connected to your High Fidelity account*  
 	![domain-security.png "Domain Security"]
 6. Update the standard permissions to specify who can come in and change your domain  
 	![standard-permissions.png "Standard Permissions"]
@@ -118,20 +118,22 @@ This is a step-by-step guide to securing your newly-made domain, following this 
 6. Set an entity filter on the whole domain:  
 	![filter-entities.png "Filter Entities"]  
 	To protect all entities in a domain while granting edit rights, copy the URL to a JavaScript filter script that follows this template:  
-	`prevent-all-deletes.js` by Brad Hefta-Gaub [^1]
+	`prevent-all-deletes.js` [^1]
 
 7. Set an entity filter on a specific zone entity:  
 	Copy the script URL to the "Filter" script property in a zone's properties  
 	![zone-filter.png "Zone Filter"]  
 	To protect specific entities, follow this template:  
-	`prevent-add-delete-or-edit-of-entities-with-name-of-zone.js` by Brad Hefta-Gaub [^2]
+	`prevent-add-delete-or-edit-of-entities-with-name-of-zone.js` [^2]
 
 ## Conclusion
 
 Though the establishment of your own domain may seem like a big task, following this step-by-step tutorial will hopefully set you in the right direction to creating and securing your own world!
 
+## Appendix
 
 [^1]:```
+	// prevent-all-delete.js by Brad Hefta-Gaub
 	function filter() { 
 		return false; // all deletes are blocked
 	}
@@ -142,6 +144,7 @@ Though the establishment of your own domain may seem like a big task, following 
 	filter;
 
 [^2]: ```
+	// prevent-add-delete-or-edit-of-entities-with-name-of-zone.js by Brad Hefta-Gaub
 	function filter(properties, type) {	
 		var ENTITY_ID = "{the ID of the entity that you want to save}";
 		if (type === Entities.DELETE_FILTER_TYPE) {
