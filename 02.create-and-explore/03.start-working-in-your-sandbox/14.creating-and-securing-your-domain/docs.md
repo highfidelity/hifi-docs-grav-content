@@ -65,9 +65,10 @@ This is a step-by-step guide to securing your newly-made domain, following this 
 	![friends-list.png "Friends List"]
 	- A **localhost** user is a someone who is running Interface on the same machine where the server is hosted
 		- They do not need to be logged in to have different rights than other user types
-		- Localhost permissions override all other user permissions
+		- Localhost permissions override non-user-specific permissions
 	- A **logged-in** user is someone that is logged into their High Fidelity account while using Interface  
-		*They do not need to be a friend or connection to have server rights*
+		*They do not need to be a friend or connection to have server rights*  
+		- Permissions that are granted to a specific user override all other permissions
 	- **Groups** and **lists** can be made via the [groups registration page](https://highfidelity.com/user/groups)
 		- A **group** is a collection of people that voluntarily join
 		- A **list** is a collection of people to which a user is added automatically
@@ -79,6 +80,7 @@ This is a step-by-step guide to securing your newly-made domain, following this 
 	- **Rez**: A user can create/instantiate ("rez") entities for an unlimited amount of time
 		- They will have full access to the Create menu
 	- **Rez Temporary**: A user can *temporarily* rez entities that have a default lifetime of 1 hour
+		- They will still have full access to the Create menu
 	- **Rez Certified**: A user can rez pre-approved and entities and scripts from the Marketplace for an unlimited amount of time
 	- **Rez Temporary Certified**: A user can rez pre-approved entities or scripts from the Marketplace with a set lifetime that also defaults to 1 hour
 	- **Write Assets**: A user can add assets (models, audio, or other files) to your asset server (your domain's file storage space)
@@ -124,7 +126,8 @@ This is a step-by-step guide to securing your newly-made domain, following this 
 	Copy the script URL to the "Filter" script property in a zone's properties  
 	![zone-filter.png "Zone Filter"]  
 	To protect specific entities, follow this template:  
-	`prevent-add-delete-or-edit-of-entities-with-name-of-zone.js` [^2]
+	`prevent-add-delete-or-edit-of-entities-with-name-of-zone.js` [^2]  
+	**Note: Anyone with connect permissions can make edits to your domain if they are not locked. Using filters is the only way to prevent unwanted edits.**
 
 ## Conclusion
 
@@ -146,7 +149,7 @@ Though the establishment of your own domain may seem like a big task, following 
 [^2]: ```
 	// prevent-add-delete-or-edit-of-entities-with-name-of-zone.js by Brad Hefta-Gaub
 	function filter(properties, type) {	
-		var ENTITY_ID = "{the ID of the entity that you want to save}";
+		var ENTITY_ID = "{the ID of the entity that you want to protect}";
 		if (type === Entities.DELETE_FILTER_TYPE) {
 			if (properties.id === ENTITY_ID) { return false; }
 		}
