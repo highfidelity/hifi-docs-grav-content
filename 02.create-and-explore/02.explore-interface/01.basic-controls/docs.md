@@ -29,25 +29,25 @@ If you are using a keyboard and mouse, use the following controls to move around
 
 | Movement  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
-| Walk Forward | <kbd>W</kbd>  | <kbd>Up Arrow</kbd>  |
-| Walk Backward  | <kbd>S</kbd>  | <kbd>Down Arrow</kbd>  |
-| Strafe Left | <kbd>Q</kbd>  | Right Click + <kbd>Q</kbd>   |
-| Strafe Right  | <kbd>E</kbd>  | Right Click + <kbd>E</kbd>   |
-| Turn Left | <kbd>A</kbd>  | <kbd>Left Arrow</kbd>   |
-| Turn Right | <kbd>D</kbd>  | <kbd>Right Arrow</kbd>   |
-| Jump | <kbd>space</kbd> |   |
-| Fly | <kbd>space</kbd> (sustained for 2-3 seconds)  |   |
-| Fly Down | <kbd>C</kbd> |   |
+| Walk Forward | <kbd class="keyboard">W</kbd>  | <kbd class="keyboard">Up Arrow</kbd>  |
+| Walk Backward  | <kbd class="keyboard">S</kbd>  | <kbd class="keyboard">Down Arrow</kbd>  |
+| Strafe Left | <kbd class="keyboard">Q</kbd>  | Right Click + <kbd class="keyboard">Q</kbd>   |
+| Strafe Right  | <kbd class="keyboard">E</kbd>  | Right Click + <kbd class="keyboard">E</kbd>   |
+| Turn Left | <kbd class="keyboard">A</kbd>  | <kbd class="keyboard">Left Arrow</kbd>   |
+| Turn Right | <kbd class="keyboard">D</kbd>  | <kbd class="keyboard">Right Arrow</kbd>   |
+| Jump | <kbd class="keyboard">space</kbd> |   |
+| Fly | <kbd class="keyboard">space</kbd> (sustained for 2-3 seconds)  |   |
+| Fly Down | <kbd class="keyboard">C</kbd> |   |
 
 | Manipulation  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
 | Far-Grab Dynamic Entity | Mouse Left-Click  |   |
 | Far-Grab Move Entity (x/z plane)  | Mouse Left-Click + Drag  |  |
-| Far-Grab Move Entity (y axis) | <kbd>Shift</kbd> + Mouse Left-Click + Drag  |    |
-| Far-Grab Rotate Entity   | <kbd>Ctrl</kbd> + Mouse Left-Click + Drag Forward/Backward |   |
-| Far-Grab Rotate Entity (y-axis) | <kbd>Ctrl</kbd> + Mouse Left-Click + Drag Left/Right  |   |
+| Far-Grab Move Entity (y axis) | <kbd class="keyboard">Shift</kbd> + Mouse Left-Click + Drag  |    |
+| Far-Grab Rotate Entity   | <kbd class="keyboard">Ctrl</kbd> + Mouse Left-Click + Drag Forward/Backward |   |
+| Far-Grab Rotate Entity (y-axis) | <kbd class="keyboard">Ctrl</kbd> + Mouse Left-Click + Drag Left/Right  |   |
 | Equip Hand-Equipped Entities | Mouse Left-Click  |    |
-| Unequip Hand-Equipped Entities | <kbd>U</kbd> |   |
+| Unequip Hand-Equipped Entities | <kbd class="keyboard">U</kbd> |   |
 
 
 ##### Oculus Touch and HTC Controllers
@@ -82,28 +82,28 @@ Here are some other useful shortcuts for High Fidelity:
 
 | In-World Actions  | Key |
 | ------------- | ------------- |
-| Away Toggle | <kbd>ESC</kbd>  |
-| Handshake  | <kbd>X</kbd>  |
+| Away Toggle | <kbd class="keyboard">ESC</kbd>  |
+| Handshake  | <kbd class="keyboard">X</kbd>  |
 | Inspect Entity | Mouse Right-Click (over inspectable entity)  |
-| Mute Mic Toggle | <kbd>CTRL</kbd> + <kbd>M</kbd> |
-| Open Tablet | <kbd>Tab</kbd> (Only when 'Desktop becomes toolbar' is checked) |
-| Open Browser | <kbd>CTRL</kbd> + <kbd>B</kbd>  |
-| Open Stats | <kbd>/</kbd> |
+| Mute Mic Toggle | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">M</kbd> |
+| Open Tablet | <kbd class="keyboard">Tab</kbd> (Only when 'Desktop becomes toolbar' is checked) |
+| Open Browser | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">B</kbd>  |
+| Open Stats | <kbd class="keyboard">/</kbd> |
 
 | Media Capture  | Key |
 | ------------- | ------------- |
-| Screenshot | <kbd>P</kbd>  |
+| Screenshot | <kbd class="keyboard">P</kbd>  |
 
 | Avatar Manipulation | Key |
 | ------------- | ------------- |
-| Decrease Avatar Size | <kbd>CTRL</kbd> + <kbd>-</kbd>  |
-| Increase Avatar Size  | <kbd>CTRL</kbd> + <kbd>+</kbd>  |
+| Decrease Avatar Size | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">-</kbd>  |
+| Increase Avatar Size  | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">+</kbd>  |
 
 | Change Camera View  | Key |
 | ------------- | ------------- |
-| First Person | <kbd>1</kbd>  |
-| Third Person  | <kbd>3</kbd>  |
+| First Person | <kbd class="keyboard">1</kbd>  |
+| Third Person  | <kbd class="keyboard">3</kbd>  |
 | First Person -Third Person Scroll | 	Mouse Wheel Forward/Backward  |
-| Mirror | <kbd>2</kbd> |
+| Mirror | <kbd class="keyboard">2</kbd> |
 | Mirror View Scroll Inward/Outward | 	Mouse Wheel Forward/Backward |
 | Mirror View Rotate (Mouse look) | Right Mouse Click + drag  |
