@@ -38,6 +38,8 @@ If you are using a keyboard and mouse, use the following controls to move around
 | Jump | <kbd class="keyboard">space</kbd> |   |
 | Fly | <kbd class="keyboard">space</kbd> (sustained for 2-3 seconds)  |   |
 | Fly Down | <kbd class="keyboard">C</kbd> |   |
+<br>
+
 
 | Manipulation  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
@@ -70,11 +72,11 @@ If you're using a gamepad, use the following controls to move around and manipul
 
 ##### Flying
 
-To fly in High Fidelity:
+To fly in High Fidelity with gamepads & controllers:
 
-* **Enable Advanced Movements:** Enable advancements so that you can use your controllers, gamepad, or keyboard to fly. ![](enable-advance.png)
+* **Enable Advanced Movements:** Enable advancements so that you can use your controllers or gamepad to fly. ![](enable-advance.png)
 * **Oculus Touch and Vive:** Use the following controls to fly in High Fidelity if you're using Oculus Touch or HTC Vive controllers. ![](fly-controller.png)
-* **Gamepad and Keyboard:** If you use a gamepad or your keyboard, use the following controls to fly. ![](fly-other.png)
+* **Gamepad and Keyboard:** If you're using a gamepad, use the following controls to fly. ![](fly-other.png)
 
 
 #### Other Shortcuts
@@ -90,14 +92,23 @@ Here are some other useful shortcuts for High Fidelity:
 | Open Browser | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">B</kbd>  |
 | Open Stats | <kbd class="keyboard">/</kbd> |
 
+<br>
+
+
 | Media Capture  | Key |
 | ------------- | ------------- |
 | Screenshot | <kbd class="keyboard">P</kbd>  |
+
+<br>
+
 
 | Avatar Manipulation | Key |
 | ------------- | ------------- |
 | Decrease Avatar Size | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">-</kbd>  |
 | Increase Avatar Size  | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">+</kbd>  |
+
+<br>
+
 
 | Change Camera View  | Key |
 | ------------- | ------------- |
