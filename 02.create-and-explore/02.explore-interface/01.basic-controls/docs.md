@@ -31,8 +31,8 @@ If you are using a keyboard and mouse, use the following controls to move around
 | ------------- | ------------- | ------------- |
 | Walk Forward | <kbd class="keyboard">W</kbd>  | <kbd class="keyboard">Up Arrow</kbd>  |
 | Walk Backward  | <kbd class="keyboard">S</kbd>  | <kbd class="keyboard">Down Arrow</kbd>  |
-| Strafe Left | <kbd class="keyboard">Q</kbd>  | Right Click + <kbd class="keyboard">Q</kbd>   |
-| Strafe Right  | <kbd class="keyboard">E</kbd>  | Right Click + <kbd class="keyboard">E</kbd>   |
+| Strafe Left | <kbd class="keyboard">Q</kbd>  | Right Click + <kbd class="keyboard">A</kbd>   |
+| Strafe Right  | <kbd class="keyboard">E</kbd>  | Right Click + <kbd class="keyboard">D</kbd>   |
 | Turn Left | <kbd class="keyboard">A</kbd>  | <kbd class="keyboard">Left Arrow</kbd>   |
 | Turn Right | <kbd class="keyboard">D</kbd>  | <kbd class="keyboard">Right Arrow</kbd>   |
 | Jump | <kbd class="keyboard">space</kbd> |   |
