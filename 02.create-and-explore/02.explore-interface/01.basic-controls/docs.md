@@ -104,8 +104,9 @@ Here are some other useful shortcuts for High Fidelity:
 
 | Avatar Manipulation | Key |
 | ------------- | ------------- |
-| Decrease Avatar Size | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">-</kbd>  |
-| Increase Avatar Size  | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">+</kbd>  |
+| Decrease Avatar Size | <kbd class="keyboard">-</kbd>  |
+| Increase Avatar Size  | <kbd class="keyboard">+</kbd>  |
+| Reset Avatar Size  | <kbd class="keyboard">=</kbd>  |
 
 <br>
 
