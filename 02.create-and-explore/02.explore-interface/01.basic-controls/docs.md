@@ -40,6 +40,7 @@ If you are using a keyboard and mouse, use the following controls to move around
 | Fly Down | <kbd class="keyboard">C</kbd> |   |
 <br>
 
+
 | Manipulation  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
 | Far-Grab Dynamic Entity | Mouse Left-Click  |   |
@@ -90,18 +91,24 @@ Here are some other useful shortcuts for High Fidelity:
 | Open Tablet | <kbd class="keyboard">Tab</kbd> (Only when 'Desktop becomes toolbar' is checked) |
 | Open Browser | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">B</kbd>  |
 | Open Stats | <kbd class="keyboard">/</kbd> |
+
 <br>
+
 
 | Media Capture  | Key |
 | ------------- | ------------- |
 | Screenshot | <kbd class="keyboard">P</kbd>  |
+
 <br>
+
 
 | Avatar Manipulation | Key |
 | ------------- | ------------- |
 | Decrease Avatar Size | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">-</kbd>  |
 | Increase Avatar Size  | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">+</kbd>  |
+
 <br>
+
 
 | Change Camera View  | Key |
 | ------------- | ------------- |
