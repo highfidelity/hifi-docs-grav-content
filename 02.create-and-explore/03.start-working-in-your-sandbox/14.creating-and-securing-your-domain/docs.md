@@ -120,13 +120,22 @@ The following is a step-by-step guide to securing your newly-made domain.
 
 ## Filters
 
-**Anyone with connect permissions can make edits to your domain if they are not locked. Using filters is the only way to prevent unwanted edits.**
+**Anyone with connect permissions can make edits to your domain if they are not locked. Using filters is the only way to prevent unwanted edits.**  
+
+Entity filters are specialized javascript functions that allow you to prevent unwanted modifications to your domain entities. They can be applied to a whole server or to specific zones within a domain. Filters work by subscribing to, then intercepting _edit_, _add_, _delete_, and _physics_ packets. Filters then run the user-submitted edits through the rules defined in the filter and either accept or reject them.
+
+Additional filter tidbits:  
+
+- Entity filters apply to all users who do not have lock/unlock permissions
+- Filters can request the original properties of an edit to compare them to new values, which grants you more flexibility in which edits are approved or not
 
 ### Set an entity filter on the whole domain:  
 ![](filter-entities.png)
 To protect all entities in a domain while granting edit rights, copy the URL to a JavaScript filter script that follows this template:  
-	```
-	// prevent-all-deletes.js by Brad Hefta-Gaub
+```
+
+// prevent-all-deletes.js by Brad Hefta-Gaub
+(function() {
 	function filter() { 
 		return false; // all deletes are blocked
 	}
@@ -135,14 +144,18 @@ To protect all entities in a domain while granting edit rights, copy the URL to 
 	filter.wantsToFilterPhysics = false; // don't run on physics
 	filter.wantsToFilterDelete = true; // do run on deletes
 	filter;
-	```
+});
 
-Set an entity filter on a specific zone entity:  
-Copy the script URL to the "Filter" script property in a zone's properties  
+```
+
+### Set an entity filter on a specific zone entity:  
+Copy the script URL to the "Filter" script property in a zone's properties:  
 ![](zone-filter.png)
 To protect specific entities, follow this template:  
-	```
-	// prevent-add-delete-or-edit-of-entities-with-name-of-zone.js by Brad Hefta-Gaub
+```
+	
+// prevent-add-delete-or-edit-of-entities-with-name-of-zone.js by Brad Hefta-Gaub
+(function() {
 	function filter(properties, type) {	
 		var ENTITY_ID = "{the ID of the entity that you want to protect}";
 		if (type === Entities.DELETE_FILTER_TYPE) {
@@ -150,10 +163,11 @@ To protect specific entities, follow this template:
 		}
 		return properties;
 	}
-
 	filter.wantsToFilterDelete = true; // do run on deletes
 	filter;
-	```  
+});
+
+```  
 
 ## Conclusion
 
