@@ -71,11 +71,11 @@ If you're using a gamepad, use the following controls to move around and manipul
 
 ##### Flying
 
-To fly in High Fidelity:
+To fly in High Fidelity with gamepads & controllers:
 
-* **Enable Advanced Movements:** Enable advancements so that you can use your controllers, gamepad, or keyboard to fly. ![](enable-advance.png)
+* **Enable Advanced Movements:** Enable advancements so that you can use your controllers or gamepad to fly. ![](enable-advance.png)
 * **Oculus Touch and Vive:** Use the following controls to fly in High Fidelity if you're using Oculus Touch or HTC Vive controllers. ![](fly-controller.png)
-* **Gamepad and Keyboard:** If you use a gamepad or your keyboard, use the following controls to fly. ![](fly-other.png)
+* **Gamepad and Keyboard:** If you're using a gamepad, use the following controls to fly. ![](fly-other.png)
 
 
 #### Other Shortcuts
