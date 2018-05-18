@@ -45,7 +45,7 @@ You can enable an XBOX One controller by:
 
 ### Setting up the Razer Hydra (Mac Users)
 
-1. Download the Sixense SDK from [http://sixense.com/hardware/sixensesdk](http://sixense.com/hardware/sixensesdk).
+1. Download the Sixense SDK from [https://www.sixense.com/downloads/](https://www.sixense.com/downloads/).
 2. Copy lib/osx_x64/release_dll/libsixense_x64.dylib to Applications/Interface/Contents/Frameworks.
 
 ### Calibration

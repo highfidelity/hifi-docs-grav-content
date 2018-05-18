@@ -22,7 +22,7 @@ There are many options for creating your own custom buildings to bring into your
 
 ### Building a 3D Building in Maya or Blender
 
-If you're already familiar with a 3D modeling program like Maya or Blender, you can use these tools to create your own custom buildings. Models that are used as interior spaces should be carefully constructed so that collisions align with the mesh and not around the entire model, so that users can easily move throughout the inside. If you have closed off spaces and doors, either inside the building or to the outside of the model, you can find an example of a scripted [door with open/close behavior on Marketplace](https://highfidelity.io/marketplace/items/e69bdf34-3d06-4e95-a255-3d8f8c5d471c).
+If you're already familiar with a 3D modeling program like Maya or Blender, you can use these tools to create your own custom buildings. Models that are used as interior spaces should be carefully constructed so that collisions align with the mesh and not around the entire model, so that users can easily move throughout the inside. If you have closed off spaces and doors, either inside the building or to the outside of the model, you can find an example of a scripted [door with open/close behavior on Marketplace](https://highfidelity.com/marketplace?q=door).
 
 ### Creating a 2D Floor Plan
 

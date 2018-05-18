@@ -12,9 +12,9 @@ A *Place Name* is a domain's unique name within High Fidelity. One of the easies
 
 ##Introduction
 
-When you [set up your domain](../set-up-your-sandbox), it is assigned a randomly generated and temporary Place Name. This temporary Place Name can’t be shown in the [High Fidelity Directory](https://highfidelity.com/directory) or be authenticated.
+When you [set up your domain](../set-up-your-sandbox), it is assigned a randomly generated and temporary Place Name.
 
-You can obtain a Place Name of your choice (one that better represents you or your business) for your domain by purchasing a Place Name from High Fidelity. Purchased Place Names can be authenticated and can be listed on the [High Fidelity Directory](https://highfidelity.com/directory).
+You can obtain a Place Name of your choice (one that better represents you or your business) for your domain by purchasing a Place Name from High Fidelity.
 
 >>>>>A High Fidelity account is required to purchase and manage Place Names.
 
@@ -90,7 +90,6 @@ To point a Place Name to a domain ID, complete the following steps:
 
 6. Enter a **Path**, **Description**, and **Preview Image** (optional).
    The **Path** field specifies the position and orientation of visitors when they first come to your domain. A path is defined in this format: `/x,y,z`. For example, `/23,42,125`. The `x`, `y`, and `z` values are the coordinates of the user's position. These values can be approximated manually, or by placing an avatar in the desired location and copying its path. For more information, see [Get Path For Landing](../set-path-in-your-domain).
-   The **Description** and **Preview Image** are used when your domain is listed in the High Fidelity Directory.
 
 7. Click **Update Place** to save your changes.
 
@@ -124,26 +123,10 @@ To point a new Place Name at an existing Place Name— meaning a Place Name that
    *Note: A Domain ID is not necessary if you have entered a target Place Name.*
 3. Transfer or add other relevant place information, such as **Path**, **Description**, and **Preview Image**.
    The **Path** field specifies the position and orientation of visitors when they first come to your domain. A path is defined in this format: `/x,y,z`. For example, `/23,42,125`. The `x`, `y`, and `z` values are the coordinates of the user's position. These values can be approximated manually, or by placing an avatar in the desired location and copying its path. When pointing a new Place Name to a different one, any path information for the new Place Name will override the path specified in the original. Likewise, if the path for a new Place Name is left blank, it will inherit the path of the Place Name it points to.
-   The **Description** and **Preview Image** are used when your domain is listed in the High Fidelity Directory.
 4. Click **Update Place** to save your changes.
 
 Assuming the Place Name you point to points to a domain ID used by a domain, you and others should now be able to access your domain using Interface by typing the Place Name into the *Address Bar*. You may also use the URL  `hifi://MyPlaceName`.
 
-## Listing a Place Name in the High Fidelity Directory
-
-| ![Important.gif](imp.gif)                | **High Fidelity Directory is temporarily disabled.** |
-| ---------------------------------------- | ---------------------------------------------------- |
-| These instructions will be updated when the Directory becomes available again.                  |                                          |
-
-Your domain is automatically listed in the [High Fidelity Directory](https://highfidelity.com/directory) when:
-
-- Your Place Name has a **Preview Image** set. This image represents your Place Name in the directory. To set a preview image, go to the *Place Names* view, then click on the pencil to the far right of the Place Name you want to list to get to the *Edit* view. Here you can also set the **Description** for the directory listing.
-- Your domain has access restrictions configured so that others may visit, that is, in [Server Settings](../server-settings-for-your-domain) in the **Security Settings**, **Restricted Access** is set to **Off**.
-- Your domain is online with a valid access token and domain ID (the one the Place Name points to).
-
-If all of the above conditions are true, you will see your preview image and description in the [High Fidelity Directory](https://highfidelity.com/directory) and users may visit your domain by clicking on it.
-
-![](directory.png)
 
 ## Sharing a Place Name as a URL
 
