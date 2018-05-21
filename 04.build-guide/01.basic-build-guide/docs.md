@@ -47,7 +47,7 @@ These dependencies need not be installed manually. They are automatically downlo
 ### OS Specific Build Guides
 
 - [Linux](../linux)
-- [OS X](../os-x)
+- [OS X](https://docs.highfidelity.com/build-guide/mac-os)
 - [Windows 64-bit](../windows-64-bit)
 - [Android](../android)
 

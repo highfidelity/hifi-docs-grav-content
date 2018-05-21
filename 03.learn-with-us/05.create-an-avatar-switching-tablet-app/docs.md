@@ -75,7 +75,7 @@ The first thing that we'll do is create an [Interface script](https://wiki.highf
 
 Our Interface script is a single function that contains all of the other components of setting up our tablet app and responding to webEvents that are received from the tablet HTML page that we specify at line 4. We also specify an app icon URL and links to the avatar FST files - we've included two, but you can add as many avatar links as you'd like to change between. Lines 12-16 create a reference to the tablet in our avatar and add a button to "install" our app, and the following `clicked() `function sets up our tablet to navigate to our app when we tap the icon on our main tablet screen. We then call `button.clicked.connect(clicked) `to attach our `clicked() `function to the tablet API.
 
-The rest of the script handles switching between different avatars depending on the button that is selected in our tablet UI. Our HTML buttons will send `events `to our JavaScript, and the data stored in those events will determine which of our buttons in the UI were selected. We use the [Avatar API](https://wiki.highfidelity.com/wiki/Avatar_API) to change our avatar's skeleton model to the FST files that we linked to earlier in the script.
+The rest of the script handles switching between different avatars depending on the button that is selected in our tablet UI. Our HTML buttons will send `events `to our JavaScript, and the data stored in those events will determine which of our buttons in the UI were selected. We use the [Avatar API](https://docs.highfidelity.com/api-reference/namespaces/myavatar) to change our avatar's skeleton model to the FST files that we linked to earlier in the script.
 
 ### App HTML: avatarTemplate.html
 

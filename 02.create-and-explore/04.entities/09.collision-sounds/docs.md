@@ -53,6 +53,5 @@ You can duplicate the balls by ALT + Drag and then knock them into each other to
 
 ## Resources
 
-- Get sound URLs from the High Fidelity public folders here: [http://browse.highfidelity.io/sounds](http://browse.highfidelity.io/sounds)
 - [Create a playable piano](../../archives/create-a-playable-piano)
 

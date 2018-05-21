@@ -14,7 +14,7 @@ This guide will help you create your first High Fidelity build if you’re using
 ##Requirements
 
 ####Hardware Requirements
-To successfully build High Fidelity, check out the [system requirements](http://localhost/get-started/requirements). 
+To successfully build High Fidelity, check out the [system requirements](https://docs.highfidelity.com/get-started/requirements). 
 
 
 ####Software Requirements

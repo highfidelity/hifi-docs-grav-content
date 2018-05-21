@@ -221,7 +221,7 @@ Open the script log (Developer > Script Log) to see the debug messages.
 
 ### Step 6: Let's create gemstones!
 
-Finally, to the most fun part of this tutorial, we’ll create the gemstones with the High Fidelity JS API. The gemstones will be created as Entities, whose [Properties](https://wiki.highfidelity.com/wiki/EntityItemProperties#Common_Properties) we can manipulate in gemstoneApp.js.
+Finally, to the most fun part of this tutorial, we’ll create the gemstones with the High Fidelity JS API. The gemstones will be created as Entities, whose [Properties](https://docs.highfidelity.com/api-reference/namespaces/entities#.EntityProperties) we can manipulate in gemstoneApp.js.
 
 - Let's calculate the position where we want to create the entity.
 
