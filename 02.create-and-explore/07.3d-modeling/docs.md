@@ -25,7 +25,7 @@ We also support textures in the following formats - PNG and JPEG.
 - Select **Mesh**
 - If using textures set **Path Mode** to **Copy** and check **Embed Textures**
 
-If you are using Blender to create an avatar, check out the [Blender workflow](https://wiki.highfidelity.com/wiki/Blender_workflow) tutorial.
+If you are using Blender to create an avatar, check out the [Blender workflow](https://docs.highfidelity.com/create-and-explore/avatars/blender-workflow) tutorial.
 
 **Quick checklist for Maya 16 - 17**
 

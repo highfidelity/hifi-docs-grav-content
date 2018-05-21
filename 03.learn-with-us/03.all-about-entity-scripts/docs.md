@@ -92,7 +92,7 @@ _this.clickDownOnEntity = function(entityID, event){
 
 ```
 
-What we now have is a basic script that has defined what happens when the entity is clicked. The keyword this refers to the parent object currently in scope, in this case, our cube. We specifically use `clickDownOnEntity `, since this is a function defined in the [Entity Functions API](https://wiki.highfidelity.com/wiki/Entity_Functions_API) and will be recognized by High Fidelity when we click on our cube.
+What we now have is a basic script that has defined what happens when the entity is clicked. The keyword this refers to the parent object currently in scope, in this case, our cube. We specifically use `clickDownOnEntity `, since this is a function defined in the [Entity Functions API](https://docs.highfidelity.com/api-reference/namespaces/entities) and will be recognized by High Fidelity when we click on our cube.
 
 Now, what we need to do is specify exactly what happens when we click on our cube. Right now, the only thing that happens is that we’ll use the ‘print’ function to write a statement. We’re going to do three things:
 
@@ -459,7 +459,7 @@ What we’ve done is build up our system to allow us to run a single script in o
 - [Creating Server Entity Scripts](https://wiki.highfidelity.com/wiki/Creating_Server_Entity_Scripts)
 - [Attaching Entity Scripts](https://wiki.highfidelity.com/wiki/Attaching_Entity_Scripts)
 - [Script Types Overview](https://wiki.highfidelity.com/wiki/Script_Types_Overview)
-- [Entity script examples](https://wiki.highfidelity.com/wiki/Entity_script_examples)
+- [Entity script examples](https://github.com/highfidelity/hifi/tree/master/script-archive/entityScripts)
 
 ## Chapter 3: Moving & Equipping our Spawner
 
@@ -504,7 +504,7 @@ However, we’ve caused a slight problem for ourselves by making our spawner gra
 
 ### Updating spawnCube.js to use a prototype function
 
-Head back into spawnCube.js - we’ll be modifying this significantly to take advantage of the capabilities of a prototype function. We’ll also be using the [Hand Controller API](https://wiki.highfidelity.com/wiki/Hand_Controller_API) to assign specific functionality to our spawner so we can spawn cubes from our trigger pulls.
+Head back into spawnCube.js - we’ll be modifying this significantly to take advantage of the capabilities of a prototype function. We’ll also be using the [Hand Controller API](https://docs.highfidelity.com/api-reference/namespaces/controller) to assign specific functionality to our spawner so we can spawn cubes from our trigger pulls.
 
 We’ll start by adding in an array that stores references to our right and left controller triggers. We will also create an empty variable that we’ll call ‘hand’, which will store a reference to whichever hand picks up the cube spawner. Under your cubeList array, add the following to your spawnCube.js script:
 
