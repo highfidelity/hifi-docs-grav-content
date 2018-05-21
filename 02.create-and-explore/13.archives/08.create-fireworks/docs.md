@@ -90,7 +90,7 @@ Now create a file in the same folder called fireworksLaunchButtonEntityScript.js
 
 Great! Now run the interface script and you should see a launch button appear in front of you.
 
-The spawner script is quite simple- it spawns a model entity with an entity script attached in front of your avatar. If you haven't learned about the different kinds of entities our system supports, no worries! Hop on over to [this guide](http://jsref.docs.highfidelity.com/docs/entity-properties), which will walk you through all of the entities you can create and the properties common to them all and specific to each entity type.
+The spawner script is quite simple- it spawns a model entity with an entity script attached in front of your avatar. If you haven't learned about the different kinds of entities our system supports, no worries! Hop on over to [this guide](https://docs.highfidelity.com/api-reference/namespaces/entities#.EntityProperties), which will walk you through all of the entities you can create and the properties common to them all and specific to each entity type.
 
 The entity script doesn't do much right now, but we're ready to start building it out, and will be able to make rapid changes and see them take effect almost instantly, simply by reloading our spawner script, since we've set up the script to delete the launch button entity on shutdown. From here on out, most of our work will be spent building out our entity script to imbue our launch button with the power to launch fireworks into the sky!
 
@@ -189,13 +189,13 @@ Now, reload your spawner script, and you should see the launch button flicker br
 
 The smoke you see is a Particle Effect entity which is a powerful and flexible entity that allows you to create all kinds of awesome effects- from a comet trail, to fire, rain, magic spells, and so much more. To learn more about particle effects, the [entity properties guide](http://jsref.docs.highfidelity.com/docs/entity-properties) goes into the details of all the properties you can play with to make your own effects. When you're done reading through that, you can spawn your own particle system right from the edit menu (make sure you're running edit.js for this menu to be available) and adjust the properties from the particle explorer tab that appears alongside the other entity menu tabs.
 
-The other element of note here is the sound we play on the firework's launch. High Fidelity has an awesome 3D spatial sound system, and it's super easy to play all kinds of sounds at an in-world location of your choice that anyone nearby can hear. Line's 8 and 27-30 demonstrate how to load and play the missile launch sound effect you hear. For more detailed information, check out the [SoundCache](http://jsref.docs.highfidelity.com/docs/soundcachegetsound) and [Audio](http://jsref.docs.highfidelity.com/docs/audioplaysound) references.
+The other element of note here is the sound we play on the firework's launch. High Fidelity has an awesome 3D spatial sound system, and it's super easy to play all kinds of sounds at an in-world location of your choice that anyone nearby can hear. Line's 8 and 27-30 demonstrate how to load and play the missile launch sound effect you hear. For more detailed information, check out the [SoundCache](https://docs.highfidelity.com/api-reference/namespaces/soundcache) and [Audio](https://docs.highfidelity.com/api-reference/namespaces/audio) references.
 
 So to sum up what we've accomplished so far: We've wired up an entity script to our launch button that, when clicked or triggered by a hand controller, launches our firework into the sky! Right now, our firework is just a trail of smoke- we need to make it explode! We'll cover that in the next chapter
 
 ## Chapter 3: Exploding the Firework
 
-To create a cool firework explosion effect, we'll want to wait for the launched firework to rocket upwards for a few seconds, and then detonate the explosion, which, like the smoke, is a particle entity. If you've ever done any web development, you'll be familiar with the setTimeout function, which in browsers is implemented as part of the Window object, but in High Fidelity is exposed on the global Script object. Check out our [Script Object reference](https://docs.highfidelity.com/v1.0/docs/script-object-api) for more! Here's the implementation:
+To create a cool firework explosion effect, we'll want to wait for the launched firework to rocket upwards for a few seconds, and then detonate the explosion, which, like the smoke, is a particle entity. If you've ever done any web development, you'll be familiar with the setTimeout function, which in browsers is implemented as part of the Window object, but in High Fidelity is exposed on the global Script object. Check out our [Script Object reference](https://docs.highfidelity.com/api-reference/namespaces/script) for more! Here's the implementation:
 
 ```
 // Chapter 3: fireworksLaunchButtonEntityScript.js

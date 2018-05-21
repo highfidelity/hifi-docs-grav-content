@@ -141,7 +141,7 @@ For testing purposes, it would be nice to know the coordinates of the butterflie
 
 `butterflies.push(Entities.addEntity(properties));`
 
-Looking at the definition of `properties` in the code section just above this line, `properties.position` seems to be the position of the new butterfly entity. (For more information see [addEntity()](http://jsref.docs.highfidelity.com/docs/entitiesaddentity) in the [JavaScript reference](http://jsref.docs.highfidelity.com/) documentation.)
+Looking at the definition of `properties` in the code section just above this line, `properties.position` seems to be the position of the new butterfly entity. (For more information see [addEntity()](https://docs.highfidelity.com/api-reference/namespaces/entities#example).)
 
 To print out the butterfly position, try adding `properties.position` to the print statement:
 

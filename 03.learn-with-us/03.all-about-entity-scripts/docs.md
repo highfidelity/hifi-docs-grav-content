@@ -469,8 +469,6 @@ In Chapter 2, we made a cube spawner object that we could create by running a si
 - Add an equippable property to our spawner so that we can carry it around
 - Change where our cubes are spawned so it is easier to place them in specific locations
 
-If you haven’t followed along with chapters 1 & 2, download the following files to start from: [Download Entity Scripting 103 Resources](https://hifi-content.s3.amazonaws.com/liv/Entity_Scripts_103_Starting.zip)
-
 Note: This tutorial adds in functionality that takes advantage of hand controllers for a VR headset.
 
 ### Setting User Data Properties
