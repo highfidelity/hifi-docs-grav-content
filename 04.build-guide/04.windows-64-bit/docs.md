@@ -19,7 +19,7 @@ To successfully build High Fidelity, check out the [system requirements](http://
 
 ####Software Requirements
 
->>>>> We are now using Visual Studio 2017 and Qt 5.9.1. If you are upgrading from Visual Studio 2013 and Qt 5.6.2, do a clean uninstall of those versions before going through this guide. 
+>>>>> We are now using Visual Studio 2017 and Qt 5.10.1. If you are upgrading from Visual Studio 2013 and Qt 5.6.2, do a clean uninstall of those versions before going through this guide. 
 
 ---
 
@@ -35,11 +35,11 @@ When selecting components, check "Desktop development with C++." Also check "Win
 
 ![img](vs2017-comp.png)
 
-**2. CMake**     
+**2. CMake**
 
 Download and install the latest version of CMake 3.9. Download the file named  win64-x64 Installer from the [CMake Website](https://cmake.org/download/). Make sure to check "Add CMake to system PATH for all users" when prompted during installation.
 
-**3. Qt**              
+**3. Qt**
 
 Download and install the [Qt Online Installer](https://www.qt.io/download-open-source/?hsCtaTracking=f977210e-de67-475f-a32b-65cec207fd03%7Cd62710cd-e1db-46aa-8d4d-2f1c1ffdacea). While installing, deselect components so that your window looks like this:
 
@@ -49,7 +49,7 @@ Note: Installing the Sources is optional but recommended if you have room for th
 
 The next thing you need to do is set the Qt environment variables. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your Qt variables.  
 * Set "Variable name": QT_CMAKE_PREFIX_PATH 
-* Set "Variable value":  `C:\Qt\5.9.1\msvc2017_64\lib\cmake` 
+* Set "Variable value":  `C:\Qt\5.10.1\msvc2017_64\lib\cmake` 
 
 **4. vcpkg**
 
@@ -65,7 +65,7 @@ Close and re-open any command prompts after setting the environment variable so 
 
 **5. OpenSSL**
 
-Using a Developer Command Prompt, run the following command in your %VCPKG% directory: `vcpkg install openssl:x64-windows`
+Using a Developer Command Prompt, run the following command in your %VCPKG_ROOT% directory: `vcpkg install openssl:x64-windows`
 
 ---------------------------
 
@@ -115,7 +115,7 @@ If you face any problems once you start trying to generate build files using CMa
 
 #####Common Errors and their Solutions
 * If CMake gives you the same error message repeatedly after the build fails, try to remove CMakeCache.txt found in the %HIFI_DIR%\build' directory.
-* If Qt is throwing an error, make sure you have the correct version (5.9.1) installed and the 'QT_CMAKE_PREFIX_PATH' environment variable is set correctly.
+* If Qt is throwing an error, make sure you have the correct version (5.10.1) installed and the 'QT_CMAKE_PREFIX_PATH' environment variable is set correctly.
 * If the application builds but does not start up, make sure that the root Qt directory is NOT in your PATH environment variable.
 
 
