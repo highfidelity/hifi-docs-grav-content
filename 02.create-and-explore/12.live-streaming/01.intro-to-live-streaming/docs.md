@@ -31,7 +31,7 @@ Depending on your requirements, you can use your desktop, an HMD with or without
 
 ### Set up High Fidelity for Streaming
 
-Once you've completed installing Interface, you can now use High Fidelity's new [Spectator Camera](../../new-features/spectator-cam) feature. 
+Once you've completed installing Interface, you can now use High Fidelity's new [Spectator Camera](https://docs.highfidelity.com/create-and-explore/marketplace-apps/spectator-cam) feature. 
 
 You can set up OBS to stream your Spectator Camera's view. 
 

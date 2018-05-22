@@ -37,11 +37,11 @@ Here is a client entity script, `changeColorOnClickDown.js`, which when attached
 
 ```
 
-You'll notice that this example is written as a JavaScript class prototype function. You'll also notice that it uses the mouse event [clickDownOnEntity()](../../../../api-reference/entities#c1). When the user clicks on an entity, `clickDownOnEntity()` triggers the function associated with that click event. In this case, it edits the entity's color back and forth between yellow and magenta.
+You'll notice that this example is written as a JavaScript class prototype function. You'll also notice that it uses the mouse event [clickDownOnEntity()](https://docs.highfidelity.com/api-reference/namespaces/entities#.sendClickDownOnEntity). When the user clicks on an entity, `clickDownOnEntity()` triggers the function associated with that click event. In this case, it edits the entity's color back and forth between yellow and magenta.
 
 To learn more:
-- For more information on events available, see the High Fidelity [JavaScript API](../../../../api-reference).
-- For a list of event methods that may be defined, see [Entities_callbacks](../../../../api-reference/entities#callbacks).
+- For more information on events available, see the High Fidelity [JavaScript API](https://docs.highfidelity.com/api-reference).
+- For a list of event methods that may be defined, see [Entities](https://docs.highfidelity.com/api-reference/namespaces/entities).
 - For more examples, see the [GitHub repository](https://github.com/highfidelity/hifi/tree/master/scripts/tutorials).
 
 
