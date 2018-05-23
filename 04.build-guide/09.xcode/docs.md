@@ -8,7 +8,7 @@ To have **Xcode** generate C++ files with boilerplates and include guards that a
 
 There's an excellent guide for that process [here](http://www.bobmccune.com/2012/03/04/creating-custom-xcode-4-file-templates/).
 
-A zip file containing the High Fidelity file template can be found [here](https://dl.dropboxusercontent.com/u/1864924/HighFidelityTemplateFolder.zip).
+A zip file containing the High Fidelity file template can be found [here](https://docs.highfidelity.com/build-guide/xcode).
 
 As per the guide linked above, that folder should be placed in `~/Library/Developer/Xcode/Templates/File Templates/`. You will need to create that if it does not exist.
 

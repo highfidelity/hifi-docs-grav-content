@@ -22,33 +22,33 @@ Let's get started with the “Gemstone Magic Maker”. The app gives you quick a
 
 - High Fidelity installed.
 - Basic web development experience (HTML/CSS/JavaScript).
-- Familiarity with scripting in High Fidelity is nice to have, but not required. 
-- About 30 minutes to an hour. 
+- Familiarity with scripting in High Fidelity is nice to have, but not required.
+- About 30 minutes to an hour.
 
 ### Instructions
 
 #### Step 1: Create a JavaScript program for installing/uninstalling your app
 
-Create a new JavaScript file with your text editor. You can name it gemstoneApp.js. The following example contains all the functions you need to create an app that installs and uninstalls from the tablet. 
+Create a new JavaScript file with your text editor. You can name it gemstoneApp.js. The following example contains all the functions you need to create an app that installs and uninstalls from the tablet.
 
 ```javascript
-(function() { 
+(function() {
 // Every great app starts with a great name (keep it short so that it can fit in the tablet button)
-var APP_NAME = "GEMSTONE";   
-// Get a reference to the tablet 
+var APP_NAME = "GEMSTONE";
+// Get a reference to the tablet
 var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
 // "Install" your cool new app to the tablet
 // The following lines create a button on the tablet's menu screen
-var button = tablet.addButton({ 
-text: APP_NAME  
+var button = tablet.addButton({
+text: APP_NAME
 });
 // Provide a way to "uninstall" the app
 // Here, we write a function called "cleanup" which gets executed when
 // this script stops running. It'll remove the app button from the tablet.
-function cleanup() { 
+function cleanup() {
 tablet.removeButton(button);
 }
-Script.scriptEnding.connect(cleanup); 
+Script.scriptEnding.connect(cleanup);
 }());
 
 ```
@@ -104,7 +104,7 @@ Let’s see our progress so far!
 	// Link to your app's HTML file
 	var APP_URL = "https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html";
 
-	// Get a reference to the tablet 
+	// Get a reference to the tablet
 	var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
 
 	// "Install" your cool new app to the tablet
@@ -126,7 +126,7 @@ Let’s see our progress so far!
         tablet.removeButton(button);
 	}
     Script.scriptEnding.connect(cleanup);
-}()); 
+}());
 ```
 ![](tablet-app-9.png) ![](tablet-app-10.png) ![](tablet-app-11.png)
 
@@ -221,12 +221,12 @@ Open the script log (Developer > Script Log) to see the debug messages.
 
 ### Step 6: Let's create gemstones!
 
-Finally, to the most fun part of this tutorial, we’ll create the gemstones with the High Fidelity JS API. The gemstones will be created as Entities, whose [Properties](https://wiki.highfidelity.com/wiki/EntityItemProperties#Common_Properties) we can manipulate in gemstoneApp.js.
+Finally, to the most fun part of this tutorial, we’ll create the gemstones with the High Fidelity JS API. The gemstones will be created as Entities, whose [Properties](https://docs.highfidelity.com/api-reference/namespaces/entities#.EntityProperties) we can manipulate in gemstoneApp.js.
 
 - Let's calculate the position where we want to create the entity.
 
 ```
-// Helper function that gives us a position right in front of the user 
+// Helper function that gives us a position right in front of the user
 function getPositionToCreateEntity() {
   var direction = Quat.getFront(MyAvatar.orientation);
   var distance = 0.3;
