@@ -1,5 +1,5 @@
 ---
-title: Resource
+title: AnimationObject
 taxonomy:
     category:
         - docs
