@@ -5,17 +5,17 @@ taxonomy:
 ---
 
 ##Introduction
-Scripts that are attached to entities and run in the Entity Server are called Server Entity scripts. 
+Scripts that are attached to entities and run in the Entity Server are called Server Entity scripts.
 
 ###Server Entity Scripts
 
-An entity can have multiple server entity scripts attached to it, but all of these must be through a single file URL. 
+An entity can have multiple server entity scripts attached to it, but all of these must be through a single file URL.
 
-To attach a server entity script, 
-- Go to **Create** mode and open the **Properties** tab. 
+To attach a server entity script,
+- Go to **Create** mode and open the **Properties** tab.
 - Select the entity you'd like to attach the script to.
 - Scroll down to find the `serverScripts` property.
-- Enter the file URL. 
+- Enter the file URL.
 
 ## Example Script
 
@@ -56,5 +56,5 @@ As we only need one actor to update the intensity of the light, the flickering t
 
 The Entity Script Server does not have access to all of the listed components of the API. APIs for avatars, controllers, recording, overlays, and mouse and keyboard events are not available in the Entity Script Server.
 
-Learn more about what APIs are available to server entity scripts [here](../../../../api-reference/entities).
+Learn more about what APIs are available to server entity scripts [here](https://docs.highfidelity.com/api-reference/namespaces/entities).
 

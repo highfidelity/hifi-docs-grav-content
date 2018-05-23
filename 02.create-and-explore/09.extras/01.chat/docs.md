@@ -40,7 +40,7 @@ Cat got your tongue?
 
 Having a hard time getting others to use the same chat system? This simple tool allows you to communicate with HMD users with using a simple entity, that behaves as a sign with of text.
 
-It is available in the [marketplace](https://highfidelity.com/marketplace/items/dc8a64dd-658a-4031-97a9-d79df1322e4c).
+It is available in the [marketplace](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy).
 
 
 ## Running Other Chat Applications in a Local Web Browser

@@ -7,29 +7,29 @@ taxonomy:
 Use this guide to create your first High Fidelity build for Windows 64-bit.
 
 ##Overview
-This guide will help you create your first High Fidelity build if you’re using a system with Windows 64 bit. 
+This guide will help you create your first High Fidelity build if you’re using a system with Windows 64 bit.
 
 --------------
 
 ##Requirements
 
 ####Hardware Requirements
-To successfully build High Fidelity, check out the [system requirements](https://docs.highfidelity.com/get-started/requirements). 
+To successfully build High Fidelity, check out the [system requirements](https://docs.highfidelity.com/get-started/requirements).
 
 
 ####Software Requirements
 
->>>>> We are now using Visual Studio 2017 and Qt 5.10.1. If you are upgrading from Visual Studio 2013 and Qt 5.6.2, do a clean uninstall of those versions before going through this guide. 
+>>>>> We are now using Visual Studio 2017 and Qt 5.10.1. If you are upgrading from Visual Studio 2013 and Qt 5.6.2, do a clean uninstall of those versions before going through this guide.
 
 ---
 
 >>>>> The prerequisites will require about 10 GB of space on your drive.
 
-To create your High Fidelity build you’ll need to download and install: 
+To create your High Fidelity build you’ll need to download and install:
 
 **1. Visual Studio 2017**
 
-If you don’t have Community or Professional edition of Visual Studio 2017, download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). 
+If you don’t have Community or Professional edition of Visual Studio 2017, download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 
 When selecting components, check "Desktop development with C++." Also check "Windows 8.1 SDK and UCRT SDK" and "VC++ 2015.3 v140 toolset (x86,x64)" on the Summary toolbar on the right. In the end, your screen should look like this:
 
@@ -45,11 +45,11 @@ Download and install the [Qt Online Installer](https://www.qt.io/download-open-s
 
 ![img](qt-comp.png)
 
-Note: Installing the Sources is optional but recommended if you have room for them (~2GB). 
+Note: Installing the Sources is optional but recommended if you have room for them (~2GB).
 
-The next thing you need to do is set the Qt environment variables. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your Qt variables.  
-* Set "Variable name": QT_CMAKE_PREFIX_PATH 
-* Set "Variable value":  `C:\Qt\5.10.1\msvc2017_64\lib\cmake` 
+The next thing you need to do is set the Qt environment variables. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your Qt variables.
+* Set "Variable name": QT_CMAKE_PREFIX_PATH
+* Set "Variable value":  `C:\Qt\5.10.1\msvc2017_64\lib\cmake`
 
 **4. vcpkg**
 
@@ -57,9 +57,9 @@ Download and unzip the [VCPKG repository](https://github.com/Microsoft/vcpkg) in
 
 Follow the instructions in the [readme](https://github.com/Microsoft/vcpkg/blob/master/README.md) to bootstrap vcpkg using a Developer Command Prompt.
 
-Set an environment variable VCPKG_ROOT to the location of the cloned repository. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your vcpkg variables:  
-* Set "Variable name": VCPKG_ROOT 
-* Set "Variable value":  `C:\src\vcpkg` 
+Set an environment variable VCPKG_ROOT to the location of the cloned repository. Go to "Control Panel > System > Advanced System Settings > Environment Variables > New..." (or search “Environment Variables” in Start Search). Then, setup your vcpkg variables:
+* Set "Variable name": VCPKG_ROOT
+* Set "Variable value":  `C:\src\vcpkg`
 
 Close and re-open any command prompts after setting the environment variable so that they will pick up the change.
 
@@ -72,12 +72,12 @@ Using a Developer Command Prompt, run the following command in your %VCPKG_ROOT%
 
 ####Steps
 
-#####1. Run CMake to Generate Build Files 
-Run Command Prompt from Start and run the following commands: 
+#####1. Run CMake to Generate Build Files
+Run Command Prompt from Start and run the following commands:
 
 		cd "%HIFI_DIR%"
 		mkdir build
-		cd build 
+		cd build
 		cmake .. -G "Visual Studio 15 Win64"
 
 `%HIFI_DIR%` is the directory for the highfidelity repository.
@@ -120,4 +120,4 @@ If you face any problems once you start trying to generate build files using CMa
 
 
 ##References
-* [System Requirements](http://localhost/get-started/requirements)
+* [System Requirements](https://docs.highfidelity.com/get-started/requirements)
