@@ -14,10 +14,10 @@ Assuming you cannot stream directly from your mic, we recommend you set up anoth
 
 >>>>> These instructions work best on a machine with Realtek audio chipsets. 
 
-1. Left-click on the speaker icon and click on **Recording Devices**.
-2. Left-click and choose **Show Disabled Devices**. Certain new releases of Realtek drivers do not have Stereo Mix as a device. If Stereo Mix does not show up after turning on Show Disabled Devices, you can install an older version of the drivers.
-3. Select and enable **Stereo Mix**. This will route any audio coming from your computer's sound system into High Fidelity, as if it were a microphone. 
-4. In High Fidelity, open Menu>Settings>Audio and disable noise reduction to prevent the audio cutting out. 
+1. Left-click on the speaker icon and click on **Recording Devices**. ![](recordingdevicesdisabled.PNG)
+2. Left-click and choose **Show Disabled Devices**. Certain new releases of Realtek drivers do not have Stereo Mix as a device. If Stereo Mix does not show up after turning on Show Disabled Devices, you can install an older version of the drivers. ![](showdisableddevices.PNG)
+3. Select and enable **Stereo Mix**. This will route any audio coming from your computer's sound system into High Fidelity, as if it were a microphone. ![](stereomixenabled.PNG)
+4. In High Fidelity, open Menu>Settings>Audio and disable noise reduction to prevent the audio cutting out. ![](enablenoisereduction.PNG)
 5. Prepare to broadcast audio. Adjust the volume on your own computer to change the volume in High Fidelity. To prevent feedback, mute High Fidelity in the Volume Mixer. Remember, you will not be able to talk while you are broadcasting audio with Stereo Mix.
 6. Position the avatar within the domain. This can be tricky, so we recommend giving yourself extra time to prepare.
 
