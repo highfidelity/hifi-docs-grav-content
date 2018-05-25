@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-By default, avatars in High Fidelity will use the built in standard set of animations. However, these animations are generic and masculine, which doesn't always fit the character of some avatars, such as dainty ballerinas or cartoon foxes. It is possible to modify the avatar animations by inserting new animations to replace existing ones. Additionally, advanced technical animators can adjust the animation state machine and the interpolation and blend parameters for truly unique avatars.
+By default, avatars in High Fidelity will use the built in standard set of animations. However, these animations are generic and masculine, which do not always fit the character of some avatars, such as dainty ballerinas or cartoon foxes. It is possible to modify the avatar animations by inserting new animations to replace existing ones. Additionally, advanced technical animators can adjust the animation state machine and the interpolation and blend parameters for truly unique avatars.
 Here are some guidelines for creating animations in the proper format:
 + Animations must have the High Fidelity standard joint names
 + Animations must have the High Fidelity standard joint orientations (y down the bone) 
