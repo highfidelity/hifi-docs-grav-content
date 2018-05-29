@@ -49,7 +49,7 @@ In our example above, this breaks down into:
 | position | boxPosition                   | variable   |
 | color    | {red: 0, green: 0, blue: 155} | vector     |
 
-While generally you can set whatever properties that you’d like in your entities, only the ones that are present in the [Entity Properties API](../../api-reference/entities#properties) will be handled directly by Interface. This means that you can extend an object with your own fields, but you will need to handle them yourself.
+While generally you can set whatever properties that you’d like in your entities, only the ones that are present in the [Entity Properties API](../../api-reference/namespaces/entities#.EntityProperties) will be handled directly by Interface. This means that you can extend an object with your own fields, but you will need to handle them yourself.
 
 This cube script is helpful to create a single cube with a specific set of properties, but we may want to spawn new cubes with different properties from this one. We may also want to define a set of functions for our cubes, so we want to make our script more extensible and reusable across a number of different cubes that we can generate with the same spawning script.
 
