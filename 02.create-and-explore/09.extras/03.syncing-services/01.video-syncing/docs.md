@@ -7,7 +7,7 @@ taxonomy:
 *Learn how you can share a synced video and watch videos at the same time as your friends (in High Fidelity).*
 
 ##Introduction
-If you've ever wanted to watch a video simultaneously with your friends, you can now do that in High Fidelity using a syncing service called [Sync Video](http://sync-video.com/).
+If you've ever wanted to watch a video simultaneously with your friends, you can now do that in High Fidelity using a syncing service called [Sync Video](http://sync-video.com/). Additionally, you can follow [these instructions](docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/streaming/streaming-video) to stream using Screenleap.
 
 
 ###Syncing and Sharing Videos

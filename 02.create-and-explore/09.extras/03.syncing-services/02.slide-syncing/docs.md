@@ -7,7 +7,7 @@ taxonomy:
 *Learn how you can share a synced presentation and watch it at the same time as other users, in High Fidelity.*
 
 ##Introduction
-If you've ever wanted to share a presentation to other users in High Fidelity, you can now do so using a syncing service called [Slides](https://slides.com/).
+If you've ever wanted to share a presentation to other users in High Fidelity, you can now do so using a syncing service called [Slides](https://slides.com/).  Additionally, you can follow [these instructions](docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/streaming/streaming-video) to stream using Screenleap.
 
 
 ###Syncing and Sharing Presentation
