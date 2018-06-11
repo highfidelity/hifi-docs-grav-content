@@ -97,8 +97,9 @@ Now you can package your avatar to use it in High Fidelity.
 
 1. Launch High Fidelity’s Interface application.
 2. Enable ‘Advanced Menus’ under Settings > Advanced Menus.
-3. Go to Edit > Package Model.
+3. Go to Edit > Package Model as .fst.
 4. Click ‘Browse’ under ‘Model File’ and select the FBX that you exported from Blender, then click OK.
+5. On the next menu, you have the option to attach a script to the model to produce special effects. For more information about scripting, check out [this tutorial](https://docs.highfidelity.com/learn-with-us/get-started-with-scripting).
 5. Click OK on the next menu to export the model.
 6. Create a new folder AvatarName_Exported.
 7. Select your folder and click ‘Select Folder’.
