@@ -96,15 +96,14 @@ Now you can modify any part of your avatar using Blender. We've included an exam
 Now you can package your avatar to use it in High Fidelity.
 
 1. Launch High Fidelity’s Interface application.
-2. Enable ‘Advanced Menus’ under Settings > Advanced Menus.
-3. Go to Edit > Package Model as .fst.
-4. Click ‘Browse’ under ‘Model File’ and select the FBX that you exported from Blender, then click OK.
-5. On the next menu, you have the option to attach a script to the model to produce special effects. For more information about scripting, check out [this tutorial](https://docs.highfidelity.com/learn-with-us/get-started-with-scripting).
-6. Click OK on the next menu to export the model.
-7. Create a new folder AvatarName_Exported.
-8. Select your folder and click ‘Select Folder’.
-9. Your output folder should contain a .fst file and a folder with textures in it.
-10. Upload your avatar to somewhere publically accessible like a [S3 Bucket](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
+2. Go to Edit > Package Model as .fst.
+3. Click ‘Browse’ under ‘Model File’ and select the FBX that you exported from Blender, then click OK.
+4. On the next menu, you have the option to attach a script to the model to produce special effects. For more information about scripting, check out [this tutorial](https://docs.highfidelity.com/learn-with-us/get-started-with-scripting).
+5. Click OK on the next menu to export the model.
+6. Create a new folder AvatarName_Exported.
+7. Select your folder and click ‘Select Folder’.
+8. Your output folder should contain a .fst file and a folder with textures in it.
+9. Upload your avatar to somewhere publically accessible like a [S3 Bucket](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
 
 Or, you can use the following steps to test your avatar by uploading it to the marketplace. If you're happy with the result, you can submit it for review to recieve a [PoP Certificate](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop) and verify that you are the creator of the item. From there, you can either sell it on the Marketplace or use it for yourself. 
 
