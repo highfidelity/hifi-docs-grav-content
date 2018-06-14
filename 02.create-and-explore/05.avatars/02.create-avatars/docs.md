@@ -102,7 +102,7 @@ Now you can package your avatar to use it in High Fidelity.
 5. Click OK on the next menu to export the model.
 6. Create a new folder AvatarName_Exported.
 7. Select your folder and click ‘Select Folder’.
-8. Your output folder should contain a .fst file and a folder with textures in it.
+8. Your output folder should contain a .fst file, a folder for textures, and a folder for scripts.
 9. Upload your avatar to somewhere publically accessible like a [S3 Bucket](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
 
 Or, you can use the following steps to test your avatar by uploading it to the marketplace. If you're happy with the result, you can submit it for review to recieve a [PoP Certificate](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop) and verify that you are the creator of the item. From there, you can either sell it on the Marketplace or use it for yourself. 
