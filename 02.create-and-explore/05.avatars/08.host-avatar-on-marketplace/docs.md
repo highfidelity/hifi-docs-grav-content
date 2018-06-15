@@ -22,4 +22,6 @@ You can host your avatar for free using the Marketplace backend. The Marketplace
 11. Select the .fst file in the file manager and press the Copy URL button.  
 12. Open High Fidelity and go to Settings > Avatar.
 13. Paste the URL in the Appearance field and press save.
-14. If you like, bookmark the avatar using Avatar > Bookmark Avatar.
+14. If you like, [bookmark the avatar](https://docs.highfidelity.com/create-and-explore/avatars/bookmark-avatar) using Avatar > Bookmark Avatar.
+
+If you would like to certify ownership of your avatar, or [upload your avatar for sale](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/sell), you can submit it for certification. For more information on certification, go [here](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop).
