@@ -1,9 +1,9 @@
 ---
-title: Hosting Avatar on the Marketplace Backend
+title: Hosting an Avatar on the Marketplace Backend
 taxonomy:
     category: docs
 ---
-*Learn how to host your avatar on the Marketplace.*
+*Learn how to host your avatar on the Marketplace backend.*
 
 ## Overview
 You can host your avatar for free using the Marketplace backend. The Marketplace contains a filesystem which you can use privately, without showing or selling your product on the Marketplace. Just upload your avatar files and keep it in Draft mode (do not press Submit for Review).
