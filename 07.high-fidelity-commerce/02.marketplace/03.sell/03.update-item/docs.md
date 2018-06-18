@@ -23,6 +23,7 @@ Creating an update is similar to creating a new item:
 Once the new update is approved, a new certificate will be generated.  The previous version of the item will be hidden from new customers on the marketplace, and replaced with the new version. 
 
 ##FAQ
+
 **What is it?**
 In-Marketplace updates leverages the HF commerce blockchain by creating a chain of related certificates between old and new versions of a product.  Previously, if you wanted to update a Marketplace item, you needed to re-submit it as a new item, and hide the old instance of the item.  This had numerous disadvantages including losing your likes, and your existing customers not being notified of the updates.
 
