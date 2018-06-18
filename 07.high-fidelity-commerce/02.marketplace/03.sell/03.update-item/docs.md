@@ -12,14 +12,14 @@ Creating an update is similar to creating a new item:
 
 1. Go to the Marketplace page and select New Item or bookmark this link: https://highfidelity.com/marketplace/items/new
 2. Fill in the metadata and Save Draft.  We suggest using version numbers in the name.
-3. Check the Update Item box.
+3. Check the Update Item box. ![](update-item.PNG)
 4. Select the previous version from the Updates drop-down menu.
 5. Upload all files used in the product to the file system
 6. Change any scripts, JSON files, etc to point to the files you uploaded in step 5.
 7. Press Submit for Review.
-8. Our Marketplace admin team will receive the update submission and process. ![]()
+8. Our Marketplace admin team will receive the update submission and process. 
+![](customer-view.PNG)
 
-  
 Once the new update is approved, a new certificate will be generated.  The previous version of the item will be hidden from new customers on the marketplace, and replaced with the new version. 
 
 ##FAQ
