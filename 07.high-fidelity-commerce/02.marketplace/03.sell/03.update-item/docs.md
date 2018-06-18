@@ -1,12 +1,12 @@
 ---
-title: Add Your Item
+title: Update Your Item
 taxonomy:
     category: docs
 ---
 
 If you’ve created an item on the Marketplace previously, and would like to offer your customers a new and improved version, these instructions show you how to update it.
 
-##Update Your Item In Marketplace
+## Update Your Item In Marketplace
 
 Creating an update is similar to creating a new item:
 
@@ -22,17 +22,17 @@ Creating an update is similar to creating a new item:
 
 Once the new update is approved, a new certificate will be generated.  The previous version of the item will be hidden from new customers on the marketplace, and replaced with the new version. 
 
-##FAQ
+## FAQ
 
 **What is it?**
-In-Marketplace updates leverages the HF commerce blockchain by creating a chain of related certificates between old and new versions of a product.  Previously, if you wanted to update a Marketplace item, you needed to re-submit it as a new item, and hide the old instance of the item.  This had numerous disadvantages including losing your likes, and your existing customers not being notified of the updates.
+Marketplace updates leverage the HF commerce blockchain by creating a chain of related certificates between old and new versions of a product.  Previously, if you wanted to update a Marketplace item, you needed to re-submit it as a new item, and hide the old instance of the item.  This had numerous disadvantages including losing your likes, and your existing customers not being notified of the updates.
 
 **Can I reference existing URLs on my previous item?**
-No.  If you create an update, you must upload all the items the product uses in the update item.  If the old version of your product uses a .wav file that hasn’t changed in the updated version, you may not reference the URL to the old item’s .wav file.  It needs to go up in the new item again.  This is because the certificate system needs to recertify all files used in the product together.  
+No.  If you create an update, you must upload all the items the product uses in the update item.  If the old version of your product uses a .wav file that has not changed in the updated version, you may not reference the URL to the old item’s .wav file.  It needs to go up in the new item again.  This is because the certificate system needs to recertify all files used in the product together.  
 
 **How will my customers receive updates?**
 Once the update hits the Blockchain, your customers will receive notification that an updated version of an item they previously purchased is available in their Marketplace My Purchases section.  A red dot on the Market button on your toolbar or tablet will appear to indicate there is an update available to download.
-From My Purchases, they will see “UPDATE AVAILABLE. Update this Item now.”  If the customer views the Item Listing page, they’ll see an “UPDATE FOR FREE” button. Clicking either of these will record your customer as owning the updated version, and High Fidelity will use the updated version the next time the customer rezzes or uses the item. ![]()
+From My Purchases, they will see *UPDATE AVAILABLE. Update this Item now.*  If the customer views the Item Listing page, they will see an *UPDATE FOR FREE* button. Clicking either of these will record your customer as owning the updated version, and High Fidelity will use the updated version the next time the customer rezzes or uses the item. ![]()
 
 Customers who visit the Item Listing and have not purchased the old version will see the item listed like any other item, with a Buy button.  
 
