@@ -124,6 +124,7 @@ Or, you can use the following steps to test your avatar by uploading it to the m
 7. Now go back to Interface, and in the Settings > Avatar menu, paste into the Appearance field, the url you just copied above:
 
 ![Settings-Avatar.PNG](Settings-Avatar.PNG)
+
 8. If you like the way it looks, you can submit your draft to the Marketplace!
 
 
