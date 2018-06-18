@@ -28,7 +28,7 @@ Once the new update is approved, a new certificate will be generated.  The previ
 Marketplace updates leverage the HF commerce blockchain by creating a chain of related certificates between old and new versions of a product.  Previously, if you wanted to update a Marketplace item, you needed to re-submit it as a new item, and hide the old instance of the item.  This had numerous disadvantages including losing your likes, and your existing customers not being notified of the updates.
 
 **Can I reference existing URLs on my previous item?**
-No.  If you create an update, you must upload all the items the product uses in the update item.  If the old version of your product uses a .wav file that has not changed in the updated version, you may not reference the URL to the old item’s .wav file.  It needs to go up in the new item again.  This is because the certificate system needs to recertify all files used in the product together.  
+No.  If you create an update, you must upload all the items the product uses in the update item.  If the old version of your product uses a .wav file that has not changed in the updated version, you must upload it again in the new item.  This is because the certificate system needs to recertify all files used in the product together.  
 
 **How will my customers receive updates?**
 Once the update hits the Blockchain, your customers will receive notification that an updated version of an item they previously purchased is available in their Marketplace My Purchases section.  A red dot on the Market button on your toolbar or tablet will appear to indicate there is an update available to download.
@@ -56,4 +56,3 @@ Yes. The same policies apply as above.
 
 **What if I purchased multiple instances of an item?  Can I update just one of them?**
 Yes.  You need to individually update each instance of an item you see in My Purchases as you see fit.  You can for example update 1 instance of a chair but leave the other ones un-updated.
-
