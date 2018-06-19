@@ -18,7 +18,6 @@ Creating an update is similar to creating a new item:
 6. Change any scripts, JSON files, etc to point to the files you uploaded in step 5.
 7. Press Submit for Review.
 8. Our Marketplace admin team will receive the update submission and process. 
-![](customer-view.PNG)
 
 Once the new update is approved, a new certificate will be generated.  The previous version of the item will be hidden from new customers on the marketplace, and replaced with the new version. 
 
@@ -32,7 +31,7 @@ No.  If you create an update, you must upload all the items the product uses in 
 
 **How will my customers receive updates?**
 Once the update hits the Blockchain, your customers will receive notification that an updated version of an item they previously purchased is available in their Marketplace My Purchases section.  A red dot on the Market button on your toolbar or tablet will appear to indicate there is an update available to download.
-From My Purchases, they will see *UPDATE AVAILABLE. Update this Item now.*  If the customer views the Item Listing page, they will see an *UPDATE FOR FREE* button. Clicking either of these will record your customer as owning the updated version, and High Fidelity will use the updated version the next time the customer rezzes or uses the item. ![]()
+From My Purchases, they will see *UPDATE AVAILABLE. Update this Item now.*  If the customer views the Item Listing page, they will see an *UPDATE FOR FREE* button. Clicking either of these will record your customer as owning the updated version, and High Fidelity will use the updated version the next time the customer rezzes or uses the item. ![](customer-view.PNG)
 
 Customers who visit the Item Listing and have not purchased the old version will see the item listed like any other item, with a Buy button.  
 
