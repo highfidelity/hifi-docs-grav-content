@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-If you’ve created an item on the Marketplace previously, and would like to offer your customers a new and improved version, these instructions show you how to update it.
+If you created an item on the Marketplace previously, and would like to offer your customers a new and improved version, these instructions show you how to update it.
 
 ## Update Your Item In Marketplace
 
