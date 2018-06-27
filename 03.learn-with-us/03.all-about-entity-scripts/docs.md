@@ -356,7 +356,7 @@ Entities.addEntity({
 
 ```
 
-In the same way that we use `Entities.addEntity `in our cube spawning object to make new cubes, we also use the [Entity Functions API](https://wiki.highfidelity.com/wiki/Entity_Functions_API) to add our spawner when we launch the createCubeSpawner script. We added one additional entity property, ‘dimensions’, which will make our spawner a little bit longer than the other cubes. We also gave it a name to make it easier to find in our entity list.
+In the same way that we use `Entities.addEntity `in our cube spawning object to make new cubes, we also use the Entity Functions API to add our spawner when we launch the createCubeSpawner script. We added one additional entity property, ‘dimensions’, which will make our spawner a little bit longer than the other cubes. We also gave it a name to make it easier to find in our entity list.
 
 Cleaning up our Cubes If you click around on your spawner a lot, you’ll generate a pretty large number of cubes quickly, which can be a pain to clean up! We’re going to change our code in our cube spawner to delete all of the cubes we’ve made when we delete the spawner, so we can remove all of them with one deletion.
 
@@ -452,13 +452,13 @@ What we’ve done is build up our system to allow us to run a single script in o
 
 ### Additional Resources for Chapter 2
 
-- [Entity Functions API](https://wiki.highfidelity.com/wiki/Entity_Functions_API)
+- [Entity Functions API](https://docs.highfidelity.com/api-reference/namespaces/entities)
 - [JavaScript Array Reference](https://www.w3schools.com/js/js_arrays.asp)
 - [JavaScript While Loops](https://www.w3schools.com/js/js_loop_while.asp)
-- [Creating Client Entity Scripts](https://wiki.highfidelity.com/wiki/Creating_Client_Entity_Scripts)
-- [Creating Server Entity Scripts](https://wiki.highfidelity.com/wiki/Creating_Server_Entity_Scripts)
-- [Attaching Entity Scripts](https://wiki.highfidelity.com/wiki/Attaching_Entity_Scripts)
-- [Script Types Overview](https://wiki.highfidelity.com/wiki/Script_Types_Overview)
+- [Creating Client Entity Scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting/attach-entity-scripts/client-entity-scripts)
+- [Creating Server Entity Scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting/attach-entity-scripts/server-entity-scripts)
+- [Attaching Entity Scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting/attach-entity-scripts)
+- [Script Types Overview](https://docs.highfidelity.com/create-and-explore/all-about-scripting)
 - [Entity script examples](https://github.com/highfidelity/hifi/tree/master/script-archive/entityScripts)
 
 ## Chapter 3: Moving & Equipping our Spawner
