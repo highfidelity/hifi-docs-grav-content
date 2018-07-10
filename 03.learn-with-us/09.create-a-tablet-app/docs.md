@@ -63,6 +63,8 @@ Script.scriptEnding.connect(cleanup);
 
 You can design UI elements in the Tablet UI framework, like how you do when designing a web application. You can write this in HTML, CSS or JavaScript.
 
+>>>> Do not use BOM characters in your HTML file or it will not parse correctly.
+
 You want to keep in mind that the tablet screen dimensions are **480 x 720**, and this factors in for buttons sizes for small screens, text readability etc.
 
 To help you get started, we’ve put together a [quick start template](https://hifi-content.s3.amazonaws.com/faye/tablet-sample-app/quick_start_template.html) that you can reuse. It contains the same layout, styling and font as the main menu screen. It also has a “sticky” header bar for your app title. You can also choose to make your own UI.
