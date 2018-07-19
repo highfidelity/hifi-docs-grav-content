@@ -82,6 +82,22 @@ To fly in High Fidelity with gamepads & controllers:
 #### Other Shortcuts
 Here are some other useful shortcuts for High Fidelity:
 
+| Edit/Create Mode | Key |
+| ------------- | ------------- |
+| Select | Mouse Left-Click  |
+| Select Multiple  | <kbd class="keyboard">Shift</kbd> + Mouse Left-Click  |
+| Translate on X/Z Plane | Mouse Left-Click + Drag |
+| Translate on X/Z Axes | <kbd class="keyboard">Shift</kbd> + Mouse Left-Click + Drag |
+| Undo | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">Z</kbd> |
+| Redo | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">Shift</kbd> + <kbd class="keyboard">Z</kbd>  |
+| Focus | <kbd class="keyboard">F</kbd> |
+| Align Grid to Bottom of Entities | <kbd class="keyboard">G</kbd> |
+| Delete | <kbd class="keyboard">Delete</kbd> |
+| Deselect | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">D</kbd> |
+| Toggle Local/World Space | <kbd class="keyboard">T</kbd> |
+| Duplicate | <kbd class="keyboard">Alt</kbd> + Mouse Left-Click + Drag |
+| Snap Rotations | <kbd class="keyboard">CTRL</kbd> + Mouse Left-Click rotation rings |
+
 | In-World Actions  | Key |
 | ------------- | ------------- |
 | Away Toggle | <kbd class="keyboard">ESC</kbd>  |
