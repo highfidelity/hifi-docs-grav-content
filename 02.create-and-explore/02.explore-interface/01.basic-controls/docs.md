@@ -98,6 +98,8 @@ Here are some other useful shortcuts for High Fidelity:
 | Duplicate | <kbd class="keyboard">Alt</kbd> + Mouse Left-Click + Drag |
 | Snap Rotations | <kbd class="keyboard">CTRL</kbd> + Mouse Left-Click rotation rings |
 
+<br>
+
 | In-World Actions  | Key |
 | ------------- | ------------- |
 | Away Toggle | <kbd class="keyboard">ESC</kbd>  |
