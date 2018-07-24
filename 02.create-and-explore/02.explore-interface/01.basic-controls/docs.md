@@ -9,23 +9,21 @@ taxonomy:
 
 ## Overview
 
-This page will take you through the movement controls, how to fly in High Fidelity, and other useful shortcuts for in-world actions.
+This page will take you through the movement controls and other useful shortcuts for in-world actions.
 
 [Movement Controls](#movement-controls)
 
 &nbsp;&nbsp;&nbsp;[Mouse and Keyboard](#mouse-and-keyboard)
 
-&nbsp;&nbsp;&nbsp;[Oculus Touch and HTC Controllers](#oculus-touch-and-htc-controllers)
+&nbsp;&nbsp;&nbsp;[Oculus Touch, HTC Vive, and Microsoft MR Controllers](#oculus-touch-and-htc-controllers)
 
 &nbsp;&nbsp;&nbsp;[Gamepad](#gamepad)
-
-&nbsp;&nbsp;&nbsp;[Flying](#flying)
 
 [Other Shortcuts](#other-shortcuts)
 
 ### Movement Controls
 ##### Mouse and Keyboard
-If you are using a keyboard and mouse, use the following controls to move around and manipulate objects:
+Use the following controls to move around and manipulate objects with a mouse and keyboard:
 
 | Movement  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
@@ -40,7 +38,6 @@ If you are using a keyboard and mouse, use the following controls to move around
 | Fly Down | <kbd class="keyboard">C</kbd> |   |
 <br>
 
-
 | Manipulation  | Key | Alternate Key | 
 | ------------- | ------------- | ------------- |
 | Far-Grab Dynamic Entity | Mouse Left-Click  |   |
@@ -50,33 +47,22 @@ If you are using a keyboard and mouse, use the following controls to move around
 | Far-Grab Rotate Entity (y-axis) | <kbd class="keyboard">Ctrl</kbd> + Mouse Left-Click + Drag Left/Right  |   |
 | Equip Hand-Equipped Entities | Mouse Left-Click  |    |
 | Unequip Hand-Equipped Entities | <kbd class="keyboard">U</kbd> |   |
+<br>
 
+##### Oculus Touch, HTC Vive, and Microsoft MR Controllers
 
-##### Oculus Touch and HTC Controllers
+Use the following controls to move around, fly, and manipulate objects with your controllers:
 
-If you are using Oculus Touch or HTC controllers, use the following controls to move around and manipulate objects:
+![](controls-VR.png)
 
-![](t-controller.png)
-
-
+<span style="color:red;font-weight:bold;">Note</span>: In order to Fly in VR, you must enable it under Settings > Controls > VR Movement.
 
 ##### Gamepad
 
-If you're using a gamepad, use the following controls to move around and manipulate objects:
+Use the following controls to move around, fly, and manipulate objects with your gamepad:
 
-![](g-controller.png)
-
-
-
-
-
-##### Flying
-
-To fly in High Fidelity with gamepads & controllers:
-
-* **Enable Advanced Movements:** Enable advancements so that you can use your controllers or gamepad to fly. ![](enable-advance.png)
-* **Oculus Touch and Vive:** Use the following controls to fly in High Fidelity if you're using Oculus Touch or HTC Vive controllers. ![](fly-controller.png)
-* **Gamepad and Keyboard:** If you're using a gamepad, use the following controls to fly. ![](fly-other.png)
+![](controls-gamepad.png)
+<span style="color:red;font-weight:bold;">Note</span>: While the use of a gamepad is supported, High Fidelity is best experienced with hand controllers like the Oculus Touch, HTC Vive, and Microsoft MR controllers.
 
 
 #### Other Shortcuts
