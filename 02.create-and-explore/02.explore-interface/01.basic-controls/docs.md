@@ -55,15 +55,13 @@ Use the following controls to move around, fly, and manipulate objects with your
 
 ![](controls-VR.png)
 
-<span style="color:red;font-weight:bold;">Note</span>: In order to Fly in VR, you must enable it under Settings > Controls > VR Movement.
+>>>>>In order to Fly in VR, you must enable it under Settings > Controls > VR Movement.
 
 ##### Gamepad
 
 Use the following controls to move around, fly, and manipulate objects with your gamepad:
-
 ![](controls-gamepad.png)
-<span style="color:red;font-weight:bold;">Note</span>: While the use of a gamepad is supported, High Fidelity is best experienced with hand controllers like the Oculus Touch, HTC Vive, and Microsoft MR controllers.
-
+>>>>>While the use of a gamepad is supported, High Fidelity is best experienced with hand controllers like the Oculus Touch, HTC Vive, and Microsoft MR controllers.
 
 #### Other Shortcuts
 Here are some other useful shortcuts for High Fidelity:
