@@ -47,7 +47,7 @@ var properties = {
     position: position,
     color: { red: 0, green: 0, blue: 155 }
 };
-Ent = Entities.addEntity(properties);
+var Ent = Entities.addEntity(properties);
 print("Entity added");
 
 ```
