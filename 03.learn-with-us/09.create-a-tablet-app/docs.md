@@ -185,7 +185,7 @@ Now, let’s make the gemstone buttons interact with High Fidelity. The Tablet U
                 var readyEvent = {
                     "type": "ready",
                 };
-                // The event bridge handles events represented as a string the best. So we first create a Javascript object, then convert to stirng
+                // The event bridge handles events represented as a string the best. So we first create a Javascript object, then convert to string
                 EventBridge.emitWebEvent(JSON.stringify(readyEvent));
                 // Send an event when user click on each of the gemstone buttons
                 $(".gemstone-button").click(function(){
