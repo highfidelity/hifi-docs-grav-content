@@ -71,7 +71,7 @@ There is a class to help with Quaternions called Quat.  One of it's methods is Q
 Using the vector we get back from passing your Avatar's orientation into Quat.getForward, we can use another helper class called Vec3 to help make an object appear in front of us. 
 
 ```javascript
-Vec3.sum(MyAvatar.position, Quat.getForward(MyAvatar.orientation); // This will add your position vector to the direction vector returned from Quat.getForward.  This will represent a position that is 1 meter in front of your avatar.
+Vec3.sum(MyAvatar.position, Quat.getForward(MyAvatar.orientation)); // This will add your position vector to the direction vector returned from Quat.getForward.  This will represent a position that is 1 meter in front of your avatar.
 ```
 
 If you want to control how far away an object appears in front of you, first we multiply the return value of Quat.getForward with a number representing how many meters we want an object to be in front of us.  Vec3.multiply can assist with this.  It takes a vector and a number as a parameter.
