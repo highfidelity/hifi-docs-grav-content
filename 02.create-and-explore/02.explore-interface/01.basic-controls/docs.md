@@ -74,7 +74,7 @@ Here are some other useful shortcuts for High Fidelity:
 | Translate on X/Z Axes | <kbd class="keyboard">Shift</kbd> + Mouse Left-Click + Drag |
 | Undo | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">Z</kbd> |
 | Redo | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">Shift</kbd> + <kbd class="keyboard">Z</kbd>  |
-| Focus | <kbd class="keyboard">F</kbd> |
+| Focus on Selected Entity or Edit Camera View | <kbd class="keyboard">F</kbd> |
 | Align Grid to Bottom of Entities | <kbd class="keyboard">G</kbd> |
 | Delete | <kbd class="keyboard">Delete</kbd> |
 | Deselect | <kbd class="keyboard">CTRL</kbd> + <kbd class="keyboard">D</kbd> |
