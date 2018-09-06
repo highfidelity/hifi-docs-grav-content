@@ -67,6 +67,9 @@ Close and re-open any command prompts after setting the environment variable so 
 
 Using a Developer Command Prompt, run the following command in your %VCPKG_ROOT% directory: `vcpkg install openssl:x64-windows`
 
+**6. nodeJS/npm**
+
+Download and execute [nodeJS](https://nodejs.org/en/). 
 ---------------------------
 
 
