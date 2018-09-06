@@ -66,7 +66,7 @@ We’re going to update our cube.js file so that we can use it as the script tha
 		name: "ScriptBox",
 		position: position,
 		color: { red: 0, green: 0, blue: 155 }};
-	Ent = Entities.addEntity(properties);
+	var Ent = Entities.addEntity(properties);
 	print("Entity added");
 })
 
