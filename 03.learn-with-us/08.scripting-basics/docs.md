@@ -83,7 +83,7 @@ Vec3.multiply(Quat.getForward(MyAvatar.orientation), 2.0); // if we are facing f
 We can then use Vec3.sum to return a new vector representing how far away an object will appear from us, to a vector representing our current position given from MyAvatar.position.
 
 ```javascript
-Vec3.sum(MyAvatar.position, Vec3.multiply(Quat.getForward(MyAvatar.orientation, 2.0); // this will give us a final vector representing where in the world a point 2 meters directly in front of our avatar is
+Vec3.sum(MyAvatar.position, Vec3.multiply(Quat.getForward(MyAvatar.orientation, 2.0))); // this will give us a final vector representing where in the world a point 2 meters directly in front of our avatar is
 
 ```
 
