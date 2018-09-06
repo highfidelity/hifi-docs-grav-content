@@ -158,7 +158,7 @@ To get the properties of an Entity, we can use Entities.getEntityProperties and 
 
 ```javascript
 // add a new entity
-var newEntity = Entities.addEntity({ type: "Sphere" });   // Ent is now a string with an id like "{18aaecb3-b22d-463c-92f0-95f07b1ec235}"
+var newEntity = Entities.addEntity({ type: "Sphere" });   // newEntity is now a string with a new unique id similar to "{18aaecb3-b22d-463c-92f0-95f07b1ec235}"
  
 // get the entity properties
 var newEntityProperties = Entities.getEntityProperties(newEntity);
