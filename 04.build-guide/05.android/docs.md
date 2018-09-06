@@ -8,7 +8,7 @@ taxonomy:
 
 ## Overview
 
-Please read the [general build guide](../build-guide) for information on dependencies required for all platforms. Only Android specific instructions are found in this file.
+Please read the [general build guide](https://docs.highfidelity.com/build-guide/basic-build-guide) for information on dependencies required for all platforms. This guide only contains Android specific instructions.
 
 ### Android Dependencies
 

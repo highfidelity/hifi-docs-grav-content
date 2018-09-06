@@ -121,7 +121,7 @@ Congratulations! You’ve learnt how to add a viking helmet avatar attachment an
 
 ## Related Pages
 
-* [3D Models](../../create-and-explore/3d-modelling)
+* [3D Models](https://docs.highfidelity.com/create-and-explore/3d-modeling)
 * [Marketplace Submission Guidelines](../../create-and-explore/marketplace/submission-guidelines)
 * [All About Scripting](../../create-and-explore/all-about-scripting)
 * [Avatar Standards](../../create-and-explore/avatars/avatar-standards)
