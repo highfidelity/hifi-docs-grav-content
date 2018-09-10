@@ -50,76 +50,6 @@ For the Reference pose, we propose a TPose which complies with the specification
 - In Blender the joint rotation values can be non-zero.
 - For the hand and related controller animation, make sure the middle finger is the first joint in the list of finger joints.
 
-### Default Joint Orientation Values
-
-- Hips = 0,0,0
-- Spine = 0,0,0
-- Spine1 = 0,0,0
-- Spine2 = 0,0,0
-- Neck = 0,0,0
-- Head = 0,0,0
-- HeadTop_End = 0,0,0
-- RightEye = 0,0,0
-- LeftEye = 0,0,0
-- LeftShoulder = 90,90,0
-- LeftArm = 0,0,0
-- LeftForeArm = 0,0,0
-- LeftHand = 0,0,0
-- LeftHandMiddle1 = 0,0,0
-- LeftHandMiddle2 = 0,0,0
-- LeftHandMiddle3 = 0,0,0
-- LeftHandMiddle4 = 0,0,0
-- LeftHandThumb1 = 0,0,0
-- LeftHandThumb2 = 0,0,0
-- LeftHandThumb3 = 0,0,0
-- LeftHandThumb4 = 0,0,0
-- LeftHandIndex1 = -0.07161852612,-0.07161852612,-0.07161852612
-- LeftHandIndex2 = 0.0714482688,0.0714482688,0.0714482688
-- LeftHandIndex3 = 0,0,0
-- LeftHandIndex4 = 0,0,0
-- LeftHandRing1 = 0,0,0
-- LeftHandRing2 = 0,0,0
-- LeftHandRing3 = 0,0,0
-- LeftHandRing4 = 0,0,0
-- LeftHandPinky1 = 0,0,0
-- LeftHandPinky2 = 0,0,0
-- LeftHandPinky3 = 0,0,0
-- LeftHandPinky4 = 0,0,0
-- RightShoulder = 90,-90,0
-- RightArm = 0,0,0
-- RightForeArm = 0,0,0
-- RightHand = 0,0,0
-- RightHandMiddle1 = 0,0,0
-- RightHandMiddle2 = 0,0,0
-- RightHandMiddle3 = 0,0,0
-- RightHandMiddle4 = 0,0,0
-- RightHandPinky1 = 0,0,0
-- RightHandPinky2 = 0,0,0
-- RightHandPinky3 = 0,0,0
-- RightHandPinky4 = 0,0,0
-- RightHandRing1 = 0,0,0
-- RightHandRing2 = 0,0,0
-- RightHandRing3 = 0,0,0
-- RightHandRing4 = 0,0,0
-- RightHandIndex1 = 0,0,0
-- RightHandIndex2 = 0,0,0
-- RightHandIndex3 = 0,0,0
-- RightHandIndex4 = 0,0,0
-- RightHandThumb1 = 0,0,0
-- RightHandThumb2 = 0,0,0
-- RightHandThumb3 = 0,0,0
-- RightHandThumb4 = 0,0,0
-- LeftUpLeg = 0,0,0
-- LeftLeg = 0,0,0
-- LeftFoot = 51.39617927,0,0
-- LeftToeBase = 38.19675833,0,0
-- LeftToe_End = 0,0,0
-- RightUpLeg = 0,0,0
-- RightLeg = 0,0,0
-- RightFoot = 51.4549916,0,0
-- RightToeBase = 38.19938444,0,0
-- RightToe_End = 0,0,0
-
 ## Look-at Vectors
 
 The look-at vectors are driven by the z-vector of the eye joints.
@@ -187,68 +117,67 @@ To view the default blendshapes for the default Being of Light avatar, open the 
 ## Joint Hierarchy and Naming
 
 - Hips
-  - Spine
-    - Spine1
-      - Spine2
-        - Neck
-          - Head
-            - HeadTop_End
-        - LeftShoulder
-          - LeftArm
-            - LeftForeArm
-              - LeftHand
-                - LeftHandThumb1
-                - LeftHandThumb2
-                - LeftHandThumb3
-                - LeftHandThumb4
-                - LeftHandIndex1
-                - LeftHandIndex2
-                - LeftHandIndex3
-                - LeftHandIndex4
-                - LeftHandMiddle1
-                - LeftHandMiddle2
-                - LeftHandMiddle3
-                - LeftHandMiddle4
-                - LeftHandRing1
-                - LeftHandRing2
-                - LeftHandRing3
-                - LeftHandRing4
-                - LeftHandPinky1
-                - LeftHandPinky2
-                - LeftHandPinky3
-                - LeftHandPinky4
-        - RightShoulder
-          - RightArm
-            - RightForeArm
-              - RightHand
-                - RightHandThumb1
-                - RightHandThumb2
-                - RightHandThumb3
-                - RightHandThumb4
-                - RightHandIndex1
-                - RightHandIndex2
-                - RightHandIndex3
-                - RightHandIndex4
-                - RightHandMiddle1
-                - RightHandMiddle2
-                - RightHandMiddle3
-                - RightHandMiddle4
-                - RightHandRing1
-                - RightHandRing2
-                - RightHandRing3
-                - RightHandRing4
-                - RightHandPinky1
-                - RightHandPinky2
-                - RightHandPinky3
-                - RightHandPinky4
-  - LeftUpLeg
-    - LeftLeg
-      - LeftFoot
-        - LeftToeBase
-          - LeftToe_End
-  - RightUpLeg
-    - RightLeg
-      - RightFoot
-        - RightToeBase
-          - RightToe_End
-
+	- Spine
+		- Spine1
+			- Spine2
+				- Neck
+					- Head
+						- HeadTop_End
+				- LeftShoulder
+					- LeftArm
+						- LeftForeArm
+							- LeftHand
+								- LeftHandThumb1
+								- LeftHandThumb2
+								- LeftHandThumb3
+								- LeftHandThumb4
+								- LeftHandIndex1
+								- LeftHandIndex2
+								- LeftHandIndex3
+								- LeftHandIndex4
+								- LeftHandMiddle1
+								- LeftHandMiddle2
+								- LeftHandMiddle3
+								- LeftHandMiddle4
+								- LeftHandRing1
+								- LeftHandRing2
+								- LeftHandRing3
+								- LeftHandRing4
+								- LeftHandPinky1
+								- LeftHandPinky2
+								- LeftHandPinky3
+								- LeftHandPinky4
+				- RightShoulder
+					- RightArm
+						- RightForeArm
+							- RightHand
+								- RightHandThumb1
+								- RightHandThumb2
+								- RightHandThumb3
+								- RightHandThumb4
+								- RightHandIndex1
+								- RightHandIndex2
+								- RightHandIndex3
+								- RightHandIndex4
+								- RightHandMiddle1
+								- RightHandMiddle2
+								- RightHandMiddle3
+								- RightHandMiddle4
+								- RightHandRing1
+								- RightHandRing2
+								- RightHandRing3
+								- RightHandRing4
+								- RightHandPinky1
+								- RightHandPinky2
+								- RightHandPinky3
+								- RightHandPinky4
+	- LeftUpLeg
+		- LeftLeg
+			- LeftFoot
+				- LeftToeBase
+					- LeftToe_End
+	- RightUpLeg
+		- RightLeg
+			- RightFoot
+				- RightToeBase
+					- RightToe_End
