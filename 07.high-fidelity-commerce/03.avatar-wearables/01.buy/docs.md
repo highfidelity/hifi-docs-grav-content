@@ -28,7 +28,7 @@ Avatar Island is a High Fidelity domain where you can purchase wearables created
 
   > > > > > If you don't want to purchase any of the wearables, you can simply walk out of the store without checking out. All wearables you are wearing will disappear when you leave. You can also take them off in VR mode or delete them using the **Wear** app in Desktop mode. If you want to see how your avatar looks with various wearables on, you can look at yourself in one of the many mirrors in the store. 
 
-- Once you are done selecting the wearables you want to buy, head over to one of the checkout kiosks. When you are close to a kiosk, you will see the items you picked in the shelf marked "Pick Items". Your tablet will also open your wallet and ask for your passphrase. 
+- Once you are done selecting the wearables you want to buy, head over to one of the checkout kiosks. When you are close to a kiosk, you will see the items you picked in the shelf marked "Pick Items". Your tablet will also open your wallet. 
 
 - You can choose the items you want to purchase and pick them up and place them on the scanner marked "Scan Items". 
 

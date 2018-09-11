@@ -17,11 +17,8 @@ taxonomy:
 | [Where is my content stored? Is there an asset distribution network?](#q6) |
 | [What is HF's monetary policy in a nutshell?](#q7) |
 | [Can other marketplaces use HFC?](#q8)   |
-| [What are private keys?](#q9)            |
 | [Will my money and digital assets survive if High Fidelity goes away?](#q10) |
 | [Do I get charged money if a transaction fails?](#q11) |
-| [What happens if I lose my passphrase?](#q12) |
-| [If I lose my wallet or my wallet passphrase, Why can't High Fidelity recover it?](#q13) |
 
 
 | **Blockchain Architecture Questions**    |
@@ -102,13 +99,6 @@ Yes. VR assets that are created on the Digital Asset Registry (receiving a PoP c
 <p align="right"><a href="#top">Back to Top</a></p>
 <br>
 
-<a id="q10"></a> 
-**What are private keys?**<br> 
-A private key is a secret piece of text that is used to prove ownership, unlock confidential information and sign transactions.
-In High Fidelity, your private keys are used to securely access the contents of your Wallet and Purchases.
-<p align="right"><a href="#top">Back to Top</a></p>
-<br>
-
 <a id="q11"></a>
 **Will my money and digital assets survive if High Fidelity goes away?**<br>
 Yes. Because the Digital Asset Registry is a public ledger, anyone can (and many will) make a backup of the data. If High Fidelity were to disappear, someone else will start up a new blockchain from that backup and provide the same service of accepting new blocks to write to the ledger. Also, both High Fidelity and the blockchain software we are using are open source.
@@ -119,21 +109,6 @@ Yes. Because the Digital Asset Registry is a public ledger, anyone can (and many
 **Do I get charged money if a transaction fails?**<br> 
 Your HFC balance only changes after a transaction is confirmed.
 When a user decides to purchase an item from the High Fidelity Marketplace, a set of atomic transactions will occur: (1) user sends HFC to content creator for purchase, (2) user sends HFC to High FIdelity Marketplace as revenue share fee (3) High Fidelity Marketplace sends the newly issued Proof of Provenance certificate to the user. If the user does not have sufficient funds, this entire set of transactions will fail. 
-<p align="right"><a href="#top">Back to Top</a></p>
-<br>
-
-<a id="q13"></a> 
-**What happens if I lose my passphrase?**<br> 
-In order to guarantee your privacy, nobody can help recover your passphrase, including High Fidelity.
-Your passphrase is used to encrypt your private keys. If you lose your passphrase and private key, you will no longer be able to decrypt your private key file nor have access to the contents of your Wallet or My Purchases. You should always take precautions to protect your passphrase from compromise or loss.
-If you lose your passphrase while you still hold your private key, you can move your assets to a new private key with another passphrase.
-<p align="right"><a href="#top">Back to Top</a></p>
-<br>
-
-<a id="q14"></a> 
-**If I lose my wallet and my wallet passphrase, Why can't High Fidelity recover it?**<br> 
-High Fidelity has no record of what "you" (or your username, avatar, phone number, etc.) have bought or been paid. Although the blockchain ledger is available for everyone to inspect, the participants are all recorded as anonymous keys. Your wallet contains these keys, and it is entirely up to you to make your own backup of the wallet file. 
-High Fidelity cannot spend, observe, share, lose, or recover your wallet, passphrase, keys, HFC, or purchased items.
 <p align="right"><a href="#top">Back to Top</a></p>
 <br>
 
