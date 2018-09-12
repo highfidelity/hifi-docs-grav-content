@@ -12,7 +12,7 @@ This page details how you can transfer HFC from your wallet to another user.
 
 ## Introduction
 
-Once you have logged into High Fidelity and [received your HFC](http://localhost:8000/high-fidelity-commerce/basics/hfc/get-hfc), learn how to send HFC to another user. 
+Once you have logged into High Fidelity and [received your HFC](https://docs.highfidelity.com/high-fidelity-commerce/basics/hfc/get-hfc), learn how to send HFC to another user. 
 
 * Pull up your tablet and go to **Wallet**. ![](wallet.PNG)
 * In your Wallet, click "Send Money". ![](send-money.PNG)

@@ -35,3 +35,5 @@ Avatar Island is a High Fidelity domain where you can purchase wearables created
 - Purchase the item. 
 ![](checkout.PNG)![](checkout-1.PNG)![](checkout-2.PNG)![](checkout-3.PNG)![](checkout-4.PNG)![](checkout-5.PNG)
 Congratulations, you've bought your first few wearables! Check out the other stores in Avatar Island or learn more about how you can [create a wearable for sale](https://docs.highfidelity.com/high-fidelity-commerce/avatar-wearables/create). 
+
+>>>>>You can also buy wearables directly from the Marketplace. [Learn how](https://docs.highfidelity.com/high-fidelity-commerce/marketplace/buy).
