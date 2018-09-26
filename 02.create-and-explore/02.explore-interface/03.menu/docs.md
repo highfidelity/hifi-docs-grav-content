@@ -80,7 +80,7 @@ GoTo helps you navigate to different domains and your home domain (or your sandb
 
 ###Market
 
-Market directs you to the marketplace, where you can get anything from a new avatar and a chair, to building blocks and even a virtual pet. Currently, everything in the marketplace is free. You can learn how to build and submit your creations to the marketplace [here](../../marketplace). 
+Market directs you to the marketplace, where you can get anything from a new avatar and a chair, to building blocks and even a virtual pet. Currently, everything in the marketplace is free. You can learn how to build and submit your creations to the marketplace [here](../../../marketplace). 
 
 ![](marketplace.PNG)
 

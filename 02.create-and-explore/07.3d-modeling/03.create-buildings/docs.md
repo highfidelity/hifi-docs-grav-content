@@ -29,7 +29,6 @@ If you're already familiar with a 3D modeling program like Maya or Blender, you 
 Another option for creating a custom floor plan (no 3D modeling required!) is to generate a 2D floor plan and use a service like [Archilogic](http://archilogic.com/) to generate a 3D mesh of your floor plan. While you can use any art tool to sketch out a 2D layout, you can also pick a program designed for floor plans, including:
 
 - [Draw.io](https://www.draw.io/), a browser-based flowchart program that exports drawings and can be used to create basic floor plans
-- [AutoDesk HomeStyler](http://www.homestyler.com/designer), which allows you to specify custom floor designs, window placements, and materials
 - [RoomSketcher](http://www.roomsketcher.com/), another browser-based app for layouts and building designs
 - [MagicPlan](http://www.sensopia.com/), a mobile app that generates floor plans based on a physical location
 
