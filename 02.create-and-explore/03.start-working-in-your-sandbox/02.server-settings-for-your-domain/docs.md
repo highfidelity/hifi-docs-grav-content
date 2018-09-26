@@ -46,14 +46,14 @@ If you modify your settings, you'll need to save and restart for the new setting
 
 You can configure your domain ID and networking settings using the Metaverse/Networking settings. Go to **Metaverse/Networking** in the **Settings** dropdown menu.
 
-Before you edit these settings, you have to be logged in to your High Fidelity account. If you don't already have one, you can [sign up for a High Fidelity account](https://highfidelity.com/users/signup) now.
+Before you edit these settings, you have to be logged in to your High Fidelity account. If you don't already have one, you can [sign up for a High Fidelity account](https://highfidelity.com/signup) now.
 
 
 ### Connecting to Your High Fidelity Account
 
 Once you log in to High Fidelity, you can generate an access token. You can do this by:
 
-* In the Metaverse/Networking settings, click ** Connect High Fidelity Account**.
+* In the Metaverse/Networking settings, click **Connect High Fidelity Account**.
   ![](\not-logged-in.png)
   If you aren't already logged into your High Fidelity account, the login page will open in a new tab in your browser. Login using your High Fidelity username and password.
   ![](\login-page.png)

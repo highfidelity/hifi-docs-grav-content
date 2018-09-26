@@ -108,7 +108,7 @@ Now you can package your avatar to use it in High Fidelity.
 Or, you can use the following steps to test your avatar by uploading it to the marketplace. If you're happy with the result, you can submit it for review to recieve a [PoP Certificate](https://docs.highfidelity.com/high-fidelity-commerce/basics/pop) and verify that you are the creator of the item. From there, you can either sell it on the Marketplace or use it for yourself. 
 
 1. Go to the marketplace and [add a new item](https://highfidelity.com/marketplace/items/new).
->>> Make sure you have first [created a new high fidelity account](https://highfidelity.com/users/signup).
+>>> Make sure you have first [created a new high fidelity account](https://highfidelity.com/signup).
 2. Fill out the name of your avatar for the title.
 3. Save the draft.
 4. To upload a file and create directories, scroll to the bottom of the page

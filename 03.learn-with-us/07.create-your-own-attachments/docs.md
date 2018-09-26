@@ -75,7 +75,7 @@ Let’s create a Viking helmet attachment for your avatar.
 
    * This type of attacher script must be designated as the root asset when you submit to the Marketplace. When a user gets your attachment, they will have to run the script as well. This means that they won’t only be importing a model, but also be running a script to wear it as an attachment. 
 
-   * You can view the [Marketplace submission guidelines](../../high-fidelity-commerce/marketplace) to upload your own attachment and attacher script. 
+   * You can view the [Marketplace submission guidelines](../../../marketplace) to upload your own attachment and attacher script. 
 
      ​
 
@@ -122,6 +122,5 @@ Congratulations! You’ve learnt how to add a viking helmet avatar attachment an
 ## Related Pages
 
 * [3D Models](https://docs.highfidelity.com/create-and-explore/3d-modeling)
-* [Marketplace Submission Guidelines](../../create-and-explore/marketplace/submission-guidelines)
 * [All About Scripting](../../create-and-explore/all-about-scripting)
 * [Avatar Standards](../../create-and-explore/avatars/avatar-standards)
