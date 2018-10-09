@@ -36,6 +36,6 @@ We’ve listed the hardware requirements below.
 | ---------------------------------------- | ------------------- | ---------------------------------------- |
 | Oculus Rift (CV1 and DK2, runtime version 1.3) | HTC Vive            | Sennheiser PC 350 SE                     |
 | HTC Vive                                 | Oculus Touch        | Plantronics GameCom 780                  |
-|                                          | XBox One Controller | Gaming headphones with a boom microphone |
+| Windows MR    | XBox One Controller | Gaming headphones with a boom microphone |
 |                                          | Razer Hydra         |                                          |
 |                                          | Leap Motion Orion   |                                          |
