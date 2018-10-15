@@ -22,7 +22,7 @@ If you feel we've missed out on something, or you wish to expand more on a parti
 
 Our docs run on a flat-file CMS called Grav. All the pages you see have been written in Markdown. You can check out our [Markdown Guide](../..//write-for-us/markdown-guide) to learn more. 
 
-Since we're using Grav and it's documentation theme, we need to ensure that every page follows the page type requirements specified by Grav. 
+Since we're using Grav and its documentation theme, we need to ensure that every page follows the page type requirements specified by Grav. 
 
 So, if you are adding a new page to the docs, you need keep the following instructions in mind: 
 
