@@ -20,13 +20,14 @@ If you went through [Get Started with Scripting in High Fidelity](../get-started
 
 ```javascript
 
-var boxPosition = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
+var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
     type: "Box",
     name: "ScriptBox",
-    position: boxPosition,
-    color: { red: 0, green: 0, blue: 155 }};
-var Ent = Entities.add(properties);
+    position: position,
+    color: { red: 0, green: 0, blue: 155 }
+};
+var Ent = Entities.addEntity(properties);
 print("Entity added");
 
 ```
