@@ -29,7 +29,9 @@ You can now host your High Fidelity domain either on your local machine or serve
 
 - You will be redirected to the DigitalOcean authorization page. Once you've signed in, you will see the following window, where you can choose the virtual machine you want to host your domain on.
   ![](cloud-do-4.PNG)
+  
   The specifications and prices are listed as per user requirements. Once you select a type of virtual machine, you can select the geographical location you would like your server to be located at, from the dropdown menu. The table below outlines the recommended configuration based on numbers of users.
+  
   | Users | DigitalOcean Droplet | Estimated Price |
   | ----- | -------------------- | --------------- |
   | 10-15 | 8 GB Memory, 4 vCPUs, 80 GB SSD, 5 TB Transfer | $40/mo |
