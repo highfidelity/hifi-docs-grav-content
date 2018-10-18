@@ -66,7 +66,7 @@ We’re going to update our cube.js file so that we can use it as the script tha
 		type: "Box",
 		name: "ScriptBox",
 		position: position,
-		color: { red: 0, green: 0, blue: 155 }};
+		color: {red: 0, green: 0, blue: 155}};
 	var Ent = Entities.addEntity(properties);
 	print("Entity added");
 })
@@ -93,7 +93,7 @@ _this.clickDownOnEntity = function(entityID, event){
 
 ```
 
-What we now have is a basic script that has defined what happens when the entity is clicked. The keyword this refers to the parent object currently in scope, in this case, our cube. We specifically use `clickDownOnEntity `, since this is a function defined in the [Entity Functions API](https://docs.highfidelity.com/api-reference/namespaces/entities) and will be recognized by High Fidelity when we click on our cube.
+What we now have is a basic script that has defined what happens when the entity is clicked. The keyword `this` refers to the parent object currently in scope, in this case, our cube. We specifically use `clickDownOnEntity `, since this is a function defined in the [Entity Functions API](https://docs.highfidelity.com/api-reference/namespaces/entities) and will be recognized by High Fidelity when we click on our cube.
 
 Now, what we need to do is specify exactly what happens when we click on our cube. Right now, the only thing that happens is that we’ll use the ‘print’ function to write a statement. We’re going to do three things:
 
@@ -114,7 +114,7 @@ var changeColor = function(entityID){
 		var newGreen = Math.random()*255;
 		var newBlue = Math.random()*255;
 
-		var newProperty = { color: {red: newRed, green: newGreen, blue: newBlue}};
+		var newProperty = {color: {red: newRed, green: newGreen, blue: newBlue}};
 		Entities.editEntity(entityID, newProperty);
 	}
 
@@ -142,9 +142,11 @@ Finally, we want to call our changeColor() function from inside of our click fun
 
 ```
 
-That’s it for our cube script! You can test it out by manually adding your script into an existing cube. For now, though, we’ll make a spawner that generates and attaches the scripts for us. Creating a basic spawn script
+That’s it for our cube script! You can test it out by manually adding your script into an existing cube. For now, though, we’ll make a spawner that generates and attaches the scripts for us. 
 
-### Save cube.js and create a new file called spawnCube.js
+### Creating a basic spawn script
+
+Save cube.js and create a new file called spawnCube.js.
 
 We’ll start out this script the same way we did our original cube script, by defining the position where we want to spawn our cube. Then, we’ll define the new cube that will be generated when the spawnCube.js script is run.
 
@@ -153,10 +155,10 @@ We’ll start out this script the same way we did our original cube script, by d
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var id = Entities.addEntity({
 	position: position,
-	"script": Script.resolvePath("cube.js"),
+	script: Script.resolvePath("cube.js"),
 	type: "Box",
 	name: "ScriptBox",
-	color: { red: 0, green: 0, blue: 155 }
+	color: {red: 0, green: 0, blue: 155}
 });
 print("Made a cube!" , id);
 
@@ -210,7 +212,7 @@ cube.js
 		var newGreen = Math.random()*255;
 		var newBlue = Math.random()*255;
 
-		var newProperty = { color: {red: newRed, green: newGreen, blue: newBlue}};
+		var newProperty = {color: {red: newRed, green: newGreen, blue: newBlue}};
 		Entities.editEntity(entityID, newProperty);
 	}
 });
@@ -224,10 +226,10 @@ spawnCube.js
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var id = Entities.addEntity({
 	position: position,
-	"script": Script.resolvePath("cube.js") ,
+	script: Script.resolvePath("cube.js"),
 	type: "Box",
 	name: "ScriptBox",
-	color: { red: 0, green: 0, blue: 155 }
+	color: {red: 0, green: 0, blue: 155}
 });
 print("Made a cube!" , id);
 
@@ -246,11 +248,10 @@ var _this = this;
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var id = Entities.addEntity({
 	position: position,
-	"script": Script.resolvePath("cube.js") ,
+	script: Script.resolvePath("cube.js"),
 	type: "Box",
 	name: "ScriptBox",
-	color: { red: 0, green: 0, blue: 155 }
-});
+	color: {red: 0, green: 0, blue: 155}});
 print("Made a cube!" , id);
 });
 
@@ -266,10 +267,10 @@ var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var spawnACube = function(){
  	var id = Entities.addEntity({
 			 position: position,
-			 "script": Script.resolvePath("cube.js") ,
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
+			 color: {red: 0, green: 0, blue: 155}});
 	print("Made a cube!" , id);
 }
 });
@@ -297,10 +298,11 @@ var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var spawnACube = function(){
 	var id = Entities.addEntity({
 			 position: position,
-			 "script": Script.resolvePath("cube.js") ,
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
+			 color: {red: 0, green: 0, blue: 155}
+	});
 	print("Made a cube!" , id);
 }
 
@@ -312,7 +314,7 @@ _this.clickDownOnEntity = function(entityID, event){
 
 ```
 
-If you attach your spawnCube script to an entity in your domain and click on it, you will notice that the script saves your avatar’s position and places new cubes there - even after you move. We can fix that with a simple change - in `Entities.addEntity `, replace position: position with:
+If you attach your spawnCube script to an entity in your domain and click on it, you will notice that the script saves your avatar’s position and places new cubes there - even after you move. We can fix that with a simple change - in `Entities.addEntity `, replace `position: position` with:
 
 ```
  position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation))
@@ -328,13 +330,16 @@ var _this = this;
 var spawnACube = function(){
 	var id = Entities.addEntity({
 			 position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-			 "script": Script.resolvePath("cube.js"),
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
-	print("Made a cube!" , id);}
+			 color: {red: 0, green: 0, blue: 155}});
+	print("Made a cube!" , id);
+}
+
 _this.clickDownOnEntity = function(entityID, event){
-	spawnACube();}
+	spawnACube();
+}
 });
 
 ```
@@ -349,17 +354,19 @@ Similar to how our spawner creates new cubes, we’ll want to make a single scri
 
 Entities.addEntity({
 	position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-	"script" : Script.resolvePath("spawnCube.js") ,
+	script: Script.resolvePath("spawnCube.js"),
 	type: "Box",
 	color: {red: 255, green: 255, blue: 255},
-	 dimensions: {x: .5, y: .1, z: .1},
+	dimensions: {x: .5, y: .1, z: .1},
 	name: "Cube Spawner"});
 
 ```
 
 In the same way that we use `Entities.addEntity `in our cube spawning object to make new cubes, we also use the Entity Functions API to add our spawner when we launch the createCubeSpawner script. We added one additional entity property, ‘dimensions’, which will make our spawner a little bit longer than the other cubes. We also gave it a name to make it easier to find in our entity list.
 
-Cleaning up our Cubes If you click around on your spawner a lot, you’ll generate a pretty large number of cubes quickly, which can be a pain to clean up! We’re going to change our code in our cube spawner to delete all of the cubes we’ve made when we delete the spawner, so we can remove all of them with one deletion.
+### Cleaning up our Cubes 
+
+If you click around on your spawner a lot, you’ll generate a pretty large number of cubes quickly, which can be a pain to clean up! We’re going to change our code in our cube spawner to delete all of the cubes we’ve made when we delete the spawner, so we can remove all of them with one deletion.
 
 In your spawnCube.js file, add the following line of code directly above the spawnACube function:
 
@@ -392,13 +399,15 @@ Entities.deletingEntity.connect(deleteAllCubes);
 
 ```
 
-Let’s walk through what we’ve added to our cube spawning object. The first thing we do is create a new function called `deleteAllCubes `. In that function, we print out that we’re deleting the cubes and set up a while loop, which lets us repeat an action until a specific condition is met. In this case, we’re checking to see if there are any cubes left in our list (which will be true as long as the length of our list is greater than zero) and if there are, we remove the last cube from our list `(cubeList.pop()) `and delete the entity with that ID.
+Let’s walk through what we’ve added to our cube spawning object. The first thing we do is create a new function called `deleteAllCubes `. In that function, we print out that we’re deleting the cubes and set up a while loop, which lets us repeat an action until a specific condition is met. In this case, we’re checking to see if there are any cubes left in our list (which will be true as long as the length of our list is greater than zero) and if there are, we remove the last cube from our list (`cubeList.pop()`) and delete the entity with that ID.
 
-Under our deleteAllCubes function, we added another line, `Entities.deletingEntity.connect(deleteAllCubes);. `This allows us to call a particular method when the entity that our script is attached to gets deleted (in this case, `deleteAllCubes()) - Entities.deletingEntity `is a message that bubbles up from the High Fidelity engine that can be used to do specific things when we delete an object in our domain.
+Under our deleteAllCubes function, we added another line, `Entities.deletingEntity.connect(deleteAllCubes);`. This allows us to call a particular method when the entity that our script is attached to gets deleted (in this case, `deleteAllCubes()`) - `Entities.deletingEntity` is a message that bubbles up from the High Fidelity engine that can be used to do specific things when we delete an object in our domain.
 
 Save all of your files and run your createCubeSpawner script. Make some cubes and delete the spawner to see our clean up in action!
 
-The final scripts should look like this: spawnCube.js
+The final scripts should look like this: 
+
+spawnCube.js
 
 ``````javascript
 
@@ -407,14 +416,15 @@ var _this = this;
 var cubeList = [];
 var spawnACube = function(){
 	var id = Entities.addEntity({
-			 position: Vec3.sum(MyAvatar.position, 		Quat.getFront(MyAvatar.orientation)),
-			 "script": Script.resolvePath("cube.js"),
+			 position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
+			 color: {red: 0, green: 0, blue: 155}});
 	print("Made a cube!" , id);
 	cubeList.push(id);
 }
+
 _this.clickDownOnEntity = function(entityID, event){
 	spawnACube();
 }
@@ -437,7 +447,7 @@ createCubeSpawner.js
 
 Entities.addEntity({
 	position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-	"script" : Script.resolvePath("spawnCube.js"),
+	script: Script.resolvePath("spawnCube.js"),
 	type: "Box",
 	color: {red: 255, green: 255, blue: 255},
 	dimensions: {x: .5, y: .1, z: .1},
@@ -489,12 +499,12 @@ The quotes in our JSON need to be escaped, which means adding a \ character befo
 
 Entities.addEntity({
 	position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-	"script": Script.resolvePath("spawnCube.js"),
+	script: Script.resolvePath("spawnCube.js"),
 	type: "Box",
-	color: { red: 255, green: 255, blue: 255 },
-	dimensions: { x: .5, y: .1, z: .1 },
+	color: {red: 255, green: 255, blue: 255},
+	dimensions: {x: .5, y: .1, z: .1},
 	name: "Cube Spawner",
-	"userData": "{     \"grabbableKey\": {   \"wantsTrigger\": true     },     \"wearable\": {   \"joints\": {   \"RightHand\": [   {    \"x\": 0.0813,             \"y\": 0.0452,     \"z\": 0.0095   },    {     \"x\": -0.3946,             \"y\": -0.6604,   \"z\": 0.4748,    \"w\": -0.4275    }    ],         \"LeftHand\": [    {    \"x\": -0.0881,     \"y\": 0.0259,    \"z\": 0.0159    },    {     \"x\": 0.4427,     \"y\": -0.6519,     \"z\": 0.4592,             \"w\": 0.4099    }    ]    }    }   }"
+	userData: "{\"grabbableKey\": {\"wantsTrigger\": true}, \"wearable\": {\"joints\": {\"RightHand\": [{\"x\": 0.0813, \"y\": 0.0452, \"z\": 0.0095}, {\"x\": -0.3946, \"y\": -0.6604, \"z\": 0.4748, \"w\": -0.4275}], \"LeftHand\": [{\"x\": -0.0881, \"y\": 0.0259, \"z\": 0.0159}, {\"x\": 0.4427, \"y\": -0.6519, \"z\": 0.4592, \"w\": 0.4099}]}}}"
 });
 
 ```
@@ -543,7 +553,7 @@ CubeSpawner.prototype = {
 
 ```
 
-Let’s take a look at what our prototype function is doing. First, we create a `preload `function, which captures our entity ID and stores it when our spawner is initially created. Then, we define what happens when we start equipping our spawner, and save the hand information of whichever controller we used. Finally, we specify what happens while our spawner object is equipped, and test whether or not trigger has been pulled. If it has, we call our `spawnACube’ function `and a new cube is created.
+Let’s take a look at what our prototype function is doing. First, we create a `preload `function, which captures our entity ID and stores it when our spawner is initially created. Then, we define what happens when we start equipping our spawner, and save the hand information of whichever controller we used. Finally, we specify what happens while our spawner object is equipped, and test whether or not trigger has been pulled. If it has, we call our `spawnACube` function and a new cube is created.
 
 We’ll also be making another change to how we trigger our cubes if we’re using the click down functionality. Replace the line:
 
@@ -598,10 +608,10 @@ CubeSpawner.prototype = {
 var spawnACube = function(){
 var id = Entities.addEntity({
 			 position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-			 "script": Script.resolvePath("cube.js"),
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
+			 color: {red: 0, green: 0, blue: 155}});
 	print("Made a cube!" , id);
 	cubeList.push(id);
 }
@@ -628,14 +638,14 @@ You can now pick up your spawner and carry it with you, pulling the trigger whil
 
 To make it easier to place our cubes, we’ll be changing our spawner code so that instead of generating a new cube directly in front of our avatar, we place them in front of the spawner instead.
 
-In the spawnACube function, before the line var id = Entities.addEntity, add the following line:
+In the spawnACube function, before the line `var id = Entities.addEntity`, add the following line:
 
 ``````javascript
 
 var cubePosition = frontPosition();
 ```
 
-Inside of the Entities.addEntity function, change position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)), to the following:
+Inside of the Entities.addEntity function, change `position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation))` to the following:
 
 ```
     position: cubePosition,
@@ -644,7 +654,7 @@ Inside of the Entities.addEntity function, change position: Vec3.sum(MyAvatar.po
 
 What we’ve done here is made a new variable, called cubePosition, that gets a value from an as-of-yet unwritten function called ‘frontPosition’. We will be writing a new function to calculate where our cube should spawn, but first, we need to make a couple of changes to our script to allow us to access entity properties outside of our prototype.
 
-Under var hand, add the line:
+Under `var hand`, add the line:
 
 ```javascript
 var _this;
@@ -687,12 +697,12 @@ createCubeSpawner.js:
 ```javascript
 Entities.addEntity({
 	position: Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation)),
-	"script": Script.resolvePath("spawnCube.js") ,
+	script: Script.resolvePath("spawnCube.js"),
 	type: "Box",
-	color: { red: 255, green: 255, blue: 255 },
-	dimensions: { x: .5, y: .1, z: .1 },
+	color: {red: 255, green: 255, blue: 255},
+	dimensions: {x: .5, y: .1, z: .1},
 	name: "Cube Spawner",
-	"userData": "{ \"grabbableKey\": { \"wantsTrigger\": true }, \"wearable\": { \"joints\": { \"RightHand\": [ { \"x\": 0.0813, \"y\": 0.0452, \"z\": 0.0095 }, { \"x\": -0.3946, \"y\": -0.6604, \"z\": 0.4748, \"w\": -0.4275 } ], \"LeftHand\": [ { \"x\": -0.0881, \"y\": 0.0259, \"z\": 0.0159 }, { \"x\": 0.4427, \"y\": -0.6519, \"z\": 0.4592, \"w\": 0.4099 } ] } } }"
+	userData: "{\"grabbableKey\": {\"wantsTrigger\": true}, \"wearable\": {\"joints\": {\"RightHand\": [{\"x\": 0.0813, \"y\": 0.0452, \"z\": 0.0095}, {\"x\": -0.3946, \"y\": -0.6604, \"z\": 0.4748, \"w\": -0.4275}], \"LeftHand\": [{\"x\": -0.0881, \"y\": 0.0259, \"z\": 0.0159}, {\"x\": 0.4427, \"y\": -0.6519, \"z\": 0.4592, \"w\": 0.4099}]}}}"
 });
 
 ```
@@ -736,10 +746,10 @@ var spawnACube = function(){
 var cubePosition = frontPosition();
 var id = Entities.addEntity({
 			 position: cubePosition,
-			 "script": Script.resolvePath("cube.js") ,
+			 script: Script.resolvePath("cube.js"),
 			 type: "Box",
 			 name: "ScriptBox",
-			 color: { red: 0, green: 0, blue: 155 }});
+			 color: {red: 0, green: 0, blue: 155}});
 	print("Made a cube!" , id);
 	cubeList.push(id);
 }
