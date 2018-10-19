@@ -8,7 +8,7 @@ taxonomy:
 
 ## Overview
 
-This page guides you through the process of configuring and calibrating Vive trackers for motion capture (mocap) in High Fidelity. Even if you only have one HTC Vive Tracker, you can use it to control your Avatar or attach it to an object like a guitar.
+This page guides you through the process of configuring and calibrating Vive trackers for motion capture (mocap) in High Fidelity. Even if you only have one HTC Vive Tracker, you can use it to control your Avatar or even attach it to an object like a guitar!
 
 
 ## Introduction
@@ -20,8 +20,8 @@ You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/)
 - Feet, hips and chest: 4 Vive trackers.
 - Feet, hips, chest and shoulders: 5 Vive trackers.
 
-If you are a performer and need your hands you need extra trackers for your hands
-If you need to track your head but not use an HMD, then you need one tracker for your head 
+If you are a performer and need the use of your hands instead of the Vive controllers, two extra trackers are needed for your wrists.
+If you need to track your head but not use a HMD, then you also need one tracker for your head.
 
 To use the trackers, you need to strap them on to different parts of your body. You can purchase straps of different lengths for different purposes from here:
 
@@ -43,9 +43,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Securely attach the Vive trackers to your body as shown in the image.
 
-- Start Interface in HMD mode and pull up you tablet.
-
-- Go to **Settings > Controls > Calibration >**.
+- If you are in HMD mode, pull up your tablet or if you are in Desktop mode go to **Settings > Controls > Calibration >**.
 
   ![img](https://hifi-content.s3.amazonaws.com/milad/ROLC/Organize/O_Projects/Hifi/Documentation/settings.png)
 
@@ -63,7 +61,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Click "Apply and Calibrate".
 
-- When you setup your Vive and choose which way to point the arrow as your reference, it is important that you face this way during the calibration.  This will be fixed in a future version.  If you can not remember which way that arrow was, you can press the Vive System Menu Button and look on the ground for a marker.  This should be facing the same way the initial arrow you created during the Vive setup is facing.  This is important to make sure your joints are orientated correctly.
+- When you setup your Vive and choose which way to point the arrow as your reference, it is important that you face this same way during the calibration.  This will be fixed in a future version.  If you can not remember which way that arrow was, you can press the Vive System Menu Button and look on the ground for a marker.  This should be facing the same way the initial arrow you created during the Vive setup is facing.  This is important to make sure your joints are orientated correctly.
 
 - Stand in a T-Pose until the timer counts down to zero:
   - Feet together
