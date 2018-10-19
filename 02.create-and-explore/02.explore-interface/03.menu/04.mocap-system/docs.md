@@ -43,7 +43,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Securely attach the Vive trackers to your body as shown in the image.
 
-- If you are in HMD mode, pull up your tablet or if you are in Desktop mode go to **Settings > Controls > Calibration >**.
+- If you are in HMD mode, pull up your tablet or if you are in Desktop mode go to **Settings > Controls > Calibration **.
 
   ![img](https://hifi-content.s3.amazonaws.com/milad/ROLC/Organize/O_Projects/Hifi/Documentation/settings.png)
 
