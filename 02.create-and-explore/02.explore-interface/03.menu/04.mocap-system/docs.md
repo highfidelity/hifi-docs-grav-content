@@ -18,7 +18,10 @@ You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/)
 - Only feet: 2 Vive trackers.
 - Feet and hips: 3 Vive trackers.
 - Feet, hips and chest: 4 Vive trackers.
-- Feet, hips and shoulders: 5 Vive trackers.
+- Feet, hips, chest and shoulders: 5 Vive trackers.
+
+If you are a performer and need your hands you need extra trackers for your hands
+If you need to track your head but not use an HMD, then you need one tracker for your head 
 
 To use the trackers, you need to strap them on to different parts of your body. You can purchase straps of different lengths for different purposes from here:
 
