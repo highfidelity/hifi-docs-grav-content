@@ -8,18 +8,20 @@ taxonomy:
 
 ## Overview
 
-This page guides you through the process of configuring and calibrating Vive trackers for motion capture (mocap) in High Fidelity. Even if you only have one HTC Vive Tracker, you can use it to control your Avatar!
-
+This page guides you through the process of configuring and calibrating Vive trackers for motion capture (mocap) in High Fidelity. Even if you only have one HTC Vive Tracker, you can use it to control your Avatar or even attach it to an object like a guitar!
 
 
 ## Introduction
 
-You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/) to set-up a mocap system for yourself in High Fidelity. Depending on what kind of motion capture you’re looking for, the number of trackers needed differ.
+You will need to purchase [Vive trackers](https://www.vive.com/us/vive-tracker/) to set-up a mocap system for yourself in High Fidelity. If you bought a Vive Pro, you can use up to 4 lighthouses for better tracking, other wise the Vive with the standard two light houses will also provide good support.  Depending on what kind of motion capture you’re looking for, the number of trackers needed differs. 
 
 - Only feet: 2 Vive trackers.
 - Feet and hips: 3 Vive trackers.
 - Feet, hips and chest: 4 Vive trackers.
-- Feet, hips and shoulders: 5 Vive trackers.
+- Feet, hips, chest and shoulders: 5 Vive trackers.
+
+If you are a performer and need the use of your hands instead of the Vive controllers, two extra trackers are needed for your wrists.
+If you need to track your head but not use a HMD, then you also need one tracker for your head.
 
 To use the trackers, you need to strap them on to different parts of your body. You can purchase straps of different lengths for different purposes from here:
 
@@ -31,6 +33,8 @@ To use the trackers, you need to strap them on to different parts of your body. 
 
 ![img](tracker-placement.jpg)
 
+> > > For information on how to pair the trackers, refer to https://www.vive.com/eu/support/accessory/category_howto/pairing-vive-tracker.html
+
 ### Configure Your Mocap System
 
 Once you’ve purchased the number of trackers and the straps for your requirements:
@@ -39,11 +43,9 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Securely attach the Vive trackers to your body as shown in the image.
 
-- Start Interface in HMD mode and pull up you tablet.
+- If you are in HMD mode, pull up your tablet or if you are in Desktop mode go to **Settings > Controls > Calibration >**.
 
-- Go to **Menu > Settings > Controller Settings**.
-
-  ![img](settings.png)
+  ![img](https://hifi-content.s3.amazonaws.com/milad/ROLC/Organize/O_Projects/Hifi/Documentation/settings.png)
 
 - Set your tracker configuration to one of the following options:
   - Head: Track your head with a head tracker instead of the HMD.
@@ -55,9 +57,11 @@ Once you’ve purchased the number of trackers and the straps for your requireme
   - Chest: You can track your chest using one chest tracker, one hip tracker and two feet trackers (4 total).
   - Shoulders: Track your shoulders with two trackers on your shoulders, one tracker for your hip, and two for your feet (5 total).
 
-    ![img](ViveSettings.PNG)
+    ![img](https://hifi-content.s3.amazonaws.com/milad/ROLC/Organize/O_Projects/Hifi/Documentation/vive_settings.png)
 
 - Click "Apply and Calibrate".
+
+- When you setup your Vive and choose which way to point the arrow as your reference, it is important that you face this same way during the calibration.  This will be fixed in a future version.  If you can not remember which way that arrow was, you can press the Vive System Menu Button and look on the ground for a marker.  This should be facing the same way the initial arrow you created during the Vive setup is facing.  This is important to make sure your joints are orientated correctly.
 
 - Stand in a T-Pose until the timer counts down to zero:
   - Feet together
@@ -68,7 +72,7 @@ Once you’ve purchased the number of trackers and the straps for your requireme
 
 - Check to see that each tracker is tracking the corresponding joint on the avatar.
 
-> > >  Use Vive Devices in Desktop Mode: Check this box if you have a head tracker and want to use your trackers in desktop mode without having to wear your Vive headset.
+> > >  Use HTC Vive Devices in Desktop Mode: Check this box if you have a head tracker and want to use your trackers in desktop mode without having to wear your Vive headset.
 
 
 ### Another Way to Calibrate Your Mocap System
@@ -90,8 +94,11 @@ You can press the same buttons together for a second to remove your calibration 
 
 * Calibration failed!
 
-  * Make sure all your trackers are properly connected in SteamVR.
-  * Make sure you selected the correct configuration in your tablet and that you have enough number of trackers to support that configuration.
+  * Are all your trackers properly connected in SteamVR?
+  * Have you selected the correct configuration in your tablet and do you have enough number of trackers to support that configuration?
+  * If you are performing and not in HMD, did you select to use the Vive in desktop mode?
+  * Are any of the trackers blinking?  If so, they may need to be paired again.
+  * Do you have the correct number of dongles plugged in to your computer.  You will need one dongle per tracker.  If you are performing with all 7, then you may need a USB hub to handle them.
 
 * My sensor is jiggling a lot!
 
@@ -99,13 +106,12 @@ You can press the same buttons together for a second to remove your calibration 
 
 * My sensor keeps losing tracking.
 
-  * If it’s the hip puck, make sure your shirt is tucked in and isn’t covering the puck. Also make sure your headphone cord isn’t covering the puck. 
-  * Make sure one of the base stations can clearly see the tracker.
-  * Make sure the signal from the base stations is not conflicting with another Vive setup nearby.
-  * Make sure there are no reflective surfaces nearby (ie. picture frames, whiteboards, shiny tables).
-  * Make sure lighting is consistent across the room (minimal outdoor lighting).
-  * Try restarting SteamVR.
-
-* My avatar’s feet keep going underground!
-
-  * This is a known issue we are working on. To avoid this from occurring frequently, don’t jump around too much. For a quick fix, just drive forward or teleport using the controller. 
+  * If it’s the hip puck, is your shirt is tucked in and not covering the puck? Also make sure your headphone cord isn’t covering the puck. 
+  * Can the base stations clearly see the tracker?
+  * Is the signal from the base station conflicting with another Vive setup nearby?
+  * Are you clear of no eflective surfaces nearby? (ie. picture frames, whiteboards, shiny tables).
+  * Is the lighting consistent across the room (minimal outdoor lighting)?
+  * Try restarting SteamVR
+  
+Final note: 
+Remember to charge your trackers when you aren't using them so that you don't have to deal with a low battery tracker negatively impacting your performance. 
