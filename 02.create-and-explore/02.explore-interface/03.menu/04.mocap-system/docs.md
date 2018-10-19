@@ -114,10 +114,6 @@ You can press the same buttons together for a second to remove your calibration 
   * Are you clear of no eflective surfaces nearby? (ie. picture frames, whiteboards, shiny tables).
   * Is the lighting consistent across the room (minimal outdoor lighting)?
   * Try restarting SteamVR
-
-* My avatar’s feet keep going underground!
-
-  * This is a known issue we are working on. To avoid this from occurring frequently, don’t jump around too much. For a quick fix, just drive forward or teleport using the controller. 
   
 Final note: 
 Remember to charge your trackers when you aren't using them so that you don't have to deal with a low battery tracker negatively impacting your performance. 
