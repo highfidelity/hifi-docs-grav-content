@@ -109,7 +109,7 @@ You can press the same buttons together for a second to remove your calibration 
   * If it’s the hip puck, is your shirt is tucked in and not covering the puck? Also make sure your headphone cord isn’t covering the puck. 
   * Can the base stations clearly see the tracker?
   * Is the signal from the base station conflicting with another Vive setup nearby?
-  * Are you clear of no eflective surfaces nearby? (ie. picture frames, whiteboards, shiny tables).
+  * Are you clear of reflective surfaces nearby? (ie. picture frames, whiteboards, shiny tables).
   * Is the lighting consistent across the room (minimal outdoor lighting)?
   * Try restarting SteamVR
   
