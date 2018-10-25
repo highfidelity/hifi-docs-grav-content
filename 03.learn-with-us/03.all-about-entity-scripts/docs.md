@@ -32,7 +32,7 @@ print("Entity added");
 
 We start off by creating a variable called `position`, which is in the format of a three-dimensional vector that stores the X, Y, and Z coordinate that we’ll place our new cube on. We specifically want our position for our cube to be directly in front of our avatar, so we use `Vec3.sum` to add the vector that represents our avatar’s position in the domain to the vector that represents the front-facing orientation of our avatar.
 
-The next thing that we do to create our cube is give it a specific set of parameters. These generally correspond to fields that are available in the Edit.js window, and define the characteristics of our cube. We store these parameters in a list of paired items in the variable `properties` , in the format of a _key : “value”_ pair. It’s important to follow the style guide for your property list:
+The next thing that we do to create our cube is give it a specific set of parameters. These generally correspond to fields that are available in the _Properties_ tab of the _Create Tools_ window, and define the characteristics of our cube. We store these parameters in a list of paired items in the variable `properties` , in the format of a _key : “value”_ pair. It’s important to follow the style guide for your property list:
 
 - Make sure everything is wrapped in { brackets }
 - Your key should not be in quotes
