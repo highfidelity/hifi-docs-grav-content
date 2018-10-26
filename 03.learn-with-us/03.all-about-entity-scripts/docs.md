@@ -152,7 +152,7 @@ print("Made a cube!" , id);
 
 The spawner script that we’ve created will generate a new cube each time it’s run. After creating a position variable for the location in front of our avatar, we create a new cube and store a reference to the entity ID, which is returned by the function `Entities.addEntity`, another Entity API capability.
 
-We set up our entity with the properties we started out with, with an additional key-value pair that stores our cube.js script reference. By calling `Script.resolvePath(“cube.js”) `, we are able to refer back to our cube script as long as we preserve the directory structure, regardless of where on a local machine or cloud hosting platform the scripts are living. Make sure that both of the files are in the same folder!
+We set up our entity with the properties we started out with, with an additional key-value pair that stores our cube.js script reference. By calling `Script.resolvePath("cube.js") `, we are able to refer back to our cube script as long as we preserve the directory structure, regardless of where on a local machine or cloud hosting platform the scripts are living. Make sure that both of the files are in the same folder!
 
 ### Run _spawnCube.js_ and test it out
 
@@ -344,7 +344,7 @@ In your _spawnCube.js_ file, add the following line of code directly above the `
 var cubeList = [];
 ```
 
-While most of our variables so far have pointed to functions or entity IDs, we’re introducing a new type of object for our variable, an array, or list of objects. When we create a new cube, we store its entity ID in the variable `id`, which we will add to our array. Under your `print(“Made a cube!”, id);` line, add the following:
+While most of our variables so far have pointed to functions or entity IDs, we’re introducing a new type of object for our variable, an array, or list of objects. When we create a new cube, we store its entity ID in the variable `id`, which we will add to our array. Under your `print("Made a cube!", id);` line, add the following:
 
 ```javascript
 cubeList.push(id);
