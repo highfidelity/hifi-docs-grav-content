@@ -4,8 +4,8 @@ taxonomy:
     category:
         - docs 
 ---
-
-#### We will:
+High Fidelity's Bill of Rights states the privileges given to our creators and the rights High Fidelity holds over content.
+### We will:
 * Enforce the [Marketplace Guidelines](https://docs.highfidelity.com/marketplace) fairly, without giving preference or other advantages to High Fidelity staff or affiliates.
 * Review all submissions within seven (7) business days of their submission to the Marketplace, and communicate the result of the review to the creator.
     * If 7 business days is not possible, we will contact the seller within this time frame to discuss any problems
@@ -14,7 +14,6 @@ taxonomy:
     * Flooding the market with sub-par items
     * Pricing manipulation
     * Misleading description and other presentation inconsistencies
-    * Attempting to maliciously break or hack the MP
+    * Attempting to maliciously break or hack the Marketplace
 * Notify Marketplace creators via email and/or the High Fidelity forums in cases of major changes of policy, extended Marketplace downtime, and delays in review time.
 * Ensure that no offensive, sexual, or generally NSFW content appears on the Marketplace, and anywhere this kind of content exists has ample warnings requiring explicit permission.
-
