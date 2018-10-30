@@ -24,7 +24,7 @@ taxonomy:
 4. When a user clicks on the button of the certified app, the app has to provide a full screen UI in VR (and a standard sized window display on the desktop) that is displayed.
 5. You have to wire up handlers in the script.js similar to:
 ``` javascript
-    var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system”),
+    var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system”);
     button = tablet.addButton({
         text: theAppName,
         icon: theButtonSVG,
