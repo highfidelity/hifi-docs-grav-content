@@ -23,8 +23,8 @@ taxonomy:
 3. The button of the certified app has an icon and the name of the certified app.
 4. When a user clicks on the button of the certified app, the app has to provide a full screen UI in VR (and a standard sized window display on the desktop) that is displayed.
 5. You have to wire up handlers in the script.js similar to:
-``` javascript
-    var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system”);
+``` 
+    (var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system”);
     button = tablet.addButton({
         text: theAppName,
         icon: theButtonSVG,
@@ -49,7 +49,7 @@ taxonomy:
         // Disconnect any other handlers here.
         tablet.screenChanged.disconnect(onScreenChanged);
         tablet.removeButton(button);
-    });
+    }));
 ```
 6. When the user clicks on the certified app button, the certified app can perform other operations by listening to the event “onScreenChanged”. These operations can include:
     - Querying a server to get a response and determine what to show on the UI
