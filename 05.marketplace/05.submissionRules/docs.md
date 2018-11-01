@@ -4,8 +4,8 @@ taxonomy:
     category:
         - docs 
 ---
-## General rules:
-
+All submissions to the Marketplace must conform to these rules.
+___
 #### Presentation
 * **Preview Image:** A preview image must be included with all items. 
     * Preview images must clearly show what is included in the package. Images providing context (avatars holding the item, nice backgrounds, etc.) are permitted as long as the description text clearly states what content is not included with the item. 
