@@ -42,43 +42,31 @@ Before submitting an app, make sure it follows our certified app guidelines belo
 ##### 3. When a user clicks on the button of the certified app, the app has to provide a full screen UI in VR (and a standard sized window display on the desktop) that is displayed. Below is an example of how to wire up handlers in the &lt;script>.js:
 
 ``` javascript 
-    function() {
-    var APP_NAME = "\<YourAppName\>";
-    // For HTML files: 
-    var APP_URL = Script.resolvePath("\<YourURL\>.html");
-    // For QML files: 
-    var APP_QML = Script.resolvePath("\<YourURL\>.qml");
-    var APP_ICON = Script.resolvePath("\<YourAppIcon\>.svg");
-    var APP_ACTIVE_ICON = Script.resolvePath("\<YourAppIcon\>.svg");
-    
     var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
-    var button = tablet.addButton({
-        text: APP_NAME,
-        icon: APP_ICON,
-        activeIcon: APP_ACTIVE_ICON
-	});
-
-    function onClicked() {
-        // For HTML files
-        tablet.gotoWebScreen(APP_URL);
-        // For QML files
-        // tablet.loadQMLSource(APP_QML);
+    button = tablet.addButton({
+        text: theAppName,
+        icon: theButtonSVG,
+        activeIcon: theActiveButtonSVG
+	}),
+    isOpen = false;
+    function onClicked(){ //Nothing else here!
+        if (isOpen) {
+            tablet.gotoHomeScreen();
+        } else {
+            tablet.gotoWebScreen(ui.html, optInjected);
+        // or tablet.loadQMLSource(ui.qml);
     }
-    function onWebEventReceived(event) {
-        print("/<appName/>.js recieved a QML/HTML event: " + JSON.stringify(event));
+    function onScreenChanged(type, url) {
+        isOpen = (url === ui.html);
+        // app-specific logic for opening and closing.
     }
-
-    function cleanup() {
-        tablet.removeButton(button);
-        reset();
-    }
-
     button.clicked.connect(onClicked);
-    // For HTML files
-    tablet.webEventReceived.connect(onWebEventReceived);        
-    // For QML files
-    // tablet.fromQml.connect(onWebEventReceived);
-    Script.scriptEnding.connect(cleanup);
+    tablet.screenChanged.connect(onScreenChanged);
+    Script.scriptEnding.connect(function () {
+        button.clicked.disconnect(onClicked);
+        // Disconnect any other handlers here.
+        tablet.screenChanged.disconnect(onScreenChanged);
+        tablet.removeButton(button);
     });
 ```
 ##### 4. It is recommended that the UI for the certified app explain how the app works, and have familiar UI elements that a user knows how to interact with.
