@@ -22,12 +22,6 @@ Before submitting an app, make sure it follows our certified app guidelines belo
 * &lt;rootFile>.app.json
     
      The .json has two required properties, “scriptURL” (whose value must be the URL of the uploaded &lt;script>.js), and “homeURL” (whose value must be the URL to the uploaded &lt;ui>.html) using explicit paths created upon upload of the files to the Marketplace. 
-    
-    >>> How to find the URL to your Marketplace bucket:
-
-    1. First, upload a draft of your app to the Marketplace
-    2. Click on the app.json file on the Edit screen and the URL will be displayed at the bottom of the screen
-    ![](marketplacebucket.png)
 
     >*Example where the zeros should be substituted for your Marketplace bucket:*
 ``` javascript
@@ -36,6 +30,12 @@ Before submitting an app, make sure it follows our certified app guidelines belo
         "homeURL": "http://mpassets.highfidelity.com/00000000-0000-0000-0000-000000000000-v1/ui.html"
         }
 ```
+
+    >>> How to find the URL to your Marketplace bucket:
+
+    1. First, upload a draft of your app to the Marketplace
+    2. Click on the app.json file on the Edit screen and the URL will be displayed at the bottom of the screen
+    ![](marketplacebucket.png)
 
 ##### 2. A certified app has a button that appears on the tablet in VR, or the app bar in desktop mode. The button of the certified app has an icon and the name of the certified app.
 
