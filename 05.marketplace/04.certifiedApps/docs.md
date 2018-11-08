@@ -83,6 +83,6 @@ Before submitting an app, make sure it follows our certified app guidelines belo
 1. Turn off the 3D user interfaces. This can be achieved either by providing that functionality in the 3D user interface, or surfacing a button in the UI of the certified app that achieves the same function.
 2. Stop the script from modifying or enhancing the client. This can be achieved by surfacing a button in the UI of the certified app.
 
-Example of how the Shapes app works:
+Examples of app design:
 
 ![](appDesign.png)
