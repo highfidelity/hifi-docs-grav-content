@@ -22,7 +22,7 @@ ___
 * Includes information about the rez rights required to use the item.
 
 #### Licensing
-* All Marketplace items are under the Proof of Provenance License (PoP License) v1.0. Custom or alternative licenses are not permitted. You can read more about the PoP license [here](https://digitalassetregistry.com/PoP-License/v1/). 
+* All Marketplace items are under the Proof of Provenance License (PoP License) v1.0. Custom or alternative licenses are not permitted, unless they are in conjunction with the PoP license, in which case the additional licenses need to be added to the description or as a comment in the code. You can read more about the PoP license [here](https://digitalassetregistry.com/PoP-License/v1/).
 
 #### Copyright and Trademark
 * Sellers must have absolute rights to the content submitted to the marketplace. No material in violation of copyright law will be permitted.
@@ -48,7 +48,7 @@ ___
 
 #### Submission Standards for Specific Categories:
 * **Avatars:** Avatars should not have more than 40k polygons.
-* **Environments:** Please make sure your content is centered around {0,-10,0} so when rezzed, users will be in the middle.
+* **Environments:** Environments need to be limited to 200 entities and please make sure your content is centered around {0,-10,0} so when rezzed, users will be in the middle.
 * **Apps, Scripts, and Tools:** Your application should have an .app.json root file which includes your .js and your .html files.
 * **Wearables:** Your wearable must have a parentJoint described in your JSON, as well as userData describing how it is to be worn.
 
