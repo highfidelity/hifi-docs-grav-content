@@ -31,11 +31,11 @@ Before submitting an app, make sure it follows our certified app guidelines belo
         }
 ```
 
-    >>> How to find the URL to your Marketplace bucket:
+>>> How to find the URL to your Marketplace bucket:
 
-    1. First, upload a draft of your app to the Marketplace
-    2. Click on the app.json file on the Edit screen and the URL will be displayed at the bottom of the screen
-    ![](marketplacebucket.png)
+1. First, upload a draft of your app to the Marketplace
+2. Click on the app.json file on the Edit screen and the URL will be displayed at the bottom of the screen
+![](marketplacebucket.png)
 
 ##### 2. A certified app has a button that appears on the tablet in VR, or the app bar in desktop mode. The button of the certified app has an icon and the name of the certified app.
 
