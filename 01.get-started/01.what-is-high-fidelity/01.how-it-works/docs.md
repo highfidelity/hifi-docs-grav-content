@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How It Works'
 taxonomy:
     category:
