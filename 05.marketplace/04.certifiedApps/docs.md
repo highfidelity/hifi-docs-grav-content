@@ -85,4 +85,4 @@ Before submitting an app, make sure it follows our certified app guidelines belo
 
 Examples of app design:
 
-![](appDesign.png)
+![](appDesign1.png)
