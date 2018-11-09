@@ -1,12 +1,10 @@
 ---
-title: Linux
+title: Linux Build Guide
 taxonomy:
   category: docs
 ---
 
-*Build High Fidelity in Linux.*
-
-# Linux build guide
+## Overview
 
 Please read the [general build guide](https://docs.highfidelity.com/build-guide/basic-build-guide) for information on dependencies required for all platforms. Only Linux specific instructions are found in this file.
 
@@ -14,13 +12,21 @@ Please read the [general build guide](https://docs.highfidelity.com/build-guide/
 
 Should you choose not to install Qt5 via a package manager that handles dependencies for you, you may be missing some Qt5 dependencies. On Ubuntu, for example, the following additional packages are required:
 
-    libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev
+```bash
+libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev
+```
 
-## Ubuntu 16.04 specific build guide
+## Ubuntu 16.04/18.04 specific build guide
+
+### Ubantu 18.04 only
+Add the universe repository. *This is not enabled by default on the server edition*
+```bash
+sudo add-apt-repository universe
+sudo apt-get update
+```
 
 ### Prepare environment
-hifiqt5.10.1
-Install qt:
+Install Qt 5.10.1:
 ```bash
 wget http://debian.highfidelity.com/pool/h/hi/hifiqt5.10.1_5.10.1_amd64.deb
 sudo dpkg -i hifiqt5.10.1_5.10.1_amd64.deb
@@ -41,6 +47,11 @@ Install build tools:
 sudo apt install cmake
 ```
 
+Install Python 3:
+```bash
+sudo apt-get install python3.6
+```
+
 ### Get code and checkout the tag you need
 
 Clone this repository:
@@ -56,12 +67,7 @@ git tags
 
 Then checkout last tag with:
 ```bash
-git checkout tags/RELEASE-6819
-```
-
-Or go to the highfidelity download page (https://highfidelity.com/download) to get the release version. For example, if there is a BETA 6731 type:
-```bash
-git checkout tags/RELEASE-6731
+git checkout tags/v0.71.0
 ```
 
 ### Compiling
@@ -82,7 +88,7 @@ Start compilation and get a cup of coffee:
 make domain-server assignment-client interface
 ```
 
-In a server does not make sense to compile interface
+In a server, it does not make sense to compile Interface.
 
 ### Running the software
 
@@ -96,9 +102,9 @@ Running assignment client:
 ./assignment-client/assignment-client -n 6
 ```
 
-Running interface:
+Running Interface:
 ```bash
 ./interface/interface
 ```
 
-Go to localhost in running interface.
+Go to localhost in the running Interface.
