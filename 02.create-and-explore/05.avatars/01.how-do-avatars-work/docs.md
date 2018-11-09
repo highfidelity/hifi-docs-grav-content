@@ -1,75 +1,50 @@
 ---
-title: 'How do Avatars Work'
+title: 'All About Avatars'
 taxonomy:
 	category : docs
 ---
-*Learn how avatars work in High Fidelity. *
 
 ## Overview
 
-Learn how you can create and upload avatars to High Fidelity. 
-
-
-## Prerequisites
-
-* You’ll need to [download and install](https://highfidelity.com/download/sandbox) High Fidelity’s Interface and Sandbox. 
-* Download and install a 3D Modelling software such as Blender or Maya. 
-
-  ​
-
-
-## Introduction
-
 When you first use High Fidelity, you will be wearing the default avatar. Your avatar is a representation of you in the metaverse. You can control how your avatar moves and speak to other users in-world using it. 
-
-
 
 ### The Default Avatar
 
 When you first use High Fidelity, you will be wearing the default avatar. This is the avatar worn by all first-time users and anyone who wishes to continue doing so. 
 
-The default avatar resembles a human, and is bipedal. High Fidelity only supports bipedal avatars. Whether you are using an HMD or are in Desktop mode, you can control your avatar's movements and make its mouth move when you speak. This also allows you to explore the metaverse and interact with other users. 
+The default avatar resembles a human, and is bipedal. High Fidelity only supports bipedal avatars. Whether you are using an HMD or are in Desktop mode, you can control your avatar's movements and make its mouth move when you speak. This also allows you to explore the metaverse and interact with other users.
 
+You can make your time in High Fidelity unique by [creating an avatar of your own](../create-avatars). 
 
+### Glossary
 
-### How do Avatars Work?
+As we delve deeper into changing and creating avatars, we may use terminology that you are unfamiliar with, or that is different in the VR industry than other ones (such as gaming). Here are some terms you might see:
 
-You can have any type of avatar if you have its .fst file. This is responsible for the design and interactions of your avatar. 
+* Avatar - A virtual representation of a person or NPC.
+* Mesh - The collection of 3D vertices and triangles for the avatar model. Without this, the avatar is invisible.
+* Bones - A component of a skeleton that defines a "limb" such as an arm, leg, etc. Each bone may be animated as a separate limb in your avatar.
+* Skeleton - A hierarchy of joints.
+* Rigging - The process of creating a skeleton of the avatar model.
+* Blendshapes - Variations of the topology that defines how the mesh is modified to create various "shapes".
+* FST file - The main avatar file, which contains information about the skeleton, blendshapes, FBX file and textures used by an avatar.
 
-You can use any avatar you like, as long as the design is for a biped. There are two ways you can get a new avatar for yourself:
+### Add to Favorites
 
-* Get an avatar from the Marketplace
-* Upload your own avatar
+Do you have different avatars that you like switching between frequently? The **Add to Favorites** feature lets you bookmark any avatar that you're wearing. All of your favorite avatars are visible on the Avatar window. When you want to switch to a different avatar, simply click on the one you want. You no longer have to go the Marketplace to load one of your favorite avatars or load the file of your choice.
 
+>>>>> This is a local system setting. This means that if you uninstall High Fidelity, delete your Settings, or log in from another system, you will not be able to access your favorite avatars.
 
+Here's how you can add your avatar to your Favorites:
 
-#### Get an Avatar from the Marketplace 
+1. In Interface, pull up your tablet or HUD and click on Avatar. 
+2. Click the star next to **Add to Favorites**. ![](avatar-addfavorite.png)
+3. Enter a name for your avatar, then click Confirm. ![](create-favorite.png)
 
-We and our users have designed multiple avatars that are available for your use in the Marketplace. 
+Now that you've added your avatar as favorite, you can access it anytime from the Avatar app. To do this:
 
-To get an avatar from the Marketplace:
+1. In Interface, pull up your tablet or HUD and click on Avatar.
+2. Click on the avatar you want to load, then click Confirm.
 
-* In Interface, pull up your tablet and go to Market. 
-* Search for avatars, or look for avatars under categories. ![](market-avatar.PNG)
-* You'll see a list of avatars of different designs available. Click on any one you like and hit **Get**. ![](avatars.PNG)
-* Your present avatar will be automatically updated to the one you just got from the Marketplace. 
+### Avatar App
 
-
-
-#### Create and Upload Your Own Avatar
-
-You can also create and upload your own avatar. Learn more about how you can create your avatar [here](../create-avatars).
-
-Once you have your avatar's .fst file, you can upload it. 
-
-* In Interface, pull up your tablet and go to Menu > Settings > Avatar. 
-* In the Avatar settings window, add the .fst file's URL under the 'Appearance' tab.  ![](avatar-settings.PNG)
-* You can also add a URL for a file that dictates how your avatar reacts when it collides with objects in-world. 
-* You can also browse for more avatars in the Marketplace by clicking on "Browse Avatars".
-* If you want to access this avatar later, without loading the .fst file information again, you can click on "Bookmark Avatar" to save the current avatar information.
-
-
-
-#### Avatar Menu
-
-Once you are wearing the avatar of your choice, you can pull up your tablet and go to Menu > Avatar to change the settings and manage your [avatar bookmarks](https://docs.highfidelity.com/create-and-explore/avatars/bookmark-avatar). ![](avatar-menu.PNG)
+Once you are wearing the avatar of your choice, you can pull up your tablet or HUD and click on Avatar to change the settings and manage your Favorites. 

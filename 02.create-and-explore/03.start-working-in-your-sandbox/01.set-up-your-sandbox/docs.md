@@ -68,7 +68,7 @@ Once you install High Fidelity, you are given an option to launch Sandbox. Once 
   - In this step, you must remember to **add your High Fidelity username** to grant yourself administrator privileges. This is because admin privileges are for anyone using the local machine your domain is on. If you would like to manage your domain from other machines, you will require admin privileges. You can add other authorized usernames as well. You can also set permissions for who can visit your domain and who can rez (create) items in your domain.
     ![](setup-wizard-4.PNG)
   - You will be redirected to the main domain settings page where you can manage other aspects of your domain. ![](setup-wizard-5.PNG)
-  - You can change a number of settings from the Settings tab such Networking, Entity Server Settings, Security and more. You can modify content on your Sandbox from the Content tab. You can also visit your domain in VR using the link on the top right. ![](setup-wizard-7.png) ![](setup-wizard-6.png)
+  - You can change a number of settings from the Settings tab such Networking, Entity Server Settings, Security and more. You can modify content on your Sandbox from the Content tab. You can also visit your domain in VR using the link on the top right. ![](setup-wizard-7.PNG) ![](setup-wizard-6.PNG)
  
 
 
