@@ -87,8 +87,6 @@ cmake .. -DQT_CMAKE_PREFIX_PATH=/usr/local/qt/5.6.1/lib/cmake
 
 ### Finding Dependencies
 
-The following applies for dependencies we do not grab via CMake ExternalProject (OpenSSL is an example), or for dependencies you have opted not to grab as a CMake ExternalProject (via -DUSE_LOCAL_$NAME=0). The list of dependencies we grab by default as external projects can be found in [the CMake External Project Dependencies section](https://github.com/highfidelity/hifi/blob/master/BUILD.md#cmake-external-project-dependencies).
-
 You can point our [Cmake find modules](https://github.com/highfidelity/hifi/tree/master/cmake/modules) to the correct version of dependencies by setting one of the three following variables to the location of the correct version of the dependency.
 
 In the examples below, the variable $NAME would be replaced by the name of the dependency in uppercase, and $name would be replaced by the name of the dependency in lowercase (ex: OPENSSL_ROOT_DIR, openssl).
