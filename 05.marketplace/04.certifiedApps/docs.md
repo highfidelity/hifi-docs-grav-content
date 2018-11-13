@@ -6,7 +6,7 @@ taxonomy:
 ---
 Before submitting an app, make sure it follows our certified app guidelines below:
 
-* [A certified app requires 5 files: JSON, JavaScript, HTML or QML, and two SVG ](#1-a-certified-app-consists-of-at-least-five-files)
+* [A certified app requires 5 files: JSON, JavaScript, HTML, and two SVG ](#1-a-certified-app-consists-of-at-least-five-files)
 * [A certified app must have a button that appears on the tablet or HUD](#2-a-certified-app-has-a-button-that-appears-on-the-tablet-in-vr)
 * [A certified app must display a full screen UI in VR and a window in Desktop](#3-the-app-must-display-a-full-screen-ui-in-vr-and-a-window-in-de)
 * [The UI for the certified app should explain how the app works](#4-the-ui-for-the-certified-app-should-explain-how-the-app-works)
