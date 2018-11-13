@@ -6,12 +6,9 @@ taxonomy:
 
 Once you have created an item, you can test it prior to submitting it to Marketplace using the Marketplace Item Tester. All kinds of content can be tested, including applications, avatars, content sets, entities, and wearables. 
 
-
 ## Using the Marketplace Item Tester 
 
->>>>>The Marketplace Item Tester was initially released in Beta Release 74.0. This is an MVP, and will be expanded upon in future releases. 
-
-Testing your creation is easy with the Marketplace Item Tester. 
+The Marketplace Item Tester lets you test your creations prior to uploading them to the Marketplace. Using it, you can verify that you item works the way you expected, and does not have any script errors. 
 
 1. In Interface, open the Developer menu and go to **Marketplace Item Tester**.
 2. You can load items in two different ways:

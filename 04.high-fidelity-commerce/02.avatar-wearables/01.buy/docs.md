@@ -22,7 +22,7 @@ Avatar Island is a High Fidelity domain where you can purchase wearables created
 
 - Avatar Island is a domain containing many stores which carry all kinds of wearables. You can create wearables to sell at the Avatar Island too! ![](avatar-island.jpg)
 
-- We're going to walk you through purchasing a pair of glasses for your avatar. ![](a-n-j.PNG)![](a-n-j-inside.PNG)
+- We're going to walk you through purchasing a pair of glasses for your avatar. ![](a-n-j-inside.PNG)
 
 - Let's first try on the glasses. If you're using an HMD with controllers, you can just pick up the glasses you want and place them on your face. You'll hear a small sound notification indicating that the wearable has been placed on the joint. If you're in Desktop mode, just click on the glasses of your choice. It will be placed around your avatar's head. You can adjust your wearables in VR mode by using moving it with your controllers. In Desktop mode, you can pull up your tablet, and go to the **Wear** app to adjust any wearable. You can use the mirrors in the store to see how you look. In the **Wear** app, you can adjust the position, rotation and scale to move your wearable to right size and position. ![](glasses.PNG)![](avatar-wearable.PNG)![](wear.PNG)![](wear-app-1.PNG)![](wear-app-2.PNG)
 
