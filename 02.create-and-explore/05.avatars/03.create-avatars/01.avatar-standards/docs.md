@@ -152,22 +152,22 @@ Tweaks to your blendshapes can be made in your 3D modeling tool, or directly in 
 
 >bs = [blendshape constant] = [your key/blendshape name] = [value between 0 and 1]
 
-For example, these two lines close your eyes all the way:
+Here is an example of modifying your blendshapes in your FST file:
 
->bs = BrowsU_L = head_BS_brow_up = 0.3
->bs = BrowsU_C = head_BS_brow_up = 0.3
->bs = BrowsU_R = head_BS_brow_up = 0.3
->bs = BrowsD_R = head_BS_brow_down = 0.5
->bs = BrowsD_L = head_BS_brow_down = 0.5
->bs = EyeBlink_L = head_BS_L_eye_close = 1
->bs = EyeBlink_R = head_BS_R_eye_close = 1
->bs = EyeOpen_L = head_BS_L_eye_open = 1
->bs = EyeOpen_R = head_BS_R_eye_open = 1
->bs = JawOpen = JawOpen = 1
->bs = MouthSmile_R = head_BS_L_smile = 0.6
->bs = MouthSmile_L = head_BS_R_smile = 0.6
->bs = LipsFunnel = head_BS_oo = 0.5
->bs = LipsUpperClose = head_BS_mouth_down = 0.1
+>bs = BrowsU_L = head_BS_brow_up = 0.3  
+>bs = BrowsU_C = head_BS_brow_up = 0.3  
+>bs = BrowsU_R = head_BS_brow_up = 0.3  
+>bs = BrowsD_R = head_BS_brow_down = 0.5  
+>bs = BrowsD_L = head_BS_brow_down = 0.5  
+>bs = EyeBlink_L = head_BS_L_eye_close = 1  
+>bs = EyeBlink_R = head_BS_R_eye_close = 1  
+>bs = EyeOpen_L = head_BS_L_eye_open = 1  
+>bs = EyeOpen_R = head_BS_R_eye_open = 1  
+>bs = JawOpen = JawOpen = 1  
+>bs = MouthSmile_R = head_BS_L_smile = 0.6  
+>bs = MouthSmile_L = head_BS_R_smile = 0.6  
+>bs = LipsFunnel = head_BS_oo = 0.5  
+>bs = LipsUpperClose = head_BS_mouth_down = 0.1  
 
 ## Other Considerations
 
