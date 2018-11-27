@@ -50,6 +50,7 @@ Every collision sphere is positioned using an existing avatar joint and offset.
 #### JSON Panel
 ##### This panel displays the output data structure with your avatar's flow configuration. 
 ![JSON Panel](jsonpanel.png)
+
 This data can be copied and pasted into the [**Flow**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flow.js) script between the lines:
 ```javascript
 // CUSTOM DATA STARTS HERE
