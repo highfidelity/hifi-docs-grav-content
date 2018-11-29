@@ -88,9 +88,9 @@ We will have one script that loads in all of our other entities and handles the 
 
 The first thing we'll write is a script for our bow behaviors, which will contain a number of different functions that will help us give our bow the ability to shoot arrows.
 
-    1. Create a new file named ‘bow.js’ in your bow directory.
-    2. [Click this link](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/bow/bow.js) and copy the contents into your bow.js file.
-    3. Save bow.js
+1. Create a new file named ‘bow.js’ in your bow directory.
+2. [Click this link](https://github.com/highfidelity/hifi/blob/master/unpublishedScripts/marketplace/shortbow/bow/bow.js) and copy the contents into your bow.js file.
+3. Save bow.js
 
 Let’s pause for a second and take a look at the internals of bow.js, since this is the bulk of what makes up our projectile launcher. To start, you’ll see that there are a number of different functions that help with entity management, translating objects in 3D space, and colors.
 
@@ -109,13 +109,13 @@ The main function in bow.js is in an unnamed function that starts at line 95. Li
 
 After all of the constant values are defined, we set up a prototype for our bow object, which is a way of specifying a series of components for an entity that we will reuse during our game experience. The rest of bow.js consists of setting up the properties and functions that every bow will have.
 
-  *Bow Properties* include:
+*Bow Properties* include:
 
   - String data
   - Bow state (aiming, notching, idle, etc.)
   - Sound files for different bow events
 
-  *Bow Functions* provide support for:
+*Bow Functions* provide support for:
 
   - Being equipped and unequipped when grabbed by a player
   - Spawning and shooting arrows
@@ -328,7 +328,7 @@ The spawnBow script has two main parts: the first part of the script calculates 
   unload: function() {
               Script.clearInterval(this.heartbeatTimerID);
           },
-      };  
+      };
    return new Enemy();
   });
 
@@ -617,7 +617,7 @@ The spawnBow script has two main parts: the first part of the script calculates 
       Script.include('utils.js');
       Script.include('shortbow.js');
       Script.include('shortbowGameManager.js');
-	  
+
 	  TEMPLATES = SHORTBOW_ENTITIES.Entities;
 
       this.entityID = null;
