@@ -10,7 +10,7 @@ This document outlines the standards you should follow when creating your avatar
 
 - Bones are used to animate the character's limbs and define the scale variable of limbs.
 - You can add custom bones to further adjust the avatar's shape.
-- Use the `sim` prefix when naming flow bones.
+- Use the `sim` or `flow` prefix when naming flow bones.
 - Blendshapes are used to animate the face.
 - Scripts are used to create interfaces which you can use to customize your avatar.
 
@@ -106,6 +106,17 @@ For example, consider a full cape that surrounds the avatar:
 >simLeftCape# - additional bone(s) of the cape, left  
 >simRightCape1 - first bone of the cape, right  
 >simRightCape# - additional bone(s) of the cape, right  
+
+Alternatively, you can use the `flow` prefix, separating the name and joint number with an underscore. The same cape as above would look like:
+
+>flow\_BackCape\_01  
+>flow\_BackCape\_02  
+>flow\_FrontCape\_01  
+>flow\_FrontCape\_#  
+>flow\_LeftCape\_01  
+>flow\_LeftCape\_#  
+>flow\_RightCape\_01  
+>flow\_RightCape\_#  
 
 ## Look-at Vectors
 
