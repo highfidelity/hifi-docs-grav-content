@@ -38,6 +38,7 @@ The High Fidelity Pay-In Commerce API adds the following functionality:
 
 ## Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Money" screen.
+
 The script MUST specify a recipient, it MUST specify an amount of HFC, and it CAN specify a message to the user.
 
 ### Example
@@ -58,6 +59,7 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 
 ## Scriptable, Secure Certified Item Transfer <a name="itemTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Item" screen.
+
 The script MUST specify a recipient, it MUST specify an item Certificate ID, and it CAN specify a message to the user.
 NOTE that the specified item Certificate ID must be owned by the user running the script.
 
@@ -79,6 +81,7 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 
 ## Scriptable, Secure Item Purchases <a name="itemPurchases"></a>
 An entity script or client script can open an end-user's tablet to the Marketplace Checkout screen for a specified item.
+
 The script MUST specify the Marketplace Item ID.
 
 ### Example
@@ -105,6 +108,7 @@ The High Fidelity Pay-Out Commerce API adds the following functionality:
 
 ## Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
 A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Secret" value pair.
+
 Later, a script written by this user can use these secret values to send the money or items associated with the authoriaztion record to another user.
 
 ### Example
@@ -131,17 +135,20 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
 # Full Examples <a name="examples"></a>
 ## Tip Jar <a name="tipJar"></a>
 [Click here](./tip-jar-example) to learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
+
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 
 ## VIP Access Zone <a name="vipZone"></a>
 [Click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
+
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
 
 ## Slot Machine Game <a name="slotMachine"></a>
 [Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
+
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)

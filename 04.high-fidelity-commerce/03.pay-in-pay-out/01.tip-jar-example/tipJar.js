@@ -19,7 +19,7 @@
     // The message displayed to the user when they are prompted to send you money.
     var MONEY_MESSAGE = "Here's a 10 HFC tip for doing a cool thing!";
 
-    var TipCube = function() {
+    var TipJar = function() {
     };
 
     // This function will open a user's tablet and prompt them to pay for VIP status.
@@ -34,7 +34,7 @@
         });
     }
 
-    TipCube.prototype = {
+    TipJar.prototype = {
         clickDownOnEntity: function(entityID, mouseEvent) {
             // When the user running this script clicks the attached entity with their mouse,
             // call this function.
@@ -47,5 +47,5 @@
         }
     };
 
-    return new TipCube();
+    return new TipJar();
 });
