@@ -54,6 +54,8 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 });
 ```
 
+![](./images/moneyTransfer.png)
+
 ## Scriptable, Secure Certified Item Transfer <a name="itemTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Item" screen.
 The script MUST specify a recipient, it MUST specify an item Certificate ID, and it CAN specify a message to the user.
@@ -73,6 +75,8 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 });
 ```
 
+![](./images/itemTransfer.png)
+
 ## Scriptable, Secure Item Purchases <a name="itemPurchases"></a>
 An entity script or client script can open an end-user's tablet to the Marketplace Checkout screen for a specified item.
 The script MUST specify the Marketplace Item ID.
@@ -85,6 +89,8 @@ var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
 tablet.loadQMLSource("hifi/commerce/checkout/Checkout.qml");
 tablet.sendToQml({method: 'updateCheckoutQMLItemID', params: {itemId: "399921f6-bf26-4bba-8654-75d1b30f9442"}});
 ```
+
+![](./images/itemPurchases.png)
 
 ## Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification <a name="transferVerification"></a>
 If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this functionality to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
@@ -110,13 +116,17 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
     3. Click the "Authorized Script" button.
     4. Next to "Amount", enter "10".
     5. Under "Optional Public Message", enter "You won the contest!".
+        ![](./images/preAuth01.png)
     6. Click "SUBMIT".
     7. On the "Payment Authorized" screen, copy and paste the "Authorization ID" text string to a text file on your computer.
     8. On the "Payment Authorized" screen, copy and paste the "Secret" text string to a text file on your computer.
+        ![](./images/preAuth02.png)
     9. Click "CLOSE", then "I'M ALL SET".
 2. Hold a really fun contest! Later, you learn that a user with username "steve" has won the contest.
 3. Use the following `curl` command from the command line to dispense the money authorized in (1) to username `steve`:
     1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d secret=<secret from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
+
+
 
 # Full Examples <a name="examples"></a>
 ## Tip Jar <a name="tipJar"></a>
