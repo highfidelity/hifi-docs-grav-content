@@ -7,7 +7,7 @@ taxonomy:
 
 # Introduction
 
-Using High Fidelity's Pay-In and Pay-Out Commerce APIs, you can create unique domains, apps, and games that can reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content.
+Using High Fidelity's **Pay-In** and **Pay-Out Commerce APIs**, you can create unique domains, apps, and games that can **reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content**.
 
 Using these APIs, you can create content such as:
 * VIP Domain Access
@@ -22,8 +22,9 @@ Using these APIs, you can create content such as:
 
 # Table of Contents
 1. [Full Examples](#examples)
-    1. [Slot Machine Game](#slotMachine)
+    1. [Tip Jar](#tipJar)
     2. [VIP Access Zone](#vipZone)
+    3. [Slot Machine Game](#slotMachine)
 2. [Pay-In Commerce API](#payIn)
     1. [Scriptable, Secure Money Transfer](#moneyTransfer)
     2. [Scriptable, Secure Item Transfer](#itemTransfer)
@@ -33,13 +34,25 @@ Using these APIs, you can create content such as:
     1. [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
 
 # Full Examples <a name="examples"></a>
-For more detail about the functionality introduced by these APIs, and for simple examples using each new API, skip this section and continue reading below.
+For more detail about the functionality introduced by these APIs, and for simple examples using each new API, [skip this section](#payIn) and continue reading below.
 
-## Slot Machine Game <a name="slotMachine"></a>
-To dive into a full, detailed example that uses these APIs and concepts, [click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
+## Tip Jar <a name="tipJar"></a>
+[Click here](./tip-jar-example) to learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
+This example uses:
+* [Scriptable, Secure Money Transfer](#moneyTransfer)
 
 ## VIP Access Zone <a name="vipZone"></a>
-For another detailed example that uses these APIs and concepts, [click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
+[Click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
+This example uses:
+* [Scriptable, Secure Money Transfer](#moneyTransfer)
+* [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
+
+## Slot Machine Game <a name="slotMachine"></a>
+[Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
+This example uses:
+* [Scriptable, Secure Money Transfer](#moneyTransfer)
+* [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
+* [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
 
 # Pay-In Commerce API <a name="payIn"></a>
 The High Fidelity Pay-In Commerce API adds the following functionality:
