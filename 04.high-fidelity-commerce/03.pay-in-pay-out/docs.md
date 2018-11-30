@@ -1,5 +1,5 @@
 ---
-title: "Pay-In and Pay-Out APIs"
+title: "Commerce APIs"
 taxonomy:
     category:
          docs
@@ -7,7 +7,7 @@ taxonomy:
 
 # Introduction
 
-Using High Fidelity's **Pay-In** and **Pay-Out Commerce APIs**, you can create unique domains, apps, and games that can **reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content**.
+Using High Fidelity's **Commerce APIs**, you can create unique domains, apps, and games that can **reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content**.
 
 Using these APIs, you can create content such as:
 * VIP Domain Access
@@ -21,20 +21,19 @@ Using these APIs, you can create content such as:
 * Trading Apps
 
 # Table of Contents
-1. [Pay-In Commerce API](#payIn)
+1. [Commerce APIs](#api)
     1. [Scriptable, Secure Money Transfer](#moneyTransfer)
     2. [Scriptable, Secure Item Transfer](#itemTransfer)
     3. [Scriptable, Secure Item Purchases](#itemPurchases)
-    4. [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
-2. [Pay-Out Commerce API](#payOut)
-    1. [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
+    4. [Scriptable Inventory Verification](#transferVerification)
+    5. [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
 3. [Full Examples](#examples)
     1. [Tip Jar](#tipJar)
     2. [VIP Access Zone](#vipZone)
     3. [Slot Machine Game](#slotMachine)
 
-# Pay-In Commerce API <a name="payIn"></a>
-The High Fidelity Pay-In Commerce API adds the following functionality:
+# Commerce APIs <a name="api"></a>
+The High Fidelity Commerce APIs add the following functionality:
 
 ## Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Money" screen.
@@ -95,7 +94,7 @@ tablet.sendToQml({method: 'updateCheckoutQMLItemID', params: {itemId: "399921f6-
 
 ![](./images/itemPurchases.png)
 
-## Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification <a name="transferVerification"></a>
+## Scriptable Inventory Verification <a name="transferVerification"></a>
 If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this functionality to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
 
 ### Example
@@ -103,34 +102,31 @@ Say you want to **automatically give a user access to a part of your domain _if 
 
 This example is lengthier than the others on this page, so [click here](./paid-entry-example) to go to the Paid Entry Example document.
 
-# Pay-Out Commerce API <a name="payOut"></a>
-The High Fidelity Pay-Out Commerce API adds the following functionality:
-
 ## Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
 A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Secret" value pair.
 
-Later, a script written by this user can use these secret values to send the money or items associated with the authoriaztion record to another user.
+Later, a script written by this user can use these secret values to send the money or items associated with the authorization record to another user.
 
 ### Example
-Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to a user who wins a contest that you are holding**. In this example, the redeption step is performed using [curl](https://curl.haxx.se/), but you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Consider that Interface's `request` JavaScript module can also perform `HTTP PUT` requests, but that isn't covered in this example.
+Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to a user who wins a raffle that you are hosting**. In this example, the redeption step is performed using [curl](https://curl.haxx.se/), but you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Here are a few examples of other tools that can perform `HTTP PUT` requests:
+* High Fidelity Interface's `request` JavaScript module
+* A simple PHP form on a website
 
 1. Use Interface's "INVENTORY" app to obtain an "Authorization ID" and "Secret" value pair associated with a 10-HFC Pre-Authorized Money transfer.
     1. Open Interface.
     2. In your HUD or tablet, open the "INVENTORY" app.
     3. Click the "Authorized Script" button.
     4. Next to "Amount", enter "10".
-    5. Under "Optional Public Message", enter "You won the contest!".
+    5. Under "Optional Public Message", enter "You won the raffle!".
         ![](./images/preAuth01.png)
     6. Click "SUBMIT".
     7. On the "Payment Authorized" screen, copy and paste the "Authorization ID" text string to a text file on your computer.
     8. On the "Payment Authorized" screen, copy and paste the "Secret" text string to a text file on your computer.
         ![](./images/preAuth02.png)
     9. Click "CLOSE", then "I'M ALL SET".
-2. Hold a really fun contest! Later, you learn that a user with username "steve" has won the contest.
+2. Hold your raffle! In this example, a user with username `steve` has won the raffle.
 3. Use the following `curl` command from the command line to dispense the money authorized in (1) to username `steve`:
     1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d secret=<secret from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
-
-
 
 # Full Examples <a name="examples"></a>
 ## Tip Jar <a name="tipJar"></a>
@@ -144,12 +140,12 @@ This example uses:
 
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
-* [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
+* [Scriptable Inventory Verification](#transferVerification)
 
 ## Slot Machine Game <a name="slotMachine"></a>
 [Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
 
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
-* [Scriptable Money Transfer Verification/Item Transfer Verification/Purchase Verification](#transferVerification)
+* [Scriptable Inventory Verification](#transferVerification)
 * [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
