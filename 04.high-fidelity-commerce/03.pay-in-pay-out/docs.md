@@ -16,10 +16,14 @@ Using High Fidelity's Pay-In and Pay-Out Commerce APIs, you can create unique do
 * Vending Machines
 * Trading Apps
 
-# Full Example - Slot Machine Game
+# Full Examples
+For more detail about the functionality introduced by these APIs, and for simple examples using each new API, skip this section and continue reading below.
+
+## Slot Machine Game
 To dive into a full, detailed example that uses these APIs and concepts, [click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
 
-For more detail about the functionality introduced by these APIs, and for more examples using each new API, continue reading below.
+## VIP Access Zone
+For another detailed example that uses these APIs and concepts, [click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
 
 # Pay-In Commerce API
 The High Fidelity Pay-In Commerce API adds the following functionality:
@@ -78,7 +82,7 @@ tablet.sendToQml({method: 'updateCheckoutQMLItemID', params: {itemId: "399921f6-
 If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this functionality to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
 
 ### Example
-Say you want to **automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC in the current session.**
+Say you want to **automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC.**
 
 This example is lengthier than the others on this page, so [click here](./paid-entry-example) to go to the Paid Entry Example document.
 
