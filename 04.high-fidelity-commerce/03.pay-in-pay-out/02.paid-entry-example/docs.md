@@ -74,5 +74,5 @@ You'll have to add the entity script from above to the Tip Cube entity:
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
 
-# CONCLUSION
-You're done! You should now have a working "VIP Zone" in your domain that only VIPs can enter. You should now also have a "Tip Cube" in your domain that'll enable people to quickly become VIPs by paying you the required amount of HFC.
+# You're done!
+You should now have a working "VIP Zone" in your domain that only VIPs can enter. You should now also have a "Tip Cube" in your domain that'll enable people to quickly become VIPs by paying you the required amount of HFC.
