@@ -10,8 +10,9 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-// REPLACE THIS with your authentication token!
-var HIFI_COMMERCE_TOKEN = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// REPLACE THIS with your authentication token
+// from https://highfidelity.com/user/tokens/new
+var HIFI_COMMERCE_TOKEN = "ABCDEFG";
 // The Metaverse to use
 var HIFI_METAVERSE_URL = "https://staging.highfidelity.com";
 // The Recent Economic Activity endpoint on the High Fidelity Metaverse website
@@ -63,13 +64,12 @@ function request(options, callback) {
     httpRequest.send(options.body || null);
 }
 
-// This function sets up a repeating interval. When the interval timer expires,
-// the script will request our Recent Economic Activity.
-
 // This array holds all of the known VIP users.
 var knownVIPUsers = [];
 
-Script.setInterval(function() {
+// This function checks our Recent Economic Activity, parses the returned
+// data for new VIPs, and sends new VIP names over the VIP_MESSAGING_CHANNEL.
+function checkForVIPUpdates() {
     request({
         uri: HIFI_HISTORY_ENDPOINT_URL,
         // Sets up authentication headers with the specified token (see top of file)
@@ -85,7 +85,7 @@ Script.setInterval(function() {
                 data.data.history.forEach(function(item) {
                     // If the user has paid enough money to be considered a VIP
                     // AND they are not already on the Known VIP Users list...
-                    if (item.received_money >= VIP_STATUS_COST &&
+                    if (parseInt(item.received_money) >= VIP_STATUS_COST &&
                         knownVIPUsers.indexOf(item.sender_name) === -1) {
                         knownVIPUsers.push(item.sender_name);
                     }
@@ -98,5 +98,15 @@ Script.setInterval(function() {
                 print(error);
                 print(JSON.stringify(data));
             }
-        });
+        }
+    );
+}
+
+// This function sets up a repeating interval. When the interval timer expires,
+// the script will request our Recent Economic Activity.
+Script.setInterval(function() {
+    checkForVIPUpdates();
 }, CHECK_RECENT_ACTIVITY_INTERVAL_MS);
+
+// The interval won't fire immediately, so let's check for VIP updates immediately ourselves.
+checkForVIPUpdates();

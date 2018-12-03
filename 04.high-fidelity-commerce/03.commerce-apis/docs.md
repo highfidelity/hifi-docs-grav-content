@@ -134,6 +134,7 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
 
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
+* Entity Scripts
 
 ## VIP Access Zone <a name="vipZone"></a>
 [Click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
@@ -141,6 +142,8 @@ This example uses:
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * [Scriptable Inventory Verification](#transferVerification)
+* Entity Scripts
+* Assignment Client Scripts
 
 ## Slot Machine Game <a name="slotMachine"></a>
 [Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
@@ -149,3 +152,6 @@ This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * [Scriptable Inventory Verification](#transferVerification)
 * [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
+* Entity Scripts
+* Entity Server Scripts
+* Assignment Client Scripts

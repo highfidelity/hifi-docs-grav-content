@@ -46,7 +46,23 @@ Now, you'll write an Assignment Client script containing the authentication toke
 [Click here](./vipZoneACScript.js) to download a pre-made "VIP Zone" entity script. Follow along with the comments in the code to understand what it's doing!
 
 # 6. Run the Assignment Client script on your domain
-To run the above AC script on your domain:
+
+## Running an AC Script from S3
+**NOTE** that this method is **not fully secure**, since the S3 URL at which you host the script will be publicly accessible. This means your authentication token will be visible to anyone who guesses or has access to that S3 URL.
+
+To run the above AC script on your domain from S3:
+1. Modify your `vipZoneACScript.js` and set `HIFI_COMMERCE_TOKEN` to your token from Step 4.
+2. Upload your `vipZoneACScript.js` script to a publicly-accessible location such as S3. Copy its URL.
+3. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
+4. Click "Content" at the top of the page, then scroll to the "Scripts" section.
+5. Under "Persistent Scripts", click the `+` button on the right column
+6. Under "Script URL", paste the S3 URL from above.
+7. Click "Save and restart" at the top right of the page
+
+## Running an AC Script from the Domain Settings page
+**NOTE** that, as of 2018-12-03, this method **will NOT work** due to a bug with assignment clients. Also note that this method will cause the AC script to run only until your domain is restarted!
+
+To run the above AC script on your domain from the Domain Settings page:
 1. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
 2. Click "Assignment" at the top of the page.
 3. Paste in the script from (2) above, **making sure that you set `HIFI_COMMERCE_TOKEN` to your token from Step 4!**

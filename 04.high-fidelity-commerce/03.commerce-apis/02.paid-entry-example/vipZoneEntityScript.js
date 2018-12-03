@@ -20,17 +20,16 @@
     var VIPZone = function() {
     };
 
-    // This function will handle changing `user_is_VIP` to `true`.
+    // This function will handle changing `userIsVIP` to `true`.
     var onMessageReceived = function onMessageReceived(channel, message, sender, localOnly) {
-        if (channel === VIP_MESSAGING_CHANNEL) {
-            console.log("ZRF HERE: " + JSON.parse(message));
-        }
         // If we're receiving a message over the channel we care about
-        // AND a username in the message is our username...
+        // AND a username in the message is our username
+        // AND we aren't already a VIP...
         if (channel === VIP_MESSAGING_CHANNEL &&
-            JSON.parse(message).indexOf(Account.username) > -1) {
+            JSON.parse(message).indexOf(Account.username) > -1 &&
+            !userIsVIP) {
             // ...note that we are a VIP. This will allow us to enter the VIPZone.
-            user_is_VIP = true;
+            userIsVIP = true;
             console.log("VIP Zone Entity Script: You are now a VIP and can enter the VIP Zone.");
         }
     }
