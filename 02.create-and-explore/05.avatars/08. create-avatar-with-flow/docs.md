@@ -73,6 +73,6 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
 When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 
 #### Avatar Examples
-Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://hifi-content.s3.amazonaws.com/jimi/avatar/Mannequin/hairTest/mannequinHairTest8.fst).
+Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://github.com/highfidelity/hifi-docs-grav-content/tree/master/02.create-and-explore/05.avatars/08.%20create-avatar-with-flow/mannequinHairTest8.fst).
 
 
