@@ -47,7 +47,7 @@ This panel manages collision spheres. Every collision sphere is positioned using
 - **Offset**: This option changes the Y-value of the offset vector along the joint.
 
 #### JSON Panel
-This panel displays the output data structure with your avatar's flow configuration. 
+This panel displays the output JSON data structure with your avatar's flow configuration, which you then include in your custom flow.js script.  
 ![JSON Panel](jsonpanel.png)
 This data can be copied and pasted into the [**Flow**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flow.js) script between the lines:
 ```javascript
@@ -57,7 +57,20 @@ Erase existing code and paste new code here
 
 // CUSTOM DATA ENDS HERE
 ```
-You can now run the modified **Flow** script to see your work in action. 
+You can now add the modified **Flow** script to your avatar's FST file to see your work in action. 
+
+## How to Add an Avatar Script
+In order to attach a script to your avatar, you must modify your avatar's FST file to include the path where your script lives. There are two ways to update your FST file:
+1.  You can manually add a line to the FST file telling the avatar where to find the script file using `script = [FLOW SCRIPT URL HERE]`. For example: 
+![addScript1](addscript.PNG)
+2. You can also use our Package Model tool to add your avatar script. 
+    
+    a. Create a folder in the path of your avatar that includes the script.
+
+    b. Select the path in the "Script Directory" section of the Package Model tool, seen here: 
+![addScript2](\addScript2.PNG)
+
+When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 
 #### Avatar Examples
 Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://hifi-content.s3.amazonaws.com/jimi/avatar/Mannequin/hairTest/mannequinHairTest8.fst).
