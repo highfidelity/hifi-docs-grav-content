@@ -1,11 +1,9 @@
 ---
-title: 'Create & Explore'
+title: 'Create and Explore'
 taxonomy:
     category: docs
 ---
 
-### 
+# Create and Explore
 
-# Create & Explore
-
-Start your High Fidelity adventure. 
+Start your High Fidelity adventure.

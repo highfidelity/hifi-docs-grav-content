@@ -10,6 +10,8 @@ taxonomy:
 
 The following table details the different types of materials High Fidelity supports and the properties of those materials. The properties are determined by the value or map of material channels.
 
+>>>>> We don't support TGA files yet. You can use PNG files as they work best with High Fidelity. 
+
 
 | Material Type                   | Model File Name                          | Model Image                    | Channel Value or Map               |
 | ------------------------------- | ---------------------------------------- | ------------------------------ | ---------------------------------- |

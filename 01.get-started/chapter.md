@@ -5,10 +5,8 @@ taxonomy:
         - docs
 ---
 
-### 
-
 # Get Started
 
 Welcome to High Fidelity!
 
-Create and experience shared virtual reality worlds. 
+Create and experience shared virtual reality worlds.

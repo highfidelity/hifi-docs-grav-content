@@ -34,7 +34,7 @@ Zones entities can be a bit tricky to work with. By default, zone entities canno
 
 You can create multiple zone entities, nested zone entities, adjacent zone entities and overlapping zone entities. Each of these zone  entities can have different properties. If zone entities are overlapping, then the smaller zone entity's lighting values will take precedence over the other zone entities. For example, as a user moves through a group of nested zone entities, each with different lighting values set, the user would experience the lighting conditions of the smallest zone entity that they are currently in.
 
-![](zone-graphic.PNG)
+![](zone-entity.PNG)
 
 ### How to Make Zone Entities Visible in Create Mode
 

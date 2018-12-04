@@ -1,53 +1,48 @@
 ---
-title: 'Run Scripts'
+title: 'How to Run a Script'
 taxonomy:
     category:
         - docs
 ---
 
-Scripts loaded via Interface are known as *Interface scripts*. Interface scripts; however, are not the only kind of scripts that can be used with High Fidelity. You can find more information about other types of scripts and how to use them in: [Scripts Overview](https://wiki.highfidelity.com/wiki/Scripts_Overview).
 
-## Know Which Scripts Are Currently Running
+## Running Scripts
 
-To see the list of scripts currently running, select **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel.
+To see the list of scripts currently running, go to **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* window on your tablet or HUD.
 
 ![](running-scripts-panel.png)
 
-At the top of this panel, there are two buttons: **Reload All** and **Stop All**. Just below those two buttons is the list of currently running scripts. When you first start Interface, it runs one or more default scripts designed to improve the experience, and if you have just started Interface, the scripts you see listed here are probably the default scripts.
-
-Interface remembers which scripts are loaded, so that the next time you start Interface, the same Interface scripts will be running.
+At the top of this panel, there are two buttons, **Reload All** and **Stop All**. Just below them is the list of currently running scripts. When you open Interface, it runs the default scripts designed to run at startup.
 
 ## Load and Run a Script
 
-The *Running Scripts* panel can be used to load and run scripts from a URL or from disk. High Fidelity also provides a number of example scripts for you to try out and those are listed in the lower half of the *Running Scripts* panel.
+The *Running Scripts* window can be used to load and run scripts from a URL or from a disk drive. High Fidelity also provides a number of example scripts for you to try out. These are listed in the lower half of the *Running Scripts* window.
 
 To run a script:
 
-1. Select **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel.
-2. Select the script you want to run. To select a script:
+1. Go to **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel.
+2. Select the script you want to run. 
+3. Click **Load** to run the script.
 
-
-1. With the script selected, click **Load** to run the script.
-
-You should now see the script at the top of the *Running Scripts* panel as well as the results of running the script.
+You should now see the script at the top of the *Running Scripts* window, as well as the results of running the script.
 
 ### Permission Required to Create/Edit Objects
 
-Each virtual world owner has the ability to restrict who can add or edit entities (High Fidelity objects) in their virtual world. If the script you want to run adds or edits entities and you don't have permission to do so, you won't see any objects created or changed. You will, however, still see the script listed in the *Running Scripts* panel. For example, if you installed [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox) and you are in your [Home](https://wiki.highfidelity.com/wiki/Home_domain) world, if you run the High Fidelity example script `createCow.js` found in the tutorials folder, an animated cow will appear in front of you. However; if you run `createCow.js` while in "Playa" (the world explored in [Visit Virtual Worlds](https://wiki.highfidelity.com/wiki/Explore)), the animated cow will NOT appear. Note that in both cases, you will see the `createCow.js` script listed at the top of the *Running Scripts* list.
+Each domain owner has the ability to restrict create and edit permissions. If the script you want to run adds or edits entities and you don't have the permission to do so, you won't see any objects created or changed. However, you will still see the script listed in the *Running Scripts* window. For example, if you installed [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox) and you are in your [Home](https://wiki.highfidelity.com/wiki/Home_domain) domain, if you run the High Fidelity example script `createCow.js` found in the tutorials folder, an animated cow will appear in front of you. But, if you run `createCow.js` in a domain where you don't have permissions, the animated cow will not appear.
 
 ## Reload or Stop a Running Script
 
-At any time you can close or restart one or all of the running scripts. To reload or stop scripts, select **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel, and then do one of the following:
+You can close or restart any or all of the running scripts. To reload or stop a script, go to **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* window, and then do one of the following:
 
-- To reload all running scripts, click the **Reload All** button at the top of the *Running Scripts* panel.
-- To reload a specific script, click the circular arrow next to the script in the currently running scripts list.
-- To stop all running scripts, click the **Stop All** button at the top of the *Running Scripts* panel.
-- To stop a specific script, click the X next to the script in the currently running scripts list.
+- To reload all running scripts, click the **Reload All** button at the top of the *Running Scripts* window.
+- To reload a specific script, click the circular arrow next to the script.
+- To stop all running scripts, click the **Stop All** button at the top of the *Running Scripts* window.
+- To stop a specific script, click the X next to the script.
 
 ## Get Started Writing Your Own Scripts
 
-To get started writing your own scripts, first read [create content](https://wiki.highfidelity.com/wiki/Create_content) to learn how to set up your development environment. This document covers where script assets need to be located for scripts to use them.
+To get started writing your own scripts, read [this tutorial](../../../learn-with-us/get-started-with-scripting).
 
-For the scripts themselves, High Fidelity uses the JavaScript syntax and High Fidelity provides a robust [JavaScript API](../../../api-reference). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
+High Fidelity uses the JavaScript syntax and provides a robust [JavaScript API](../../../api-reference). If you plan to share your code with the community, we recommend following the [Coding Standards](https://wiki.highfidelity.com/wiki/Coding_Standards).
 
-To write scripts, you can use your favorite JavaScript editor. The [create butterflies](https://wiki.highfidelity.com/wiki/Create_butterflies) tutorial uses the example script `butterfly.js` to show you how to run and edit scripts using the script editor.
+

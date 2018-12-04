@@ -23,7 +23,7 @@ So what is this server stack? Your home domain's server stack contains component
 
 Assignment clients control and manage various aspects of a domain. They also communicate directly with the Interface clients connected to a domain. There are six types of assignment clients:
 
-* The *Avatar Mixer* is in charge of your virtual presence in any domain. It keeps track of where you are, which avatar you are wearing, and how you move around the domain (like how you would move your head while wearing a Head Mounted Display (HMD)).
+* The *Avatar Mixer* is in charge of your virtual presence in any domain. It keeps track of where you are, which avatar you are wearing, and how you move around the domain.  For example, it tracks how you move your head while wearing a Head Mounted Display (HMD).
 
 * The *Audio Mixer* mixes all sounds, whether it's voice or environmental. And it does this not just for avatars, but also for all the entities in a domain. The Audio mixer can customize a stereo mix for you based on your position relative to the audio source.
 
@@ -47,7 +47,7 @@ Sandbox manages all these components—the domain server, five dedicated assignm
 
 In the picture above, the Asset Server and Messages Mixer are not shown, but they fit in like the Audio, Avatar and Entity mixers. The Assignment Server under Global Services is for future use, in which people can contribute assignment client computing power to a pool.
 
-High Fidelity's open source architecture is a work in progress and is subject to change. if you're interested in understanding our architecture better, check out our [Github](https://github.com/highfidelity/) project.
+High Fidelity's open source architecture is a work in progress and is subject to change. If you're interested in understanding our architecture better, check out our [Github](https://github.com/highfidelity/) project.
 
 
 

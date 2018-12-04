@@ -33,65 +33,64 @@ I've organized this tutorial as a series of progressing chapters, and as you fol
 It's generally a good idea to write your spawner script first, so you can quickly get your entity (or group of entities) set up and destroyed as you iterate. This will become more and important as you start building more intricate experiences that require multiple entities working together in concert, but even now will save you lots of time and frustration. Let's start by writing the interface script to get our launch button spawned and positioned in front of our avatar with a simple, boilerplate entity script attached to it: Call it fireworksLaunchButtonSpawner.js
 
 ```
- 1 // Chapter 1 : fireworksLaunchButtonSpawner.js
- 2 
- 3   var orientation = Camera.getOrientation();
- 4   orientation = Quat.safeEulerAngles(orientation);
- 5   orientation.x = 0;
- 6   orientation = Quat.fromVec3Degrees(orientation);
- 7   var center = Vec3.sum(MyAvatar.position, Vec3.multiply(3, Quat.getFront(orientation)));
- 8 
- 9   var SCRIPT_URL = Script.resolvePath("fireworksLaunchButtonEntityScript.js");
-10   var MODEL_URL = "https://s3-us-west-1.amazonaws.com/hifi-content/eric/models/Launch-Button.fbx";
-11   var launchButton = Entities.addEntity({
-12     type: "Model",
-13     name: "hifi-launch-button",
-14     modelURL: MODEL_URL,
-15     position: center,
-16     dimensions: {
-17       x: 0.98,
-18       y: 1.16,
-19       z: 0.98
-20     },
-21     script: SCRIPT_URL,
-22   })
-23 
-24 
-25   function cleanup() {
-26     Entities.deleteEntity(launchButton);
-27   }
-28 
-29   Script.scriptEnding.connect(cleanup);</source>
-30 
-31 Now create a file in the same folder called fireworksLaunchButtonEntityScript.js. Paste or type the following code in:
-32 
-33 <source lang="javascript">// Chapter 1: fireworksLaunchButtonEntityScript.js
-34 
-35   (function() {
-36     Script.include("../../libraries/utils.js");
-37     var _this;
-38     Fireworks = function() {
-39       _this = this;
-40     };
-41 
-42     Fireworks.prototype = {
-43 
-44       preload: function(entityID) {
-45         _this.entityID = entityID;
-46 
-47       }
-48 
-49     };
-50 
-51     // entity scripts always need to return a newly constructed object of our type
-52     return new Fireworks();
-53   });
+// Chapter 1 : fireworksLaunchButtonSpawner.js
+  var orientation = Camera.getOrientation();
+  orientation = Quat.safeEulerAngles(orientation);
+  orientation.x = 0;
+  orientation = Quat.fromVec3Degrees(orientation);
+  var center = Vec3.sum(MyAvatar.position, Vec3.multiply(3, Quat.getFront(orientation)));
+
+  var SCRIPT_URL = Script.resolvePath("fireworksLaunchButtonEntityScript.js");
+  var MODEL_URL = "https://s3-us-west-1.amazonaws.com/hifi-content/eric/models/Launch-Button.fbx";
+  var launchButton = Entities.addEntity({
+    type: "Model",
+    name: "hifi-launch-button",
+    modelURL: MODEL_URL,
+    position: center,
+    dimensions: {
+      x: 0.98,
+      y: 1.16,
+      z: 0.98
+    },
+    script: SCRIPT_URL,
+  })
+
+
+  function cleanup() {
+    Entities.deleteEntity(launchButton);
+  }
+
+  Script.scriptEnding.connect(cleanup);</source>
+
+Now create a file in the same folder called fireworksLaunchButtonEntityScript.js. Paste or type the following code in:
+
+<source lang="javascript">// Chapter 1: fireworksLaunchButtonEntityScript.js
+
+  (function() {
+    Script.include("../../libraries/utils.js");
+    var _this;
+    Fireworks = function() {
+      _this = this;
+    };
+
+    Fireworks.prototype = {
+
+      preload: function(entityID) {
+        _this.entityID = entityID;
+
+      }
+
+    };
+
+    // entity scripts always need to return a newly constructed object of our type
+    return new Fireworks();
+  });
 
 ```
 
 Great! Now run the interface script and you should see a launch button appear in front of you.
 
-The spawner script is quite simple- it spawns a model entity with an entity script attached in front of your avatar. If you haven't learned about the different kinds of entities our system supports, no worries! Hop on over to [this guide](http://jsref.docs.highfidelity.com/docs/entity-properties), which will walk you through all of the entities you can create and the properties common to them all and specific to each entity type.
+The spawner script is quite simple- it spawns a model entity with an entity script attached in front of your avatar. If you haven't learned about the different kinds of entities our system supports, no worries! Hop on over to [this guide](https://docs.highfidelity.com/api-reference/namespaces/entities#.EntityProperties), which will walk you through all of the entities you can create and the properties common to them all and specific to each entity type.
 
 The entity script doesn't do much right now, but we're ready to start building it out, and will be able to make rapid changes and see them take effect almost instantly, simply by reloading our spawner script, since we've set up the script to delete the launch button entity on shutdown. From here on out, most of our work will be spent building out our entity script to imbue our launch button with the power to launch fireworks into the sky!
 
@@ -100,259 +99,259 @@ The entity script doesn't do much right now, but we're ready to start building i
 Let's add some logic to our entity script that will launch a firework when someone clicks on the button with their mouse, or squeezes a hand controller trigger while their hand is in the launch button or pointing at the button from further away. For the latter two actions to work, you need to be running handControllerGrab.js, which is one of your default running scripts.
 
 ```
- 1 // Chapter 2: fireworksLaunchButtonEntityScript.js
- 2 
- 3   (function() {
- 4     Script.include("../../libraries/utils.js");
- 5     var _this;
- 6     Fireworks = function() {
- 7       _this = this;
- 8       _this.launchSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/missle+launch.wav");
- 9     };
-10 
-11     Fireworks.prototype = {
-12 
-13       startNearTrigger: function() {
-14         _this.shootFirework(_this.position);
-15       },
-16 
-17       startFarTrigger: function() {
-18         _this.shootFirework(_this.position);
-19       },
-20 
-21       clickReleaseOnEntity: function() {
-22         _this.shootFirework(_this.position);
-23       },
-24 
-25 
-26       shootFirework: function(launchPosition) {
-27         Audio.playSound(_this.launchSound, {
-28           position: launchPosition,
-29           volume: 0.5
-30         });
-31 
-32 
-33         var smoke = Entities.addEntity({
-34           type: "ParticleEffect",
-35           position: _this.position,
-36           velocity: {x: 0, y: 3, z: 0},
-37           lifespan: 10,
-38           lifetime: 20,
-39           isEmitting: true,
-40           name: "Smoke Trail",
-41           maxParticles: 3000,
-42           emitRate: 80,
-43           emitSpeed: 0,
-44           speedSpread: 0,
-45           polarStart: 0,
-46           polarFinish: 0,
-47           azimuthStart: -3.14,
-48           azimuthFinish: 3.14,
-49           emitAcceleration: {
-50             x: 0,
-51             y: 0.01,
-52             z: 0
-53           },
-54           accelerationSpread: {
-55             x: 0.01,
-56             y: 0,
-57             z: 0.01
-58           },
-59           radiusSpread: 0.03,
-60           particleRadius: 0.3,
-61           radiusStart: 0.06,
-62           radiusFinish: 0.9,
-63           alpha: 0.1,
-64           alphaSpread: 0,
-65           alphaStart: 0.7,
-66           alphaFinish: 0,
-67           textures: "https://hifi-public.s3.amazonaws.com/alan/Particles/Particle-Sprite-Smoke-1.png",
-68           emitterShouldTrail: true,
-69         });
-70 
-71       },
-72 
-73       preload: function(entityID) {
-74         _this.entityID = entityID;
-75         _this.position = Entities.getEntityProperties(_this.entityID, "position").position;
-76 
-77       }
-78 
-79     };
-80 
-81     // entity scripts always need to return a newly constructed object of our type
-82     return new Fireworks();
-83   });
+// Chapter 2: fireworksLaunchButtonEntityScript.js
+
+  (function() {
+    Script.include("../../libraries/utils.js");
+    var _this;
+    Fireworks = function() {
+      _this = this;
+      _this.launchSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/missle+launch.wav");
+    };
+
+    Fireworks.prototype = {
+
+      startNearTrigger: function() {
+        _this.shootFirework(_this.position);
+      },
+
+      startFarTrigger: function() {
+        _this.shootFirework(_this.position);
+      },
+
+      clickReleaseOnEntity: function() {
+        _this.shootFirework(_this.position);
+      },
+
+
+      shootFirework: function(launchPosition) {
+        Audio.playSound(_this.launchSound, {
+          position: launchPosition,
+          volume: 0.5
+        });
+
+
+        var smoke = Entities.addEntity({
+          type: "ParticleEffect",
+          position: _this.position,
+          velocity: {x: 0, y: 3, z: 0},
+          lifespan: 10,
+          lifetime: 20,
+          isEmitting: true,
+          name: "Smoke Trail",
+          maxParticles: 3000,
+          emitRate: 80,
+          emitSpeed: 0,
+          speedSpread: 0,
+          polarStart: 0,
+          polarFinish: 0,
+          azimuthStart: -3.14,
+          azimuthFinish: 3.14,
+          emitAcceleration: {
+            x: 0,
+            y: 0.01,
+            z: 0
+          },
+          accelerationSpread: {
+            x: 0.01,
+            y: 0,
+            z: 0.01
+          },
+          radiusSpread: 0.03,
+          particleRadius: 0.3,
+          radiusStart: 0.06,
+          radiusFinish: 0.9,
+          alpha: 0.1,
+          alphaSpread: 0,
+          alphaStart: 0.7,
+          alphaFinish: 0,
+          textures: "https://hifi-public.s3.amazonaws.com/alan/Particles/Particle-Sprite-Smoke-1.png",
+          emitterShouldTrail: true,
+        });
+
+      },
+
+      preload: function(entityID) {
+        _this.entityID = entityID;
+        _this.position = Entities.getEntityProperties(_this.entityID, "position").position;
+
+      }
+
+    };
+
+    // entity scripts always need to return a newly constructed object of our type
+    return new Fireworks();
+  });
 
 ```
 
 Now, reload your spawner script, and you should see the launch button flicker briefly out of and back into existence. What happened here is we just deleted our old launch button entity, and respawned a new one. This new launch button now has our more fleshed-out entity script attached. When you click on it with your mouse, or near or far-trigger it with your hand controller of choice, you should see a trail of smoke go flying into the air! We currently support Razer Hydra and HTC Vive hand controllers, so if you have either one of those systems and you're running handControllerGrab.js, you should be able to near or far-trigger the launch button and to launch the firework in the same manner as you would by mouse clicking on it. If you're unsure of what "far trigger" or "near trigger" means, check out [this walkthrough](https://dash.readme.io/project/hifijavascriptref/v1.0/docs/hand-controller-api) on our hand controller API, which will take you through the different ways entity scripts can hook into our controller system and respond to various kinds ways you can interact with entities with your hands.
 
-The smoke you see is a Particle Effect entity which is a powerful and flexible entity that allows you to create all kinds of awesome effects- from a comet trail, to fire, rain, magic spells, and so much more. To learn more about particle effects, the [entity properties guide](http://jsref.docs.highfidelity.com/docs/entity-properties) goes into the details of all the properties you can play with to make your own effects. When you're done reading through that, you can spawn your own particle system right from the edit menu (make sure you're running edit.js for this menu to be available) and adjust the properties from the particle explorer tab that appears alongside the other entity menu tabs.
+The smoke you see is a Particle Effect entity which is a powerful and flexible entity that allows you to create all kinds of awesome effects- from a comet trail, to fire, rain, magic spells, and so much more. To learn more about particle effects, the [entity properties guide](https://docs.highfidelity.com/api-reference/namespaces/entities#.EntityProperties-ParticleEffect) goes into the details of all the properties you can play with to make your own effects. When you're done reading through that, you can spawn your own particle system right from the edit menu (make sure you're running edit.js for this menu to be available) and adjust the properties from the particle explorer tab that appears alongside the other entity menu tabs.
 
-The other element of note here is the sound we play on the firework's launch. High Fidelity has an awesome 3D spatial sound system, and it's super easy to play all kinds of sounds at an in-world location of your choice that anyone nearby can hear. Line's 8 and 27-30 demonstrate how to load and play the missile launch sound effect you hear. For more detailed information, check out the [SoundCache](http://jsref.docs.highfidelity.com/docs/soundcachegetsound) and [Audio](http://jsref.docs.highfidelity.com/docs/audioplaysound) references.
+The other element of note here is the sound we play on the firework's launch. High Fidelity has an awesome 3D spatial sound system, and it's super easy to play all kinds of sounds at an in-world location of your choice that anyone nearby can hear. Line's 8 and 27-30 demonstrate how to load and play the missile launch sound effect you hear. For more detailed information, check out the [SoundCache](https://docs.highfidelity.com/api-reference/namespaces/soundcache) and [Audio](https://docs.highfidelity.com/api-reference/namespaces/audio) references.
 
 So to sum up what we've accomplished so far: We've wired up an entity script to our launch button that, when clicked or triggered by a hand controller, launches our firework into the sky! Right now, our firework is just a trail of smoke- we need to make it explode! We'll cover that in the next chapter
 
 ## Chapter 3: Exploding the Firework
 
-To create a cool firework explosion effect, we'll want to wait for the launched firework to rocket upwards for a few seconds, and then detonate the explosion, which, like the smoke, is a particle entity. If you've ever done any web development, you'll be familiar with the setTimeout function, which in browsers is implemented as part of the Window object, but in High Fidelity is exposed on the global Script object. Check out our [Script Object reference](https://docs.highfidelity.com/v1.0/docs/script-object-api) for more! Here's the implementation:
+To create a cool firework explosion effect, we'll want to wait for the launched firework to rocket upwards for a few seconds, and then detonate the explosion, which, like the smoke, is a particle entity. If you've ever done any web development, you'll be familiar with the setTimeout function, which in browsers is implemented as part of the Window object, but in High Fidelity is exposed on the global Script object. Check out our [Script Object reference](https://docs.highfidelity.com/api-reference/namespaces/script) for more! Here's the implementation:
 
 ```
-  1 // Chapter 3: fireworksLaunchButtonEntityScript.js
-  2 
-  3   (function() {
-  4     Script.include("../../libraries/utils.js");
-  5     var _this;
-  6     Fireworks = function() {
-  7       _this = this;
-  8       _this.launchSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/missle+launch.wav");
-  9       _this.explosionSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/fireworksExplosion.wav");
- 10       _this.TIME_TO_EXPLODE = 3000;
- 11     };
- 12 
- 13     Fireworks.prototype = {
- 14 
- 15       startNearTrigger: function() {
- 16         _this.shootFirework(_this.position);
- 17       },
- 18 
- 19       startFarTrigger: function() {
- 20         _this.shootFirework(_this.position);
- 21       },
- 22 
- 23       clickReleaseOnEntity: function() {
- 24         _this.shootFirework(_this.position);
- 25       },
- 26 
- 27       shootFirework: function(launchPosition) {
- 28         Audio.playSound(_this.launchSound, {
- 29           position: launchPosition,
- 30           volume: 0.5
- 31         });
- 32 
- 33 
- 34         var smoke = Entities.addEntity({
- 35           type: "ParticleEffect",
- 36           position: _this.position,
- 37           velocity: {x: 0, y: 3, z: 0},
- 38           linearDamping: 0,
- 39           lifespan: 10,
- 40           lifetime: 20,
- 41           isEmitting: true,
- 42           name: "Smoke Trail",
- 43           maxParticles: 3000,
- 44           emitRate: 80,
- 45           emitSpeed: 0,
- 46           speedSpread: 0,
- 47           polarStart: 0,
- 48           polarFinish: 0,
- 49           azimuthStart: -3.14,
- 50           azimuthFinish: 3.14,
- 51           emitAcceleration: {
- 52             x: 0,
- 53             y: 0.01,
- 54             z: 0
- 55           },
- 56           accelerationSpread: {
- 57             x: 0.01,
- 58             y: 0,
- 59             z: 0.01
- 60           },
- 61           radiusSpread: 0.03,
- 62           particleRadius: 0.3,
- 63           radiusStart: 0.06,
- 64           radiusFinish: 0.9,
- 65           alpha: 0.1,
- 66           alphaSpread: 0,
- 67           alphaStart: 0.7,
- 68           alphaFinish: 0,
- 69           textures: "https://hifi-public.s3.amazonaws.com/alan/Particles/Particle-Sprite-Smoke-1.png",
- 70           emitterShouldTrail: true,
- 71         });
- 72 
- 73         Script.setTimeout(function() {
- 74           var explodePosition = Entities.getEntityProperties(smoke, "position").position;
- 75           _this.explodeFirework(explodePosition);
- 76         }, _this.TIME_TO_EXPLODE);
- 77 
- 78       },
- 79 
- 80     explodeFirework: function(explodePosition) {
- 81         Audio.playSound(_this.explosionSound, {
- 82           position: explodePosition
- 83         });
- 84         var firework = Entities.addEntity({
- 85           name: "fireworks emitter",
- 86           position: explodePosition,
- 87           type: "ParticleEffect",
- 88           colorStart: hslToRgb({
- 89             h: Math.random(),
- 90             s: 0.5,
- 91             l: 0.7
- 92           }),
- 93           color: hslToRgb({
- 94             h: Math.random(),
- 95             s: 0.5,
- 96             l: 0.5
- 97           }),
- 98           colorFinish: hslToRgb({
- 99             h: Math.random(),
-100             s: 0.5,
-101             l: 0.7
-102           }),
-103           maxParticles: 10000,
-104           lifetime: 20,
-105           lifespan: randFloat(1.5, 3),
-106           emitRate: randInt(500, 5000),
-107           emitSpeed: randFloat(0.5, 2),
-108           speedSpread: 0.2,
-109           emitOrientation: Quat.fromPitchYawRollDegrees(randInt(0, 360), randInt(0, 360), randInt(0, 360)),
-110           polarStart: 1,
-111           polarFinish: randFloat(1.2, 3),
-112           azimuthStart: -Math.PI,
-113           azimuthFinish: Math.PI,
-114           emitAcceleration: {
-115             x: 0,
-116             y: randFloat(-1, -0.2),
-117             z: 0
-118           },
-119           accelerationSpread: {
-120             x: Math.random(),
-121             y: 0,
-122             z: Math.random()
-123           },
-124           particleRadius: randFloat(0.001, 0.1),
-125           radiusSpread: Math.random() * 0.1,
-126           radiusStart: randFloat(0.001, 0.1),
-127           radiusFinish: randFloat(0.001, 0.1),
-128           alpha: randFloat(0.8, 1.0),
-129           alphaSpread: randFloat(0.1, 0.2),
-130           alphaStart: randFloat(0.7, 1.0),
-131           alphaFinish: randFloat(0.7, 1.0),
-132           textures: "http://ericrius1.github.io/PlatosCave/assets/star.png",
-133         });
-134 
-135 
-136         Script.setTimeout(function() {
-137           Entities.editEntity(firework, {
-138             isEmitting: false
-139           });
-140         }, 1000);
-141 
-142       },
-143 
-144       preload: function(entityID) {
-145         _this.entityID = entityID;
-146         _this.position = Entities.getEntityProperties(_this.entityID, "position").position;
-147 
-148       }
-149 
-150     };
-151 
-152     // entity scripts always need to return a newly constructed object of our type
-153     return new Fireworks();
-154   });
+// Chapter 3: fireworksLaunchButtonEntityScript.js
+
+  (function() {
+    Script.include("../../libraries/utils.js");
+    var _this;
+    Fireworks = function() {
+      _this = this;
+      _this.launchSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/missle+launch.wav");
+      _this.explosionSound = SoundCache.getSound("https://s3-us-west-1.amazonaws.com/hifi-content/eric/Sounds/fireworksExplosion.wav");
+      _this.TIME_TO_EXPLODE = 3000;
+    };
+
+    Fireworks.prototype = {
+
+      startNearTrigger: function() {
+        _this.shootFirework(_this.position);
+      },
+
+      startFarTrigger: function() {
+        _this.shootFirework(_this.position);
+      },
+
+      clickReleaseOnEntity: function() {
+        _this.shootFirework(_this.position);
+      },
+
+      shootFirework: function(launchPosition) {
+        Audio.playSound(_this.launchSound, {
+          position: launchPosition,
+          volume: 0.5
+        });
+
+
+        var smoke = Entities.addEntity({
+          type: "ParticleEffect",
+          position: _this.position,
+          velocity: {x: 0, y: 3, z: 0},
+          linearDamping: 0,
+          lifespan: 10,
+          lifetime: 20,
+          isEmitting: true,
+          name: "Smoke Trail",
+          maxParticles: 3000,
+          emitRate: 80,
+          emitSpeed: 0,
+          speedSpread: 0,
+          polarStart: 0,
+          polarFinish: 0,
+          azimuthStart: -3.14,
+          azimuthFinish: 3.14,
+          emitAcceleration: {
+            x: 0,
+            y: 0.01,
+            z: 0
+          },
+          accelerationSpread: {
+            x: 0.01,
+            y: 0,
+            z: 0.01
+          },
+          radiusSpread: 0.03,
+          particleRadius: 0.3,
+          radiusStart: 0.06,
+          radiusFinish: 0.9,
+          alpha: 0.1,
+          alphaSpread: 0,
+          alphaStart: 0.7,
+          alphaFinish: 0,
+          textures: "https://hifi-public.s3.amazonaws.com/alan/Particles/Particle-Sprite-Smoke-1.png",
+          emitterShouldTrail: true,
+        });
+
+        Script.setTimeout(function() {
+          var explodePosition = Entities.getEntityProperties(smoke, "position").position;
+          _this.explodeFirework(explodePosition);
+        }, _this.TIME_TO_EXPLODE);
+
+      },
+
+    explodeFirework: function(explodePosition) {
+        Audio.playSound(_this.explosionSound, {
+          position: explodePosition
+        });
+        var firework = Entities.addEntity({
+          name: "fireworks emitter",
+          position: explodePosition,
+          type: "ParticleEffect",
+          colorStart: hslToRgb({
+            h: Math.random(),
+            s: 0.5,
+            l: 0.7
+          }),
+          color: hslToRgb({
+            h: Math.random(),
+            s: 0.5,
+            l: 0.5
+          }),
+          colorFinish: hslToRgb({
+            h: Math.random(),
+            s: 0.5,
+            l: 0.7
+          }),
+          maxParticles: 10000,
+          lifetime: 20,
+          lifespan: randFloat(1.5, 3),
+          emitRate: randInt(500, 5000),
+          emitSpeed: randFloat(0.5, 2),
+          speedSpread: 0.2,
+          emitOrientation: Quat.fromPitchYawRollDegrees(randInt(0, 360), randInt(0, 360), randInt(0, 360)),
+          polarStart: 1,
+          polarFinish: randFloat(1.2, 3),
+          azimuthStart: -Math.PI,
+          azimuthFinish: Math.PI,
+          emitAcceleration: {
+            x: 0,
+            y: randFloat(-1, -0.2),
+            z: 0
+          },
+          accelerationSpread: {
+            x: Math.random(),
+            y: 0,
+            z: Math.random()
+          },
+          particleRadius: randFloat(0.001, 0.1),
+          radiusSpread: Math.random() * 0.1,
+          radiusStart: randFloat(0.001, 0.1),
+          radiusFinish: randFloat(0.001, 0.1),
+          alpha: randFloat(0.8, 1.0),
+          alphaSpread: randFloat(0.1, 0.2),
+          alphaStart: randFloat(0.7, 1.0),
+          alphaFinish: randFloat(0.7, 1.0),
+          textures: "http://ericrius1.github.io/PlatosCave/assets/star.png",
+        });
+
+
+        Script.setTimeout(function() {
+          Entities.editEntity(firework, {
+            isEmitting: false
+          });
+        }, 1000);
+
+      },
+
+      preload: function(entityID) {
+        _this.entityID = entityID;
+        _this.position = Entities.getEntityProperties(_this.entityID, "position").position;
+
+      }
+
+    };
+
+    // entity scripts always need to return a newly constructed object of our type
+    return new Fireworks();
+  });
 
 ```
 

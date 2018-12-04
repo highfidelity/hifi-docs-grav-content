@@ -29,8 +29,6 @@ All you’ll need to bring - is the show!
 
 ![](\zaru.png)
 
-
-
 ## Setup your Server
 
 High Fidelity’s distributed platform enables almost limitless server configurations that you customize for your hosting needs. For smaller events (up to 10 avatars), a single instance of a server OS would be enough, as long as it’s a relatively recent computer. You can also set up a virtual machine hosted with cloud services providers such as Amazon, Azure, or Digital Ocean. For large-scale events, you can determine if you need more powerful hardware, or setup a distributed system with each assignment client running on a different server.
@@ -39,8 +37,8 @@ High Fidelity’s distributed platform enables almost limitless server configura
 
 You can setup your server by either:
 
-- Installing Sandbox - This will be a single application installation that contains all the required components.
-- [Compile from source](../../../build-guide) - You can build each component individually and set-up the assignment client to point to each of the various sub-components.
+- **Installing Sandbox**: This will be a single application installation that contains all the required components.
+- **[Compile from source](../../../build-guide)**: You can build each component individually and set-up the assignment client to point to each of the various sub-components.
 
 ### Scale for Larger Events
 
@@ -86,11 +84,17 @@ Find the location of where your stage, audience, and microphones are in your dom
 Find your avatar’s coordinates by:
 
 1. Opening up the console (CTRL + ALT + J).
-2. Typing `JSON.stringify(MyAvatar.position) `.
+2. Typing `JSON.stringify(MyAvatar.position)`.
+
+or by hitting the "/" button and reaing the "position" in the middle column. 
 
 ![](audio-settings.png)
 
 Audio Zones are defined by a start and end coordinate value for each of the three axes in-world. An example of how you might choose to define your zones is illustrated in the diagram below. In the sample, the X and Z values are defined along their respective axes, and the Y start and end would be the value of the floor and ceiling. To add audio zones to the Microphone stands in Zaru, create a smaller region within the audience.
+
+Our Content Team tech lead Liv has made a handy tool for audio zone bounding boxes you can find [here](https://hifi-content.s3.amazonaws.com/liv/getCoords/getCoords.js).
+
+The way to use it is to create a cube in world and size and align it to where you want the boundaries of the audio zone to be. Run the script, click on the cube. The x,y,z coordinates will appear in the scripts window. Use those to define the zones in the domain settings page.
 
 Once you have the coordinates of your audio zones:
 
@@ -99,10 +103,19 @@ Once you have the coordinates of your audio zones:
 3. Define the audio zones that you mapped out earlier. You can keep this simple, and map only the stage and audience, or assign zones for the lobby, wings, microphones, etc.
 4. Set Attenuation Zone combinations based on the locations you decided on, setting sources that you’d like to be loud to everyone to 0.
 
+
+If you are having trouble with your Audio Zones check for the following:
+1. For the start to end positions, place them generally in lowest to highest order.  
+2. Make sure the audio zones don't cross each other's paths, but try to make the differences between them small. 
+3. If you aren't in an audio zone, the default attenuation will take hold that you can adjust as well.  If you want to make sure the audience can't be heard while the speaker is talking, pay attention to accidently crossing those areas. 
+4. To change how people in the same zone talk to each other, use the same zone for the speaker and the listener and adjust accordingly.
+5. Make sure you think about how each zone should interact with the other zones.  Stage to Audience, Stage to Mic1, Stage to Stage, Mic1 to Stage, Audience to Stage, Audience to Audience, etc...
+
+
 Save your audio settings and test them until you find a combination that works for you. Other audio settings that you may want to experiment with are:
 
-- Noise muting threshold: You can customize how loud someone can get before they are muted
-- Reverb settings: For custom decay and reverberation of audio in specific zones
+- **Noise muting threshold**: You can customize how loud someone can get before they are muted
+- **Reverb settings**: For custom decay and reverberation of audio in specific zones
 
 ### Access Control
 

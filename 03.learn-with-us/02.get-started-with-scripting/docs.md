@@ -1,70 +1,60 @@
 ---
 title: 'Get Started with Scripting'
+taxonomy:
+  category: docs
 ---
 
 ## Introduction to Scripting
 
-Before we get started with building more complex projects, we’re going to start by taking a look at the tools provided within the High Fidelity Interface client to edit our domain. These tools will allow us to add and modify different entities in our domain.
+High Fidelity provides a number of tools to help you customize a domain. Using these tools, you can
 
-In this tutorial, you’ll learn how to:
+- Add, modify, or delete objects (entities).
+- Customize and control the behavior of entities, domains, and your avatar. 
+- Create apps that have specific functions, such as the Record app. 
 
-- Switch in and out of desktop and VR modes
-- Turn on the editing and developer menus
-- Add a cube to our domain
-- Access and use the script editor in Interface
-- View running scripts and start new ones
+The [Create app](../../create-and-explore/entities/create-mode) is an easy UI based tool in the Tablet that lets you add, modify, and delete different types of entities. But you can also do that and more by scripting in High Fidelity! 
 
-## Domain Editing
+### Scripting in High Fidelity
 
-If you have permissions to edit on a given domain (either your sandbox domain, or in the ‘Welcome’ domain, which is open to any High Fidelity user) you will be able to modify the world around you in real time. On your tablet menu, you can click ‘Edit’ to open up a secondary menu that enables you to add entities to your domain and to change properties for the objects in the environment.
+High Fidelity's scripts are written in JavaScript. There are [four types of scripts](../../create-and-explore/all-about-scripting) used:
 
-*Entity* - an object with a set of properties within a domain in High Fidelity
-
-![](tablet-edit.png)
-
-When the Edit window is open, you can set up and use an editing grid, search for entities in your scene, and select objects to view the properties that have been set for different entities. You can select objects within the scene using the mouse [(desktop mode)](https://wiki.highfidelity.com/wiki/Explore) and grab triggers [(VR mode with hand controllers)](https://wiki.highfidelity.com/wiki/Hand_controllers) and move, rotate, and scale them in your environment. A selected entity will have a red line around the model.
-
-For an extensive look at the editing tools, read over the [Interface edit mode documentation here](https://wiki.highfidelity.com/wiki/Edit_Mode).
-
-## Entity Properties
-
-Each entity within your High Fidelity domain will contain a number of different properties that define the behavior and appearance of your object. You can view properties for a given entity in Edit mode by selecting an object and clicking the ‘Entity Properties’ tab in the Edit window.
-
-1. With Edit mode on, select the Cube button to add a cube to your scene. The cube will appear directly in front of you, and will be selected when you add it.
-2. In the Edit window, select the Entity Properties tab to view the cube properties. You can change the shape, give your cube a name, modify the position, rotation, dimensions, and scale, customize physics properties, change the colors, attach scripts, and set specific behaviors.
-3. Spend some time getting familiar with the properties that are presented to you by changing the shape and color of the cube you just created.
-4. Take a look at the different physics properties you can set with this video: [Setting Grab Properties](https://wiki.highfidelity.com/wiki/Setting_Grab_Properties) and make your cube throwable.
-
-When we start writing our scripts, we’ll also be able to access and modify the properties of entities within our scene using the [Entity Properties APIs](https://wiki.highfidelity.com/wiki/Entity_Properties_API), which we’ll cover in depth in future modules.
+- Interface Scripts: These are scripts that run as long as you have Interface running. Some applications are modifying the user experience with new menus, overlays, tweaks, plugins, and extensions, or one-time creation tasks.
+- Client Entity Scripts: This script is always attached to an entity. If you trigger this type of script, you will be running an instance of it on your local machine. With these scripts, you can customize what happens when a user encounters an entity. An example is a cube scripted to make your avatar dance when you touch it. 
+- Server Entity Scripts: This script is attached to an entity and does not require a user to trigger it. These scripts control the behavior of entities for all users in a domain.  
+- Assignment Client Scripts: These scrips coordinate the actions between entities and avatars and run as long as your domain is running. This means that these scripts continue to run even when you shut down Interface and are directly connected to your domain (Sandbox).
 
 ## Write and Execute Your Own Scripts
 
-You can write your scripts in an external editor of your choice. 
+Most of the scripts you write will be Interface scripts or Client Entity Scripts. You can write your scripts in an external editor of your choice. 
 
-With your script editor open, you can now view and modify scripts in your domain or attached to various entities. To start, we’ll do a basic ‘Hello, World’:
+With your text editor open, you can now view and modify scripts in your domain or attached to various entities. To start, we’ll do a basic ‘Hello, World’:
 
-1. Type print("Hello, World"); into your script editor's window.
+1. Type `print("Hello, World");` into your text editor's window.
 2. Save your script as testScript.js on your computer. 
-3. On your tablet, go to Menu > Settings and check both Advanced Menu and Developer Menu. 
-4. On your tablet, go to Menu > Edit > Open and Run Script. 
-5. Your tablet will now display your local system's directory. You can find your script file and click on **Open**.
-6. You will see your text printed in the console window. Your script will continue running until you stop it.
+3. On your tablet, go to **Menu > Settings** and enable both Advanced and Developer menus.
+4. In the developer menu select Script Log (HMD Friendly).
+5. Go to **Menu > Edit > Running Scripts...**.
+6. In the Running Scripts screen/window, click on **From Disk**.
+7. Your tablet will now display your local system's directory. You can find your script file and click on **Open**.
+8. You will see your text printed in the Script Log window which is titled 'Debug Window'. Your script will continue running until you stop it.
 
-We’ll now replicate our steps from earlier to create our cube through a script instead of adding it manually. Replace your `print(“Hello, World”)` code with the following example:
+Instead of using the **Create** app to add a cube entity, let's use a script. Replace your `print(“Hello, World”)` in testScript.js with with the following example:
 
 ```
+// Getting your position in the domain, so that the cube is spawned in front of you. 
 var position = Vec3.sum(MyAvatar.position, Quat.getFront(MyAvatar.orientation));
 var properties = {
-type: "Box",
-name: "ScriptBox",
-position: position,
-color: { red: 0, green: 0, blue: 155 }};
-Ent = Entities.addEntity(properties);
+    type: "Box",
+    name: "ScriptBox",
+    position: position,
+    color: { red: 0, green: 0, blue: 155 }
+};
+var Ent = Entities.addEntity(properties);
 print("Entity added");
 
 ```
 
-A few things are happening in this script to get us warmed up with scripting in High Fidelity. First, we’re accessing some data from our avatar `(MyAvatar.position, MyAvatar.orientation)` to figure out where to place our newly generated box. Next, we create an entity based on our properties specification (we do type, name, position, and color, but you could also set additional properties for your entity depending on the complexity of your components). Finally, we save a reference to the Entity and place it in our world, then print our debug line to confirm everything is running smoothly.
+A few things are happening in this script to get us familiar with scripting in High Fidelity. First, we’re accessing some data from our avatar `(MyAvatar.position, MyAvatar.orientation)` to figure out where to place our newly generated cube. Next, we create an entity based on our customized properties' specifications (we do type, name, position, and color, but you could also set additional properties for your entity depending on the complexity of your components). Finally, we save a reference to the Entity and place it in our world, then print our debug line to confirm everything is running smoothly.
 
-Click on run to see your cube appear!
+Go to **Menu > Edit > Open and Run Script** and load testScript.js to see your cube appear!
 
