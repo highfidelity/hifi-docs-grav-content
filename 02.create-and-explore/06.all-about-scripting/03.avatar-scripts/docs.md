@@ -8,7 +8,7 @@ taxonomy:
 You can spruce up your avatar by attaching a script that will create a special effect, such as flowing hair or particle clouds. 
 
 ## Avatar Scripts
-Avatar scripts run automatically when an avatar is worn and stop when the avatar is removed. The scripts only run on the client that is wearing the avatar, other users in the domain will be able to see the script in action, but they will not be able to run the script themselves.	
+Avatar scripts run automatically when an avatar is worn and stop when the avatar is removed. The scripts only run on the client that is wearing the avatar. This means that other users in the domain will be able to see the script in action, but they will not be able to run the script themselves.	
 
 In order for avatar scripts to work properly, you must modify your avatar's FST file to point to the desired script.
 
