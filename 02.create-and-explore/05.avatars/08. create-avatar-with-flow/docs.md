@@ -70,7 +70,7 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
     b. In the interface, go to Edit > 'Package Model as .fst'
 
     c. Select the path in the "Script Directory" section of the Package Model tool, seen here: 
-![addScript2](addscript2.PNG)
+![addscript2](addscript2.PNG)
 
 When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 
