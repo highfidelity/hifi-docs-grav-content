@@ -14,8 +14,10 @@ In order for avatar scripts to work properly, you must modify your avatar's FST 
 
 ## How to Add an Avatar Script
 In order to attach a script to your avatar, you must modify your avatar's FST file to include the path where your script lives. There are two ways to update your FST file:
-1.  You can manually add a line to the FST file telling the avatar where to find the script file using `script = [FLOW SCRIPT URL HERE]`. For example: 
+1.  You can manually add a line to the FST file telling the avatar where to find the script file using `script = [FLOW SCRIPT URL HERE]`. For example:
+
 ![](addScript1.PNG)
+
 >>>>> You can add multiple scripts by adding multiple `script = url` lines.
 2. You can also use our Package Model tool to add your avatar script. 
     
