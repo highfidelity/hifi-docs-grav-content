@@ -5,7 +5,7 @@ taxonomy:
 ---
 
 ## Overview
-You can spruce up your avatar by attaching a script that will create a special effect, such as flowing hair or particle clouds. 
+You can spruce up your avatar by attaching a script that will create a special effect, such as [flowing hair](https://docs.highfidelity.com/create-and-explore/avatars/create-avatar-with-flow) or particle clouds. 
 
 ## Avatar Scripts
 Avatar scripts run automatically when an avatar is worn and stop when the avatar is removed. The scripts only run on the client that is wearing the avatar. This means that other users in the domain will be able to see the script in action, but they will not be able to run the script themselves.	
@@ -30,5 +30,3 @@ When packaging your model, the tool will iterate through the directory and add e
  You can temporarily disable or restart your avatar script in the script interface (CTRL + J) by pressing the close or reload button. 
  ![](endFlow.png)
  However, there is no way to permanently prevent the script from running, other then removing the script field from the FST file.
-## Example Script
-Here is an example of an avatar that is rigged appropriately to use with a Flow script: [Mannequin with Hair](https://github.com/highfidelity/hifi-docs-grav-content/tree/master/02.create-and-explore/05.avatars/08.%20create-avatar-with-flow/mannequinHairTest8.fst).
