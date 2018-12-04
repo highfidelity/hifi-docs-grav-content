@@ -27,7 +27,7 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
 ![](addScript2.PNG)
 When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 ## How to Stop an Avatar Script
- You can temporarily disable or restart your avatar script in the script interface (crtl + J) by pressing the close or reload button. 
+ You can temporarily disable or restart your avatar script in the script interface (CTRL + J) by pressing the close or reload button. 
  ![](endFlow.png)
  However, there is no way to permanently prevent the script from running, other then removing the script field from the FST file.
 ## Example Script
