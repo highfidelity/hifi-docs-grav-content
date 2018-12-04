@@ -4,54 +4,63 @@ taxonomy:
     category: docs
 ---
 
-Once you've completed exporting the entity, you can add it to Marketplace. 
+## Overview
+Once you've created an avatar, wearable or entity, you have the option to sell it in the Marketplace. This guide walks you through the steps to upload it to the Marketplace so that you can start the process of having it reviewed and published. 
 
-##Add Your Item to Marketplace
+* [Add Your Avatar](#add-your-avatar)
+* [Upload Your Environment](#upload-your-environment)
 
-- If you wish to add a wearable to the Marketplace, check out this [page](../../../marketplace/sell/create). 
-- On Marketplace's webpage where you have started filling in the details of your new item, scroll down until you see the assets tab. ![](scr19.PNG)
-- Click 'Choose File' and the entity's file. Here, we added the .fbx file. Once you upload the file, you can select it see the file's URL. ![](scr21.PNG)
->>>>> You will refer to the file using this URL (or a relative URL) in any of the other assets you upload. You cannot have any external references (or external URLs or URLs related to your local machine) in any of the assets you upload. Please make sure your root entity file (the JSON) does not contain references to ATP hosted files. You can examine it in a text editor to double check. If you see anything like `atp://` in the file, it's referring to a local file hosted on a domain, rather than on the Marketplace. The JSON should only refer to files hosted on the Marketplace filesystem.
+## Add Your Avatar
+After you have [created an avatar](../create-and-explore/avatars/create-avatars), you should be left with:
+* An FST file
+* An FBX file
+* Scripts folder (optional)
+* Textures folder
 
-- To avoid having any external references, we will change the model URL in the .JSON file to the .fbx URL above. Where possible, use relative paths when referencing external assets, like other scripts, models, sounds, etc. This will keep your content portable and save you work in the future when you update your marketplace items.
+Once you have these files, use these steps to upload your avatar to the Marketplace. 
 
-Example, assuming the script URL is "[http://mpassets.highfidelity.com/0a5e847a-1e1f-4fb9-9081-a07b216393a5-v1/script1.js](http://mpassets.highfidelity.com/0a5e847a-1e1f-4fb9-9081-a07b216393a5-v1/script1.js)"
+1. Go to [https://highfidelity.com/marketplace/items/new](https://highfidelity.com/marketplace/items/new) to create a new item. If you're not logged in, you will be prompted to do so.
+2. Enter a name for your avatar.
+3. Under Categories, select 'Avatars'.
+4. Click 'Save Draft'. You can edit the metadata later if you need to.
+5. Scroll down to the Assets section. 
+6. Click 'Choose Folder' and navigate to where your avatar is saved on your computer. Select the folder that contains your FBX file, click 'Upload' twice and wait for it to upload.
+7. Click on the uploaded FBX file, and copy the Marketplace path including the unique hash for your avatar. Do not copy your folder name or the name of the file. ![](avatar-marketplace-path.png)
+8. Open your FST file in the text editor of your choice. (Note that the FST file is a local file on your computer)
+9. Locate the relative path references to the FBX file, textures directory, and script file(s). Replace these with the absolute path references of the uploaded content. ![](fst-absolute.png)
+10. Return to your avatar submission on the Marketplace. 
+11. In the Assets section, click 'Choose Files' and navigate to where your avatar is saved on your computer. Select your updated FST file, click 'Open' and wait for it to upload.
+>>>>>Be sure you do not have any files or folders selected in the asset viewer so that the uploaded file goes to the right place. Any selected files and folders will be highlighted blue.
+12. Click the FST file as your root file in the Asset Viewer.  
+13. Save your submission. ![](marketplace-assets.png)
 
-```
-// BAD
-Script.include("http://mpassets.highfidelity.com/0a5e847a-1e1f-4fb9-9081-a07b216393a5-v1/script2.js");
+Now you are ready to use your avatar! To locate the URL for your avatar:
+1. Go to [https://highfidelity.com/marketplace](https://highfidelity.com/marketplace). If you're not logged in, you will be prompted to do so.
+2. Click on your user name, then on 'My Items'.
+3. Locate your avatar in Draft mode and click on it. 
+4. Click 'Edit'.
+5. Scroll down to the Assets section.
+6. Click on the FST file. Below it, click the 'Copy URL' button.
 
-// GOOD
-Script.include("script2.js");
+This is the URL you will use when you [change your avatar](../change-avatar) in High Fidelity.
 
+If you wish to sell your avatar on the Marketplace, be sure to fill out your metadata and click "Submit for Review" to be verified and certified on the Marketplace.
 
-// BAD
-const MODEL_URL = "http://mpassets.highfidelity.com/0a5e847a-1e1f-4fb9-9081-a07b216393a5-v1/assets/model.fbx";
+## Upload Your Environment
 
-// GOOD
-const MODEL_URL = Script.resolvePath("assets/model.fbx");
-```
+Before uploading your environment to the Marketplace, make sure that you created the environment in a domain where you have access to the administration panel. Keep in mind that _all_ content in the domain will be included in your upload. Once your domain is set up, you are ready to upload your environment.
 
-![](scr22.PNG)![](scr23.PNG)
+1. Open your Domain Administration Panel. If you are on a local sandbox, open it by clicking on the High Fidelity icon in the taskbar notifications and click Settings. ![](sandbox-settings.png)
+2. Click on Content.
+3. In the Content Archives section, click Generate New Archive.
+4. Enter a name for your archive and click Generate Archive. It will appear just below the Generate New Archive button. ![](environment-archive.png)
+5. Click the Actions button, then select Download. ![](environment-download.png)
+6. Go to [https://highfidelity.com/marketplace/items/new](https://highfidelity.com/marketplace/items/new) to create a new item. If you're not logged in, you will be prompted to do so.
+7. Enter a name for your environment.
+8. Under Categories, select 'Environments'.
+9. Click 'Save Draft'. 
+10. Scroll down to the Assets section. 
+11. Click 'Choose Files' and navigate to where your environment download is saved on your computer. Select the ZIP file, click 'Open' and wait for it to upload.
+12. Save your submission.
 
-- Once you finish replacing all external references, you can upload your asset files. ![](scr20.PNG)
-- Add a preview image. This image should have a minimum resolution of 1478 x 828 pixels. 
-- Check the box to agree to the Terms of Marketplace and submit by clicking the 'Submit for Review' button. ![](scr24.PNG)
-- Congratulations! Your item has now been submitted for review. You can check under 'My Items' to see if your items were approved to be published on Marketplace. If the item is still being reviewed, you'll see 'In Review' on the top right corner of the item window. We will contact you if any changes need to be made to your submission. Once reviewed, you can go to your profile, and check 'My Items' if your item has been published. ![](scr26.PNG)
-- The Digital Asset Registry has to approve your item. Once your item is approved, you will receive a certificate with edition 0 of your item. If you wish to sell your item, all users purchasing your item will receive subsequent editions of your item. 
-
-
-### Editing Your Uploaded Items
-
-Each Marketplace item can be set to one of three status states: **Draft**, **In Review** and **Active**. The status of an item determines which elements can be edited freely and which elements require re-submission and review.
-
-- **Draft** items can be edited freely by their creators.
-- **In Review** items can be edited freely but because they are actively in review, the reviewer may at any time approve the version most recently submitted. Because of this, it's advisable to make all necessary changes before submitting an item for review.
-- **Active** Active items can be edited to a limited extent without requiring re-submission, but changes to an item's assets or content file will require re-submission for review.
-
-#### File Types
-
-- For **models**: .FBX and .OBJ
-- For **images/textures**: .JPG, .PNG, and .TGA
-- For **audio**: .WAV (Mono or Stereo or Ambisonic, 16-bit at 24 or 48 Khz)
-
+If you wish to sell your environment on the Marketplace, be sure to fill out your metadata and click "Submit for Review" to be verified and certified on the Marketplace.
