@@ -153,5 +153,4 @@ This example uses:
 * [Scriptable Inventory Verification](#transferVerification)
 * [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
 * Entity Scripts
-* Entity Server Scripts
 * Assignment Client Scripts

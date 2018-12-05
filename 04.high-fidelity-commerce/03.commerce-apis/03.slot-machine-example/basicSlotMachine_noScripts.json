@@ -4,6 +4,9 @@
     {
     "id": "{f0c3d402-f688-4dd2-b0f1-6b4356931c52}",
     "type": "Box",
+    "created": "2018-12-03T21:38:21Z",
+    "lastEdited": 1543873310442382,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0.25,
         "y": 0,
@@ -54,60 +57,11 @@
     "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
 },
     {
-    "id": "{4915b437-01ec-4a6e-b456-ec9c840835b9}",
-    "type": "Box",
-    "position": {
-        "x": -0.25,
-        "y": 0,
-        "z": 0.10000000149011612
-    },
-    "dimensions": {
-        "x": 0.15000000596046448,
-        "y": 0.15000000596046448,
-        "z": 0.10000000149011612
-    },
-    "rotation": {
-        "x": -0.0000152587890625,
-        "y": -0.0000152587890625,
-        "z": -0.0000152587890625,
-        "w": 1
-    },
-    "damping": 0,
-    "angularDamping": 0,
-    "name": "Slot Machine Reel 1",
-    "shape": "Cube",
-    "color": {
-        "red": 255,
-        "green": 0,
-        "blue": 0
-    },
-    "parentID": "{247a33bb-2de7-4644-b995-cc3c4e2ea068}",
-    "queryAACube": {
-        "x": 20.632736206054688,
-        "y": -11.117249488830566,
-        "z": -10.017267227172852,
-        "scale": 0.2345207929611206
-    },
-    "grab": {
-        "equippableLeftRotation": {
-            "x": -0.0000152587890625,
-            "y": -0.0000152587890625,
-            "z": -0.0000152587890625,
-            "w": 1
-        },
-        "equippableRightRotation": {
-            "x": -0.0000152587890625,
-            "y": -0.0000152587890625,
-            "z": -0.0000152587890625,
-            "w": 1
-        }
-    },
-    "clientOnly": false,
-    "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
-},
-    {
     "id": "{e3044356-9309-41cd-a266-c9426557113e}",
     "type": "Box",
+    "created": "2018-12-03T21:18:42Z",
+    "lastEdited": 1543872639747979,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0.4749999940395355,
         "y": -0.20000000298023224,
@@ -159,8 +113,66 @@
     "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
 },
     {
+    "id": "{4915b437-01ec-4a6e-b456-ec9c840835b9}",
+    "type": "Box",
+    "created": "2018-12-03T21:33:59Z",
+    "lastEdited": 1543873002426840,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
+    "position": {
+        "x": -0.25,
+        "y": 0,
+        "z": 0.10000000149011612
+    },
+    "dimensions": {
+        "x": 0.15000000596046448,
+        "y": 0.15000000596046448,
+        "z": 0.10000000149011612
+    },
+    "rotation": {
+        "x": -0.0000152587890625,
+        "y": -0.0000152587890625,
+        "z": -0.0000152587890625,
+        "w": 1
+    },
+    "damping": 0,
+    "angularDamping": 0,
+    "name": "Slot Machine Reel 1",
+    "shape": "Cube",
+    "color": {
+        "red": 255,
+        "green": 0,
+        "blue": 0
+    },
+    "parentID": "{247a33bb-2de7-4644-b995-cc3c4e2ea068}",
+    "queryAACube": {
+        "x": 20.632736206054688,
+        "y": -11.117249488830566,
+        "z": -10.017267227172852,
+        "scale": 0.2345207929611206
+    },
+    "grab": {
+        "equippableLeftRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        },
+        "equippableRightRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        }
+    },
+    "clientOnly": false,
+    "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
+},
+    {
     "id": "{787b493e-0c82-4c70-8563-a5b1530a9310}",
     "type": "Text",
+    "created": "2018-12-03T21:31:48Z",
+    "lastEdited": 1543877218549079,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0,
         "y": -0.30000001192092896,
@@ -181,7 +193,7 @@
     "angularDamping": 0,
     "collisionless": true,
     "ignoreForCollisions": true,
-    "name": "Slot Machine Text",
+    "name": "Slot Machine Play Text",
     "text": "Click Red Ball to Play!",
     "lineHeight": 0.07000000029802322,
     "parentID": "{247a33bb-2de7-4644-b995-cc3c4e2ea068}",
@@ -210,8 +222,65 @@
     "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
 },
     {
+    "id": "{c4d6731c-5e35-483a-bd77-24e2adddf86b}",
+    "type": "Text",
+    "created": "2018-12-03T22:46:05Z",
+    "lastEdited": 1543877345603388,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
+    "position": {
+        "x": 0,
+        "y": -0.02500000037252903,
+        "z": 0.054999999701976776
+    },
+    "dimensions": {
+        "x": 0.6499999761581421,
+        "y": 0.07500000298023224,
+        "z": 0.009999999776482582
+    },
+    "rotation": {
+        "x": -0.0000152587890625,
+        "y": -0.0000152587890625,
+        "z": -0.0000152587890625,
+        "w": 1
+    },
+    "damping": 0,
+    "angularDamping": 0,
+    "collisionless": true,
+    "ignoreForCollisions": true,
+    "name": "Slot Machine Status Text",
+    "text": "Click Here to Add Credits!",
+    "lineHeight": 0.03999999910593033,
+    "parentID": "{076fb06c-965c-4e94-9608-29dbc92c367e}",
+    "queryAACube": {
+        "x": 20.67277717590332,
+        "y": -11.740867614746094,
+        "z": -10.170653343200684,
+        "scale": 0.654388964176178
+    },
+    "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        },
+        "equippableRightRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        }
+    },
+    "clientOnly": false,
+    "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
+},
+    {
     "id": "{871ae4da-108c-4921-b2e0-09f8f0b7a8b0}",
     "type": "Box",
+    "created": "2018-12-03T21:29:37Z",
+    "lastEdited": 1543872643112811,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0.125,
         "y": 0.20000000298023224,
@@ -265,6 +334,9 @@
     {
     "id": "{5d1aa70e-3ac4-4c72-8af0-371845c4db2a}",
     "type": "Sphere",
+    "created": "2018-12-03T21:29:37Z",
+    "lastEdited": 1543872670295543,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0,
         "y": 0.30000001192092896,
@@ -317,6 +389,9 @@
     {
     "id": "{ef08db79-a1c3-4342-9184-efcae2f27962}",
     "type": "Box",
+    "created": "2018-12-03T21:36:10Z",
+    "lastEdited": 1543873089119852,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "position": {
         "x": 0,
         "y": 0,
@@ -367,8 +442,66 @@
     "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
 },
     {
+    "id": "{076fb06c-965c-4e94-9608-29dbc92c367e}",
+    "type": "Box",
+    "created": "2018-12-03T22:41:42Z",
+    "lastEdited": 1543877223622204,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
+    "position": {
+        "x": 0,
+        "y": -0.4350000023841858,
+        "z": 0.10000000149011612
+    },
+    "dimensions": {
+        "x": 0.8999999761581421,
+        "y": 0.20000000298023224,
+        "z": 0.10000000149011612
+    },
+    "rotation": {
+        "x": -0.3835660219192505,
+        "y": -0.0000762939453125,
+        "z": -0.0001373291015625,
+        "w": 0.9235217571258545
+    },
+    "damping": 0,
+    "angularDamping": 0,
+    "name": "Slot Machine Status",
+    "shape": "Cube",
+    "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+    },
+    "parentID": "{247a33bb-2de7-4644-b995-cc3c4e2ea068}",
+    "queryAACube": {
+        "x": 20.53630256652832,
+        "y": -12.085722923278809,
+        "z": -10.549575805664062,
+        "scale": 1.1144065856933594
+    },
+    "grab": {
+        "equippableLeftRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        },
+        "equippableRightRotation": {
+            "x": -0.0000152587890625,
+            "y": -0.0000152587890625,
+            "z": -0.0000152587890625,
+            "w": 1
+        }
+    },
+    "clientOnly": false,
+    "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
+},
+    {
     "id": "{247a33bb-2de7-4644-b995-cc3c4e2ea068}",
     "type": "Box",
+    "created": "2018-12-03T21:16:31Z",
+    "lastEdited": 1543876816926241,
+    "lastEditedBy": "{5c04be1c-40ff-4f6c-870b-da8c02e2deda}",
     "dimensions": {
         "x": 0.800000011920929,
         "y": 0.800000011920929,
@@ -409,6 +542,6 @@
     "owningAvatarID": "{00000000-0000-0000-0000-000000000000}"
 }
     ],
-  "Id": "{5c1d73a7-2f54-4172-a447-87a271dcb511}",
+  "Id": "{17be55f7-cf1c-4894-ab7e-bbf2aacddc1c}",
   "Version": 96
 }

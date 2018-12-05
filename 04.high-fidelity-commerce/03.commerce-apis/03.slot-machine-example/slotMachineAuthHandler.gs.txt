@@ -1,0 +1,86 @@
+//
+// slotMachineAuthorizationHandler.gs
+//
+// The authorization handler returns authorization tokens for
+// HFC from a Google Spreadsheet
+//
+// The referenced spreadsheet is expected to have columns in order of:
+// Used, HFC, Authorization ID, Coupon ID
+// where the first row is a header row.
+//
+// Used:             A flag indicating whether the authorization has
+//                   been returned by this script. It should be left blank when
+//                   adding new authorization data.
+// HFC:              The quantity of HFC associated with the pre-authorization.
+// Authorization ID: Authorization ID generated during coupon generation
+// Coupon ID:        Coupon ID generated during coupon generation
+//
+// SECURITY NOTE:  Keep the Spreadsheet ID and URL secret to prevent
+//                 unauthorized retrieval of the authorization data.
+
+// CHANGE THIS to the ID of your Slot Machine Payout DB spreadsheet
+var SPREADSHEET_ID = "ABCDEFG";
+// CHANGE THIS to the name of the sheet containing your authorization data
+var WS_PAY_OUT_AUTHORIZATIONS = "Authorizations";
+
+// Opens the Google Sheet using the above ID
+var spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
+
+// Opens the individual spreadsheet using the above sheet name
+var ws_pay_out_authorizations = spreadsheet.getSheetByName(WS_PAY_OUT_AUTHORIZATIONS);
+
+// These define the column indices of each data column.
+var col_used = 0;
+var col_hfc = 1;
+var col_authorization_id = 2;
+var col_coupon_id = 3;
+
+// This function is called when there's an error with the script
+// or with what the script was supplied by the user.
+function errorResponse(err) {
+  return ContentService.createTextOutput(JSON.stringify({ status: 0, message: err}));
+}
+
+// This function is called when retrieving auth data from the sheet.
+function doGet(e) {
+  if (!(e.parameter.hfc)) {
+    return errorResponse("Must supply amount of HFC.");
+  }
+
+  var auth_data = ws_pay_out_authorizations.getDataRange().getValues();
+
+  // For each row in the spreadsheet, starting with the first non-header row...
+  for (var row = 1; row < auth_data.length; row++) {
+    // Get the current row data.
+    var row_data = auth_data[row];
+
+    // If the current auth data hasn't previously been returned, AND
+    // the supplied amount of HFC matches the amount of HFC stored in the sheet...
+    if ((row_data[col_used] !== "used") &&
+       (e.parameter.hfc && (parseInt(e.parameter.hfc) == row_data[col_hfc]))) {
+
+      // If the script calling this script is just checking to see if there
+      // are any authorizations available...
+      if (e.parameter.justChecking) {
+        // Return a success message.
+        return ContentService.createTextOutput(JSON.stringify({
+          status: "success"
+        }));
+      }
+
+      // Set the value of this row's "Used" column to "used"
+      var cell = ws_pay_out_authorizations.getRange(row + 1, col_used + 1);
+      cell.setValue("used");
+
+      // Return the authorization data associated with this sheet row
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "success",
+        authorizationID: row_data[col_authorization],
+        couponID: row_data[col_secret]
+      }));
+    }
+  }
+
+  // If we get here, there are no authorizations available.
+  return errorResponse("No authorizations available");
+}
