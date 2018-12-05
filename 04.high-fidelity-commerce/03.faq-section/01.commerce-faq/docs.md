@@ -11,7 +11,7 @@ taxonomy:
 | [How can I get HFC?](#q0) |
 | [How do I send HFC to other people?](#q1) |
 | [What is a Security Pic?](#q2) |
-|[Where do I enter my passcode after updating?](#q3) |
+| [Where do I enter my passcode after updating?](#q3) |
 | [Why does my HFC balance not update instantly?](#q7) |
 | [Do I get charged money if a transaction fails?](#q8)   |
 | [How do I convert HFC to other currencies?](#q9)            |
@@ -31,19 +31,19 @@ High Fidelity commerce is in open beta right now. Want more HFC? Get it by going
 
 <a id="q1"></a>
 **How do I send HFC to other people?**<br> 
-You can send HFC to a High Fidelity connection (someone you’ve shaken hands with in-world) or somebody Nearby (currently in the same domain as you). In your Wallet’s Send Money tab, choose from your list of connections, or choose Nearby and select the glowing sphere of the person’s avatar.
+You can send HFC to a High Fidelity connection (someone you’ve shaken hands with in-world) or somebody Nearby (currently in the same domain as you). In the Inventory app’s Send Money tab, choose from your list of connections, or choose Nearby and select the glowing sphere of the person’s avatar.
 <p align="right"><a href="#top">Back to Top</a></p>
 <br>
 
 <a id="q2"></a>
 **What is a Security Pic?**<br>
-Your Security Pic acts as an extra layer of Wallet security. When you see your Security Pic, you know that your actions and data are securely making use of your account. 
+Your Security Pic acts as an extra layer of security for your transactions. When you see your Security Pic, you know that your actions and data are securely making use of your account. 
 <p align="right"><a href="#top">Back to Top</a></p>
 <br>
 
 <a id="q3"></a>
 **Where do I enter my passcode after updating?**<br>
-In earlier releases, you were required to set up a passcode to access your Wallet and Purchases. In newer releases, this requirement has been removed, and we have integrated the security for your Wallet into your High Fidelity account. Now, it is easier than ever to use your Wallet and HFC.
+In earlier releases, you were required to set up a passcode to access your Wallet and Purchases. In newer releases, this requirement has been removed, and we have integrated the security for your transactions into your High Fidelity account. Now, it is easier than ever to use your engage in commerce transactions.
 
 If you need to go back and use an older version of High Fidelity, you can access your wallet using the passcode ACCOUNT.
 <p align="right"><a href="#top">Back to Top</a></p>
