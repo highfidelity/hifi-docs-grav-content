@@ -5,14 +5,36 @@ taxonomy:
          docs
 ---
 
-Say you want to create a slot machine game that pays out HFC in High Fidelity.
+Say we want to create a slot machine game that pays out HFC in High Fidelity.
 
-To do that:
+Before we begin, here are a few important concepts to understand:
+
+# Requirements and Glossary
+To build this example, you'll need:
+* Access to a file host, such as S3, Azure, or a personal, publicly-accessible file server
+* Access to a High Fidelity domain that you own and where you have full permissions. Examples of such a domain include:
+    * Your private [Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox)
+    * [Your DigitalOcean domain](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/digital-ocean)
+* A [Google](https://google.com) account for access to Google Sheets
+
+Consider familiarizing yourself with the following concepts:
+* The definition of an [Entity](https://docs.highfidelity.com/create-and-explore/entities) in High Fidelity
+* The basics of [Scripting](https://docs.highfidelity.com/create-and-explore/all-about-scripting) in High Fidelity
+    * In this example, we're going to use [Entity Scripts](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts) and AC Scripts. AC scripts, or Assignment Client scripts, are scripts that run on your domain even if you are not present in the domain.
+
+Start by opening Interface in Desktop mode and connecting to your domain!
 
 # 1. Place an unscripted "Slot Machine" entity in your domain
-First, you'll want to create a Slot Machine entity in your domain. This is the first step of the Slot Machine project, and is the most open-ended! It's up to you to decide what a "slot machine" looks like.
+First, you'll want to create a Slot Machine entity in your domain. If you're following along with the particular example in this document:
+    1. Download the following JSON: [basicSlotMachine_noScripts.json](./basicSlotMachine_noScripts.json)
+    2. Import the JSON file into your domain:
+        1. Click "Edit" at the top of Interface, select "Import Entities", then browse to and select `basicSlotMachine_noScripts.json`.
 
-If you're following along with the particular example in this document, import the following JSON into your domain: [basicSlotMachine_noScripts.json](./basicSlotMachine_noScripts.json)
+You should now see a slot machine entity in your domain. This example entity consists of:
+* Three "reels" (red, green, and blue cubes)
+* A "spin arm" that players will use to start the game
+* A "play text" text entity that will display game status to players
+* A "pay-in text" text entity that will instruct users to add credits to the slot machine
 
 # 2. Pre-authorize Game Winning Payout Funds
 In our slot machine example, players will pay you (the domain owner) 1 HFC to start playing, and the slot machine will pay out 25 HFC if/when the payer wins.
@@ -25,8 +47,8 @@ You will now learn how to pre-authorize the first payout of 25 HFC.
 4. Under "Optional Public Message", enter "Slot Machine Winnings".
     ![](./images/preAuth01.png)
 5. Click "SUBMIT".
-6. On the "Payment Authorized" screen, copy and paste the "Authorization ID" text string to a text file on your computer. You'll use this later.
-7. On the "Payment Authorized" screen, copy and paste the "Coupon ID" text string to a text file on your computer. You'll use this later.
+6. On the "Payment Authorized" screen, copy the "Authorization ID" text string, then save it somewhere on your computer. You'll use this string later.
+7. On the "Payment Authorized" screen, copy the "Coupon ID" text string, then save it somewhere on your computer (preferably next to the Authorization ID text string). You'll use this string later.
 8. Click "CLOSE", then "I'M ALL SET".
 
 # 3. Add the pre-authorized credentials to a payout database
@@ -54,8 +76,9 @@ There are many ways that the AC script can know about those secrets. In this exa
 1. At the top of the Google Sheets window, click "Tools" -> "Script editor".
 2. Name your currently-untitled project "Slot Machine Authorization Handler".
 3. Copy and paste the contents of [this example GS script](./slotMachineAuthHandler.gs.txt) into the Script Editor.
-4. Modify `var SPREADHSEET_ID` to match the Spreadsheet ID of your spreadsheet above
-    * The Spreadsheet ID is embedded in the URL of the Google Sheets page
+4. Modify `var SPREADSHEET_ID` to match the Spreadsheet ID of your spreadsheet above
+    * The Spreadsheet ID is embedded in the URL of the Google Sheets page and is visible in the following screenshot (part of the URL is blocked out for privacy purposes)n
+        ![](./images/googleSheetURL.png)
 5. Save the script, using whatever filename you wish.
 6. Click "Publish", then "Deploy as Web App..."
 7. Follow Google's instructions to deploy your script as a web app. **Make sure** you set "Who has access to the app" to "Anyone, even anonymous". When finished, copy the URL you're given at the end of the process and save it somewhere you'll remember for later.
@@ -64,16 +87,16 @@ There are many ways that the AC script can know about those secrets. In this exa
 **Make sure you keep the web app URL and the Google Sheet URL private**, since your authorization data will be visible to anyone with access to the sheet!
 
 # 4. Allow users to "Add Credits" to the Slot Machine
-You'll need to provide your users with a way to accrue slot machine play credits. You will do this by adding an Entity Script to two parts of the Slot Machine entity.
+You'll need to provide your users with a way to accrue slot machine play credits. You will do this by adding an [Entity Script](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts) to the Slot Machine entity.
 
 First, we need to write the Entity Script. This script will do the following:
 * When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 1 HFC with the message "1 Slot Machine Play Credit".
 
 [Click here](./addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
-Be mindful of the fact that all users who load the Add Credits entities will be individually running this script as if it were a client script.
+Be mindful of the fact that all users who load the Add Credits entities will be individually running this script as if it were an Interface script.
 
-Next, add the entity script from above to the "Add Credits" text entity AND its parent:
+Next, add the entity script from above to the Slot Machine. If you're using the example Slot Machine entity linked in Step 1, we will be adding the entity script to two parts of the entity to make it easier for players to add credits:
 1. Modify the `DESTINATION_USERNAME` variable within `addCreditsButton.js` to match your username.
 2. Upload the `addCreditsButton.js` script to a publicly-accessible location such as S3. Copy its URL.
 3. In Interface, use the `CREATE` app to select the "Click Here to Add Credits" text entity on the Slot Machine entity.
@@ -90,7 +113,7 @@ First, you'll have to write an Entity Script to put on the slot machine's Spin L
 
 [Click here](./slotMachineSpinLever.js) to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
 
-Be mindful of the fact that all users who load the Spin Lever entity will be individually running this script as if it were a client script.
+Be mindful of the fact that all users who load the Spin Lever entity will be individually running this script as if it were an Interface script.
 
 Next, add the entity script from above to the "Spin Lever" entity:
 1. Upload the `slotMachineSpinLever.js` script to a publicly-accessible location such as S3. Copy its URL.
