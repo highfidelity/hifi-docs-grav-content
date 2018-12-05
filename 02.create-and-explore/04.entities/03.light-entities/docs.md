@@ -22,7 +22,7 @@ A Light entity appears as an orange spherical grid. If you don't see the orange 
 
 You won't see any light unless there is an entity to reflect the light. In the image below, the Light entity has been edited to increase the intensity and has been positioned so that the light will reflect off a Box entity.
 
-![](light-entity2.PNG)
+![](light-entity-two.PNG)
 
 By default, Light entities cannot be selected for editing nor will they be visible to select.
 

@@ -6,7 +6,7 @@ taxonomy:
 ---
 Before submitting an app, make sure it follows our certified app guidelines below:
 
-* [A certified app requires 5 files: JSON, JavaScript, HTML or QML, and two SVG ](#1-a-certified-app-consists-of-at-least-five-files)
+* [A certified app requires 5 files: JSON, JavaScript, HTML, and two SVG ](#1-a-certified-app-consists-of-at-least-five-files)
 * [A certified app must have a button that appears on the tablet or HUD](#2-a-certified-app-has-a-button-that-appears-on-the-tablet-in-vr)
 * [A certified app must display a full screen UI in VR and a window in Desktop](#3-the-app-must-display-a-full-screen-ui-in-vr-and-a-window-in-de)
 * [The UI for the certified app should explain how the app works](#4-the-ui-for-the-certified-app-should-explain-how-the-app-works)
@@ -15,13 +15,13 @@ Before submitting an app, make sure it follows our certified app guidelines belo
 ## Guideline Details
 
 ##### 1. A certified app consists of at least five files: 
-* &lt;script>.js  
-* &lt;ui>.html or &lt;ui>.qml 
-* &lt;button>.svg 
-* &lt;activeButton>.svg
 * &lt;rootFile>.app.json 
+* &lt;script>.js  
+* &lt;ui>.html
+* an SVG or PNG image to display on the app button when the app is active, usually named &lt;appName>-a.svg
+* an SVG or PNG image to display on the app button when the app is inactive, usually named &lt;appName>-i.svg
 
-The .json has two required properties, “scriptURL” (whose value must be the URL of the uploaded &lt;script>.js), and “homeURL” (whose value must be the URL to the uploaded &lt;ui>.html) using explicit paths created upon upload of the files to the Marketplace. 
+The app.json file has two required properties: “scriptURL” (whose value must be the URL of the uploaded &lt;script>.js), and “homeURL” (whose value must be the URL to the uploaded &lt;ui>.html) using explicit paths created upon upload of the files to the Marketplace. 
 
 Here is an example of the app.json file. You will need to replace the zeros with the path to your Marketplace item:
 ``` javascript
@@ -43,36 +43,61 @@ The button of the app must:
 - display the name of the certified app.
 
 ##### 3. The app must display a full screen UI in VR and a window in Desktop.
-When the user opens the app with the button on the tablet or HUD, you must display a full screen UI in VR and a standard sized window display on the desktop. Below is an example of how to wire up handlers in the &lt;script>.js:
+When the user opens the app with the button on the tablet or HUD, you must display a full screen UI in VR and a standard sized window display on the desktop. Use the AppUI module to automatically add your app's button to the tablet or HUD and wire up handlers. 
+
+Below is an example of how to do this in your &lt;script>.js file:
 
 ``` javascript 
-var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
-button = tablet.addButton({
-    text: theAppName,
-    icon: theButtonSVG,
-    activeIcon: theActiveButtonSVG
-}),
-isOpen = false;
-function onClicked(){ //Nothing else here!
-    if (isOpen) {
-        tablet.gotoHomeScreen();
-    } else {
-        tablet.gotoWebScreen(ui.html, optInjected);
-    // or tablet.loadQMLSource(ui.qml);
+(function () { 
+// BEGIN LOCAL_SCOPE
+var AppUi = Script.require('appUi');
+
+function onOpened() {
+    console.log(“hello world!”);
 }
-function onScreenChanged(type, url) {
-    isOpen = (url === ui.html);
-    // app-specific logic for opening and closing.
+
+var ui;
+function startup() {
+    ui = new AppUi({
+        buttonName: "APP-NAME", // The name of your app
+        home: Script.resolvePath("app.html"), // The home screen appears when clicking the app button
+        graphicsDirectory: Script.resolvePath("./"), // Where your button icons are located
+        onOpened: onOpened // See the simple function above
+    });
 }
-button.clicked.connect(onClicked);
-tablet.screenChanged.connect(onScreenChanged);
-Script.scriptEnding.connect(function () {
-    button.clicked.disconnect(onClicked);
-    // Disconnect any other handlers here.
-    tablet.screenChanged.disconnect(onScreenChanged);
-    tablet.removeButton(button);
-});
+startup();
+}()); 
+// END LOCAL_SCOPE
 ```
+If you want your app to do something specific when it is opened, you can use the AppUI module’s onOpened functionality. For example, you could:
+- Query a server to get a response and determine what to show on the UI
+- Start displaying a 3D interface separate from the tablet  (e.g. shapes app)
+- Determine the display mode (VR/Desktop) and change things to show on the UI
+
+Here's an example of using the `onOpened `functionality:
+```javascript
+(function () { 
+// BEGIN LOCAL_SCOPE
+var AppUi = Script.require('appUi');
+
+function onOpened() {
+    console.log(“hello world!”);
+}
+
+var ui;
+function startup() {
+    ui = new AppUi({
+        buttonName: "APP-NAME", // The name of your app
+        home: Script.resolvePath("app.html"), // The home screen that appears when clicking the app button
+        graphicsDirectory: Script.resolvePath("./"), // Where your button icons are located
+        onOpened: onOpened // See the simple function above
+    });
+}
+startup();
+}()); 
+// END LOCAL_SCOPE
+```
+
 ##### 4. The UI for the certified app should explain how the app works. 
 You should provide text on how the app works, and use familiar UI elements that a user knows how to interact with (such as buttons, scroll bars, and links).
 

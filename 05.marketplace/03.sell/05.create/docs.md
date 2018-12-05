@@ -4,8 +4,6 @@ taxonomy:
 	category: docs
 ---
 
-*learn how to create your own avatar wearables.*
-
 ## Overview
 This guide details recommendations to create your own avatar wearables to be sold in High Fidelity hosted shopping areas. 
 
@@ -54,7 +52,7 @@ Avatar wearables have the concept of a 'display copy'. This 'display copy' conta
 "marketplaceID" : UUID_for_Marketplace_Page_To_Link_To
 }
 ```
-The above user data is required to specify what joints an attachment can be added to. The marketplaceID should match the id of whatever item you want someone to purchase. For joints that can be attached to either the left or the right, use "[LR]" as a prefix, e.g. [LR]ForeArm. Currently, we are limited to a single joint.
+The above user data is required to specify what joints an wearable can be attached to. The marketplaceID should match the id of whatever item you want someone to purchase. For joints that can be attached to either the left or the right, use "[LR]" as a prefix, e.g. [LR]ForeArm. Currently, we are limited to a single joint.
 
 * Add the following script to the server script field: https://hifi-content.s3.amazonaws.com/liv/avatar_shopping_demo/wearableServer.js
 * Lock your display copy. It will ensure that there are always at least 1 clone to grab and will spawn a new wearable with a lifetime of five minutes when an item is removed from the shelf in a shopping area. 

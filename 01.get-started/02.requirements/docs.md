@@ -6,23 +6,35 @@ taxonomy:
 ---
 
 
-High Fidelity has been designed to be an immersive and interactive experience. Learn if your system meets all the requirements to run Interface and Sandbox. 
+High Fidelity has been designed to be an immersive and interactive experience. Your system should meet the following requirements to run Interface and Sandbox.
 
+## Minimum System Requirements
 
+### Windows 
+* Windows 7 64-bit
+* Intel i5-4590 processor
+* 8GB of RAM
+* NVIDIA GTX 970 graphics card _or_  
+AMD R9 290 graphics card
 
-##System Requirements
+### Mac 
+* OS X Mavericks (version 10.9)
+* 8GB of RAM 
+* 2017 Macbook Pro 15" with AMD Radeon Pro 560 _or_  
+2018 Macbook Pro 15" with AMD Radeon Pro 560X _or_  
+2017 iMac Pro
 
-The system requirements are listed below. 
+### Linux 
+* Ubuntu 16.04 64-bit
+* 8GB of RAM
+* Intel i5-4590 processor
+* NVIDIA GTX 970 graphics card
 
-|             | Graphics Card                            | Processor                           | RAM  | OS                            |
-| ----------- | ---------------------------------------- | ----------------------------------- | ---- | ----------------------------- |
-| **Windows** | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i5-4590 equivalent or greater | 8GB+ | Windows 7 SP1 64 bit or newer |
-| **OS X**    | NVIDIA GTX 970 / AMD R9 290 equiv. or greater | Intel i5-4590 equivalent or greater | 8GB+ | Mountain Lion (10.8) or newer |
-| **Linux**   |                                          | Intel i5-4590 equivalent or greater | 8GB+ |                               |
+### Android
+* Daydream-enabled Android devices
 
-
-
-
+## Bandwidth Recommendations
+We design/test for a 10Mbps connection, however the system will work at less.  Voice chat requires 100Kbps upwards, 200Kbps downward, so you need at least a 1Mbps or so connection to be able to function.
 
 ##Additional Hardware Requirements
 

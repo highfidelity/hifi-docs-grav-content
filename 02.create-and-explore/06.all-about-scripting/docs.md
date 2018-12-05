@@ -8,7 +8,7 @@ taxonomy:
 
 ##Introduction
 
-High Fidelity uses scripts (written in JavaScript) for a number of applications: creating content, moving your avatar, playing audio at a specific location, wearing an avatar attachment, and much more. A script can range from a single-line  `print("Hello World");` to a full application. 
+High Fidelity uses scripts (written in JavaScript) for a number of applications: creating content, moving your avatar, playing audio at a specific location, putting on a wearable, and much more. A script can range from a single-line  `print("Hello World");` to a full application. 
 
 ### Script Types
 

@@ -8,7 +8,7 @@ taxonomy:
 Learn how you can store your digital content using DigitalOcean Spaces.
 
 ##Introduction
-You can use DigitalOcean Spaces to store the digital assets you want to upload to High Fidelity. These assets can be anything you need for your virtual world: 3D models, avatars, attachments and more.
+You can use DigitalOcean Spaces to store the digital assets you want to upload to High Fidelity. These assets can be anything you need for your virtual world: 3D models, avatars, wearables and more.
 
 ###Store Your Digital Content Using DigitalOcean Spaces
 

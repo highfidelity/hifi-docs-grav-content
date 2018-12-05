@@ -18,7 +18,6 @@ You can enable a Razer Hydra or an HTC Vive hand controller by:
 
 1. Going to **Settings > General**.
 
-
 > > > > > Note: Vive users should have SteamVR running before starting Interface.
 
 Once enabled, you should be able to use the hand controller to navigate and grab objects. If it is not working, select **Edit > Running Scripts** or press **Ctrl + J** to open the *Running Scripts* panel and check to see if the `handControllerGrab.js` script is running. It should be running by default.
@@ -105,5 +104,4 @@ When you enable model editing (right-hand toolbar's cube) a pair of lasers is dr
 
 * **Left-bumper + left-trigger**, or **right-bumper + right-trigger**: Show/hide UI.
 * **Button 3 on either controller**: Show/hide magnification window in VR display mode.
-* **Taking off and putting on avatar attachments**: Grab an attachment per model editing and move it so that it is a normal model in the world and no longer an attachment; or grab an in-world model and make it an attachment by moving it close to one of your avatar's joints.
 * **squeezeHands.js**: This script makes your avatars' hands clench as you pull the Hydra's triggers.
