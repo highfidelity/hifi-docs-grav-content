@@ -14,7 +14,7 @@
 // from https://highfidelity.com/user/tokens/new
 var HIFI_COMMERCE_TOKEN = "ABCDEFG";
 // The Metaverse to use
-var HIFI_METAVERSE_URL = "https://staging.highfidelity.com";
+var HIFI_METAVERSE_URL = "https://highfidelity.com";
 // The Recent Economic Activity endpoint on the High Fidelity Metaverse website
 var HIFI_HISTORY_ENDPOINT_URL = HIFI_METAVERSE_URL + "/api/v1/commerce/history";
 // In HFC, the amount of money someone must send you to become a VIP

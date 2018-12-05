@@ -5,13 +5,19 @@ taxonomy:
          docs
 ---
 
+## Experimental API Notice
+The Commerce APIs outlined in this document are experimental and subject to change:
+* High Fidelity Metaverse API endpoints may be modified at any time.
+* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
+
+-------------
+
 Say we want to create a slot machine game that pays out HFC in High Fidelity.
 
 Before we begin, here are a few important concepts to understand:
 
 # Requirements and Glossary
 To build this example, you'll need:
-* Access to a file host, such as S3, Azure, or a personal, publicly-accessible file server
 * Access to a High Fidelity domain that you own and where you have full permissions. Examples of such a domain include:
     * Your private [Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox)
     * [Your DigitalOcean domain](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/digital-ocean)
@@ -21,6 +27,7 @@ Consider familiarizing yourself with the following concepts:
 * The definition of an [Entity](https://docs.highfidelity.com/create-and-explore/entities) in High Fidelity
 * The basics of [Scripting](https://docs.highfidelity.com/create-and-explore/all-about-scripting) in High Fidelity
     * In this example, we're going to use [Entity Scripts](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts) and AC Scripts. AC scripts, or Assignment Client scripts, are scripts that run on your domain even if you are not present in the domain.
+* The basics of [High Fidelity's ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients)
 
 Start by opening Interface in Desktop mode and connecting to your domain!
 
@@ -98,7 +105,7 @@ Be mindful of the fact that all users who load the Add Credits entities will be 
 
 Next, add the entity script from above to the Slot Machine. If you're using the example Slot Machine entity linked in Step 1, we will be adding the entity script to two parts of the entity to make it easier for players to add credits:
 1. Modify the `DESTINATION_USERNAME` variable within `addCreditsButton.js` to match your username.
-2. Upload the `addCreditsButton.js` script to a publicly-accessible location such as S3. Copy its URL.
+2. Upload the `addCreditsButton.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 3. In Interface, use the `CREATE` app to select the "Click Here to Add Credits" text entity on the Slot Machine entity.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
@@ -116,7 +123,7 @@ First, you'll have to write an Entity Script to put on the slot machine's Spin L
 Be mindful of the fact that all users who load the Spin Lever entity will be individually running this script as if it were an Interface script.
 
 Next, add the entity script from above to the "Spin Lever" entity:
-1. Upload the `slotMachineSpinLever.js` script to a publicly-accessible location such as S3. Copy its URL.
+1. Upload the `slotMachineSpinLever.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 2. In Interface, use the `CREATE` app to select the red Spin Lever sphere entity on the Slot Machine entity.
 3. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 4. Lock the entity so nobody can change its attributes.
@@ -143,10 +150,8 @@ Next, you'll have to write an Assignment Client Script that will handle the slot
 
 # 8. Run the Assignment Client script on your domain
 
-## Running an AC Script from S3
-**NOTE** that this method is **not fully secure**, since the S3 URL at which you host the script will be publicly accessible. This means your authentication token will be visible to anyone who guesses or has access to that S3 URL.
-
-To run the above AC script on your domain from S3:
+## Running an AC Script from ATP
+To run the above AC script on your domain from ATP:
 1. Modify your `slotMachineACScript.js` as follows:
     1. Set `HIFI_COMMERCE_TOKEN` to your HiFi commerce token from Step 4.
     2. Set `SLOT_MACHINE_REEL_1_ID` to the Entity ID of the leftmost slot machine reel.
@@ -156,11 +161,11 @@ To run the above AC script on your domain from S3:
     6. Set `GOOGLE_SHEET_AUTH_SCRIPT` to the URL of the Google Script Web App from Step 3 above.
     7. Set `SLOT_MACHINE_AREA` to the coordinates around which the slot machine entity will be placed.
         * See the comments in the code for more details about why this is necessary.
-2. Upload your `slotMachineACScript.js` script to a publicly-accessible location such as S3. Copy its URL.
+2. Upload your `slotMachineACScript.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 3. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
 4. Click "Content" at the top of the page, then scroll to the "Scripts" section.
 5. Under "Persistent Scripts", click the `+` button on the right column
-6. Under "Script URL", paste the S3 URL from above.
+6. Under "Script URL", paste the ATP URL from above.
 7. Click "Save and restart" at the top right of the page
 
 # Conclusion and Future Work

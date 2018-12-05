@@ -5,7 +5,30 @@ taxonomy:
          docs
 ---
 
+## Experimental API Notice
+The Commerce APIs outlined in this document are experimental and subject to change:
+* High Fidelity Metaverse API endpoints may be modified at any time.
+* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
+
+-------------
+
 Here you will learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
+
+Before we begin, here are a few important concepts to understand:
+
+# Requirements and Glossary
+To build this example, you'll need:
+* Access to a High Fidelity domain that you own and where you have full permissions. Examples of such a domain include:
+    * Your private [Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox)
+    * [Your DigitalOcean domain](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/digital-ocean)
+
+Consider familiarizing yourself with the following concepts:
+* The definition of an [Entity](https://docs.highfidelity.com/create-and-explore/entities) in High Fidelity
+* The basics of [Scripting](https://docs.highfidelity.com/create-and-explore/all-about-scripting) in High Fidelity
+    * In this example, we're going to use [Entity Scripts](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts).
+* The basics of [High Fidelity's ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients)
+
+Start by opening Interface in Desktop mode and connecting to your domain!
 
 # 1. Place a "Tip Jar" cube in your domain
 Use the `CREATE` app to place a cube in your domain. This cube will be the designated "Tip Jar". Users who click on it will be prompted to pay you 10 HFC. Move the Tip Jar to where you want it now.
@@ -19,7 +42,7 @@ We need to write a script to put on the Tip Jar entity from Step 1. This script 
 # 3. Add the entity script to the Tip Jar
 You'll have to add the entity script from above to the Tip Jar cube entity:
 1. Modify the `DESTINATION_USERNAME` variable within `tipJar.js` to match your username.
-2. Upload the `tipJar.js` script to a publicly-accessible location such as S3. Copy its URL.
+2. Upload the `tipJar.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 3. In Interface, use the `CREATE` app to select the Tip Jar cube entity from earlier.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.

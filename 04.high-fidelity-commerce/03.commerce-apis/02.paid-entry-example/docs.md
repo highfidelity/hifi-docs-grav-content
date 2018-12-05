@@ -5,9 +5,30 @@ taxonomy:
          docs
 ---
 
+## Experimental API Notice
+The Commerce APIs outlined in this document are experimental and subject to change:
+* High Fidelity Metaverse API endpoints may be modified at any time.
+* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
+
+-------------
+
 Say you want to automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC in the current server session.
 
-To do that:
+Before we begin, here are a few important concepts to understand:
+
+# Requirements and Glossary
+To build this example, you'll need:
+* Access to a High Fidelity domain that you own and where you have full permissions. Examples of such a domain include:
+    * Your private [Sandbox](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/set-up-your-sandbox)
+    * [Your DigitalOcean domain](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/digital-ocean)
+
+Consider familiarizing yourself with the following concepts:
+* The definition of an [Entity](https://docs.highfidelity.com/create-and-explore/entities) in High Fidelity
+* The basics of [Scripting](https://docs.highfidelity.com/create-and-explore/all-about-scripting) in High Fidelity
+    * In this example, we're going to use [Entity Scripts](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts).
+* The basics of [High Fidelity's ATP](https://docs.highfidelity.com/create-and-explore/start-working-in-your-sandbox/assignment-clients)
+
+Start by opening Interface in Desktop mode and connecting to your domain!
 
 # 1. Place a "VIP Zone" in your domain
 Use the `CREATE` app to place a zone in your domain. This zone will be the designated "VIP Zone". Only users who have paid you 10 HFC in the current server session will be allowed to enter this zone. In other words, if the server restarts, users will have to re-pay for VIP status.
@@ -25,7 +46,7 @@ Be mindful of the fact that all users who load the VIP Zone entity will be indiv
 
 # 3. Add the entity script to the VIP Zone
 You'll have to add the entity script from above to the VIP zone:
-1. Upload the `vipZoneEntityScript.js` script to a publicly-accessible location such as S3. Copy its URL.
+1. Upload the `vipZoneEntityScript.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 2. In Interface, use the `CREATE` app to select the zone from earlier.
 3. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 4. Lock the zone entity so nobody can change its attributes.
@@ -47,16 +68,14 @@ Now, you'll write an Assignment Client script containing the authentication toke
 
 # 6. Run the Assignment Client script on your domain
 
-## Running an AC Script from S3
-**NOTE** that this method is **not fully secure**, since the S3 URL at which you host the script will be publicly accessible. This means your authentication token will be visible to anyone who guesses or has access to that S3 URL.
-
-To run the above AC script on your domain from S3:
+## Running an AC Script from ATP
+To run the above AC script on your domain from ATP:
 1. Modify your `vipZoneACScript.js` and set `HIFI_COMMERCE_TOKEN` to your token from Step 4.
-2. Upload your `vipZoneACScript.js` script to a publicly-accessible location such as S3. Copy its URL.
+2. Upload your `vipZoneACScript.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 3. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
 4. Click "Content" at the top of the page, then scroll to the "Scripts" section.
 5. Under "Persistent Scripts", click the `+` button on the right column
-6. Under "Script URL", paste the S3 URL from above.
+6. Under "Script URL", paste the ATP URL from above.
 7. Click "Save and restart" at the top right of the page
 
 ## Running an AC Script from the Domain Settings page
@@ -85,7 +104,7 @@ We need to write a script to put on the Tip Cube from Step 7a. This script will 
 # 7c. Add the entity script to the Tip Cube
 You'll have to add the entity script from above to the Tip Cube entity:
 1. Modify the `DESTINATION_USERNAME` variable within `tipCube.js` to match your username.
-2. Upload the `tipCube.js` script to a publicly-accessible location such as S3. Copy its URL.
+2. Upload the `tipCube.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Copy its URL by right clicking it, then clicking "Copy URL".
 3. In Interface, use the `CREATE` app to select the Tip Cube from earlier.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
