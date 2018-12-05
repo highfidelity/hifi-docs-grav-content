@@ -122,12 +122,12 @@ Next, add the entity script from above to the "Spin Lever" entity:
 4. Lock the entity so nobody can change its attributes.
 
 # 6. Obtain Auth Token
-You'll have to obtain a High Fidelity authentication token that has the `commerce` scope. You will use this token in a later step when writing an Assignment Client script that'll check your Recent Economic Activity for recent transactions of 1 HFC made in your domain with a specific memo ("1 Slot Machine Play Credit").
+You'll have to obtain a High Fidelity authentication token that has the `commerce_ro` scope. You will use this token in a later step when writing an Assignment Client script that'll check your Recent Economic Activity for recent transactions of 1 HFC made in your domain with a specific memo ("1 Slot Machine Play Credit").
 
 To obtain this auth token:
 1. Go to https://highfidelity.com/user/tokens/new
 2. Name the token something memorable.
-3. Select the `commerce` scope.
+3. Select the `commerce_ro` scope.
 4. Click "Create Token".
 5. Copy the token somewhere safe for now.
 
@@ -146,7 +146,7 @@ Next, you'll have to write an Assignment Client Script that will handle the slot
 ## Running an AC Script from ATP
 To run the above AC script on your domain from ATP:
 1. Modify your `slotMachineACScript.js` as follows:
-    1. Set `HIFI_COMMERCE_TOKEN` to your HiFi commerce token from Step 4.
+    1. Set `HIFI_COMMERCE_TOKEN` to your HiFi `commerce_ro` token from Step 4.
     2. Set `SLOT_MACHINE_REEL_1_ID` to the Entity ID of the leftmost slot machine reel.
     3. Set `SLOT_MACHINE_REEL_2_ID` to the Entity ID of the middle slot machine reel.
     4. Set `SLOT_MACHINE_REEL_3_ID` to the Entity ID of the rightmost slot machine reel.
