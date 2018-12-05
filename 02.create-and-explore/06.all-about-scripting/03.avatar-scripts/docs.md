@@ -19,6 +19,7 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
 ![](addScript1.PNG)
 
 >>>>> You can add multiple scripts to your avatar by adding multiple `script = url` lines.
+
 2. You can also use our Package Model tool to add your avatar script. 
     
     a. Create a folder in the path of your avatar that includes the script.
