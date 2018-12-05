@@ -16,7 +16,7 @@
 
 // REPLACE THIS with your authentication token
 // from https://highfidelity.com/user/tokens/new
-var HIFI_COMMERCE_TOKEN = "34162f4ed09ac676eeb1966c481bd276e95c36cf87304cf6b6535ed380cea285";
+var HIFI_COMMERCE_TOKEN = "abcdefghijklmnop";
 // The Metaverse to use
 var HIFI_METAVERSE_URL = "https://staging.highfidelity.com";
 // The Recent Economic Activity endpoint on the High Fidelity Metaverse
@@ -34,17 +34,17 @@ var SLOT_MACHINE_MESSAGING_CHANNEL = "com.highfidelity.slotMachine";
 // by this variable. Units are millseconds.
 var CHECK_RECENT_ACTIVITY_INTERVAL_MS = 10000;
 // Change these to match the Entity IDs of the reels attached to your slot machine.
-var SLOT_MACHINE_REEL_1_ID = "{4915b437-01ec-4a6e-b456-ec9c840835b9}";
-var SLOT_MACHINE_REEL_2_ID = "{ef08db79-a1c3-4342-9184-efcae2f27962}";
-var SLOT_MACHINE_REEL_3_ID = "{f0c3d402-f688-4dd2-b0f1-6b4356931c52}";
+var SLOT_MACHINE_REEL_1_ID = "{aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}";
+var SLOT_MACHINE_REEL_2_ID = "{aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}";
+var SLOT_MACHINE_REEL_3_ID = "{aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}";
 // Change this to match the Entity ID of the "play text" entity attached to your slot machine.
-var SLOT_MACHINE_PLAY_TEXT_ID = "{787b493e-0c82-4c70-8563-a5b1530a9310}";
+var SLOT_MACHINE_PLAY_TEXT_ID = "{aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}";
 // Change this to match the URL of your Google Sheet Slot Machine Authorization DB script
-var GOOGLE_SHEET_AUTH_SCRIPT = "https://script.google.com/macros/s/AKfycbwA4WVJ_vKH0ZknxV6pumE475nwG6LLD_jow6o0Qw4h4oIIl0ZL/exec";
+var GOOGLE_SHEET_AUTH_SCRIPT = "https://script.google.com/macros/s/ABCDEFGHIJKLMNOP/exec";
 // Change this to the coordinates in your domain around which the slot machine will be placed
 // This is necessary because AC scripts can only "see" a certain number of entities around
 // where they are "centered", so it's best for this xyz position to be as close to the slot machine as possible.
-var SLOT_MACHINE_AREA = {x: 21, y: -12, z: -8};
+var SLOT_MACHINE_AREA = {x: 0, y: 0, z: 0};
 
 // This ensure the AC script will not be considered an avatar.
 Agent.isAvatar = false;

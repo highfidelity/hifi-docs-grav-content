@@ -38,7 +38,7 @@ There are many ways that the AC script can know about those secrets. In this exa
 
 ## First, create the Google Sheet:
 
-1. Log into [Google Sheets](https://docs.google.com/spreadsheets/u/0/), and create a new spreadsheet. Give it whatever filename you want, such as "Slot Machine Payouts" with today's date.
+1. Log into [Google Sheets](https://docs.google.com/spreadsheets/u/0/), and create a new spreadsheet. Give it whatever filename you want, such as "Slot Machine Payouts".
 2. Name the current sheet "Authorizations" using the arrow on the tab at the bottom left of the screen.
 3. Give the header row (the first row) the following labels in this order:
     * Used
@@ -61,30 +61,32 @@ There are many ways that the AC script can know about those secrets. In this exa
 7. Follow Google's instructions to deploy your script as a web app. **Make sure** you set "Who has access to the app" to "Anyone, even anonymous". When finished, copy the URL you're given at the end of the process and save it somewhere you'll remember for later.
     * The web app URL will look something like `https://script.google.com/macros/s/ABCDEFGHIJKLMNOP_QRSTUVWXYZ1984373/exec`
 
+**Make sure you keep the web app URL and the Google Sheet URL private**, since your authorization data will be visible to anyone with access to the sheet!
+
 # 4. Allow users to "Add Credits" to the Slot Machine
 You'll need to provide your users with a way to accrue slot machine play credits. You will do this by adding an Entity Script to two parts of the Slot Machine entity.
 
-First, we need to write an Entity Script to put on the "Click Here to Add Credits" button on the Slot Machine. This script will do the following:
+First, we need to write the Entity Script. This script will do the following:
 * When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 1 HFC with the message "1 Slot Machine Play Credit".
 
 [Click here](./addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
 Be mindful of the fact that all users who load the Add Credits entities will be individually running this script as if it were a client script.
 
-Next, add the entity script from above to the "Add Credits" entity AND its parent:
+Next, add the entity script from above to the "Add Credits" text entity AND its parent:
 1. Modify the `DESTINATION_USERNAME` variable within `addCreditsButton.js` to match your username.
 2. Upload the `addCreditsButton.js` script to a publicly-accessible location such as S3. Copy its URL.
 3. In Interface, use the `CREATE` app to select the "Click Here to Add Credits" text entity on the Slot Machine entity.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
-6. In Interface, use the `CREATE` app to select the border around the "Click Here to Add Credits" button on the Slot Machine entity.
+6. In Interface, use the `CREATE` app to select the border entity around the "Click Here to Add Credits" button on the Slot Machine entity.
 7. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 8. Lock the entity so nobody can change its attributes.
 
 # 5. Allow users to start the Slot Machine's reels
 You'll need to provide your users with a way to start the slot machine's reels.
 
-First, you'll have to write an Entity Script to put on the slot machine's Spin Lever. This script will send a message to an Assignment Client script that will kick off the rest of the game logic. We will write this Assignment Client script in a later step.
+First, you'll have to write an Entity Script to put on the slot machine's Spin Lever. This script will send a message to an Assignment Client script that we'll write in a later step. This message will kick off the rest of the game logic.
 
 [Click here](./slotMachineSpinLever.js) to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
 
@@ -100,11 +102,11 @@ Next, add the entity script from above to the "Spin Lever" entity:
 You'll have to obtain a High Fidelity authentication token that has the `commerce` scope. You will use this token in a later step when writing an Assignment Client script that'll check your Recent Economic Activity for recent transactions of 1 HFC made in your domain with a specific memo ("1 Slot Machine Play Credit").
 
 To obtain this auth token:
-    a. Go to https://highfidelity.com/user/tokens/new
-    b. Name the token something memorable.
-    c. Select the `commerce` scope.
-    d. Click "Create Token".
-    e. Copy the token somewhere safe for now.
+1. Go to https://highfidelity.com/user/tokens/new
+2. Name the token something memorable.
+3. Select the `commerce` scope.
+4. Click "Create Token".
+5. Copy the token somewhere safe for now.
 
 # 7. Write an authenticated Assignment Client Script
 Next, you'll have to write an Assignment Client Script that will handle the slot machine game logic, including:
@@ -114,7 +116,7 @@ Next, you'll have to write an Assignment Client Script that will handle the slot
 * Checking the end state of the reels to determine win/loss
 * Paying out pre-authorized funds
 
-[Click here](./slotMachineACScript.js) to download a pre-made "Slot Machine" Entity Server Script. Follow along with the comments in the code to understand what it's doing!
+[Click here](./slotMachineACScript.js) to download a pre-made "Slot Machine" Entity Server Script. This script is quite long and is arguably the most important element of this project! Follow along with the comments in the code to understand what it's doing.
 
 # 8. Run the Assignment Client script on your domain
 
@@ -124,7 +126,13 @@ Next, you'll have to write an Assignment Client Script that will handle the slot
 To run the above AC script on your domain from S3:
 1. Modify your `slotMachineACScript.js` as follows:
     1. Set `HIFI_COMMERCE_TOKEN` to your HiFi commerce token from Step 4.
-    2. 
+    2. Set `SLOT_MACHINE_REEL_1_ID` to the Entity ID of the leftmost slot machine reel.
+    3. Set `SLOT_MACHINE_REEL_2_ID` to the Entity ID of the middle slot machine reel.
+    4. Set `SLOT_MACHINE_REEL_3_ID` to the Entity ID of the rightmost slot machine reel.
+    5. Set `SLOT_MACHINE_PLAY_TEXT_ID` to the Entity ID of the "Play Text" text entity right below the slot machine reels.
+    6. Set `GOOGLE_SHEET_AUTH_SCRIPT` to the URL of the Google Script Web App from Step 3 above.
+    7. Set `SLOT_MACHINE_AREA` to the coordinates around which the slot machine entity will be placed.
+        * See the comments in the code for more details about why this is necessary.
 2. Upload your `slotMachineACScript.js` script to a publicly-accessible location such as S3. Copy its URL.
 3. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
 4. Click "Content" at the top of the page, then scroll to the "Scripts" section.
@@ -133,7 +141,7 @@ To run the above AC script on your domain from S3:
 7. Click "Save and restart" at the top right of the page
 
 # Conclusion and Future Work
-You're done! You should now have a basic but fully working slot machine in your domain.
+**You're done!** You should now have a basic but fully working slot machine in your domain. Remember that you cannot redeem your own pre-authorized transactions, so you will not be able to play your own slot machine. If you want to test the slot machine, sign into another account.
 
 Here's a bunch of other ideas for extending the basic functionality of this slot machine:
 * Lights and sounds corresponding to game state

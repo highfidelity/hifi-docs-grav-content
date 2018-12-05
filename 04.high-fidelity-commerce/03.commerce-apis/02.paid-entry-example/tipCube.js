@@ -13,7 +13,7 @@
 (function() {
     // This is the username that the clickee will be prompted to send money to.
     // Be sure to change this to your desired username!
-    var DESTINATION_USERNAME = "zfoxStaging";
+    var DESTINATION_USERNAME = "yourUsername";
     // The amount of HFC that the user will be prompted to send.
     var HFC_AMOUNT = 10;
     // The message displayed to the user when they are prompted to send you money.

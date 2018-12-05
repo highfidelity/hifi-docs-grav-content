@@ -129,14 +129,14 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
     1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d secret=<secret from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
 
 # Full Examples <a name="examples"></a>
-## Tip Jar <a name="tipJar"></a>
+## BEGINNER: Tip Jar <a name="tipJar"></a>
 [Click here](./tip-jar-example) to learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
 
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * Entity Scripts
 
-## VIP Access Zone <a name="vipZone"></a>
+## INTERMEDIATE: VIP Access Zone <a name="vipZone"></a>
 [Click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
 
 This example uses:
@@ -145,7 +145,7 @@ This example uses:
 * Entity Scripts
 * Assignment Client Scripts
 
-## Slot Machine Game <a name="slotMachine"></a>
+## ADVANCED: Slot Machine Game <a name="slotMachine"></a>
 [Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
 
 This example uses:
