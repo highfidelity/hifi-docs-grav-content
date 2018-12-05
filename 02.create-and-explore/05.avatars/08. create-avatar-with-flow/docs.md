@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 ## Overview
-You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flow.js) script technology.
+You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://github.com/highfidelity/hifi-docs-grav-content/blob/master/02.create-and-explore/05.avatars/08.create-avatar-with-flow/flow.js) script technology.
 
 The Flow script simply mimics the natural movement of hair and other attachments on your avatar. You can manipulate and change how Flow interacts with your avatar using the [**Flow App**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flowApp.js). In order to use the Flow App, your avatar must contain flow threads. 
 ### Flow Threads
@@ -49,7 +49,7 @@ This panel manages collision spheres. Every collision sphere is positioned using
 #### JSON Panel
 This panel displays the output JSON data structure with your avatar's flow configuration, which you then include in your custom flow.js script.  
 ![JSON Panel](jsonpanel.png)
-This data can be copied and pasted into the [**Flow**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flow.js) script between the lines:
+This data can be copied and pasted into the [**Flow**](https://github.com/highfidelity/hifi-docs-grav-content/blob/master/02.create-and-explore/05.avatars/08.create-avatar-with-flow/flow.js) script between the lines:
 ```javascript
 // CUSTOM DATA STARTS HERE
  
@@ -75,6 +75,4 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
 When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 
 #### Avatar Examples
-Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://github.com/highfidelity/hifi-docs-grav-content/tree/master/02.create-and-explore/05.avatars/08.%20create-avatar-with-flow/mannequinHairTest8.fst).
-
-
+Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://github.com/highfidelity/hifi-docs-grav-content/blob/master/02.create-and-explore/05.avatars/08.create-avatar-with-flow/mannequinHairTest8.fst).
