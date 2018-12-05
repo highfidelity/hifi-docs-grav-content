@@ -18,11 +18,10 @@ Items in the Marketplace will either be free, or will be priced at a certain amo
 
 ####Buy an item that is free
 
-1. In Interface, open up your tablet. 
-2. Go to Market. ![](market.png)
-3. Browse to find the item you wish to get. Click "Get" and confirm the purchase of 0 HFC. ![](market-2.PNG) ![](market-4.PNG)
-4. It will appear in the domain you are in (if you have access to add entities to it). ![](market-3.PNG)
-5. Congratulations, you bought a free Marketplace item!
+1. In Interface, pull up your tablet or HUD and go to Market.
+2. Browse to find the item you wish to get. Click "Get" and confirm the purchase of 0 HFC. ![](market-2.PNG) ![](market-4.PNG)
+3. It will appear in the domain you are in (if you have access to add entities to it). ![](market-3.PNG)
+4. Congratulations, you bought a free Marketplace item!
 
 ####Buy an item using HFC
 
