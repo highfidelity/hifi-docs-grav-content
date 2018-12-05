@@ -5,13 +5,6 @@ taxonomy:
          docs
 ---
 
-## Experimental API Notice
-The Commerce APIs outlined in this document are experimental and subject to change:
-* High Fidelity Metaverse API endpoints may be modified at any time.
-* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
-
--------------
-
 # Introduction
 
 Using High Fidelity's **Commerce APIs**, you can create unique domains, apps, and games that can **reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content**.

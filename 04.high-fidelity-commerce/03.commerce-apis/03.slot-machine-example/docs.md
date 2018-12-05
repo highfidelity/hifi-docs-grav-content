@@ -5,13 +5,6 @@ taxonomy:
          docs
 ---
 
-## Experimental API Notice
-The Commerce APIs outlined in this document are experimental and subject to change:
-* High Fidelity Metaverse API endpoints may be modified at any time.
-* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
-
--------------
-
 Say we want to create a slot machine game that pays out HFC in High Fidelity.
 
 Before we begin, here are a few important concepts to understand:
