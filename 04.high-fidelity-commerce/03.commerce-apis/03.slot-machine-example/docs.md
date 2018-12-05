@@ -15,13 +15,13 @@ First, you'll want to create a Slot Machine entity in your domain. This is the f
 If you're following along with the particular example in this document, import the following JSON into your domain: [basicSlotMachine_noScripts.json](./basicSlotMachine_noScripts.json)
 
 # 2. Pre-authorize Game Winning Payout Funds
-In our slot machine example, players will pay you (the domain owner) 10 HFC to start playing, and the slot machine will pay out 10 HFC if/when the payer wins.
+In our slot machine example, players will pay you (the domain owner) 1 HFC to start playing, and the slot machine will pay out 25 HFC if/when the payer wins.
 
-You will now learn how to pre-authorize the first payout of 10 HFC.
+You will now learn how to pre-authorize the first payout of 25 HFC.
 
 1. In your HUD or tablet, open the "INVENTORY" app.
 2. Click the "Authorized Script" button.
-3. Next to "Amount", enter "10".
+3. Next to "Amount", enter "25".
 4. Under "Optional Public Message", enter "Slot Machine Winnings".
     ![](./images/preAuth01.png)
 5. Click "SUBMIT".
@@ -45,7 +45,7 @@ There are many ways that the AC script can know about those secrets. In this exa
     * HFC
     * Authorization ID
     * Coupon ID
-4. In the second row, under the HFC column, put `10`.
+4. In the second row, under the HFC column, put `25`.
 5. In the second row, under the "Authorization ID" column, paste the Authorization ID that you saved from above.
 6. In the second row, under the "Coupon ID" column, paste the Coupon ID that you saved from above.
 
@@ -65,7 +65,7 @@ There are many ways that the AC script can know about those secrets. In this exa
 You'll need to provide your users with a way to accrue slot machine play credits. You will do this by adding an Entity Script to two parts of the Slot Machine entity.
 
 First, we need to write an Entity Script to put on the "Click Here to Add Credits" button on the Slot Machine. This script will do the following:
-* When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 10 HFC with the message "1 Slot Machine Play Credit".
+* When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 1 HFC with the message "1 Slot Machine Play Credit".
 
 [Click here](./addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
@@ -97,7 +97,7 @@ Next, add the entity script from above to the "Spin Lever" entity:
 4. Lock the entity so nobody can change its attributes.
 
 # 6. Obtain Auth Token
-You'll have to obtain a High Fidelity authentication token that has the `commerce` scope. You will use this token in a later step when writing an Assignment Client script that'll check your Recent Economic Activity for recent transactions of 10 HFC made in your domain with a specific memo ("1 Slot Machine Play Credit").
+You'll have to obtain a High Fidelity authentication token that has the `commerce` scope. You will use this token in a later step when writing an Assignment Client script that'll check your Recent Economic Activity for recent transactions of 1 HFC made in your domain with a specific memo ("1 Slot Machine Play Credit").
 
 To obtain this auth token:
     a. Go to https://highfidelity.com/user/tokens/new
@@ -147,3 +147,4 @@ Here's a bunch of other ideas for extending the basic functionality of this slot
 * Payout with certified Marketplace items instead of HFC
 * You could use a database of credits instead of relying solely on Recent Economic Activity. If you just use Recent Economic Activity, then, if the AC script restarts, users may gain credits they shouldn't.
 * Better user messaging: The simple status messages coded in the example that are visible to slot machine players are nice, but not great or descriptive. It might be nice to have a way of contacting an admin if there's a problem.
+* Multiple slot machines in one domain.

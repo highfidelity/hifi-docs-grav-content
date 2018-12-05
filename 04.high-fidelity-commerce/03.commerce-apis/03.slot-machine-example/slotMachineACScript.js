@@ -24,7 +24,7 @@ var HIFI_HISTORY_ENDPOINT_URL = HIFI_METAVERSE_URL + "/api/v1/commerce/history";
 // The Redmption endpoint on the High Fidelity Metaverse
 var HIFI_REDEMPTION_ENDPOINT_URL = HIFI_METAVERSE_URL + "/api/v1/commerce/redeem";
 // In HFC, the amount of money someone must send you to be able to play the slot machine
-var SLOT_MACHINE_CREDIT_COST = 10;
+var SLOT_MACHINE_CREDIT_COST = 1;
 // The text of the message used when a user adds credit to the slot machine.
 var SLOT_MACHINE_PAYIN_MESSAGE = "1 Slot Machine Play Credit";
 // This is the messaging channel that the AC script will use to communicate
@@ -41,6 +41,10 @@ var SLOT_MACHINE_REEL_3_ID = "{f0c3d402-f688-4dd2-b0f1-6b4356931c52}";
 var SLOT_MACHINE_PLAY_TEXT_ID = "{787b493e-0c82-4c70-8563-a5b1530a9310}";
 // Change this to match the URL of your Google Sheet Slot Machine Authorization DB script
 var GOOGLE_SHEET_AUTH_SCRIPT = "https://script.google.com/macros/s/AKfycbwA4WVJ_vKH0ZknxV6pumE475nwG6LLD_jow6o0Qw4h4oIIl0ZL/exec";
+// Change this to the coordinates in your domain around which the slot machine will be placed
+// This is necessary because AC scripts can only "see" a certain number of entities around
+// where they are "centered", so it's best for this xyz position to be as close to the slot machine as possible.
+var SLOT_MACHINE_AREA = {x: 21, y: -12, z: -8};
 
 // This ensure the AC script will not be considered an avatar.
 Agent.isAvatar = false;
@@ -112,20 +116,20 @@ function entityIsColor(entityID, colorString) {
     var targetColor;
 
     if (colorString === "red") {
-        targetColor = {r: 255, g: 0, b: 0};
+        targetColor = {red: 255, green: 0, blue: 0};
     } else if (colorString === "green") {
-        targetColor = {r: 0, g: 255, b: 0};
+        targetColor = {red: 0, green: 255, blue: 0};
     } else if (colorString === "blue") {
-        targetColor = {r: 0, g: 0, b: 255};
+        targetColor = {red: 0, green: 0, blue: 255};
     } else {
         return false;
     }
 
     var entityColor = Entities.getEntityProperties(entityID, ["color"]).color;
 
-    return (entityColor.r === targetColor.r &&
-        entityColor.g === targetColor.g &&
-        entityColor.b === targetColor.b);
+    return (entityColor.red === targetColor.red &&
+        entityColor.green === targetColor.green &&
+        entityColor.blue === targetColor.blue);
 }
 
 // This function will check all slot machine reels to see if
@@ -134,7 +138,7 @@ function playerHasWonSlotMachine() {
     if (!entityExistsInDomain(SLOT_MACHINE_REEL_1_ID) ||
         !entityExistsInDomain(SLOT_MACHINE_REEL_2_ID) ||
         !entityExistsInDomain(SLOT_MACHINE_REEL_3_ID)) {
-        console.log("One or more of the slot machine entities doesn't exist!");
+        console.log("One or more of the slot machine reel entities doesn't exist!");
         return false;
     } else if ((entityIsColor(SLOT_MACHINE_REEL_1_ID, "red") &&
         entityIsColor(SLOT_MACHINE_REEL_2_ID, "red") && 
@@ -150,11 +154,11 @@ function playerHasWonSlotMachine() {
     return false;
 }
 
-// This function will get auth data related to a 10-HFC pre-authorized
+// This function will get auth data related to a 25-HFC pre-authorized
 // transaction from our Google Sheet auth data database.
 function getGoogleSheetAuthData(successCallback) {
     var googleSheetRequestBody = {
-        hfc: "10"
+        hfc: "25"
     }
 
     request({
@@ -229,7 +233,8 @@ function payOutToCurrentPlayer(authID, secret) {
             console.log("Slot machine paid out to " + slotMachineCurrentPlayer + "!");
             slotMachineCurrentPlayer = false;
             if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
-                Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "YOU WON 10 HFC!!"});
+                Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "YOU WON 25 HFC!!"});
+                resetPlayTextAfterDelay();
             }
         }
     });
@@ -240,7 +245,7 @@ function payOutToCurrentPlayer(authID, secret) {
 // If we do have funds available to pay out, we'll call `successCallback(callbackParam)`.
 function checkIfSlotMachineHasAvailableFunds(successCallback, callbackParam) {
     var googleSheetRequestBody = {
-        hfc: "10",
+        hfc: "25",
         justChecking: true
     }
 
@@ -274,6 +279,76 @@ function checkIfSlotMachineHasAvailableFunds(successCallback, callbackParam) {
     });
 }
 
+// This function returns a random color that's either
+// pure red, pure blue, or pure green.
+function randomRGBColor() {
+    // This logic determines which color index (R, G, or B
+    // should be "255".
+    var maxColorIndex = Math.floor(Math.random() * 3);
+
+    if (maxColorIndex === 0) {
+        return {red: 255, green: 0, blue: 0};
+    } else if (maxColorIndex === 1) {
+        return {red: 0, green: 255, blue: 0};
+    } else {
+        return {red: 0, green: 0, blue: 255};
+    }
+}
+
+// This function resets the Play Text after a short delay.
+// Called after win message or lost message, etc.
+function resetPlayTextAfterDelay() {
+    Script.setTimeout(function() {
+        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Click Red Ball to Play!"});
+        }
+    }, 1000);
+}
+
+var currentReelSpins = 0;
+// This function "spins" the slot machine reels,
+// then, when they "stop", handles end-game logic.
+function spinReels() {
+    if (!entityExistsInDomain(SLOT_MACHINE_REEL_1_ID) ||
+        !entityExistsInDomain(SLOT_MACHINE_REEL_2_ID) ||
+        !entityExistsInDomain(SLOT_MACHINE_REEL_3_ID)) {
+        console.log("One or more of the slot machine reel entities doesn't exist!");
+        slotMachineCurrentPlayer = false;
+        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Out of order :("});
+        }
+        return false;
+    } else {
+        currentReelSpins++;
+        Entities.editEntity(SLOT_MACHINE_REEL_1_ID, {color: randomRGBColor()});
+        Entities.editEntity(SLOT_MACHINE_REEL_2_ID, {color: randomRGBColor()});
+        Entities.editEntity(SLOT_MACHINE_REEL_3_ID, {color: randomRGBColor()});
+
+        if (currentReelSpins < 10) {
+            Script.setTimeout(spinReels, 50);
+        } else if (currentReelSpins < 15) {
+            Script.setTimeout(spinReels, 100);
+        } else if (currentReelSpins < 22) {
+            Script.setTimeout(spinReels, 300);
+        } else {
+            currentReelSpins = 0;
+            // Check if the player has won! If they have...
+            if (playerHasWonSlotMachine()) {
+                // First, we have to retrieve available authorization data from our Google Sheet auth database.
+                // If that's successful, we'll call `payOutToCurrentPlayer()`.
+                getGoogleSheetAuthData(payOutToCurrentPlayer);
+            } else {
+                console.log(slotMachineCurrentPlayer + " didn't win - not paying out.");
+                slotMachineCurrentPlayer = false;
+                if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+                    Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Sorry, try again!"});
+                    resetPlayTextAfterDelay();
+                }
+            }
+        }
+    }
+}
+
 // This variable holds the current slot machine player.
 var slotMachineCurrentPlayer = false;
 function startSlotMachine(player) {
@@ -283,22 +358,12 @@ function startSlotMachine(player) {
     
     console.log("Player " + player + " now has " +
         slotMachinePlayerRecords[player].credits + " credits remaining. SPINNING!");
-        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
-            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Good luck!!!"});
-        }
-
-    // Check if the player has won! If they have...
-    if (playerHasWonSlotMachine()) {
-        // First, we have to retrieve available authorization data from our Google Sheet auth database.
-        // If that's successful, we'l; call `payOutToCurrentPlayer()`.
-        getGoogleSheetAuthData(payOutToCurrentPlayer);
-    } else {
-        console.log(slotMachineCurrentPlayer + " didn't win - not paying out.");
-        slotMachineCurrentPlayer = false;
-        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
-            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Sorry, try again!"});
-        }
+    if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+        Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Good luck!!!"});
     }
+
+    // GO!!!
+    spinReels();
 }
 
 // This in-memory variable will hold records about known slot machine players:
@@ -337,7 +402,7 @@ function checkForNewPlayers(playerWhoStartedSpin) {
                         // If we've never updated this player record based on this Transaction ID...
                         if (slotMachinePlayerRecords[item.sender_name].recordedTransactions.indexOf(item.id) === -1) {
                             // Increment the number of credits the user has on the slot machine
-                            // by the amount they paid (should be 10).
+                            // by the amount they paid (should be 1).
                             slotMachinePlayerRecords[item.sender_name].recordedTransactions.push(item.id);
                             slotMachinePlayerRecords[item.sender_name].credits += item.received_money;
                             console.log("Slot machine player \"" + item.sender_name + "\" now has " +
@@ -366,8 +431,15 @@ function maybePlay(player) {
     if (slotMachinePlayerRecords[player] &&
         slotMachinePlayerRecords[player].credits >= SLOT_MACHINE_CREDIT_COST) {
         checkIfSlotMachineHasAvailableFunds(startSlotMachine, player);
+        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Please wait..."});
+        }
     } else {
         console.log("Player " + player + " doesn't have enough credits to play.");
+        if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+            Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Not enough credits!"});
+            resetPlayTextAfterDelay();
+        }
     }
 }
 
@@ -392,8 +464,8 @@ function onMessageReceived(channel, message, sender, localOnly) {
 // in the domain.
 function allowEntityAccess() {
     Entities.setPacketsPerSecond(6000);
-    EntityViewer.setPosition({x: 0, y: 0, z: 0});
-    EntityViewer.setCenterRadius(10000);
+    EntityViewer.setPosition(SLOT_MACHINE_AREA);
+    EntityViewer.setCenterRadius(1000);
     // This should allow us to see nano-scale entities from great distances
     EntityViewer.setVoxelSizeScale(Number.MAX_VALUE);
     Script.setInterval(function() {
@@ -424,6 +496,11 @@ function startup() {
     Messages.messageReceived.connect(onMessageReceived);
 
     maybeAllowEntityAccess();
+
+    // Make sure the Play Text is set to the default when we're restarting the script.
+    if (entityExistsInDomain(SLOT_MACHINE_PLAY_TEXT_ID)) {
+        Entities.editEntity(SLOT_MACHINE_PLAY_TEXT_ID, {text: "Click Red Ball to Play!"});
+    }
     
     // This function sets up a repeating interval. When the interval timer expires,
     // the script will request our Recent Economic Activity.

@@ -15,7 +15,7 @@
     // Be sure to change this to your desired username!
     var DESTINATION_USERNAME = "zfoxStaging";
     // The amount of HFC that the user will be prompted to send.
-    var HFC_AMOUNT = 10;
+    var HFC_AMOUNT = 1;
     // The message displayed to the user when they are prompted to send you money.
     var MONEY_MESSAGE = "1 Slot Machine Play Credit";
 
