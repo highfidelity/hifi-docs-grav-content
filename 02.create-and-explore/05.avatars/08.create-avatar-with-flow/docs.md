@@ -4,7 +4,9 @@ taxonomy:
     category: docs
 ---
 ## Overview
-You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flow.js) script technology.
+
+You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flow.js) script technology.
+script technology.
 
 The Flow script simply mimics the natural movement of hair and other attachments on your avatar. You can manipulate and change how Flow interacts with your avatar using the [**Flow App**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flowApp.js). In order to use the Flow App, your avatar must contain flow threads. 
 ### Flow Threads
@@ -47,9 +49,12 @@ This panel manages collision spheres. Every collision sphere is positioned using
 - **Offset**: This option changes the Y-value of the offset vector along the joint.
 
 #### JSON Panel
-This panel displays the output JSON data structure with your avatar's flow configuration, which you then include in your custom flow.js script.  
+This panel displays the output JSON data structure with your avatar's flow configuration, which you then include in your custom flow.js script.
+
 ![JSON Panel](jsonpanel.png)
-This data can be copied and pasted into the [**Flow**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flow.js) script between the lines:
+
+This data can be copied and pasted into the [**Flow**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flow.js) script between the lines:
+
 ```javascript
 // CUSTOM DATA STARTS HERE
  
@@ -62,7 +67,9 @@ You can now add the modified **Flow** script to your avatar's FST file to see yo
 ## How to Add an Avatar Script
 In order to attach a script to your avatar, you must modify your avatar's FST file to include the path where your script lives. There are two ways to update your FST file:
 1.  You can manually add a line to the FST file telling the avatar where to find the script file using `script = [FLOW SCRIPT URL HERE]`. For example: 
+
 ![addScript1](addscript.PNG)
+
 2. You can also use our Package Model tool to add your avatar script. 
     
     a. Create a folder in the path of your avatar that includes the script.
@@ -70,11 +77,10 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
     b. In the interface, go to Edit > 'Package Model as .fst'
 
     c. Select the path in the "Script Directory" section of the Package Model tool, seen here: 
+    
 ![addscript2](addscript2.PNG)
 
-When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preferred hosting service.
+When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
 
 #### Avatar Examples
-Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://github.com/highfidelity/hifi-docs-grav-content/tree/master/02.create-and-explore/05.avatars/08.%20create-avatar-with-flow/mannequinHairTest8.fst).
-
-
+Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://hifi-content.s3.amazonaws.com/jimi/avatar/Mannequin/hairTest/mannequinHairTest8.fst).
