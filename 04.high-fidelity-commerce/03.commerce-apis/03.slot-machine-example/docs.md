@@ -171,7 +171,7 @@ Here's a bunch of other ideas for extending the basic functionality of this slot
     * **NOTE** that, in this example, a user could modify the colors of the unlocked reels to match just before the game ends, and thus force a payout. This example does not cover anti-cheat or anti-tampering methods for securing your slot machine or funds!
 * Moving spin handle
 * "Credits" display using Overlays to show credits available to player
-* More secure access to your AC script and pre-authorized transaction secrets (for example, using a local HTTP server)
+* More secure access to your pre-authorized transaction secrets (for example, using a local HTTP server)
 * Payout different amounts based on variable pay-in amounts
 * Payout with certified Marketplace items instead of HFC
 * You could use a database of credits instead of relying solely on Recent Economic Activity. If you just use Recent Economic Activity, then, if the AC script restarts, users may gain credits they shouldn't.

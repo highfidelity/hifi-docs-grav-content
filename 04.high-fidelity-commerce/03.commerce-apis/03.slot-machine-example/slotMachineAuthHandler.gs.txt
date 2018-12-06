@@ -76,7 +76,7 @@ function doGet(e) {
       return ContentService.createTextOutput(JSON.stringify({
         status: "success",
         authorizationID: row_data[col_authorization],
-        couponID: row_data[col_secret]
+        couponID: row_data[col_coupon_id]
       }));
     }
   }

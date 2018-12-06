@@ -103,7 +103,7 @@ Say you want to **automatically give a user access to a part of your domain _if 
 This example is lengthier than the others on this page, so [click here](./paid-entry-example) to go to the Paid Entry Example document.
 
 ## Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
-A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Secret" value pair.
+A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Coupon ID" value pair.
 
 Later, a script written by this user can use these secret values to send the money or items associated with the authorization record to another user.
 
@@ -112,7 +112,7 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
 * High Fidelity Interface's `request` JavaScript module
 * A simple PHP form on a website
 
-1. Use Interface's "INVENTORY" app to obtain an "Authorization ID" and "Secret" value pair associated with a 10-HFC Pre-Authorized Money transfer.
+1. Use Interface's "INVENTORY" app to obtain an "Authorization ID" and "Coupon ID" value pair associated with a 10-HFC Pre-Authorized Money transfer.
     1. Open Interface.
     2. In your HUD or tablet, open the "INVENTORY" app.
     3. Click the "Authorized Script" button.
@@ -121,12 +121,12 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
         ![](./images/preAuth01.png)
     6. Click "SUBMIT".
     7. On the "Payment Authorized" screen, copy and paste the "Authorization ID" text string to a text file on your computer.
-    8. On the "Payment Authorized" screen, copy and paste the "Secret" text string to a text file on your computer.
+    8. On the "Payment Authorized" screen, copy and paste the "Coupon ID" text string to a text file on your computer.
         ![](./images/preAuth02.png)
     9. Click "CLOSE", then "I'M ALL SET".
 2. Hold your raffle! In this example, a user with username `steve` has won the raffle.
 3. Use the following `curl` command from the command line to dispense the money authorized in (1) to username `steve`:
-    1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d secret=<secret from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
+    1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d coupon_id=<coupon ID from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
 
 # Full Examples <a name="examples"></a>
 ## BEGINNER: Tip Jar <a name="tipJar"></a>

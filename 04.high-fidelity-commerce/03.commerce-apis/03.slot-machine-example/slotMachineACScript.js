@@ -201,12 +201,12 @@ function getGoogleSheetAuthData(successCallback) {
 }
 
 // This function will pay out to the current slot machine player in `slotMachineCurrentPlayer`
-// based on the passed `authID` and `secret` (coupon ID).
-function payOutToCurrentPlayer(authID, secret) {
+// based on the passed `authID` and `coupon_id`.
+function payOutToCurrentPlayer(authID, couponID) {
     // Set up the `redeem` endpoint request body
     var hifiRedemptionRequestBody = {
         authorization_id: authID,
-        secret: secret,
+        coupon_id: couponID,
         username: slotMachineCurrentPlayer
     };
 
