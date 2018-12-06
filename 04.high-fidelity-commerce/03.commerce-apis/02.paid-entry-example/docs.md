@@ -5,6 +5,14 @@ taxonomy:
          docs
 ---
 
+## Experimental API Notice
+The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
+* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
+* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
+* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
+
+-------------
+
 Say you want to automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC in the current server session.
 
 Before we begin, here are a few important concepts to understand:

@@ -6,9 +6,10 @@ taxonomy:
 ---
 
 ## Experimental API Notice
-The Commerce APIs outlined in this document are experimental and subject to change:
-* High Fidelity Metaverse API endpoints may be modified at any time.
-* Some JavaScript API calls made within example code contained in this document are subject to change or removal without notice.
+The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
+* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
+* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
+* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
 -------------
 
