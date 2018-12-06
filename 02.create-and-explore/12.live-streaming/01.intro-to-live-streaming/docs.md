@@ -12,7 +12,7 @@ If you want to reach your audience through YouTube or Twitch, or your friends th
 
 Before you get started, you will need to download and install the following:
 
-* [High Fidelity's Interface and Sandbox](https://highfidelity.com/download) (if you haven't already downloaded the latest release).
+* [High Fidelity's Interface and Sandbox](https://highfidelity.com/download/sandbox) (if you haven't already downloaded the latest release).
 * [Open Broadcaster Software (OBS)](https://obsproject.com/) (recommended).
 
 You can use the recording and streaming software of your choice. We recommend OBS and have included instructions for using OBS in this series as well. 
@@ -31,7 +31,7 @@ Depending on your requirements, you can use your desktop, an HMD with or without
 
 ### Set up High Fidelity for Streaming
 
-Once you've completed installing Interface, you can now use High Fidelity's new [Spectator Camera](../../new-features/spectator-cam) feature. 
+Once you've completed installing Interface, you can now use High Fidelity's new [Spectator Camera](https://docs.highfidelity.com/create-and-explore/marketplace-apps/spectator-cam) feature. 
 
 You can set up OBS to stream your Spectator Camera's view. 
 

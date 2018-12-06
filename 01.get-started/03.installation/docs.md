@@ -4,16 +4,11 @@ taxonomy:
     category:
         - docs
 ---
+### Client Only Installer
+To install High Fidelity's Interface, follow the instructions [here](https://docs.highfidelity.com/get-started/installation/client-install) to download the client installer. The installer comes with everything you need to view and interact with High Fidelity's content and users. You cannot install High Fidelity's Sandbox using this installer, which means you won't be able to create or host your own content.
 
-Select your preferred platform and download High Fidelity's Interface and Sandbox [here](https://highfidelity.com/download). 
+### Client and Sandbox Installer
+Want to create and host your own content? Follow the instructions [here](https://docs.highfidelity.com/get-started/installation/client-and-sandbox-install) to download the client and sandbox installer. High Fidelity's Sandbox provides all the tools you need to create, modify, and host your own content. 
 
-
-* Run the High Fidelity installer.
-* Follow the prompts and complete the installation (don't forget to download Interface and Sandbox).
-* Run High Fidelity's Interface. 
-* Learn how you can create and explore in High Fidelity [here](../../../create-and-explore). 
-
-
-
-
-> > > > > The installer will remember your choice of Express or Custom installation for the next time you update High Fidelity. 
+### Client Only Installer and Client and Sandbox Installer Interactions
+For more information on the interactions between the two installers, go [here](https://docs.highfidelity.com/get-started/installation/installer-interactions).

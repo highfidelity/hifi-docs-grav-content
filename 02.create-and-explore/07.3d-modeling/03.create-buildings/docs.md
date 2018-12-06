@@ -22,14 +22,13 @@ There are many options for creating your own custom buildings to bring into your
 
 ### Building a 3D Building in Maya or Blender
 
-If you're already familiar with a 3D modeling program like Maya or Blender, you can use these tools to create your own custom buildings. Models that are used as interior spaces should be carefully constructed so that collisions align with the mesh and not around the entire model, so that users can easily move throughout the inside. If you have closed off spaces and doors, either inside the building or to the outside of the model, you can find an example of a scripted [door with open/close behavior on Marketplace](https://highfidelity.io/marketplace/items/e69bdf34-3d06-4e95-a255-3d8f8c5d471c).
+If you're already familiar with a 3D modeling program like Maya or Blender, you can use these tools to create your own custom buildings. Models that are used as interior spaces should be carefully constructed so that collisions align with the mesh and not around the entire model, so that users can easily move throughout the inside. If you have closed off spaces and doors, either inside the building or to the outside of the model, you can find an example of a scripted [door with open/close behavior on Marketplace](https://highfidelity.com/marketplace?q=door).
 
 ### Creating a 2D Floor Plan
 
 Another option for creating a custom floor plan (no 3D modeling required!) is to generate a 2D floor plan and use a service like [Archilogic](http://archilogic.com/) to generate a 3D mesh of your floor plan. While you can use any art tool to sketch out a 2D layout, you can also pick a program designed for floor plans, including:
 
 - [Draw.io](https://www.draw.io/), a browser-based flowchart program that exports drawings and can be used to create basic floor plans
-- [AutoDesk HomeStyler](http://www.homestyler.com/designer), which allows you to specify custom floor designs, window placements, and materials
 - [RoomSketcher](http://www.roomsketcher.com/), another browser-based app for layouts and building designs
 - [MagicPlan](http://www.sensopia.com/), a mobile app that generates floor plans based on a physical location
 
@@ -49,6 +48,6 @@ Follow the instructions in [Sandbox](https://wiki.highfidelity.com/wiki/Sandbox)
 
 ## Customizing your Space
 
-Once you have your building in High Fidelity, you'll likely want to customize it! You can add in various decorations, including posters, house plants, furniture, and games through the various [Marketplace](https://wiki.highfidelity.com/wiki/Marketplace) objects that are available in High Fidelity. You can also follow the steps that you used to add your building into your domain on external [3D models](https://wiki.highfidelity.com/wiki/3D_models) that you want to use in your building. Keep in mind that any objects added to the Asset Server are only available for that specific domain - if you want to use your decorations or furniture in additional domains, you'll need to host them somewhere that is publicly accessible to each different computer that the domains are hosted on.
+Once you have your building in High Fidelity, you'll likely want to customize it! You can add in various decorations, including posters, house plants, furniture, and games through the various Marketplace objects that are available in High Fidelity. You can also follow the steps that you used to add your building into your domain on external 3D models that you want to use in your building. Keep in mind that any objects added to the Asset Server are only available for that specific domain - if you want to use your decorations or furniture in additional domains, you'll need to host them somewhere that is publicly accessible to each different computer that the domains are hosted on.
 
 You can swap out textures to your model directly in High Fidelity by specifying new files in the 'Textures' section of the Entity Properties window that align with the names of the original texture files, viewable under "Original textures"

@@ -71,7 +71,7 @@ There is a class to help with Quaternions called Quat.  One of it's methods is Q
 Using the vector we get back from passing your Avatar's orientation into Quat.getForward, we can use another helper class called Vec3 to help make an object appear in front of us. 
 
 ```javascript
-Vec3.sum(MyAvatar.position, Quat.getForward(MyAvatar.orientation); // This will add your position vector to the direction vector returned from Quat.getForward.  This will represent a position that is 1 meter in front of your avatar.
+Vec3.sum(MyAvatar.position, Quat.getForward(MyAvatar.orientation)); // This will add your position vector to the direction vector returned from Quat.getForward.  This will represent a position that is 1 meter in front of your avatar.
 ```
 
 If you want to control how far away an object appears in front of you, first we multiply the return value of Quat.getForward with a number representing how many meters we want an object to be in front of us.  Vec3.multiply can assist with this.  It takes a vector and a number as a parameter.
@@ -83,7 +83,7 @@ Vec3.multiply(Quat.getForward(MyAvatar.orientation), 2.0); // if we are facing f
 We can then use Vec3.sum to return a new vector representing how far away an object will appear from us, to a vector representing our current position given from MyAvatar.position.
 
 ```javascript
-Vec3.sum(MyAvatar.position, Vec3.multiply(Quat.getForward(MyAvatar.orientation, 2.0); // this will give us a final vector representing where in the world a point 2 meters directly in front of our avatar is
+Vec3.sum(MyAvatar.position, Vec3.multiply(Quat.getForward(MyAvatar.orientation, 2.0))); // this will give us a final vector representing where in the world a point 2 meters directly in front of our avatar is
 
 ```
 
@@ -142,7 +142,7 @@ print("Entity added.");
 
 
 
-What other kind of Entitiees can we put in the type properties?
+What other kind of Entities can we put in the type properties?
 
 ```javascript
 "Model", "Box", "Sphere", "Light", "Text", "ParticleEffect", "Zone", "Web", "Line", "PolyVox", "PolyLine"
@@ -152,13 +152,13 @@ What other kind of Entitiees can we put in the type properties?
 
 Each of those entities share common properties as well as their own special properties unique to their type.
 
-**Getting an Entitie's Properties**
+**Getting an Entity's Properties**
 
 To get the properties of an Entity, we can use Entities.getEntityProperties and pass in the ID of the entity we want to manipulate.  We can get the ID by saving the returned value of addEntity to a variable, or by using an entity method such as findEntity, which we will discuss in a later section.
 
 ```javascript
 // add a new entity
-var newEntity = Entities.addEntity({ type: "Sphere" });   // Ent is now a string with an id like "{18aaecb3-b22d-463c-92f0-95f07b1ec235}"
+var newEntity = Entities.addEntity({ type: "Sphere" });   // newEntity is now a string with a new unique id similar to "{18aaecb3-b22d-463c-92f0-95f07b1ec235}"
  
 // get the entity properties
 var newEntityProperties = Entities.getEntityProperties(newEntity);

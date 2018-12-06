@@ -8,7 +8,7 @@ taxonomy:
 
 ## Overview
 
-Learn how to set a path in your domain that will dictate where a user will appear and which direction they'll face when entering your domain. 
+Learn how to set a path in your domain that will dictate where a user will appear and which direction they'll face when entering your domain.
 
 ## Introduction
 
@@ -21,11 +21,20 @@ The `x`, `y`, and `z` values are the coordinates of the user's position. These v
 To find your avatar's path in the Interface:
 
 1. Navigate to the location where you wish to find the path.
-2. Select **File > Copy Path to Clipboard**.
-3. With the path copied to your clipboard, go to [place names](../place-names) and open the edit view. Paste the copied path into the **Path**. You can also access your [server settings](../server-settings-for-your-domain) and paste your path in the **Path** under Places/Paths.
+2. Select **Navigate > Copy Path to Clipboard**.
 
 Here is an example of path copied to the clipboard:
 
-`/8242.93,978.761,3068.2/-1.14104e-05,-0.1286,-8.75948e-05,0.991697`
+`/-25.1702,-3.54029,11.4788/0,-0.287847,0,0.957676`
 
 This path is a bit more complex than `x`, `y`, and `z` as it contains both position and orientation values. This type of path is tedious to approximate and enter manually, making **Copy Path to Clipboard** the more practical method of defining a path.
+
+To add this path as the user direction and rotation when entering your domain:
+1. With the path copied to your clipboard, go to [place names](../place-names) and open the edit view. Paste the copied path into the **Path**.
+2. You can also access your [server settings](../server-settings-for-your-domain), open the **Content** tab, and select **Paths** from the dropdown menu. In the **Paths** table, click the **+** and paste your path under **Viewpoint**.
+
+Here is an example of the path entered as the default user direction/rotation when entering this domain:
+
+![](paths.png)
+
+You're able to add multiple user directions and rotations using this table. Exactly like a website URL, if a user will be going to `example-domain` and enters it by typing in `example-domain/taco`, they will appear with the direction and rotation of the `/taco` path.

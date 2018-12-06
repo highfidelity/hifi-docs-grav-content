@@ -53,19 +53,10 @@ Here's an example of the skin map effect. The left image has no skin map and the
 
 Here are examples of two FSTs that contain scattering definitions.
 
-- **Matthew.fst** - [https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/matthew/matthew.fst](https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/matthew/matthew.fst)
++ **Matthew.fst** - [https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/matthew/matthew.fst](https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/matthew/matthew.fst)
 
++ **Priscilla.fst** - [https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/priscilla/priscilla.fst](https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/priscilla/priscilla.fst)
 
-- **Priscilla.fst** - [https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/priscilla/priscilla.fst](https://hifi-public.s3.amazonaws.com/sam/models/skinRenderingTest/priscilla/priscilla.fst)
-
-
-- debugDeferredLighting.js
-
-
-  \- A developers debug script which allows you to toggle the material properties in realtime:
-
-
-
-  http://rawgit.com/highfidelity/hifi/3d57a3a86a94bda5498bb315c700006584d725fc/scripts/developer/utilities/render/debugDeferredLighting.js
-
-  [![DebugDeferredLighting.jpg](https://wiki.highfidelity.com/images/1/13/DebugDeferredLighting.jpg)](https://wiki.highfidelity.com/wiki/File:DebugDeferredLighting.jpg)
++ debugDeferredLighting.js
+  * A developers [debug script](http://rawgit.com/highfidelity/hifi/3d57a3a86a94bda5498bb315c700006584d725fc/scripts/developer/utilities/render/debugDeferredLighting.js
+) which allows you to toggle the material properties in realtime.
