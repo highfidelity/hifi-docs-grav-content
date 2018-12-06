@@ -170,7 +170,7 @@ To run the above AC script on your domain from ATP:
 7. Click "Save and restart" at the top right of the page
 
 # Conclusion and Future Work
-**You're done!** You should now have a basic but fully working slot machine in your domain. Remember that you cannot redeem your own pre-authorized transactions, so you will not be able to play your own slot machine. If you want to test the slot machine, sign into another account.
+**You're done!** You should now have a basic but fully working slot machine in your domain, playable for you and anyone else in your domain.
 
 Here's a bunch of other ideas for extending the basic functionality of this slot machine:
 * Lights and sounds corresponding to game state
