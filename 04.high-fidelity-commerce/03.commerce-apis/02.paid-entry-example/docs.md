@@ -1,5 +1,5 @@
 ---
-title: "Paid Entry Example"
+title: "Charge Users to Access VIP Zones in Your Domain"
 taxonomy:
     category:
          docs
