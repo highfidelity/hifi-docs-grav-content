@@ -10,6 +10,10 @@ taxonomy:
 ## Overview
 This tutorial details how to create a slot machine game that pays out HFC in High Fidelity.
 
+Here is how your slot machine game might play when you are finished with this tutorial:
+
+![](videos/slotMachine.mp4?resize=700)
+
 >>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
 * Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
 * JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
@@ -32,7 +36,7 @@ Start by opening Interface in Desktop mode and connecting to your domain!
 
 ### Place an Unscripted "Slot Machine" Entity in Your Domain
 First, you'll want to create a Slot Machine entity in your domain. You can use a Slot Machine entity that's already been created:
-    1. Download the following JSON: [basicSlotMachine_noScripts.json](./basicSlotMachine_noScripts.json)
+    1. Download the following JSON: [basicSlotMachine_noScripts.json](assets/basicSlotMachine_noScripts.json)
     2. Import the JSON file into your domain:
         1. In Interface, go to "Edit" and select "Import Entities", then browse to and select `basicSlotMachine_noScripts.json`.
 
@@ -81,7 +85,7 @@ There are many ways that the AC script can know about those secrets. In this exa
 
 1. At the top of the Google Sheets window, click "Tools" -> "Script editor".
 2. Name your currently untitled project "Slot Machine Authorization Handler".
-3. Copy and paste the contents of [this example GS script](./slotMachineAuthHandler.gs.txt) into the Script Editor.
+3. Copy and paste the contents of [this example GS script](assets/slotMachineAuthHandler.gs.txt) into the Script Editor.
 4. Modify `var SPREADSHEET_ID` to match the Spreadsheet ID of your spreadsheet above.
     * The Spreadsheet ID is embedded in the URL of the Google Sheets page and is visible in the following screenshot (part of the URL is blocked out for privacy purposes).
         ![](./images/googleSheetURL.png)
@@ -98,7 +102,7 @@ You'll need to provide your users with a way to accrue slot machine play credits
 First, we need to write the Entity Script. This script will do the following:
 * When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 1 HFC with the message "1 Slot Machine Play Credit".
 
-[Click here](./addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
+[Click here](assets/addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
 Note that all users who load the Add Credits entities will be individually running this script as if it were an Interface script.
 
@@ -117,7 +121,7 @@ You'll need to provide your users with a way to start the slot machine's reels.
 
 First, you'll have to write an Entity Script to put on the slot machine's Spin Lever. This script will send a message to an Assignment Client script that we'll write in a later step. This message will kick off the rest of the game logic.
 
-[Click here](./slotMachineSpinLever.js) to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
+<a href="assets/slotMachineSpinLever.js" target="_blank">Click here</a> to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
 
 Note that all users who load the Spin Lever entity will be individually running this script as if it were an Interface script.
 
@@ -145,7 +149,7 @@ Next, you'll have to write an Assignment Client Script that will handle the slot
 * Checking the end state of the reels to determine win/loss.
 * Paying out pre-authorized funds.
 
-[Click here](./slotMachineACScript.js) to download a pre-made "Slot Machine" Entity Server Script. This script is quite long and is arguably the most important element of this project! Follow along with the comments in the code to understand what it's doing.
+[Click here](assets/slotMachineACScript.js) to download a pre-made "Slot Machine" Entity Server Script. This script is quite long and is arguably the most important element of this project! Follow along with the comments in the code to understand what it's doing.
 
 ### Run the Assignment Client Script on Your Domain
 
