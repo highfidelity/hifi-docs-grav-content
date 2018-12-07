@@ -8,7 +8,7 @@ taxonomy:
 *Learn how you can create a tip jar and earn HFCs in your domain.*
 
 ## Overview
-Here you will learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
+Here, you will learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
 
 >>>>> Experimental API Notice
 The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
