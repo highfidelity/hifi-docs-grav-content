@@ -10,7 +10,10 @@ taxonomy:
 ## Overview
 This tutorial details how to create a slot machine game that pays out HFC in High Fidelity.
 
->>>>> **Experimental API Notice** The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: **1** Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*. **2** JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*. **3** Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
+>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
+* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
+* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
+* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
 ### Requirements and Glossary
 To create this content, you'll need:
@@ -40,7 +43,7 @@ You should now see a slot machine entity in your domain. This example entity con
 * A "pay-in text" text entity that will instruct users to add credits to the slot machine.
 
 ### Pre-authorize Game Winning Payout Funds
-In our slot machine example, players will pay you (the domain owner), 1 HFC to start playing, and the slot machine will pay out 25 HFC if/when the payer wins.
+In our slot machine example, players will pay you (the domain owner) 1 HFC to start playing, and the slot machine will pay out 25 HFC if/when the payer wins.
 
 You will now learn how to pre-authorize the first payout of 25 HFC.
 
@@ -64,7 +67,7 @@ There are many ways that the AC script can know about those secrets. In this exa
 #### First, Create the Google Sheet:
 
 1. Log into [Google Sheets](https://docs.google.com/spreadsheets/u/0/), and create a new spreadsheet. Give it whatever filename you want, such as "Slot Machine Payouts".
-2. Name the current sheet "Authorizations", using the arrow on the tab at the bottom left of the screen.
+2. Name the current sheet "Authorizations" using the arrow on the tab at the bottom left of the screen.
 3. Give the header row (the first row) the following labels in this order:
     * Used
     * HFC
@@ -84,7 +87,7 @@ There are many ways that the AC script can know about those secrets. In this exa
         ![](./images/googleSheetURL.png)
 5. Save the script, using whatever filename you wish.
 6. Click "Publish", then "Deploy as Web App..."
-7. Follow Google's instructions to deploy your script as a web app. Ensure you set "Who has access to the app" to "Anyone, even anonymous". When finished, copy the URL you're given at the end of the process and save it somewhere you'll remember, for later.
+7. Follow Google's instructions to deploy your script as a web app. Ensure you set "Who has access to the app" to "Anyone, even anonymous". When finished, copy the URL you're given at the end of the process and save it somewhere you'll remember for later.
     * The web app URL will look something like `https://script.google.com/macros/s/ABCDEFGHIJKLMNOP_QRSTUVWXYZ1984373/exec`
 
 Make sure you keep the web app URL and the Google Sheet URL **private**, since your authorization data will be visible to anyone with access to the sheet!
@@ -93,7 +96,7 @@ Make sure you keep the web app URL and the Google Sheet URL **private**, since y
 You'll need to provide your users with a way to accrue slot machine play credits. You will do this by adding an [Entity Script](https://docs.highfidelity.com/learn-with-us/all-about-entity-scripts) to the Slot Machine entity.
 
 First, we need to write the Entity Script. This script will do the following:
-* When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you), 1 HFC with the message "1 Slot Machine Play Credit".
+* When a user clicks the text OR the border around the text, they will be prompted to pay a specified username (you) 1 HFC with the message "1 Slot Machine Play Credit".
 
 [Click here](./addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
@@ -101,7 +104,7 @@ Note that all users who load the Add Credits entities will be individually runni
 
 Next, add the entity script from above to the Slot Machine. If you're using the example Slot Machine entity we provided, we will be adding the entity script to two parts of the entity to make it easier for players to add credits:
 1. Modify the `DESTINATION_USERNAME` variable within `addCreditsButton.js` to match your username.
-2. Upload the `addCreditsButton.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click and select "Copy URL".
+2. Upload the `addCreditsButton.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click the file in the list, then click "Copy URL".
 3. In Interface, use the `CREATE` app to select the "Click Here to Add Credits" text entity on the Slot Machine entity.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
@@ -119,7 +122,7 @@ First, you'll have to write an Entity Script to put on the slot machine's Spin L
 Note that all users who load the Spin Lever entity will be individually running this script as if it were an Interface script.
 
 Next, add the entity script from above to the "Spin Lever" entity:
-1. Upload the `slotMachineSpinLever.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click and select "Copy URL".
+1. Upload the `slotMachineSpinLever.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click the file in the list, then click "Copy URL".
 2. In Interface, use the `CREATE` app to select the red Spin Lever sphere entity on the Slot Machine entity.
 3. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 4. Lock the entity so nobody can change its attributes.
@@ -156,8 +159,8 @@ To run the above AC script on your domain from ATP:
     5. Set `SLOT_MACHINE_PLAY_TEXT_ID` to the Entity ID of the "Play Text" text entity right below the slot machine reels.
     6. Set `GOOGLE_SHEET_AUTH_SCRIPT` to the URL of the Google Script Web App from Step 3 above.
     7. Set `SLOT_MACHINE_AREA` to the coordinates around which the slot machine entity will be placed.
-        *See the comments in the code for more details about why this is necessary.*
-2. Upload your `slotMachineACScript.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click and select "Copy URL".
+        * See the comments in the code for more details about why this is necessary.
+2. Upload your `slotMachineACScript.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click the file in the list, then click "Copy URL".
 3. Navigate to the Domain Settings page of your domain (for a local sandbox, this is probably http://localhost:40100/)
 4. Click "Content" at the top of the page, then scroll to the "Scripts" section.
 5. Under "Persistent Scripts", click the `+` button on the right column
@@ -165,7 +168,7 @@ To run the above AC script on your domain from ATP:
 7. Click "Save and restart" at the top right of the page
 
 ### Conclusion and Future Work
-**You're done!** You should now have a basic, but fully working slot machine in your domain, that you and anyone else in your domain can play.
+**You're done!** You should now have a basic but fully working slot machine in your domain, that you and anyone else in your domain can play.
 
 Here's a bunch of other ideas for extending the basic functionality of this slot machine:
 * Lights and sounds corresponding to game state.

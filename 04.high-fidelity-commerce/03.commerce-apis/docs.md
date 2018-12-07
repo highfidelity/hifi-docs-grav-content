@@ -8,7 +8,7 @@ taxonomy:
 *Learn how to enhance your commerce experience with scripts that use the Commerce API."
 
 ## Overview
-This page details how you can use the new commerce APIs to transfer money and assets between users who aren't in-world, create a script to check a user's inventory, and more.  
+This page details how you can use the new Commerce APIs to transfer money and assets between users who aren't in-world, create a script to check a user's inventory, and more.  
 
 *  [Commerce APIs](#api)
     *  [Scriptable, Secure Money Transfer](#moneyTransfer)
@@ -36,19 +36,20 @@ Some of the content you can create using these APIs are:
 * Vending Machines
 * Trading Apps
 
->>>>> Experimental API Notice
-The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
-* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time until Beta Release 81.
-* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81.
+>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
+* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
+* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
 * Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
+
+
 ### Commerce APIs <a name="api"></a>
-The High Fidelity commerce APIs now add functionalities that can help you enhance a user's experience in your domain. You can write scripts using these APIs or use some of the example scripts we have provided.
+The High Fidelity Commerce APIs now have functionalities that can help you enhance a user's experience in your domain. You can write scripts using these APIs or use some of the example scripts we have provided.
 
 #### Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Money" screen.
 
-The script must specify a recipient and an amount of HFC. It can specify a message to the user if required.
+The script must specify a recipient and an amount of HFC. It can specify a message to the user if desired.
 
 **Example**
 
@@ -71,7 +72,7 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 #### Scriptable, Secure Certified Item Transfer <a name="itemTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Item" screen.
 
-The script must specify a recipient and an item Certificate ID. It can specify a message to the user.
+The script must specify a recipient and an item Certificate ID. It can specify a message to the user if desired.
 Note that the specified item Certificate ID must be owned by the user running the script.
 
 **Example**

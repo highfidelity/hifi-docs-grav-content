@@ -5,7 +5,7 @@ taxonomy:
          docs
 ---
 
-*Learn how you can create a tip jar and earn HFCs in your domain.*
+*Learn how you can create a tip jar and earn HFC in your domain.*
 
 ## Overview
 Here, you will learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
@@ -41,12 +41,12 @@ We need to write a script to put on the Tip Jar entity from Step 1. This script 
 [Click here](./tipJar.js) to download a pre-made "Tip Jar" entity script. Follow along with the comments in the code to understand what it's doing!
 
 ### Add the entity script to the Tip Jar
-You'll have to add the entity script from above, to the Tip Jar cube entity. 
+You'll have to add the entity script from above to the Tip Jar cube entity. 
 1. Modify the `DESTINATION_USERNAME` variable within `tipJar.js` to match your username.
-2. Upload the `tipJar.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click and click "Copy URL".
+2. Upload the `tipJar.js` script to your domain's ATP server using Interface's "Edit" menu -> "Asset Browser" -> "Choose File". Right click the file in the list, then click "Copy URL".
 3. In Interface, use the `CREATE` app to select the Tip Jar cube entity from earlier.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL from above into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
 
 ### You're done!
-Close the `CREATE` app and click on the Tip Jar cube entity with your mouse. You should see a window pop up, prompting you to pay 10 HFC to the username that you specified in the script.
+Close the `CREATE` app and click on the Tip Jar cube entity with your mouse. You should see a window pop up that prompts you to pay 10 HFC to the username that you specified in the script.
