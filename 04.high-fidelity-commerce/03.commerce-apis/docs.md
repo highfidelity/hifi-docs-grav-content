@@ -5,19 +5,27 @@ taxonomy:
          docs
 ---
 
-## Experimental API Notice
-The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
-* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
-* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
-* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
+*Learn how to enhance your commerce experience with scripts that use the Commerce API."
 
--------------
+## Overview
+This page details how you can use the new commerce APIs to transfer money and assets between users who aren't in-world, create a script to check a user's inventory, and more.  
 
-# Introduction
+*  [Commerce APIs](#api)
+    *  [Scriptable, Secure Money Transfer](#moneyTransfer)
+    *  [Scriptable, Secure Item Transfer](#itemTransfer)
+    *  [Scriptable, Secure Item Purchases](#itemPurchases)
+    *  [Scriptable Inventory Verification](#transferVerification)
+    *  [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
+*  [Mini Tutorials](#examples)
+    *  [Tip Jar](#tipJar)
+    *  [VIP Access Zone](#vipZone)
+    *  [Slot Machine Game](#slotMachine)
 
-Using High Fidelity's **Commerce APIs**, you can create unique domains, apps, and games that can **reward users with High Fidelity Coin (HFC), Certified Marketplace Items, and/or premium content**.
+## Introduction
 
-Using these APIs, you can create content such as:
+Using High Fidelity's Commerce APIs, you can create unique domains, apps, and games that can reward users with High Fidelity Coins (HFC), Certified Marketplace Items, and/or premium content.
+
+Some of the content you can create using these APIs are:
 * VIP Domain Access
 * Tip Jars
 * Crane Games
@@ -28,28 +36,23 @@ Using these APIs, you can create content such as:
 * Vending Machines
 * Trading Apps
 
-# Table of Contents
-1. [Commerce APIs](#api)
-    1. [Scriptable, Secure Money Transfer](#moneyTransfer)
-    2. [Scriptable, Secure Item Transfer](#itemTransfer)
-    3. [Scriptable, Secure Item Purchases](#itemPurchases)
-    4. [Scriptable Inventory Verification](#transferVerification)
-    5. [Money and Item Transfer Pre-Authorization and Redemption](#preAuth)
-3. [Full Examples](#examples)
-    1. [Tip Jar](#tipJar)
-    2. [VIP Access Zone](#vipZone)
-    3. [Slot Machine Game](#slotMachine)
+>>>>> Experimental API Notice
+The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
+* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time until Beta Release 81.
+* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81.
+* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
-# Commerce APIs <a name="api"></a>
-The High Fidelity Commerce APIs add the following functionality:
+### Commerce APIs <a name="api"></a>
+The High Fidelity commerce APIs now add functionalities that can help you enhance a user's experience in your domain. You can write scripts using these APIs or use some of the example scripts we have provided.
 
-## Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
+#### Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Money" screen.
 
-The script MUST specify a recipient, it MUST specify an amount of HFC, and it CAN specify a message to the user.
+The script must specify a recipient and an amount of HFC. It can specify a message to the user if required.
 
-### Example
-**A user running this script will be prompted to send 10 HFC to a username "steve".** When they are prompted to send this money, they will see a message: "Pay me 10 HFC and I will unlock this door!"
+**Example**
+
+A user running this script will be **prompted to send 10 HFC to the username "steve".** When they are prompted to send this money, they will see a message: "Pay me 10 HFC and I will unlock this door!"
 
 ```
 var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
@@ -64,14 +67,16 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 
 ![](./images/moneyTransfer.png)
 
-## Scriptable, Secure Certified Item Transfer <a name="itemTransfer"></a>
+
+#### Scriptable, Secure Certified Item Transfer <a name="itemTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Item" screen.
 
-The script MUST specify a recipient, it MUST specify an item Certificate ID, and it CAN specify a message to the user.
-NOTE that the specified item Certificate ID must be owned by the user running the script.
+The script must specify a recipient and an item Certificate ID. It can specify a message to the user.
+Note that the specified item Certificate ID must be owned by the user running the script.
 
-### Example
-**A user running this script will be prompted to send an item to a username "steve".** When they are prompted to send the item, they will see a message: "Send me the item you've previously bought!"
+**Example**
+
+A user running this script will be **prompted to send an item to a username "steve".** When they are prompted to send the item, they will see a message: "Send me the item you've previously bought!"
 
 ```
 var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
@@ -86,12 +91,14 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 
 ![](./images/itemTransfer.png)
 
-## Scriptable, Secure Item Purchases <a name="itemPurchases"></a>
+
+#### Scriptable, Secure Item Purchases <a name="itemPurchases"></a>
 An entity script or client script can open an end-user's tablet to the Marketplace Checkout screen for a specified item.
 
-The script MUST specify the Marketplace Item ID.
+The script must specify the Marketplace Item ID.
 
-### Example
+**Example**
+
 A user running this script will be **prompted to purchase Spectator Camera v2.3** from the High Fidelity Marketplace.
 
 ```
@@ -102,21 +109,25 @@ tablet.sendToQml({method: 'updateCheckoutQMLItemID', params: {itemId: "399921f6-
 
 ![](./images/itemPurchases.png)
 
-## Scriptable Inventory Verification <a name="transferVerification"></a>
+
+#### Scriptable Inventory Verification <a name="transferVerification"></a>
 If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this functionality to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
 
-### Example
+**Example**
+
 Say you want to **automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC.**
 
 This example is lengthier than the others on this page, so [click here](./paid-entry-example) to go to the Paid Entry Example document.
 
-## Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
+
+#### Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
 A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Coupon ID" value pair.
 
 Later, a script written by this user can use these secret values to send the money or items associated with the authorization record to another user.
 
-### Example
-Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to a user who wins a raffle that you are hosting**. In this example, the redeption step is performed using [curl](https://curl.haxx.se/), but you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Here are a few examples of other tools that can perform `HTTP PUT` requests:
+**Example**
+
+Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to a user who wins a raffle that you are hosting**. In this example, the redemption step is performed using [curl](https://curl.haxx.se/), but you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Here are a few examples of other tools that can perform `HTTP PUT` requests:
 * High Fidelity Interface's `request` JavaScript module
 * A simple PHP form on a website
 
@@ -136,15 +147,16 @@ Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to 
 3. Use the following `curl` command from the command line to dispense the money authorized in (1) to username `steve`:
     1. `curl -X PUT -d authorization_id=<authorization ID from 1> -d coupon_id=<coupon ID from 1> -d username=steve https://highfidelity.com/api/v1/commerce/redeem`
 
-# Full Examples <a name="examples"></a>
-## BEGINNER: Tip Jar <a name="tipJar"></a>
+
+### Mini Tutorials <a name="examples"></a>
+#### BEGINNER: Tip Jar <a name="tipJar"></a>
 [Click here](./tip-jar-example) to learn how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
 
 This example uses:
 * [Scriptable, Secure Money Transfer](#moneyTransfer)
 * Entity Scripts
 
-## INTERMEDIATE: VIP Access Zone <a name="vipZone"></a>
+#### INTERMEDIATE: VIP Access Zone <a name="vipZone"></a>
 [Click here](./paid-entry-example) to learn how to create an exclusive VIP zone in your domain that is accessible only to paid VIPs.
 
 This example uses:
@@ -153,7 +165,7 @@ This example uses:
 * Entity Scripts
 * Assignment Client Scripts
 
-## ADVANCED: Slot Machine Game <a name="slotMachine"></a>
+#### ADVANCED: Slot Machine Game <a name="slotMachine"></a>
 [Click here](./slot-machine-example) to learn how to create a slot machine game that pays out HFC in High Fidelity.
 
 This example uses:
