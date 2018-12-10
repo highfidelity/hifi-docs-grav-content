@@ -11,7 +11,7 @@
 //
 
 (function() {
-    // This is the username that the clickee will be prompted to send money to.
+    // The user will be prompted to send money to this username.
     // Be sure to change this to your desired username!
     var DESTINATION_USERNAME = "yourUsername";
     // The amount of HFC that the user will be prompted to send.
