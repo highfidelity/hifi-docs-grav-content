@@ -39,7 +39,7 @@
         // If the user is not a VIP AND they are not an admin...
         if (!userIsVIP && !Users.canKick) {
             // ...send the user to the start location of the domain.
-            // Feel free to modify this line of code if you want to, say,
+            // Feel free to modify this line of code if you want to
             // direct people elsewhere in your domain.
             Window.location.handleLookupString("hifi://" + location.hostname, false);
         }
