@@ -39,7 +39,7 @@ We need to write a script to put on the Tip Jar entity or cube. This script will
 ### Add the Entity Script to the Tip Jar
 You'll have to add the [entity script](./tipJar.js) to the Tip Jar cube entity. 
 1. Change the `DESTINATION_USERNAME` variable in `tipJar.js` to match your username.
-2. Upload the `tipJar.js` script to your domain's ATP server. In Interface, go to **Edit > Asset Browser > Choose File**. Right-click the script file, then click "Copy URL".
+2. Upload the `tipJar.js` script to your domain's ATP server. In Interface, go to **Edit > Asset Browser > Choose File**. Right-click the script file, then select "Copy URL".
 3. In Interface, use the 'CREATE' app to select the Tip Jar cube entity.
 4. In the entity's Properties tab, scroll down to "Script" and paste the URL you copied, into the text box. Press Enter.
 5. Lock the entity so nobody can change its attributes.
