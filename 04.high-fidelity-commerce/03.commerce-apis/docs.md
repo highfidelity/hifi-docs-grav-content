@@ -1,11 +1,11 @@
 ---
-title: "Commerce APIs"
+title: "Use the Commerce API to Transfer Money and Assets"
 taxonomy:
     category:
          docs
 ---
 
-*Learn how to enhance your commerce experience with scripts that use the Commerce API."
+*Learn how to enhance your commerce experience with scripts that use the Commerce API.*
 
 ## Overview
 This page details how you can use the new Commerce APIs to transfer money and assets between users who aren't in-world, create a script to check a user's inventory, and more.  
@@ -44,7 +44,7 @@ Some of the content you can create using these APIs are:
 
 
 ### Commerce APIs <a name="api"></a>
-The High Fidelity Commerce APIs now have functionalities that can help you enhance a user's experience in your domain. You can write scripts using these APIs or use some of the example scripts we have provided.
+The High Fidelity Commerce APIs now have functionalities that can help you enhance a user's experience in your domain. You can write scripts using these APIs or use some of the example scripts provided.
 
 #### Scriptable, Secure Money Transfer <a name="moneyTransfer"></a>
 An entity script or client script can open an end-user's tablet to a "Send Money" screen.
@@ -53,7 +53,7 @@ The script must specify a recipient and an amount of HFC. It can specify a messa
 
 **Example**
 
-A user running this script will be **prompted to send 10 HFC to the username "steve".** When they are prompted to send this money, they will see a message: "Pay me 10 HFC and I will unlock this door!"
+A user running this script will be **prompted to send 10 HFC to the username "steve".** When prompted to send this money, they will see a message: "Pay me 10 HFC and I will unlock this door!"
 
 ```
 var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
@@ -73,11 +73,11 @@ tablet.sendToQml({method: 'updateSendAssetQML',
 An entity script or client script can open an end-user's tablet to a "Send Item" screen.
 
 The script must specify a recipient and an item Certificate ID. It can specify a message to the user if desired.
-Note that the specified item Certificate ID must be owned by the user running the script.
+Note that the user running the script must own the specified item Certificate ID.
 
 **Example**
 
-A user running this script will be **prompted to send an item to a username "steve".** When they are prompted to send the item, they will see a message: "Send me the item you've previously bought!"
+A user running this script will be **prompted to send an item to a username "steve".** When prompted to send this money, they will see a message: "Send me the item you've previously bought!"
 
 ```
 var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
@@ -112,29 +112,29 @@ tablet.sendToQml({method: 'updateCheckoutQMLItemID', params: {itemId: "399921f6-
 
 
 #### Scriptable Inventory Verification <a name="transferVerification"></a>
-If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this functionality to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
+If a script has the proper credentials, it can check a user's Recent Economic Activity and Inventory on their behalf. You can use this to verify that another user has sent you money, sent you an item, or purchased your item from the Marketplace.
 
 **Example**
 
-Say you want to **automatically give a user access to a part of your domain _if and only if_ a user has paid you 10 HFC.**
+Say you want to **give a user access to a part of your domain if they have paid you 10 HFC.**
 
-This example is lengthier than the others on this page, so [click here](./paid-entry-example) to go to the Paid Entry Example document.
+This example is lengthier than the others on this page, so [click here](./paid-entry-example) to learn how you can charge users to access a part of your domain.
 
 
 #### Money and Item Transfer Pre-Authorization and Redemption <a name="preAuth"></a>
 A user can pre-authorize the transfer of money or items. The user can then save this authorization record in the form of an "Authorization ID" and "Coupon ID" value pair.
 
-Later, a script written by this user can use these secret values to send the money or items associated with the authorization record to another user.
+Later, a script written by this user can use these (secret) values to send the money or items associated with the authorization record to another user.
 
 **Example**
 
-Say you want to **pre-authorize 10 of your High Fidelity Coin to be paid out to a user who wins a raffle that you are hosting**. In this example, the redemption step is performed using [curl](https://curl.haxx.se/), but you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Here are a few examples of other tools that can perform `HTTP PUT` requests:
-* High Fidelity Interface's `request` JavaScript module
-* A simple PHP form on a website
+Say you want to **pre-authorize 10 of your High Fidelity Coins to be paid out to a user who wins a raffle that you are hosting**. In this example, [curl](https://curl.haxx.se/) is used to perform the redemption. But you can redeem a pre-authorized transfer using any script or tool that can perform `HTTP PUT` requests. Here are a few examples of other tools that can perform `HTTP PUT` requests:
+* High Fidelity Interface's `request` JavaScript module.
+* A simple PHP form on a website.
 
-1. Use Interface's "INVENTORY" app to obtain an "Authorization ID" and "Coupon ID" value pair associated with a 10-HFC Pre-Authorized Money transfer.
+1. Use Interface's 'INVENTORY' app to get an "Authorization ID" and "Coupon ID" value pair associated with a 10-HFC Pre-Authorized Money transfer.
     1. Open Interface.
-    2. In your HUD or tablet, open the "INVENTORY" app.
+    2. In your HUD or tablet, open the 'INVENTORY' app.
     3. Click the "Authorized Script" button.
     4. Next to "Amount", enter "10".
     5. Under "Optional Public Message", enter "You won the raffle!".
