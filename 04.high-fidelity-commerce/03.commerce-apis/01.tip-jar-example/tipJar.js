@@ -1,7 +1,7 @@
 //
 //  tipJar.js
 //
-//  Users who click on the entity attached to this script will be prompted to pay
+//  Users can click on the entity attached to this script to pay
 //  a user 10 HFC.
 //
 //  Copyright 2018 High Fidelity, Inc.
@@ -11,12 +11,12 @@
 //
 
 (function() {
-    // This is the username that the clickee will be prompted to send money to.
+    // This is the username that the user will send money to.
     // Be sure to change this to your desired username!
     var DESTINATION_USERNAME = "yourUsername";
-    // The amount of HFC that the user will be prompted to send.
+    // The amount of HFC that the user will send.
     var HFC_AMOUNT = 10;
-    // The message displayed to the user when they are prompted to send you money.
+    // The message displayed to the user when they click the entity.
     var MONEY_MESSAGE = "Here's a 10 HFC tip for doing a cool thing!";
 
     var TipJar = function() {
