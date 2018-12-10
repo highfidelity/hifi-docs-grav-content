@@ -75,7 +75,7 @@ function doGet(e) {
       // Return the authorization data associated with this sheet row
       return ContentService.createTextOutput(JSON.stringify({
         status: "success",
-        authorizationID: row_data[col_authorization],
+        authorizationID: row_data[col_authorization_id],
         couponID: row_data[col_coupon_id]
       }));
     }
