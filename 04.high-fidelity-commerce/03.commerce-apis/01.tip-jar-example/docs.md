@@ -37,10 +37,10 @@ Use the 'CREATE' app to place a cube in your domain. This cube will be the desig
 We need to write a script to put on the Tip Jar entity or cube. This script will do the following:
 * When a user clicks the cube, a message will prompt them to pay a specified username (you) 10 HFC. The message will be, "Here's a 10 HFC tip for doing a cool thing!".
 
-[Click here](./tipJar.js) to download a pre-made "Tip Jar" entity script. Follow along with the comments in the code to understand what it's doing!
+[Click here](https://s3.amazonaws.com/hifi-docs-scripts/tipJar.js) to download a pre-made "Tip Jar" entity script. Follow along with the comments in the code to understand what it's doing!
 
 ### Add the Entity Script to the Tip Jar
-You'll have to add the [entity script](./tipJar.js) to the Tip Jar cube entity. 
+You'll have to add the [entity script](https://s3.amazonaws.com/hifi-docs-scripts/tipJar.js) to the Tip Jar cube entity. 
 1. Change the `DESTINATION_USERNAME` variable in `tipJar.js` to match your username.
 2. Upload the `tipJar.js` script to your domain's ATP server. In Interface, go to **Edit > Asset Browser > Choose File**. Right-click the script file, then select "Copy URL".
 3. In Interface, use the 'CREATE' app to select the Tip Jar cube entity.
