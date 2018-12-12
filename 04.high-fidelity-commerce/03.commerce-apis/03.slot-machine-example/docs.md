@@ -36,7 +36,7 @@ Start by opening Interface in Desktop mode and connecting to your domain!
 
 ### Place an Unscripted "Slot Machine" Entity in Your Domain
 First, create a Slot Machine entity in your domain. You can use a Slot Machine entity that already exists:
-    1. Download the following JSON: [basicSlotMachine_noScripts.json](assets/basicSlotMachine_noScripts.json)
+    1. Download the following JSON: [basicSlotMachine_noScripts.json](https://s3.amazonaws.com/hifi-docs-scripts/basicSlotMachine_noScripts.json)
     2. Import the JSON file into your domain:
         1. In Interface, go to **Edit > Import Entities**, then browse to and select `basicSlotMachine_noScripts.json`.
 
@@ -85,7 +85,7 @@ There are many ways that the AC script can know these secrets. In this example, 
 
 1. At the top of the Google Sheets window, click **Tools > Script editor**.
 2. Name your currently untitled project "Slot Machine Authorization Handler".
-3. Copy and paste the contents of [this example GS script](assets/slotMachineAuthHandler.gs.txt) into the Script Editor.
+3. Copy and paste the contents of [this example GS script](https://s3.amazonaws.com/hifi-docs-scripts/slotMachineAuthHandler.gs.txt) into the Script Editor.
 4. Change `var SPREADSHEET_ID` to match the Spreadsheet ID of your spreadsheet above.
     * The Spreadsheet ID is embedded in the URL of the Google Sheets page and is visible in the following screenshot (part of the URL is blocked out for privacy purposes).
         ![](./images/googleSheetURL.png)
@@ -102,7 +102,7 @@ You'll need to provide your users with a way to add slot machine play credits. D
 First, we need to write the entity script. This script will do the following:
 * When a user clicks the text OR the border around the text, a message saying "1 Slot Machine Play Credit" pops up. They can pay a specified username (you) 1 HFC to play.
 
-[Click here](assets/addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
+[Click here](https://s3.amazonaws.com/hifi-docs-scripts/addCreditsButton.js) to download a pre-made "Add Credits" entity script. Follow along with the comments in the code to understand what it's doing!
 
 >>>>> All users who load the Add Credits entities will be individually running this script as if it were an Interface script.
 
@@ -121,7 +121,7 @@ You'll need to provide your users with a way to start the slot machine's reels.
 
 First, write an entity script to put on the slot machine's Spin Lever. This script will send a message to an Assignment Client (AC) script that we'll write in a later step. This message will kick off the rest of the game logic.
 
-<a href="assets/slotMachineSpinLever.js" target="_blank">Click here</a> to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
+[Click here](https://s3.amazonaws.com/hifi-docs-scripts/slotMachineSpinLever.js) to download a pre-made "Spin Lever" entity script. Follow along with the comments in the code to understand what it's doing!
 
 >>>>> All users who load the Spin Lever entity will be individually running this script as if it were an Interface script.
 
@@ -149,7 +149,7 @@ Next, you'll have to write an AC Script that will handle the slot machine game l
 * Checking the end state of the reels to determine win/loss.
 * Paying out pre-authorized funds.
 
-[Click here](assets/slotMachineACScript.js) to download a pre-made "Slot Machine" entity server script. This script is quite long and is arguably the most important element of this project! Follow along with the comments in the code to understand what it's doing.
+[Click here](https://s3.amazonaws.com/hifi-docs-scripts/slotMachineACScript.js) to download a pre-made "Slot Machine" entity server script. This script is quite long and is arguably the most important element of this project! Follow along with the comments in the code to understand what it's doing.
 
 ### Run the Assignment Client Script on Your Domain
 
