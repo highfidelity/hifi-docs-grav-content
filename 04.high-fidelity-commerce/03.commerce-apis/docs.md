@@ -1,5 +1,5 @@
 ---
-title: "Use the Commerce API to Transfer Money and Assets"
+title: "Transfer Money and Assets Using the Commerce API"
 taxonomy:
     category:
          docs
