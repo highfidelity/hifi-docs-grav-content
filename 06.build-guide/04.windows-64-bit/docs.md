@@ -87,9 +87,9 @@ If you face any problems once you start trying to generate build files using CMa
 * Delete your locally cloned copy of the highfidelity repository.
 * Restart your computer.
 * Download the [repository](https://github.com/highfidelity/hifi) again.
-* Try to redo [step 7](#test-interface).
+* Try to redo [step 7](#7-test-interface).
 
-#### Common Errors and their Solutions
+#### Common Errors and Solutions
 
 * If CMake gives you the same error message after the build fails, remove `CMakeCache.txt` from the `%HIFI_DIR%\build` directory.
 * If CMake cannot find OpenSSL, remove `CMakeCache.txt` from the `%HIFI_DIR%\build` directory. Verify that your `VCPKG_ROOT` environment variable is set and pointing to the correct location. Verify that the file `${VCPKG_ROOT}/installed/x64-windows/include/openssl/ssl.h` exists.
