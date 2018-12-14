@@ -6,7 +6,6 @@ taxonomy:
 ## Overview
 
 You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flow.js) script technology.
-script technology.
 
 The Flow script simply mimics the natural movement of hair and other attachments on your avatar. You can manipulate and change how Flow interacts with your avatar using the [**Flow App**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flowApp.js). In order to use the Flow App, your avatar must contain flow threads. 
 ### Flow Threads
@@ -80,7 +79,7 @@ In order to attach a script to your avatar, you must modify your avatar's FST fi
     
 ![addscript2](addscript2.PNG)
 
-When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preffered hosting service.
+When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preferred hosting service.
 
 #### Avatar Examples
 Here is an example of an avatar that is rigged appropriately to use with Flow: [Mannequin with Hair](https://hifi-content.s3.amazonaws.com/jimi/avatar/Mannequin/hairTest/mannequinHairTest8.fst).
