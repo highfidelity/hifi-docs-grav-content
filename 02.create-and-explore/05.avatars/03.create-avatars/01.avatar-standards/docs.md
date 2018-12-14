@@ -135,6 +135,7 @@ High Fidelity avatars support a number of blendshapes for creating different fac
 **Basic Blendshapes**  
 - `EyeBlink_L`:  Blinking action for the left eye.
 - `EyeBlink_R`: Blicking action for the right eye.
+- `JawOpen`: Opening the Jaw.
 
 **Audio Blendshapes**  
 These blendshapes are used when you speak. 
