@@ -7,7 +7,7 @@ taxonomy:
 
 You can simulate physics on your avatar's hair, clothes, and body parts with a little bit of scripting and the help of High Fidelity's [**Flow**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flow.js) script technology.
 
-The Flow script simply mimics the natural movement of hair and other attachments on your avatar. You can manipulate and change how Flow interacts with your avatar using the [**Flow App**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flowApp.js). In order to use the Flow App, your avatar must contain flow threads. 
+The Flow script simply mimics the natural movement of hair and other attachments on your avatar. You can manipulate and change how Flow interacts with your avatar using the [**Flow App**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flowApp.js). In order to use the Flow App, your avatar must contain flow threads. 
 ### Flow Threads
 A _flow thread_ is a set of connected joints with at least one joint that complies with the following rules:
 1.  The first joint is connected to an existing avatar joint (“Hips” for example).
@@ -16,7 +16,7 @@ A _flow thread_ is a set of connected joints with at least one joint that compli
 ![Flow Thread](flowthread.png)
 
 ### Flow App
-After you ensure that you have the proper flow threads, run the [**Flow app**](https://github.com/highfidelity/hifi-content/blob/master/Utilities/HairFlow/flowApp.js) to enable flow for your avatar. 
+After you ensure that you have the proper flow threads, run the [**Flow app**](https://hifi-content.s3.amazonaws.com/luis/flowFiles/flowApp.js) to enable flow for your avatar. 
 >>>>> See [**this document**](https://docs.highfidelity.com/create-and-explore/all-about-scripting/run-scripts) for more information on how to run a script or app in High Fidelity.
 
 Below are details and descriptions of the Flow app's functionality that will help you control and manipulate your avatar's flow. 
