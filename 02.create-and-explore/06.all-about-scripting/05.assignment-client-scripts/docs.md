@@ -48,7 +48,7 @@ Script.update.connect(update);
  Once you've written and hosted your script, you need to add it to a domain, either your own or one where you have permissions to run an AC script.
 
 1.  In your browser, go to: **[http://localhost:40100](http://localhost:40100)**
-2.  From the homepage navigate to the **Scripts** page from the Content drop-down menu.
+ 2.  From the homepage, go to Content > Scripts.```
 ![](ac-script1.png)
 3. Under the **Persistent Scripts** section, press **+** then paste the URL to your script under **Script URL**. 
 ![](ac-script2.png)
