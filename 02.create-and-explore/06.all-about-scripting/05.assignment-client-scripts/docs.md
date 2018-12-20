@@ -45,7 +45,7 @@ Script.update.connect(update);
 ```
 
 ## How to Add an Assignment Client Script
-Once you've written and hosted your script, you need to add it to your domain, or a domain where you have permissions to run an Assignment Client script.
+ Once you've written and hosted your script, you need to add it to a domain, either your own or one where you have permissions to run an AC script.
 
 1.  In your browser, go to: **[http://localhost:40100](http://localhost:40100)**
 2.  From the homepage navigate to the **Scripts** page from the Content drop-down menu.
