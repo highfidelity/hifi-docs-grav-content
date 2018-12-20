@@ -10,7 +10,7 @@ Assignment Client (AC) scripts are scripts that run persistently in a domain and
 ## Assignment Client Scripts
  Assignment Client (AC) scripts can be run in your domain or any domain where you have the appropriate permissions. Because AC scripts run on an assignment client that executes separately from the Interface, the script will continue to run until you either remove the script from the domain or you shut down the domain (Sandbox) entirely. 
 
->>>>> These scripts require specific functionality  before they can access certain entities, luckily High Fidelity has a robust set of [APIs](https://docs.highfidelity.com/api-reference) to help you create your own AC scripts.
+ >>>>> AC scripts require specific functionality before they can access certain entities in the domain. High Fidelity has a robust set of [APIs](https://docs.highfidelity.com/api-reference) to help you create your own AC scripts.
 
 Below is an example of an Assignment Client script that counts the number of entities found in a domain using High Fidelity’s [EntityViewer API](https://docs.highfidelity.com/api-reference/namespaces/entityviewer).
 
