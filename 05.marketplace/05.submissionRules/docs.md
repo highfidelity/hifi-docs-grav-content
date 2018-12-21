@@ -73,7 +73,7 @@ Any content marketed as a version of an item that is meant to allow users to exp
 
 ### Art Submissions
 + Art assets uploaded are limited to 4K resolution.
-+ We allow only .png and .gif formats due to their lossless compression. Lossy compression file formats such as .jpg will not be accepted. 
++ We allow only lossless compression image formats, such as .png and .gif. Lossy compression file types such as .jpg will not be accepted. 
 
 #### Submission Standards for Specific Categories
 
