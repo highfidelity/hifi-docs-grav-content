@@ -24,8 +24,8 @@ Once you've created your 3D model, you need to add the item and its assets in th
 
 ### Add Your FBX File
 
-1. Export your file as an FBX file from your 3D modelling program. Do not export it as a default file type such as .mb or .blend. 
-2. If supported by your 3D modelling software, embed your textures into your FBX file to keep the process simpler.
+1. Export your file as an FBX file from your 3D modeling program. Do not export it as a default file type such as .mb or .blend. 
+2. If supported by your 3D modeling software, embed your textures into your FBX file to keep the process simpler.
 3. As a practice and to catch any errors, re-import your FBX back into a new scene and check that it still looks right. Look for things like missing textures or normals, and smoothing issues. You may need to tweak your export settings if the re-imported model does not look right.
 4. If your model could be re-imported without any issues, it is now ready to be uploaded to High Fidelity. Go to [https://highfidelity.com/marketplace/items/new](https://highfidelity.com/marketplace/items/new) to create a new item. If you're not logged in, you will be prompted to do so. Create a new Marketplace item or edit the one you have already created.
 5. Upload your new FBX file under "Assets". You can find this file in the uploaded files section. Click to copy the new Marketplace URL for the FBX file. If your item contains multiples files like scripts or textures, make sure you upload all of them. You can upload an entire directory using "Choose Folders", if required. ![](copy-fbx-url.PNG)
@@ -33,7 +33,7 @@ Once you've created your 3D model, you need to add the item and its assets in th
 ### Generate Your Item's JSON File
 
 1. In Interface, go to **Create** and click on the Model icon to Import your file into High Fidelity. Use the URL you copied in step 5. You can only do this in a domain where you have the permission to add an entity.
-2. Once your model appears before your avatar, check it and make any adjustments needed. Look for missing textures or normals, smoothing issues, issues with the scale of the model, and rotation problems. Make any changes in your 3D modelling software. Once your model looks as expected in High Fidelity, you are now ready to export your model data into a JSON file. Keep in mind that different types of software render models differently.
+2. Once your model appears before your avatar, check it and make any adjustments needed. Look for missing textures or normals, smoothing issues, issues with the scale of the model, and rotation problems. Make any changes in your 3D modeling software. Once your model looks as expected in High Fidelity, you are now ready to export your model data into a JSON file. Keep in mind that different types of software render models differently.
 3. In Interface, go to **Create** and select your model in the **Entity List**. Select all files associated with your item and click "Export Selection". This will save your item data as a JSON file. 
 4. This JSON file just contains information on how High Fidelity can access your item and its files, and needs to contain a reference to your item's location. Open your JSON file in a text editor and check if the variable `modelURL` contains your FBX file's Marketplace URL. If it doesn't, you can edit it and paste the correct URL. ![](model-json-url.PNG)
 5. In Interface, go to **Create** and click "Import Entities (.JSON)" to import your JSON file. Check if your item looks fine. 
