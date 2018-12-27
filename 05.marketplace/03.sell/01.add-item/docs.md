@@ -22,7 +22,7 @@ Once you've created an avatar, wearable or entity, you have the option to sell i
 
 Once you've created your 3D model, you need to add the item and its assets in the Marketplace.
 
-### Add Your FBX File
+ ### Prepare Your FBX File
 
 1. Export your file as an FBX file from your 3D modeling program. Do not export it as a default file type such as .mb or .blend. 
 2. If supported by your 3D modeling software, embed your textures into your FBX file to keep the process simpler.
