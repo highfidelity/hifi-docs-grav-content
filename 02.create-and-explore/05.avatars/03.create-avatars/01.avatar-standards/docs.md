@@ -33,7 +33,7 @@ The standard humanoid skeleton of your avatar should follow [HumanIK Skeleton](h
 
 High Fidelity avatars should match the following standard skeletal structure. Each of these joints can be animated.
 
-*__~__ indicates that a bone is optional.*
+
 
 >>>>>Finger #1 is not the metacarpal; instead, it is the first joint between the [proximal and intermediate](https://en.wikipedia.org/wiki/Finger#/media/File:Scheme_human_hand_bones-en.svg). 
 
