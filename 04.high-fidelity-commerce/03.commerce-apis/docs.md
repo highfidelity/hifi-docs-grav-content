@@ -7,7 +7,6 @@ taxonomy:
 
 *Learn how to enhance your commerce experience with scripts that use the Commerce API.*
 
-## Overview
 This page details how you can use the new Commerce APIs to transfer money and assets between users who aren't in-world, create a script to check a user's inventory, and more.  
 
 *  [Commerce APIs](#api)
