@@ -36,7 +36,7 @@ Some of the content you can create using these APIs are:
 * Vending Machines
 * Trading Apps
 
->>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: <ul><li>Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.<li>JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.<li>Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.</ul>
+>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: A) Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*; B) JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*; and C) Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
 
 ### Commerce APIs <a name="api"></a>
