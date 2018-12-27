@@ -7,17 +7,13 @@ taxonomy:
 
 *Learn how you can create a slot machine game in your domain.*
 
-## Overview
 This tutorial details how to create a slot machine game that pays out HFC in High Fidelity.
 
 Here is how your slot machine game might play when you complete this tutorial:
 
 ![](videos/slotMachine.mp4?resize=700)
 
->>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following:
-* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*.
-* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*.
-* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
+>>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: A) Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time *until Beta Release 81*; B) JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice *until Beta Release 81*; and C) Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
 ### Requirements and Glossary
 To create this content, you'll need:
