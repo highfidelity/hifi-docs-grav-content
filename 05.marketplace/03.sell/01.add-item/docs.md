@@ -40,13 +40,20 @@ Once you've created your 3D model, you need to add the item and its assets in th
 ### Generate Your Item's JSON File
 
 1. In Interface, go to **Create** and click on the Model icon to Import your file into High Fidelity. Use the URL you copied in step 6. You can only do this in a domain where you have the permission to add an entity.
+
 2. Once your model appears before your avatar, check it and make any adjustments needed. Look for missing textures or normals, smoothing issues, issues with the scale of the model, and rotation problems. Make any changes in your 3D modeling software. Once your model looks as expected in High Fidelity, you are now ready to export your model data into a JSON file. Keep in mind that different types of software render models differently.
+
 3. In Interface, go to **Create** and select your model in the **Entity List**. Select all files associated with your item and click "Export Selection". This will save your item data as a JSON file. 
+
 4. This JSON file just contains information on how High Fidelity can access your item and its files, and needs to contain a reference to your item's location. Open your JSON file in a text editor and check if the variable `modelURL` contains your FBX file's Marketplace URL. If it doesn't, you can edit it and paste the correct URL. ![](model-json-url.png)
+
 5. In Interface, go to **Create** and click "Import Entities (.JSON)" to import your JSON file. Check if your item looks fine. 
+
 6. Go to [https://highfidelity.com/marketplace](https://highfidelity.com/marketplace) to continue editing your item. Upload your JSON item under "Assets". Make sure it is the 'Root' file'. ![](select-root.png)
+
 7. Save your submission.
-8. If you wish to sell your 3D model on the Marketplace, be sure to fill out your metadata and click "Submit for Review" to be verified and certified on the Marketplace.
+
+If you wish to sell your 3D model on the Marketplace, be sure to fill out your metadata and click "Submit for Review" to be verified and certified on the Marketplace.
 
 ## Add Your Avatar
 
