@@ -10,10 +10,7 @@ taxonomy:
 ## Overview
 This page details how to create an entity that, when clicked, will prompt a user to send you 10 HFC.
 
->>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: 
-* Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time until Beta Release 81. 
-* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81. 
-* Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
+>>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and thus are subject to the following: A) Commerce APIs on the High Fidelity Metaverse may be modified or removed at any time until Beta Release 81; B) JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81; and C) Upon release of Beta 81, changes to the High Fidelity Commerce APIs will be subject to the standard API deprecation process.
 
 
 ### Requirements and Glossary
