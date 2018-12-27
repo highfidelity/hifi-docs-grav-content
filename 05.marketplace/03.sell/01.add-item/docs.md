@@ -7,7 +7,7 @@ taxonomy:
 Once you've created an avatar, wearable or entity, you have the option to sell it in the Marketplace. This guide walks you through the steps to upload it to the Marketplace so that you can start the process of having it reviewed and published. 
 
 + [Add Your 3D Model](#add-your-3d-model)
-  + [Prepare Your FBX File](#add-your-fbx-file)
+  + [Prepare Your FBX File](#prepare-your-fbx-file)
   + [Add Your 3D Model Assets](#add-your-3d-model-assets)
   + [Generate Your Item's JSON File](#generate-your-items-json-file)
 + [Add Your Avatar](#add-your-avatar)
