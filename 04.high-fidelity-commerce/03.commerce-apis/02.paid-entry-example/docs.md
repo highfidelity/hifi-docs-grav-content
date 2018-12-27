@@ -7,14 +7,9 @@ taxonomy:
 
 *Learn how you can charge users to access a part of your domain.*
 
-## Overview
 This tutorial details how you can charge users 10 HFC to access a part of your domain in the current server session.
 
->>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and are subject to the following: 
-* Commerce APIs may be modified or removed at any time until Beta Release 81.
-* JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81.
-* Upon release of Beta 81, changes to the Commerce APIs will be subject to the standard API deprecation process.
-
+>>>> Experimental API Notice: The High Fidelity Commerce APIs introduced in this document are **Experimental APIs** and are subject to the following: A) Commerce APIs may be modified or removed at any time until Beta Release 81; B) JavaScript Commerce APIs referenced in this document and related examples are subject to change or removal without notice until Beta Release 81; and C) Upon release of Beta 81, changes to the Commerce APIs will be subject to the standard API deprecation process.
 
 ### Requirements and Glossary
 To create this content, you'll need:
