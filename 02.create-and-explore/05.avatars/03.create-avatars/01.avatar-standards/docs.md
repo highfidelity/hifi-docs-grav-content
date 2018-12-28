@@ -33,7 +33,7 @@ The standard humanoid skeleton of your avatar should follow [HumanIK Skeleton](h
 
 High Fidelity avatars should match the following standard skeletal structure. Each of these joints can be animated.
 
-*__~__ indicates that a bone is optional.*
+
 
 >>>>>Finger #1 is not the metacarpal; instead, it is the first joint between the [proximal and intermediate](https://en.wikipedia.org/wiki/Finger#/media/File:Scheme_human_hand_bones-en.svg). 
 
@@ -41,11 +41,11 @@ High Fidelity avatars should match the following standard skeletal structure. Ea
     - LeftUpLeg
         - LeftLeg
             - LeftFoot
-                - LeftToe ~ 
+                - LeftToeBase 
     - RightUpLeg
         - RightLeg
             - RightFoot
-                - RightToe ~ 
+                - RightToeBase 
     - Spine
         - Spine1
             - Spine2
@@ -57,40 +57,40 @@ High Fidelity avatars should match the following standard skeletal structure. Ea
                     - LeftArm
                         - LeftForeArm
                             - LeftHand
-                                - LeftHandThumb1 ~ 
-                                    - LeftHandThumb2 ~ 
-                                        - LeftHandThumb3 ~ 
+                                - LeftHandThumb1 
+                                    - LeftHandThumb2 
+                                        - LeftHandThumb3 
                                 - LeftHandIndex1
                                     - LeftHandIndex2
                                         - LeftHandIndex3
-                                - LeftHandMiddle1 ~ 
-                                    - LeftHandMiddle2 ~ 
-                                        - LeftHandMiddle3 ~ 
-                                - LeftHandRing1 ~ 
-                                    - LeftHandRing2 ~ 
-                                        - LeftHandRing3 ~ 
-                                - LeftHandPinky1 ~ 
-                                    - LeftHandPinky2 ~ 
-                                        - LeftHandPinky3 ~ 
+                                - LeftHandMiddle1
+                                    - LeftHandMiddle2 
+                                        - LeftHandMiddle3
+                                - LeftHandRing1
+                                    - LeftHandRing2
+                                        - LeftHandRing3
+                                - LeftHandPinky1
+                                    - LeftHandPinky2
+                                        - LeftHandPinky3 
                 - RightShoulder
                     - RightArm
                         - RightForeArm
                             - RightHand
-                                - RightHandThumb1 ~ 
-                                    - RightHandThumb2 ~ 
-                                        - RightHandThumb3 ~ 
+                                - RightHandThumb1 
+                                    - RightHandThumb2 
+                                        - RightHandThumb3 
                                 - RightHandIndex1
                                     - RightHandIndex2
                                         - RightHandIndex3
-                                - RightHandMiddle1 ~ 
-                                    - RightHandMiddle2 ~ 
-                                        - RightHandMiddle3 ~ 
-                                - RightHandRing1 ~ 
-                                    - RightHandRing2 ~ 
-                                        - RightHandRing3 ~ 
-                                - RightHandPinky1 ~ 
-                                    - RightHandPinky2 ~ 
-                                        - RightHandPinky3 ~ 
+                                - RightHandMiddle1 
+                                    - RightHandMiddle2 
+                                        - RightHandMiddle3 
+                                - RightHandRing1 
+                                    - RightHandRing2 
+                                        - RightHandRing3 
+                                - RightHandPinky1 
+                                    - RightHandPinky2 
+                                        - RightHandPinky3 
 
 ### Flow Bones
 
@@ -135,6 +135,7 @@ High Fidelity avatars support a number of blendshapes for creating different fac
 **Basic Blendshapes**  
 - `EyeBlink_L`:  Blinking action for the left eye.
 - `EyeBlink_R`: Blicking action for the right eye.
+- `JawOpen`: Opening the Jaw.
 
 **Audio Blendshapes**  
 These blendshapes are used when you speak. 
