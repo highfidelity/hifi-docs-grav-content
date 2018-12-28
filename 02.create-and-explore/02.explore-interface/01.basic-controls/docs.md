@@ -25,7 +25,7 @@ This page will take you through the movement controls and other useful shortcuts
 ##### Mouse and Keyboard
 Use the following controls to move around and manipulate objects with a mouse and keyboard:
 
-| Movement  | Key | Alternate Key | 
+| Movement  | Key | Alternate Key |
 | ------------- | ------------- | ------------- |
 | Walk Forward | <kbd class="keyboard">W</kbd>  | <kbd class="keyboard">Up Arrow</kbd>  |
 | Walk Backward  | <kbd class="keyboard">S</kbd>  | <kbd class="keyboard">Down Arrow</kbd>  |
@@ -36,9 +36,11 @@ Use the following controls to move around and manipulate objects with a mouse an
 | Jump | <kbd class="keyboard">space</kbd> |   |
 | Fly | <kbd class="keyboard">space</kbd> (sustained for 2-3 seconds)  |   |
 | Fly Down | <kbd class="keyboard">C</kbd> |   |
+| Alternate Jump/Fly  | <kbd class="keyboard">PgUp</kbd> |   |
+| Alternate Jump/Fly Down | <kbd class="keyboard">PgDn</kbd> |   |
 <br>
 
-| Manipulation  | Key | Alternate Key | 
+| Manipulation  | Key | Alternate Key |
 | ------------- | ------------- | ------------- |
 | Far-Grab Dynamic Entity | Mouse Left-Click  |   |
 | Far-Grab Move Entity (x/z plane)  | Mouse Left-Click + Drag  |  |
