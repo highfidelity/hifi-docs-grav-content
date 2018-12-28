@@ -91,6 +91,8 @@ _this.clickDownOnEntity = function(entityID, event) {
 
 What we now have is a basic script that has defined what happens when the entity is clicked. The keyword `this` refers to the parent object currently in scope, in this case, our cube. We specifically use `clickDownOnEntity `, since this is a function defined in the [Entity Functions API](https://docs.highfidelity.com/api-reference/namespaces/entities) and will be recognized by High Fidelity when we click on our cube.
 
+**Note**: Only [client entity scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting/attach-entity-scripts/client-entity-scripts) on entities will respond to mouse and trigger events - [entity server scripts](https://docs.highfidelity.com/create-and-explore/all-about-scripting/attach-entity-scripts/server-entity-scripts) do not have visibility into controller-based actions.
+
 Now, what we need to do is specify exactly what happens when we click on our cube. Right now, the only thing that happens is that we’ll use the `print` function to write a statement. We’re going to do three things:
 
 - Create three variables with a random number generated for them
