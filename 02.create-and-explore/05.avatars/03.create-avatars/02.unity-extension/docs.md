@@ -12,8 +12,7 @@ High Fidelity supports only one standard type of rigging for avatars. This tool 
 You will need the following to use this tool: 
 + Unity (Minimum recommended version: 2017.4.17f1)
 + High Fidelity (v0.77.0 or higher)
-+ [High Fidelity Avatar Exporter for Unity](https://github.com/highfidelity/hifi/raw/65cc683f800b44afbdf970c9e4af96d6d3ec7714/tools/unity-avatar-exporter/avatarExporter.unitypackage)
-
++ [High Fidelity Avatar Exporter for Unity](https://github.com/highfidelity/hifi/raw/master/tools/unity-avatar-exporter/avatarExporter.unitypackage)
 
 ## Avatar Guidelines
 
@@ -35,7 +34,7 @@ Many external sites like TurboSquid and CGTrader provide avatars that you can us
 
 >>>>>You need to install the extension for each Unity project that you have. Keep in mind, however, that you can import and export multiple avatars in a single Unity project.  
 
-1. Download the [avatar exporter](https://github.com/highfidelity/hifi/raw/65cc683f800b44afbdf970c9e4af96d6d3ec7714/tools/unity-avatar-exporter/avatarExporter.unitypackage) from High Fidelity. 
+1. Download the [avatar exporter](https://github.com/highfidelity/hifi/raw/master/tools/unity-avatar-exporter/avatarExporter.unitypackage) from High Fidelity. 
 2. In Unity, open the Project window at the bottom.![](project-window.png)
 3. Right-click the Assets folder, then select Import Package > Custom Package. ![](import-package.png)
 4. Navigate to the `avatarExporter` package (with a .unitypackage extension). Click Open. You can also double-click the package on your computer to import it automatically.
@@ -54,7 +53,7 @@ Many external sites like TurboSquid and CGTrader provide avatars that you can us
 >>>>>Avatars in High Fidelity must also have a Chest bone. If your avatar does not have a chest bone, the avatar exporter attempts to map another existing bone to the Chest. If we can't find a suitable Chest bone and Humanoid didn't correctly map Chest, then you will get an error and need to manually add a Chest bone to your skeleton.
 5. If you made any changes, click Done. 
 6. Click on the FBX file in the Assets manager. ![](select-avatar-unity.png)
-7. Make sure that you have the [avatar exporter](#install-the-extension) installed. Open the High Fidelity menu in the top menu bar, then select Export New Avatar.
+7. Make sure that you have the [avatar exporter](#install-the-high-fidelity-avatar-exporter-for-unity) installed. Open the High Fidelity menu in the top menu bar, then select Export New Avatar.
 8. Give your avatar project a name. The default project location is your local user's `Documents\High Fidelity Projects` directory, which is created automatically for you. Though we recommend that you keep your avatars in this directory, you can change it to another location on your computer. ![](export-avatar.png)
 9. Click Export. 
 
