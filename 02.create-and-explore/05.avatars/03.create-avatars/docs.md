@@ -13,6 +13,8 @@ The steps involved in creating your avatar are:
 3. Fine tune your avatar using a tool such as Blender or Maya.
 4. Package the model in High Fidelity for use as an avatar.
 
+>>>>>You do not need to design an avatar using Adobe Fuse. You can also download avatars for use from other external sources such as TurboSquid or CGTrader. Once you get the avatar, you can proceed to step 2 where you rig and animate your avatar.  
+
 Check out this YouTube playlist for one way to create and customize your own avatar. Here, we use Adobe Fuse to create our avatar, Mixamo to rig our avatar automatically, and Blender to adjust the rendering on our avatar. We also have written instructions on the same process: 
 
 * [Create an Avatar with Fuse](fuse-tutorial)
