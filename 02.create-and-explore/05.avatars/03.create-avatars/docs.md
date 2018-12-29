@@ -8,7 +8,7 @@ taxonomy:
 
 The steps involved in creating your avatar are:
 
-1. Create an avatar with 3D character modeling tool such as Adobe Fuse. 
+1. Create an avatar with 3D character modeling tool such as Adobe Fuse. Alternatively, you can download an avatar for use from an external source such as TurboSquid or CGTrader.
 2. Rig and animate your avatar with an animation tool such as Mixamo.
 3. Fine tune your avatar using a tool such as Blender or Maya.
 4. Package the model in High Fidelity for use as an avatar.
