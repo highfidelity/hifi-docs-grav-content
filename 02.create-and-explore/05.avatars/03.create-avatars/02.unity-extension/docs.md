@@ -10,7 +10,7 @@ High Fidelity supports only one standard type of rigging for avatars. This tool 
 >>>>>The avatar exporter was written to improve the process of rigging and mapping the skeleton rig. This will not affect the animations or materials in your avatar. To adjust the animations or materials, you will need to use a 3D modelling tool such as Blender or Maya and make modifications to your avatar prior to using the avatar exporter in Unity.
 
 You will need the following to use this tool: 
-+ Unity (Minimum recommended version: 2017.4.17f1)
++ Unity (Recommended versions: 2017.4.17f1 - 2018.2.12f1)
 + High Fidelity (v0.77.0 or higher)
 + [High Fidelity Avatar Exporter for Unity](https://github.com/highfidelity/hifi/raw/master/tools/unity-avatar-exporter/avatarExporter.unitypackage)
 
