@@ -7,7 +7,7 @@ The High Fidelity Avatar Exporter for Unity (also known as the "avatar exporter"
 
 High Fidelity supports only one standard type of rigging for avatars. This tool can be used when your avatar is rigged differently from our standard. Keep in mind that this tool will only work for human-like avatars that have the same basic structure representing parts of the body, head, and limbs. 
 
->>>>>The avatar exporter was written to improve the process of rigging and mapping the skeleton rig. This will not affect the animations or materials in your avatar. To adjust the animations or materials, you will need to use a 3D modelling tool such as Blender or Maya and make modifications to your avatar prior to using the avatar exporter in Unity.
+>>>>>The avatar exporter was written to improve the process of rigging and mapping the skeleton rig. This will not affect the animations or materials in your avatar. To adjust the materials, you will need to use a 3D modelling tool such as Blender or Maya and make modifications to your avatar prior to using the avatar exporter in Unity.
 
 You will need the following to use this tool: 
 + Unity (Recommended versions: 2017.4.17f1 - 2018.2.12f1)
