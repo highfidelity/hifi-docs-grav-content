@@ -40,7 +40,18 @@ Items in the Marketplace will either be free, or will be priced at a certain amo
 ![](market-16.PNG)
 
 
+### Gift an Item 
 
+You can gift your Marketplace item to another user. 
+
+1. In Interface, pull up your HUD or Tablet and go to Inventory. 
+2. On your list of items, click the item you want to gift, such as the Fingerpaint app. Click the three dots on the side for more options, and select Gift. 
+3. You will see that you can gift your item to a connection, someone nearby, or send it as a coupon. ![](coupon.png)
+	* Click Connection and choose your recepient from the list of connections. You can add an optional message for them as well and submit. 
+	* Click Someone Nearby. Trigger (if you are in VR mode) or click (in Desktop mode) a user nearby to gift them your item. 
+	* Click Create Coupon to gift your item later. Keep in mind that a coupon can only be used as part of a script. Add an optional message, and submit. Now, copy the Authorization ID and Coupon ID to include both values in a script you use later. You can learn more about transferring items [here](../../high-fidelity-commerce/commerce-apis). ![](create-coupon.png) ![](item-transfer-auth.png)
+
+>>>>> Any item you gift will be removed from your Inventory. You will need to purchase the item to use it again. 
 
 
 
