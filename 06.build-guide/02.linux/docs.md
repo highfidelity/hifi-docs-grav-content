@@ -18,7 +18,7 @@ libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-de
 
 ## Ubuntu 16.04/18.04 Specific Build Guide
 
-### Ubantu 18.04 Only
+### Ubuntu 18.04 Only
 Add the universe repository. *This is not enabled by default on the server edition*
 ```bash
 sudo add-apt-repository universe
