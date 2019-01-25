@@ -16,11 +16,9 @@ Our docs run on a flat-file CMS called [Grav](https://getgrav.org). All of the p
 ## Edit an Existing File
 >>>>> The API documentation is generated using automated processes. At this time, these pages cannot be edited.  
 
-1. Go to the page you'd like to edit. 
-2. At the top of the page, click "Edit this page" next to the page's breadcrumbs. 
-3. You'll be directed to our GitHub repository where you can edit the markdown file. For more information about editing files in Markdown, see our [Markdown Guide](#markdown-guide). 
-4. You'll need a GitHub account to make edits. Once you're done making changes, create a pull request (PR) with your changes. 
-5. We will review your changes and approve them, or send them back for changes. 
+1. Go to our [GitHub repository](https://github.com/highfidelity/hifi-docs-grav-content) and locate the markdown file you want to edit. For more information about editing files in Markdown, see our [Markdown Guide](#markdown-guide). 
+2. You'll need a GitHub account to make edits. Once you're done making changes, create a pull request (PR) with your changes. 
+3. We will review your changes and approve them, or send them back for changes. 
 
 ## Create a New Page
 
