@@ -7,6 +7,8 @@ taxonomy:
 
 You can add a material entity to an object in your domain. A material entity contains specific material data that determines the texture and shading of an object. For example, if you want to create a castle in your domain, you need your walls to look like they're made of rough gray stone. You can do this by adding a castle wall material entity to your walls. 
 
+Before adding a material entity, make sure you have created a material using the [PBR Materials Guide](../../3d-models/pbr-materials-guide).
+
 **On This Page:**
 
 + [Generate a Material Entity](#generate-a-material-entity)
@@ -14,13 +16,9 @@ You can add a material entity to an object in your domain. A material entity con
 
 ## Generate a Material Entity
 
-To add a material to your object in High Fidelity, you need the material data specified in a .JSON file. You can generate this file when you create your material in an external tool of your choice such as Blender or Maya.
+To add a material to your object in High Fidelity, you need to specify the material data in a JSON file. At this time, we have no way to automatically generate a JSON file with another tool, and you will need to write your own JSON file.
 
->>>>>We are aware of the difficulties involved in converting your material data to a .JSON file and are working on making the process easier for our users. We recommend embedding your material data in your models as .fbx files if you are facing difficulties generating a .JSON file. 
-
-1. When you are finished creating your material in the tool of your choice (such as Blender or Maya), export your file as an .FBX file. 
-2. Convert your .FBX file to a .JSON file. You can do this by adding plugins to your modeling software or using other external tools available online. 
-3. Host your .JSON file online and copy the URL.
+>>>>>We are aware of the difficulties involved in converting your material data to a JSON file and are working on making the process easier for our users. In the meantime, we recommend embedding your material data in your models as .fbx files if you are facing difficulties generating a .JSON file. 
 
 This is what the .JSON file for a sample [castle wall material](https://hifi-public.s3.amazonaws.com/sam/MaterialExportGuide/MaterialEntities/MatOne/CastleWall/CastleWall.hfm.json) looks like:
 
@@ -51,9 +49,8 @@ Once you have your material entity .JSON file, you can add it to an object in Hi
 3. Go to the **Create** tab and click on the 'Material' icon to add a material entity. Enter the material's .JSON file URL when prompted. You will see the material entity represented as a small sphere. 
 4. Click and select the wall. Go to the 'Properties' tab and copy the parent ID under the 'Name' box. 
 5. Click and select the material entity. Go to the 'Properties' tab and paste the copied parent ID in the 'Parent' box. You will see the material applied to the wall. In this step, you are parenting or applying a material to an entity.
-6. You can also add the material entity in another way. Click and select the wall entity. Go to the 'Properties' tab and paste the JSON file URL in the 'Material URL' box. 
 
-   ![](material-entity.GIF)
+![](material-entity.GIF)
 
 **See Also**
 
