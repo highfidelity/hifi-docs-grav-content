@@ -7,12 +7,24 @@ taxonomy:
 This document outlines the standards you should follow when [creating your avatar](../). Your avatar uses bones to animate the character's limbs and define the scale variable of limbs. You can add custom bones to further adjust the avatar's shape. Customization of your avatar can be fine-tuned using blendshapes to animate the face and scripting to define advanced behaviors.
 
 **On This Page:**
+* [Glossary](#glossary)
 * [Reference Pose](#reference-pose)
 * [Skeleton](#skeleton)
 * [Flow Bones](#flow-bones)
 * [Look-at Vectors](#look-at-vectors)
 * [Blendshapes](#blendshapes)
 * [Other Considerations](#other-considerations)
+
+## Glossary
+As we delve deeper into creating custom avatars, we may use terminology that you are unfamiliar with. Here are some terms you might come across:
+
+* Avatar - A virtual representation of a person or NPC.
+* Mesh - The collection of 3D vertices and triangles for the avatar model. Without this, the avatar is invisible.
+* Bones - A component of a skeleton that defines a "limb" such as an arm, leg, etc. Each bone may be animated as a separate limb in your avatar.
+* Skeleton - A hierarchy of joints.
+* Rigging - The process of creating a skeleton of the avatar model.
+* Blendshapes - Variations of the topology that defines how the mesh is modified to create various "shapes".
+* FST file - The main avatar file, which contains information about the skeleton, blendshapes, FBX file and textures used by an avatar.
 
 
 ## Reference Pose

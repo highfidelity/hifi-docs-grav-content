@@ -19,10 +19,10 @@ You can download avatars for use from external sources such as TurboSquid or CGT
 
 Many external sites like TurboSquid and CGTrader provide avatars that you can use. You can use avatars downloaded from these sites according to their terms of use. However, many of these may not work in High Fidelity. Be sure to find an avatar that fits these guidelines: 
 
-* [Real-time models](https://blog.turbosquid.com/real-time-models/) (not rendered)
+* [Real-time models](https://blog.turbosquid.com/real-time-models/) (rigged for run-time, not rigged for render)
 * Rigged avatars
 >>>>>If your avatar is not rigged, you can use [Mixamo](../mixamo-tutorial) to rig it. If you use Mixamo, you do not necessarily need to use Unity and the avatar exporter. Because Mixamo already uses a skeleton that we support, you can use [our avatar packager](../create-avatars.html#package-your-avatar) to import your avatar into High Fidelity. 
-* Avatars in the FBX file format (we don't enforce a poly count limit, but we recommend using an avatar with a low poly count of around 10k)
+* Avatars in the FBX file format (we don't enforce a poly count limit, but we recommend using an avatar with a low poly count of around 40k)
 
 ## High Fidelity Avatar Exporter for Unity
 High Fidelity supports only one standard type of rigging for avatars. Because many avatars do not match this skeleton, we created the High Fidelity Avatar Exporter for Unity (also known as the "avatar exporter") to convert human-like avatars with a humanoid bone structure (body, head, and limbs). The avatar exporter also automatically packages your avatar for use in High Fidelity.
