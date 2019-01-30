@@ -4,32 +4,59 @@ taxonomy:
     category: docs
 ---
 
+There are two ways to create your own avatar: you can either create your own from scratch using 3D modeling tools such as Adobe Fuse, Mixamo, and Blender, or you can download an existing avatar from external sources such as TurboSquid or CGTrader. 
+
+>>>>>If you get an avatar from an external source such as TurboSquid or CGTrader, it is likely that the skeleton does not match our [avatar standards](./avatar-standards). To use these avatars with High Fidelity, use the [High Fidelity Avatar Exporter for Unity](../find-avatars) to correctly map the skeleton and package your avatar. 
+
+If you want to create an avatar from scratch, this page covers the steps needed to create, rig, and package your avatar. 
+
+**On This Page:**
+* [Create an Avatar from Scratch](#create-an-avatar-from-scratch)
+* [Package Your Avatar](#package-your-avatar)
+* [Community Tools for Avatars](#community-tools-for-avatars)
+
+## Create an Avatar from Scratch
+
 The steps involved in creating your avatar are:
 
-1. Create an avatar with 3D character modeling tool such as Adobe Fuse. 
+1. Create an avatar with 3D character modeling tool such as Adobe Fuse, Blender or Maya. 
 2. Rig and animate your avatar with an animation tool such as Mixamo.
 3. Fine tune your avatar using a tool such as Blender or Maya.
 4. Package the model in High Fidelity for use as an avatar.  
 
->>>>>You do not need to design an avatar using Adobe Fuse. You can also download avatars for use from other external sources such as TurboSquid or CGTrader. If you get an avatar from somewhere else, use the [High Fidelity Avatar Exporter for Unity](../find-avatars) to map the avatar's skeleton and package it for use with High Fidelity.
+Check out this YouTube playlist for one way to create and customize your own avatar. Here, we use Adobe Fuse to create our avatar, Mixamo to rig our avatar automatically, and Blender to adjust the rendering on our avatar. We also have written instructions on the same process: 
 
-**On This Page:**
-* [Glossary](#glossary)
-* [Community Tools for Avatars](#community-tools-for-avatars)
-* [Package Your Avatar](#package-your-avatar)
-* [YouTube Tutorial: Create Your Avatar](#youtube-tutorial)
+* [Create an Avatar with Fuse](../fuse-tutorial)
+* [Rig Your Avatar in Mixamo](../mixamo-tutorial)
+* [Modify Materials and Textures with Blender](../blender-tutorial)
 
-## Glossary
+[plugin:youtube](https://www.youtube.com/watch?v=6NfiH4rdVRM)
 
-As we delve deeper into creating custom avatars, we may use terminology that you are unfamiliar with. Here are some terms you might come across:
+## Package Your Avatar
 
-* Avatar - A virtual representation of a person or NPC.
-* Mesh - The collection of 3D vertices and triangles for the avatar model. Without this, the avatar is invisible.
-* Bones - A component of a skeleton that defines a "limb" such as an arm, leg, etc. Each bone may be animated as a separate limb in your avatar.
-* Skeleton - A hierarchy of joints.
-* Rigging - The process of creating a skeleton of the avatar model.
-* Blendshapes - Variations of the topology that defines how the mesh is modified to create various "shapes".
-* FST file - The main avatar file, which contains information about the skeleton, blendshapes, FBX file and textures used by an avatar.
+Once you've created your avatar, you need to create an FST file to accompany your FBX model. This process is called *packaging your avatar*. Once you've packaged your avatar, you need to [host it in the cloud](../host-avatar) or on our Marketplace before using it in High Fidelity.
+
+We've created the **Avatar Packager** to create an FST file for you. In addition, you can use the Avatar Packager to host your avatar on the Marketplace, edit an existing avatar package, and put it on. 
+
+To package your avatar using the Avatar Packager:
+
+1. In Interface, go to **Edit > Avatar Packager**. 
+2. In the Avatar Packager window that opens, click 'New Project'.
+3. In the Create Project window, fill in the following details:
+   * Name: The name you want for your avatar. 
+   * Project Location: The folder path where your avatar's files are stored. The Avatar Packager will create a new folder for your project at this location, which will include your FBX model, an FST file, and any scripts/textures in your avatar.
+   * Avatar Model: Your avatar's FBX file.
+   * Texture Folder: If your avatar has textures in a separate folder, specify the folder location. If your avatar's textures are embedded in the FBX, you do not need to specify anything. 
+4. Click 'Create'.
+
+At this point, you have successfully packaged your avatar. If you host your avatar on the cloud, you can close the Avatar Packager here and upload your FST file and FBX model to your cloud location. 
+
+If you want to sell your avatar on the Marketplace or upload it to High Fidelity's servers, continue using the Avatar Packager:
+ 
+1. Click 'Upload' to upload your avatar's files to High Fidelity's servers. If you make any changes to your custom avatar, you will need to update it through this packager to see your changes. To update, select your project and click 'Open Project' in step 1. Follow the same steps to update your avatar.
+2. Once your avatar is uploaded to the servers, click 'View in Inventory' to view your custom avatar. ![](inventory.png)
+3. Click 'Wear' to try out your new avatar! 
+4. You can view your avatar in the Marketplace. It is currently in Draft mode. You will need to submit it for review to make your avatar available for purchase on the Marketplace.
 
 ## Community Tools for Avatars
 As you're creating your avatar, remember that High Fidelity is an open-source project. Many of our community members have created plug-ins, add-ons, toolkits, skeletons and more to help you create content, including avatars. Here are a few for you to play around with.
@@ -49,47 +76,6 @@ Install it here: [https://github.com/Menithal/Blender-Hifi-Addon](https://github
 ---
 Have a project you've been working on that you'd like us to share? Let us know by editing this page in GitHub! 
 
-## Package Your Avatar
-
-No matter how you [created your custom avatar](../), you must convert your FBX model to FST before using that avatar in High Fidelity. This process is called *packaging your avatar*.
-
-If you wish to host your avatar on our Marketplace and make it available for purchase, you can use our [Avatar Packager](#use-the-avatar-packager). If you want to [host your avatar](../host-avatar) on a cloud service, you can [generate an FST file](#generate-an-fst-file) to upload to the service of your choice.
-
-### Generate an FST File
-High Fidelity provides a built-in tool that will create an FST file that will animate our avatar in VR. 
-
-1. In Interface, go to Edit > Package Model as fst.
-2. Click Browse and locate the FBX file for your avatar. Click OK. 
-3. The Set Model Properties window lets you map the FBX properties with everything that High Fidelity needs to know to create your avatar. If you use Mixamo, these will be set automatically for you and you do not need to make any changes. Here, you can also attach external textures or [scripts](../../../script/avatar-scripts) to your avatar. Click OK.
-4. Browse to the folder where you want to save your avatar files. We recommend creating a new directory for each avatar. 
-
-At this point, your avatar has been created! After hosting the avatar in the cloud or the Marketplace, [switch to it](../../../explore/personalize-experience/change-avatar#use-your-own-custom-avatar) and adopt your new look. ![](imported-avatar.png)
-
-### Use the Avatar Packager
-You can use our built-in Avatar Packager to upload, edit, and use your custom avatar and make it available for purchase on the Marketplace. 
-
-1. In Interface, go to **Edit > Avatar Packager**. 
-2. In the Avatar Packager window that opens, click 'New Project'.![](new-project.png)
-3. In the Create Project window, fill in the following details:
-   * Name: The name you want for your avatar. 
-   * Project Location: The folder path where your avatar's files are stored. 
-   * Avatar Model: Your avatar's FBX file.
-   * Texture Folder: If your avatar has textures in a separate folder, specify the folder location. If your avatar's textures are embedded in the FBX, you do not need to specify anything. ![](create-project.png)
-4. Click 'Create'.
-5. Click 'Upload' to upload your avatar's files to High Fidelity's servers. If you make any changes to your custom avatar, you will need to update it through this packager to see your changes. To update, select your project and click 'Open Project' in step 1. Follow the same steps to update your avatar.
-6. Once your avatar is uploaded to the servers, click 'View in Inventory' to view your custom avatar. ![](inventory.png)
-7. Click 'Wear' to try out your new avatar! 
-8. You can view your avatar in the Marketplace. It is currently in Draft mode. You will need to submit it for review to make your avatar available for purchase on the Marketplace.
-
-## YouTube Tutorial
-
-Check out this YouTube playlist for one way to create and customize your own avatar. Here, we use Adobe Fuse to create our avatar, Mixamo to rig our avatar automatically, and Blender to adjust the rendering on our avatar. We also have written instructions on the same process: 
-
-* [Create an Avatar with Fuse](../fuse-tutorial)
-* [Rig Your Avatar in Mixamo](../mixamo-tutorial)
-* [Modify Materials and Textures with Blender](../blender-tutorial)
-
-[plugin:youtube](https://www.youtube.com/watch?v=6NfiH4rdVRM)
 
 **See Also**
 

@@ -28,7 +28,6 @@ As soon as you click off the ball, the gravity will cause the ball to fall downw
 **See Also**
 
 + [Set Entity Behavior on Collision](../entity-behavior#set-entity-behavior-on-collision)
-
 + [Set How an Entity Moves in a Gravitational Field](../entity-physics#set-how-an-entity-moves-in-a-gravitational-field)
 
   
