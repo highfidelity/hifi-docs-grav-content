@@ -27,7 +27,7 @@ You can choose from the following entity types:
 * **LIGHT** entities are balls or beams of light that are used to add local lighting effects and spotlights to an area.
 * **TEXT** entities display text against a flat plane, similar to a whiteboard or blackboard.
 * **IMAGE** entities display an image from a specified URL.
-* **WEB** entities display a web page from a specified URL.
+* **WEB** entities display a web page from a specified URL. Only 20 web entities can run at the same time in a domain. 
 * **ZONE** entities are 3-dimensional areas that allow you to create a custom lighting environment.
 * **PARTICLE** entities create dynamic effects that are made of many small parts, such as smoke clouds or falling water.
 * [**MATERIAL**](../material-entity) entities modify the existing materials on other entities and avatars.

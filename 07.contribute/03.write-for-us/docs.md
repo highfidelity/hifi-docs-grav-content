@@ -45,7 +45,7 @@ title: %Your Page Name/Title %
 ```
 
 ## Markdown Guide
-All of High Fidelity's documentation is written in Markdown. _Markdown_ is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats, including HTML. 
+All of High Fidelity's documentation is written in Markdown. High Fidelity also uses Markdown to format item descriptions when you submit something to the Marketplace. _Markdown_ is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats, including HTML. 
 
 * [Headings](#headings)
 * [Emphasis](#emphasis)
@@ -59,7 +59,7 @@ All of High Fidelity's documentation is written in Markdown. _Markdown_ is a lig
 * [Code Samples](#code-samples)
 * [Horizontal Rules](#horizontal-rules)
 
->>>>>Using Markdown doesn't mean that you can't also use HTML. You can add HTML tags to any Markdown file. This is helpful if you prefer certain HTML tags to Markdown syntax, or if you need to use complex formatting that is not supported by Markdown.
+>>>>>When modifying our documentation, using Markdown doesn't mean that you can't also use HTML. You can add HTML tags to any Markdown file. This is helpful if you prefer certain HTML tags to Markdown syntax, or if you need to use complex formatting that is not supported by Markdown.
 
 #### Headings
 | Markdown Syntax  | HTML  | Output  |
@@ -123,7 +123,7 @@ The rendered output looks like this:
 > > The second paragraph is nested.
 
 #### Notices
-We have four different notices that are used in our documentation.  
+We have four different notices that are used in our documentation.  Please note that notices are not supported for Marketplace item descriptions.
 
 >>> \>>> Yellow messages are informational and preceded by three \> symbols.  
 
@@ -149,7 +149,7 @@ To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in
 | \+ First item<br />\+ Second item<br />\+ Third item<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Indented item<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Indented item<br />\+ Fourth item  | &lt;ol><br />&lt;li>First item&lt;/li><br />&lt;li>Second item&lt;/li><br />&lt;li>Third item<br />&lt;ol><br />&lt;li>Indented item&lt;/li><br />&lt;li>Indented item&lt;/li><br />&lt;/ol><br />&lt;/li><br />&lt;li>Fourth item&lt;/li><br />&lt;/ol>  | <ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul> |
 
 #### Tables
-Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.  
+Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.  Please note that tables are not available in Marketplace item descriptions.
 
 Markdown Syntax: 
 ```
@@ -214,3 +214,4 @@ If there is more than one markdown syntax listed, feel free to use any of them. 
 **See Also**
 
 + [Get Started with High Fidelity](../../explore/get-started)
++ [Add Items to the Marketplace](../../sell/add-item)
