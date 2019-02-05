@@ -112,8 +112,7 @@ In a server, it does not make sense to compile Interface.
 
 ## Ubuntu 16.04 Build Guide
 ### Install in Linux Server
-Deb packages of High Fidelity domain server and assignment client are stored on debian.highfidelity.com
-
+Install the deb packages of High Fidelity domain server and assignment client:
 ```
 sudo su -
 apt-get -y update

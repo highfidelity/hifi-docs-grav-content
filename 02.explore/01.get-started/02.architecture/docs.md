@@ -19,7 +19,7 @@ High Fidelity's architecture shows how different parts of the system work togeth
 High Fidelity's architecture consists of the following components that work together and send data to each other for your VR experience. 
 
 + The [High Fidelity Interface](#interface) runs your personal experience in the metaverse. With it, you can [visit VR worlds](../../travel), [meet people](../../socialize), [attend live events](../../socialize#attend-live-events) and more.
-+ The [Domain Server](#domain-server) is the server that hosts a domain. The domain server [hosts the content](../../../host/manage-your-domain-assets) in the domain, and manages the [domain-wide settings](../../../host/your-domain)configure-settings), such as audio spatialization, user permissions, and running scripts.
++ The [Domain Server](#domain-server) is the server that hosts a domain. The domain server [hosts the content](../../../host/manage-your-domain-assets) in the domain, and manages the [domain-wide settings](../../../host/your-domain/configure-settings), such as audio spatialization, user permissions, and running scripts.
 + The [Global Services](#global-services) connect all of the servers together. These services are maintained by High Fidelity so that you can sign in, move seamlessly between places, and [purchase items on the Marketplace](../../bank-and-shop).
 
 ![](overview.png)

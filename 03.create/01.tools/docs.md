@@ -6,7 +6,7 @@ taxonomy:
 
 To build and create things in High Fidelity, you need to become familiar with the tools available to you. We've created our own custom tools (including the Create app and Shapes app). In addition, you can use many external tools to fine-tune your creations. These tools can help you create anything from a cool avatar or a baseball hat, to a magic themed domain.
 
-**On This page:**
+**On This Page:**
 + [The Create App](#the-create-app)
     + [Entity List](#entity-list)
 + [Shapes: Create in VR](#shapes-create-in-vr)
@@ -25,6 +25,8 @@ Use the **Create** app to [create any type of entity](../entities/create-entitie
 + Edit entity properties, such as its [appearance](../entities/entity-appearance), [position](../entities/entity-appearance#move-an-entity), and [behavior](../entities/entity-behavior).
 + Expose a grid that assists you with the layout and placement of entities.
 + [Display the Entity List](#entity-list), which lists all the entities in the domain. When you're using an HMD, the entity list will be an additional tab in the Create app. In Desktop mode, the Entity List is its own window.
+
+>>> We have received reports that Interface may crash when using a laptop and external monitor with the Create app. If you experience the crash, we recommend that you either a) disable the Nahimic service on your laptop or b) always use the Create Tools on your primary monitor.
 
 ### Entity List
 
