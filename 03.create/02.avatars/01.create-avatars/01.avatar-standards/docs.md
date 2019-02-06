@@ -198,6 +198,12 @@ Content creators will have limited bandwidth on servers (read small print on any
 ### Textures
 We recommend that you try to keep total size of all the textures per avatar below 8 MB. They should be always smaller than 1024x1024, unless all the textures are in a single file. If using multiple texture files, then smaller the better, especially if you can make the textures smaller. Remember that you can get a lot more detail through roughness and normal mapping, than just textures. It is suggested that you keep Albedo at a smaller size than your roughness for best detail through light reflection instead of color variation.
 
+### Avatar Collision Hulls
+
+When you wear different avatars, you'll notice that each avatar has a different collision shape or hull. This hull controls the area where an entity collides on the avatar. 
+
+Depending on avatar design, the collision hulls can be very large or small. This occurs because High Fidelity analyzes the shape of the avatar's torso (from hips to head) and tries to find the best shape that encloses the mesh. For example, if your avatar has large hips or perhaps a fully extended tail, High Fidelity thinks that the tip of the tail is part of your hips, and makes a very large collision hull.   You can avoid this by adding skeleton joints to the tail. 
+
 **See Also**
 
 + [Create Your Own Avatar](../../create-avatars)
