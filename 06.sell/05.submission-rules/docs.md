@@ -70,6 +70,7 @@ Any content marketed as a version of an item that is meant to allow users to exp
 + Your scripts should have no linter errors, using the [High Fidelity linter](https://github.com/highfidelity/hifi/blob/master/.eslintrc.js).
 + All code should be self contained and all libraries need to be uploaded alongside your item. 
 + No minified code, it should be human readable and well documented. No obfuscated or unintelligible code is allowed.
++ Scripts that handle usernames should not be case sensitive. For example, the username 'HighFidelity' should be treated the same as 'highfidelity'.
 + You should destroy all entities created, unless explicitly stated in your description.
     + Use `Script.scriptEnding.connect()` described in our documentation [here](https://docs.highfidelity.com/api-reference/namespaces/script#.scriptEnding).
 
