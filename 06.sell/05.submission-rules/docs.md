@@ -50,6 +50,8 @@ Item titles must be properly capitalized and only include the item name.
 ### Licensing
 All Marketplace items are under the Proof of Provenance License (PoP License) v1.0. Custom or alternative licenses are not permitted, unless they are in conjunction with the PoP license, in which case the additional licenses need to be added to the description or as a comment in the code. You can read more about the PoP license [here](https://digitalassetregistry.com/PoP-License/v1/).
 
+Items may make use of Creative Commons, Open Source, and other free public content. However, the item cannot be primarily composed of such free content. The free content must be either substantially modified or complement content that is entirely your own.
+
 ### Copyright and Trademark
 Sellers must have absolute rights to the content submitted to the Marketplace. No material in violation of copyright law will be permitted.
 
