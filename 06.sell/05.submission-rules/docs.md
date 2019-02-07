@@ -78,7 +78,7 @@ Any content marketed as a version of an item that is meant to allow users to exp
 #### Submission Standards for Specific Categories
 
 ##### Avatars
-Avatars should not have more than 40k polygons.
+We understand that avatar poly counts will vary based on quality and complexity. However, please avoid exceeding 80k polygons.
 ##### Environments
 Environments need to be limited to 200 entities. Make sure your content is centered around the coordinates `{0,-10,0}`. So when your environment is loaded, users will be in the center.
 ##### Apps, Scripts, and Tools
