@@ -94,7 +94,7 @@ Your wearable must have a `parentJoint` described in your .JSON, as well as `use
     + Internal Geometry.
     + Overlapping faces (z-fighting).
     + Inverted face normals.
-+ Submeshes should be properly combined unless there is a technical reason for keeping them separate, such as animated meshes.
++ Submeshes should be properly combined, and vertices merged, unless there is a technical reason for keeping them separate, such as animated meshes.
 + Models that are not a single solid color must be cleanly UV unwrapped and textured.
     + Textures across multiple meshes should be atlassed where applicable.
 + The number of materials should be kept to a minimum. Most props and furnishings will only require one. Models colored using multiple materials of single colors will not be accepted
