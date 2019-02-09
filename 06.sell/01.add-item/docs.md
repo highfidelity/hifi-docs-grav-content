@@ -52,7 +52,7 @@ Follow these guidelines when uploading content to the Marketplace:
 
 1. Use only content which you are legally entitled to.
 2. Do not use a code obfuscator, our review team needs to be able to read your scripts.
-3. Audio should sound clean and be 32 bit, 48 khz WAV or MP3 files.
+3. Audio should sound clean and be 16-bit uncompressed WAV or MP3 files.
 4. Items may not have .js root files. You should either make an app to run scripts, or attach scripts to entities that will be rezzed through a .json file.
 5. All entities must have a name, even if they are invisible or simple primitives.
 6. Please use English in your package description, support text, and code comments.
