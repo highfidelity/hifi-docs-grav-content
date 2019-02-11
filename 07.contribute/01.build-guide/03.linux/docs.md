@@ -15,8 +15,6 @@ This guide will help you build High Fidelity if you’re using a Linux system. P
   + [Compile](#compile)
   + [Run the Software](#run-the-software)
   + [Troubleshoot Issues with Nvidia Driver Library Version](#troubleshoot-issues-with-nvidia-driver-library-version)
-+ [Ubuntu 16.04 Build Guide](#ubuntu-1604-build-guide)
-  + [Install in Linux Server](#install-in-linux-server)
 
 
 ## Install Qt5 Dependencies
@@ -46,7 +44,7 @@ sudo apt-get update
   ```bash
   sudo apt-get install libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack0 libjack-dev libxrandr-dev libudev-dev libssl-dev zlib1g-dev
   ```
-3. To compile interface on a server you must install:
+3. To compile Interface on a server (for the domain server and assignment clients) you must install:
   ```bash
   sudo apt -y install libpulse0 libnss3 libnspr4 libfontconfig1 libxcursor1 libxcomposite1 libxtst6 libxslt1.1
   ```
@@ -56,7 +54,7 @@ sudo apt-get update
   ```
 5. Install Python 3:
   ```bash
-  sudo apt-get install python3.6
+  sudo apt install python3.6
   ```
 ### Get Code and Checkout the Tag You Need
 
@@ -64,10 +62,10 @@ sudo apt-get update
 	```bash
 	git clone https://github.com/highfidelity/hifi.git
 	```
-2. To compile a RELEASE version checkout the tag you need getting a list of all tags:
+2. You need to compile the latest release version of High Fidelity. If you just clone the repo, you might have an unstable build. To compile a release version, checkout the tag you need getting a list of all tags:
 	```bash
 	git fetch -a
-	git tag
+	git tag | sort -V
 	```
 3. Then checkout last tag with:
 	```bash
@@ -75,22 +73,21 @@ sudo apt-get update
 	```
 ### Compile
 
-1. Create the build directory:
+1. Create the build directory (the following commands assume you're in the parent directory):
   ```bash
   mkdir -p hifi/build
   cd hifi/build
   ```
 2. Prepare makefiles:
-     ```bash
-     cmake 		 
-     -DQT_CMAKE_PREFIX_PATH=/usr/local/Qt5.10.1/5.10.1/gcc_64/lib/cmake..
-     ```
+```bash
+cmake -DQT_CMAKE_PREFIX_PATH=/usr/local/Qt5.10.1/5.10.1/gcc_64/lib/cmake..
+```
 
-3. Start compilation:
+3. Start compilation including Interface:
   ```bash
   make domain-server assignment-client interface
   ```
-4. To compile interface:
+4. To compile Interface:
 	```
 	make interface
 	```
@@ -98,6 +95,7 @@ In a server, it does not make sense to compile Interface.
 
 ### Run the Software
 
+Run the following commands in a distinct terminal window. 
 1. Run the domain server:
 	```bash
 	./domain-server/domain-server
@@ -151,45 +149,6 @@ Ubuntu 18.04 is facing issues with the NVidia driver library version. You can wo
 6. Run Interface
 
    `interface/interface`
-
-## Ubuntu 16.04 Build Guide
-
-### Install in Linux Server
-Deb packages of High Fidelity domain server and assignment client are stored on debian.highfidelity.com
-
-```
-sudo su -
-apt-get -y update
-apt-get install -y software-properties-common
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 15FF1AAE
-add-apt-repository "deb http://debian.highfidelity.com stable main"
-apt-get -y update
-apt-get install -y hifi-domain-server
-apt-get install -y hifi-assignment-client
-```
-
-When installing master/dev builds, the packages are slightly different and you just need to change the last 2 steps to:
-```
-apt-get install -y hifi-dev-domain-server
-apt-get install -y hifi-dev-assignment-client
-```
-
-Domain server and assignment clients should already be running. The processes are controlled via:
-```
-systemctl start hifi-domain-server
-systemctl stop hifi-domain-server
-```
-
-Once the machine is setup and processes are running, you should ensure that your firewall exposes port 40100 on TCP and all UDP ports. This will get your domain up and running and you could connect to it (for now) by using High Fidelity Interface and typing in the IP for the place name. (Further customizations can be done via http://IPAddress:40100).
-
-The server always depends on both hifi-domain-server and hifi-assignment-client running at the same time.
-As an additional step, you should ensure that your packages are automatically updated when a new version goes out. You could, for example, set the automatic update checks to happen every hour (though this could potentially result in the domain being unreachable for a whole hour by new clients when they are released - adjust the update checks accordingly).
-To do this you can modify /etc/crontab by adding the following lines
-```
-0 */1 * * * root apt-get update
-1 */1 * * * root apt-get install --only-upgrade -y hifi-domain-server
-2 */1 * * * root apt-get install --only-upgrade -y hifi-assignment-client
-```
 
 **See Also**
 

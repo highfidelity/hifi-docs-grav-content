@@ -80,6 +80,14 @@ We've included images where the fields corresponding to each supported PBR chann
 ![](material-values-b.jpg) 
 ![](material-textures-b.jpg)
 
+## Set Material Values in Maya
+
+Use the graphics below to set the right material values and textures in Maya. 
+
+![](material-values-m.jpg)
+
+![](material-textures-m.jpg)
+
 **See Also**
 
 + [Add a Material Entity](../../entities/material-entity)

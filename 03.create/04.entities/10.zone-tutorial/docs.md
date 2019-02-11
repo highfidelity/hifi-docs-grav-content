@@ -89,7 +89,11 @@ By default, a zone's shape is a cube, like its bounding box. You can change a zo
 + None: This will be the default shape (cube).
 + Box: The zone's shape will be a box. 
 + Sphere: The zone entity's shape will be a stretched sphere.
-+ Compound: The zone entity's shape will be a convex mesh. 
++ Ellipsoid: 
++ Cylinder: 
++ Compound: The zone entity's shape will be a convex mesh that is an FBX or OBJ file. These complex convex shapes must be composed of multiple shapes. We can’t check against hollowed out interior volumes. For example, if you want a zone shaped like a bowl, you’ll have to build it up from other elements. You can include elements like sides and a floor, especially if you want a user to experience the right collision properties when in the center of the bowl. Upload your FBX or OBJ file to a cloud server, copy the URL, and paste it in 'Compound Shape URL'. ![](zone-shapes.png)
+
+
 
 All shapes will be stretched to fit the zone entity's dimensions.
 
