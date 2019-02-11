@@ -26,7 +26,7 @@ You will need to upload all these files to the Marketplace.
 6. Click on the uploaded FBX file, and copy the Marketplace path including the unique hash for your avatar. Do not copy your folder name or the name of the file. ![](avatar-marketplace-path.png)
 7. Open your FST file in the text editor of your choice. (Note that the FST file is a local file on your computer)
 8. Locate the relative path references to the FBX file, textures directory, and script file(s). Replace these with the absolute path references of the uploaded content. ![](fst-absolute.png)
->>>>>Absolute paths are entire URL's that generally begin with 'https://' and contain a website address, such as 'https://website.com/resources/scripts/interact.js'. Relative paths drop the beginning of the path and only specify how to get to a resource from the location of the script. Relative paths usually look something like '/resources/scripts/interact.js'.
+>>>>>Absolute paths are entire URLs that generally begin with 'https://' and contain a website address, such as 'https://website.com/resources/scripts/interact.js'. Relative paths drop the beginning of the path and only specify how to get to a resource from the location of the script. Relative paths usually look something like '/resources/scripts/interact.js'.
 9. Return to your avatar submission on the Marketplace.
 10. In the 'Assets' section, click 'Choose Files' and navigate to where your avatar is saved on your computer. Select your updated FST file, click 'Open' and wait for it to upload.
 >>>>>Be sure you do not have any files or folders selected in the asset viewer so that the uploaded file goes to the right place. Any selected files and folders will be highlighted blue.
