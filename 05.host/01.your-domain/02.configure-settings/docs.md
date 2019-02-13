@@ -8,16 +8,16 @@ While you can use the sandbox as is, we recommend that you configure your domain
 **On This Page:**
 
 + [Configure Basic Server Settings](#configure-basic-server-settings)
-  + [Setup Wizard](#setup-wizard)
-  + [Domain Server Settings](#domain-server-settings)
-  + [View Your Logs](#view-your-logs)
+    + [Setup Wizard](#setup-wizard)
+    + [Domain Server Settings](#domain-server-settings)
+    + [View Your Logs](#view-your-logs)
 + [Add a Description For Your Domain](#add-a-description-for-your-domain)
 + [Change Your Content Settings](#change-your-content-settings)
-  + [Content Archives](#content-archives)
-  + [Upload Content](#upload-content)
-  + [Paths](#paths)
-  + [Scripts](#scripts)
-  + [Audio Enviroment](#audio-environment)
+    + [Content Archives](#content-archives)
+    + [Upload Content](#upload-content)
+    + [Paths](#paths)
+    + [Scripts](#scripts)
+    + [Audio Enviroment](#audio-environment)
 
 ## Configure Basic Server Settings
 You can configure your domain's basic server settings to control how your domain is accessed and the permissions granted to different types of users. To open your settings, do one of the following: 
@@ -53,7 +53,7 @@ Your logs lists the different events relevant to your High Fidelity domain. Thes
 1. Right-click the High Fidelity icon on your system tray or top menu bar. 
 2. Select 'View Logs'.
 
-A window pops-up showing your domain server's logs. 
+A window pops up showing your domain server's logs. 
 
 ## Add a Description For Your Domain
 

@@ -22,11 +22,11 @@ Scattering is composed of a "scattering value" and a "scattering map". By settin
 
 ## Add Scattering to an Avatar
 
-Add scattering to an avatar by adding the value and map to the avatar's FST file. 
+You can easily add scattering to an avatar by adding the value and map to the avatar's FST file. 
 
-1. [Create a custom avatar](../create-avatars).
+1. [Create a custom avatar](../create-avatars) and package it using the [Avatar Packager](../create-avatars#package-your-avatar).
 2. Create a scattering map for the subsurface scattering in Adobe Photoshop or its equivalent.
-3. [Package Your Avatar](../create-avatars#package-your-avatar) in High Fidelity.
+3. Open your avatar's FST file in a text editor of your choice.
 4. Add scattering information to the avatar's FST file. For example:
    ```json
    materialMap = { "body_mat": { "scattering": 1.0, "scatteringMap" : "![skinMap.jpg](http://.../skinMap.jpg)" } }

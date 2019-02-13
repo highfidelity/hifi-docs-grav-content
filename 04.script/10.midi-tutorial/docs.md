@@ -146,7 +146,7 @@ function onEventReceived(eventData){
 }
 ```
 
-Print the `eventData` in your `onEventReceived` function to see each controller and its output. This will tell you everything you need to know about how to route the right key, slider, knob, or button to to your intended Javascript functions.
+Print the `eventData` in your `onEventReceived` function to see each controller and its output. This will tell you everything you need to know about how to route the right key, slider, knob, or button to to your intended JavaScript functions.
 
 If you want to use to control something outside of High Fidelity, or to directly call a MIDI event to control something in Hifi, you can use the function:
 ```

@@ -5,25 +5,35 @@ taxonomy:
 
 ---
 
-Maintain your High Fidelity domain by clearing it of clutter from recently created entities. For example, you can maintain your domain by deleting all entities created in the last hour. This allows you to keep your domain clean and in a good state. 
+It is important that you keep your domain clean, and free of cluttered entities. You can do this with regular domain maintenance, where you clean your domain in intervals with an assignment client (AC) script. For example, you can write a script that deletes all entities that were created in a specified time (this is similar to "reverting" your domain to a backup at a specific time). Another maintenance method would be assigning the right permissions to users, so you can restrict who can edit your domain.
 
 **On This Page**
 
 + [Set Temporary Create Permissions](#set-temporary-create-permissions)
+
 + [Use an AC Script to Clean Your Domain](#use-an-ac-script-to-clean-your-domain)
+
+  
 
 ## Set Temporary Create Permissions
 
-You can [set different user permissions](../your-domain/secure-domain.html#set-user-permissions) for your domain. These permissions will determine the types of users that have the permission to edit your domain. When you set these permissions, ensure that you have locked your existing entities or set entity filters to prevent users from editing objects already present in your domain.
+You can maintain your domain by giving visiting users temporary create permissions. A user can create and edit entities which will be automatically deleted after a specific interval of time (such as an hour). This keeps your domain free of clutter and maintains your domain as is. 
 
-You can allow users visiting your domain to have temporary edit permissions without altering any existing entities. For example, you can host a virtual class on adding and editing a cube's properties. You can give the right permissions to the users in the class to follow and create their own cubes, and ensure that any changes are not permanent. 
 
-1. [Set user permissions](../your-domain/secure-domain.html#set-user-permissions) to 'rez temp'. This grants users edit permissions for the interval of time specified in the domain settings. 
-2. [Set entity specific permissions](../your-domain/secure-domain.html#set-entity-specific-permissions) (lock entities or set entity filters) to make sure that any visiting user cannot edit the existing entities in your domain. 
+To give a user temporary create permissions: 
+
+1. [Set user permissions](../your-domain/secure-domain#set-user-permissions) to 'rez temp'. This grants users create permissions for the interval of time specified in the domain settings. 
+
+2. [Set entity specific permissions](../your-domain/secure-domain#set-entity-specific-permissions) (lock entities or set entity filters) to make sure that any visiting user cannot edit the existing entities in your domain.
+
+For example, if you want to host a virtual class on adding and editing a cube's properties, you can:
+1. Set user permissions to 'rez temp' and set an interval of an hour. Any user attending your class can create and edit a cube entity in your domain. This cube entity will be deleted in an hour. 
+2. Lock all existing entities or set entity filters in your domain. This ensures that any visiting users cannot change or delete existing entities like your virtual blackboard or other classroom settings. 
+3. Once your class is completed, any entities created by other users will be automatically deleted. You won't have to find these entities and delete them yourself to bring your domain back to its previous state. 
 
 ## Use an AC Script to Clean Your Domain
 
-You can also maintain your domain using an [assignment client script](). 
+You can also maintain your domain using an [assignment client script](../../script/assignment-client-scripts). This script can contain the details of the entities that you want to keep unedited in your domain and delete the rest. You can configure your domain settings to run this script. 
 
 We've written an example assignment script that contains the list of entities in a domain that you don't want edited, and delete everything else. 
 
@@ -55,7 +65,6 @@ function cleanup() {
 
 }
 
-
 function initialization(deltaTime) {
   if (!initialized) {
     if(Entities.serversExist() && Entities.canRez()) {
@@ -77,3 +86,9 @@ Script.scriptEnding.connect(function(){
 });
 ```
 
+**See Also**
+
++ [Set User Permissions](../your-domain/secure-domain#set-user-permissions)
++ [Set Entity Specific Permissions](../your-domain/secure-domain#set-entity-specific-permissions)
++ [Assignment Client Script](../../script/assignment-client-scripts)
++ [Backup and Restore Your Domain](../backup-restore-domain)
