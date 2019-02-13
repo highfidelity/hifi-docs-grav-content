@@ -17,7 +17,7 @@ Currently, you can buy High Fidelity Coins (HFC) using [Ethereum](https://www.et
 To get HFC: 
 1. [Book an appointment](https://calendly.com/highfidelity) at the Bank of High Fidelity.
 2. At the time of your appointment, visit the [TradingRoom](https://hifi.place/TradingRoom) domain.
-3. We will provide you with a QR code to send the Bank of High Fidelity ETH. 
+3. We will provide you with a QR code that you can use to send ETH to the Bank of High Fidelity. 
 4. Once we receive the ETH amount you sent, we will send you the appropriate amount of HFC to your account based on the current exchange rate. This can take up to one business day. 
 
 You can also receive HFC from gifts from your friends or as prizes at events in High Fidelity.
