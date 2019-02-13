@@ -12,7 +12,7 @@ If you want to buy items in High Fidelity, head on over to the Marketplace, wher
 
 ## Buying High Fidelity Coin
 
-Currently, you can buy High Fidelity Coins (HFC) using [Ethereum](https://www.ethereum.org/), a blockchain app that trades ETH (Ether). The Bank of High Fidelity manages the currency and we gradually increase the number of coins in circulation as the economy grows. 100 HFC is equal to 1 USD.
+Currently, you can buy High Fidelity Coins (HFC) using [Ethereum](https://www.ethereum.org/), a blockchain app that trades ETH (Ether). The Bank of High Fidelity manages HFC and we gradually increase the number of coins in circulation as the economy grows. 100 HFC is equal to 1 USD.
 
 To get HFC: 
 1. [Book an appointment](https://calendly.com/highfidelity) at the Bank of High Fidelity.
