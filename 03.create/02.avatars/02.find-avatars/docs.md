@@ -47,7 +47,7 @@ You will need the following to use this tool:
 
 >>>>>You need to install the extension for each Unity project that you have. Keep in mind, however, that you can import and export multiple avatars in a single Unity project.  
 
-1. Download the [avatar exporter](https://github.com/highfidelity/hifi/raw/master/tools/unity-avatar-exporter/avatarExporter.unitypackage) from High Fidelity. 
+1. Download the [avatar exporter](https://github.com/highfidelity/hifi/raw/a9895a90e59c8678a13cdc70be31077bcfe9578b/tools/unity-avatar-exporter/avatarExporter.unitypackage) from High Fidelity. 
 2. In Unity, open the 'Project' window at the bottom.![](project-window.png)
 3. Right-click the 'Assets' folder, then select **Import Package > Custom Package**. ![](import-package.png)
 4. Navigate to the `avatarExporter` package (with a .unitypackage extension). Click 'Open'. You can also double-click the package on your computer to import it automatically.

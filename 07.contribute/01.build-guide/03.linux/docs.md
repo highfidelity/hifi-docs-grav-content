@@ -56,6 +56,7 @@ sudo apt-get update
 	```bash
 	sudo apt install python3.6
 	```
+    
 ### Get Code and Checkout the Tag You Need
 
 1. Clone this repository:
@@ -71,6 +72,7 @@ sudo apt-get update
 	```bash
 	git checkout tags/v0.71.0
 	```
+    
 ### Compile
 
 1. Create the build directory (the following commands assume you're in the parent directory):
