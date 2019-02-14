@@ -54,6 +54,12 @@ All materials in High Fidelity have the following channels that determine how th
 
 
 
+> > > > > 1. If you set transparency with a texture, the transparency (alpha) should be in the material’s albedo texture, as a PNG file with transparency and not as a separate transparency texture.
+> > > > > 2. High Fidelity’s renderer can draw two different kinds of transparency: "alpha" (255 graduates steps of transparency, no shading on surface, casts no shadows,) and "mask" (binary transparency, full shading of opaque surface, whole surface casts shadow.)
+> > > > > 3. To determine whether a texture is treated as a mask or as alpha, the engine looks for alpha values between 2% and 98%. An easy way to create a mask texture is to save your image as a PNG-8 since it only supports binary transparency, while PNG-24 supports a range of transparency levels.
+
+
+
 ## Sample Materials and Their Textures and Shading
 
 High Fidelity supports different types of materials. We've created sample objects with each material type. You can download each object from [this repository](https://github.com/highfidelity/hifi_tests/tree/master/assets/models/material_matrix_models/fbx/blender) on GitHub, or run [this script](https://raw.githubusercontent.com/highfidelity/hifi_tests/master/assets/models/material_matrix_models/material_matrix.js) in High Fidelity to upload all sample objects in your domain.
@@ -71,10 +77,16 @@ By default, any material property set with a texture will override a property se
 
 We've included images where the fields corresponding to each supported PBR channel in Blender are highlighted, along with details about which values and colors correspond to the range corresponding with that channel.  It should be noted that all of the Blender material properties below only relate to exported FBX format models. Models exported as OBJ or other formats do not have full PBR material support in High Fidelity yet.
 
+![](material-values-b.jpg) 
 ![](material-textures-b.jpg)
 
+## Set Material Values in Maya
 
-![](material-values-b.jpg)
+Use the graphics below to set the right material values and textures in Maya. 
+
+![](material-values-m.jpg)
+
+![](material-textures-m.jpg)
 
 **See Also**
 

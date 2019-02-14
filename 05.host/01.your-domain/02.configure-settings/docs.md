@@ -8,15 +8,16 @@ While you can use the sandbox as is, we recommend that you configure your domain
 **On This Page:**
 
 + [Configure Basic Server Settings](#configure-basic-server-settings)
-	+ [Setup Wizard](#setup-wizard)
-	+ [Domain Server Settings](#domain-server-settings)
+    + [Setup Wizard](#setup-wizard)
+    + [Domain Server Settings](#domain-server-settings)
+    + [View Your Logs](#view-your-logs)
 + [Add a Description For Your Domain](#add-a-description-for-your-domain)
 + [Change Your Content Settings](#change-your-content-settings)
-  + [Content Archives](#content-archives)
-  + [Upload Content](#upload-content)
-  + [Paths](#paths)
-  + [Scripts](#scripts)
-  + [Audio Enviroment](#audio-environment)
+    + [Content Archives](#content-archives)
+    + [Upload Content](#upload-content)
+    + [Paths](#paths)
+    + [Scripts](#scripts)
+    + [Audio Enviroment](#audio-environment)
 
 ## Configure Basic Server Settings
 You can configure your domain's basic server settings to control how your domain is accessed and the permissions granted to different types of users. To open your settings, do one of the following: 
@@ -43,7 +44,19 @@ For example, the 'Metaverse/Networking' section defines all of the network setti
 
 >>>>> If you modify your settings, you'll need to save and restart for the new settings to be reflected. You can do this by clicking 'Save' and then restarting your server by clicking 'Restart' once you're done with your modifications. This saves your settings and restarts your domain server.
 
+
+
+### View Your Logs
+
+Your logs lists the different events relevant to your High Fidelity domain. These can help you troubleshoot any issues with your domain and understand how the different parts of your domain communicate with each other. To view these:
+
+1. Right-click the High Fidelity icon on your system tray or top menu bar. 
+2. Select 'View Logs'.
+
+A window pops up showing your domain server's logs. 
+
 ## Add a Description For Your Domain
+
 1. Open your [domain settings](http://localhost:40100/settings/). 
 2. Under the Description section, click 'Advanced Settings' and add the following:
    1. Description: A description of your domain in less than 256 characters.
