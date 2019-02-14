@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-Enrich your High Fidelity experience by having 3D models in your domain with animations. For example, you can import the 3D model of a flag that appears to flutter with the wind.  
+Enrich your High Fidelity experience by having 3D models in your domain with animations. For example, you can import the 3D model of a flag that appears to flutter with the wind using this feature.  
 
 **On This Page:**
 
@@ -14,7 +14,7 @@ Enrich your High Fidelity experience by having 3D models in your domain with ani
 
 ## Prerequisites
 
-You need to be familiar with creating animations in 3D modeling tools such as Blender and Maya before going importing an animation into High Fidelity.
+You need to be familiar with creating animations in 3D modeling tools such as Blender and Maya before importing an animation into High Fidelity.
 
 ## Prepare a 3D Model Animation
 
@@ -31,16 +31,16 @@ Before you import an animation into High Fidelity, adjust some settings in the 3
 Once you complete uploading your animation's FBX file, you can import the 3D model and it's animation into High Fidelity.
 
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
-2. Click on the 'MODEL' icon and enter your 3D model's URL. This is different from your animation's URL.
+2. Click on the 'MODEL' icon and enter your 3D model's URL. If you have saved your 3D model's FBX file with the animation, the model's URL and the animation's URL will be the same. Otherwise, your animation is saved as a separate FBX file.
 3. In the 'Properties' tab, scroll down to 'Animation' and paste the animation's URL. ![](animation-prop.png)
 4. You can edit the following animation properties:
 
    | Property                                     | Description |
    | -------------------------------------------- | ----------- |
-   | Play Automatically | Enable this to play your animation automatically when uploaded. |
+   | Play Automatically | Enable this to play your animation automatically when a user loads a domain. |
    | Loop | Select this property to play your animation in a continuous loop. |
-   | Allow Transition | Enable this to let the animation move through space. This means that it won't only play rotationally, it will move through all three dimensions. |
-   | Hold | Select to hold your animation at a particular frame. |
+   | Allow Transition | Enable this to let the animation move through space. This means that the joints will not only rotate, but translate through three dimensions. |
+   | Hold | Select to pause your animation at a particular frame. |
    | Animation Frame | Enter the frame at which you want to pause or hold your animation. |
    | First Frame | This is the first frame from when your want your animation to start. |
    | Last Frame | This is the last frame where you want your animation to stop. It will not play beyond this specified frame. |

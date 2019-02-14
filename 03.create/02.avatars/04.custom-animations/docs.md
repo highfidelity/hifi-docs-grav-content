@@ -18,11 +18,12 @@ Avatars in High Fidelity use the built in standard set of animations by default.
 
 ## Prepare Your Custom Animation
 
-Before you replace the existing generic animations, you need to prepare your custom animation file. Some guidelines to keep in mind:
+Before you replace the existing standard animations, you need to prepare your custom animation file. Some guidelines to keep in mind:
 
 - Animations must have the High Fidelity standard joint names.
 - Animations must have the High Fidelity standard joint orientations (y down the bone).
 - Key frames must have key frames for every joint at the uniform interval of 30 frames per second.
+- Locomotion animation phase has the left ankle in passing position on the frame. Try to match this phase if you want your locomotion animation to blend with the default set.
 
 Once you create your animation:
 
@@ -31,24 +32,36 @@ Once you create your animation:
 
 ## Replace Standard Animations
 
+You can enrich your High Fidelity experience by making your avatar express customized animations. Do this by replacing the standard animations for your avatar. 
+
+We've listed the different ways you can do this:
+
++ [Override an Existing Animation](#override-an-existing-animation): This method uses scripts to override existing animations.
++ [Override a Role Animation](#override-a-role-animation): Use this method to replace standard animation roles in the animation JSON file. 
++ [Use the Animation Graph File](#use-the-animation-graph-file): Edit or create your own Animation Graph file. 
+
+> > > > > If you create a custom JSON file for your avatar's animations, you will not inherit any updates made to the standard animations' JSON file. You can perform a text merge to the latest version at any time.
+
 ### Override an Existing Animation
 
-This method uses [scripting](../../../script) and the [MyAvatar](../../../api-reference/namespaces/myavatar) namespace to override an existing animation. We've listed the methods  you can use to replace the existing animations on your avatar. 
+This method uses [scripting](../../../script) and the [MyAvatar](../../../api-reference/namespaces/myavatar) namespace to override an existing animation. We've listed the methods you can use to replace the standard animations on your avatar. 
 
 | Method | Description |
 | -------- | ------------ |
-| [`MyAvatar.overrideAnimation`](../../../api-reference/namespaces/myavatar#.overrideAnimation)| This method can be used to play any animation on the current avatar. It will move smoothly from the current pose to the starting frame of the custom animation. |
-| [`AnimationCache.prefetch`](../../../api-reference/namespaces/animationcache#.prefetch)| This method fetches a resource. You can use to fetch a custom animation hosted on a cloud server. |
+| [`MyAvatar.overrideAnimation`](../../../api-reference/namespaces/myavatar#.overrideAnimation)| This method can be used to play any animation on the current avatar. It will move smoothly from the current pose to the starting frame of the custom animation. For example, if your avatar is waving, this script will stop your avatar waving and play the custom animation provided. |
+| [`AnimationCache.prefetch`](../../../api-reference/namespaces/animationcache#.prefetch)| This method fetches a resource. You can use this to fetch a custom animation you've hosted on a cloud server. |
 | [`MyAvatar.restoreAnimation`](../../../api-reference/namespaces/myavatar#.restoreAnimation)| This method stops the override function from playing any custom animation. Your avatar will go back to playing the standard animations. |
 
->>>>> This process to replace an existing animatoin will take complete control of all avatar joints. Inverse Kinematics of the hands and head of HMD users will be disabled. 
+>>>>> This process to replace an existing animation will take complete control of all avatar joints. Inverse Kinematics of the hands and head of HMD users will be disabled. 
 
 ### Override a Role Animation
 
-All existing animations are defined by a set of animation roles. An animation role like a trigger based on the type of input device you are using. Each animation role maps to an action the avatar can perform. This exists by default in the avatar animations JSON file. For example, if you are using hand controllers and you fully squeeze your right hand over it, your avatar will perform a gesture where its right hand is grasped close. 
+All existing animations are defined by a set of animation roles. An animation role is like a trigger based on the type of input device you are using. Each animation role maps to an action the avatar can perform. This exists by default in the avatar animations JSON file. For example, if you are using hand controllers and you fully squeeze your right hand over it, your avatar will perform a gesture where its right hand is grasped close. 
 
 1. Use [`MyAvatar.getAnimationRoles`](../../../api-reference/namespaces/myavatar#.getAnimationRoles) to view the list of roles for the current avatar. 
 2. You can replace the animation for each role with a custom animation (FBX file) using [`MyAvatar.overrideRoleAnimation`](../../../api-reference/namespaces/myavatar#.overrideRoleAnimation).
+
+We've listed _some_ animation roles and their description. Animation roles are frequently updated. We recommend using `MyAvatar.getAnimationRoles` to get the latest animation roles being used. The standard animation FBX files for these roles can be found in the High Fidelity source code repository on [github](https://github.com/highfidelity/hifi/tree/master/interface/resources/avatar/animations).
 
 | Animation Roles | Description |
 | ----------------- | ------------- |
@@ -70,18 +83,6 @@ All existing animations are defined by a set of animation roles. An animation ro
 | `leftIndexPointAndThumbRaiseClosed` |   Simultaneous thumbs up and point gesture, with trigger squeezed.|
 | `idleStand` |   Standing still, not talking.|
 | `idleTalk` |   Standing still, but avatar is talking.|
-| `walkFwdShort` |   Walking forward at 0.5 m/s.|
-| `walkFwdNormal` |   Walking forward at 1.5 m/s.|
-| `walkFwdRun` |   Walking forward at 4.5 m/s.|
-| `idleToWalkFwd` |  Short transition from standing idle to walking forward.|
-| `walkBwdShort` | Walking backward at 0.6 m/s.|
-| `walkBwdNormal` | Walking backward at 1.45 m/s.|
-| `turnLeft` | Standing turning in place animation.|
-| `turnRight` | Standing turning in place animation.|
-| `strafeLeftShort` | Sidestep at 0.2 m/s.|
-| `strafeLeftNormal` | Sidestep at 0.65 m/s.|
-| `strafeRightShort` | Sidestep at 0.2 m/s.|
-| `strafeRightNormal` | Sidestep at 0.65 m/s.|
 | `fly` | Flying idle.|
 | `takeoffStand` | Standing jump takeoff.|
 | `takeoffRun` | Running jump takeoff.|
@@ -95,15 +96,15 @@ All existing animations are defined by a set of animation roles. An animation ro
 | `landStand` | Standing land.|
 | `landRun` | Running land.|
 
-The standard animation FBX files for these roles can be found in the High Fidelity source code repository on [github](https://github.com/highfidelity/hifi/tree/master/interface/resources/avatar/animations).
+
 
 ### Use the Animation Graph File
 
 When you wear an avatar in High Fidelity, the animation system must blend and layer a series of animations from FBX files as well as perform Inverse Kinematics on the joints to best match the head and hand sensors. 
 
-The way these animations are blended is not hard coded. A data file called the Animation Graph file, specifies exactly which animations to play and how they are blended. It also determines the order of operations, so that operations like Inverse Kinematics occur after the rest of the body has been animated by traditional means. By default, every avatar uses the same Animation Graph file.  However, advanced users and content creators can specify their own Animation Graph file.
+These animations are blended using a JSON data file. The data file is called the Animation Graph file, and it specifies exactly which animations to play and how they are blended. It also determines the order of operations, so that operations like Inverse Kinematics occur after the rest of the body has been animated by traditional means. This JSON file contains a hierarchical tree of nodes called the [AnimNode System](#understanding-the-animnode-system)
 
-This JSON file contains a hierarchical tree of nodes called the [AnimNode System](#understanding-the-animnode-system)
+By default, every avatar uses the same Animation Graph file.  However, advanced users and content creators can specify their own Animation Graph file.
 
 To replace the standard animations: 
 
@@ -132,32 +133,26 @@ OR
 
 #### Understanding the AnimNode System
 
-The AnimNode system defines how an avatar moves is described in the Animation Graph JSON file. 
+The AnimNode system defines how an avatar moves and is described in the Animation Graph JSON file. 
 
-The movement of an avatar is determined by a complex blend of procedural animation, pre-recorded animation clips, and inverse kinematics. This blend is calculated every frame to ensure that the avatar body follows physics and controller input as rapidly as possible. It must handle animation for desktop users, HMD users, and users wearing a full set of HTC Vive trackers. It must be configured on the fly as sensors are added and removed from the system. It should also be open to extensions so unique animations and avatar configurations are possible.
+The movement of an avatar is determined by a complex blend of procedural animation, pre-recorded animation clips, and inverse kinematics. This blend is calculated at every frame to ensure that the avatar body follows physics and controller input as rapidly as possible. It must handle animation for desktop users, HMD users, and users wearing a full set of HTC Vive trackers. It must be configured on the fly as sensors are added and removed from the system. It should also be open to extensions so unique animations and avatar configurations are possible. These functionalities are handled by the AnimNode system. 
 
-These are handled by the AnimNode system. We've listed some features of the system:
+We've listed some features of the system:
 
 + The AnimNode system is a graph of nodes. 
 + Some nodes are output only, such as pre-recorded animation clips.
 + Other nodes produce output by processing nodes below it in the graph and blending the results together. 
 + By manipulating the node hierarchy, certain animation actions will occur before or after other animation actions. 
 + The node parameters can be dynamically changed at runtime. This flexibility is necessary to achieve good visual results.
-+ The system is in the Animation Graph JSON file and is loaded during avatar initialization. We provide a default avatar-animation.json, however, this graph can be overridden. 
-
-The AnimNode system sits in between high level avatar code, such as MyAvatar and Rig, and the rendering engine.  The result of the AnimNode evaluation is sent directly to the renderer.
-
-The high level avatar code controls the AnimNode system through a key-value map called the AnimVarientMap, also known as animVars.  Each key is a string, and each value is a basic type, such as a float or vector.
-
-By dynamically changing the animVars, the avatar code controls the animation system.
++ The system is in the default Animation Graph JSON file and is loaded during avatar initialization. 
 
 ##### Key Concepts
 
-The AnimNode system operates like an expression parse tree.  For example the following expression: 4 + 3 * 7 - (5 / (3 + 4)) + 6, can be represented by the following parse tree.
+The AnimNode system operates like an expression parse tree.  For example the following expression: `4 + 3 * 7 - (5 / (3 + 4)) + 6`, can be represented by the following parse tree.
 
 ![](animnode.jpg)
 
-This parse tree can then be evaluated at runtime to compute the actual value. In this tree, the leaf nodes are values and interior nodes are operations that combine two or more sub-trees and produce a new value. The tree is evaluated until there is a single value remaining, which should be the result of the entire expression: 30.2957142. 
+This parse tree can then be evaluated at runtime to compute the actual value. In this tree, the leaf nodes are values and interior nodes are operations that combine two or more sub-trees and produce a new value. The tree is evaluated until there is a single value remaining, which should be the result of the entire expression: `30.2957142`. 
 
 In the expression case, the output value of each node is a floating point number, and operations can be implemented simply by evaluating each sub-tree, and then combining them with an arithmetic operation, such as addition or multiplication.
 
@@ -167,5 +162,6 @@ The AnimNode system works on a similar concept.  Except the value of each node c
 
 **See Also**
 
++ [Avatar Standards Guide](../create-avatars/avatar-standards)
 + [API Reference: MyAvatar](../../../api-reference/namespaces/myavatar)
 + [Script](../../../script)
