@@ -20,8 +20,8 @@ Avatars in High Fidelity use the built in standard set of animations by default.
 
 Before you replace the existing standard animations, you need to prepare your custom animation file. Some guidelines to keep in mind:
 
-- Animations must have the High Fidelity standard joint names.
-- Animations must have the High Fidelity standard joint orientations (y down the bone).
+- Animations must have the [High Fidelity standard joint names](../create-avatars/avatar-standards).
+- Animations must have the [High Fidelity standard joint orientations](../create-avatars/avatar-standards) (y down the bone).
 - Key frames must have key frames for every joint at the uniform interval of 30 frames per second.
 - Locomotion animation phase has the left ankle in passing position on the frame. Try to match this phase if you want your locomotion animation to blend with the default set.
 
@@ -49,7 +49,7 @@ This method uses [scripting](../../../script) and the [MyAvatar](../../../api-re
 | Method | Description |
 | -------- | ------------ |
 | [`MyAvatar.overrideAnimation`](../../../api-reference/namespaces/myavatar#.overrideAnimation)| This method can be used to play any animation on the current avatar. It will move smoothly from the current pose to the starting frame of the custom animation. For example, if your avatar is waving, this script will stop your avatar waving and play the custom animation provided. |
-| [`AnimationCache.prefetch`](../../../api-reference/namespaces/animationcache#.prefetch)| This method fetches a resource. You can use this to fetch a custom animation you've hosted on a cloud server. |
+| [`AnimationCache.prefetch`](../../../api-reference/namespaces/animationcache#.prefetch)| This method fetches a resource. You can use this to fetch a custom animation you've hosted on a cloud server. If you do not prefetch your animations before playing them, you might see a t-pose appear briefly as the animation is downloaded. |
 | [`MyAvatar.restoreAnimation`](../../../api-reference/namespaces/myavatar#.restoreAnimation)| This method stops the override function from playing any custom animation. Your avatar will go back to playing the standard animations. |
 
 >>>>> This process to replace an existing animation will take complete control of all avatar joints. Inverse Kinematics of the hands and head of HMD users will be disabled. 
@@ -61,41 +61,52 @@ All existing animations are defined by a set of animation roles. An animation ro
 1. Use [`MyAvatar.getAnimationRoles`](../../../api-reference/namespaces/myavatar#.getAnimationRoles) to view the list of roles for the current avatar. 
 2. You can replace the animation for each role with a custom animation (FBX file) using [`MyAvatar.overrideRoleAnimation`](../../../api-reference/namespaces/myavatar#.overrideRoleAnimation).
 
-We've listed _some_ animation roles and their description. Animation roles are frequently updated. We recommend using `MyAvatar.getAnimationRoles` to get the latest animation roles being used. The standard animation FBX files for these roles can be found in the High Fidelity source code repository on [github](https://github.com/highfidelity/hifi/tree/master/interface/resources/avatar/animations).
+We've listed the animation roles and their description. Animation roles are frequently updated. We recommend using `MyAvatar.getAnimationRoles` to get the latest animation roles being used. The standard animation FBX files for these roles can be found in the High Fidelity source code repository on [github](https://github.com/highfidelity/hifi/tree/master/interface/resources/avatar/animations).
 
-| Animation Roles | Description |
-| ----------------- | ------------- |
-| `rightHandGraspOpen`| When hand controller trigger is not squeezed. |
-| `rightHandGraspClosed` | When hand controller trigger is fully squeezed. |
-| `rightIndexPointOpen` |   Point gesture.|
-| `rightIndexPointClosed` |   Point gesture with trigger squeezed.|
-| `rightThumbRaiseOpen` |   Thumbs up gesture. |
-| `rightThumbRaiseClosed` |   Thumbs up gesture with trigger squeezed.|
-| `rightIndexPointAndThumbRaiseOpen` |   Simultaneous thumbs up and point gesture.|
-| `rightIndexPointAndThumbRaiseClosed` |   Simultaneous thumbs up and point gesture, with trigger squeezed.|
-| `leftHandGraspOpen` |   When hand controller trigger is not squeezed.|
-| `leftHandGraspClosed` |   When hand controller trigger is fully squeezed.|
-| `leftIndexPointOpen` |   Point gesture.|
-| `leftIndexPointClosed` |   Point gesture with trigger squeezed.|
-| `leftThumbRaiseOpen` |   Thumbs up gesture.|
-| `leftThumbRaiseClosed` |   Thumbs up gesture with trigger squeezed.|
-| `leftIndexPointAndThumbRaiseOpen` |   Simultaneous thumbs up and point gesture.|
-| `leftIndexPointAndThumbRaiseClosed` |   Simultaneous thumbs up and point gesture, with trigger squeezed.|
-| `idleStand` |   Standing still, not talking.|
-| `idleTalk` |   Standing still, but avatar is talking.|
-| `fly` | Flying idle.|
-| `takeoffStand` | Standing jump takeoff.|
-| `takeoffRun` | Running jump takeoff.|
-| `inAirStandPreApex` | Standing jump in air on the way upward towards the jump apex.|
-| `inAirStandApex` | Standing jump in air at apex of the jump.|
-| `inAirStandPostApex` | Standing jump in air on the downward arc of the jump.|
-| `inAirRunPreApex` | Running jump in air on the way upward towards the jump apex.|
-| `inAirRunApex`| Running jump in air at apex of the jump.|
-| `inAirRunPostApex` | Running jump in air on the downward arc of the jump.|
-| `landStandImpact` | Standing land.|
-| `landStand` | Standing land.|
-| `landRun` | Running land.|
-
+| **ANIMATION ROLES**   | **DESCRIPTION** |
+| ---------------------------------- | ------------------------------ |
+| rightHandGraspOpen  | When hand controller trigger is not squeezed.|
+| rightHandGraspClosed               | When hand controller trigger is fully squeezed.              |
+| rightIndexPointOpen                | Point gesture.                                               |
+| rightIndexPointClosed              | Point gesture with trigger squeezed.                         |
+| rightThumbRaiseOpen                | Thumbs up gesture.                                           |
+| rightThumbRaiseClosed              | Thumbs up gesture with trigger squeezed.                     |
+| rightIndexPointAndThumbRaiseOpen   | Simultaneous thumbs up and point gesture.                    |
+| rightIndexPointAndThumbRaiseClosed | Simultaneous thumbs up and point gesture, with trigger squeezed. |
+| leftHandGraspOpen                  | When hand controller trigger is not squeezed.                |
+| leftHandGraspClosed                | When hand controller trigger is fully squeezed.              |
+| leftIndexPointOpen                 | Point gesture.                  |
+| leftIndexPointClosed      | Point gesture with trigger squeezed.     |
+| leftThumbRaiseOpen                                           | Thumbs up gesture.                                           |
+| leftThumbRaiseClosed                                         | Thumbs up gesture with trigger squeezed.                     |
+| leftIndexPointAndThumbRaiseOpen                              | Simultaneous thumbs up and point gesture.                    |
+| leftIndexPointAndThumbRaiseClosed                            | Simultaneous thumbs up and point gesture, with trigger squeezed. |
+| idleStand                                                    | Standing still, not talking.                                 |
+| idleTalk                                                     | Standing still, but avatar is talking.                       |
+| walkFwdShort_c,                                             | Walking forward at 0.5 m/s.                                  |
+| walkFwdNormal_c, walkFwdFast_c                              | Walking forward at 1.8 m/s. Walking forward at 2.3 m/s.      |
+| walkFwdJog_c, walkFwdRun_c                                   | Walking forward at 3.2 m/s. Walking forward at 4.5 m/s.      |
+| idleToWalkFwd, idleSettle                                    | Short transition from standing idle to walking forward.Transition from walk to idle. |
+| walkBwdShort_c                                               | Walking backward at 0.6 m/s.                                 |
+| walkBwdFast_c, jogBwd_c, runBwd_c                            | Walking backward at 1.6 m/s. Jog backward at 2.3 m/s Jog backward at 3.1 m/s |
+| turnLeft                                                     | Standing turning in place animation.                         |
+| turnRight                                                    | Standing turning in place animation.                         |
+| strafeLeftShortStep_c                                        | Sidestep at 0.1 m/s.                                         |
+| strafeLeftStep_c, strafeLeftWalk_c, strafeLeftWalkFast_c, strafeLeftJog_c | Sidestep at 0.5 m/s. Side walk at 1.0 m/s. Side walk at 2.6 m/s. Side jog at 3.0 m/s |
+| strafeRightShortStep_c, strafeRightStep_c                    | Sidestep at 0.1 m/s. Sidestep at 0.5 m/s                     |
+| strafeRightWalk_c, strafeRightFast_c, strafeRightJog_c, stepLeftShort_c, stepLeft_c, strafeLeftAnim_c, stepRightShort_c, stepRight_c, strafeRightAnim_c | Side walk at 1 m/s. Sidewalk at 2.6 m/s Side jog at 3 m/s.HMD step left at 0 m/s HMD step left at 0.5 m/s HMD strafe left at 2.5 m/sHMD step right at 0 m/s HMD step right at 0.5 m/s HMD strafe right at 2.5 m/s |
+| fly                                                          | Flying idle.                                                 |
+| takeoffStand                                                 | Standing jump takeoff.                                       |
+| TAKEOFFRUN                                                   | Running jump takeoff.                                        |
+| inAirStandPreApex                                            | Standing jump in air on the way upward towards the jump apex. |
+| inAirStandApex                                               | Standing jump in air at apex of the jump.                    |
+| inAirStandPostApex                                           | Standing jump in air on the downward arc of the jump.        |
+| inAirRunPreApex                                              | Running jump in air on the way upward towards the jump apex. |
+| inAirRunApex                                                 | Running jump in air at apex of the jump.                     |
+| inAirRunPostApex | Running jump in air on the downward arc of the jump. |
+| landStandImpact  | Standing land.                                       |
+| landStand        | Standing land.                                       |
+| LANDRUN          | Running land.                                        |
 
 
 ### Use the Animation Graph File
