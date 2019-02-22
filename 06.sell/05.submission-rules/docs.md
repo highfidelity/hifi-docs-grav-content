@@ -50,6 +50,8 @@ Item titles must be properly capitalized and only include the item name.
 ### Licensing
 All Marketplace items are under the Proof of Provenance License (PoP License) v1.0. Custom or alternative licenses are not permitted, unless they are in conjunction with the PoP license, in which case the additional licenses need to be added to the description or as a comment in the code. You can read more about the PoP license [here](https://digitalassetregistry.com/PoP-License/v1/).
 
+Items may make use of Creative Commons, Open Source, and other free public content. However, the item cannot be primarily composed of such free content. The free content must be either substantially modified or complement content that is entirely your own.
+
 ### Copyright and Trademark
 Sellers must have absolute rights to the content submitted to the Marketplace. No material in violation of copyright law will be permitted.
 
@@ -68,6 +70,7 @@ Any content marketed as a version of an item that is meant to allow users to exp
 + Your scripts should have no linter errors, using the [High Fidelity linter](https://github.com/highfidelity/hifi/blob/master/.eslintrc.js).
 + All code should be self contained and all libraries need to be uploaded alongside your item. 
 + No minified code, it should be human readable and well documented. No obfuscated or unintelligible code is allowed.
++ Scripts that handle usernames should not be case sensitive. For example, the username 'HighFidelity' should be treated the same as 'highfidelity'.
 + You should destroy all entities created, unless explicitly stated in your description.
     + Use `Script.scriptEnding.connect()` described in our documentation [here](https://docs.highfidelity.com/api-reference/namespaces/script#.scriptEnding).
 
@@ -78,7 +81,7 @@ Any content marketed as a version of an item that is meant to allow users to exp
 #### Submission Standards for Specific Categories
 
 ##### Avatars
-Avatars should not have more than 40k polygons.
+We understand that avatar poly counts will vary based on quality and complexity. However, please avoid exceeding 80k polygons.
 ##### Environments
 Environments need to be limited to 200 entities. Make sure your content is centered around the coordinates `{0,-10,0}`. So when your environment is loaded, users will be in the center.
 ##### Apps, Scripts, and Tools
@@ -91,7 +94,7 @@ Your wearable must have a `parentJoint` described in your .JSON, as well as `use
     + Internal Geometry.
     + Overlapping faces (z-fighting).
     + Inverted face normals.
-+ Submeshes should be properly combined unless there is a technical reason for keeping them separate, such as animated meshes.
++ Submeshes should be properly combined, and vertices merged, unless there is a technical reason for keeping them separate, such as animated meshes.
 + Models that are not a single solid color must be cleanly UV unwrapped and textured.
     + Textures across multiple meshes should be atlassed where applicable.
 + The number of materials should be kept to a minimum. Most props and furnishings will only require one. Models colored using multiple materials of single colors will not be accepted

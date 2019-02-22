@@ -35,15 +35,25 @@ You can easily add scattering to an avatar by adding the value and map to the av
 
 Here's an example of the scattering effect. The left image has no scattering and the right image has scattering. You can see the red diffuse reflection along the shadow line.
 
-| ![](no-scattering.jpg) | ![](scattering.jpg) |
-| ---------------------- | -------------------|
-|  No Scattering         |  Scattering         |
+<table style="border: solid 0px;">
+    <tr>
+        <td><img src="../../user/pages/03.create/02.avatars/08.scattering-tutorial/no-scattering.jpg" style="margin:auto;"></td>
+        <td><img src="../../user/pages/03.create/02.avatars/08.scattering-tutorial/scattering.jpg" style="margin:auto;"></td>
+    </tr>
+    <tr>
+        <td style="text-align:center; border: solid 0px;">No Scattering</td>
+        <td style="text-align:center; border: solid 0px;">Scattering</td>
+    </tr>
+</table>
 
-Here are the scattering skin maps for this avatar. 
-| ![](skin-map.jpg)| ![](skin-map-2.jpg)|
-|------------------| ------------------ |
-| | |
+Here are the scattering skin maps for this avatar.   
 
+<table>
+    <tr>
+        <td width="50%"><img src="../../user/pages/03.create/02.avatars/08.scattering-tutorial/skin-map.jpg" style="margin:auto;"></td>
+        <td><img src="../../user/pages/03.create/02.avatars/08.scattering-tutorial/skin-map-2.jpg" style="display: block; margin:auto;"></td>
+    </tr>
+</table>
 
 You can also check out the following avatars that have scattering effects:
 

@@ -10,7 +10,6 @@ It is important that you keep your domain clean, and free of cluttered entities.
 **On This Page**
 
 + [Set Temporary Create Permissions](#set-temporary-create-permissions)
-
 + [Use an AC Script to Clean Your Domain](#use-an-ac-script-to-clean-your-domain)
 
   
@@ -23,7 +22,6 @@ You can maintain your domain by giving visiting users temporary create permissio
 To give a user temporary create permissions: 
 
 1. [Set user permissions](../your-domain/secure-domain#set-user-permissions) to 'rez temp'. This grants users create permissions for the interval of time specified in the domain settings. 
-
 2. [Set entity specific permissions](../your-domain/secure-domain#set-entity-specific-permissions) (lock entities or set entity filters) to make sure that any visiting user cannot edit the existing entities in your domain.
 
 For example, if you want to host a virtual class on adding and editing a cube's properties, you can:

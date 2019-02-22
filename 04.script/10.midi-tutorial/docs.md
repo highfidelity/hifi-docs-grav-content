@@ -8,7 +8,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol (with electrical conne
 
 We created a MIDI class (with the help of one of our community members, Brainstormer) that can be used to control your environment in High Fidelity. For example, we used MIDI to control lighting in a domain for a music show. 
 
-> > > > > Currently, we support the MIDI class only on Windows. 
+>>>>> Currently, we support the MIDI class only on Windows. 
 
 
 **On This Page:**
@@ -26,9 +26,22 @@ Every time you move a lever, rotate a knob, press/release a key, or push down a 
 
 Each byte in this message describes a different type's value. 
 
-| 00000000 | 0vvvvvvv | 0nnnnnnn | 1sss | cccc |
-| -------- | -------- | -------- | ---- | ---- |
-|| v = velocity | n = notes | s = status | c = channel|
+<table>
+    <tr>
+        <td>00000000</td>
+        <td>0vvvvvvv</td>
+        <td>0nnnnnnn</td>
+        <td>1sss</td>
+        <td>cccc</td>
+    </tr>
+</table>
+
+Where: 
+
+* v = velocity
+* n = notes
+* s = status
+* c = channel
 
 The number in the higher order bit (the first number) denotes whether it is a command (1) or data (0). The rest of the numbers determine the value of the type. This means that the velocity and note can represent 128 unique values (1+2+4+8+16+32+64), status can represent 8 unique values, and channel can represent 16 values. 
 

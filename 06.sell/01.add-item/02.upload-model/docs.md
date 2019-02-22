@@ -33,6 +33,8 @@ If your model could be re-imported without any issues, it is now ready to be upl
 5. If your 3D model contains only an FBX file, click 'Choose Files' and navigate to where your 3D model has been saved on your computer. Upload your FBX file. If your 3D model contains multiple files like scripts or textures, click 'Choose Folder' and navigate to where your 3D model has been saved on your computer. Upload all related folders, including your FBX file. 
 6. Click your uploaded FBX file and copy the new Marketplace URL for the FBX file. ![](copy-fbx-url.png)
 
+At this time, we recommend that you test your item using the [Marketplace Item Tester](../../../create/tools#marketplace-item-tester). If your model re-imports into High Fidelity without any issues, it is now ready to be uploaded to the Marketplace.
+
 ### Generate Your Item's JSON File
 
 1. In Interface, pull up your tablet or HUD and select **Create**.

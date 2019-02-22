@@ -78,10 +78,7 @@ You can now add the modified Flow script to your avatar's FST file to see your w
 ## Add an Avatar Script
 In order to [attach a script to your avatar](../../../../script/avatar-scripts), you must modify your avatar's FST file to include the path where your script lives. There are two ways to update your FST file:
 1.  You can manually add a line to the FST file telling the avatar where to find the script file using `script = [FLOW SCRIPT URL HERE]`.![addScript1](addscript.PNG)
-2. You can also use our [Package Model tool](../../create-avatars#generate-an-fst-file) to add your avatar script.  
-    a. Create a folder in the path of your avatar that includes the script.    
-    b. In the interface, go to Edit > 'Package Model as .fst'.  
-    c. Select the path in the "Script Directory" section of the Package Model tool.![addscript2](addscript2.PNG)
+2. Use the [Avatar Packager](../../create-avatars#package-your-avatar) to add your avatar script.
 
 When packaging your model, the tool will iterate through the directory and add each script to the FST file. Now, you can upload the folder structure to the Marketplace or to your preferred hosting service.
 
