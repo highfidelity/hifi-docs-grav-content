@@ -15,7 +15,7 @@ If you want to buy items in High Fidelity, head on over to the Marketplace, wher
 Currently, you can buy High Fidelity Coins (HFC) using [Ethereum](https://www.ethereum.org/), a blockchain app that trades ETH (Ether). The Bank of High Fidelity manages HFC and we gradually increase the number of coins in circulation as the economy grows. 100 HFC is equal to 1 USD.
 
 To get HFC: 
-1. [Book an appointment](https://calendly.com/highfidelity) at the Bank of High Fidelity.
+1. [Book an appointment](https://meetings.hubspot.com/highfidelity/high-fidelity-bank-appointment ) at the Bank of High Fidelity.
 2. At the time of your appointment, visit the [TradingRoom](https://hifi.place/TradingRoom) domain.
 3. We will provide you with a QR code that you can use to send ETH to the Bank of High Fidelity. 
 4. Once we receive the ETH amount you sent, we will send you the appropriate amount of HFC to your account based on the current exchange rate. This can take up to one business day. 
@@ -49,3 +49,4 @@ The Inventory app provides an interface to manage your transactions, purchases, 
 + [Send HFC to Others](../socialize#send-hfc-to-others)
 + [Send Purchased Items to Others](../socialize#send-purchased-items-to-others)
 + [Sell Items on the Marketplace](../../sell)
+
