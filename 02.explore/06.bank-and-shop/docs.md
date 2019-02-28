@@ -39,13 +39,20 @@ You can locate all items that you purchase in the **Inventory** App.
 
 The Inventory app provides an interface to manage your transactions, purchases, and HFC. From the Inventory app, you can: 
 
-* View your recent purchases, sales, gifts and other transaction history
-* Change avatars, put on wearables and install/update apps
-* [Send HFC to your friends or anyone nearby](../socialize#send-hfc-to-others)
+* View your recent purchases, sales, gifts and other transaction history.
+* Change avatars, put on wearables and install/update apps.
+* [Send HFC to your friends or anyone nearby](../socialize#send-hfc-to-others).
 
 ![](inventory-app.png)
 
+>>>>> High Fidelity stores your Inventory key in the following locations. You can use this key to access your Inventory at any time. 
+**Windows:** `c:/Users/<you>/AppData/Roaming/High Fidelity/Interface/<your_user_name>.hifikey`
+**OS X:** `/Users/<you>/Library/Application Support/High Fidelity/Interface/<your_user_name>.hifikey`
+
+
+
 **See Also**
+
 + [Send HFC to Others](../socialize#send-hfc-to-others)
 + [Send Purchased Items to Others](../socialize#send-purchased-items-to-others)
 + [Sell Items on the Marketplace](../../sell)
