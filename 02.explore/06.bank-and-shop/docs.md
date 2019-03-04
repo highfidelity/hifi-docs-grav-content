@@ -45,7 +45,7 @@ The Inventory app provides an interface to manage your transactions, purchases, 
 
 ![](inventory-app.png)
 
->>>>> High Fidelity stores your Inventory key in the following locations. You can use this key to access your Inventory at any time. 
+>>>>> High Fidelity stores your Inventory key in the following locations. 
 **Windows:** `c:/Users/<you>/AppData/Roaming/High Fidelity/Interface/<your_user_name>.hifikey`
 **OS X:** `/Users/<you>/Library/Application Support/High Fidelity/Interface/<your_user_name>.hifikey`
 

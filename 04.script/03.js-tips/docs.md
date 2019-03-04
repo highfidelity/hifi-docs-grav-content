@@ -13,6 +13,7 @@ High Fidelity's robust [JavaScript API](../../api-reference) provides the tools 
   + [Get the Direction Your Avatar is Facing](#get-the-direction-your-avatar-is-facing)
   + [Make an Entity Appear Before Your Avatar](#make-an-entity-appear-before-your-avatar)
 + [Include External JS and JSON Files](#include-external-js-and-json-files)
++ [Equip an Item](#equip-an-item)
 
 ## Compute 3D Math Operations 
 
@@ -153,6 +154,20 @@ When you use the `require` method, you are making any function or object exporte
 
 >>>>> We recommend using relative paths in our development so that you can easily move content without having to update absolute paths. However, in JSON files, you have to use absolute paths (e.g. in the event of a marketplace upload).
 
+
+## Equip an Item
+Equipping an item means that an avatar can grab and hold an entity without pressing the grab button or trigger continously. For example, you could equip a paint brush to your avatar's hand and drop it only when you're done painting. 
+
+You can equip an item using a script:
+
+```javascript
+Messages.sendLocalMessage('Hifi-Hand-Grab', JSON.stringify({hand: 'XXX', entityID: 'YYY'})); \\ where XXX is either the left or right hand and YYY is entityID to equip
+```
+
+To drop the entity from your avatar's hand:
+```javascript
+Messages.sendLocalMessage('Hifi-Hand-Drop', 'XXX'); \\ where XXX is either the left or right hand
+```
 
 **See Also**
 
