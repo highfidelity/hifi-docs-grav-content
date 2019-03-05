@@ -4,20 +4,20 @@ taxonomy:
     category: docs
 ---
 
-Depending on your requirements, you can host your domain on your local machine or on cloud servers. We recommend hosting on cloud servers such as Digital Ocean and Amazon EC2 if you want to open your domain to many visitors. 
+Depending on your requirements, you can host your domain on your local machine or on cloud servers. We recommend hosting on cloud servers such as DigitalOcean and Amazon EC2 if you want to open your domain to many visitors. 
 
 **On This Page**
 
-+ [Host Your Domain on Digital Ocean](#host-your-domain-on-digital-ocean)
++ [Host Your Domain on DigitalOcean](#host-your-domain-on-digitalocean)
 
-## Host Your Domain on Digital Ocean
+## Host Your Domain on DigitalOcean
 
 High Fidelity has partnered with DigitalOcean to provide hosting options based on your requirements. 
 
 + [Host with DigitalOcean](#host-with-digitalocean)
 + [Configure Your Domain Settings](#configure-your-domain-settings)
 
-### Host with Digital Ocean
+### Host with DigitalOcean
 
 1. Log in or sign up with your High Fidelity username and password on [https://highfidelity.com](https://highfidelity.com).
 2. Hover over your username to see the various menu options. Click **Cloud Domains**. You can also go to [https://highfidelity.com/user/cloud_domains](https://highfidelity.com/user/cloud_domains). ![](cloud-domains.png)
