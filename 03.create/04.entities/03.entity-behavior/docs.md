@@ -64,9 +64,26 @@ You can clone your entity to create other entities with the same properties as y
 | --------------------------------- | ------------------------------------------------------------ |
 | Cloneable                         | Your entity can be cloned. You can change the Clone settings to manipulate your cloned entity's behavior. |
 | *Cloneable:* Clone Lifetime       | Select this option to set how long (in seconds) your clone will exist. |
-| *Cloneable:* Clone Limit          | Select to set a limit to how many clones you can create.     |
+| *Cloneable:* Clone Limit          | Select to set a limit to how many clones you can create. If you don't want to have a limit, set the value to '0'. |
 | *Cloneable:* Clone Dynamic Entity | Select to make the clone entity a dynamic entity.            |
 | *Cloneable:* Clone Avatar Entity  | Select to specify if a cloned entity is created as an avatar entity. An avatar entity doesn't exist in the Entity Server. Instead, it is specific to a user's Interface client. For instance, say a user comes to visit the coffee shop in your domain. The user grabs a coffee cup that's been cloned. Once the user is done visiting, the cloned entity leaves with their avatar, ensuring there isn't any clutter left behind. This feature ensures that your entity is cloned locally for each avatar. |
+
+> > > > > A user does not need create permissions to clone an entity or edit an unlocked entity.
+
+To make entities cloneable in your domain (this can only be done with unlocked entities):
+
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. Select the entity of your choice in the 'Entity List' window. 
+3. Go to the 'Properties' tab, scroll down, and check 'Cloneable'.
+
+Keep in mind that any user can now clone the entities that are cloneable. If you don't want any users to clone your entity or any entities in your domain, you can
+
+1. [Lock any entities](../../../host/your-domain/secure-domain#lock-an-entity-in-your-domain) you don't want cloned. 
+2. [Deny lock-unlock permissions](../../../host/your-domain/secure-domain#set-user-permissions) to the users of your choice. 
+
+OR
+
+1. [Set entity filters](../../../host/your-domain/secure-domain#set-an-entity-filter) to prevent users from editing entities in your domain.
 
 ## Set an Entity to Cast a Shadow
 
