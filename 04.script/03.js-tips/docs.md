@@ -5,6 +5,8 @@ taxonomy:
 ---
 High Fidelity's robust [JavaScript API](../../api-reference) provides the tools for you to build great content and user experiences in VR. We've compiled some advanced JavaScript tips you can use while scripting for High Fidelity. 
 
+You can use the [Scripting Console in Interface](../get-started-with-scripting#scripting-console) to try out the examples on this page. 
+
 **On This Page:**
 
 + [Compute 3D Math Operations](#compute-3d-math-operations)
@@ -36,6 +38,8 @@ High Fidelity uses a 3D Cartesian coordinate system where the position vector of
 To get your avatar's current position, use the [MyAvatar](../../api-reference/namespaces/myavatar) namespace. MyAvatar contains properties with information related to your avatar. Use the position property, `MyAvatar.position`, which returns an object. 
 
 In the following example, we are using the JSON.stringify method to convert the JavaScript object (returned by `MyAvatar.position`) to a data string that can be sent over the server.
+
+You can try this out using the scripting console in Interface. 
 
 ```javascript
 JSON.stringify(MyAvatar.position);

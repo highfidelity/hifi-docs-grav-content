@@ -27,17 +27,41 @@ In High Fidelity, you can establish a connection with someone else by shaking ha
 
 Once you make a connection with someone, they will appear under Connections in the [**People** app](#the-people-app). You will also appear on their list of connections. You will be able to see where they are in the metaverse, and you can travel to them at any time. 
 
-To mark a connection as a friend, check the box next to their name in the People app. ![](make-connection.png)
+To mark a connection as a friend, check the box next to their name in the People app. You can make yourself exclusively available to Friends only using the People app. ![](make-connection.png)
 
 ### The People App
 
 The People app provides a set of tools that help users manage their interactions with people in the metaverse. It gives you a list of the people nearby (in the same domain as you), and gives you easy access to all of your connections. From the People app, you can: 
 
-* Change your availability
-* Toggle your visibility between friends, connections, and the entire community
-* Set the master volume for the domain you're in
-* Teleport directly to a friend's location
 ![](people-nearby.png)
+| Feature          | Description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+| Profile Picture  | This is where your profile picture will be visible. Click on the image to view your profile. You can change this image on our [website](https://highfidelity.com/). |
+| Display Name     | You can change your display name at any time to one of your choice. By default, it will be 'anonymous'. In the image above, the display name is 'HiFi Docs'. |
+| Set Availability | This feature allows you to appear online to select groups of users: Everyone, Friends and Connections, Friends Only, or Appear Offline. The users you appear online to will also be able to jump to your location. |
+| Master Volume    | Set the volume of your audio in High Fidelity.               |
+| Nearby           | This is the list of users who are nearby in the same domain as you. |
+| In View          | You can check this box to only view the users in front of you in a domain. This is useful when a domain has a lot of users |
+| Refresh Button   | Click this button to refresh the list of users currently in the domain. |
+| Connections      | This is the list of users who are your friends and connections. You can also teleport to their location from this list. |
+| Loud             | Click this icon next to the user you want to mute. The user will be muted only for you, not for other users in the domain. The icon also displays how loud someone is while they are speaking. |
+| Names            | This is the list of users available in the domain. You will only see their display names. |
+| Ignore           | If you check this box next to a user, you and the user will not be able to see or hear each other. |
+
+
+
+Use the People App as an Admin
+
+As an administrator in a domain, you will have privileges to maintain a domain. 
+
+
+
+| Feature | Description                                                  |
+| ------- | ------------------------------------------------------------ |
+| Silence | You can click the icon to mute a user. This user will be muted for everyone in the domain. |
+| Ban     | You can click here to ban a user from a domain. The user will not be able to enter the domain using the same account. |
+
+
 
 ### Your Privacy Bubble
 
