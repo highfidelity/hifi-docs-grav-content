@@ -27,7 +27,7 @@ In High Fidelity, you can establish a connection with someone else by shaking ha
 
 Once you make a connection with someone, they will appear under Connections in the [**People** app](#the-people-app). You will also appear on their list of connections. You will be able to see where they are in the metaverse, and you can travel to them at any time. 
 
-To mark a connection as a friend, check the box next to their name in the People app. You can make yourself exclusively available to Friends only using the People app. ![](make-connection.png)
+To mark a connection as a friend, check the box next to their name in the People app. You can make yourself available to only your friends using the People app. ![](make-connection.png)
 
 ### The People App
 
