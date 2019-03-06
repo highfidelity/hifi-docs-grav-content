@@ -56,11 +56,11 @@ When you purchase a new Place Name, if you connect it with your domain ID, users
 
 ## Add Your Place to the GoTo Directory
 
-To see your place listed in the GoTo directory in Interface, you will need to modify some settings and permissions. 
+To see your Place listed in the GoTo directory in Interface, you will need to modify some settings and permissions. 
 
 1. If you're hosting your domain on a cloud service, open the settings [here](https://highfidelity.com/user/cloud_domains). 
 2. Go to **Settings > Security** and scroll down to the 'Domain-Wide User Permissions'. The 'Standard Permissions' table allows you to set the type of users and their permissions.
-3. Under 'Connect' select the user type you want to allow to enter your domain: anonymous, friends, localhost, logged in. Your place will be visible in the GoTo directory to the user types selected. For example, if you checked 'logged-in' under 'Connect', all users logged in to High Fidelity can view your place in the GoTo Directory.
+3. Under 'Connect', select the user type you want to allow to enter your domain: anonymous, friends, localhost, and logged in. Your Place will be visible in the GoTo directory to the user types selected. For example, if you checked 'logged-in' under 'Connect', all users logged in to High Fidelity can view your Place in the GoTo Directory. But a user who hasn't logged-in will not see your Place in the directory.
 
 > > > > > You can only list a domain that has a place name in the GoTo directory.
 

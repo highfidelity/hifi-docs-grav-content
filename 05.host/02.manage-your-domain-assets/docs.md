@@ -87,11 +87,13 @@ You can host your assets using DigitalOcean Spaces.
 1. Log in to your DigitalOcean account. 
 2. Once your account is open, click on 'Spaces' in the menu bar on the left.
 3. Click 'Create a Space'. 
-4. Choose your region, a unique name for your space, and manage the public or private access to your space. Click 'Create a Space'.
+4. Choose your region, a unique name for your Space, and manage the public or private access to your Space. Click 'Create a Space'.
 4. You will be redirected to a page where you can upload files to your Space. 
 6. Click 'Upload Files' to start uploading your digital assets. 
 7. Select the files you want to upload and choose if you'd like them to be private or public. Click 'Upload Files'.
-8. Your file has now been uploaded to your Space. Hover over the file in the list to copy its URL. You can use this URL to upload assets to your High Fidelity domain. 
+8. Your files have now been uploaded to your Space. Hover over a file in the list to copy its URL. You can use this URL to upload assets to your High Fidelity domain. 
+
+![](copy-url-do.png)
 
 **See Also**
 

@@ -38,7 +38,7 @@ The first time you open your settings, your browser will open a Setup Wizard to 
 4. Click 'Finish'. You will be redirected to the 'Domain Settings' page. 
 
 ### Domain Server Settings
-If this isn't the first time you have opened your domain settings, then you will not see the Setup Wizard. Instead, you can manually configure all of your domain settings. 
+If this is not the first time you've opened your domain settings, you will not see the Setup Wizard. Instead, you can manually configure all of your domain settings. 
 
 For example, the 'Metaverse/Networking' section defines all of the network settings for your domain. Here, you can disconnect your High Fidelity account, view your access token, create a new domain ID, change your UDP port, and Enable Packet Verification. 
 

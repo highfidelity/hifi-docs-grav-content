@@ -5,15 +5,15 @@ taxonomy:
 ---
 High Fidelity's robust [JavaScript API](../../api-reference) provides the tools for you to build great content and user experiences in VR. We've compiled some advanced JavaScript tips you can use while scripting for High Fidelity. 
 
-You can use the [Scripting Console in Interface](../get-started-with-scripting#scripting-console) to try out the examples on this page. 
+You can use the [Scripting Console in Interface](../get-started-with-scripting#scripting-console) to try out the examples on this page. The output will be visible in the console itself. 
 
 **On This Page:**
 
 + [Compute 3D Math Operations](#compute-3d-math-operations)
-  + [Get Your Avatar's Position](#get-your-avatars-position)
-  + [Get Your Avatar's Orientation](#get-your-avatars-orientation)
-  + [Get the Direction Your Avatar is Facing](#get-the-direction-your-avatar-is-facing)
-  + [Make an Entity Appear Before Your Avatar](#make-an-entity-appear-before-your-avatar)
+    + [Get Your Avatar's Position](#get-your-avatars-position)
+    + [Get Your Avatar's Orientation](#get-your-avatars-orientation)
+    + [Get the Direction Your Avatar is Facing](#get-the-direction-your-avatar-is-facing)
+    + [Make an Entity Appear Before Your Avatar](#make-an-entity-appear-before-your-avatar)
 + [Include External JS and JSON Files](#include-external-js-and-json-files)
 + [Equip an Item](#equip-an-item)
 + [Connect a Signal to a Function](#connect-a-signal-to-a-function)
@@ -40,7 +40,7 @@ To get your avatar's current position, use the [MyAvatar](../../api-reference/na
 
 In the following example, we are using the JSON.stringify method to convert the JavaScript object (returned by `MyAvatar.position`) to a data string that can be sent over the server.
 
-You can try this out using the scripting console in Interface. 
+Open your Scripting Console and find your avatar's position.
 
 ```javascript
 JSON.stringify(MyAvatar.position);
@@ -59,7 +59,7 @@ Quaternions are represented in the form:
 { x: 0, y: 0, z: 0, w: 1 }
 ```
 
-Get your avatar's orientation by using the `MyAvatar.orientation` property:
+Get your avatar's orientation in the Scripting Console by using the `MyAvatar.orientation` property:
 
 ```javascript
 JSON.stringify(MyAvatar.orientation);
@@ -161,7 +161,7 @@ When you use the `require` method, you are making any function or object exporte
 
 
 ## Equip an Item
-Equipping an item means that an avatar can grab and hold an entity without pressing the grab button or trigger continuously. For example, you could equip a paint brush to your avatar's hand and drop it only when you're done painting. 
+You can equip an item by grabbing and holding an entity without pressing the grab button or trigger continuously. For example, you could equip a paint brush to your avatar's hand and drop it only when you're done painting. 
 
 You can equip an item using a script:
 

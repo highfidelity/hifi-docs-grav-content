@@ -37,22 +37,22 @@ The People app provides a set of tools that help users manage their interactions
 | Feature          | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | Profile Picture  | This is where your profile picture will be visible. Click on the image to view your profile. You can change this image on our [website](https://highfidelity.com/). |
-| Display Name     | You can change your display name at any time to one of your choice. By default, it will be 'anonymous'. In the image above, the display name is 'HiFi Docs'. |
-| Set Availability | This feature allows you to appear online to select groups of users: Everyone, Friends and Connections, Friends Only, or Appear Offline. The users you appear online to will also be able to jump to your location. |
+| Display Name     | You can change your display name at any time. By default, it will be 'anonymous'. In the image above, the display name is 'HiFi Docs'. |
+| Set Availability | This feature allows you to appear online to select groups of users: Everyone, Friends and Connections, Friends Only, or Appear Offline. The users you appear online to will also be able to teleport to your location. |
 | Master Volume    | Set the volume of your audio in High Fidelity.               |
 | Nearby           | This is the list of users who are nearby in the same domain as you. |
-| In View          | You can check this box to only view the users in front of you in a domain. This is useful when a domain has a lot of users |
+| In View          | You can check this box to view only the users in front of you in a domain. This is useful when a domain has a lot of users and you're looking for someone in particular. |
 | Refresh Button   | Click this button to refresh the list of users currently in the domain. |
 | Connections      | This is the list of users who are your friends and connections. You can also teleport to their location from this list. |
-| Loud             | Click this icon next to the user you want to mute. The user will be muted only for you, not for other users in the domain. The icon also displays how loud someone is while they are speaking. |
+| Loud             | Click this icon next to the user you want to mute. The user will be muted only for you, not for other users in the domain. The icon also displays how loudly a user is speaking. |
 | Names            | This is the list of users available in the domain. You will only see their display names. |
 | Ignore           | If you check this box next to a user, you and the user will not be able to see or hear each other. |
 
 
 
-Use the People App as an Admin
+#### Use the People App as an Admin
 
-As an administrator in a domain, you will have privileges to maintain a domain. 
+As an administrator in a domain, you will have privileges to maintain a domain. The People app will have an additional column that allows an admin to silence and ban users in the same domain.
 
 
 
