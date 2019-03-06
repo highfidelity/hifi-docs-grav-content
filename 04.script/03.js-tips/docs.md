@@ -16,6 +16,7 @@ You can use the [Scripting Console in Interface](../get-started-with-scripting#s
   + [Make an Entity Appear Before Your Avatar](#make-an-entity-appear-before-your-avatar)
 + [Include External JS and JSON Files](#include-external-js-and-json-files)
 + [Equip an Item](#equip-an-item)
++ [Connect a Signal to a Function](#connect-a-signal-to-a-function)
 
 ## Compute 3D Math Operations 
 
@@ -160,7 +161,7 @@ When you use the `require` method, you are making any function or object exporte
 
 
 ## Equip an Item
-Equipping an item means that an avatar can grab and hold an entity without pressing the grab button or trigger continously. For example, you could equip a paint brush to your avatar's hand and drop it only when you're done painting. 
+Equipping an item means that an avatar can grab and hold an entity without pressing the grab button or trigger continuously. For example, you could equip a paint brush to your avatar's hand and drop it only when you're done painting. 
 
 You can equip an item using a script:
 
@@ -172,6 +173,8 @@ To drop the entity from your avatar's hand:
 ```javascript
 Messages.sendLocalMessage('Hifi-Hand-Drop', 'XXX'); \\ where XXX is either the left or right hand
 ```
+
+
 
 **See Also**
 

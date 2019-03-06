@@ -16,6 +16,7 @@ High Fidelity has partnered with DigitalOcean to provide hosting options based o
 
 + [Host with DigitalOcean](#host-with-digitalocean)
 + [Configure Your Domain Settings](#configure-your-domain-settings)
++ [FAQ](#faq)
 
 ### Host with DigitalOcean
 
@@ -43,6 +44,19 @@ You will be redirected to your Cloud Domains page, where you will see the domain
 You can configure your domain settings by clicking on the three dots on the right corner and selecting 'Domain Server settings' from the drop down. You will be prompted to [configure the basic server settings](../../your-domain/configure-settings#configure-basic-server-settings). 
 
 ![](cloud-do-9.PNG)
+
+
+
+### FAQ
+
+| Question                                                     | Solution                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Why isn’t my domain updating? Why is it stuck on 'updating'? | Check if your DigitalOcean account contains the right payment information. If the issue still persists, please contact High Fidelity support. |
+| Is there a maximum file size for content archives my domain will accept? | Yes. The maximum file size depends on the size of the Droplet. If your file is bigger than your droplet, you can resize your Droplet. Go to your DigitalOcean account, find your Droplet, and select resize from the menu on the left. |
+| How can I get into my domain settings if I forgot my username and password? | Go to https://highfidelity.com/user/cloud_domains. For your domain, click on the three dots on the right corner and select 'Reset Domain Server password' from the dropdown. Once your server restarts, click 'Domain Server settings' from the same dropdown. You will be prompted to set a new username and password. |
+| Can I host assets on my Digital Ocean like I can host assets on my sandbox’s Asset Browser? | Yes. You can use the Asset Browser to host your assets while hosting your domain on DigitalOcean. |
+| How do you power cycle your Droplet?                         | You can do this through your DigitalOcean account. Log in and select your Droplet. Select 'Power' on the menu to the left. Select 'Power Cycle'. |
+
 
 
 **See Also**
