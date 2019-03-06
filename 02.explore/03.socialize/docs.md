@@ -34,6 +34,7 @@ To mark a connection as a friend, check the box next to their name in the People
 The People app provides a set of tools that help users manage their interactions with people in the metaverse. It gives you a list of the people nearby (in the same domain as you), and gives you easy access to all of your connections. From the People app, you can: 
 
 ![](people-nearby.png)
+
 | Feature          | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
 | Profile Picture  | This is where your profile picture will be visible. Click on the image to view your profile. You can change this image on our [website](https://highfidelity.com/). |
@@ -54,7 +55,7 @@ The People app provides a set of tools that help users manage their interactions
 
 As an administrator in a domain, you will have privileges to maintain a domain. The People app will have an additional column that allows an admin to silence and ban users in the same domain.
 
-
+![](people-admin.png)
 
 | Feature | Description                                                  |
 | ------- | ------------------------------------------------------------ |
