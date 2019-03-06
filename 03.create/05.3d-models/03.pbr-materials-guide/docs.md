@@ -8,17 +8,13 @@ The appearance of a 3D model is controlled by its materials. The materials suppo
 
 **On This Page:**
 + [Introduction to Materials, Textures, and Shading](#introduction-to-materials-textures-and-shading)
-  + [Textures](#textures)
-  + [Shading](#shading)
+    + [Textures](#textures)
+    + [Shading](#shading)
     + [Material Channels](#material-channels)
-
 + [Sample Materials and Their Textures and Shading](#sample-materials-and-their-textures-and-shading)
-
 + [Set Material Values in Blender](#set-material-values-in-blender)
-
 + [Set Material Values in Maya](#set-material-values-in-maya)
 
-  
 
 
 ## Introduction to Materials, Textures, and Shading

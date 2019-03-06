@@ -13,6 +13,8 @@ Before adding a material entity, make sure you have created a material using the
 
 + [Generate a Material Entity](#generate-a-material-entity)
 + [Add a Material Entity](#add-a-material-entity)
+    + [Use the Material Entity JSON File](#use-the-material-entity-json-file)
+    + [Use the materialData Field](#use-the-materialdata-field)
 
 
 ## Generate a Material Entity
@@ -23,7 +25,7 @@ To add a material to your object in High Fidelity:
 
 At this time, we have no way to automatically generate a JSON file with another tool, and you will need to write your own JSON file.
 
->>>>>We are aware of the difficulties involved in converting your material data to a JSON file and are working on making the process easier for our users. In the meantime, we recommend embedding your material data in your models as .fbx files if you are facing difficulties generating a .JSON file. 
+>>>>>We are aware of the difficulties involved in converting your material data to a JSON file and are working on making the process easier for our users. In the meantime, we recommend embedding your material data in your models as FBX files if you are facing difficulties generating a .JSON file. 
 
 This is what the .JSON file for a sample [castle wall material](https://hifi-public.s3.amazonaws.com/sam/MaterialExportGuide/MaterialEntities/MatOne/CastleWall/CastleWall.hfm.json) looks like:
 
