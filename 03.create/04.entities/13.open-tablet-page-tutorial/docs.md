@@ -1,10 +1,10 @@
 ---
-title: Tutorial: Open to Page from Entity
+title: Tutorial: Open Web Page with Entities
 taxonomy:
     category: docs
 ---
 
-You can link to webpages from entities in a domain in High Fidelity. This is useful if you have items on sale and want users to be directed to the right Marketplace pages where they can be purchased.  
+Entities are often used to add objects to your environment. However, you can do so much more with this when you use scripting to define their behavior. In this tutorial, we will use an entity as a button to open a web page on your tablet. You can use this tutorial to do things like directing your visitors to specific Marketplace items for purchase.
 
 **On This Page:**
 
@@ -25,57 +25,17 @@ Consider getting familiar with the following concepts before starting this tutor
 
 ## Write a Script to Open a Web Page
 
-The script to be used here opens a webpage when a user clicks or triggers an entity. This user can view this webpage on their Tablet. 
+The script used here opens a web page on the Tablet when a user clicks or triggers an entity. In this example, we've written a client entity script that opens the Marketplace web page when an entity/item is triggered. The script looks for the URL in the 'userdata' property of the entity and injects the Marketplace code into the link. This allows the user who triggered the script to purchase the item without having to go to the **Market** app on their Tablet or HUD. 
 
-We've written a script that opens a link to a Marketplace page when an entity/item is triggered. The script looks for the URL in the 'userdata' property of the entity and injects the Marketplace code into the link. This allows the user who triggered the script to purchase the item without having to go to the **Market** app on their Tablet or HUD. 
+You can get the script [here](https://open-tablet-to-page.glitch.me/openTabletPageButton.js). 
 
-You can copy the script below or access the same [here](https://open-tablet-to-page.glitch.me/openTabletPageButton.js). 
-
-```
-(function(){
-  var MARKETPLACE_QUALIFIER = 'https://highfidelity.com/marketplace/items/';
-  var MARKETPLACE_INJECT_SCRIPT = ScriptDiscoveryService.defaultScriptsPath + "/system/html/js/marketplacesInject.js";
-   
-  var url;
-  var tablet;
-  var shouldInjectMarketplaceCode = false;
-   
-  function navigateToPage() {
-    shouldInjectMarketplaceCode ? tablet.gotoWebScreen(url, MARKETPLACE_INJECT_SCRIPT) : tablet.gotoWebScreen(url);
-  }
- 
-  var OpenTabletButton = function() {};
-   
-  OpenTabletButton.prototype = {
-    preload : function(entityID) {
-      try {
-        url = JSON.parse(Entities.getEntityProperties(entityID, 'userData').userData).url;
-        if (url.indexOf(MARKETPLACE_QUALIFIER) != -1) {
-          shouldInjectMarketplaceCode = true;
-        }
-      } catch (e) {
-        print("Unable to find a valid URL");
-        url = "https://highfidelity.com";
-      }
-      tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
-      
-    },
-    clickDownOnEntity : function() {
-      navigateToPage();
-    },
-    startFarTrigger: function() {
-      navigateToPage();
-    }
-  };
-  return new OpenTabletButton();
-});
-```
 
 ## Create an Entity to Use as a Button
-Any entity you create to be used as a button has to be [triggerable](../entity-behavior#set-an-entity-to-trigger-scripts) so that the script can detect when you use your hand controllers to trigger an event.
+
+The entity you create for your button has to be [triggerable](../entity-behavior#set-an-entity-to-trigger-scripts) so that the script can detect when you trigger or push the button with your hand controllers.
 
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
-2. [Create an entity](../create-entities) to be used as a button. This can be a 3D model or a box or sphere entity.
+2. [Create an entity](../create-entities) to be used as a button. This can be a 3D model, cube, or sphere entity.
 3. Go to the 'Properties' tab and scroll down to 'Behavior'.
 4. Paste the following JSON data into the 'userdata' field for your entity, with the updated URL:
 ```
@@ -89,7 +49,7 @@ Any entity you create to be used as a button has to be [triggerable](../entity-b
 ```
 5. Next to 'Script', paste the script URL. In this case, it is [openTabletPageButton.js](https://open-tablet-to-page.glitch.me/openTabletPageButton.js).
 6. Scroll down and ensure that 'Triggerable' is selected.
-7. Exit the **Create** Tools app and click or trigger the button to see the Marketplace page for your item open on your Tablet. 
+7. After you exit the **Create** app, test your script by clicking or triggering the button to open the Marketplace web page for your item.
 
 **See Also**
 

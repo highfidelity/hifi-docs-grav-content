@@ -45,8 +45,8 @@ The Inventory app provides an interface to manage your transactions, purchases, 
 
 ![](inventory-app.png)
 
->>>>> High Fidelity stores your Inventory key in the following locations. 
-**Windows:** `c:/Users/<you>/AppData/Roaming/High Fidelity/Interface/<your_user_name>.hifikey`
+>>>>> If you last used High Fidelity before we released the Inventory app, you most likely had a Wallet key that gave you access to your HFC and Marketplace purchases. If you can't see those in the latest version of High Fidelity you are using, you can copy your old keys and paste them in the same folder location as the latest version. High Fidelity stores your keys in the following locations:                                                                                                             
+**Windows:** `C:/Users/<you>/AppData/Roaming/High Fidelity/Interface/<your_user_name>.hifikey`                                                                                           
 **OS X:** `/Users/<you>/Library/Application Support/High Fidelity/Interface/<your_user_name>.hifikey`
 
 

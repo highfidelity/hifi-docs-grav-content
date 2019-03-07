@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-There are different ways to create games and experiences in High Fidelity. In this tutorial, we'll cover how to make a primitive pixel-like painting set to allow users to "paint" pictures on a canvas made out of "pixels" that are box entities.
+There are different ways to create games and experiences in High Fidelity. In this tutorial, we'll cover how to make a pixel-like painting set to allow users to "paint" pictures on a canvas made out of "pixels" that are box entities.
 
 **On This Page:**
 
@@ -31,10 +31,10 @@ Our painting set comprises three elements:
 * [A palette, made of an octagon and sphere object](#create-a-paint-palette).
 * [A canvas, made of box entities](#create-a-pixel-canvas).
 
-All of the logic for our painting set is contained in the brush head. The rest of the content is made by parenting primitives to one another to make our brush, palette, and canvas.
+All of the logic for our painting set is contained in the brush head. The rest of the content is made by parenting entities to one another to make our brush, palette, and canvas.
 
 ### Create a Paint Brush
-We'll start by creating the paint brush. The brush is comprised of two parts, the handle and the brush head. The brush handle is the parent of the brush head. This means we can grab and move the brush, and select the color to be painted using the handle only. 
+We'll start by creating the paint brush. The brush is comprised of two parts, the handle and the brush head. The brush handle is the parent of the brush head, so we can control the movement and color of the brush head using only the handle. 
 
 To create the brush handle:
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
@@ -42,14 +42,14 @@ To create the brush handle:
 3. Go to the 'Properties' tab and select the 'Shape' drop down. Change the shape of the entity to a 'cylinder'.
 4. Name your entity 'Paint-Paintbrush-Tube' by selecting the text box at the top of the 'Properties' tab.
 5. Select your desired handle color from the 'Color' picker.
-6. Scroll down to 'Spatial'. Change the local dimensions to: {x: 0.025, y: 0.5, z: 0.025}.
+6. Scroll down to the 'Spatial' section. Change the local dimensions to: {x: 0.025, y: 0.5, z: 0.025}.
 
 To create the brush head:
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
 2. Click on the ['SPHERE' icon](../create-entities) to create a sphere entity to be used as the brush head.
 3. Go to the 'Properties' tab and select your desired brush head color from the 'Color' picker.
 4. Name your entity 'Paint-Paintbrush-Head' by selecting the text box at the top of the 'Properties' tab.
-5. Scroll down to 'Spatial'. Change the local dimensions to {x: 0.05, y: 0.1, z: 0.05}.
+5. Scroll down to the 'Spatial' section. Change the local dimensions to {x: 0.05, y: 0.1, z: 0.05}.
 
 Once you've created the brush head, you can parent the brush handle to it: 
 
@@ -57,7 +57,7 @@ Once you've created the brush head, you can parent the brush handle to it:
 2. Copy the 'entityID'.
 3. From the Entity List window, select the brush head and go to the 'Properties' tab.
 4. In the 'Parent' text box, paste the entityID of the brush handle (Paintbrush-Tube) entity.
-5. Scroll down to 'Spatial'. Change the local position to {x: 0, y: 0.2, z: 0}.
+5. Scroll down to the 'Spatial' section. Change the local position to {x: 0, y: 0.2, z: 0}.
 
 We've detailed how you can add a script to use the brush to transfer color to other objects in [Add a Paint Brush Script](#add-a-paint-brush-script).
 
@@ -65,24 +65,26 @@ We've detailed how you can add a script to use the brush to transfer color to ot
 The second part of our painting set is the palette. This is where you can get creative, and add as many (or as few) paint colors as you'd like. Once you have the base of the palette created, you can repeat the process of adding paints until you are satisfied with the end result.
 
 To create the palette base:
-1. From the **Create** Tools app, [create an entity](../create-entities) to be used as the palette base. This can be a box or sphere entity.
-2. Go to the 'Properties' tab and select the 'Shape' drop down. Change the shape to an 'octagon'.
-3. Name your entity 'Paint-Palette-Base' by selecting the text box at the top of the 'Properties' tab.
-4. Select your desired palette color from the 'Color' picker.
-5. Scroll down to 'Spatial'. Change the local dimensions to {x: 0.55, y: 0.5, z: 0.55}.
-6. Scroll down to 'Behavior' and check 'Grabbable'.
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. [Create an entity](../create-entities) to be used as the palette base. This can be a box or sphere entity.
+3. Go to the 'Properties' tab and select the 'Shape' drop down. Change the shape to an 'octagon'.
+4. Name your entity 'Paint-Palette-Base' by selecting the text box at the top of the 'Properties' tab.
+5. Select your desired palette color from the 'Color' picker.
+6. Scroll down to the 'Spatial' section. Change the local dimensions to {x: 0.55, y: 0.5, z: 0.55}.
+7. Scroll down to the 'Behavior' section.  Check 'Grabbable'.
 
 To create the paint colors:
-1. From the **Create** Tools app, [click on the 'SPHERE' icon to create a sphere entity](../create-entities) to be used as your first paint color. 
-2. Go to the 'Properties' tab and name your entity 'Paint-Color' by selecting the text box at the top of the tab.
-3. Select your desired paint color from the 'Color' picker.
-4. Scroll down to 'Spatial'. Change the local dimensions to {x: 0.1, y: 0.05, z: 0.1}
-5. In the **Create** Tools app, select your palette base and go to the 'Properties' tab.
-6. Copy the 'entityID'.
-7. Select your paint color and go to the 'Properties' tab.
-8. In the 'Parent' text box, paste the palette base entityID.
-9. Use the grab handles to adjust the position and size of the paint on the palette.
-10. Scroll down to 'Behavior' and uncheck 'Grabbable'
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. [Create a sphere entity](../create-entities) to be used as your first paint color. 
+3. Go to the 'Properties' tab and name your entity 'Paint-Color' by selecting the text box at the top of the tab.
+4. Select your desired paint color from the 'Color' picker.
+5. Scroll down to the 'Spatial' section. Change the local dimensions to {x: 0.1, y: 0.05, z: 0.1}
+6. In the **Create** Tools app, select your palette base and go to the 'Properties' tab.
+7. Copy the 'entityID'.
+8. Select your paint color and go to the 'Properties' tab.
+9. In the 'Parent' text box, paste the palette base entityID.
+10. Use the grab handles to adjust the position and size of the paint on the palette.
+11. Scroll down to the 'Behavior' section and uncheck 'Grabbable'.
 
 Repeat the above steps to create additional paint colors for your palette.
 
@@ -107,7 +109,7 @@ To add the paint brush script:
 2. Select the Paint-Brush-Head entity.
 3. Go to the 'Properties' tab and scroll down to 'Behavior'.
 4. Next to 'Script', paste the script URL. In this case, it is '[brushScript.js](https://entity-painting.glitch.me/brushScript.js)'.
-5. Exit the **Create** Tools app and start painting!
+5. After you close the **Create** app, test it out by painting on the canvas in your domain!
 
 **See Also**
 

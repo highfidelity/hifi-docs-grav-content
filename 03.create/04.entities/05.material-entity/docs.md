@@ -19,10 +19,7 @@ Before adding a material entity, make sure you have created a material using the
 
 ## Generate a Material Entity
 
-To add a material to your object in High Fidelity: 
-* You need to specify the material data in a JSON file. OR
-* Add material data directly into the **Create** Tools app. 
-
+To add a material to your object in High Fidelity, you need to specify the material data in a JSON file or add the material directly into the **Create** app.
 At this time, we have no way to automatically generate a JSON file with another tool, and you will need to write your own JSON file.
 
 >>>>>We are aware of the difficulties involved in converting your material data to a JSON file and are working on making the process easier for our users. In the meantime, we recommend embedding your material data in your models as FBX files if you are facing difficulties generating a .JSON file. 
@@ -49,7 +46,14 @@ This file contains all related material data, such as the color, roughness, and 
 
 ## Add a Material Entity
 
-#### Use the Material Entity JSON File
+### Use the Material Entity JSON File
+
+<div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>At this time, we have no way to automatically generate a JSON file with another tool, and you will need to write your own JSON file.
+</p>
+</div>
+
 Once you have your material entity .JSON file, you can add it to an object in High Fidelity. Let's add the [castle wall material](https://hifi-public.s3.amazonaws.com/sam/MaterialExportGuide/MaterialEntities/MatOne/CastleWall/CastleWall.hfm.json) to a box entity in your domain. 
 
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
@@ -60,7 +64,7 @@ Once you have your material entity .JSON file, you can add it to an object in Hi
 
 ![](material-entity.GIF)
 
-#### Use the materialData Field
+### Use the materialData Field
 
 To add a material entity directly into the **Create** Tools app:
 1. In Interface, pull up your HUD or Tablet and go to **Create**.

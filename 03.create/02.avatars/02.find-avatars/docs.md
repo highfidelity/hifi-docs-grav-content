@@ -109,7 +109,7 @@ Use these troubleshooting tips if you notice any issues while packaging or testi
 | Your avatar is too small or too big.                         | In Interface, go to the **Avatar** app and click on the settings icon. Move the Avatar Scale slider between 0.1x to 4x to make it smaller or bigger. <p>If that isn't sufficient, you can manually change the scale in your avatar's FST file in a text editor. Keep in mind that any changes to the scale will work only after using the packager, as the packager overwrites these changes. |
 | Your avatar is tied up into knots or laying down.            | This could mean that your skeleton is not right. Re-open your avatar in Unity and run through steps 2-5 of [Create an Avatar Package](#create-an-avatar-package) again. Update your project in Unity (go to High Fidelity menu > Update Existing Avatar, then browse to your avatar package). <p>If it still doesn't work, ensure that you are testing the correct file that the avatar exporter created. |
 | Your avatar's skin doesn't move properly with animations.    | The avatar exporter was written to improve the process of rigging and mapping the skeleton rig. This will not affect the animations in your avatar. To adjust the animations, you will need to use a 3D modeling tool such as Blender or Maya and fix the skin weighting on the avatar prior to using the avatar exporter in Unity. |
-| You cannot view textures or materials in Unity.              |                                                              |
+
 
 **See Also**
 

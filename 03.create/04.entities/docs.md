@@ -17,3 +17,7 @@ To build any content in High Fidelity, whether it is an object that you interact
 * [Define Interactions with Avatars](./avatar-interactions)
 * [Tutorial: Create a Gold Spotlight](./create-spotlight)
 * [Tutorial: Display a YouTube Channel](./display-youtube)
+* [Tutorial: Create an Avatar Scaling Button](./avatar-scaling-tutorial)
+* [Tutorial: Open Web Page with Entities](./open-tablet-page-tutorial)
+* [Tutorial: Build a Painting Set](./primitive-painting-set-tutorial)
+* [Tutorial: Create a Purchase Button for Marketplace Sales](./purchase-button-tutorial)
