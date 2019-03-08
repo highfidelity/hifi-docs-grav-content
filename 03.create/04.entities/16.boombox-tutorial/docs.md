@@ -1,0 +1,138 @@
+---
+title: 'Tutorial: Create a Boombox'
+taxonomy:
+    category:
+        - docs
+---
+
+You can create a music player that plays all your favorite tracks and also syncs the audio for other users in your domain. 
+
+**On This Page:**
+- [Prerequisites](#prerequisites)
+- [Create a Boombox Entity](#create-a-boom-box-entity)
+- [Add Userdata to Your Boombox](#add-userdata-to-your-boombox)
+- [Write Music Player Scripts](#write-a-music-player-scripts)
+
+
+## Prerequisites
+
+- [Create New Entities](../create-entities)
+- [Change How Entities Look](../entity-appearance)
+- [Define an Entity's Behavior](../entity-behavior)
+- [Get Started with Scripting](../../../script/get-started-with-scripting)
+- [Client Entity Scripts](../../../script/client-entity-scripts)
+- [Write Your Own Scripts](../../../script/write-scripts)
+
+
+## Create a Boombox Entity
+
+
+Your BoomBox will consist of:
++ A boombox base model: A model entity that runs an entity server script.
++ An 'ON/OFF' button: A child entity runs a client entity script to allow users to interact with the boombox. 
+
+The boombox will start playing when users click or trigger the button.
+
+To create a boombox:
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. Use the **Create** Tools app to [import the 3D model entity](../../3d-models/import-model.html). You can create your own 3D model for the boombox base or [use one we've created](https://hifi-content/Docs/Music%20Player%20Tutorial/BoomBox.fbx).
+3. Next, [create the button entity](../create-entities) that users will interact with. This can be a cube entity.
+4. Go to 'Properties' tab for the button entity. Change the 'Shape' property from 'Box' to 'Octagon' or 'Cylinder' depending on your aesthetic preferences.
+5. Ensure that 'Grabbable and 'Triggerable' are checked. 
+6. Scale, rotate, and move your button to align it to the desired position on the model. 
+![](boombox.PNG)
+7. With the **Create** Tools app open, select the 3D model of the boombox. Go to the 'Properties' tab and copy the 'EntityID'.
+8. Select the cube entity you created, go to the 'Properties' tab, and paste the copied entity ID in the 'parentID' field. This makes your boombox model entity the parent of your button entity.
+
+
+## Add Userdata to Your Boombox
+
+The userdata property for entities is a JSON object that can be customized to fit the needs of a script. Userdata also helps in synchronizing and keeping variables the same for all users in a domain. In this case, userdata will contain:
+
++ Song List: All URLS of the songs you want played on your boombox. You can also use MP3 or WAV files.
++ Music player volume information: You can change this as per your preference.
+
+
+<div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>Userdata can store information only up to a certain size. We recommend keeping the limit approximately 10 songs. We support the following formats:
+    	<ul>
+    		<li>WAV: 16-bit uncompressed WAV at any sample rate, with 1 (mono), 2(stereo), or 4 (ambisonic) channels.</li>
+    		<li>MP3: Mono or stereo, at any sample rate.</li>
+    		<li>RAW: 48khz 16-bit mono or stereo. Filename must include ".stereo" to be interpreted as stereo.</li>
+    	</ul></p>
+</div>
+
+
+To add userdata to your boombox:
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. Select your boombox entity, not the button. 
+3. Go to the 'Properties' tab. Scroll down to 'User Data' and paste the following JSON information. This JSON data consists of 10 songs and the volume setting. You can use your own songs and change the volume setting 
+
+```
+{
+  "grabbableKey": {
+	"grabbable": false
+  },
+  "music": {
+	"All That": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-allthat.mp3",
+	"Country Boy": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-countryboy.mp3",
+	"Cute": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-cute.mp3",
+	"Happiness": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-happiness.mp3",
+	"Happy Rock": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-happyrock.mp3",
+	"High Octane": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-highoctane.mp3",
+	"Hip Jazz": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-hipjazz.mp3",
+	"Pop Dance": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-popdance.mp3",
+	"Sci-Fi": "https://hifi-content.s3-us-west-1.amazonaws.com/liv/dev/BoomBox/music/bensound-scifi.mp3",
+	"Sample": "sample.com"
+  },
+  "volume": 0.7
+}
+```
+
+
+## Write Music Player Scripts
+
+The boombox system contains the following scripts that allows a user to control audio playback:
++ An Entity Server Script (boomBoxEntityServerScript.js): This server script handles the state of the music player and plays audio back so that it is synchronized across all users. As a general rule of thumb, actions and behaviors of entities that need to be in the same state for all users should run on the server. The client script that runs on the button relays the requests for each of the remotely callable functions to execute on the server, and the server script handles the audio playback accordingly.
++ A Client Entity Script (boomBoxEntityScript.js): This client script handles the interactions between users and displays the UI for controlling the boombox via an HTML page via the Tablet Scripting Interface. It listens for mouse clicks and controller triggers, displays the controls, and serves as a relay mechanic between the HTML page and the boombox entity server script. 
++ An HTML page (boomBoxController.html): This HTML page displays the controller UI for the music player through the Tablet Scripting Interface and is styled with CSS. It uses the `EventBridge` to send the user input from the HTML elements to the boombox entity script, which in turns calls entity server methods depending on the `EventBridge` message contents.
+
+You can use exisiting versions of our scripts for a boombox and modify them for your needs, or write your own scripts.
+
+If you're using exisiting versions of our scripts:
+1. In Interface, pull up your HUD or Tablet and go to **Create**.
+2. Select your boombox model and go to the 'Properties' tab. 
+3. Scroll down to the 'Behavior' section and paste the entity server script's URL into the 'Server Script' field. 
+4. Select your button entity and go to the 'Properties' tab. 
+5. Scroll down to the 'Behavior' section and paste the client entity script's URL into the 'Script' field. 
+
+If you're writing your own scripts or modifying the exisiting ones, and want to host these in the 'Asset Browser':
+1. On your computer, create a folder called 'BoomBox'. You'll save files here with the following structure. 
+![](boombox-folder.PNG)
+2. Save the [entity server script](https://hifi-content/Docs/Music%20Player%20Tutorial/boomBoxEntityServerScript.js), [client entity script](https://hifi-content/Docs/Music%20Player%20Tutorial/boomBoxEntityScript.js), [HTML file](https://hifi-content/Docs/Music%20Player%20Tutorial/app/boomBoxController.html), and [CSS file](https://hifi-content/Docs/Music%20Player%20Tutorial/app/styles.css) to the folder in your computer.
+3. In Interface, pull up your HUD or Tablet and go to **Create**.
+4. In the **Create** Tools app, click 'Open This Domain's Asset Server' to view the Asset Browser.
+5. Create the same boombox directory in your 'Asset Browser' and upload your files.
+6. Use the **Create** app and select your boombox model and go to the 'Properties' tab. 
+7. Scroll down to the 'Behavior' section and paste the entity server script's URL into the 'Server Script' field. 
+8. Use the **Create** app and select your button entity and go to the 'Properties' tab. 
+9. Scroll down to the 'Behavior' section and paste the client entity script's URL into the 'Script' field. 
+
+
+
+<div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>If you want to make modifications to your script files, you will need to re-upload them to the asset browser. Reload all content and reload your entity server scripts to see changes take effect after modifying files. </p>
+</div>
+
+
+**See Also**
+
+- [Create New Entities](../create-entities)
+- [Change How Entities Look](../entity-appearance)
+- [Define an Entity's Behavior](../entity-behavior)
+- [Get Started with Scripting](../../../script/get-started-with-scripting)
+- [Client Entity Scripts](../../../script/client-entity-scripts)
+- [Write Your Own Scripts](../../../script/write-scripts)
+- [Interact with Your Environment](../../../explore/interact-objects)

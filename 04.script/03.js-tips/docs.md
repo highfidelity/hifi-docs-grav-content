@@ -174,6 +174,25 @@ To drop the entity from your avatar's hand:
 Messages.sendLocalMessage('Hifi-Hand-Drop', 'XXX'); \\ where XXX is either the left or right hand
 ```
 
+## Connect a Signal to a Function
+
+Signals are a method of communication between objects and are used to define a reaction to a trigger. For example, if you click on an entity, a signal is triggered that determines the reaction. If your entity is a purchase button, everytime a user clicks on it, a signal is triggered. 
+
+Signals can be connected functions. This means that everytime a signal is triggered, a function is executed.We've illustrated how that works:
+
+```
+  this.mousePressOnEntity = function() {
+    shrinkAvatar();
+  };
+  ```
+The signal in the example `mousePressonEntity` is triggered when a user clicks on the entity. The signal is connected to the `shrinkAvatar` function which shrinks the size of an avatar. Every time a user clicks on this entity, their avatar will shrink in size.
+
+You can also connect a signal to a function by:
+
+```
+  this.mousePressOnEntity.connect(function){shrinkAvatar();  });
+
+```
 
 
 **See Also**

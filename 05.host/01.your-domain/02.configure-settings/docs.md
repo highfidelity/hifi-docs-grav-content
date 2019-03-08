@@ -42,7 +42,7 @@ If this is not the first time you've opened your domain settings, you will not s
 
 For example, the 'Metaverse/Networking' section defines all of the network settings for your domain. Here, you can disconnect your High Fidelity account, view your access token, create a new domain ID, change your UDP port, and Enable Packet Verification. 
 
-'Local UDP Port' is the port that needs to be opened for High Fidelity to let users into your local sandbox. The default value for this port is '40102'. This also ensures you don't face any issues connecting because of your firewall.
+'Local UDP Port' is the port that needs to be opened for High Fidelity to let users into your local sandbox. The default value for this port is '40102'. Set this value in the settings and add interface.exe and domain-server.exe to your firewall to avoid any issues.
 
 ![](metaverse-settings.png)
 
