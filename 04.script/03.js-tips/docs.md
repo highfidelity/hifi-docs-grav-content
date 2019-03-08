@@ -176,22 +176,25 @@ Messages.sendLocalMessage('Hifi-Hand-Drop', 'XXX'); \\ where XXX is either the l
 
 ## Connect a Signal to a Function
 
-Signals are a method of communication between objects and are used to define a reaction to a trigger. For example, if you click on an entity, a signal is triggered that determines the reaction. If your entity is a purchase button, everytime a user clicks on it, a signal is triggered. 
+Signals can be connected to functions. This means that every time a signal is triggered, a function is executed. For example, if your avatar changes when collisions are enabled or disabled, you can connect a function to react to this specific event such as:
+```
+function collisionChanged(enabled) {
+  if(enabled) {
+    console.log("avatar collision is enabled");
+  } else {
+    console.log("avatar collision id disabled")
+  }
+}
 
-Signals can be connected functions. This means that everytime a signal is triggered, a function is executed.We've illustrated how that works:
+MyAvatar.collisionsEnabledChanged.connect(collisionChanged);
+```
+
+Each signal usually gets passed in arguments, and you can refer to the documentation to see what a signal will provide you, such as the enabled property passed into collision changed.
+
+It's good practice to disconnect from signals, but you can only do that if you name your function.
 
 ```
-  this.mousePressOnEntity = function() {
-    shrinkAvatar();
-  };
-  ```
-The signal in the example `mousePressonEntity` is triggered when a user clicks on the entity. The signal is connected to the `shrinkAvatar` function which shrinks the size of an avatar. Every time a user clicks on this entity, their avatar will shrink in size.
-
-You can also connect a signal to a function by:
-
-```
-  this.mousePressOnEntity.connect(function){shrinkAvatar();  });
-
+MyAvatar.collsionEnabledChanged.disconnect(collsionChanged);
 ```
 
 
