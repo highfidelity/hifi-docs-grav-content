@@ -28,7 +28,7 @@ Consider getting familiar with the following concepts before starting this tutor
 
 To define the behavior of your avatar and the button, you need to write a client entity script that:
 
-+ attaches to an entity (a button in your domain) .
++ attaches to an entity (a button in your domain).
 + shrinks or increases the size of an avatar.  
 + defines what happens when a user clicks on or triggers the entity. 
 

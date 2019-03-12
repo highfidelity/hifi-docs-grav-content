@@ -13,7 +13,7 @@ The steps involved in creating a custom app are:
 1. [Create icons to show up on the tablet and HUD:](#1-create-icons-to-show-up-on-the-tablet-and-hud) This a standard you have to follow for any app you create to be used in High Fidelity.
 2. [Design your app's UI in HTML and CSS](#2-design-your-apps-ui-in-html-and-css)
 3. [Add event handlers to your HTML file](#3-add-event-handlers-to-your-html-file)
-4. [Create a JavaScript file](#4-create-a-javascript-file) that:
+4. [Write a JavaScript file](#4-write-a-javascript-file) that:
 	* Adds a button to the tablet and HUD
 	* Loads your app
 	* Closes your app
@@ -71,7 +71,7 @@ The Tablet UI framework provides a communication channel called EventBridge. It 
 </script>
 ```
 
-### 4. Create a JavaScript file
+### 4. Write a JavaScript file
 
 Your JavaScript file will contain all of the core functionality of your app. At a minimum, we require that you have code that adds a button to the tablet and HUD, loads your app, closes your app gracefully, and listens for events. Below, you will find code samples to do each of these things. 
 
@@ -163,7 +163,7 @@ function onWebEventReceived(event) {
 tablet.webEventReceived.connect(onWebEventReceived);
 ```
 
-### 5. Create gemstones
+### 5. Create Gemstones
 The final step is to code the behavior of your JavaScript file. In this case, we'll create gemstones using High Fidelity's API. Each gemstone will be created as an entity, and we can change the gemstone's properties using the `Entity` namespace. 
 
 **Calculate the position of each new gemstone**  

@@ -21,3 +21,4 @@ To build any content in High Fidelity, whether it is an object that you interact
 * [Tutorial: Open Web Page with Entities](./open-tablet-page-tutorial)
 * [Tutorial: Build a Painting Set](./primitive-painting-set-tutorial)
 * [Tutorial: Create a Purchase Button for Marketplace Sales](./purchase-button-tutorial)
+* [Tutorial: Create a Boombox](./boombox-tutorial)

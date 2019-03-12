@@ -62,7 +62,7 @@ Once you have your material entity .JSON file, you can add it to an object in Hi
 4. Click and select the wall. Go to the 'Properties' tab and copy the parent ID under the 'Name' box. 
 5. Click and select the material entity. Go to the 'Properties' tab and paste the copied parent ID in the 'Parent' box. You will see the material applied to the wall. In this step, you are parenting or applying a material to an entity.
 
-![](material-entity.GIF)
+![](material-entity.gif)
 
 ### Use the materialData Field
 
@@ -70,12 +70,12 @@ To add a material entity directly into the **Create** Tools app:
 1. In Interface, pull up your HUD or Tablet and go to **Create**.
 2. Create a wall. Click the 'Cube' icon to add a box entity and change the dimensions to make it resemble a wall. 
 3. Go to the **Create** tab and click on the 'Material' icon to add a material entity. 
-4. Enter `materialData` next to 'Material URL'.
+4. Enter `materialData` when you're prompted for a 'Material URL'.
 5. Click and select the wall. Go to the 'Properties' tab and copy the parent ID under the 'Name' box. 
-6. Click and select the material entity. Go to the 'Properties' tab and paste the copied parent ID in the 'Parent' box. 
-7. Scroll down to the 'Material Data' field. Write your material data in JSON in this field. 
+6. Click and select the material entity. Go to the 'Properties' tab and paste the copied parent ID in the 'Parent' box. In this step, you are parenting or applying a material to an entity.
+7. Scroll down to the 'Material Data' field. Click 'Clear Material Data' and then paste the following JSON data:
 
-![](material-data.PNG)
+![](material-data.GIF)
 
 **See Also**
 

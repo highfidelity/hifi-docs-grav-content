@@ -61,4 +61,4 @@ You can configure your domain settings by clicking on the three dots on the righ
 
 **See Also**
 
-+ [Configure Your Domain Settings](../../your-domain/configure-settings)
++ [Configure Your Domain Settings](../your-domain/configure-settings)
