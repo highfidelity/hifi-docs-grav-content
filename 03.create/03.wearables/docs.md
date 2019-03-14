@@ -18,6 +18,13 @@ There are a few different applications you can use to build and edit the 3D mode
 * [Oculus Medium](https://www.oculus.com/medium)
 * [Tiltbrush](https://www.tiltbrush.com)
 
+Some guidelines to follow when you're building soft wearables like clothes:
+
++ Your soft wearable should be designed to fit a particular type of avatar. Since avatars vary in size and structure, a soft wearable designed to fit one avatar may not fit another one as well.
++ The soft wearable should be slightly larger than the avatar to avoid clipping. Clipping is when one 3D object goes through another 3D object without colliding.
++ Your soft wearable's shape should match the avatar's.
++ The soft wearable should have similar or the same weights as the avatar.
+
 When building your model, be sure to [follow these guidelines](../3d-models/get-model) to ensure that it is compatible with High Fidelity.  Once you're done editing your model, export the file as an FBX or OBJ file. You've now created your own custom model!
 
 After hosting your wearable in the cloud or the Marketplace, [put it on](../../explore/personalize-experience/add-wearables) and adopt your new look.

@@ -15,7 +15,7 @@ If you want to buy items in High Fidelity, head on over to the Marketplace, wher
 Currently, you can buy High Fidelity Coins (HFC) using [Ethereum](https://www.ethereum.org/), a blockchain app that trades ETH (Ether). The Bank of High Fidelity manages HFC and we gradually increase the number of coins in circulation as the economy grows. 100 HFC is equal to 1 USD.
 
 To get HFC: 
-1. [Book an appointment](https://calendly.com/highfidelity) at the Bank of High Fidelity.
+1. [Book an appointment](https://meetings.hubspot.com/highfidelity/high-fidelity-bank-appointment ) at the Bank of High Fidelity.
 2. At the time of your appointment, visit the [TradingRoom](https://hifi.place/TradingRoom) domain.
 3. We will provide you with a QR code that you can use to send ETH to the Bank of High Fidelity. 
 4. Once we receive the ETH amount you sent, we will send you the appropriate amount of HFC to your account based on the current exchange rate. This can take up to one business day. 
@@ -39,13 +39,21 @@ You can locate all items that you purchase in the **Inventory** App.
 
 The Inventory app provides an interface to manage your transactions, purchases, and HFC. From the Inventory app, you can: 
 
-* View your recent purchases, sales, gifts and other transaction history
-* Change avatars, put on wearables and install/update apps
-* [Send HFC to your friends or anyone nearby](../socialize#send-hfc-to-others)
+* View your recent purchases, sales, gifts and other transaction history.
+* Change avatars, put on wearables and install/update apps.
+* [Send HFC to your friends or anyone nearby](../socialize#send-hfc-to-others).
 
 ![](inventory-app.png)
 
+>>>>> If you last used High Fidelity before we released the Inventory app, you most likely had a Wallet key that gave you access to your HFC and Marketplace purchases. If you can't see those in the latest version of High Fidelity you are using, you can copy your old keys and paste them in the same folder location as the latest version. High Fidelity stores your keys in the following locations:                                                                                                             
+**Windows:** `C:/Users/<you>/AppData/Roaming/High Fidelity/Interface/<your_user_name>.hifikey`                                                                                           
+**OS X:** `/Users/<you>/Library/Application Support/High Fidelity/Interface/<your_user_name>.hifikey`
+
+
+
 **See Also**
+
 + [Send HFC to Others](../socialize#send-hfc-to-others)
 + [Send Purchased Items to Others](../socialize#send-purchased-items-to-others)
 + [Sell Items on the Marketplace](../../sell)
+

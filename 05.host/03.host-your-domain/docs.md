@@ -4,20 +4,21 @@ taxonomy:
     category: docs
 ---
 
-Depending on your requirements, you can host your domain on your local machine or on cloud servers. We recommend hosting on cloud servers such as Digital Ocean and Amazon EC2 if you want to open your domain to many visitors. 
+Depending on your requirements, you can host your domain on your local machine or on cloud servers. We recommend hosting on cloud servers such as DigitalOcean and Amazon EC2 if you want to open your domain to many visitors. 
 
 **On This Page**
 
-+ [Host Your Domain on Digital Ocean](#host-your-domain-on-digital-ocean)
++ [Host Your Domain on DigitalOcean](#host-your-domain-on-digitalocean)
 
-## Host Your Domain on Digital Ocean
+## Host Your Domain on DigitalOcean
 
 High Fidelity has partnered with DigitalOcean to provide hosting options based on your requirements. 
 
 + [Host with DigitalOcean](#host-with-digitalocean)
 + [Configure Your Domain Settings](#configure-your-domain-settings)
++ [FAQ](#faq)
 
-### Host with Digital Ocean
+### Host with DigitalOcean
 
 1. Log in or sign up with your High Fidelity username and password on [https://highfidelity.com](https://highfidelity.com).
 2. Hover over your username to see the various menu options. Click **Cloud Domains**. You can also go to [https://highfidelity.com/user/cloud_domains](https://highfidelity.com/user/cloud_domains). ![](cloud-domains.png)
@@ -45,6 +46,19 @@ You can configure your domain settings by clicking on the three dots on the righ
 ![](cloud-do-9.PNG)
 
 
+
+### FAQ
+
+| Question                                                     | Solution                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Why isn’t my domain updating? Why is it stuck on 'updating'? | Check if your DigitalOcean account contains the right payment information. If the issue still persists, please contact High Fidelity support. |
+| Is there a maximum file size for content archives for my domain? | Yes. The maximum file size depends on the size of your Droplet. If your file is bigger than your Droplet, you can resize your Droplet. Go to your DigitalOcean account, find your Droplet, and select resize from the menu on the left. |
+| How can I get into my domain settings if I forgot my username and password? | Go to [https://highfidelity.com/user/cloud_domains](https://highfidelity.com/user/cloud_domains). For your domain, click on the three dots on the right corner and select 'Reset Domain Server password' from the drop-down. Once your server restarts, click 'Domain Server settings' from the same drop-down. You will be prompted to set a new username and password. |
+| Can I host assets on my DigitalOcean domain like I can host assets on my sandbox’s Asset Browser? | Yes. You can use the Asset Browser to host your assets while hosting your domain on DigitalOcean. |
+| How do you power cycle your Droplet?                         | You can do this through your DigitalOcean account. Log in and select your Droplet. Click 'Power' on the menu to the left and then select 'Power Cycle'. |
+
+
+
 **See Also**
 
-+ [Configure Your Domain Settings](../../your-domain/configure-settings)
++ [Configure Your Domain Settings](../your-domain/configure-settings)
